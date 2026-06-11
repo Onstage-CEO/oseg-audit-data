@@ -1,0 +1,218 @@
+{
+  "auditName": "UI Smoke Test Echo",
+  "version": "V0.1 — Working Draft",
+  "auditPath": "/home/runner/work/oseg-audit-data/oseg-audit-data/data-repo/data/clients/ui-smoke-test-echo/audit.json",
+  "status": "not_ready",
+  "exitCode": 1,
+  "summary": {
+    "okCount": 6,
+    "warningCount": 1,
+    "failCount": 2
+  },
+  "checks": [
+    {
+      "id": "schema",
+      "label": "Schema validation",
+      "status": "ok",
+      "messages": [
+        "audit JSON parsed and conforms to AuditSchema"
+      ]
+    },
+    {
+      "id": "source_coverage",
+      "label": "Required research source coverage",
+      "status": "fail",
+      "messages": [
+        "missing required platforms: google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite",
+        "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
+      ]
+    },
+    {
+      "id": "lane_coverage",
+      "label": "Source lane coverage (registry)",
+      "status": "fail",
+      "messages": [
+        "6 gating lane(s) neither covered nor explicitly skipped:",
+        "Review platforms [required] — needs one of: google, tripadvisor — capture it, or add a skippedSources entry with kind + rationale",
+        "OTA review platforms [required] — needs one of: booking, expedia, travelocity — capture it, or add a skippedSources entry with kind + rationale",
+        "Community / social discussion [required] — needs one of: reddit — capture it, or add a skippedSources entry with kind + rationale",
+        "Video / creator content [required] — needs one of: youtube — capture it, or add a skippedSources entry with kind + rationale",
+        "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
+        "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+      ]
+    },
+    {
+      "id": "discovery_plan",
+      "label": "Discovery plan generated",
+      "status": "ok",
+      "messages": [
+        "research-plan.json present next to the audit"
+      ]
+    },
+    {
+      "id": "keyword_coverage",
+      "label": "Keyword group coverage",
+      "status": "warn",
+      "messages": [
+        "0 of 8 taxonomy groups have keywords searched",
+        "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+      ]
+    },
+    {
+      "id": "evidence_integrity",
+      "label": "Evidence integrity",
+      "status": "ok",
+      "messages": [
+        "0 live-verified, 0 inference, 0 unverified"
+      ]
+    },
+    {
+      "id": "provenance_url",
+      "label": "Provenance URL shape (offline)",
+      "status": "ok",
+      "messages": [
+        "no live_verified record carries a sourceUrl to shape-check (nothing to validate)"
+      ]
+    },
+    {
+      "id": "teaser_generation",
+      "label": "Teaser generation",
+      "status": "ok",
+      "messages": [
+        "generated 8798 chars in memory (not written)"
+      ]
+    },
+    {
+      "id": "teaser_firewall",
+      "label": "Teaser Tier-A firewall lint (with per-client terms)",
+      "status": "ok",
+      "messages": [
+        "130 lines scanned, 0 forbidden-term hits",
+        "client-specific forbidden terms applied: 0"
+      ]
+    }
+  ],
+  "sourceCoverage": {
+    "coveredCount": 0,
+    "skippedCount": 0,
+    "missingRequired": [
+      "google",
+      "tripadvisor",
+      "booking",
+      "expedia",
+      "reddit",
+      "youtube",
+      "aerial_satellite"
+    ],
+    "coveredPlatforms": [],
+    "skipped": []
+  },
+  "keywordCoverage": {
+    "totalGroups": 8,
+    "groupsWithKeywords": 0,
+    "untouchedGroups": [
+      "entertainment_general",
+      "activity",
+      "sentiment_negative",
+      "sentiment_positive",
+      "segment",
+      "time_of_day",
+      "location",
+      "seasonal"
+    ],
+    "keywordsSearched": 0,
+    "keywordsInTaxonomy": 45
+  },
+  "evidenceIntegrity": {
+    "total": 0,
+    "liveVerified": 0,
+    "inference": 0,
+    "unverified": 0
+  },
+  "provenanceUrl": {
+    "liveVerifiedChecked": 0,
+    "liveVerifiedInvalid": [],
+    "otherInvalid": []
+  },
+  "teaserFirewall": {
+    "generated": true,
+    "charsGenerated": 8798,
+    "linesScanned": 130,
+    "forbiddenHitCount": 0,
+    "clientForbiddenTermsApplied": 0,
+    "hits": []
+  },
+  "readinessSummary": {
+    "overall": "not_ready",
+    "headline": "NOT READY — 2 blockers",
+    "nextAction": "Resolve 2 blockers before shipping: Required research source coverage; Source lane coverage (registry)",
+    "checks": {
+      "ok": 6,
+      "warn": 1,
+      "fail": 2
+    },
+    "blockers": [
+      "Required research source coverage",
+      "Source lane coverage (registry)"
+    ],
+    "warnings": [
+      "Keyword group coverage"
+    ],
+    "blockerIds": [
+      "source_coverage",
+      "lane_coverage"
+    ],
+    "warningIds": [
+      "keyword_coverage"
+    ],
+    "blockerDetails": [
+      {
+        "id": "source_coverage",
+        "check": "Required research source coverage",
+        "details": [
+          "missing required platforms: google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite",
+          "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
+        ]
+      },
+      {
+        "id": "lane_coverage",
+        "check": "Source lane coverage (registry)",
+        "details": [
+          "6 gating lane(s) neither covered nor explicitly skipped:",
+          "Review platforms [required] — needs one of: google, tripadvisor — capture it, or add a skippedSources entry with kind + rationale",
+          "OTA review platforms [required] — needs one of: booking, expedia, travelocity — capture it, or add a skippedSources entry with kind + rationale",
+          "Community / social discussion [required] — needs one of: reddit — capture it, or add a skippedSources entry with kind + rationale",
+          "Video / creator content [required] — needs one of: youtube — capture it, or add a skippedSources entry with kind + rationale",
+          "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
+          "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+        ]
+      }
+    ],
+    "warningDetails": [
+      {
+        "id": "keyword_coverage",
+        "check": "Keyword group coverage",
+        "details": [
+          "0 of 8 taxonomy groups have keywords searched",
+          "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+        ]
+      }
+    ],
+    "sourceCoverage": {
+      "covered": 0,
+      "skipped": 0,
+      "missingRequired": 7
+    },
+    "keywordGroups": {
+      "withKeywords": 0,
+      "total": 8
+    },
+    "evidence": {
+      "total": 0,
+      "liveVerified": 0,
+      "inference": 0,
+      "unverified": 0
+    }
+  },
+  "timestamp": "2026-06-11T23:11:47.475Z"
+}
