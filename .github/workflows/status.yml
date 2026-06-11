@@ -53,6 +53,10 @@ jobs:
         with:
           path: data-repo
           fetch-depth: 0
+          # Branch HEAD, not the run's snapshot SHA: when called from
+          # scaffold.yml the run started BEFORE scaffold pushed, so the
+          # default github.sha checkout would miss the new workspace.
+          ref: main
 
       - name: Checkout engine (pinned, read-only deploy key)
         uses: actions/checkout@v4
