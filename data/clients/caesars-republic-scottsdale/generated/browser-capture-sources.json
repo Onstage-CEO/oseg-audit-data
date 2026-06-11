@@ -1,0 +1,396 @@
+{
+  "packVersion": "V1",
+  "meta": {
+    "slug": "caesars-republic-scottsdale",
+    "propertyName": "Caesars Republic Scottsdale",
+    "location": "Scottsdale, Arizona",
+    "brand": "Hilton",
+    "auditVersion": "V0.1 — Working Draft",
+    "planMatchesAudit": true,
+    "generatedAt": "2026-06-09T20:18:42.837Z"
+  },
+  "requiredLanes": [
+    {
+      "platformId": "google",
+      "label": "Google Reviews (Google Travel/Hotels panel)",
+      "required": true,
+      "fetchStrategy": "logged-in browser (server fetch blocked) — use in-page review search + topic chips",
+      "notes": "Richest, most searchable corpus. Use in-panel \"Search reviews\" + topic chips. Filtered views cap ~10 per query — run every keyword across all three sort strategies (most_helpful, lowest_score, most_recent) and dedupe by author+date.",
+      "status": "captured_only",
+      "plannedQueries": [
+        "Caesars Republic Scottsdale Scottsdale, Arizona reviews",
+        "Caesars Republic Scottsdale entertainment",
+        "Caesars Republic Scottsdale nightlife",
+        "Caesars Republic Scottsdale live music",
+        "Caesars Republic Scottsdale after dinner",
+        "Caesars Republic Scottsdale evening",
+        "Caesars Republic Scottsdale family",
+        "Caesars Republic Scottsdale atmosphere"
+      ]
+    },
+    {
+      "platformId": "tripadvisor",
+      "label": "TripAdvisor",
+      "required": true,
+      "fetchStrategy": "logged-in browser (server fetch blocked) — use in-page review search + topic chips",
+      "notes": "Server-side fetch is 403-blocked — logged-in browser only. Use review search + \"Popular mentions\" chips. The ABSENCE of entertainment from popular mentions is itself a finding worth capturing.",
+      "status": "missing",
+      "plannedQueries": [
+        "Caesars Republic Scottsdale Scottsdale, Arizona reviews",
+        "Caesars Republic Scottsdale entertainment",
+        "Caesars Republic Scottsdale nightlife",
+        "Caesars Republic Scottsdale live music",
+        "Caesars Republic Scottsdale after dinner",
+        "Caesars Republic Scottsdale evening",
+        "Caesars Republic Scottsdale family",
+        "Caesars Republic Scottsdale atmosphere"
+      ]
+    },
+    {
+      "platformId": "booking",
+      "label": "Booking.com",
+      "required": true,
+      "fetchStrategy": "logged-in browser (server fetch blocked) — use in-page review search + topic chips",
+      "notes": "\"Read all reviews\" modal has a topic search. Structured liked/disliked fields give clean attribution. Category sub-scores (Value, Staff, etc.) are tell-tale signals. Often blocks server fetch.",
+      "status": "missing",
+      "plannedQueries": [
+        "Caesars Republic Scottsdale Scottsdale, Arizona reviews",
+        "Caesars Republic Scottsdale entertainment",
+        "Caesars Republic Scottsdale nightlife",
+        "Caesars Republic Scottsdale live music",
+        "Caesars Republic Scottsdale after dinner",
+        "Caesars Republic Scottsdale evening",
+        "Caesars Republic Scottsdale family",
+        "Caesars Republic Scottsdale atmosphere"
+      ]
+    },
+    {
+      "platformId": "expedia",
+      "label": "Expedia",
+      "required": true,
+      "fetchStrategy": "logged-in browser (server fetch blocked) — use in-page review search + topic chips",
+      "notes": "Tends to skew more recent. Note: shares the Expedia-Group review DB with Travelocity — never count both as independent platforms in client-facing scorecards.",
+      "status": "missing",
+      "plannedQueries": [
+        "Caesars Republic Scottsdale Scottsdale, Arizona reviews",
+        "Caesars Republic Scottsdale entertainment",
+        "Caesars Republic Scottsdale nightlife",
+        "Caesars Republic Scottsdale live music",
+        "Caesars Republic Scottsdale after dinner",
+        "Caesars Republic Scottsdale evening",
+        "Caesars Republic Scottsdale family",
+        "Caesars Republic Scottsdale atmosphere"
+      ]
+    },
+    {
+      "platformId": "reddit",
+      "label": "Reddit",
+      "required": true,
+      "fetchStrategy": "harvest verbatim quotes from Google \"site:\" result snippets (direct fetch blocked)",
+      "notes": "Direct fetch is usually blocked. Harvest verbatim quotes from Google \"site:reddit.com\" result snippets (#:~:text= fragments). Candid signal — often surfaces things review platforms hide.",
+      "status": "missing",
+      "plannedQueries": [
+        "site:reddit.com Caesars Republic Scottsdale review",
+        "site:reddit.com Caesars Republic Scottsdale nightlife",
+        "site:reddit.com Caesars Republic Scottsdale entertainment",
+        "site:reddit.com Caesars Republic Scottsdale party",
+        "site:reddit.com Caesars Republic Scottsdale Scottsdale, Arizona"
+      ]
+    },
+    {
+      "platformId": "youtube",
+      "label": "YouTube (walkthroughs / vlogs)",
+      "required": true,
+      "fetchStrategy": "logged-in browser (server fetch blocked) — use in-page review search + topic chips",
+      "notes": "Walkthrough chapter titles reveal the named-venue inventory (this is how venue lists are recovered without floor plans). Titles + comments are also guest-generated signal.",
+      "status": "missing",
+      "plannedQueries": [
+        "Caesars Republic Scottsdale walkthrough",
+        "Caesars Republic Scottsdale resort tour",
+        "Caesars Republic Scottsdale vlog",
+        "Caesars Republic Scottsdale Scottsdale, Arizona tour"
+      ]
+    },
+    {
+      "platformId": "aerial_satellite",
+      "label": "Aerial / satellite imagery + property hero photos",
+      "required": true,
+      "fetchStrategy": "visual inspection only (satellite/aerial + hero photos) — findings are inference, label as such",
+      "notes": "Read building massing for the acoustic-siting hypothesis. Cross-check venue inventory against property hero photos. Findings derived here are INFERENCE — label as such.",
+      "status": "missing",
+      "plannedQueries": []
+    }
+  ],
+  "optionalLanes": [
+    {
+      "platformId": "travelocity",
+      "label": "Travelocity",
+      "required": false,
+      "fetchStrategy": "optional reference capture — do not double-count toward independent platforms",
+      "notes": "NOT an independent source — shares the Expedia-Group review DB. Capture only for reference; never double-count toward \"platforms cross-checked\".",
+      "status": "missing",
+      "plannedQueries": [
+        "Caesars Republic Scottsdale Scottsdale, Arizona reviews",
+        "Caesars Republic Scottsdale entertainment",
+        "Caesars Republic Scottsdale nightlife",
+        "Caesars Republic Scottsdale live music",
+        "Caesars Republic Scottsdale after dinner",
+        "Caesars Republic Scottsdale evening",
+        "Caesars Republic Scottsdale family",
+        "Caesars Republic Scottsdale atmosphere"
+      ]
+    },
+    {
+      "platformId": "blogs",
+      "label": "Travel blogs / longform guest posts",
+      "required": false,
+      "fetchStrategy": "logged-in browser (server fetch blocked) — use in-page review search + topic chips",
+      "notes": "Useful for noise/atmosphere callouts and longer-form anecdotes that capped review fields cannot hold.",
+      "status": "missing",
+      "plannedQueries": [
+        "\"Caesars Republic Scottsdale\" review blog",
+        "\"Caesars Republic Scottsdale\" noise",
+        "\"Caesars Republic Scottsdale\" honest review"
+      ]
+    }
+  ],
+  "knownUrls": [],
+  "missingUrls": [
+    {
+      "platformId": "google",
+      "label": "Google Reviews (Google Travel/Hotels panel)"
+    },
+    {
+      "platformId": "tripadvisor",
+      "label": "TripAdvisor"
+    },
+    {
+      "platformId": "booking",
+      "label": "Booking.com"
+    },
+    {
+      "platformId": "expedia",
+      "label": "Expedia"
+    },
+    {
+      "platformId": "youtube",
+      "label": "YouTube (walkthroughs / vlogs)"
+    }
+  ],
+  "keywordFocus": {
+    "totalKeywords": 45,
+    "categories": [
+      {
+        "name": "entertainment_general",
+        "keywords": [
+          "entertainment",
+          "music",
+          "live music",
+          "DJ",
+          "karaoke",
+          "show",
+          "shows",
+          "dancing",
+          "dance",
+          "nightlife",
+          "night life",
+          "party",
+          "band",
+          "singer",
+          "mariachi",
+          "lobby music",
+          "bar music",
+          "performer"
+        ],
+        "note": "Run on every review platform; this is the load-bearing category for the after-dinner-gap finding."
+      },
+      {
+        "name": "activity",
+        "keywords": [
+          "activities",
+          "pool activities",
+          "games"
+        ],
+        "note": "Daytime/poolside coverage — distinguishes the engine-that-works from the after-dinner-gap."
+      },
+      {
+        "name": "sentiment_negative",
+        "keywords": [
+          "boring",
+          "quiet",
+          "sleepy",
+          "nothing to do",
+          "loud"
+        ],
+        "note": "Run lowest-score sort and pair with the sentiment-negative terms to surface harshest reviews fast."
+      },
+      {
+        "name": "sentiment_positive",
+        "keywords": [
+          "fun",
+          "vibe",
+          "energy",
+          "atmosphere"
+        ],
+        "note": "Pair with most-helpful and 5-star reviews to identify named-talent and protect-this signals."
+      },
+      {
+        "name": "segment",
+        "keywords": [
+          "family",
+          "kids",
+          "teens",
+          "adults"
+        ],
+        "note": "Surface segment-mix signals (adults vs family vs teens) for the segment-opportunity section."
+      },
+      {
+        "name": "time_of_day",
+        "keywords": [
+          "evening",
+          "night",
+          "after dinner"
+        ],
+        "note": "Use to triangulate the evening-cliff timing without committing to specific clock times pre-engagement."
+      },
+      {
+        "name": "location",
+        "keywords": [
+          "bar",
+          "pool",
+          "beach"
+        ],
+        "note": "Cross-reference with venue inventory recovered from YouTube walkthroughs."
+      },
+      {
+        "name": "seasonal",
+        "keywords": [
+          "holiday",
+          "Christmas",
+          "New Year",
+          "Thanksgiving",
+          "Mexican night"
+        ],
+        "note": "Use to spot holiday/peak-period programming gaps and renovation-window claims."
+      }
+    ]
+  },
+  "themeFocus": [
+    {
+      "theme": "nightlife_after_dinner_gap",
+      "suggestedMin": 6,
+      "evidenceCount": 0,
+      "note": "The money theme — aim for ≥6 records across multiple platforms and at least one 5-star fan asking for more."
+    },
+    {
+      "theme": "explicit_demand",
+      "suggestedMin": 2,
+      "evidenceCount": 0,
+      "note": "Guests asking by name for an adult-only zone / live music / late hours. 2-3 is enough; quality > volume."
+    },
+    {
+      "theme": "live_music_shows_dj",
+      "suggestedMin": 4,
+      "evidenceCount": 0,
+      "note": "Protect-this signals — named talent and format-that-works reviews."
+    },
+    {
+      "theme": "cultural_programming",
+      "suggestedMin": 2,
+      "evidenceCount": 0,
+      "note": "Standout-to-scale signals. Mayan / mariachi / regional content that over-performs."
+    },
+    {
+      "theme": "production_quality",
+      "suggestedMin": 1,
+      "evidenceCount": 0,
+      "note": "Quality ceiling / venue-sightline / thermal-fail callouts. Often 1-2 records are enough."
+    },
+    {
+      "theme": "pool_beach_daytime",
+      "suggestedMin": 2,
+      "evidenceCount": 0,
+      "note": "The engine-that-works signal. Contrasts with the after-dinner-gap."
+    },
+    {
+      "theme": "family_kids_teens",
+      "suggestedMin": 2,
+      "evidenceCount": 0,
+      "note": "Family-strong evidence + teen-tier-absent evidence. The segment-opportunity flank."
+    },
+    {
+      "theme": "noise_atmosphere",
+      "suggestedMin": 3,
+      "evidenceCount": 0,
+      "note": "External spill + internal bleed + thermal. Three distinct sub-problems; cover each."
+    },
+    {
+      "theme": "renovation_context",
+      "suggestedMin": 1,
+      "evidenceCount": 0,
+      "note": "Relaunch-window timing signal. 1 representative quote is enough."
+    }
+  ],
+  "guardrails": [
+    "Capture only what is actually on the live page. Never invent, paraphrase-into-existence, or \"reconstruct from memory\" a review, quote, rating, author, date, or URL.",
+    "Every evidence record must trace to a real, openable source URL you visited. Record provenance with `capture-record` (real --source-url, real --platform, real --captured-at) before authoring any finding.",
+    "Quotes must be verbatim from the live source. Do not tidy grammar, merge two reviews, or extend a partial quote.",
+    "Ratings/scores are copied exactly as shown (\"4.6 / 5\", \"8.9 / 10\"). Never normalize, average, or estimate a score the platform did not display.",
+    "If a source is blocked, empty, or yields nothing for a query, record that honestly (skip-with-reason or zero evidence). An empty result is a finding; a fabricated result is a firewall breach.",
+    "Do not promote a record to `live_verified` unless you personally read it on the live platform in this session. The promotion flow records HOW it was confirmed — keep that truthful.",
+    "No invented URLs. If you cannot find the property page on a platform, leave it MISSING and say so — the engine prefers a NOT READY audit over a fabricated one.",
+    "Inference (e.g. acoustic/massing hypotheses from aerial imagery) must be labeled as `inference`, never as `live_verified` guest evidence."
+  ],
+  "commandSequence": [
+    {
+      "step": 1,
+      "verb": "capture-record",
+      "command": "oseg-audit capture-record --source-url \"<live url>\" --platform <platform> --property \"<name>\" --location \"<location>\" --local-path <screenshot> --reviewer \"<you>\" -o data/clients/caesars-republic-scottsdale/captures.json",
+      "purpose": "Record provenance for each artifact you captured (one per source page). Offline — only hashes the local screenshot."
+    },
+    {
+      "step": 2,
+      "verb": "research-intake",
+      "command": "oseg-audit research-intake data/clients/caesars-republic-scottsdale/findings.json --id-prefix <slugPrefix> -o data/clients/caesars-republic-scottsdale/evidence-patch.json",
+      "purpose": "Turn your authored findings (verbatim quotes + themes, tied to the captured URLs) into an evidence patch."
+    },
+    {
+      "step": 3,
+      "verb": "merge-evidence",
+      "command": "oseg-audit merge-evidence data/clients/caesars-republic-scottsdale/audit.json data/clients/caesars-republic-scottsdale/evidence-patch.json",
+      "purpose": "Merge the new evidence into the audit."
+    },
+    {
+      "step": 4,
+      "verb": "capture-coverage",
+      "command": "oseg-audit capture-coverage data/clients/caesars-republic-scottsdale/audit.json --plan data/clients/caesars-republic-scottsdale/research-plan.json --capture-archive data/clients/caesars-republic-scottsdale/captures.json",
+      "purpose": "See which planned sources / theme slots / keywords still have no evidence — loop back to step 1 for the gaps."
+    },
+    {
+      "step": 5,
+      "verb": "promote-live-verified",
+      "command": "oseg-audit promote-live-verified data/clients/caesars-republic-scottsdale/audit.json --evidence-id <id>",
+      "purpose": "For each record you personally confirmed on the live page, promote it to live_verified (records HOW it was confirmed)."
+    },
+    {
+      "step": 6,
+      "verb": "verify",
+      "command": "oseg-audit verify data/clients/caesars-republic-scottsdale/audit.json --capture-archive data/clients/caesars-republic-scottsdale/captures.json --summary",
+      "purpose": "The gate. Exit 0 = READY (teaser/deck unlock); nonzero = NOT READY — run `oseg-audit doctor caesars-republic-scottsdale` for the single next action."
+    }
+  ],
+  "readiness": {
+    "pipelineReady": false,
+    "requiredMissing": [
+      "google",
+      "tripadvisor",
+      "booking",
+      "expedia",
+      "reddit",
+      "youtube",
+      "aerial_satellite"
+    ],
+    "unverifiedEvidence": 0,
+    "definition": "NOT READY: 7 required source(s) still without evidence (google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite). Capture the missing sources and re-run verify; the engine will keep the teaser/deck suppressed until this clears."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "migrations": [
+    {
+      "at": "2026-06-11T23:47:39.513Z",
+      "mode": "canary (--only caesars-republic-scottsdale)",
+      "workspaces": [
+        {
+          "slug": "caesars-republic-scottsdale",
+          "source": "/Users/joepcostello/OSEG/resort-audit-project/data/clients/caesars-republic-scottsdale",
+          "files": 16,
+          "bytes": 176044,
+          "fileList": [
+            "audit.json",
+            "captures.json",
+            "captures/2026-06-09/aerial-satellite-observations.json",
+            "captures/2026-06-09/booking-reviews.json",
+            "captures/2026-06-09/expedia-reviews.json",
+            "captures/2026-06-09/google-reviews.json",
+            "captures/2026-06-09/reddit-snippets.json",
+            "captures/2026-06-09/tripadvisor-reviews.json",
+            "captures/2026-06-09/youtube-titles.json",
+            "evidence-patch.json",
+            "findings.json",
+            "generated/browser-capture-checklist.md",
+            "generated/browser-capture-sources.json",
+            "generated/browser-capture-task.md",
+            "generated/evidence.csv",
+            "research-plan.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

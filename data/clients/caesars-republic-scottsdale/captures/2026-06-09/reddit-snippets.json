@@ -1,0 +1,39 @@
+{
+  "capturedAt": "2026-06-09",
+  "platform": "reddit",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "method": "site:reddit.com Google-search snippets (Reddit direct fetch is blocked by browser safety + server 403) — per research-plan 'snippet_via_google' strategy. Snippets below were read live in the browser on the Google results page.",
+  "coverageNote": "Organic Reddit discussion of THIS specific hotel is sparse and skews to Hilton/Caesars loyalty logistics (points, diamond card, free-night certs) rather than entertainment/nightlife/atmosphere. The one substantive entertainment-adjacent thread is the Wolf by Vanderpump AMA. A separate r/Scottsdale 'where to stay' thread did not surface Caesars Republic as a top organic recommendation for a relaxation-seeking couple.",
+  "threadUrls": [
+    "https://www.reddit.com/r/BravoRealHousewives/comments/1qja2e1/currently_at_wolf_in_scottsdale_ama/",
+    "https://www.reddit.com/r/Scottsdale/comments/1njvo3c/indecisive_couple_deciding_where_to_stay/",
+    "https://www.reddit.com/r/Hilton/comments/1iw32mr/lots_of_issues_to_resolve_with_the_new_less_than/"
+  ],
+  "snippetsVerbatim": [
+    {
+      "thread": "Currently at Wolf in Scottsdale AMA",
+      "subreddit": "r/BravoRealHousewives",
+      "meta": "20+ comments · 4 months ago",
+      "snippet": "So it's in Scottsdale in Caesars Republic by the Fashion Square Mall. You don't need reservations if you go on a weekday during lunch hours ..."
+    },
+    {
+      "thread": "Indecisive couple deciding where to stay?",
+      "subreddit": "r/Scottsdale",
+      "meta": "30+ comments · 8 months ago",
+      "snippet": "My husband and I are visiting in a couple weeks and we're having a hard time deciding where to stay. We're mid-30s and enjoy relaxation during the ...",
+      "topAnswerSnippet": "The Andaz and the Montelucia are good options! Both are 10-15 mins from Old Town but far enoug..."
+    },
+    {
+      "thread": "Lots of issues to resolve with the new (less than a year ...)",
+      "subreddit": "r/Hilton",
+      "meta": "10+ comments · 1 year ago",
+      "snippet": "(SEO meta only in the result snippet: 'Reviews for Caesars Republic Scottsdale hotel. Best tips for staying at Caesars Republic. Top Hilton hotels for family vacations.') — thread title itself is a guest-sentiment signal about early operational issues."
+    },
+    {
+      "thread": "Caesars Republic Scottsdale",
+      "subreddit": "r/CaesarsRewards",
+      "meta": "3 comments · 2 years ago",
+      "snippet": "Does anyone know if I can pick up my Caesars diamond card at this location? Does the celebration credit apply to ..."
+    }
+  ]
+}
