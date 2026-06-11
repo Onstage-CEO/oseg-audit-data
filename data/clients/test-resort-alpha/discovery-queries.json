@@ -1,0 +1,141 @@
+{
+  "target": {
+    "propertyName": "Test Resort Alpha",
+    "location": "Phoenix, Arizona"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Test Resort Alpha Phoenix, Arizona reviews",
+        "Test Resort Alpha entertainment reviews",
+        "Test Resort Alpha nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Test Resort Alpha Hotel_Review",
+        "Test Resort Alpha Phoenix, Arizona TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Test Resort Alpha",
+        "Test Resort Alpha Phoenix, Arizona booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Test Resort Alpha",
+        "Test Resort Alpha Phoenix, Arizona Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Test Resort Alpha"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "site:reddit.com Test Resort Alpha review",
+        "site:reddit.com Test Resort Alpha nightlife",
+        "site:reddit.com Test Resort Alpha Phoenix, Arizona"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Test Resort Alpha walkthrough",
+        "Test Resort Alpha resort tour",
+        "Test Resort Alpha review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Test Resort Alpha\" review blog",
+        "\"Test Resort Alpha\" honest review",
+        "Test Resort Alpha Phoenix, Arizona travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Test Resort Alpha official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Test Resort Alpha instagram",
+        "Test Resort Alpha tiktok",
+        "site:instagram.com Test Resort Alpha"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Test Resort Alpha Phoenix, Arizona satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "Test Resort Alpha reviews",
+    "Test Resort Alpha entertainment reviews",
+    "Test Resort Alpha nightlife",
+    "site:reddit.com Test Resort Alpha",
+    "Test Resort Alpha YouTube review",
+    "Test Resort Alpha travel blog review",
+    "Test Resort Alpha family review",
+    "Test Resort Alpha couples review",
+    "Test Resort Alpha business traveler review",
+    "Test Resort Alpha rooftop review",
+    "Test Resort Alpha bar review",
+    "Test Resort Alpha dining review"
+  ]
+}
