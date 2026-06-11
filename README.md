@@ -31,6 +31,17 @@ out/{slug}/            generated outputs — EMPTY in 2B.0; in future phases
 - Vendor names and client data are confidential — internal use only, never
   client-facing, never quoted publicly.
 
+## Branch-protection status (honest note, 2026-06-10)
+
+GitHub branch protection and rulesets on **private** repos require GitHub Pro;
+this account is on Free, so "no force-push / no deletion" is **not**
+hardware-enforced yet. Compensating controls in effect: only Joe and the
+(future) narrowly-scoped Worker PAT can write at all; the Worker exposes no
+ref-rewriting route; `out-guard.yml` fails loudly on any direct `out/**` push;
+git history plus local clones make any rewrite recoverable. **Upgrading to
+GitHub Pro (~$4/mo) enables real protection — recommended; one-click after
+upgrade.**
+
 ## Who writes here
 
 - GitHub Actions in this repo (scaffold/status workflows), dispatched from the
