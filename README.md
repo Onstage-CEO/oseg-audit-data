@@ -31,16 +31,18 @@ out/{slug}/            generated outputs — EMPTY in 2B.0; in future phases
 - Vendor names and client data are confidential — internal use only, never
   client-facing, never quoted publicly.
 
-## Branch-protection status (honest note, 2026-06-10)
+## Branch-protection status (updated 2026-06-11, GitHub Pro active)
 
-GitHub branch protection and rulesets on **private** repos require GitHub Pro;
-this account is on Free, so "no force-push / no deletion" is **not**
-hardware-enforced yet. Compensating controls in effect: only Joe and the
-(future) narrowly-scoped Worker PAT can write at all; the Worker exposes no
-ref-rewriting route; `out-guard.yml` fails loudly on any direct `out/**` push;
-git history plus local clones make any rewrite recoverable. **Upgrading to
-GitHub Pro (~$4/mo) enables real protection — recommended; one-click after
-upgrade.**
+Enforced on `main` via branch protection (verified by `gh api`):
+**no force-push, no branch deletion, rules apply to admins too.**
+
+The Tier-A `out/**` gate is enforced by three layers: CODEOWNERS routes any
+PR touching `out/**` to Joe; `out-guard.yml` fails loudly if `out/**` ever
+changes via a direct push instead of a merged PR; and no writer (workflow or
+Worker route) writes to `out/**` at all in 2B.0. Note: *hard* path-level push
+blocking (push rulesets) is a GitHub **org-owned-repo** feature — not
+available on user-owned repos at any plan tier. If the repo ever moves into
+an org, add a push ruleset restricting `out/**` with admin-only bypass.
 
 ## Who writes here
 
