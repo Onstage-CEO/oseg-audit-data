@@ -1,0 +1,141 @@
+{
+  "target": {
+    "propertyName": "Test Resort Beta",
+    "location": "Tucson, Arizona"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Test Resort Beta Tucson, Arizona reviews",
+        "Test Resort Beta entertainment reviews",
+        "Test Resort Beta nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Test Resort Beta Hotel_Review",
+        "Test Resort Beta Tucson, Arizona TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Test Resort Beta",
+        "Test Resort Beta Tucson, Arizona booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Test Resort Beta",
+        "Test Resort Beta Tucson, Arizona Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Test Resort Beta"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "site:reddit.com Test Resort Beta review",
+        "site:reddit.com Test Resort Beta nightlife",
+        "site:reddit.com Test Resort Beta Tucson, Arizona"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Test Resort Beta walkthrough",
+        "Test Resort Beta resort tour",
+        "Test Resort Beta review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Test Resort Beta\" review blog",
+        "\"Test Resort Beta\" honest review",
+        "Test Resort Beta Tucson, Arizona travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Test Resort Beta official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Test Resort Beta instagram",
+        "Test Resort Beta tiktok",
+        "site:instagram.com Test Resort Beta"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Test Resort Beta Tucson, Arizona satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "Test Resort Beta reviews",
+    "Test Resort Beta entertainment reviews",
+    "Test Resort Beta nightlife",
+    "site:reddit.com Test Resort Beta",
+    "Test Resort Beta YouTube review",
+    "Test Resort Beta travel blog review",
+    "Test Resort Beta family review",
+    "Test Resort Beta couples review",
+    "Test Resort Beta business traveler review",
+    "Test Resort Beta rooftop review",
+    "Test Resort Beta bar review",
+    "Test Resort Beta dining review"
+  ]
+}
