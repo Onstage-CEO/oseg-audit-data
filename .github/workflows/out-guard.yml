@@ -1,0 +1,30 @@
+# Tier-A PR gate: any change under out/ that reaches main must have arrived
+# through a merged pull request (which CODEOWNERS routes to Joe). A direct
+# push touching out/** fails this check loudly. Approved in Phase 2B
+# architecture (oseg-ops-hub/docs/PHASE_2B_HOSTED_AUDIT_CONSOLE.md, Q3/Q5).
+name: out-guard
+on:
+  push:
+    branches: [main]
+    paths: ['out/**']
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  tier-a-must-arrive-via-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify this commit came from a merged PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          prs=$(gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/pulls" --jq 'map(select(.merged_at != null)) | length')
+          if [ "$prs" -eq 0 ]; then
+            echo "::error::Tier-A gate violation: out/** changed by a direct push to main."
+            echo "::error::Client-facing outputs must land via a pull request merged by Joe."
+            exit 1
+          fi
+          echo "OK: out/** change arrived via a merged PR."
