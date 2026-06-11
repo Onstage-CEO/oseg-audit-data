@@ -120,6 +120,23 @@ jobs:
         working-directory: data-repo
         run: |
           set -euo pipefail
+          # The report carries a generation timestamp, so byte-diff alone would
+          # commit on every run. Treat a report as unchanged (and restore the
+          # committed copy) when only the top-level timestamp differs.
+          for f in $(git diff --name-only -- 'data/clients/*/verify-report.json'); do
+            git cat-file -e "HEAD:$f" 2>/dev/null || continue
+            if node -e '
+              const fs=require("fs"),cp=require("child_process");
+              const f=process.argv[1];
+              const strip=t=>{const o=JSON.parse(t); delete o.timestamp; return JSON.stringify(o);};
+              const cur=strip(fs.readFileSync(f,"utf8"));
+              const old=strip(cp.execSync("git show HEAD:"+f,{maxBuffer:64e6}).toString());
+              process.exit(cur===old?0:1);
+            ' "$f"; then
+              git checkout -- "$f"
+              echo "unchanged (timestamp only): $f"
+            fi
+          done
           git add data/clients/*/verify-report.json
           if git diff --cached --quiet; then
             echo "Reports unchanged — nothing to commit."
