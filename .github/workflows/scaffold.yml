@@ -1,0 +1,125 @@
+# New Audit (Phase 2B.0, issue oseg-resort-audit#135)
+#
+# Dispatched by the audit-console-api Worker on behalf of an Access-
+# authenticated user. Creates one audit workspace in ONE attributed commit —
+# the black-box-recorder contract: no silent writes, actor email in history.
+#
+# Engine is pinned to a known-good SHA (bump deliberately, never 'main').
+
+name: scaffold
+on:
+  workflow_dispatch:
+    inputs:
+      clientName:
+        description: 'Client (organization) name'
+        required: true
+        type: string
+      propertyName:
+        description: 'Property name as guests know it'
+        required: true
+        type: string
+      location:
+        description: 'City/region, e.g. "Scottsdale, Arizona"'
+        required: true
+        type: string
+      brand:
+        description: 'Brand / ownership group (optional)'
+        required: false
+        type: string
+        default: ''
+      website:
+        description: 'Property website URL (optional)'
+        required: false
+        type: string
+        default: ''
+      actorEmail:
+        description: 'Access-verified email of the requesting user'
+        required: true
+        type: string
+
+# One scaffold at a time repo-wide: serializes the commit+push and makes
+# same-slug races lose cleanly at the existing-directory check.
+concurrency:
+  group: scaffold
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 203bbc89355c96221ac63850faf24c92b6569817
+
+permissions:
+  contents: write
+
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate actor email
+        run: |
+          set -euo pipefail
+          case "${{ inputs.actorEmail }}" in
+            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
+            *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+
+      - name: Checkout engine (pinned, read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: 203bbc89355c96221ac63850faf24c92b6569817
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Scaffold workspace
+        working-directory: engine
+        # Inputs reach the shell ONLY via env vars (quoted) — never inline
+        # ${{ }} interpolation in run: — so quotes/backticks in a property
+        # name cannot inject commands.
+        env:
+          IN_CLIENT: ${{ inputs.clientName }}
+          IN_PROPERTY: ${{ inputs.propertyName }}
+          IN_LOCATION: ${{ inputs.location }}
+          IN_BRAND: ${{ inputs.brand }}
+          IN_WEBSITE: ${{ inputs.website }}
+        run: |
+          set -euo pipefail
+          args=(new-property --yes
+            --client-name "$IN_CLIENT"
+            --property "$IN_PROPERTY"
+            --location "$IN_LOCATION"
+            --root "$GITHUB_WORKSPACE/data-repo/data/clients"
+            --registry config/source-registry.json)
+          [ -n "$IN_BRAND" ] && args+=(--brand "$IN_BRAND")
+          [ -n "$IN_WEBSITE" ] && args+=(--website "$IN_WEBSITE")
+          npm run dev -- "${args[@]}"
+
+      - name: Commit (attributed) and push
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          git add data/clients
+          if git diff --cached --quiet; then
+            echo "::error::Scaffold produced no changes — likely a duplicate slug. Nothing committed."
+            exit 1
+          fi
+          slug=$(git diff --cached --name-only | head -1 | sed -E 's|^data/clients/([^/]+)/.*|\1|')
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "scaffold: ${slug} — requested by ${{ inputs.actorEmail }}"
+          git push
+          echo "### Scaffolded \`${slug}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "Requested by: ${{ inputs.actorEmail }}" >> "$GITHUB_STEP_SUMMARY"
