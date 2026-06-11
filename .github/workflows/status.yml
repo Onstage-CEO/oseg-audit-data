@@ -1,0 +1,134 @@
+# status.yml (Phase 2B.0, issue oseg-resort-audit#136)
+#
+# Computes verify status per workspace with the REAL engine and commits it as
+# data/clients/<slug>/verify-report.json — so the hosted UI shows READY /
+# READY_WITH_WARNINGS / NOT_READY by reading a file, never by running engine
+# code in the browser or Worker.
+#
+# Loop safety (two independent layers):
+#   1. The push trigger excludes verify-report.json paths, so this workflow's
+#      own commits cannot match the filter.
+#   2. GitHub never starts workflows from pushes made with GITHUB_TOKEN anyway.
+# scaffold.yml pushes WITH GITHUB_TOKEN (so its push can't trigger us) and
+# therefore invokes this workflow explicitly via workflow_call.
+
+name: status
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/clients/**'
+      - '!data/clients/**/verify-report.json'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Workspace slug (empty = refresh all)'
+        required: false
+        type: string
+        default: ''
+  workflow_call:
+    inputs:
+      slug:
+        required: false
+        type: string
+        default: ''
+
+concurrency:
+  group: status
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 203bbc89355c96221ac63850faf24c92b6569817
+
+permissions:
+  contents: write
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+
+      - name: Checkout engine (pinned, read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: 203bbc89355c96221ac63850faf24c92b6569817
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Determine target workspaces
+        id: targets
+        working-directory: data-repo
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+          EV_BEFORE: ${{ github.event.before }}
+          EV_AFTER: ${{ github.sha }}
+          EV_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          slugs=""
+          if [ -n "$IN_SLUG" ]; then
+            slugs="$IN_SLUG"
+          elif [ "$EV_NAME" = "push" ] && [ -n "$EV_BEFORE" ] && ! echo "$EV_BEFORE" | grep -q '^0*$' && git cat-file -e "$EV_BEFORE" 2>/dev/null; then
+            slugs=$(git diff --name-only "$EV_BEFORE" "$EV_AFTER" -- 'data/clients/' \
+              | grep -v '/verify-report\.json$' \
+              | sed -nE 's|^data/clients/([^/]+)/.*|\1|p' | sort -u | tr '\n' ' ')
+          fi
+          if [ -z "${slugs// /}" ]; then
+            slugs=$(find data/clients -mindepth 1 -maxdepth 1 -type d -exec basename {} \; \
+              | grep -v '^_' | sort | tr '\n' ' ')
+          fi
+          echo "slugs=$slugs" >> "$GITHUB_OUTPUT"
+          echo "Targets: $slugs"
+
+      - name: Run verify per workspace
+        working-directory: engine
+        env:
+          SLUGS: ${{ steps.targets.outputs.slugs }}
+        run: |
+          set -euo pipefail
+          for slug in $SLUGS; do
+            ws="$GITHUB_WORKSPACE/data-repo/data/clients/$slug"
+            [ -f "$ws/audit.json" ] || { echo "skip $slug (no audit.json)"; continue; }
+            args=(verify "$ws/audit.json" --json --summary)
+            [ -f "$ws/captures.json" ] && args+=(--capture-archive "$ws/captures.json")
+            # NOT_READY exits 1 by design — status is data here, not an error.
+            npm run dev --silent -- "${args[@]}" > "$ws/verify-report.json" || true
+            node -e "const r=require('$ws/verify-report.json'); console.log('$slug →', r.status ?? r.overall)"
+          done
+
+      - name: Commit reports (only when changed)
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          git add data/clients/*/verify-report.json
+          if git diff --cached --quiet; then
+            echo "Reports unchanged — nothing to commit."
+            exit 0
+          fi
+          slugs=$(git diff --cached --name-only | sed -nE 's|^data/clients/([^/]+)/.*|\1|p' | sort -u | tr '\n' ' ')
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "status: ${slugs}— verify reports refreshed"
+          # Another run may have pushed meanwhile (scaffold group is separate):
+          # rebase-retry rather than fail or force.
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          git push

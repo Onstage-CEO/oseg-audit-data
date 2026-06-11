@@ -53,6 +53,8 @@ permissions:
 jobs:
   scaffold:
     runs-on: ubuntu-latest
+    outputs:
+      slug: ${{ steps.commit.outputs.slug }}
     steps:
       - name: Validate actor email
         run: |
@@ -108,6 +110,7 @@ jobs:
           npm run dev -- "${args[@]}"
 
       - name: Commit (attributed) and push
+        id: commit
         working-directory: data-repo
         run: |
           set -euo pipefail
@@ -121,5 +124,17 @@ jobs:
           git config user.email "actions@onstage.biz"
           git commit -m "scaffold: ${slug} — requested by ${{ inputs.actorEmail }}"
           git push
+          echo "slug=${slug}" >> "$GITHUB_OUTPUT"
           echo "### Scaffolded \`${slug}\`" >> "$GITHUB_STEP_SUMMARY"
           echo "Requested by: ${{ inputs.actorEmail }}" >> "$GITHUB_STEP_SUMMARY"
+
+  # GITHUB_TOKEN pushes never fire the push trigger, so a fresh workspace
+  # would sit without a verify-report.json — call status explicitly instead.
+  status:
+    needs: scaffold
+    uses: ./.github/workflows/status.yml
+    with:
+      slug: ${{ needs.scaffold.outputs.slug }}
+    secrets: inherit
+    permissions:
+      contents: write
