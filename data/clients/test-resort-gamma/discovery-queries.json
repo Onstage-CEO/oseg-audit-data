@@ -1,0 +1,141 @@
+{
+  "target": {
+    "propertyName": "Test Resort Gamma",
+    "location": "Sedona, Arizona"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Test Resort Gamma Sedona, Arizona reviews",
+        "Test Resort Gamma entertainment reviews",
+        "Test Resort Gamma nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Test Resort Gamma Hotel_Review",
+        "Test Resort Gamma Sedona, Arizona TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Test Resort Gamma",
+        "Test Resort Gamma Sedona, Arizona booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Test Resort Gamma",
+        "Test Resort Gamma Sedona, Arizona Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Test Resort Gamma"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "site:reddit.com Test Resort Gamma review",
+        "site:reddit.com Test Resort Gamma nightlife",
+        "site:reddit.com Test Resort Gamma Sedona, Arizona"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Test Resort Gamma walkthrough",
+        "Test Resort Gamma resort tour",
+        "Test Resort Gamma review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Test Resort Gamma\" review blog",
+        "\"Test Resort Gamma\" honest review",
+        "Test Resort Gamma Sedona, Arizona travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Test Resort Gamma official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Test Resort Gamma instagram",
+        "Test Resort Gamma tiktok",
+        "site:instagram.com Test Resort Gamma"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Test Resort Gamma Sedona, Arizona satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "Test Resort Gamma reviews",
+    "Test Resort Gamma entertainment reviews",
+    "Test Resort Gamma nightlife",
+    "site:reddit.com Test Resort Gamma",
+    "Test Resort Gamma YouTube review",
+    "Test Resort Gamma travel blog review",
+    "Test Resort Gamma family review",
+    "Test Resort Gamma couples review",
+    "Test Resort Gamma business traveler review",
+    "Test Resort Gamma rooftop review",
+    "Test Resort Gamma bar review",
+    "Test Resort Gamma dining review"
+  ]
+}
