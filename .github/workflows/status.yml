@@ -33,13 +33,17 @@ on:
         type: string
         default: ''
 
+# Per-slug so a verify refresh for one workspace never queues behind another's
+# (the work is per-slug anyway). An all-workspaces refresh (empty slug) gets its
+# own 'status-' group. Prevents a burst of captures/scaffolds from backing up
+# everyone's verify refresh on a single global lock.
 concurrency:
-  group: status
+  group: status-${{ inputs.slug }}
   cancel-in-progress: false
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 203bbc89355c96221ac63850faf24c92b6569817
+  ENGINE_REF: 2d7a2fbfe12d436b3e0e65ec180bacb298ce49cd
 
 permissions:
   contents: write
@@ -62,7 +66,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: 203bbc89355c96221ac63850faf24c92b6569817
+          ref: 2d7a2fbfe12d436b3e0e65ec180bacb298ce49cd
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 

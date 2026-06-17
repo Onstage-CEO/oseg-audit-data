@@ -32,7 +32,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 203bbc89355c96221ac63850faf24c92b6569817
+  ENGINE_REF: 2d7a2fbfe12d436b3e0e65ec180bacb298ce49cd
 
 permissions:
   contents: write
@@ -75,7 +75,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: 203bbc89355c96221ac63850faf24c92b6569817
+          ref: 2d7a2fbfe12d436b3e0e65ec180bacb298ce49cd
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -137,6 +137,10 @@ jobs:
             if [ "$n" = "0" ]; then echo "drained after collect (attempt $i)"; break; fi
             if [ "$i" -lt "$MAX_ATTEMPTS" ]; then sleep "$SLEEP_SECONDS"; fi
           done
+          # Honest signal: tasks left after the ceiling stay pending for a later
+          # run — the job still succeeds (DataForSEO can outlast the window).
+          left=$(pending_count)
+          echo "collect finished — $left DataForSEO task(s) still pending" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit (attributed) and push
         working-directory: data-repo
@@ -158,8 +162,15 @@ jobs:
           git config user.name "oseg-audit-bot"
           git config user.email "actions@onstage.biz"
           git commit -m "capture: $IN_SLUG — requested by $ACTOR"
-          # Rebase-retry on a racing push (status.yml / a parallel slug), like status.yml.
-          for k in 1 2 3; do git push && break; git pull --rebase --autostash; done
+          # Rebase-retry on a racing push (status.yml / a parallel slug), like
+          # status.yml — but FAIL LOUDLY if every attempt loses the race (never
+          # report success with nothing pushed).
+          pushed=0
+          for k in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            git pull --rebase --autostash
+          done
+          [ "$pushed" = "1" ] || { echo "::error::push failed after 3 attempts"; exit 1; }
           echo "### Captured \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
           echo "Requested by: $ACTOR" >> "$GITHUB_STEP_SUMMARY"
 
