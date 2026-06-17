@@ -149,10 +149,12 @@ jobs:
           ACTOR: ${{ inputs.actorEmail }}
         run: |
           set -euo pipefail
-          git add "data/clients/$IN_SLUG/captures.json" \
-                  "data/clients/$IN_SLUG/capture-run-status.json" \
-                  "data/clients/$IN_SLUG/capture-pending.json" \
-                  "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true
+          # Stage the whole workspace dir — a per-file list aborts the entire
+          # `git add` (fatal pathspec, exit 128) the moment one expected file is
+          # absent (e.g. captures.json when nothing was captured), which silently
+          # left capture-run-status.json + real captures uncommitted. Only the new
+          # capture artifacts change here; the rest of the workspace is unchanged.
+          git add "data/clients/$IN_SLUG"
           if git diff --cached --quiet; then
             echo "Capture produced no changes (no creds / no new provenance) — nothing committed."
             echo "### Capture \`$IN_SLUG\`: no new provenance" >> "$GITHUB_STEP_SUMMARY"
