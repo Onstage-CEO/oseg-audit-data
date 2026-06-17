@@ -1,0 +1,164 @@
+# Collect drain (self-healing) — oseg-audit-console#1 follow-up
+#
+# DataForSEO reviews are async. The per-request capture.yml polls capture-collect
+# for ~5 min then leaves any still-pending tasks in capture-pending.json. This
+# scheduled job sweeps EVERY workspace and drains whatever is still pending, so an
+# async task that outlived the capture window is never orphaned — the pipeline
+# self-heals with no human re-run.
+#
+# Safe + idempotent: capture-collect dedupes by (platform, taskId); a workspace
+# with no pending tasks (or no creds) is a fast no-op. Provenance only.
+#
+# Concurrency note: a global drain can overlap a per-slug capture.yml run. They
+# share data/clients, so a same-slug overlap makes the drain's push lose the race;
+# the rebase then hits a captures.json conflict and the job FAILS LOUD (exit 1) —
+# never a silent half-merge — and the next 2-hourly sweep retries cleanly. Cross-
+# slug overlaps don't conflict (different files). Acceptable for a background heal.
+#
+# Engine pinned to the same SHA as capture.yml (bump all together).
+
+name: collect-drain
+on:
+  schedule:
+    # Every 2 hours. Tasks normally finish in minutes (capture.yml already polls
+    # ~5 min), so this only catches the rare long-runner. Empty ticks short-
+    # circuit before the engine install (see the pre-check step) to stay cheap.
+    - cron: '0 */2 * * *'
+  workflow_dispatch: {}
+
+# One drain at a time repo-wide (it touches many workspaces + pushes once).
+concurrency:
+  group: collect-drain
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 2d7a2fbfe12d436b3e0e65ec180bacb298ce49cd
+
+permissions:
+  contents: write
+
+jobs:
+  drain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+
+      - name: Pre-check for pending tasks (cheap; skips engine setup on empty ticks)
+        id: precheck
+        env:
+          CLIENTS_DIR: ${{ github.workspace }}/data-repo/data/clients
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          has=false
+          if [ -d "$CLIENTS_DIR" ]; then
+            for ws in "$CLIENTS_DIR"/*/; do
+              base=$(basename "$ws")
+              case "$base" in _*) continue ;; esac   # skip _templates/_archive like status.yml
+              [ -f "$ws/audit.json" ] || continue
+              n=$(node -e 'const fs=require("fs");const f=process.argv[1]+"/capture-pending.json";let n=0;try{n=(JSON.parse(fs.readFileSync(f,"utf8")).tasks||[]).length}catch(e){}process.stdout.write(String(n))' "$ws")
+              if [ "$n" != "0" ]; then has=true; break; fi
+            done
+          fi
+          echo "has_pending=$has" >> "$GITHUB_OUTPUT"
+          echo "pending work present: $has"
+
+      - name: Checkout engine (pinned, read-only deploy key)
+        if: steps.precheck.outputs.has_pending == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: 2d7a2fbfe12d436b3e0e65ec180bacb298ce49cd
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        if: steps.precheck.outputs.has_pending == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        if: steps.precheck.outputs.has_pending == 'true'
+        working-directory: engine
+        run: npm ci
+
+      - name: Drain pending tasks across all workspaces
+        if: steps.precheck.outputs.has_pending == 'true'
+        working-directory: engine
+        # Collect only needs DataForSEO creds (the async source). Absent creds →
+        # capture-collect reports needs_key and the sweep is a clean no-op.
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          CLIENTS_DIR: ${{ github.workspace }}/data-repo/data/clients
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          pending_count() {
+            node -e 'const fs=require("fs");const f=process.argv[1]+"/capture-pending.json";let n=0;try{n=(JSON.parse(fs.readFileSync(f,"utf8")).tasks||[]).length}catch(e){}process.stdout.write(String(n))' "$1"
+          }
+          swept=0; errored=0; still_pending=0
+          for ws in "$CLIENTS_DIR"/*/; do
+            base=$(basename "$ws")
+            case "$base" in _*) continue ;; esac
+            [ -f "$ws/audit.json" ] || continue
+            [ "$(pending_count "$ws")" = "0" ] && continue
+            echo "draining $base"
+            npm run dev --silent -- capture-collect "$ws" --json > /tmp/drain.json || true
+            swept=$((swept + 1))
+            st=$(node -e 'const fs=require("fs");let s="error";try{s=JSON.parse(fs.readFileSync("/tmp/drain.json","utf8")).status||"error"}catch(e){}process.stdout.write(s)')
+            case "$st" in ok|no_pending) : ;; *) errored=$((errored + 1)); echo "::warning::collect for $base returned status: $st" ;; esac
+            left=$(pending_count "$ws")
+            [ "$left" != "0" ] && { still_pending=$((still_pending + 1)); echo "::warning::$base still has $left pending task(s) after drain"; }
+          done
+          echo "swept=$swept errored=$errored still_pending=$still_pending"
+          # Loud signal: a sweep that finds work but collects nothing usable is a
+          # likely creds/config problem the operator must see (not a silent no-op).
+          if [ "$swept" -gt 0 ] && [ "$errored" = "$swept" ]; then
+            echo "::error::collect-drain swept $swept workspace(s) but ALL errored — check DATAFORSEO_LOGIN/PASSWORD"
+            exit 1
+          fi
+
+      - name: Commit (attributed) and push
+        id: commit
+        if: steps.precheck.outputs.has_pending == 'true'
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          git add data/clients
+          if git diff --cached --quiet; then
+            echo "No newly-collected provenance this sweep."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "collect-drain: swept pending DataForSEO tasks"
+          pushed=0
+          for k in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            git pull --rebase --autostash
+          done
+          [ "$pushed" = "1" ] || { echo "::error::push failed after 3 attempts"; exit 1; }
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "### Collect-drain committed newly-collected provenance" >> "$GITHUB_STEP_SUMMARY"
+
+  # Refresh verify for all workspaces only when the sweep actually collected
+  # something (avoids a full re-verify on every empty 2-hourly tick).
+  status:
+    needs: drain
+    if: needs.drain.outputs.changed == 'true'
+    uses: ./.github/workflows/status.yml
+    with:
+      slug: ''
+    secrets: inherit
+    permissions:
+      contents: write
