@@ -1,0 +1,141 @@
+{
+  "target": {
+    "propertyName": "Fairmont Scottsdale Princess",
+    "location": "Scottsdale, Arizona"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Fairmont Scottsdale Princess Scottsdale, Arizona reviews",
+        "Fairmont Scottsdale Princess entertainment reviews",
+        "Fairmont Scottsdale Princess nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Fairmont Scottsdale Princess Hotel_Review",
+        "Fairmont Scottsdale Princess Scottsdale, Arizona TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Fairmont Scottsdale Princess",
+        "Fairmont Scottsdale Princess Scottsdale, Arizona booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Fairmont Scottsdale Princess",
+        "Fairmont Scottsdale Princess Scottsdale, Arizona Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Fairmont Scottsdale Princess"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "site:reddit.com Fairmont Scottsdale Princess review",
+        "site:reddit.com Fairmont Scottsdale Princess nightlife",
+        "site:reddit.com Fairmont Scottsdale Princess Scottsdale, Arizona"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Fairmont Scottsdale Princess walkthrough",
+        "Fairmont Scottsdale Princess resort tour",
+        "Fairmont Scottsdale Princess review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Fairmont Scottsdale Princess\" review blog",
+        "\"Fairmont Scottsdale Princess\" honest review",
+        "Fairmont Scottsdale Princess Scottsdale, Arizona travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Fairmont Scottsdale Princess official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Fairmont Scottsdale Princess instagram",
+        "Fairmont Scottsdale Princess tiktok",
+        "site:instagram.com Fairmont Scottsdale Princess"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Fairmont Scottsdale Princess Scottsdale, Arizona satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "Fairmont Scottsdale Princess reviews",
+    "Fairmont Scottsdale Princess entertainment reviews",
+    "Fairmont Scottsdale Princess nightlife",
+    "site:reddit.com Fairmont Scottsdale Princess",
+    "Fairmont Scottsdale Princess YouTube review",
+    "Fairmont Scottsdale Princess travel blog review",
+    "Fairmont Scottsdale Princess family review",
+    "Fairmont Scottsdale Princess couples review",
+    "Fairmont Scottsdale Princess business traveler review",
+    "Fairmont Scottsdale Princess rooftop review",
+    "Fairmont Scottsdale Princess bar review",
+    "Fairmont Scottsdale Princess dining review"
+  ]
+}

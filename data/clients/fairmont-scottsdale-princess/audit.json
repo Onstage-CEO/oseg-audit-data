@@ -1,0 +1,25 @@
+{
+  "client": {
+    "name": "OSEG Verification",
+    "propertyName": "Fairmont Scottsdale Princess",
+    "location": "Scottsdale, Arizona",
+    "audience": "Management",
+    "presentedBy": [],
+    "version": "V0.1 — Working Draft",
+    "status": "draft"
+  },
+  "oneLineThesis": "",
+  "coreFinding": "",
+  "platforms": [],
+  "skippedSources": [],
+  "evidence": [],
+  "venues": [],
+  "segments": [],
+  "hypotheses": [],
+  "recommendations": [],
+  "namedTalent": [],
+  "firewall": {
+    "forbiddenTerms": [],
+    "calibratedPhrasings": []
+  }
+}
