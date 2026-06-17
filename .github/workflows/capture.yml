@@ -1,0 +1,175 @@
+# Deep Capture (hosted) — oseg-audit-console#1
+#
+# Dispatched by the audit-console-api Worker on behalf of an Access-
+# authenticated user. Runs the engine's capture-round → capture-collect for one
+# workspace server-side and commits the provenance in ONE attributed commit —
+# same black-box-recorder contract as scaffold.yml.
+#
+# Provenance ONLY (captureMethod:'auto') — never evidence, never Tier-A output.
+# Honest no-op when capture secrets are absent: the engine reports needs_key,
+# the round still succeeds, and nothing is committed.
+#
+# Engine is pinned to a known-good SHA (bump deliberately, never 'main').
+
+name: capture
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Workspace slug to capture'
+        required: true
+        type: string
+      actorEmail:
+        description: 'Access-verified email of the requesting user'
+        required: true
+        type: string
+
+# Per-slug serialization: two different resorts can capture in parallel, but the
+# same slug can never race its own captures.json / commit.
+concurrency:
+  group: capture-${{ inputs.slug }}
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 203bbc89355c96221ac63850faf24c92b6569817
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Validate actor email
+        run: |
+          set -euo pipefail
+          case "${{ inputs.actorEmail }}" in
+            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
+            *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+
+      - name: Resolve workspace dir from slug
+        id: resolve
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          # Defense-in-depth: the Worker already validated, but never trust input.
+          if ! printf '%s' "$IN_SLUG" | grep -Eq '^[a-z0-9][a-z0-9-]{0,99}$'; then
+            echo "::error::invalid slug"; exit 1
+          fi
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$IN_SLUG"
+          if [ ! -f "$ws/audit.json" ]; then
+            echo "::error::workspace not found: $IN_SLUG"; exit 1
+          fi
+          echo "ws=$ws" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout engine (pinned, read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: 203bbc89355c96221ac63850faf24c92b6569817
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Capture round (submit)
+        working-directory: engine
+        # Secrets reach the engine ONLY via env (never inline ${{ }} in run:).
+        # Absent secrets → the engine reports needs_key per source and the round
+        # is still 'ok' (honest no-op) — we only fail on real setup errors.
+        env:
+          OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- capture-round "$WS" --json > /tmp/round.json || true
+          status=$(node -e 'const fs=require("fs");let s="error";try{s=JSON.parse(fs.readFileSync("/tmp/round.json","utf8")).status||"error"}catch(e){}process.stdout.write(s)')
+          echo "capture-round status: $status"
+          case "$status" in
+            ok) : ;;
+            *) echo "::error::capture-round failed (status: $status) — workspace/engine problem, not a missing key"; exit 1 ;;
+          esac
+
+      - name: Collect async results (bounded poll)
+        working-directory: engine
+        env:
+          OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          WS: ${{ steps.resolve.outputs.ws }}
+        # DataForSEO reviews are async (task_post → task_get, minutes). Poll
+        # capture-collect until capture-pending.json is drained or the ceiling is
+        # hit; remaining tasks stay pending for a later run (job never hangs —
+        # bounded by MAX_ATTEMPTS*SLEEP and the job timeout-minutes backstop).
+        run: |
+          set -euo pipefail
+          pending_count() {
+            node -e 'const fs=require("fs");const f=process.env.WS+"/capture-pending.json";let n=0;try{n=(JSON.parse(fs.readFileSync(f,"utf8")).tasks||[]).length}catch(e){}process.stdout.write(String(n))'
+          }
+          MAX_ATTEMPTS=10
+          SLEEP_SECONDS=30
+          for i in $(seq 1 "$MAX_ATTEMPTS"); do
+            n=$(pending_count)
+            if [ "$n" = "0" ]; then echo "no pending tasks (attempt $i) — drained"; break; fi
+            echo "attempt $i/$MAX_ATTEMPTS: $n task(s) pending — collecting"
+            npm run dev --silent -- capture-collect "$WS" --json > /tmp/collect.json || true
+            n=$(pending_count)
+            if [ "$n" = "0" ]; then echo "drained after collect (attempt $i)"; break; fi
+            if [ "$i" -lt "$MAX_ATTEMPTS" ]; then sleep "$SLEEP_SECONDS"; fi
+          done
+
+      - name: Commit (attributed) and push
+        working-directory: data-repo
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+          ACTOR: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          git add "data/clients/$IN_SLUG/captures.json" \
+                  "data/clients/$IN_SLUG/capture-run-status.json" \
+                  "data/clients/$IN_SLUG/capture-pending.json" \
+                  "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Capture produced no changes (no creds / no new provenance) — nothing committed."
+            echo "### Capture \`$IN_SLUG\`: no new provenance" >> "$GITHUB_STEP_SUMMARY"
+            echo "Set DATAFORSEO_LOGIN/PASSWORD + YOUTUBE_API_KEY + OSEG_CAPTURE_YOUTUBE on this repo to enable live capture." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "capture: $IN_SLUG — requested by $ACTOR"
+          # Rebase-retry on a racing push (status.yml / a parallel slug), like status.yml.
+          for k in 1 2 3; do git push && break; git pull --rebase --autostash; done
+          echo "### Captured \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "Requested by: $ACTOR" >> "$GITHUB_STEP_SUMMARY"
+
+  # GITHUB_TOKEN pushes don't fire the push trigger, so refresh verify explicitly
+  # (mirrors scaffold.yml) — captured provenance then shows in the UI's checks.
+  status:
+    needs: capture
+    uses: ./.github/workflows/status.yml
+    with:
+      slug: ${{ inputs.slug }}
+    secrets: inherit
+    permissions:
+      contents: write
