@@ -32,7 +32,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 9bf50a9b08cf21d6a7423aeb0b8ef679679e51ce
+  ENGINE_REF: e546d809810f11dda684b7156fb5e027fa4987fa
 
 permissions:
   contents: write
@@ -75,7 +75,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: 9bf50a9b08cf21d6a7423aeb0b8ef679679e51ce
+          ref: e546d809810f11dda684b7156fb5e027fa4987fa
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -98,6 +98,10 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          # Reddit official-API creds (app-only OAuth). Absent → the engine
+          # reports needs_key for reddit and the round is still ok (honest no-op).
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           # Reviews per platform (max-out depth). Tunable via a repo VARIABLE
           # (Settings → Secrets and variables → Actions → Variables) without a
           # code change; defaults to 500. Higher = more DataForSEO cost per run.
