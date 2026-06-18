@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-17T23:56:01.036Z",
+  "generatedAt": "2026-06-18T00:06:53.062Z",
   "property": {
     "propertyName": "Fairmont Scottsdale Princess",
     "location": "Scottsdale, Arizona"
@@ -76,9 +76,9 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 18 new, skipped 0 duplicate(s); 18 total in archive.",
-      "recordsAdded": 18,
-      "duplicatesSkipped": 0,
+      "message": "captured 1 new, skipped 17 duplicate(s); 19 total in archive.",
+      "recordsAdded": 1,
+      "duplicatesSkipped": 17,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [
