@@ -2,7 +2,7 @@
 
 > ⚠ **TIER B — INTERNAL, FULL DISCLOSURE. Never send to a client.** A client-facing teaser/deck is a separate, gated step.
 
-**Corpus:** 200 captured reviews (100 google + 100 tripadvisor) · generated 2026-06-18
+**Corpus:** 200 captured reviews (100 google + 100 tripadvisor) · generated 2026-06-18T00:37:18Z
 **Overall rating:** 4.01 / 5 · **19%** are ≤2★ (polarization signal)
 
 ## What guests talk about
@@ -17,6 +17,7 @@
 | Entertainment / atmosphere | 34 | 17% |
 
 ## Entertainment signal — by OSEG scope
+_Scope decided by the deterministic keyword classifier (heuristic — coarser than the LLM layer; set ANTHROPIC_API_KEY to enable semantic precision)._
 Of 34 entertainment-mention reviews: **16 in OSEG scope** (resort-operated venues), 12 excluded (private/event-space noise — not OSEG-addressable), 6 ambiguous (flagged for human review).
 In-scope avg rating: **4.38 / 5**.
 
