@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-18T00:19:46.520Z",
+  "generatedAt": "2026-06-18T00:35:10.078Z",
   "property": {
     "propertyName": "Fairmont Scottsdale Princess",
     "location": "Scottsdale, Arizona"
@@ -9,22 +9,22 @@
     {
       "platformId": "google",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "google: task not created (status 40501: Invalid Field: 'location_name'.)",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 1 in queue",
       "recordsAdded": 0,
       "duplicatesSkipped": 0,
-      "queriesRun": 3,
+      "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": []
     },
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "tripadvisor: task not created (status 40501: Invalid Field: 'location_name'.)",
-      "recordsAdded": 0,
+      "status": "ok",
+      "message": "collected 100 review(s)",
+      "recordsAdded": 100,
       "duplicatesSkipped": 0,
-      "queriesRun": 2,
+      "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": []
     },
@@ -76,9 +76,9 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 0 new, skipped 18 duplicate(s); 21 total in archive.",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 18,
+      "message": "captured 1 new, skipped 17 duplicate(s); 22 total in archive.",
+      "recordsAdded": 1,
+      "duplicatesSkipped": 17,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [

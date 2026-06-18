@@ -1,0 +1,12 @@
+{
+  "reportVersion": "V1",
+  "tasks": [
+    {
+      "platformId": "google",
+      "vendor": "dataforseo",
+      "taskId": "06180330-1943-0298-0000-72c8f58c8a48",
+      "submittedAt": "2026-06-18T00:30:18.894Z",
+      "note": "oseg:google:Fairmont Scottsdale Princess"
+    }
+  ]
+}
