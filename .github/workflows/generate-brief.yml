@@ -56,6 +56,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: data-repo
+          # Full history so we can read captures-raw/'s last-commit time for a
+          # deterministic "generated" stamp (see the Generate brief step).
+          fetch-depth: 0
 
       - name: Resolve workspace dir from slug
         id: resolve
@@ -76,8 +79,8 @@ jobs:
       - name: Checkout engine (pinned, read-only deploy key)
         uses: actions/checkout@v4
         with:
-          repository: Onstage-CEO/oseg-resort-audit
-          ref: 4b02e74239e68be15a9b1dd8a4447570aebd289a
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -99,9 +102,31 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           WS: ${{ steps.resolve.outputs.ws }}
+          DATA_REPO: ${{ github.workspace }}/data-repo
+          IN_SLUG: ${{ inputs.slug }}
         run: |
           set -euo pipefail
-          npm run dev --silent -- generate-brief "$WS"
+          # Deterministic "generated" stamp = the last commit time of THIS
+          # workspace's captures-raw/ (changes only when new reviews land, NOT
+          # when a prior brief commit touched audit-brief.md). This makes a
+          # re-run over an unchanged corpus produce a BYTE-IDENTICAL brief in
+          # keyword mode, so the no-change→no-commit guard below actually engages
+          # (otherwise a wall-clock default churns a commit — plus a status
+          # commit — on every click). With the LLM layer on, the model's own
+          # output may legitimately vary run-to-run, so a re-run can still commit
+          # — that's real re-analysis, not timestamp churn. Empty (corpus never
+          # committed) → let the engine wall-clock it.
+          NOW=$(git -C "$DATA_REPO" log -1 --format=%cI -- "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true)
+          run_brief() { npm run dev --silent -- generate-brief "$WS" "$@"; }
+          if [ -n "$NOW" ]; then
+            run_brief --now "$NOW" 2>/tmp/brief.err || { cat /tmp/brief.err >&2; exit 1; }
+          else
+            run_brief 2>/tmp/brief.err || { cat /tmp/brief.err >&2; exit 1; }
+          fi
+          cat /tmp/brief.err >&2
+          # Surface review count + which classifier ran (keyword vs llm vs mixed)
+          # so a degraded (no-key) or empty brief is visible in the run summary.
+          grep -E 'reviews ·' /tmp/brief.err | tail -1 | sed 's/^\[generate-brief\] /brief: /' >> "$GITHUB_STEP_SUMMARY" || true
 
       - name: Commit (attributed) and push
         working-directory: data-repo
