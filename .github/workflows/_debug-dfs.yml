@@ -1,0 +1,20 @@
+name: _debug-dfs
+on: workflow_dispatch
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    env:
+      DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+      DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+    steps:
+      - name: DataForSEO auth probe (no secret values printed)
+        run: |
+          node -e '
+            const login=(process.env.DATAFORSEO_LOGIN||"").trim();
+            const pass=(process.env.DATAFORSEO_PASSWORD||"").trim();
+            console.log("loginLen(trim)="+login.length+" passLen(trim)="+pass.length+" loginHasAt="+login.includes("@"));
+            const auth="Basic "+Buffer.from(login+":"+pass).toString("base64");
+            fetch("https://api.dataforseo.com/v3/appendix/user_data",{headers:{authorization:auth}})
+              .then(async r=>{const b=await r.json().catch(()=>({})); console.log("HTTP",r.status,"| status_code",b.status_code,"| status_message",JSON.stringify(b.status_message));})
+              .catch(e=>console.log("fetch error",e.message));
+          '
