@@ -1,0 +1,143 @@
+{
+  "target": {
+    "propertyName": "Caesar's Republic",
+    "location": "Scottsdale, AZ",
+    "website": "https://www.caesarsrepublicscottsdale.com/"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Caesar's Republic Scottsdale, AZ reviews",
+        "Caesar's Republic entertainment reviews",
+        "Caesar's Republic nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Caesar's Republic Hotel_Review",
+        "Caesar's Republic Scottsdale, AZ TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Caesar's Republic",
+        "Caesar's Republic Scottsdale, AZ booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Caesar's Republic",
+        "Caesar's Republic Scottsdale, AZ Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Caesar's Republic"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "site:reddit.com Caesar's Republic review",
+        "site:reddit.com Caesar's Republic nightlife",
+        "site:reddit.com Caesar's Republic Scottsdale, AZ"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Caesar's Republic walkthrough",
+        "Caesar's Republic resort tour",
+        "Caesar's Republic review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Caesar's Republic\" review blog",
+        "\"Caesar's Republic\" honest review",
+        "Caesar's Republic Scottsdale, AZ travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "https://www.caesarsrepublicscottsdale.com/",
+        "Caesar's Republic official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Caesar's Republic instagram",
+        "Caesar's Republic tiktok",
+        "site:instagram.com Caesar's Republic"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Caesar's Republic Scottsdale, AZ satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "Caesar's Republic reviews",
+    "Caesar's Republic entertainment reviews",
+    "Caesar's Republic nightlife",
+    "site:reddit.com Caesar's Republic",
+    "Caesar's Republic YouTube review",
+    "Caesar's Republic travel blog review",
+    "Caesar's Republic family review",
+    "Caesar's Republic couples review",
+    "Caesar's Republic business traveler review",
+    "Caesar's Republic rooftop review",
+    "Caesar's Republic bar review",
+    "Caesar's Republic dining review"
+  ]
+}
