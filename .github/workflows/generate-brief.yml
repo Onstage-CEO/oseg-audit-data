@@ -1,0 +1,143 @@
+# Generate Audit Brief (hosted) — oseg-audit-console#2
+#
+# Dispatched by the audit-console-api Worker on behalf of an Access-authenticated
+# user. Runs the engine's generate-brief for one workspace server-side over its
+# already-captured review corpus and commits the INTERNAL (Tier-B) audit-brief.md
+# in ONE attributed commit — same black-box-recorder contract as capture.yml.
+#
+# Tier-B, full-disclosure INTERNAL artifact — NEVER a client-facing deliverable.
+# When ANTHROPIC_API_KEY is set, the engine's LLM precision layer classifies the
+# entertainment signal semantically and validates every lead against a verbatim
+# quote; without it, the deterministic keyword classifier is used (honest no-op
+# on cost). Either way nothing is fabricated.
+#
+# Engine is pinned to a known-good SHA (bump deliberately, never 'main').
+
+name: generate-brief
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Workspace slug to build a brief for'
+        required: true
+        type: string
+      actorEmail:
+        description: 'Access-verified email of the requesting user'
+        required: true
+        type: string
+
+# Per-slug serialization: two different resorts can build in parallel, but the
+# same slug can never race its own audit-brief.md / commit.
+concurrency:
+  group: brief-${{ inputs.slug }}
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 4b02e74239e68be15a9b1dd8a4447570aebd289a
+
+permissions:
+  contents: write
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Validate actor email
+        run: |
+          set -euo pipefail
+          case "${{ inputs.actorEmail }}" in
+            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
+            *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+
+      - name: Resolve workspace dir from slug
+        id: resolve
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          # Defense-in-depth: the Worker already validated, but never trust input.
+          if ! printf '%s' "$IN_SLUG" | grep -Eq '^[a-z0-9][a-z0-9-]{0,99}$'; then
+            echo "::error::invalid slug"; exit 1
+          fi
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$IN_SLUG"
+          if [ ! -f "$ws/audit.json" ]; then
+            echo "::error::workspace not found: $IN_SLUG"; exit 1
+          fi
+          echo "ws=$ws" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout engine (pinned, read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: 4b02e74239e68be15a9b1dd8a4447570aebd289a
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Generate brief
+        working-directory: engine
+        # Secrets reach the engine ONLY via env (never inline ${{ }} in run:).
+        # ANTHROPIC_API_KEY is OPTIONAL — absent → keyword classifier (honest
+        # no-op on cost), present → LLM precision layer. The command fails only
+        # on a real error (missing workspace, etc.), not on a missing key.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- generate-brief "$WS"
+
+      - name: Commit (attributed) and push
+        working-directory: data-repo
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+          ACTOR: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          # Only audit-brief.md changes here; stage the workspace dir (a per-file
+          # add aborts the whole `git add` if a path is missing — capture.yml bug).
+          git add "data/clients/$IN_SLUG"
+          if git diff --cached --quiet; then
+            echo "Brief produced no changes (corpus unchanged) — nothing committed."
+            echo "### Brief \`$IN_SLUG\`: no change" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "brief: $IN_SLUG — requested by $ACTOR"
+          # Rebase-retry on a racing push; FAIL LOUDLY if every attempt loses.
+          pushed=0
+          for k in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            git pull --rebase --autostash
+          done
+          [ "$pushed" = "1" ] || { echo "::error::push failed after 3 attempts"; exit 1; }
+          echo "### Built brief for \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "Requested by: $ACTOR" >> "$GITHUB_STEP_SUMMARY"
+
+  # GITHUB_TOKEN pushes don't fire the push trigger, so refresh verify explicitly
+  # (mirrors capture.yml) — the new audit-brief.md then shows in the UI's files.
+  status:
+    needs: brief
+    uses: ./.github/workflows/status.yml
+    with:
+      slug: ${{ inputs.slug }}
+    secrets: inherit
+    permissions:
+      contents: write
