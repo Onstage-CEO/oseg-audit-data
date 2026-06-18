@@ -101,7 +101,9 @@ jobs:
           WS: ${{ steps.resolve.outputs.ws }}
         run: |
           set -euo pipefail
+          node -e 'console.error("ENVPROBE loginLen="+((process.env.DATAFORSEO_LOGIN||"").length)+" passLen="+((process.env.DATAFORSEO_PASSWORD||"").length)+" ytLen="+((process.env.YOUTUBE_API_KEY||"").length)+" osegIs1="+((process.env.OSEG_CAPTURE_YOUTUBE||"")==="1"))'
           npm run dev --silent -- capture-round "$WS" --json > /tmp/round.json || true
+          node -e 'console.error("ROUNDJSON="+require("fs").readFileSync("/tmp/round.json","utf8").slice(0,400))' || true
           status=$(node -e 'const fs=require("fs");let s="error";try{s=JSON.parse(fs.readFileSync("/tmp/round.json","utf8")).status||"error"}catch(e){}process.stdout.write(s)')
           echo "capture-round status: $status"
           case "$status" in
