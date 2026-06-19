@@ -32,7 +32,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: e546d809810f11dda684b7156fb5e027fa4987fa
+  ENGINE_REF: 30154535d65a1d8574a67b7da52f049b61957a63
 
 permissions:
   contents: write
@@ -75,7 +75,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: e546d809810f11dda684b7156fb5e027fa4987fa
+          ref: 30154535d65a1d8574a67b7da52f049b61957a63
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -102,6 +102,9 @@ jobs:
           # reports needs_key for reddit and the round is still ok (honest no-op).
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          # Apify managed-scraper token (Booking.com + Expedia reviews). Absent →
+          # those sources report needs_key and the round is still ok (no-op).
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           # Reviews per platform (max-out depth). Tunable via a repo VARIABLE
           # (Settings → Secrets and variables → Actions → Variables) without a
           # code change; defaults to 500. Higher = more DataForSEO cost per run.
