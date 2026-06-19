@@ -1,0 +1,143 @@
+{
+  "target": {
+    "propertyName": "Paradisus Cancún",
+    "location": "Cancun, Mexico",
+    "website": "https://www.melia.com/en/hotels/mexico/cancun/paradisus-cancun"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Paradisus Cancún Cancun, Mexico reviews",
+        "Paradisus Cancún entertainment reviews",
+        "Paradisus Cancún nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Paradisus Cancún Hotel_Review",
+        "Paradisus Cancún Cancun, Mexico TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Paradisus Cancún",
+        "Paradisus Cancún Cancun, Mexico booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Paradisus Cancún",
+        "Paradisus Cancún Cancun, Mexico Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Paradisus Cancún"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "site:reddit.com Paradisus Cancún review",
+        "site:reddit.com Paradisus Cancún nightlife",
+        "site:reddit.com Paradisus Cancún Cancun, Mexico"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Paradisus Cancún walkthrough",
+        "Paradisus Cancún resort tour",
+        "Paradisus Cancún review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Paradisus Cancún\" review blog",
+        "\"Paradisus Cancún\" honest review",
+        "Paradisus Cancún Cancun, Mexico travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "https://www.melia.com/en/hotels/mexico/cancun/paradisus-cancun",
+        "Paradisus Cancún official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Paradisus Cancún instagram",
+        "Paradisus Cancún tiktok",
+        "site:instagram.com Paradisus Cancún"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Paradisus Cancún Cancun, Mexico satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "Paradisus Cancún reviews",
+    "Paradisus Cancún entertainment reviews",
+    "Paradisus Cancún nightlife",
+    "site:reddit.com Paradisus Cancún",
+    "Paradisus Cancún YouTube review",
+    "Paradisus Cancún travel blog review",
+    "Paradisus Cancún family review",
+    "Paradisus Cancún couples review",
+    "Paradisus Cancún business traveler review",
+    "Paradisus Cancún rooftop review",
+    "Paradisus Cancún bar review",
+    "Paradisus Cancún dining review"
+  ]
+}

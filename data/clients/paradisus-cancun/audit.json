@@ -1,0 +1,25 @@
+{
+  "client": {
+    "name": "Sadri Alexander",
+    "propertyName": "Paradisus Cancún",
+    "location": "Cancun, Mexico",
+    "audience": "Management",
+    "presentedBy": [],
+    "version": "V0.1 — Working Draft",
+    "status": "draft"
+  },
+  "oneLineThesis": "",
+  "coreFinding": "",
+  "platforms": [],
+  "skippedSources": [],
+  "evidence": [],
+  "venues": [],
+  "segments": [],
+  "hypotheses": [],
+  "recommendations": [],
+  "namedTalent": [],
+  "firewall": {
+    "forbiddenTerms": [],
+    "calibratedPhrasings": []
+  }
+}
