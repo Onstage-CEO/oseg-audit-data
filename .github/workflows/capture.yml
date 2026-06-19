@@ -32,7 +32,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 30154535d65a1d8574a67b7da52f049b61957a63
+  ENGINE_REF: 3ef1b22ee6bc78a2033d53b4b9725ce73d747480
 
 permissions:
   contents: write
@@ -75,7 +75,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: 30154535d65a1d8574a67b7da52f049b61957a63
+          ref: 3ef1b22ee6bc78a2033d53b4b9725ce73d747480
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -105,6 +105,10 @@ jobs:
           # Apify managed-scraper token (Booking.com + Expedia reviews). Absent →
           # those sources report needs_key and the round is still ok (no-op).
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          # Per-source wall-clock budget (ms). Apify managed-scraper actors
+          # (Booking/Expedia) far exceed the 20s default — a cold actor start
+          # alone can. 180s keeps the round well under the job's 20-min cap.
+          OSEG_CAPTURE_TIMEOUT_MS: ${{ vars.OSEG_CAPTURE_TIMEOUT_MS || '180000' }}
           # Reviews per platform (max-out depth). Tunable via a repo VARIABLE
           # (Settings → Secrets and variables → Actions → Variables) without a
           # code change; defaults to 500. Higher = more DataForSEO cost per run.
