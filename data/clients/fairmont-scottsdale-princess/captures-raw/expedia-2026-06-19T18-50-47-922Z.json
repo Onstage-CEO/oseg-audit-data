@@ -1,0 +1,276 @@
+{
+  "platform": "expedia",
+  "capturedAt": "2026-06-19T18:50:47.922Z",
+  "reviews": [
+    {
+      "platform": "expedia",
+      "text": "I had an amazing stay here. 10/10",
+      "author": "Sharone",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1n8jb74",
+      "timestamp": "2026-06-18"
+    },
+    {
+      "platform": "expedia",
+      "text": "Cockroach in casita we booked",
+      "author": "Raveena",
+      "rating": 8,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1nv4wc9",
+      "timestamp": "2026-06-16"
+    },
+    {
+      "platform": "expedia",
+      "text": "Amazing resort with friendly staff.!",
+      "author": "Vladimir",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-sefa8y",
+      "timestamp": "2026-06-10"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice resort!",
+      "author": "Elena",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-15n108o",
+      "timestamp": "2026-06-07"
+    },
+    {
+      "platform": "expedia",
+      "text": "The staff was amazing, facilities were clean. So much to do on the property. Food and beverage on the property was great. Especially Bourbon Steakhouse. Only mark i would give it is the water pressure in the shower was lacking. Would not stop me from going back again.",
+      "author": "Kevin",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-181qp8y",
+      "timestamp": "2026-06-07"
+    },
+    {
+      "platform": "expedia",
+      "text": "We love this place!",
+      "author": "Nicholas",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-3vsjnz",
+      "timestamp": "2026-06-07"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice resort, very good food, exceptional staff",
+      "author": "Nidirah",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1g8smdm",
+      "timestamp": "2026-06-01"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful property great location",
+      "author": "Heath",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-7wq8o6",
+      "timestamp": "2026-05-31"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great property and enjoyed the various swimming pools, restaurants, and bars!",
+      "author": "Jason",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-zc0zuf",
+      "timestamp": "2026-05-29"
+    },
+    {
+      "platform": "expedia",
+      "text": "great resort",
+      "author": "Christian",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1uyah3b",
+      "timestamp": "2026-05-28"
+    },
+    {
+      "platform": "expedia",
+      "text": "This hotel is a dream. The staff is very attentive and helpful! It’s very family friendly and we enjoyed all the amenities it had to offer. Food is pricey but that’s expected for a 5 star resort.",
+      "author": "Enida",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-ui919v",
+      "timestamp": "2026-05-27"
+    },
+    {
+      "platform": "expedia",
+      "text": "Exceptional staff!",
+      "author": "Ricardo",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-fdg9tw",
+      "timestamp": "2026-05-27"
+    },
+    {
+      "platform": "expedia",
+      "text": "Not enough staff to handle the check in and cleaning the rooms.wait time before I got my room was 4 hr wait",
+      "author": "Alejandro",
+      "rating": 2,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-rxm259",
+      "timestamp": "2026-05-27"
+    },
+    {
+      "platform": "expedia",
+      "text": "This place has potential. The amenities are nice, the grounds are beautiful…. But the service is bad all around. I Ordered an iced coffee at 8 am and 9:20 it still had not arrived to my room. I could see if it was a whole breakfast but just a lil coffee?…. Rooms are outdated BUT pretty. The le labo in the rooms is a plus! I’ll be purchasing the lotion it smells lux!! WiFi barely works, pool service is SUPER slow… they asked if we were hungry at 11 am, we say yes! Nobody came back for our order til 1 pm when I finally asked for a server again. Ordered a fruit plate, never got it, was charged for it, had to get it removed but no apology. I will say one of the waitresses at the adults only pool did help by grabbing us a few seats when they were all taken. I am a firm believer that hotel guests should have priority over resort passers etc. Check in took foreverrrrrr…. for a 5 star resort the check in process should feel maybe a bit more luxurious? There was like 20+ people in line. Thanks for the free water tho… Maybe I went on the wrong weekend for it to feel lux… the place seemed big and too much happening with not enough staff. Granted it was a holiday weekend… The restaurants on the resort were great but room service and pool service food was below average. Pizza tasted awful! For the price point, I would probably stay at the Biltmore or Phoenician instead. Wouldn’t stay here again unless it was less than $250 a night",
+      "author": "Hannah",
+      "rating": 4,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1qrb89n",
+      "timestamp": "2026-05-26"
+    },
+    {
+      "platform": "expedia",
+      "text": "Check in is supposed to be at 4pm, they didn't have our room ready for us until after 6pm, which ruined our dinner reservations for our universe as we could not get into our room to get ready as planned. After standing in line for over 30 minutes, I was told they would text me when it was ready and they \"apologize for the delay\". Five minutes later I received a text from the wanting me to confirm my email for my room charges....(the room I still did not have) I waited in line again about 30 minutes later and was told it was ready. I asked why they didn't let me know, I was told they would text me...he apologized....now I was over the empty apologies and no real care seemingly coming from them so I explained nicely how my anniversary plans of staying at this amazing property and going out to an exclusive reservation only dinner was not going so well and in fact now my dinner reservations would be void as we would not be ready in time because of the 2 hour room delay, and would get charged anyway. He apologized again....I stated that was not going to be good enough at this point and I asked if there is anything else could be done. He said he would put a $100 food and beverage credit attached to my room and whatever we ordered would come off of that first. I was happy with that, although it didnt help he situation...at least it was something I could order a romantic dessert and breakfast with the next day. After check out I received my email invoice and no credit was put on.",
+      "author": "Larry",
+      "rating": 4,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1va1no4",
+      "timestamp": "2026-05-25"
+    },
+    {
+      "platform": "expedia",
+      "text": "Was a great experience with great food and easy access to local shopping annd restaurants and easy drive to Frank Lloyd Wright space.",
+      "author": "Jenna",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1o87vll",
+      "timestamp": "2026-05-25"
+    },
+    {
+      "platform": "expedia",
+      "text": "Amazing! Staff, food, the whole place is luxurious and I can’t wait to come back. Great job!!!",
+      "author": "Dean",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-17owa1",
+      "timestamp": "2026-05-16"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great",
+      "author": "Victor gabriel",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1qfzcvh",
+      "timestamp": "2026-05-07"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful place to stay!",
+      "author": "Thomas",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1ctwydb",
+      "timestamp": "2026-04-30"
+    },
+    {
+      "platform": "expedia",
+      "text": "Overall amazing.",
+      "author": "julien",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-ujgym7",
+      "timestamp": "2026-04-27"
+    },
+    {
+      "platform": "expedia",
+      "text": "This was a quick family getaway for some sun, great food and a little luxury. We found it all here and loved our stay. Beautiful space, luxurious without being pretentious. We found our room and the main areas to be well-maintained and clean. The pools are immaculate and well-attended. Food was awesome. Dinner at Bourbon Steak was unreal. It's a high-end steakhouse with more depth to the menu than a steakhouse normally has. And who doesn't love amazing cocktails??? Our meal was made even better by some of the best service I've enjoyed in any restaurant. Our man Milan was amazing, friendly and could teach a masterclass in sales and customer service. I also wanted to mention Gabriela who handled our check-in with all of the warmth and professionalism that you want when you arrive for your vacation. Highly recommended for families, couples or a getaway with friends.",
+      "author": "Michael V.",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-17x6vep",
+      "timestamp": "2026-04-27"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful resort !",
+      "author": "Elaine",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-15ugz32",
+      "timestamp": "2026-04-19"
+    },
+    {
+      "platform": "expedia",
+      "text": "We had a wonderful time! We ate at both the Bourbon Steak House and Toro and the staff went above and beyond to make our evening such an event. Especially the Bourbon Steak House. We had fantastic service and the food was great! Such a fun night. The room was clean and comfortable and we loved sitting having our coffee on the balcony. The furniture in the room did seem worn for the price of the stay but everything else was great.",
+      "author": "Thomas",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-3vaj8s",
+      "timestamp": "2026-04-19"
+    },
+    {
+      "platform": "expedia",
+      "text": "Food was subpar. Only place we enjoyed the food was Toro. Poolside service was incredibly slow. There were multiple times where they forgot our order so we just ended up ordering from the bar, but I don’t know if we were charged double. Room was great. Staff was friendly. Would possibly rebook again.",
+      "author": "Mark",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-vk3luc",
+      "timestamp": "2026-04-15"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful resort. Amazing staff.",
+      "author": "Cody",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1rwgaq8",
+      "timestamp": "2026-04-14"
+    },
+    {
+      "platform": "expedia",
+      "text": "I was left a little disappointed with the cleanliness of the resort considering it was a 5-Star Fairmont property. There was frequently trash that wasn’t picked up around the pool areas. Empty cups and plates were strewn throughout the property. Just left me asking for more considering how much we paid for our stay. Don’t get me wrong, it’s a nice resort but I’ve stayed at other 5-Star resorts that were cleaner and more attention to the little details.",
+      "author": "Timothy",
+      "rating": 8,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-xojhtb",
+      "timestamp": "2026-04-11"
+    },
+    {
+      "platform": "expedia",
+      "text": "Stayed Gold level and it was an awesome experience. Room was huge. Amenities were impressive and the staff was superb. Would definitely stay again",
+      "author": "Janette",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1o00ibw",
+      "timestamp": "2026-04-11"
+    },
+    {
+      "platform": "expedia",
+      "text": "Privado villas are great. Will book again.",
+      "author": "Nicholas",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-bvpf6p",
+      "timestamp": "2026-04-10"
+    },
+    {
+      "platform": "expedia",
+      "text": "Love this resort and we will go back again.",
+      "author": "Jia",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1p9yui3",
+      "timestamp": "2026-04-09"
+    },
+    {
+      "platform": "expedia",
+      "text": "Gorgeous property with tons to do for the kiddos! We will be back!",
+      "author": "Kari",
+      "rating": 10,
+      "ratingMax": 5,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information#review-1nkvp7x",
+      "timestamp": "2026-04-07"
+    }
+  ]
+}
