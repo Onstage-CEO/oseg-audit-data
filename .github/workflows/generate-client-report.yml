@@ -1,24 +1,24 @@
-# Generate Audit Brief (hosted) — oseg-audit-console#2
+# Generate CLIENT Report (hosted) — the paid deliverable
 #
 # Dispatched by the audit-console-api Worker on behalf of an Access-authenticated
-# user. Runs the engine's generate-brief for one workspace server-side over its
-# already-captured review corpus and commits the INTERNAL (Tier-B) audit-brief.md
-# in ONE attributed commit — same black-box-recorder contract as capture.yml.
+# user. Runs the engine's generate-client-report for one workspace server-side
+# over its captured review corpus and commits a CLIENT-FACING, on-brand
+# client-report.html in ONE attributed commit.
 #
-# Tier-B, full-disclosure INTERNAL artifact — NEVER a client-facing deliverable.
-# When ANTHROPIC_API_KEY is set, the engine's LLM precision layer classifies the
-# entertainment signal semantically and validates every lead against a verbatim
-# quote; without it, the deterministic keyword classifier is used (honest no-op
-# on cost). Either way nothing is fabricated.
+# Unlike the internal Tier-B brief, this is the artifact a resort GM receives:
+# numbers rendered deterministically, narrative written by the Anthropic Messages
+# API (grounded, refuse-to-fabricate). It HARD-REQUIRES ANTHROPIC_API_KEY — a
+# client document must never silently degrade — so this workflow FAILS if the key
+# is absent or the model refuses/truncates.
 #
 # Engine is pinned to a known-good SHA (bump deliberately, never 'main').
 
-name: generate-brief
+name: generate-client-report
 on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Workspace slug to build a brief for'
+        description: 'Workspace slug to build a client report for'
         required: true
         type: string
       actorEmail:
@@ -26,10 +26,8 @@ on:
         required: true
         type: string
 
-# Per-slug serialization: two different resorts can build in parallel, but the
-# same slug can never race its own audit-brief.md / commit.
 concurrency:
-  group: brief-${{ inputs.slug }}
+  group: client-report-${{ inputs.slug }}
   cancel-in-progress: false
 
 env:
@@ -40,7 +38,7 @@ permissions:
   contents: write
 
 jobs:
-  brief:
+  client-report:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -56,8 +54,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: data-repo
-          # Full history so we can read captures-raw/'s last-commit time for a
-          # deterministic "generated" stamp (see the Generate brief step).
           fetch-depth: 0
 
       - name: Resolve workspace dir from slug
@@ -66,7 +62,6 @@ jobs:
           IN_SLUG: ${{ inputs.slug }}
         run: |
           set -euo pipefail
-          # Defense-in-depth: the Worker already validated, but never trust input.
           if ! printf '%s' "$IN_SLUG" | grep -Eq '^[a-z0-9][a-z0-9-]{0,99}$'; then
             echo "::error::invalid slug"; exit 1
           fi
@@ -93,12 +88,11 @@ jobs:
         working-directory: engine
         run: npm ci
 
-      - name: Generate brief
+      - name: Generate client report
         working-directory: engine
         # Secrets reach the engine ONLY via env (never inline ${{ }} in run:).
-        # ANTHROPIC_API_KEY is OPTIONAL — absent → keyword classifier (honest
-        # no-op on cost), present → LLM precision layer. The command fails only
-        # on a real error (missing workspace, etc.), not on a missing key.
+        # ANTHROPIC_API_KEY is REQUIRED — the command exits non-zero without it,
+        # failing this job (no silent degrade for a client-facing document).
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           WS: ${{ steps.resolve.outputs.ws }}
@@ -106,27 +100,20 @@ jobs:
           IN_SLUG: ${{ inputs.slug }}
         run: |
           set -euo pipefail
-          # Deterministic "generated" stamp = the last commit time of THIS
-          # workspace's captures-raw/ (changes only when new reviews land, NOT
-          # when a prior brief commit touched audit-brief.md). This makes a
-          # re-run over an unchanged corpus produce a BYTE-IDENTICAL brief in
-          # keyword mode, so the no-change→no-commit guard below actually engages
-          # (otherwise a wall-clock default churns a commit — plus a status
-          # commit — on every click). With the LLM layer on, the model's own
-          # output may legitimately vary run-to-run, so a re-run can still commit
-          # — that's real re-analysis, not timestamp churn. Empty (corpus never
-          # committed) → let the engine wall-clock it.
-          NOW=$(git -C "$DATA_REPO" log -1 --format=%cI -- "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true)
-          run_brief() { npm run dev --silent -- generate-brief "$WS" "$@"; }
-          if [ -n "$NOW" ]; then
-            run_brief --now "$NOW" 2>/tmp/brief.err || { cat /tmp/brief.err >&2; exit 1; }
-          else
-            run_brief 2>/tmp/brief.err || { cat /tmp/brief.err >&2; exit 1; }
+          if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "::error::ANTHROPIC_API_KEY is not set on this repo — required for the client report"; exit 1
           fi
-          cat /tmp/brief.err >&2
-          # Surface review count + which classifier ran (keyword vs llm vs mixed)
-          # so a degraded (no-key) or empty brief is visible in the run summary.
-          grep -E 'reviews ·' /tmp/brief.err | tail -1 | sed 's/^\[generate-brief\] /brief: /' >> "$GITHUB_STEP_SUMMARY" || true
+          # Deterministic label stamp from the corpus commit time (the prose still
+          # varies run-to-run since it's model-authored — a re-run is real
+          # re-generation, expected to commit).
+          NOW=$(git -C "$DATA_REPO" log -1 --format=%cI -- "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true)
+          if [ -n "$NOW" ]; then
+            npm run dev --silent -- generate-client-report "$WS" --now "$NOW" 2>/tmp/cr.err || { cat /tmp/cr.err >&2; exit 1; }
+          else
+            npm run dev --silent -- generate-client-report "$WS" 2>/tmp/cr.err || { cat /tmp/cr.err >&2; exit 1; }
+          fi
+          cat /tmp/cr.err >&2
+          grep -E 'wrote client-report' /tmp/cr.err | tail -1 | sed 's/^\[generate-client-report\] /client report: /' >> "$GITHUB_STEP_SUMMARY" || true
 
       - name: Commit (attributed) and push
         working-directory: data-repo
@@ -135,31 +122,26 @@ jobs:
           ACTOR: ${{ inputs.actorEmail }}
         run: |
           set -euo pipefail
-          # Only audit-brief.md changes here; stage the workspace dir (a per-file
-          # add aborts the whole `git add` if a path is missing — capture.yml bug).
           git add "data/clients/$IN_SLUG"
           if git diff --cached --quiet; then
-            echo "Brief produced no changes (corpus unchanged) — nothing committed."
-            echo "### Brief \`$IN_SLUG\`: no change" >> "$GITHUB_STEP_SUMMARY"
+            echo "Client report produced no changes — nothing committed."
+            echo "### Client report \`$IN_SLUG\`: no change" >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           git config user.name "oseg-audit-bot"
           git config user.email "actions@onstage.biz"
-          git commit -m "brief: $IN_SLUG — requested by $ACTOR"
-          # Rebase-retry on a racing push; FAIL LOUDLY if every attempt loses.
+          git commit -m "client-report: $IN_SLUG — requested by $ACTOR"
           pushed=0
           for k in 1 2 3; do
             if git push; then pushed=1; break; fi
             git pull --rebase --autostash
           done
           [ "$pushed" = "1" ] || { echo "::error::push failed after 3 attempts"; exit 1; }
-          echo "### Built brief for \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Built client report for \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
           echo "Requested by: $ACTOR" >> "$GITHUB_STEP_SUMMARY"
 
-  # GITHUB_TOKEN pushes don't fire the push trigger, so refresh verify explicitly
-  # (mirrors capture.yml) — the new audit-brief.md then shows in the UI's files.
   status:
-    needs: brief
+    needs: client-report
     uses: ./.github/workflows/status.yml
     with:
       slug: ${{ inputs.slug }}
