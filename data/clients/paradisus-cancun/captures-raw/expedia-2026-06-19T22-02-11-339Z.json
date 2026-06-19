@@ -1,0 +1,15 @@
+{
+  "platform": "expedia",
+  "capturedAt": "2026-06-19T22:02:11.339Z",
+  "reviews": [
+    {
+      "platform": "expedia",
+      "text": "Rooms were spacious and very clean, great food choices with several restaurants to pick from. Pools were clean and big. Staff was so friendly and helpful the entire stay, would recommend this property to family and friends!",
+      "author": "Chelsea",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/graphql",
+      "timestamp": "2026-06-19"
+    }
+  ]
+}
