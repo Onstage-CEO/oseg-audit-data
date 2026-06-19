@@ -6,7 +6,9 @@
     "audience": "Management",
     "presentedBy": [],
     "version": "V0.1 — Working Draft",
-    "status": "draft"
+    "status": "draft",
+    "bookingUrl": "https://www.booking.com/hotel/us/fairmont-scottsdale-princess.html",
+    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-Fairmont-Scottsdale-Princess.h21894.Hotel-Information"
   },
   "oneLineThesis": "",
   "coreFinding": "",
