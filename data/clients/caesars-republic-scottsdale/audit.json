@@ -6,7 +6,9 @@
     "audience": "Management",
     "presentedBy": [],
     "version": "V0.1 — Working Draft",
-    "status": "draft"
+    "status": "draft",
+    "bookingUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html",
+    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-Scottsdale-Republic.h101140606.Hotel-Information"
   },
   "oneLineThesis": "",
   "coreFinding": "",
