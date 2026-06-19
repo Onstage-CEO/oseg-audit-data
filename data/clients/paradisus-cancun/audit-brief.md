@@ -2,48 +2,43 @@
 
 > ⚠ **TIER B — INTERNAL, FULL DISCLOSURE. Never send to a client.** A client-facing teaser/deck is a separate, gated step.
 
-**Corpus:** 399 captured reviews (199 google + 200 tripadvisor) · generated 2026-06-19T22:03:30Z
-**Overall rating:** 4.79 / 5 · **3%** are ≤2★ (polarization signal)
+**Corpus:** 301 captured reviews (100 booking + 100 google + 100 tripadvisor + 1 expedia) · generated 2026-06-19T22:03:30Z
+**Overall rating:** 4.46 / 5 · **7%** are ≤2★ (polarization signal)
 
 ## What guests talk about
 | Theme | Reviews | Share |
 |---|---|---|
-| Service / staff | 296 | 74% |
-| Food & beverage | 218 | 55% |
-| Pool / amenities | 80 | 20% |
-| Entertainment / atmosphere | 66 | 17% |
-| Check-in / wait | 66 | 17% |
-| Cleanliness / room | 52 | 13% |
-| Value / price | 16 | 4% |
+| Service / staff | 171 | 57% |
+| Food & beverage | 138 | 46% |
+| Pool / amenities | 50 | 17% |
+| Cleanliness / room | 39 | 13% |
+| Check-in / wait | 38 | 13% |
+| Entertainment / atmosphere | 37 | 12% |
+| Value / price | 13 | 4% |
 
 ## Entertainment signal — by OSEG scope
-_Scope decided by the deterministic keyword classifier (heuristic — coarser than the LLM layer; set ANTHROPIC_API_KEY to enable semantic precision)._
-Of 66 entertainment-mention reviews: **34 in OSEG scope** (resort-operated venues), 0 excluded (private/event-space noise — not OSEG-addressable), 32 ambiguous (flagged for human review).
-In-scope avg rating: **4.47 / 5**.
+_Scope decided by the LLM precision layer (semantic), with every lead backed by a validated verbatim quote._
+Of 37 entertainment-mention reviews: **24 in OSEG scope** (resort-operated venues), 11 excluded (private/event-space noise — not OSEG-addressable), 2 ambiguous (flagged for human review).
+In-scope avg rating: **4.83 / 5**.
 
 | Resort venue (in scope) | Mentions |
 |---|---|
-| Restaurants | 18 |
-| Bars & lounges | 14 |
-| Pool decks & common areas | 2 |
+| Bars & lounges | 11 |
+| Restaurants | 8 |
+| Pool decks & common areas | 5 |
 
 ## OSEG leads — in-scope venue entertainment (critical first)
-> *"Good price, beautiful and clean resort. Major problems with staff, most food/restaurant staff were exceptional. The concierge the front desk all need training on hospitality. We were greeted by a man just sitting at his desk with a half%#ss hello, didnt say a word after that. The"* — tripadvisor 2★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1057389931-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
-> *"Paradisus Cancún has some genuinely positive qualities. The pool areas are attractive and well maintained, the grounds are impressive, and the hotel enjoys a beautiful location on a lovely stretch of beach. Unfortunately, despite these strengths, the overall guest experience fell"* — tripadvisor 2★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1063522164-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
-> *"Good price, beautiful and clean resort. Major problems with staff, most food/restaurant staff were exceptional. The concierge the front desk all need training on hospitality. We were greeted by a man just sitting at his desk with a half%#ss hello, didnt say a word after that. The"* — tripadvisor 2★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1057389931-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
-> *"Paradisus Cancún has some genuinely positive qualities. The pool areas are attractive and well maintained, the grounds are impressive, and the hotel enjoys a beautiful location on a lovely stretch of beach. Unfortunately, despite these strengths, the overall guest experience fell"* — tripadvisor 2★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1063522164-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
-> *"A very honest review. This was our second stay at Paradisus Cancun, with our first visit being in March 2023. We enjoyed our first stay enough to return, so I feel I can give a fair and honest comparison. The first thing I have to say is that this resort is absolutely beautiful. "* — tripadvisor 3★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1063409523-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
-> *"A very honest review. This was our second stay at Paradisus Cancun, with our first visit being in March 2023. We enjoyed our first stay enough to return, so I feel I can give a fair and honest comparison. The first thing I have to say is that this resort is absolutely beautiful. "* — tripadvisor 3★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1063409523-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
+> *"The poolside bingo was great, I won a prize. It was a lot of fun and Uriel and Mauricio were great hosts. Great entertainment here at Parasidus."* — tripadvisor 5★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1061261365-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
 
 ## Ambiguous — needs human judgment (no venue named; could be a bar OR an event)
-> *"Giovani Martinez, our entertainer, was incredibly friendly and funny. He and Jesus and Bryan were a fantastic team, creating a fantastic atmosphere at the pool. We loved participating with them and left feeling so happy to have met them. We'll definitely be back to have more fun "* — google 5★ ([source](https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCT05sWmFlV2d5VFRjMmFYcGtaMkU1TW1WSFJFRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlBONlZaeWgyTTc2aXpkZ2E5MmVHREE%7C%7C?hl=en-GB))
-> *"Karina, Diego, Flor (Samantha) from Ginger 2 Brayan, Dany, Uriel, Geovanni, Aviles from Entertainment Norma and Ross from Nespresso, excellent service of very high quality"* — google 5★ ([source](https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIN2JxSWp3RRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgICH7bqIjwE%7C%7C?hl=en-GB))
-> *"Manager Daniel served us today, and he was excellent. If I come back here, I would love to be served by him again. He was so kind that the food was delicious, and the atmosphere was wonderful. Thank you, Manager Daniel."* — google 5★ ([source](https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201b09EZE1WRkJ4VVRFd1N6VnlaRjlNUTBFMlJVRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOm5oODdMVFBxUTEwSzVyZF9MQ0E2RUE%7C%7C?hl=en-GB))
-> *"My husband and I came for our honeymoon and had Fernanda as our concierge throughout our entire stay. She booked all our reservations and made our whole vacation magical. We definitely plan to come back with our family again and again . Such a beautiful paradise."* — google 5★ ([source](https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkeU1VeEhkRGs0WDNNeldXeDNMV05LT1MxdGRIYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkdyMUxHdDk4X3MzWWx3LWNKOS1tdHc%7C%7C?hl=en-GB))
+> *"We loved the Smell and overall the concept / Entertainment Team was poor"* — booking 4★ ([source](https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1svdtsh))
+> *"We just returned from a 7 night stay at Paradisus Cancun. My wife and I wanted to come back after the renovations were completed this year after an amazing stay in March of 2025. All I can say is that the resort is great and the staff is amazing. We will be back again and again w"* — tripadvisor 5★ ([source](https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r1060785769-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html))
 
 ## Excluded — private / event-space noise (NOT OSEG-addressable)
 _Shown so the scope line is visible: these are ballroom/event-lawn/private-event complaints the resort books for revenue and will not change._
-_None detected._
+> *"Nothing specific to the property. Cancun’s beaches by themselves are beautiful. / The room we stayed in was average with poor air conditioning. This property needs to look up the meaning of the word “hospitality”. The concierge and guest services teams are slow, clueless, unhelpf"* — booking 2★ ([source](https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-50ddrd))
+> *"Room had a great view, buffet option was good and some decent staff people. / Wow where do I begin? Why is this hotel so popular (I am still in disbelief)? We stayed 8 days / 7 nights with family concierge service. We were told we cannot make any restaurant reservation until you "* — booking 2★ ([source](https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1fd994n))
+> *"My husband and I came for our honeymoon and had Fernanda as our concierge throughout our entire stay. She booked all our reservations and made our whole vacation magical. We definitely plan to come back with our family again and again . Such a beautiful paradise."* — google 5★ ([source](https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkeU1VeEhkRGs0WDNNeldXeDNMV05LT1MxdGRIYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkdyMUxHdDk4X3MzWWx3LWNKOS1tdHc%7C%7C?hl=en-GB))
 
 ---
 _Every figure is computed from the captured corpus; every quote is verbatim and source-linked. Nothing here is asserted beyond the data._
