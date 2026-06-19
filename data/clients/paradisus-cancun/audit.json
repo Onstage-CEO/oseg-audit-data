@@ -6,7 +6,9 @@
     "audience": "Management",
     "presentedBy": [],
     "version": "V0.1 — Working Draft",
-    "status": "draft"
+    "status": "draft",
+    "bookingUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html",
+    "expediaUrl": "https://www.expedia.com/Cancun-Hotels-Paradisus-Cancun-All-Inclusive.h525789.Hotel-Information"
   },
   "oneLineThesis": "",
   "coreFinding": "",
