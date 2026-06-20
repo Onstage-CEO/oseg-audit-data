@@ -1,12 +1,4 @@
 {
   "reportVersion": "V1",
-  "tasks": [
-    {
-      "platformId": "google",
-      "vendor": "dataforseo",
-      "taskId": "06202311-1943-0298-0000-7fe1400a5562",
-      "submittedAt": "2026-06-20T20:11:00.931Z",
-      "note": "oseg:google:Paradisus Cancún"
-    }
-  ]
+  "tasks": []
 }
