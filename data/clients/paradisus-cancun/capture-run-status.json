@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-20T20:21:56.665Z",
+  "generatedAt": "2026-06-20T20:23:05.090Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -18,8 +18,7 @@
       "truncatedQueries": [],
       "coverage": {
         "capturedReviews": 0,
-        "requestedDepth": 4490,
-        "mode": "deep"
+        "mode": "standard"
       }
     },
     {
@@ -34,8 +33,7 @@
       "truncatedQueries": [],
       "coverage": {
         "capturedReviews": 0,
-        "requestedDepth": 4490,
-        "mode": "deep"
+        "mode": "standard"
       }
     },
     {
