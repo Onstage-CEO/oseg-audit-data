@@ -98,6 +98,7 @@ jobs:
         env:
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_CAPTURE_DEPTH: ${{ vars.OSEG_CAPTURE_DEPTH || '4490' }}
           CLIENTS_DIR: ${{ github.workspace }}/data-repo/data/clients
         run: |
           set -euo pipefail
