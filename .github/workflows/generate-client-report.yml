@@ -14,6 +14,7 @@
 # Engine is pinned to a known-good SHA (bump deliberately, never 'main').
 
 name: generate-client-report
+run-name: client-report: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}
 on:
   workflow_dispatch:
     inputs:

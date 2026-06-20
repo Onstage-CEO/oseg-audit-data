@@ -12,6 +12,7 @@
 # Engine is pinned to a known-good SHA (bump deliberately, never 'main').
 
 name: capture
+run-name: capture: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}
 on:
   workflow_dispatch:
     inputs:
