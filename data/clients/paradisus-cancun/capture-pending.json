@@ -7,13 +7,6 @@
       "taskId": "06202311-1943-0298-0000-7fe1400a5562",
       "submittedAt": "2026-06-20T20:11:00.931Z",
       "note": "oseg:google:Paradisus Cancún"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06202311-1943-0353-0000-4c22191fe462",
-      "submittedAt": "2026-06-20T20:11:00.931Z",
-      "note": "oseg:tripadvisor:Paradisus Cancún"
     }
   ]
 }

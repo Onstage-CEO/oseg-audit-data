@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-20T20:26:05.021Z",
+  "generatedAt": "2026-06-20T20:27:29.820Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -18,22 +18,25 @@
       "truncatedQueries": [],
       "coverage": {
         "capturedReviews": 0,
-        "mode": "standard"
+        "requestedDepth": 4490,
+        "mode": "deep"
       }
     },
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "pending_async",
-      "message": "collected 0 review(s); 1 in queue",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 0,
+      "status": "ok",
+      "message": "collected 4384 review(s), 106 dup; 21609 available",
+      "recordsAdded": 4384,
+      "duplicatesSkipped": 106,
       "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 0,
-        "mode": "standard"
+        "capturedReviews": 4490,
+        "availableReviews": 21609,
+        "requestedDepth": 4490,
+        "mode": "deep"
       }
     },
     {
