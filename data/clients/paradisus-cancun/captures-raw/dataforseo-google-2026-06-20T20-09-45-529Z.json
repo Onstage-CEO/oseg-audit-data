@@ -1,0 +1,892 @@
+{
+  "capturedAt": "2026-06-20T20:09:45.529Z",
+  "platform": "google",
+  "reviewsAvailable": 15981,
+  "reviews": [
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxVVNVZ3dXR3hzUkVWSlVXSjFZVXQwUm1GVFZGRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk1USUgwWGxsREVJUWJ1YUt0RmFTVFE%7C%7C?hl=en-GB",
+      "author": "Javier Salvador",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 18:53:03 +00:00",
+      "text": "The service was truly excellent, the food was superb, and our butler Alejandro was incredibly kind, charismatic, and friendly; he felt like part of the family when you arrived.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxVVNVZ3dXR3hzUkVWSlVXSjFZVXQwUm1GVFZGRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OQ1NVdG1PRWd5TFRGQmRWcENPV1ZCTlVoeE9XYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmNCSUtmOEgyLTFBdVpCOWVBNUhxOWc%7C%7C?hl=en-GB",
+      "author": "Victoriana Cajen",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 17:53:51 +00:00",
+      "text": "Alejandro and Francisco from Gastro Hall\nExcellent service, very friendly and attentive!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21OQ1NVdG1PRWd5TFRGQmRWcENPV1ZCTlVoeE9XYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGTmVFUkxNRTVzV0hOTlQxOUhWa1I0YzBVeVUxRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkFNeERLME5sWHNNT19HVkR4c0UyU1E%7C%7C?hl=en-GB",
+      "author": "Daniela Vázquez",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 17:48:02 +00:00",
+      "text": "Excellent service and attention from Baltazar in the pool area and Miss Ana",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGTmVFUkxNRTVzV0hOTlQxOUhWa1I0YzBVeVUxRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WVE1FUmlaakpEYzNONWNsQlZjRzFJTFd0eVEzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnVTMERiZjJDc3N5clBVcG1ILWtyQ3c%7C%7C?hl=en-GB",
+      "author": "Rafaela Duarte",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 17:18:38 +00:00",
+      "text": "Giovani Martinez, the entertainer, we loved the incense activity; he made it an amazing experience. I'm very happy with the service they have here; they choose people with a wonderful attitude. I highly recommend it. We've been coming for 17 years and we never will stop. Greetings to my friend Gio.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WVE1FUmlaakpEYzNONWNsQlZjRzFJTFd0eVEzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aZlUzWXljMUpvTkcxWmNIWXhVMDUwY2xoWmMxRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnZfU3Yyc1JoNG1ZcHYxU050clhZc1E%7C%7C?hl=en-GB",
+      "author": "Laura Hernandez",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 16:13:46 +00:00",
+      "text": "The service at Agave restaurant was incredibly slow for the simple tacos they served. The buffet was 10/10. The reception and cleaning service was excellent.\nThe facilities are very nice. However, the air conditioning isn't very effective against the intense heat and humidity in Cancun. I think that's a very important detail, but everything else was perfect.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aZlUzWXljMUpvTkcxWmNIWXhVMDUwY2xoWmMxRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5U2QzUnpUMVpqVVhOcmJYUXdialEzVEcxMVkyYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOl9Sd3RzT1ZjUXNrbXQwbjQ3TG11Y2c%7C%7C?hl=en-GB",
+      "author": "David Padilla",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 15:20:34 +00:00",
+      "text": "We want to give a special thanks to Fernanda from the Family Concierge at Paradisus Meliá Cancún for her excellent service during our stay. From day one, she was very kind, professional, and always willing to help us with anything we needed.\n\nFernanda did everything possible to make our experience comfortable and special, especially with our son Gianluca, whom she treated with great care and attention! I also want to thank Ignacio at the Sal restaurant! Wow! Excellent, and the food was delicious.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5U2QzUnpUMVpqVVhOcmJYUXdialEzVEcxMVkyYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GMlUyMUxVMDg1VVhGWU0xVllWVE52WkVJMFFVRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmF2U21LU085UXFYM1VYVTNvZEI0QUE%7C%7C?hl=en-GB",
+      "author": "Дарья Рыжанкова",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 14:46:37 +00:00",
+      "text": "Breakfast with amazing view! Food is delicious :) Julio made our time unforgettable:)",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GMlUyMUxVMDg1VVhGWU0xVllWVE52WkVJMFFVRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxM2RrWk1VMncwZEVkNVJsWm5iMlZJWnpnNVlWRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOi13dkZMU2w0dEd5RlZnb2VIZzg5YVE%7C%7C?hl=en-GB",
+      "author": "Aaron David Montaño",
+      "rating": 3,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 13:39:27 +00:00",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxM2RrWk1VMncwZEVkNVJsWm5iMlZJWnpnNVlWRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKOXA2Rkx3EAE!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgICJ9p6FLw%7C%7C?hl=en-GB",
+      "author": "Corrine Lorenzana",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 12:45:10 +00:00",
+      "text": "We truly enjoyed our trip thanks to the service from our waiter Roberto Islas in the POOL area, Roberto along with Ivan Zuniga went far and beyond to accommodate our needs. Robertos energy Fulfilled our daily request for drinks and  comidas (foods) and snacks!!\nAlso The daily morning breakfast crew  were awesome again this year!!! Great service thank you  Ignacio, Edier, Alberto, Arturo, Rafael inside Malba Restaurant Patio Richery Santillan..\nCorrine Lorenzana Family",
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNKOXA2Rkx3EAE"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CTFJTMUtNR05aVERrMWJqSnRZMjVIYWtscVNtYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnBLRS1KMGNZTDk1bjJtY25HaklqSmc%7C%7C?hl=en-GB",
+      "author": "James Yu",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 04:22:41 +00:00",
+      "text": "10 Stars for Concierge Alejandro Aleman\n\nIf I could give Alejandro more than 5 stars, I would!\nAfter arriving at the Cancun airport, I realized in a panic that I left my diamond ring in the room. I contacted Alejandro, and he immediately sprang into action. He personally retrieved it from lost and found and hired a trusted taxi to rush it to the airport before our flight left.\nThis goes way beyond customer service. His honesty and speed saved a priceless possession. Alejandro Aleman is the absolute best.\n\nThank you!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CTFJTMUtNR05aVERrMWJqSnRZMjVIYWtscVNtYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsR2ExbEVORGRyVERabWNtMWFXVzE1Y1hOYVFWRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOllGa1lENDdrTDZmcm1aWW15cXNaQVE%7C%7C?hl=en-GB",
+      "author": "Macarena Quintana",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 03:41:29 +00:00",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsR2ExbEVORGRyVERabWNtMWFXVzE1Y1hOYVFWRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GWFkwaFZXVzA1WjJ0NGNUQnZaek10ZDJwb1VYYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnFXY0hVWW05Z2t4cTBvZzMtd2poUXc%7C%7C?hl=en-GB",
+      "author": "Daniel Cardona Duarte",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 01:59:56 +00:00",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GWFkwaFZXVzA1WjJ0NGNUQnZaek10ZDJwb1VYYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWMVdua3hXbUY1YUVoRFFtaEdTRGhRWVY5M1dYYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlV1WnkxWmF5aEhDQmhGSDhQYV93WXc%7C%7C?hl=en-GB",
+      "author": "ROSEMARY CHIANG",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 01:54:04 +00:00",
+      "text": "I loved this resort. They made sure we had a great time.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWMVdua3hXbUY1YUVoRFFtaEdTRGhRWVY5M1dYYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wNFVrOXRSVUYzVVdoeE1UWXRSVlZJWWxWbFIzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmp4Uk9tRUF3UWhxMTYtRVVIYlVlR3c%7C%7C?hl=en-GB",
+      "author": "Jack Karcz",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-20 00:27:28 +00:00",
+      "text": "Anahi E.....in the ginger bar....was amazinging!! So kind so helpful  and always service w a smile.... Andres the main bartender made some great drinks....FUERTE!!!!!!!   GREAT STAFF A GREAT BAR.... THANK YOU ALL!!! 🍷🍷🍷🍷🍷",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wNFVrOXRSVUYzVVdoeE1UWXRSVlZJWWxWbFIzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OWU0yUnpia05yYkRKeFZIQkhlV3hhZGtnelNFRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmNYM2RzbkNrbDJxVHBHeWxadkgzSEE%7C%7C?hl=en-GB",
+      "author": "Vanessa Lopez",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 22:52:56 +00:00",
+      "text": "Everything was delicious and the service from Alberto at Kanna Beach Club was outstanding.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21OWU0yUnpia05yYkRKeFZIQkhlV3hhZGtnelNFRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21JelozVnhNREpWWmt4QlgyVndhMGhTVEZaclYyYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmIzZ3VxMDJVZkxBX2Vwa0hSTFZrV2c%7C%7C?hl=en-GB",
+      "author": "Arthur Espinoza",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 22:31:40 +00:00",
+      "text": "Alfredo de Kanna beach club is the best, he attended to our every need",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21JelozVnhNREpWWmt4QlgyVndhMGhTVEZaclYyYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCT05sWmFlV2d5VFRjMmFYcGtaMkU1TW1WSFJFRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlBONlZaeWgyTTc2aXpkZ2E5MmVHREE%7C%7C?hl=en-GB",
+      "author": "Rosalino Salvador",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 18:55:38 +00:00",
+      "text": "Giovani Martinez, our entertainer, was incredibly friendly and funny. He and Jesus and Bryan were a fantastic team, creating a fantastic atmosphere at the pool. We loved participating with them and left feeling so happy to have met them. We'll definitely be back to have more fun with them! 5 stars",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCT05sWmFlV2d5VFRjMmFYcGtaMkU1TW1WSFJFRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2todFNVUnlWMDF0T1VGMk5EQm1ObFJzV1VsMk5FRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkhtSURyV01tOUF2NDBmNlRsWUl2NEE%7C%7C?hl=en-GB",
+      "author": "Sushant Kulkarni",
+      "rating": 3,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 18:25:03 +00:00",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2todFNVUnlWMDF0T1VGMk5EQm1ObFJzV1VsMk5FRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGWE5HVk9NWEp5TW5GaE16TnpNRUZzZDNWSlFsRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjFXNGVOMXJyMnFhMzNzMEFsd3VJQlE%7C%7C?hl=en-GB",
+      "author": "Dani Aris",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 16:56:57 +00:00",
+      "text": "Excellent service,  beautiful views and delicious food",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGWE5HVk9NWEp5TW5GaE16TnpNRUZzZDNWSlFsRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWM2VUUnNiemhoVEdNd1NYTmxOMmxCTUdSNVpWRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlV3eTRsbzhhTGMwSXNlN2lBMGR5ZVE%7C%7C?hl=en-GB",
+      "author": "Maria Fernanda Gonzalez Rivera",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 16:43:16 +00:00",
+      "text": "Excellent experience with Giovani",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWM2VUUnNiemhoVEdNd1NYTmxOMmxCTUdSNVpWRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsdE1ESmZiRFpCVVd4blRIUmxPRWxHYldacVpuYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlltMDJfbDZBUWxnTHRlOElGbWZqZnc%7C%7C?hl=en-GB",
+      "author": "Ernesto José Reyes Guzmán",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 14:20:45 +00:00",
+      "text": "Excellent service and facilities. Excellent food quality and a wide variety of restaurants.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsdE1ESmZiRFpCVVd4blRIUmxPRWxHYldacVpuYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWSk0wbHFMVjlqVHpGT1JGRm9XRnBZZG1wNmNXYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjVJM0lqLV9jTzFORFFoWFpYdmp6cWc%7C%7C?hl=en-GB",
+      "author": "Gontse Atong",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 03:30:04 +00:00",
+      "text": "Excellent Service from Claudio",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWSk0wbHFMVjlqVHpGT1JGRm9XRnBZZG1wNmNXYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xORmMyazVPWEZ4VVZWWFZtcE5XbWN3V1U5VFZrRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlNFc2k5OXFxUVVXVmpNWmcwWU9TVkE%7C%7C?hl=en-GB",
+      "author": "Mafori Mphahlele",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 03:28:50 +00:00",
+      "text": "Claudio was a lovely host. Enjoyed our night out, would definitely come back.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xORmMyazVPWEZ4VVZWWFZtcE5XbWN3V1U5VFZrRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkaGVEaHFZMDlrTlhoV1IwVklSbFkyTm13ek9IYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkdheDhqY09kNXhWR0VIRlY2NmwzOHc%7C%7C?hl=en-GB",
+      "author": "Lesedi Mphahlele",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 03:28:35 +00:00",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkaGVEaHFZMDlrTlhoV1IwVklSbFkyTm13ek9IYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxcmVXZG5lalJaTVd4U09GaERVR2t4YzBVeFpFRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk1reWdnejRZMWxSOFhDUGkxc0UxZEE%7C%7C?hl=en-GB",
+      "author": "Yeny Fernandez",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 01:20:07 +00:00",
+      "text": "Our family vacation at Paradisus Cancun was wonderful. The hotel rooms are completely renovated; however, the hotel's air conditioning needs improvement. We had dinner at Agua Marina and Capella. The service at both restaurants was very good, but the food was almost the same as what you'd find at the buffet.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxcmVXZG5lalJaTVd4U09GaERVR2t4YzBVeFpFRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGRlRFVTFiMTh5ZWpoNldtRkZURlp3WWxnM1gwRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkFFTEU1b18yejh6WmFFTFZwYlg3X0E%7C%7C?hl=en-GB",
+      "author": "Isabel León",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 00:53:45 +00:00",
+      "text": "Kao restaurant is excellent, especially the service from Mr. Ernesto.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGRlRFVTFiMTh5ZWpoNldtRkZURlp3WWxnM1gwRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOUlkxZDNZVTgzY2s1VFNXYzRZVlJvUmpkTmFYYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjNRY1d3YU83ck5TSWc4YVRoRjdNaXc%7C%7C?hl=en-GB",
+      "author": "Athina Samudio",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 00:53:42 +00:00",
+      "text": "Mr. Ernesto at Kao restaurant! Excellent!!!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOUlkxZDNZVTgzY2s1VFNXYzRZVlJvUmpkTmFYYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkeGNIazRYMEpuUlRWbFFWUkxiMWhQWTNrdFEyYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjdxcHk4X0JnRTVlQVRLb1hPY3ktQ2c%7C%7C?hl=en-GB",
+      "author": "Sarah Fernández",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 00:53:28 +00:00",
+      "text": "Excellent service",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkeGNIazRYMEpuUlRWbFFWUkxiMWhQWTNrdFEyYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KcE5rcGliRVZTU0ZWblZVVlVjamd0TFVoamRHYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmJpNkpibEVSSFVnVUVUcjgtLUhjdGc%7C%7C?hl=en-GB",
+      "author": "Andrea Singh",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 00:26:00 +00:00",
+      "text": "Melvyn at Cappella was a wonderful server - attentive, fast & thoughtful.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KcE5rcGliRVZTU0ZWblZVVlVjamd0TFVoamRHYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBMk5qaG9TazQzUVZCTFVUSlRVM2g1ZFdzd00zYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjA2NjhoSk43QVBLUTJTU3h5dWswM3c%7C%7C?hl=en-GB",
+      "author": "Jaime Khouri",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 00:22:14 +00:00",
+      "text": "Gipsy was very great with the kids at kidsdom.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pBMk5qaG9TazQzUVZCTFVUSlRVM2g1ZFdzd00zYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xObGVrYzRPR2hVUm5CeFlYQkhhbWRJV0dOS1YzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlNlekc4OGhURnBxYXBHamdIWGNKV3c%7C%7C?hl=en-GB",
+      "author": "Joee Clevenger",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-19 00:05:35 +00:00",
+      "text": "Daniel was the best!! We ate at Kao and he made sure we always had what we needed. Loved him as our waiter!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xObGVrYzRPR2hVUm5CeFlYQkhhbWRJV0dOS1YzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wTFdFbE5OME40V0dOdWFVaElNMmhRYkV0WVQyYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnpLWElNN0N4WGNuaUhIM2hQbEtYT2c%7C%7C?hl=en-GB",
+      "author": "Lisbet Zaldivar",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 23:22:27 +00:00",
+      "text": "Jehu del pool bar is one of the best bartenders I have seen. He has twenty years of experience and makes any drink you want. Very kind and works very hard to make you happy.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wTFdFbE5OME40V0dOdWFVaElNMmhRYkV0WVQyYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIN2JxSWp3RRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgICH7bqIjwE%7C%7C?hl=en-GB",
+      "author": "Ángel fernando Gazca Miranda",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 23:04:39 +00:00",
+      "text": "Karina, Diego, Flor (Samantha) from Ginger 2\nBrayan, Dany, Uriel, Geovanni, Aviles from Entertainment\nNorma and Ross from Nespresso, excellent service of very high quality",
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNIN2JxSWp3RRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwU1JHOWtUa1I2YjFkeWJuSnZlbkZtYlZocFozYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlpSRG9kTkR6b1dybnJvenFmbVhpZ3c%7C%7C?hl=en-GB",
+      "author": "Karla Miranda",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 22:52:28 +00:00",
+      "text": "I enjoyed the activities with the girls. Kidsdom was great! Gipsy and Maylin were especially wonderful and so caring with the children! We loved the motorcycles! :)",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwU1JHOWtUa1I2YjFkeWJuSnZlbkZtYlZocFozYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xONVYwdFFaSEpzZGxBM2NrNWFVREJQT0VSUmEyYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlN5V0tQZHJsdlA3ck5aUDBPOERRa2c%7C%7C?hl=en-GB",
+      "author": "Nat Kuz",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 21:52:23 +00:00",
+      "text": "Excellent service from Alfredo at Kanna Beach Club!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xONVYwdFFaSEpzZGxBM2NrNWFVREJQT0VSUmEyYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwV2VFRk5WRFJaUmtwUE5XWmhSbE10ZFVwUVgzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlpWeEFNVDRZRkpPNWZhRlMtdUpQX3c%7C%7C?hl=en-GB",
+      "author": "Virginie Balaguer",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 21:51:20 +00:00",
+      "text": "Excellent service from Alfredo at Kanna Beach, very professional, friendly and always attentive.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwV2VFRk5WRFJaUmtwUE5XWmhSbE10ZFVwUVgzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ZMGVrSlZlRWhqU1RGNVgwSmFXV053U0RjeUxWRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnY0ekJVeEhjSTF5X0JaWWNwSDcyLVE%7C%7C?hl=en-GB",
+      "author": "Aldair Gomez",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 02:37:11 +00:00",
+      "text": "Karina, Flor, Diego (the bartender), and Samantha from Ginger 2 are the best hosts Paradisus Cancun could ask for. Especially Karina, the best friend you could ever meet. Giovani Martinez is an incredibly kind and polite person.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ZMGVrSlZlRWhqU1RGNVgwSmFXV053U0RjeUxWRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCVlR6VmpRMlJWTWpFeGVFdGxRbUk1YmpkbWMwRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlBVTzVjQ2RVMjExeEtlQmI5bjdmc0E%7C%7C?hl=en-GB",
+      "author": "Jose Ramos",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 01:40:18 +00:00",
+      "text": "Visited Cancun a few times and stayed in a few different hotels over the time. Paradisus by far beats them all. It’s my number #1 place next to home. 🥰🥰🥰. The staff is unmatched…!! Excellent service. Thks to: Lucas at Agua Marina, Julio, Jarret and Hector at the Reserve. You’re Superb fellas..!! 🫶🏻🫶🏻👏🏻👏🏻",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCVlR6VmpRMlJWTWpFeGVFdGxRbUk1YmpkbWMwRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pORGEyaHRjVnBQY0dGcWMzUkhSVXBLTm5obE1FRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjNDa2htcVpPcGFqc3RHRUpKNnhlMEE%7C%7C?hl=en-GB",
+      "author": "Sarah Jane Ramos",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 01:25:20 +00:00",
+      "text": "We celebrated our 10th year anniversary at Paradisus Cancun where we got married in 2016 and as always, very pleased with our stay. The staff/service are excellent. Big shout to our concierge Jared Osario. He was amazing, always on top of things, never fail to check to on us and very accommodating. Also, Julio at the reserve is great, very attentive. He is so friendly and always smiling. Lucas at the Aqua Marina provided excellent service. Basically, our overall experience at Cancun Paradisus are excellent. We will definitely come back here. It’s a home away from home. ❤️❤️",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pORGEyaHRjVnBQY0dGcWMzUkhSVXBLTm5obE1FRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKUlNVeE9jblJJVVRoV1NtOW1XazlxU1ZVMVQxRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlJRSUxOcnRIUThWSm9mWk9qSVU1T1E%7C%7C?hl=en-GB",
+      "author": "Denis Tamayo",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 01:06:40 +00:00",
+      "text": "Excellent service, hotel was great. I really enjoyed Capella restaurant, Claudio was amazing.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKUlNVeE9jblJJVVRoV1NtOW1XazlxU1ZVMVQxRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21STE1ESllUakJGZWxjdE9ESlVhRTVQVW1SQlZrRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmRLMDJYTjBFelctODJUaE5PUmRBVkE%7C%7C?hl=en-GB",
+      "author": "Niaz Nejad",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 00:55:41 +00:00",
+      "text": "Agua Marina - food was OUTSTANDING!!! Jonathan took amazing care of us. He made recommendations for appetizers, main course and dessert. He also suggested a delicious non alcoholic sparkling rose. Took all my allergies into consideration and took amazing care of us. 100 outta 5.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21STE1ESllUakJGZWxjdE9ESlVhRTVQVW1SQlZrRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201b09EZE1WRkJ4VVRFd1N6VnlaRjlNUTBFMlJVRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOm5oODdMVFBxUTEwSzVyZF9MQ0E2RUE%7C%7C?hl=en-GB",
+      "author": "Youngsung Chun",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 00:32:19 +00:00",
+      "text": "Manager Daniel served us today, and he was excellent. If I come back here, I would love to be served by him again. He was so kind that the food was delicious, and the atmosphere was wonderful. Thank you, Manager Daniel.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201b09EZE1WRkJ4VVRFd1N6VnlaRjlNUTBFMlJVRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGbllqaEtWblJYUlRGbWRHaG5jVUpPUjFkcmJIYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjFnYjhKVnRXRTFmdGhncUJOR1drbHc%7C%7C?hl=en-GB",
+      "author": "mindy sarrazine",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-18 00:18:30 +00:00",
+      "text": "We ate at Kao our server Daniel was excellent! He brought us a little extra treat we didn’t order and it was delightful! I highly recommend this restaurant when staying at Paradise Cancun!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGbllqaEtWblJYUlRGbWRHaG5jVUpPUjFkcmJIYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsd2JGTlJVbTlvZEMxTE0wSlRTbEZxWVRSWFVVRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOllwbFNRUm9odC1LM0JTSlFqYTRXUUE%7C%7C?hl=en-GB",
+      "author": "Kellee Miner",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 18:30:37 +00:00",
+      "text": "Sergio and Fernanda were both wonderful, I recommend upgrading to a concierge room. Fernanda helped ensure my kids blankets were washed in time for bed. Both were personable and kind.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsd2JGTlJVbTlvZEMxTE0wSlRTbEZxWVRSWFVVRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kMlQxSXlkVmhyTXpFMWNERmhRVGhhZFVWSWJsRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnd2T1IydVhrMzE1cDFhQThadUVIblE%7C%7C?hl=en-GB",
+      "author": "Ana Karina Torrealba",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 16:45:36 +00:00",
+      "text": "Our second home in Cancun! A 5-star experience thanks to an incredible team ⭐⭐⭐⭐⭐\nWhenever we travel to Cancun, we choose this hotel because they literally make us feel at home from the very first second. The hospitality and level of service here are out of this world.\n\nWe want to give a special mention and a huge thank you to our concierge, Rodolfo. He was impeccable, extremely attentive to every little detail, and made sure our stay was simply spectacular. You're the best, Rodolfo!\nWe also have to take our hats off to the food. We want to thank each and every one of the restaurant managers, who go the extra mile to make every meal a delicious experience with top-notch service.\n\nIf you're looking for a place in Cancun where luxury meets genuine warmth, the Meliá Paradisus is the place for you. We'll be back again and again!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kMlQxSXlkVmhyTXpFMWNERmhRVGhhZFVWSWJsRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Cb01FbFJMV1F4Um5CWllqbDRSbTl3VUdSd1lXYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnBoMElRLWQxRnBZYjl4Rm9wUGRwYWc%7C%7C?hl=en-GB",
+      "author": "Edgardo Reyes",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 16:29:59 +00:00",
+      "text": "Perla made us two smoothies outside of business hours as a sign of her incredible kindness and dedication. We are very grateful. Thank you!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Cb01FbFJMV1F4Um5CWllqbDRSbTl3VUdSd1lXYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkeU1VeEhkRGs0WDNNeldXeDNMV05LT1MxdGRIYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkdyMUxHdDk4X3MzWWx3LWNKOS1tdHc%7C%7C?hl=en-GB",
+      "author": "Viki Ramirez",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 04:22:37 +00:00",
+      "text": "My husband and I  came for our honeymoon and had Fernanda as our concierge throughout our entire stay. She booked all our reservations and made our whole vacation magical. We definitely plan to come back with our family again and again . Such a beautiful paradise.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkeU1VeEhkRGs0WDNNeldXeDNMV05LT1MxdGRIYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25rNU1ESm9ObE5vTkd4MFNGbzVSMEl0TUZCcVNtYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnk5MDJoNlNoNGx0SFo5R0ItMFBqSmc%7C%7C?hl=en-GB",
+      "author": "Jen G",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 02:59:53 +00:00",
+      "text": "Armando at the Blue Agave is amazing! Fast, fun, kind",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25rNU1ESm9ObE5vTkd4MFNGbzVSMEl0TUZCcVNtYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xSFVGOWZNR2MyWVdGc1kyaDRPV1pZTmtsZllrRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOm1HUF9fMGc2YWFsY2h4OWZYNklfYkE%7C%7C?hl=en-GB",
+      "author": "Paola Salomon",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 02:49:25 +00:00",
+      "text": "A dreamlike place, everything is perfect!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xSFVGOWZNR2MyWVdGc1kyaDRPV1pZTmtsZllrRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGZmJ6VlpRVlZaVEZWQlFUaHJUbTlNTjJGWGVGRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlFfbzVZQVVZTFVBQThrTm9MN2FXeFE%7C%7C?hl=en-GB",
+      "author": "Silvio Pinto",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 02:24:53 +00:00",
+      "text": "We went to Blue Agave, and it was one of the best experiences we've had. Our waiter Armando was undoubtedly the best at Paradisus Cancun—super attentive and dedicated to explaining all the dishes. Chef Miguel was incredibly fast and his food was perfectly seasoned. Congratulations to the manager, Natanael, for creating such a pleasant and efficient atmosphere. Thank you to the entire Blue Agave team!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGZmJ6VlpRVlZaVEZWQlFUaHJUbTlNTjJGWGVGRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wcGJHRjJSbHBwWm10ZmRtNHhjME5CUkZGUVlXYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmppbGF2RlppZmtfdm4xc0NBRFFQYWc%7C%7C?hl=en-GB",
+      "author": "Jorge Anaya Ugalde",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 01:38:18 +00:00",
+      "text": "The service and food were very good.\nAtilano provided excellent service.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wcGJHRjJSbHBwWm10ZmRtNHhjME5CUkZGUVlXYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xBMmNXdGxTa2RLYUdSdlVHMVBXVzExVWpaVGNuYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlA2cWtlSkdKaGRvUG1PWW11UjZTcnc%7C%7C?hl=en-GB",
+      "author": "Sophie Caron",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 01:35:35 +00:00",
+      "text": "Edgar served us this evening at Capella it was perfect from start to finish, the food was insane and the service was first class",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xBMmNXdGxTa2RLYUdSdlVHMVBXVzExVWpaVGNuYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKcVdUVXllV1prYlZrNFZYQnZaRVZCUlZaMVFtYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjJqWTUyeWZkbVk4VXBvZEVBRVZ1Qmc%7C%7C?hl=en-GB",
+      "author": "Kathrine Fordham",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 01:08:49 +00:00",
+      "text": "Andres, Anahi, Gladus, at the bar right outside of the ginger really made a special memorable experience. Every time that I showed up to the bar everyone was so excited to see me and my husband. They always went the extra mile making our drinks and really made us feel more than members.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKcVdUVXllV1prYlZrNFZYQnZaRVZCUlZaMVFtYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GNmJVaFhZVjl5WVcwMVFUUlJibEF4Vm5oUGMxRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmF6bUhXYV9yYW01QTRRblAxVnhPc1E%7C%7C?hl=en-GB",
+      "author": "Aura Figueroa",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 00:06:31 +00:00",
+      "text": "Kao - Gustavo's service was 10/10 and the food was excellent.\nCapella - Odon's service and the food were very good.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GNmJVaFhZVjl5WVcwMVFUUlJibEF4Vm5oUGMxRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOWE9XZzJUMVp5ZWxWMmExQnJkR3N4VDAxbFMwRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkNXOWg2T1ZyelV2a1BrdGsxT01lS0E%7C%7C?hl=en-GB",
+      "author": "hitesh madlani",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-17 00:04:32 +00:00",
+      "text": "Alejandro and Francisco from Gastro Hall. Both are super helpful. We were struggling with vegetarian food for our baby and Alejandro spoke to the chef for us and was very accommodating. Both are always friendly and happy to help. They had time to learn our names and always check in on us. Always serving everyone with a smile. Atilano served us at blue agave one evening and he was very friendly. He took the time to speak with us about our holiday and he interacted well with our baby son. He ensured our baby got his food first and suggested different vegetarian options for us.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOWE9XZzJUMVp5ZWxWMmExQnJkR3N4VDAxbFMwRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWb2RWcGxPV1JSVEdKU2VGbHFSbEZUYkVFeU1IYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjVodVplOWRRTGJSeFlqRlFTbEEyMHc%7C%7C?hl=en-GB",
+      "author": "Mar Chello",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-16 12:49:38 +00:00",
+      "text": "An incredible stay from start to finish. The staff genuinely make you feel like family — special thanks to Natalia and Galdino, our Destination Concierges, for the warm welcome and thoughtful touches throughout the trip. The resort offers so much you never need to leave the property: incredible food variety across multiple restaurants, beautiful grounds, and a stunning beach. Rooms were clean and well organized, and security is excellent with guards checking every car and pedestrian at the entrance. A huge shoutout to the Kidsdom team — Marylin, Gipsy, and Uriel were absolutely wonderful with our son, making the kids’ club a real highlight of the trip. A truly relaxing, memorable family vacation — we’ll be back.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWb2RWcGxPV1JSVEdKU2VGbHFSbEZUYkVFeU1IYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xeGJuUnJMV3hpVFVsbk0wdEpVamx4VVZoelJVRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOm1xbnRrLWxiTUlnM0tJUjlxUVhzRUE%7C%7C?hl=en-GB",
+      "author": "bella",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-16 04:03:23 +00:00",
+      "text": "karina,flor,Diego(bar) ,samantha from ginger 2\nbryan,dany and mauricio(entertainment staff)\nlovedd the staff super fun and great energy, great drinks and good vibes definitely recommend",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xeGJuUnJMV3hpVFVsbk0wdEpVamx4VVZoelJVRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kb1lUVkpSRU5aVUhKMVFXMUxlR3hUYzNKZk1tYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmdoYTVJRENZUHJ1QW1LeGxTc3JfMmc%7C%7C?hl=en-GB",
+      "author": "Roberto Delgado",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-16 03:58:21 +00:00",
+      "text": "Bryan, Dani, and Mauricio created a great atmosphere at the ginger bar. The karaoke night was special, and the songs were fantastic.\n\nFlor, Karina, and Diego from the bar also made great drinks and provided excellent service.\n\nThank you!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kb1lUVkpSRU5aVUhKMVFXMUxlR3hUYzNKZk1tYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201emNqUjZNakpJVm1aQ2RWcGhNa1l6TW5WemVXYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOm5zcjR6MjJIVmZCdVphMkYzMnVzeWc%7C%7C?hl=en-GB",
+      "author": "Gabriel Burrola",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-16 03:58:11 +00:00",
+      "text": "Bryan, Mauricio, and Dany from entertainment, along with Karina, Flor, and Diego from the bar, made the Karaoke night at Ginger Bar an amazing experience—it was fantastic and so much fun! Highly recommended.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201emNqUjZNakpJVm1aQ2RWcGhNa1l6TW5WemVXYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxa1RGVndPRFZIWTBKcGRGQjBNbXBzTkRKM1ZVRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOi1kTFVwODVHY0JpdFB0MmpsNDJ3VUE%7C%7C?hl=en-GB",
+      "author": "Jonathan Lorenzana",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-16 02:45:19 +00:00",
+      "text": "Our server Edgar at the Capella restaurant with excellent service. He took care of of my family. Served our children first. He was prompt and attentive.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxa1RGVndPRFZIWTBKcGRGQjBNbXBzTkRKM1ZVRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kaFIwdERWSEJxYkUxbFlubHNTMnhKU0V0ek5rRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmdhR0tDVHBqbE1lYnlsS2xJSEtzNkE%7C%7C?hl=en-GB",
+      "author": "Michael Lorenzana",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-16 02:43:29 +00:00",
+      "text": "Great service from Edgar at Capella in Paradisos!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kaFIwdERWSEJxYkUxbFlubHNTMnhKU0V0ek5rRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKbmNIWnhibFZ6YlRoTllqTmZWMFJKYkRkcGJtYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjJncHZxblVzbThNYjNfV0RJbDdpbmc%7C%7C?hl=en-GB",
+      "author": "Carlo Vela",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 18:46:18 +00:00",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKbmNIWnhibFZ6YlRoTllqTmZWMFJKYkRkcGJtYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xReE1GQjZjV3A2V1hVeGVVTk5hVlpZV1V0dFkzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlQxMFB6cWp6WXUxeUNNaVZYWUttY3c%7C%7C?hl=en-GB",
+      "author": "Gabriela Espinoza",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 16:14:14 +00:00",
+      "text": "Today we were at Sante restaurant and the service was wonderful. Thanks to Cynthia, Yamil, and Gemma for their attention. Everything was delicious! And the ocean view was a real treat.\nHighly recommended!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xReE1GQjZjV3A2V1hVeGVVTk5hVlpZV1V0dFkzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxVFZsOWhWRTB3WjBkdFdXb3lWbTFzZFdaTWNIYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk1TVl9hVE0wZ0dtWWoyVm1sdWZMcHc%7C%7C?hl=en-GB",
+      "author": "Monster Fdez",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 15:43:53 +00:00",
+      "text": "Geovanni's service at Vibra Restaurant was excellent. He was very friendly and had a great attitude. The food was good.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxVFZsOWhWRTB3WjBkdFdXb3lWbTFzZFdaTWNIYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqLTdEd1NnEAE!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgIDj-7DwSg%7C%7C?hl=en-GB",
+      "author": "Sharon lozano",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 04:10:35 +00:00",
+      "text": "Karina and Diego were very friendly at the ginger bar 💖 the drinks and atmosphere were great",
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURqLTdEd1NnEAE"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tZMGN6RkRhVVpoWVhkTFpIVkNXRVJJUkdoeE9YYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkY0czFDaUZhYXdLZHVCWERIRGhxOXc%7C%7C?hl=en-GB",
+      "author": "Miroslava Tenreiro Gregor",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 04:05:46 +00:00",
+      "text": "I had a 6-day stay and even before arriving everything was perfect, from the network when I made my reservation. The partner support team is phenomenal; Ms. Verónica Jiménez and her entire team made the stay a dream, with premium service and friendliness.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tZMGN6RkRhVVpoWVhkTFpIVkNXRVJJUkdoeE9YYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5WVFVRnROMnBRTUdKRWVFUnhVREpqZDFVMGQzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk9YQUFtN2pQMGJEeERxUDJjd1U0d3c%7C%7C?hl=en-GB",
+      "author": "LaDonna Turner-Johnson",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 03:47:12 +00:00",
+      "text": "Atilano has excellent service. Queso Birra is delicious!!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5WVFVRnROMnBRTUdKRWVFUnhVREpqZDFVMGQzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CSk1qaFlNRGhETTFWd1YydDZaRGxrVDBJd2QwRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnBJMjhYMDhDM1VwV2t6ZDlkT0Iwd0E%7C%7C?hl=en-GB",
+      "author": "Alexus Walker",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 03:45:13 +00:00",
+      "text": "The resort was great! We definitely fell in love with Paradisus Cancún!! Everything was amazing from restaurants to amenities! While all the staff was amazing we enjoyed Atilano at the blue agave! Fantastic customer service!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CSk1qaFlNRGhETTFWd1YydDZaRGxrVDBJd2QwRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xrM05FeDRVR1F3VlV0eFRraEtZVFJYUmt0RGVGRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlk3NEx4UGQwVUtxTkhKYTRXRktDeFE%7C%7C?hl=en-GB",
+      "author": "swndrik glenn",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 03:44:44 +00:00",
+      "text": "Atilano was amazing he is great service is awesome and he remembers orders very well! Take care of him he is the best!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xrM05FeDRVR1F3VlV0eFRraEtZVFJYUmt0RGVGRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1dFZVcE1NSFpvYzFCS2VGQnlWRzlaTlMxR2VrRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk5tVUpMMHZoc1BKeFByVG9ZNS1GekE%7C%7C?hl=en-GB",
+      "author": "luis alberto tamay ku",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 03:04:14 +00:00",
+      "text": "We really enjoyed the entertainment, especially the attention from Gionani in the entertainment department, and the great service from Flor and Diego at the Ginger bar, as well as Carlos from the buffet.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1dFZVcE1NSFpvYzFCS2VGQnlWRzlaTlMxR2VrRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWVFNtZFBRMXB5WTJ4WmRXUlRWbXh6TWpRNFJVRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjVTSmdPQ1pyY2xZdWRTVmxzMjQ4RUE%7C%7C?hl=en-GB",
+      "author": "Anthony Licon",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 01:43:13 +00:00",
+      "text": "Blue agave was our favorite restaurant at the hotel. Alberto our waiter was awesome and the manager Nathanael came over to make sure we were taken care of. Paradisus Cancún in all was amazing. Omar our concierge, I would ask that man to be my best man at my wedding he went above and beyond. Would definitely come back.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWVFNtZFBRMXB5WTJ4WmRXUlRWbXh6TWpRNFJVRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pJM1IwUjFNamhFU25SVFIyWTJWSEZ2V2pOMWJrRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjI3R0R1MjhESnRTR2Y2VHFvWjN1bkE%7C%7C?hl=en-GB",
+      "author": "Luke Launders",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 01:42:10 +00:00",
+      "text": "Visited the Italian restaurant tonight (Capella)….. beautifullll!! Our waiter Edgar was great from start to finish. Very attentive, very knowledgeable and a great personality. The food was amazing, the drinks tasted great and the restaurant itself looked fabulous. This is a must go to on your holidays!! 10 out of 10. Definitely back to see Edgar in the future. Thank you",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pJM1IwUjFNamhFU25SVFIyWTJWSEZ2V2pOMWJrRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKVlpWZG1ObVF3TkZCNFkyWlpVRzFOYlZReldGRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjJVZVdmNmQwNFB4Y2ZZUG1NbVQzWFE%7C%7C?hl=en-GB",
+      "author": "Sergio Cantú",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 01:34:06 +00:00",
+      "text": "Excellent service from our waiter Daniel at the KAO restaurant.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKVlpWZG1ObVF3TkZCNFkyWlpVRzFOYlZReldGRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pob01HbFFlVWRTYjI5VGREbEVWakk0Y0d0cVQwRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjhoMGlQeUdSb29TdDlEVjI4cGtqT0E%7C%7C?hl=en-GB",
+      "author": "Johnny Tran",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 01:24:28 +00:00",
+      "text": "Alejandro restaurant Kao is very good server. And good food to eat.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pob01HbFFlVWRTYjI5VGREbEVWakk0Y0d0cVQwRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoUVVWWkVja0pPTjNrMmIzWktSVTl6VFRGT1gxRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlhQUVZEckJON3k2b3ZKRU9zTTFOX1E%7C%7C?hl=en-GB",
+      "author": "Jae Bae",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 01:21:54 +00:00",
+      "text": "Alberto and chef Miguel were the best!! Attentive service, delicious food!! We will\nBe back!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xoUVVWWkVja0pPTjNrMmIzWktSVTl6VFRGT1gxRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xVMU1UZFpObk5CT1ZkMFdtZFFNbUZFTFhWeFptYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlU1MTdZNnNBOVd0WmdQMmFELXVxZmc%7C%7C?hl=en-GB",
+      "author": "Ihor TSA",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 01:19:38 +00:00",
+      "text": "Come to Aqua Marina if you want the best service, food and drinks experience. Thank you Alexius!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xVMU1UZFpObk5CT1ZkMFdtZFFNbUZFTFhWeFptYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21nM1ZEWXhNWFpWZVhKTFYzQjFhRnAyU3poa1lYYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmg3VDYxMXZVeXJLV3B1aFp2SzhkYXc%7C%7C?hl=en-GB",
+      "author": "Yuliana Cardona",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 01:12:09 +00:00",
+      "text": "The kids are doing very well.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21nM1ZEWXhNWFpWZVhKTFYzQjFhRnAyU3poa1lYYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXdU1qR2xnRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgICWuMjGlgE%7C%7C?hl=en-GB",
+      "author": "DGAR90",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-15 00:18:34 +00:00",
+      "text": "We had an amazing stay at the Paradisus Cancun. Our dinner at the Blue Agave was awesome, especially with the amazing hospitality and service by our waiter Alberto. 10/10 on everything.",
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNXdU1qR2xnRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21STWFVRjFWalIyVkZNeWEwUjBTWFI2WVhwTk5HYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmRMaUF1VjR2VFMya0R0SXR6YXpNNGc%7C%7C?hl=en-GB",
+      "author": "Diego Hernandez",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-14 22:16:25 +00:00",
+      "text": "Everything was perfect, we had a unique experience. Aurelio and Vianei were super attentive to everything.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21STWFVRjFWalIyVkZNeWEwUjBTWFI2WVhwTk5HYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKRGFsZFNXamREYUhCclMxaHBkRzlWVG14WVMzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkJDaldSWjdDaHBrS1hpdG9VTmxYS3c%7C%7C?hl=en-GB",
+      "author": "Cirse Rodriguez",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-14 20:49:20 +00:00",
+      "text": "Excellent experience! All the staff were incredibly friendly, the kids' area was fantastic, and the children couldn't wait to participate in all the activities.\n\n100% recommended",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKRGFsZFNXamREYUhCclMxaHBkRzlWVG14WVMzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzN2VpemdnRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgIC37eizggE%7C%7C?hl=en-GB",
+      "author": "Keyra Corral Esquivel",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-14 15:52:56 +00:00",
+      "text": "Lemon Fish restaurant, my respects. Thank you for the attention and service provided by Jorge and the manager, who personally came to our table and gave us excellent service. It made our stay much more enjoyable. 100 out of 100.",
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzN2VpemdnRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poVVoxQk1Ua05oVjBaS1pIbHNhbXRKY3pSVmJFRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjhUZ1BMTkNhV0ZKZHlsamtJczRVbEE%7C%7C?hl=en-GB",
+      "author": "Lalo Krahn",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-14 14:20:08 +00:00",
+      "text": "Excellent service and attention. Thank you very much, Alejandro.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poVVoxQk1Ua05oVjBaS1pIbHNhbXRKY3pSVmJFRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGTmMyNU1hM05NZEc5bFZsTnlibUp0YUhwdldGRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOkFNc25Ma3NMdG9lVlNybmJtaHpvWFE%7C%7C?hl=en-GB",
+      "author": "Roberta Neely",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-13 22:50:26 +00:00",
+      "text": "A+++++\nSis the silent party and bar Ginger had a DJ  So much fun!  Brian and Daniel that was the best. We didn't have one moment where we sat down. It was nonstop fun book, them see them. They are the best and Cancun.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGTmMyNU1hM05NZEc5bFZsTnlibUp0YUhwdldGRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5RVYwbDFUWE5GU1hNelowOUZTbFJUWkcxbFdrRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOl9EV0l1TXNFSXMzZ09FSlRTZG1lWkE%7C%7C?hl=en-GB",
+      "author": "Noemí Silva",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-13 14:44:15 +00:00",
+      "text": "My family and I had an amazing time. The hotel service was excellent. We consider the food options important for an all-inclusive resort, and this hotel doesn't disappoint. The restaurants are fantastic. The Kids Club service is superb, and I especially want to thank Maylin, Esme, and Gypsy for their attention to my little one, who had a truly happy vacation at the club. The room was very nice with an ocean view, and the room service was always excellent. Another thing my family loved was the coffee bar/ice cream shop. The service from all the baristas was excellent. The pools were plentiful and fun. The evening shows were also good, and we had a great time. Overall, a very good experience.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5RVYwbDFUWE5GU1hNelowOUZTbFJUWkcxbFdrRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205R1NuUlFVV0l4Tm1wdGFWRkdUakpmTTIwMkxXYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOm9GSnRQUWIxNmptaVFGTjJfM202LWc%7C%7C?hl=en-GB",
+      "author": "Maya Joulani",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-13 04:12:56 +00:00",
+      "text": "Miguel at the Aqua Marina was amazing! Totally recommend! Great service and great food!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205R1NuUlFVV0l4Tm1wdGFWRkdUakpmTTIwMkxXYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfc2RpQnZBRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgIC_sdiBvAE%7C%7C?hl=en-GB",
+      "author": "Nico Mho",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-13 02:12:22 +00:00",
+      "text": "We went to the coffee bar every morning and Alejandro and Perla had our orders memorized by the second day! Such kind people always gave us a great experience!\n\nKarina y Diego de ginger dos were the best around they were always so helpful and always had smiles on their faces especially during the busy sports season! Love the ginger bar!",
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfc2RpQnZBRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25NdFVXVjBjbVF4ZEZWeVNYWjJRMk5pTVdOTWRuYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnMtUWV0cmQxdFVySXZ2Q2NiMWNMdnc%7C%7C?hl=en-GB",
+      "author": "Shameike Carter",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-12 14:39:10 +00:00",
+      "text": "Good Nut",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25NdFVXVjBjbVF4ZEZWeVNYWjJRMk5pTVdOTWRuYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkM1oweEpkVmxNV0d0aWNUbHRia1Z5VkdFeFMzYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjd3Z0xJdVlMWGticTltbkVyVGExS3c%7C%7C?hl=en-GB",
+      "author": "Priscila Giabardo",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-12 02:43:30 +00:00",
+      "text": "Daniel provided excellent service; he explained all the dishes, gave good suggestions, and was polite and kind! A very good restaurant!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkM1oweEpkVmxNV0d0aWNUbHRia1Z5VkdFeFMzYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxU2JWZzBNMHBoUzNWaExXRnBRMTlOVDFCYVgyYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk1SbVg0M0phS3VhLWFpQ19NT1BaX2c%7C%7C?hl=en-GB",
+      "author": "ashley minton",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-12 00:03:04 +00:00",
+      "text": "They are very kind and treat all the children very well; excellent service.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxU2JWZzBNMHBoUzNWaExXRnBRMTlOVDFCYVgyYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOemVuUmlNVU10WmsxWFMwNTVVVUpmYXpWT1RFRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlNzenRiMUMtZk1XS055UUJfazVOTEE%7C%7C?hl=en-GB",
+      "author": "Pablo Garcia chacon",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-11 20:31:05 +00:00",
+      "text": "Besides being an excellent hotel, there's something priceless that truly delighted us: Executive Chef Anselmo, Captain Grecia, waiters like Osvaldo and Atilano, Marvin from the Agave Azul restaurant, and the captain from the Capella restaurant. But especially Anselmo, an excellent person with great character and professionalism, made our vacation unforgettable.\nGreetings to all of them!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xOemVuUmlNVU10WmsxWFMwNTVVVUpmYXpWT1RFRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxMVdtOUNOa2hCWDNadGJscFhRMXBzZVZwb2JuYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk11Wm9CNkhBX3ZtblpXQ1pseVpobnc%7C%7C?hl=en-GB",
+      "author": "Coneja Avalos",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-11 17:06:07 +00:00",
+      "text": "Excellent hotel, many thanks to the very kind girls at the cafeteria, Perla and Anahí, who always had a great conversation and a smile, everything was excellent 10/10",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxMVdtOUNOa2hCWDNadGJscFhRMXBzZVZwb2JuYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWdVYzRmZZWGxzZUZkWFRYWXdhSGh3YlRsRGExRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOjVuV3FfYXlseFdXTXYwaHhwbTlDa1E%7C%7C?hl=en-GB",
+      "author": "Vito Del Zotti",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-11 02:04:08 +00:00",
+      "text": "Edgar did an excellent job on taking care of 15 people in our party for our dinner at Cappella restaurant. He deserved to be recognized for his professionalism and courtesy demonstrated.\nGreat job Edgar!!!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWdVYzRmZZWGxzZUZkWFRYWXdhSGh3YlRsRGExRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNfc1pqZk9BEAE!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgIC_sZjfOA%7C%7C?hl=en-GB",
+      "author": "Alex Mho",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-11 02:02:55 +00:00",
+      "text": "Edgar was an amazing server! Accommodated our large group with ease. Super helpful with recommendations",
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfc1pqZk9BEAE"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWTGFEVm5aSHBwWDJSTGNuUXRibnBrZGtGU1ZXYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOlVLaDVnZHppX2RLcnQtbnpkdkFSVWc%7C%7C?hl=en-GB",
+      "author": "Andrea Del Zotti",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-11 02:00:56 +00:00",
+      "text": "Edgar was a very talented and great server.  He handled my big Italian family of 15 by him self.  He did a great job very friendly, helpful and accommodating for such a big group.  I highly recommend getting Edgar as your server.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWTGFEVm5aSHBwWDJSTGNuUXRibnBrZGtGU1ZXYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfbkptbl93RRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CIHM0ogKEICAgIC_nJmn_wE%7C%7C?hl=en-GB",
+      "author": "Max Mho",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-11 01:52:44 +00:00",
+      "text": "Edgar at Cappela’s is the best waiter at the resort. He is very attentive, very helpful, and very respectful. Edgar took care of our group of 15 all by himself and made sure we got everything that we needed. He did not miss a single order and gave us an incredible experience.",
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfbkptbl93RRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25RNVJURkNSRWRFVlZOc1pVRktRMVpwTTBaUlgxRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnQ5RTFCREdEVVNsZUFKQ1ZpM0ZRX1E%7C%7C?hl=en-GB",
+      "author": "Mel Lara",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-11 01:01:31 +00:00",
+      "text": "Special thanks to José and Karen from KAO restaurant.\nThis entire team, made me feel extremely satisfied , beginning  with guest service,  knowledge about the food  and taste of food.\nDefinitely  this joy of restaurant deserves kudos, for the effort made every  day, to keep the magic at this resort.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25RNVJURkNSRWRFVlZOc1pVRktRMVpwTTBaUlgxRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21vMWQyYzVZbkZOUjNSZlQzcHFTWEZKYkdwV1NtYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOmo1d2c5YnFNR3RfT3pqSXFJbGpWSmc%7C%7C?hl=en-GB",
+      "author": "florencia maggi",
+      "rating": 4,
+      "ratingMax": 5,
+      "timestamp": "2026-06-10 22:17:57 +00:00",
+      "text": "The stay was fantastic! We had a few minor issues with the service, but everything was resolved smoothly. The rooms were very well-equipped, and the bed was large and comfortable. The food and drinks were excellent, especially the 24-hour café where Norma and Rosalinda made us tea and coffee constantly—they were so kind!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21vMWQyYzVZbkZOUjNSZlQzcHFTWEZKYkdwV1NtYxAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1VlpqZDBUalZzVEdaTWFuWlBRM0JLY0ZOd00wRRAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOk5VZjd0TjVsTGZManZPQ3BKcFNwM0E%7C%7C?hl=en-GB",
+      "author": "raissa ferrari",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-10 18:20:19 +00:00",
+      "text": "We were served by Armando, who was enthusiastic, had great suggestions, good food and great drinks, and a wonderful dessert.",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1VlpqZDBUalZzVEdaTWFuWlBRM0JLY0ZOd00wRRAB"
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25veWMwMXhXVGRrVjJoUGNuTmpkbVZCYTJSV1VXYxAB!2m1!1s0x0:0x911f472d975d75cf!3m1!1s2@1:CAIQACodChtycF9oOnoyc01xWTdkV2hPcnNjdmVBa2RWUWc%7C%7C?hl=en-GB",
+      "author": "Edu Mattos",
+      "rating": 5,
+      "ratingMax": 5,
+      "timestamp": "2026-06-10 18:20:15 +00:00",
+      "text": "The food is wonderful. Armando is a really nice guy, he recommended the best drinks and food at Blue Agave. I'll be back!",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25veWMwMXhXVGRrVjJoUGNuTmpkbVZCYTJSV1VXYxAB"
+    }
+  ]
+}

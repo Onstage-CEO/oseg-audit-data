@@ -1,0 +1,15 @@
+{
+  "platform": "expedia",
+  "capturedAt": "2026-06-20T20:08:44.735Z",
+  "reviews": [
+    {
+      "platform": "expedia",
+      "text": "The staff was wonderful! From check in to check out we had a lovely experience. Our room was kept very clean and stocked with towels, water, etc. the staff at the restaurants and the coffee shop were a delight, they made us feel right at home! We are definitely coming back.",
+      "author": "Nashelly Del",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/graphql",
+      "timestamp": "2026-06-20"
+    }
+  ]
+}
