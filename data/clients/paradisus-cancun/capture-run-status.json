@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-20T20:30:40.497Z",
+  "generatedAt": "2026-06-20T23:41:36.378Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -55,12 +55,18 @@
       "platformId": "expedia",
       "mechanism": "aggregator",
       "status": "ok",
-      "message": "Apify expedia: captured 0 new, skipped 1 dup(s).",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 1,
+      "message": "Apify expedia: captured 121 new, skipped 0 dup(s).; 152 available",
+      "recordsAdded": 121,
+      "duplicatesSkipped": 0,
       "queriesRun": 1,
       "queriesFailed": 0,
-      "truncatedQueries": []
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 121,
+        "availableReviews": 152,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
     },
     {
       "platformId": "travelocity",
