@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-20T20:30:40.497Z",
+  "generatedAt": "2026-06-20T23:22:20.075Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -9,57 +9,45 @@
     {
       "platformId": "google",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 4382 review(s), 106 dup; 15981 available",
-      "recordsAdded": 4382,
-      "duplicatesSkipped": 106,
-      "queriesRun": 0,
+      "status": "error",
+      "message": "google: task_post failed — DataForSEO google task_post returned HTTP 402",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 3,
       "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 4488,
-        "availableReviews": 15981,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "truncatedQueries": []
     },
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 4384 review(s), 106 dup; 21609 available",
-      "recordsAdded": 4384,
-      "duplicatesSkipped": 106,
-      "queriesRun": 0,
+      "status": "error",
+      "message": "tripadvisor: task_post failed — DataForSEO tripadvisor task_post returned HTTP 402",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 2,
       "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 4490,
-        "availableReviews": 21609,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "truncatedQueries": []
     },
     {
       "platformId": "booking",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify booking: captured 65 new, skipped 100 dup(s).",
-      "recordsAdded": 65,
-      "duplicatesSkipped": 100,
+      "status": "error",
+      "message": "Apify booking: hotel-URL auto-resolve failed: hotel-URL resolve (booking) returned HTTP 402",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
       "queriesRun": 1,
-      "queriesFailed": 0,
+      "queriesFailed": 1,
       "truncatedQueries": []
     },
     {
       "platformId": "expedia",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify expedia: captured 0 new, skipped 1 dup(s).",
+      "status": "error",
+      "message": "Apify expedia: hotel-URL auto-resolve failed: hotel-URL resolve (expedia) returned HTTP 402",
       "recordsAdded": 0,
-      "duplicatesSkipped": 1,
+      "duplicatesSkipped": 0,
       "queriesRun": 1,
-      "queriesFailed": 0,
+      "queriesFailed": 1,
       "truncatedQueries": []
     },
     {
@@ -88,9 +76,9 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 0 new, skipped 83 duplicate(s); 492 total in archive.",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 83,
+      "message": "captured 1 new, skipped 85 duplicate(s); 9259 total in archive.",
+      "recordsAdded": 1,
+      "duplicatesSkipped": 85,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [
