@@ -14,7 +14,7 @@
 # Engine is pinned to a known-good SHA (bump deliberately, never 'main').
 
 name: generate-brief
-run-name: brief: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}
+run-name: "brief: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
 on:
   workflow_dispatch:
     inputs:
