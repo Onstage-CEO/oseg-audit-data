@@ -1,0 +1,97 @@
+{
+  "reportVersion": "V1",
+  "generatedAt": "2026-06-21T23:14:04.786Z",
+  "property": {
+    "propertyName": "Paradisus Palma Real",
+    "location": "Punta Cana, Dominican Republic"
+  },
+  "sources": [
+    {
+      "platformId": "google",
+      "mechanism": "aggregator",
+      "status": "error",
+      "message": "google: no DataForSEO review tasks were created — sort:newest: task not created (status 40501: Invalid Field: 'language_name'.); sort:highest_rating: task not created (status 40501: Invalid Field: 'language_name'.); sort:lowest_rating: task not created (status 40501: Invalid Field: 'language_name'.)",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 4,
+      "queriesFailed": 4,
+      "truncatedQueries": []
+    },
+    {
+      "platformId": "tripadvisor",
+      "mechanism": "aggregator",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 6 in queue",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 0,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "booking",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify booking: captured 200 new, skipped 0 dup(s).; 436 available",
+      "recordsAdded": 200,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 200,
+        "availableReviews": 436,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "expedia",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify expedia: captured 150 new, skipped 0 dup(s).; 1629 available",
+      "recordsAdded": 150,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 150,
+        "availableReviews": 1629,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "reddit",
+      "mechanism": "official_api",
+      "status": "needs_key",
+      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": []
+    },
+    {
+      "platformId": "youtube",
+      "mechanism": "official_api",
+      "status": "ok",
+      "message": "captured 102 new, skipped 0 duplicate(s); 452 total in archive.",
+      "recordsAdded": 102,
+      "duplicatesSkipped": 0,
+      "queriesRun": 3,
+      "queriesFailed": 0,
+      "truncatedQueries": [
+        "Paradisus Palma Real walkthrough",
+        "Paradisus Palma Real resort tour",
+        "Paradisus Palma Real review vlog"
+      ]
+    }
+  ]
+}
