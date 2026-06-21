@@ -14,48 +14,6 @@
       "taskId": "06211936-1943-0298-0000-015b79db8887",
       "submittedAt": "2026-06-21T16:36:28.666Z",
       "note": "sort:relevant"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06211936-1943-0353-0000-6e680d7da4fb",
-      "submittedAt": "2026-06-21T16:36:28.666Z",
-      "note": "sort:most_recent"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06211936-1943-0353-0000-c509cc83551a",
-      "submittedAt": "2026-06-21T16:36:28.666Z",
-      "note": "sort:detailed_reviews"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06211936-1943-0353-0000-5c61173d8f97",
-      "submittedAt": "2026-06-21T16:36:28.666Z",
-      "note": "rating:excellent"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06211936-1943-0353-0000-46491e33314a",
-      "submittedAt": "2026-06-21T16:36:28.666Z",
-      "note": "rating:very_good"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06211936-1943-0353-0000-ec08215d1340",
-      "submittedAt": "2026-06-21T16:36:28.666Z",
-      "note": "visit_type:families"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06211936-1943-0353-0000-b7b924f007cd",
-      "submittedAt": "2026-06-21T16:36:28.666Z",
-      "note": "visit_type:couples"
     }
   ]
 }
