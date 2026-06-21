@@ -158,7 +158,7 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-06-21T21:43:59.328Z",
+    "now": "2026-06-21T21:45:25.049Z",
     "liveVerifiedTotal": 0,
     "dated": 0,
     "stale": 0,
@@ -251,5 +251,5 @@
       "unmatched": 0
     }
   },
-  "timestamp": "2026-06-21T21:43:59.338Z"
+  "timestamp": "2026-06-21T21:45:25.063Z"
 }
