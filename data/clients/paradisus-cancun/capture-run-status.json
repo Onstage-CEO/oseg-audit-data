@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-20T23:41:36.378Z",
+  "generatedAt": "2026-06-21T01:09:16.791Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -9,55 +9,43 @@
     {
       "platformId": "google",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 4382 review(s), 106 dup; 15981 available",
-      "recordsAdded": 4382,
-      "duplicatesSkipped": 106,
-      "queriesRun": 0,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 4488,
-        "availableReviews": 15981,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "status": "error",
+      "message": "google: no DataForSEO review tasks were created — sort:newest: DataForSEO google task_post returned HTTP 402; sort:highest_rating: DataForSEO google task_post returned HTTP 402; sort:lowest_rating: DataForSEO google task_post returned HTTP 402",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 4,
+      "queriesFailed": 4,
+      "truncatedQueries": []
     },
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 4384 review(s), 106 dup; 21609 available",
-      "recordsAdded": 4384,
-      "duplicatesSkipped": 106,
-      "queriesRun": 0,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 4490,
-        "availableReviews": 21609,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "status": "error",
+      "message": "tripadvisor: no DataForSEO review tasks were created — sort:most_recent: DataForSEO tripadvisor task_post returned HTTP 402; sort:detailed_reviews: DataForSEO tripadvisor task_post returned HTTP 402; rating:excellent: DataForSEO tripadvisor task_post returned HTTP 402",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 24,
+      "queriesFailed": 24,
+      "truncatedQueries": []
     },
     {
       "platformId": "booking",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify booking: captured 65 new, skipped 100 dup(s).",
-      "recordsAdded": 65,
-      "duplicatesSkipped": 100,
+      "status": "error",
+      "message": "Apify booking: hotel-URL auto-resolve failed: hotel-URL resolve (booking) returned HTTP 402",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
       "queriesRun": 1,
-      "queriesFailed": 0,
+      "queriesFailed": 1,
       "truncatedQueries": []
     },
     {
       "platformId": "expedia",
       "mechanism": "aggregator",
       "status": "ok",
-      "message": "Apify expedia: captured 121 new, skipped 0 dup(s).; 152 available",
-      "recordsAdded": 121,
-      "duplicatesSkipped": 0,
+      "message": "Apify expedia: captured 0 new, skipped 121 dup(s).; 152 available",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 121,
       "queriesRun": 1,
       "queriesFailed": 0,
       "truncatedQueries": [],
@@ -67,17 +55,6 @@
         "requestedDepth": 4490,
         "mode": "deep"
       }
-    },
-    {
-      "platformId": "travelocity",
-      "mechanism": "manual",
-      "status": "unsupported",
-      "message": "travelocity: no compliant programmatic path — human-captured (or a syndicated duplicate counted elsewhere).",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 0,
-      "queriesRun": 1,
-      "queriesFailed": 0,
-      "truncatedQueries": []
     },
     {
       "platformId": "reddit",
@@ -94,9 +71,9 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 0 new, skipped 83 duplicate(s); 492 total in archive.",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 83,
+      "message": "captured 3 new, skipped 82 duplicate(s); 9383 total in archive.",
+      "recordsAdded": 3,
+      "duplicatesSkipped": 82,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [
@@ -104,28 +81,6 @@
         "Paradisus Cancún resort tour",
         "Paradisus Cancún review vlog"
       ]
-    },
-    {
-      "platformId": "blogs",
-      "mechanism": "headless_browser",
-      "status": "queued_supervised",
-      "message": "blogs: no unattended capture path — queued for a supervised (logged-in browser) capture session.",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 0,
-      "queriesRun": 3,
-      "queriesFailed": 0,
-      "truncatedQueries": []
-    },
-    {
-      "platformId": "aerial_satellite",
-      "mechanism": "manual",
-      "status": "unsupported",
-      "message": "aerial_satellite: no compliant programmatic path — human-captured (or a syndicated duplicate counted elsewhere).",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 0,
-      "queriesRun": 1,
-      "queriesFailed": 0,
-      "truncatedQueries": []
     }
   ]
 }
