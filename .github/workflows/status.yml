@@ -19,6 +19,7 @@ on:
     paths:
       - 'data/clients/**'
       - '!data/clients/**/verify-report.json'
+      - '!data/clients/**/capture-archive-summary.json'
   workflow_dispatch:
     inputs:
       slug:
@@ -118,6 +119,17 @@ jobs:
             # NOT_READY exits 1 by design — status is data here, not an error.
             npm run dev --silent -- "${args[@]}" > "$ws/verify-report.json" || true
             node -e "const r=require('$ws/verify-report.json'); console.log('$slug →', r.status ?? r.overall)"
+            # Small CUMULATIVE archive summary for the hosted console — it must
+            # never fetch the multi-MB captures.json itself (that 503'd the Worker).
+            if [ -f "$ws/captures.json" ]; then
+              node -e '
+                const fs=require("fs"); const ws=process.argv[1];
+                const c=JSON.parse(fs.readFileSync(ws+"/captures.json","utf8")).captures||[];
+                const byPlatform={}; let latest=null;
+                for(const r of c){const p=r.platformId||"unknown"; byPlatform[p]=(byPlatform[p]||0)+1; const t=r.capturedAt; if(t&&(!latest||t>latest))latest=t;}
+                fs.writeFileSync(ws+"/capture-archive-summary.json", JSON.stringify({total:c.length,byPlatform,latestCapturedAt:latest},null,2)+"\n");
+              ' "$ws"
+            fi
           done
 
       - name: Commit reports (only when changed)
@@ -141,7 +153,7 @@ jobs:
               echo "unchanged (timestamp only): $f"
             fi
           done
-          git add data/clients/*/verify-report.json
+          git add data/clients/*/verify-report.json data/clients/*/capture-archive-summary.json
           if git diff --cached --quiet; then
             echo "Reports unchanged — nothing to commit."
             exit 0
