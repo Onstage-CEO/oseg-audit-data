@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-21T17:22:24.876Z",
+  "generatedAt": "2026-06-21T17:39:18.711Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -10,7 +10,7 @@
       "platformId": "google",
       "mechanism": "aggregator",
       "status": "pending_async",
-      "message": "collected 0 review(s); 2 in queue",
+      "message": "collected 0 review(s); 4 in queue",
       "recordsAdded": 0,
       "duplicatesSkipped": 0,
       "queriesRun": 0,
@@ -25,16 +25,15 @@
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 34 review(s), 25054 dup; 21610 available",
-      "recordsAdded": 34,
-      "duplicatesSkipped": 25054,
+      "status": "pending_async",
+      "message": "collected 0 review(s); 7 in queue",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
       "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 25088,
-        "availableReviews": 21610,
+        "capturedReviews": 0,
         "requestedDepth": 4490,
         "mode": "deep"
       }
@@ -43,14 +42,14 @@
       "platformId": "booking",
       "mechanism": "aggregator",
       "status": "ok",
-      "message": "Apify booking: captured 0 new, skipped 165 dup(s).; 165 available",
+      "message": "Apify booking: captured 0 new, skipped 54 dup(s).; 165 available",
       "recordsAdded": 0,
-      "duplicatesSkipped": 165,
+      "duplicatesSkipped": 54,
       "queriesRun": 1,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 165,
+        "capturedReviews": 54,
         "availableReviews": 165,
         "requestedDepth": 4490,
         "mode": "deep"
@@ -59,19 +58,13 @@
     {
       "platformId": "expedia",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify expedia: captured 0 new, skipped 121 dup(s).; 152 available",
+      "status": "error",
+      "message": "Apify expedia: actor run failed (HTTP 400).",
       "recordsAdded": 0,
-      "duplicatesSkipped": 121,
+      "duplicatesSkipped": 0,
       "queriesRun": 1,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 121,
-        "availableReviews": 152,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "queriesFailed": 1,
+      "truncatedQueries": []
     },
     {
       "platformId": "reddit",
@@ -88,9 +81,9 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 0 new, skipped 84 duplicate(s); 9383 total in archive.",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 84,
+      "message": "captured 8 new, skipped 82 duplicate(s); 20550 total in archive.",
+      "recordsAdded": 8,
+      "duplicatesSkipped": 82,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [

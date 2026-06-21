@@ -1,0 +1,527 @@
+{
+  "platform": "booking",
+  "capturedAt": "2026-06-21T17:27:00.904Z",
+  "availableReviews": 165,
+  "reviews": [
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "author": "Alexis",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1k91aag",
+      "timestamp": "2026-05-09T16:46:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Will go back again and again.",
+      "text": "How attentive they were to our needs. The staff went above and beyond on our needs. / Everything was great.",
+      "author": "Julio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-13er4g2",
+      "timestamp": "2026-05-05T02:07:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Ying",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-fz708i",
+      "timestamp": "2026-05-02T11:57:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "La comida, bebidas, la atención, instalaciones, todo muy bien la verdad / Que no te dan marbete para poner en el cuarto de que no molesten, tres veces fueron a tocarnos y nos despertaron",
+      "author": "Karime",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-c9mo1c",
+      "timestamp": "2026-04-27T15:08:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excellent",
+      "text": "Everything / N/A",
+      "author": "Llovanis",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1wvkdt9",
+      "timestamp": "2026-04-20T03:20:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "MUY MAL SERVICIO",
+      "text": "Lo único rescatable es que es un hotel muy grande y remodelaron un poco las habitaciones y digo un poco por que solo cambiaron el mobiliario. De ahí en fuera sigue siendo el mismo piso etc. / La comida del buffet es muy mala. Pocas opciones y todo sin sabor.   Anteriormente si te llevaban la comida del Snack bar hasta tu camastro en el área de alberca, ahora ya ni eso! Me pareció muy descortés eso, es lo menos que uno puede esperar de un lugar que no es nada barato. Snack bar lo abren hasta las 12 pm y la comida es muy mala, hamburguesas secas Hot Dog, alitas grasosas, etc. En el área de la alberca hay muy pocos meseros que son los que llevan las bebidas, se tardan muchísimo por lo mismo de que son pocos no abarcan todo. En en beach club nos ofrecieron un paquete para rentar una Balinesa frente al mar y nos dieron una botella de Moët y mariscos, los mariscos estaban malísimos de sabor. Y la atención del beach club Kanna fue PÉSIMA, el mesero fue muy desatento, si no le hablábamos no venía a ver si se nos ofrecía algo, estábamos batallando para cerrar las cortinas de la balinesa y nos vio y se pasó de largo en vez de ayudar.  Otro detalle enorme No me quisieron emitir mi factura fiscal porque la reserva estaba a mi nombre y yo la necesitaba a nombre de mi esposo porque pagamos con su tarjeta fiscal. Una tontería, jamás me habían echo algo así en otro lugar… a ver ahora como justifico esos 30 mil pesos. Porque ellos dicen que NO se puede. Muy mal trato para haber pagado $4,100!!!! Un robo, estafa total. En fin muy mal servicio, hay mejores opciones por ese precio. Lástima de hotel tan grande tiene mucho potencial pero en vez de mejorar empeoraron",
+      "author": "Cuevas",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-o28y11",
+      "timestamp": "2026-04-16T02:41:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "Great location, nice modern rooms, and concierge Eduardo Mena was outstanding -he went above and beyond, often resolving issues before they even arose. / We stayed at the hotel both before and right after the renovation. Unfortunately, aside from the room updates, nothing else seems to have changed.\n\nThe buffet had very limited food options, and there were extremely long lines -we even had to wait for something as simple as boiled eggs.\n\nDuring lunch, staff were painting areas nearby, and the smell of paint spread throughout the entire buffet, which was quite unpleasant.\n\nRoom service was inconsistent -after calling, it took about three hours for them to show up. By that time it was already late at night, and we had put up the “Do Not Disturb” sign, which was ignored.\n\nHousekeeping was below expectations. We had to document issues with photos, including hair in cups, dirty tissues with debris, and cigarette packaging, and send them to the concierge.\n\nWaiting times are a serious issue at this hotel -waiting an hour for a burger by the pool seems to be considered normal. In general, waiting is part of the experience here.\n\nThe gym is outdated -while it has basic equipment, everything is quite worn out and could definitely use an upgrade",
+      "author": "Anastasiia",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-q3tlm3",
+      "timestamp": "2026-04-09T02:10:26.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Gloria",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-ve42m6",
+      "timestamp": "2026-04-08T16:43:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "No instalen la App del hotel",
+      "text": "El hotel era grande y las habitaciones estaban bien. El personal de los restaurantes fue muy amable, los de la recepción no tanto… / La app de Meliá, si pueden no la instalen ni paguen nada desde ahí. Nos detuvieron para entrar y para salir porque según ellos no tenían el pago de la estadía pero si se había pagado.",
+      "author": "Karla",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-168y1i1",
+      "timestamp": "2026-04-08T01:52:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant",
+      "author": "Alvarez",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-12wpki4",
+      "timestamp": "2026-04-06T14:25:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Limpieza e instalaciones todo super bien / Nada, todo muy bien",
+      "author": "Rodolfo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-qy1c70",
+      "timestamp": "2026-04-06T12:22:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "text": "Pretty / I did the check in online and they made me make a payment for the entire stay at the check out because the transaction was still in progress. The were very rude and mean to us. Also, they restrict your visit to the pyramid that you are staying, you can only visit the area of your room’/ pyramid. Doesn’t make any sense…",
+      "author": "Patricia",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-rwiuwh",
+      "timestamp": "2026-04-06T02:04:19.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Ολα τελεια",
+      "text": "Ωραιο φαγητο!!\nΕξυπηρετηση αψωγη!!!",
+      "author": "Zachariadi",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-199z7n3",
+      "timestamp": "2026-04-05T02:03:13.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Satisfacción media",
+      "text": "No estaba la bebida y comida al nivel del precio cobrado",
+      "author": "Eric",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1h1c5qx",
+      "timestamp": "2025-07-27T14:03:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Carlos",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-15evl0c",
+      "timestamp": "2025-06-21T11:59:21.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Excelente",
+      "author": "Carolina",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-a7fa1q",
+      "timestamp": "2025-06-01T20:26:25.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "It was very clean, very beautiful",
+      "author": "Trung",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1cuabq8",
+      "timestamp": "2025-06-01T02:02:10.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Silvia",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1bxxcqz",
+      "timestamp": "2025-05-30T00:21:07.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Alejandro",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1wxopek",
+      "timestamp": "2025-05-21T15:11:29.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Underwhelming, boring and scammy",
+      "text": "Nothing specific to the property. Cancun’s beaches by themselves are beautiful. / The room we stayed in was average with poor air conditioning. \nThis property needs to look up the meaning of the word “hospitality”. \nThe concierge and guest services teams are slow, clueless, unhelpful and incompetent. \nThey call themselves “all inclusive” but constantly try to get you to spend your hard earned $$$ at every conceivable opportunity. For example there are restaurants in the hotel that you need to pay extra for??? Oh and you need to make reservations for the majority of the restaurants. Pool beds and cabanas are up for rental even though there aren’t enough “free” ones to accommodate all guests. Seriously? If you’re going to up-charge your guests at every opportunity at least have the decency to make it abundantly clear that your property isn’t exactly all inclusive in the true sense of the word. \nThe property is sleepy at night and the entertainment is forgettable. \nSpend a little more money to stay at a brand name resort like Hyatt because you actually get an all inclusive experience. It’s a real shame because the beach itself is so beautiful.",
+      "author": "Mehul",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-50ddrd",
+      "timestamp": "2025-05-08T02:29:21.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "Adorei a experiência, atendimento, serviços. / Serviços.",
+      "author": "Andrezza",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1nkbtjt",
+      "timestamp": "2025-05-05T03:31:30.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Nos encanta !",
+      "text": "Todo en general,… la comida, las instalaciones, la atención. / Los eventos familiares nocturnos, el espacio es pequeño y asisten muchas personas, colocan muy pocas sillas.",
+      "author": "Karla",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1oqrn1l",
+      "timestamp": "2025-05-02T05:44:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great staff- in desperate need of renovation and cleaning",
+      "text": "Nice water / Expect lots of greasy finger prints everywhere. There is not enough chairs around the pool while hotel prefers to make money from roofed beds $250 USD per day. Towel inside the room had stains and floors were very dirty. Drapery were falling off and paints around door and walls were peeling. Toilet tank didn’t work and they fixed it however you couldn’t still do twice in a row. In a desperate need of renovation. Great hardworking staff.",
+      "author": "Mina",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-czrb67",
+      "timestamp": "2025-04-22T02:42:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "El mejor Servicio al cliente .",
+      "text": "El resort esta hermoso ,La habitacion Que nos dieron Estaba bien Pero no la mejor . Los mejores server atilano de blueagave y francisco de el buffet . / Los restaurantes estan hermoso la comida de Los restaurante a la carta estan mucho mejor Que el buffet .",
+      "author": "Michelle",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-pr5wm9",
+      "timestamp": "2025-04-17T14:57:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Claire",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-wzp7gk",
+      "timestamp": "2025-03-24T07:10:34.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Jheanell",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1q358k1",
+      "timestamp": "2025-03-18T03:54:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "omg I love everything about the property, beautiful scenery every where you look and the staff were very friendly & welcoming / Nothing",
+      "author": "Essence",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-jgkzcn",
+      "timestamp": "2025-03-04T14:17:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Will never go back",
+      "text": "Room had a great view, buffet option was good and some decent staff people. / Wow where do I begin?\nWhy is this hotel so popular (I am still in disbelief)?\nWe stayed 8 days / 7 nights with family concierge service.\nWe were told we cannot make any restaurant reservation until you arrive. As soon as we got there - they said family concierge will help restaurant reservation. And yet we were unable to get table at most decent restaurants as they are all booked. Steak one - only adults. The Kanna beach club ( the great photos of cabanas you see onlime)  - is only if you pay $250 extra / day / cabana. Snd also extra for food. Even with all inclusive resort.  Also by the pool - all this pretty cabanas pictures u see facing the ocean .. Only if u pay $250 extra/ day . Most of these cabanas were empty as no one wanted to pay. We had no lounge chairs most days .\n\nThe beach or swimming pool lounge chairs - you will be lucky if you get one - only to find out  you have go wake up 5.30am- 6am  and go down n save a spot . Or leave towel. So one morning I was up by 6 n saved a spot by poll. But was told not to leave your spot??? ( So I should just sit there without going back to room for shower or get breakfast??\n\nAnyways I left my kids swim jackets on the chairs n went to my room. Came back with my family after breakfast-    Stuff was all gone.  Took us hours to locate our stuff. Most days we put towels on ground / beach without any chairs.   Most days we ordered  in our room with  limited menu  ( horrible ) inspite of restaurants as they  have no tables available at Capella or Cielo or lemon fish or steak\nOnly time given go us for 5.30pm reservation which we did couple of times but couldn’t eat this early dinner anymore.  Also you are not allowed to take food or order     In your room from any of the restaurants.\n\nThe buffet for breakfast was a joke too . Omelette station - if you really want to stand 45 min :) Only time to get decent breakfast if u wake up again 6.",
+      "author": "Sejal",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1fd994n",
+      "timestamp": "2025-02-27T12:17:17.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Hotel maravilhoso, mas os apartamentos não condizem com o padrão do hotel",
+      "text": "O hotel é maravilhoso, muito lindo e bem decorado. A praia em frente é belíssima. A comida muito boa. / Os apartamentos de frente para o lago estão muito antigos, destoam do resto do hotel. Necessitam urgente de reforma e atualização. A água do chuveiro é muito fraca.",
+      "author": "Ana",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1b0htg",
+      "timestamp": "2025-02-18T21:29:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant",
+      "text": "La arquitectura. / Desastroso sistema de toallas y pocas tumbonas, era realidad al menos un 40% menos de lo necesario.",
+      "author": "Sergio",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-qtw7x4",
+      "timestamp": "2025-02-18T11:28:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Ja’liyah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-hhaq40",
+      "timestamp": "2025-02-12T04:44:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Irene",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1mjvpll",
+      "timestamp": "2025-01-18T22:31:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Not 5 star service or facilities everything an upcharge",
+      "text": "The beach front, not too far from airport / Not clean\nRoaches\nIssues in the outdated rooms... Not all plugs worked\nHallways covered in food from room service, stains, buckets for roof leaks\nTemp outdoor plumbing with wires showing",
+      "author": "Geri",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-mcarpj",
+      "timestamp": "2025-01-09T03:54:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Sergio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1ypef97",
+      "timestamp": "2025-01-05T22:03:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Agostini",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-ueq0bg",
+      "timestamp": "2025-01-05T19:45:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Geraldine",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-ucat3m",
+      "timestamp": "2025-01-03T03:35:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "体验感太差了，性价比太低，这酒店不会再来第二次，也不会再住全包酒店了",
+      "text": "什么都要预定，预定时间是早上十点到下午四点，必须线下定，不能打电话预定，所以只要你当天不在酒店待着就吃不上饭，只能吃自助，我们第一天到的太晚，自助餐基本也没食物可吃了。外面的躺椅必须早起区抢占位置，不然也是轮不上的，真的服了，酒店外面的海比较深，建议往北边住比较好，海比较浅。房间位置不好，不是海景房，时落日房，但是落日也被围墙挡住了，房间隔音好差，空调声音巨响。 / 什么都要预定，预定时间是早上十点到下午四点，必须线下定，不能打电话预定，所以只要你当天不在酒店待着就吃不上饭，只能吃自助，我们第一天到的太晚，自助餐基本也没食物可吃了。外面的躺椅必须早起区抢占位置，不然也是轮不上的，真的服了，酒店外面的海比较深，建议往北边住比较好，海比较浅。房间位置不好，不是海景房，时落日房，但是落日也被围墙挡住了，房间隔音好差，空调声音巨响。",
+      "author": "Dandan",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-105g4el",
+      "timestamp": "2024-12-26T14:11:30.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant",
+      "text": "Die Lage ist super und der Strand immer sehr sauber.\nDie Kellner kümmern sich super um die Gäste und man war stehts mit Drinks versorgt. Man hat einen persönlichen Concierge.\nDas Essen war ok. / Das Hotel ist renovierungsbedürftig. Für den sehr hohen Preis erhält man zudem keine Möglichkeit für einen kostenlosen oder vergünstigten Late Check Out. Das war sehr entäuschend.\nWird das Hotel renoviert, dann werden wir wieder Gäste sein :).",
+      "author": "Barbara",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-9of058",
+      "timestamp": "2024-12-20T15:09:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Relaxing",
+      "text": "Long way to walk to get to restaurants",
+      "author": "Carolyn",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1ve9etl",
+      "timestamp": "2024-12-16T06:23:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Customer service was horrible",
+      "text": "Nothing / The rooms could been cleaner",
+      "author": "Jeudy",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-160l1d",
+      "timestamp": "2024-12-10T02:59:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "La playa... La atención.. el.personal siempre dispuesto ... La variedad de comidas y bebidas... / Los últimos 2 días no se limpió la habitación...",
+      "author": "Pablo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1n5fqxh",
+      "timestamp": "2024-12-08T02:32:02.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Larie",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1rfjfaz",
+      "timestamp": "2024-12-07T23:03:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "author": "Pedram",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-og8x8d",
+      "timestamp": "2024-12-05T12:51:09.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "It was overall good.",
+      "text": "Loved the facilities and the staff were very attentive. / The food at the pool restaurant could have been a lot better. The bathroom water pressure was too high in the main bathroom and because of that the bathroom kept overflowing.",
+      "author": "Andre",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-193v2cp",
+      "timestamp": "2024-12-04T06:04:55.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Norman",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-9w6k3q",
+      "timestamp": "2024-11-27T02:48:25.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Luisa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1gx3uwl",
+      "timestamp": "2024-11-25T13:19:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "Los restaurantes / Mantenimiento en la habitacion de un lado",
+      "author": "Víctor",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1360eq4",
+      "timestamp": "2024-11-22T16:06:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Un lugar increíble con malos servicios",
+      "text": "La estructura y ubicación. Muy amplio, con espectaculares balcones internos. El hall central es impactante como también los distintas cafeterías y restaurantes que posee el lugar. / Me cobraron dos veces y no me hicieron la devolución. Tema en curso.\r\nTuve que pedir que pasaran a arreglar la habitación.\r\nEl Restaurante principal (SAL) tiene pésima atención. Tardaron mas de 1 hora en servir la entrada y otros tantos minutos el plato principal. Las bebidas (gaseosas) sin gas.\r\nLa puerta del baño de la habitación, rota. El Conserge que te asigna te avisa que si hay algo en mal estado solicite mantenimiento....en lugar de revisar si estaba todo en orden.",
+      "author": "Sebastian",
+      "rating": 3,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1w7v74i",
+      "timestamp": "2024-11-11T21:07:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional hotel with great service",
+      "text": "Everything the service was amazing from the bell boys and check at guest services to check out / Nothing",
+      "author": "Kwesi",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1xpcp8d",
+      "timestamp": "2024-11-11T08:20:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Schoonover",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-130gqwo",
+      "timestamp": "2024-10-28T13:49:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Reyes",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-qxo2sh",
+      "timestamp": "2024-10-28T02:25:37.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Buena",
+      "text": "Cena depende del restaurant. El mejor es Lemon Fish. Piscina excelentes / habitaciones anticuadas en mobiliario y equipamiento. El jacuzzi de la terraza no sirve",
+      "author": "Urbanocity",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1gqnmns",
+      "timestamp": "2024-10-18T19:34:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Fue lindo pero hay cosas que podrían ser mejor",
+      "text": "Las instalaciones / Las almohadas ( ya no de buen uso ) dañadas muy suaves",
+      "author": "Ana",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-gm5z49",
+      "timestamp": "2024-10-16T13:48:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excellent",
+      "text": "Love this place !! The facilities, the attention, I really enjoy my stay, definitely I will come back and will recommend!!",
+      "author": "Catano",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/mx/paradisus-cancun-all-inclusive.html#review-1lrmclg",
+      "timestamp": "2024-10-14T03:09:27.000Z"
+    }
+  ]
+}
