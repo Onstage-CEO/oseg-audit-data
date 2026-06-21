@@ -44,7 +44,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: b81a286e38c5ca0dc0c20b4186be769d0976cfaa
+  ENGINE_REF: 7621026aac83613c53ccccf0db00476cf4583911
 
 permissions:
   contents: write
@@ -67,7 +67,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: b81a286e38c5ca0dc0c20b4186be769d0976cfaa
+          ref: 7621026aac83613c53ccccf0db00476cf4583911
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
