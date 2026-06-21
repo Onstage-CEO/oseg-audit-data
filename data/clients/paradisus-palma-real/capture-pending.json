@@ -11,13 +11,6 @@
     {
       "platformId": "tripadvisor",
       "vendor": "dataforseo",
-      "taskId": "06220222-1943-0353-0000-302774cbfa4a",
-      "submittedAt": "2026-06-21T23:22:03.789Z",
-      "note": "month:february"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
       "taskId": "06220222-1943-0353-0000-50599f2bfdb6",
       "submittedAt": "2026-06-21T23:22:03.789Z",
       "note": "month:march"
@@ -28,34 +21,6 @@
       "taskId": "06220222-1943-0353-0000-f2c0beaa3c5f",
       "submittedAt": "2026-06-21T23:22:03.789Z",
       "note": "month:april"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06220222-1943-0353-0000-e742184a2955",
-      "submittedAt": "2026-06-21T23:22:03.789Z",
-      "note": "month:may"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06220222-1943-0353-0000-8d5bf762d63e",
-      "submittedAt": "2026-06-21T23:22:03.789Z",
-      "note": "month:june"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06220222-1943-0353-0000-6c1007175209",
-      "submittedAt": "2026-06-21T23:22:03.789Z",
-      "note": "month:july"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06220222-1943-0353-0000-c6f1d99fdaf3",
-      "submittedAt": "2026-06-21T23:22:03.789Z",
-      "note": "month:august"
     }
   ]
 }
