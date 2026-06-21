@@ -1,8 +1,8 @@
 # Entertainment Evidence Discovery — Paradisus Cancún
 
-Generated: 2026-06-21T00:29:37.712Z
+Generated: 2026-06-21T00:31:14.736Z
 
-This is the needle-in-a-haystack layer: it does not claim to scrape every public post. It directs the operator to the highest-yield entertainment-specific places and preserves candidate nuggets for human review before anything becomes client-facing.
+This is the entertainment evidence hunt: start with the highest-yield visual, social, forum, blog, complaint, Spanish-language, and competitor searches, then preserve the strongest sourced findings for human review before anything becomes client-facing.
 
 ## In-Corpus Nuggets
 - **Watch item** · tripadvisor · 5/5 · activities, dancing, entertainment, kids club, performer, show
