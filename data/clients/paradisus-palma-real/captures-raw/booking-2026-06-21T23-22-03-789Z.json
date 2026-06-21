@@ -1,0 +1,1939 @@
+{
+  "platform": "booking",
+  "capturedAt": "2026-06-21T23:22:03.789Z",
+  "availableReviews": 436,
+  "reviews": [
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "the food\r\nthe beach / check in,\r\n information",
+      "author": "Adedokun",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1m47kjp",
+      "timestamp": "2026-06-21T21:10:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Jimenez",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-6nkr7s",
+      "timestamp": "2026-06-19T20:24:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Balnave",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-fyalvj",
+      "timestamp": "2026-06-19T14:30:13.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "Pontos positivos: o resort é lindíssimo e muito bem conservado. As piscinas e a praia são excelentes. O atendimento da equipe merece destaque, todos super atenciosos e prestativos. A qualidade das comidas e bebidas também está acima da média dos all inclusive da região. / Senti falta de um salão de jogos. O outro ponto que incomodou foi a dificuldade de acesso a alguns serviços. Sem contratar Concierge, os horários disponíveis são muito ruins e você fica bem limitado. E também houve cobrança antes do check-in, mesmo na reserva informando que o pagamento não seria antecipado. Isso gerou confusão.\n\nVoltaria? Sim, pela estrutura e atendimento. Mas só recomendaria contratar Concierge e confirmar as condições de pagamento direto com o hotel pra evitar surpresa.",
+      "author": "Aurélio",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-z1vhsv",
+      "timestamp": "2026-06-19T11:35:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "I’ll go next year if they provide a group discount",
+      "text": "Spaces and general conditions / None",
+      "author": "Segura",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1g1u1zj",
+      "timestamp": "2026-06-19T01:24:16.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Comodidad y buen gusto",
+      "text": "La comodidad y decoración de las habitaciones. Insuperables\nLa variedad del desayuno y almuerzo es exquisita / Que el bufet lo cierran a la noche y abren en otra zona al aire libre que por lo general es muy ventoso y no da para nada gusto comer con el cabello en la cara. Tampoco está cómodo y la ambientación deja mucho que desear.",
+      "author": "Vanessa",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1hl0sf5",
+      "timestamp": "2026-06-18T13:38:56.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Báez",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1rxvuos",
+      "timestamp": "2026-06-18T13:34:12.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Comidas en los restaurantes estaban excelente y las piscinas tambien / La playa no me gusto mucho",
+      "author": "Angel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-kpmubt",
+      "timestamp": "2026-06-18T12:15:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Rosario",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-14hpzpj",
+      "timestamp": "2026-06-17T03:48:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "Instalación / Variedad de la comida",
+      "author": "Santana",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1hhkmmo",
+      "timestamp": "2026-06-16T14:41:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Miguel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-wwd94t",
+      "timestamp": "2026-06-16T09:21:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "Si / Las atenciones po una camarera del sport bar, muy mal humorada y hablaba  mal a los clientes y poca variedad de comida",
+      "author": "Bianka",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-snge5g",
+      "timestamp": "2026-06-16T03:18:50.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Me gusto la cena, a comida. Me encantó la dinamica que tienen de que cada edificio consta de piscina privada que pueden ser usadas durante el tiempo que se desee. El ambiente era muy tranquilo y calmado. / Hay edificios que no tienen ascensores cerca, lo digo porque en caso de tener que bajar con un coche para bebes se me dificultaba, pero en todo lo demas fue excelente.",
+      "author": "De",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-15tsdig",
+      "timestamp": "2026-06-16T02:35:31.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Estupenda",
+      "text": "Instalaciones, servicio, comodidades. Todo increíble / Me hubiese gustado comer más mariscos",
+      "author": "Mateo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-4jild1",
+      "timestamp": "2026-06-16T02:26:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Hotel was pretty but could be cleaned better and better at servicing the customer.",
+      "text": "Property was big and nice staff was very nice / We didn’t have water at one point for about 30-45 min. Could not get face towels if needed more and room was not cleaned everyday. Saw roaches.",
+      "author": "Alisha",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-mb3l0i",
+      "timestamp": "2026-06-16T02:11:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Yimi",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1fv5c97",
+      "timestamp": "2026-06-15T23:30:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "El personal fue fenomenal",
+      "author": "Anel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-171fnk6",
+      "timestamp": "2026-06-15T16:21:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Me encanta paradisus",
+      "text": "Me enctantó el trato del personal, la comida del sport bar buenisima",
+      "author": "Anel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-sonpvy",
+      "timestamp": "2026-06-15T16:20:58.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "El trato del personal fue increíble. Todo el personal fue muy amable",
+      "author": "Robinson",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-mfre4n",
+      "timestamp": "2026-06-15T16:18:50.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Todo, la comida las buenas atenciones, todo excelente",
+      "author": "Mora",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1lgk8cw",
+      "timestamp": "2026-06-15T16:13:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Increíble propiedad. 10/10 al servicio del staff completo y las atenciones. Habitaciones y el complejo completo en óptimas condiciones y muy limpios. Piscinas y playas increíbles también!!\nM volveremos pronto!!!",
+      "author": "Yoely",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1y69q7q",
+      "timestamp": "2026-06-15T16:11:45.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Wilfrand emmanuel",
+      "text": "Las picina las comida los asistentes todos están super super bien / Nada",
+      "author": "Emmanuel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-zh47rn",
+      "timestamp": "2026-06-15T16:08:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "El servicio fenomenal. El trato de Gabriel espectacular",
+      "author": "Malco",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1otdndl",
+      "timestamp": "2026-06-15T16:02:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Peralta",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-nkfcyo",
+      "timestamp": "2026-06-15T15:03:14.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Honestamente luego de la atención por parte del personal, las instalaciones y comidas...\nY la piscina está muy agradable / En lo personal cuando visitó un hotel nuevo siempre ubico un mapa que me permita conocer las instalaciones de manera interactiva, me sentía un poco perdido en esa parte, si recibí un mapa en recepción pero no había mapas guías en los pasillos...",
+      "author": "Henriquez",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-nslts5",
+      "timestamp": "2026-06-15T14:08:19.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Elmer",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1p9ais9",
+      "timestamp": "2026-06-15T03:29:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excelente servicio al cliente, tienen un personal excelente. La comida, el confort de la habitación excepcional.",
+      "text": "Buena atención en todo el sentido de las palabras / Encantado con todo",
+      "author": "Castillo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-17yu4oh",
+      "timestamp": "2026-06-14T16:18:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Una experiencia única!",
+      "text": "Las instalaciones, las atenciones del personas y las habitaciones son de ensueño. / El servicio a la habitación en horas de la madrugada, tarda muchas horas.",
+      "author": "Brígida",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-gtal7d",
+      "timestamp": "2026-06-14T15:18:31.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Experiencia increíble",
+      "text": "Las instalaciones, las habitaciones, la comida, la atención del personal. / El servicio a la habitación de madrugada tarda hasta dos horas en llegar.",
+      "author": "Brígida",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-s2pur7",
+      "timestamp": "2026-06-14T15:16:17.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "Location and staff / My fridge didn't work in our room and the cats everywhere",
+      "author": "Bridgett",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-6c9ysp",
+      "timestamp": "2026-06-14T08:21:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excelente!",
+      "text": "Hotel excelente com diversos restaurantes. Atendentes muito receptivos e solicitos. Quarto enorme e muito limpo. Alimentação com muita variedade e muito saborosa.",
+      "author": "Alexandra",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ve3c3g",
+      "timestamp": "2026-06-11T12:48:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Jennifer",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-fjb2a0",
+      "timestamp": "2026-06-11T01:26:45.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Es un hotel tranquilo, con amplia variedad en menú y habitación muy confortable. / Lo que disfrutamos estuvo muy bien",
+      "author": "Claudia",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1s5r6se",
+      "timestamp": "2026-06-07T14:05:31.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Benjamin",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-3kipyp",
+      "timestamp": "2026-06-02T11:45:53.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Juan",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-kb3php",
+      "timestamp": "2026-06-01T10:20:21.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Pio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-wa3xhe",
+      "timestamp": "2026-05-31T12:39:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Decepcionante retorno a Paradisus Palma Real",
+      "text": "La ubicación / La experiencia gastronómica deja bastante que desear, sobre todo en el restaurante mexicano (las tortillas frías con champiñones enlatados eran realmente penosos). Pero lo peor no fue eso; nos alojamos en el sector \"exclusivo\" de The reserve, una habitación swim up con acceso directo a la piscina. En reiteradas ocasiones grupos de huéspedes utilizaron parlantes personales a alto volumen, alterando completamente el ambiente de descanso y exclusividad que precisamente uno espera al elegir esta categoría. Según los propios lineamentos del hotel, esto está prohibido, sin embargo, el personal del hotel no intervino ni tomó las medidas efectivas para resguardar la experiencia de los demás huéspedes, convirtiendo una piscina \"exclusiva\" en una playa pública parlante.\r\nLa verdad es que podría seguir, porque hubieron varias otras situaciones que hicieron que la estadía en este resort fuera mas bien modesta. Elegí pasar mi cumpleaños acá y no fue una buena decisión. Lo lamento mucho, porque ya antes me había alojado en Paradisus Playa del Carmen (Royal Service) y en este mismo Resort Paradisus Punta Cana hace unos dos años, pero el deterioro generalizado es evidente. En resumen, no vale lo que cobran y lo peor de todo es que lo que se ofrece no es tal; no hay exclusividad, no hay respeto y el descanso pasa a ser incomodidad. No vuelvo.",
+      "author": "Cristián",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-m03x67",
+      "timestamp": "2026-05-26T14:19:53.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Make you feel heaven!",
+      "text": "Access to pool and beach was awesome!! / Clean, the fact Reserve Adult Only is so quiet andmakes you feel exclusive. Nobody doing nonsense things! No smell of drugs unlike walking NYC.  Loves the retro night singer and dancers!! Acrobat entertainment was also superb!",
+      "author": "Kyoko",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-13grp6m",
+      "timestamp": "2026-05-25T17:07:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Amazing I love it!",
+      "text": "Beautiful, nice, & clean. / N/A",
+      "author": "Alyana",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-mtr5kh",
+      "timestamp": "2026-05-21T06:25:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Paul",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-7ue756",
+      "timestamp": "2026-05-19T23:39:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Frisdarlyn",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1he8sgp",
+      "timestamp": "2026-05-16T17:26:02.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Uma delícia de lugar",
+      "text": "Muita diversidade de opções \r\nFuncionários sempre solícitos \r\nPé na areia / Precisam comprar a cachaça brasileira como compram a vodka",
+      "author": "Rubens",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-q53fdr",
+      "timestamp": "2026-05-15T10:39:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "À éviter vraiment, il y a des hôtels 1000 fois mieux pour moins cher",
+      "text": "Alors franchement l’histoire de All inclusive, éviter totalement le personnel est vraiment horrible, sauf quelques personnes, mais comme tout est déjà payé, ils font pas d’effort y a aucun effort vraiment / Pour avoir un cocktail, ça te regarde de haut en bas ! \n\nAussi il y a des choses restaurant, bar réservées à certaines personnes où vous n’avez pas accès quasiment les trois quarts. Vous n’avez pas accès",
+      "author": "Salim",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-vvge3q",
+      "timestamp": "2026-05-15T01:49:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great place to completely relax with no hassles.",
+      "text": "Very clean and bed was exceptionally comfortable.  Many different areas to relax and change the scenery to not be in the same spot every day.  Staff were friendly and accommodating. / Nothing",
+      "author": "Kristen",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-zup2mf",
+      "timestamp": "2026-05-14T21:25:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "I love this place!!!",
+      "text": "It is beautiful and we had a great time!\nI can’t wait to go back!!! / Everything was great",
+      "author": "Fernanda",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-fl6yuz",
+      "timestamp": "2026-05-13T18:52:02.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "text": "Personal eine katastrophe . \nSie mussen noch lernen was ein Gast im Haus ist - Total alle Freh\nEssen war gut",
+      "author": "Vera",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-8w1z30",
+      "timestamp": "2026-05-13T15:06:55.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Maravillosa!",
+      "text": "Nos encantó la estadía! Desde el check in hasta al check out el personal muy atento y amable. La comida nos sorprendió positivamente, excelente variedad y calidad. Nosotros que hacemos dietas pudimos comer super bien y rico. Disfrutamos también del restaurante a la carta, donde nos hicieron la reservación al momento de nuestro check in. Instalaciones limpias, habitación amplia, playa maravillosa. La pasamos genial! Volveremos y recomendamos, sea para pareja sea para familia. / Puede mejorar la salida del aire en la habitación doble, donde la salida del aire está ubicada en la sala de estar y cuando se cierra la puerta de la habitación el aire no llega. Pero algo sencillo",
+      "author": "Renata",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ggz2w0",
+      "timestamp": "2026-05-12T04:03:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "text": "La playa es muy linda, sin algas y con buenas sombrillas / El servicio del hotel dista muchísimo de ser un 5 estrellas. Muy malo",
+      "author": "Verónica",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-axhim9",
+      "timestamp": "2026-05-10T14:50:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Hotel grande mas ssm charme",
+      "text": "Praia linda / Dificuldade de saber onde posso ou nao ficar por causa das areas restritas",
+      "author": "Gustavo",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-2jxojf",
+      "timestamp": "2026-05-09T20:38:19.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "I loved it",
+      "text": "Everything! Was perfect / Nothing",
+      "author": "Dulce",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-p9scby",
+      "timestamp": "2026-05-08T14:54:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Cuentan con unas instalaciones geniales, muy buena variedades gastronómicas.",
+      "text": "El trato del personal fue excelente. / A mi compañera las almohadas de la habitación les resultaron incomodas.",
+      "author": "Juan",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-n8qzvo",
+      "timestamp": "2026-05-08T14:07:28.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Estadia agradável e completa",
+      "text": "Foi a minha primeira vez em um resort all inclusive, e a experiência superou todas as expectativas. Logo pela manhã, o café da manhã impressionava pela variedade e organização, com frutas frescas, pães e opções quentes bem dispostas e sempre renovadas. No almoço e no jantar, a diversidade continuava, com pratos para todos os gostos, desde culinária local até internacional, tudo muito bem apresentado.\r\n\r\nOs restaurantes que exigem reservas, gostamos bastante da experiência, dando destaque ao Ao Asiático e ao Italiano.\r\n\r\nA área de piscinas era ampla e convidativa, com espaços para relaxar e também para se divertir, sempre limpa e bem cuidada. Já a praia, com sua beleza natural, completava o cenário perfeito, oferecendo um ambiente tranquilo para descansar e aproveitar o dia. Foi uma experiência única, confortável e cheia de momentos agradáveis. / Apesar de a experiência no resort ter sido, no geral, muito positiva, o jantar no restaurante Mina deixou a desejar. A carne servida não estava no ponto esperado, e a apresentação do prato também não foi agradável. \r\n\r\nAlém disso, alguns funcionários do resort não foram tão receptivos quanto o restante da equipe — embora seja justo destacar que outros atenderam muito bem. Esse contraste acabou impactando a experiência nesse momento específico.",
+      "author": "Mariza",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1pn7mvl",
+      "timestamp": "2026-05-06T21:03:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "The food is awesome,friendly staff and like I said it’s a place to visit",
+      "text": "It’s all inclusive,I’m going to visit again / Nothing bad to write about the property",
+      "author": "Sheriff",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-xiauid",
+      "timestamp": "2026-05-05T22:02:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "el cuarto con todo muy bien organizado, servicio superio, muy tranquilo.",
+      "author": "Jaime",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1c0qifg",
+      "timestamp": "2026-05-04T21:16:29.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Fue buena la experiencia,excelente la comida",
+      "text": "Todo muy limpio,en la resección buena atención,buena la comida,instalaciones muy lindas y bien cuidadas / Que no incluía coco de agua y mi reserva era para área de adultos y me ubicaron en área familiar",
+      "author": "Yesenia",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-o77dmu",
+      "timestamp": "2026-05-03T23:28:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Marcela",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-88nm8z",
+      "timestamp": "2026-04-30T17:31:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Yoiqui",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1r9t2qn",
+      "timestamp": "2026-04-29T22:42:09.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Hurtado",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1mm59ef",
+      "timestamp": "2026-04-28T17:20:29.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Hurtado",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1fdx39t",
+      "timestamp": "2026-04-28T17:20:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Disappointing",
+      "text": "Location / Food, quality, personal",
+      "author": "Leopoldo",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1t8rx92",
+      "timestamp": "2026-04-28T02:06:48.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excelente localização e instalçaoes mas precisa melhorar no serviço",
+      "text": "Excelente instalações, hotel enorme e muito bonito com praia calma com mar lindo e belas piscinas. Quarto espaçoso e silencioso. Oferece variedade de restaurantes, se puder fique no The Reserve oferece área exclusiva para adultos na praia piscina e restaurantes. Tem uma boa academia / A minha reserva foi no The Reserve na modalidade de pagamento no check in, porém o hotel fez a cobrança no cartão 1 semana antes da chegada gerando suspeitas quanto a fraude. Nosso check in foi no sabado as 21:40 infelizmente a funcionaria que nos recebeu não nos informou quanto ao funcionamento do hotel referente a necessidade de realizar reservas nos restaurantes. No domingo a noite fomos jantar e descobrimos que deveria ter sido feito uma reserva, a hostess nos indicou local Na segunda quando fui fazer a reserva os horários já estavam muito restritos, sendo que eu enviei mensagem previamente ao concierge para saber sobre e não houve resposta. As malas demoraram 45 min apos nossa entrada no quarto para serem entregues, totalmente inaceitável. Outro ponto que foi incomodo foi que ficamos com frigobar sem funcionamento no apartamento 7203 por 3 dias apenas após inumeras reclamações consertaram. Quanto a equipe se quiser ser bem tratado é necessário que tenha o hábito de dar gorjetas. Deixou a desejar...",
+      "author": "Giselle",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-14omyo8",
+      "timestamp": "2026-04-27T15:09:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Roberta",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1nvjdgj",
+      "timestamp": "2026-04-27T06:37:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "Las instalaciones / Mi experiencia fue bastante irregular. En cuanto a la gastronomía, el buffet superó notablemente a los restaurantes temáticos; lo único que realmente destacaría es el Hibachi. Respecto al servicio, la atención fue inconsistente y parece depender del humor del empleado, lo que sugiere una falta de capacitación general: mientras algunos fueron extremadamente atentos, otros brindaron un servicio deficiente.\nPor otro lado, la calidad de las bebidas alcohólicas deja mucho que desear. Sin embargo, el punto más bajo fue el personal de camaristas (housekeeping), quienes ofrecieron el peor servicio de toda la estancia.",
+      "author": "Jesus",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1fj91cb",
+      "timestamp": "2026-04-26T14:13:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Buena opción si buscas tranquilidad",
+      "text": "Las instalaciones son muy hermosas, las piscinas limpias, las habitaciones espectaculares, hermosas y muy cómodas / Realmente la comida deja mucho que desear tanto la de los restaurantes como la del bufet, no todo el personal es amable o servicial, casi toda la actividad nocturna termina tipo 9 pm máximo 11 pm, si buscas algún tipo de actividad nocturna o buscas un hospedaje un poco más entretenido este hotel no es para ti, creo que es más para personas mayores que buscan tranquilidad y silencio (y eso está bien), pero si quieres bares, disco, baile creo que hay mejores y más económicas opciones",
+      "author": "Zashiel",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1hdes72",
+      "timestamp": "2026-04-24T23:00:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Lo pasamos muy bien en la playa y en la habitación no tanto con la comida en los distintos restauran",
+      "text": "La playa estaba exquisita y muy bien atendida por jóvenes que te llevan las bebidas todo bien en la playa / las comidas el buffet poco variado y FRIO no me gusta la comida tan fría no la mantienen caliente, por otra parte, yo he ido a Punta de Cana mas de 15 veces y debe ser una de las pocas veces en que no ofrecen langosta en el menu algún día. Ahora la ofrecen pagada a diferencia de otros años y de otros hoteles.",
+      "author": "Carlos",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-6sa6uy",
+      "timestamp": "2026-04-23T15:09:16.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Dolores",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-fngn2e",
+      "timestamp": "2026-04-23T12:57:13.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Adoramos",
+      "text": "Gostei de tudo. / O acesso aos talheres demora no café da manhã.\r\nAs bebidas quentes demoram chegar no café da manhã, pois os atendentes esquecem de trazer ou ficam sobrecarregados. Poderia ter a opção dos hóspedes se servirem para evitar esses desconfortos.",
+      "author": "Mariah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1jvhdth",
+      "timestamp": "2026-04-21T21:40:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Harbit",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1tag45a",
+      "timestamp": "2026-04-20T09:12:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Falta de coordinación entre el hotel y booking",
+      "text": "El servicio, la playa, la comida y las instalaciones. / Que  nos dieron habitación con dos camas dobles porque ya no tenían matrimonial disponible. Booking tiene que aliniarse con el hotel para lo que estemos comprando sea lo que nos espera cuando lleguemos al lugar.",
+      "author": "Raphael",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-12l2dv8",
+      "timestamp": "2026-04-20T02:43:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Buen descanso",
+      "text": "Todo / Nada",
+      "author": "Diego",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1n4b6lb",
+      "timestamp": "2026-04-19T04:01:19.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Fariha",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1gjuutc",
+      "timestamp": "2026-04-15T17:29:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "La playa",
+      "author": "José",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-w2sws6",
+      "timestamp": "2026-04-14T01:53:28.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "author": "Alexandra",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1sh6cun",
+      "timestamp": "2026-04-13T10:11:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pudo ser mejor.",
+      "text": "Las facilidades del hotel están bien. A la habitación, 2210, le falta privacidad en el área del baño: las cortinas, no es suficiente. \n\nNecesitan leer los mensajes que uno le hace llegar a través de Booking. Chary, en recepción, alega que no le llegan los mensajes de pedido que se hacen a través de Booking, lo que dificultó el registro temprano para al menos una de las habitaciones (persona con pobre movilidad). Llegamos alrededor de las 10:45am y no fue hasta las 3:16pm que nos entregaron la habitación. Las habitaciones distantes una de la otra.  Pobre manejo del tiempo. Es posible hacer registro de entrada temprano; salimos a las 12:09pm del día 9 de abril hacia Lopesan y en Lopesan, fueron diligentes con el registro temprano. Es notable la falta de empleados de limpieza, dado que el servicio a la habitación nunca lo hicieron (+4:30pm) sin organizar y limpiar la habitación.\n\nEs una pena que el servicio desmerezca las lindas facilidades.  La cantidad de botes en el agua (area de playa) no se ve en el Hard Rock; deben considerar. \n\nResalto: \n-atender los mensajes por Booking, o eliminar la plataforma. \n-aumentar servicio de housekeeping\n-tener sillas de ruedas disponibles. Gracias a Omar (traslado carros de golf) por todas sus atenciones-lograron conseguir silla de ruedas-. / Las facilidades del hotel están bien. A la habitación, 2210, le falta privacidad en el área del baño: las cortinas, no es suficiente. \n\nNecesitan leer los mensajes que uno le hace llegar a través de Booking. Chary, en recepción, alega que no le llegan los mensajes de pedido que se hacen a través de Booking, lo que dificultó el registro temprano para al menos una de las habitaciones (persona con pobre movilidad). Llegamos alrededor de las 10:45am y no fue hasta las 3:16pm que nos entregaron la habitación. Las habitaciones distantes una de la otra.  Pobre manejo del tiempo. Es posible hacer registro de entrada temprano; salimos a las 12:09pm del día 9 de abril hacia Lopesan y en Lopesan, fueron diligentes con el registro temprano. Es notable la falta de empleados de limpieza, dado que el servicio a la habitación nunca lo hicieron (+4:30pm) sin organizar y limpiar la habitación.\n\nEs una pena que el servicio desmerezca las lindas facilidades.  La cantidad de botes en el agua (area de playa) no se ve en el Hard Rock; deben considerar. \n\nResalto: \n-atender los mensajes por Booking, o eliminar la plataforma. \n-aumentar servicio de housekeeping\n-tener sillas de ruedas disponibles. Gracias a Omar (traslado carros de golf) por todas sus atenciones-lograron conseguir silla de ruedas-.",
+      "author": "Alexandra",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-11v6e0v",
+      "timestamp": "2026-04-12T18:14:07.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Fantástica",
+      "text": "Playa / Todo me gustó",
+      "author": "Johanny",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-157qm3a",
+      "timestamp": "2026-04-12T00:08:56.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Michael",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1aeb5yu",
+      "timestamp": "2026-04-07T16:48:53.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Disappointing",
+      "author": "Romina",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-4ck5kl",
+      "timestamp": "2026-04-06T13:14:02.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Tommy",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1gqsmk3",
+      "timestamp": "2026-04-05T16:03:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Me gustó todo, estoy encantada",
+      "author": "Francheska",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-k5h2oe",
+      "timestamp": "2026-04-04T12:09:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Buen lugar, volvería a ir.",
+      "text": "El kiddome es lo máximo / Que existen horas completas que no sabes qué hacer con la comida… a dónde vas no hay.",
+      "author": "Yenny",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-zpog7z",
+      "timestamp": "2026-04-03T02:10:17.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Perfect location for a large group or event!",
+      "text": "Very clean rooms and facilities were excellent! Lots of room for alot of guests, no over crowded pools, plenty of lingers both by pools and on the beach! / Typical all inclusive food so makes the price not a good deal",
+      "author": "Tracey",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-u8fo1g",
+      "timestamp": "2026-04-02T13:22:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Yinita",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1prqd4c",
+      "timestamp": "2026-04-01T10:20:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "buenos restaurantes de especialidades , bastantes piscinas para todos los gustos y la playa con muy buen espacio de rerposeras",
+      "author": "Olguin",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-vdbj30",
+      "timestamp": "2026-03-30T13:53:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "super recomendado.",
+      "text": "la infraestructra,la comida y la atencion del personal. / nada.",
+      "author": "Jair",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-gutv9e",
+      "timestamp": "2026-03-28T05:58:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Emily",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-119ydpk",
+      "timestamp": "2026-03-24T00:36:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Amazing and relaxing",
+      "text": "Service / Food",
+      "author": "Max",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-s8yq01",
+      "timestamp": "2026-03-23T16:00:21.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Karen",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1f9gqkn",
+      "timestamp": "2026-03-22T04:18:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "Las instalaciones / La diferencia con el turista",
+      "author": "Rodríguez",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1orv4vh",
+      "timestamp": "2026-03-22T00:35:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Diana",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1utet3n",
+      "timestamp": "2026-03-19T04:22:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Amazing",
+      "author": "Lucia",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-shtdn7",
+      "timestamp": "2026-03-18T20:44:07.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Glendis",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-5np3md",
+      "timestamp": "2026-03-16T13:32:46.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Yerlisa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-kjk0i4",
+      "timestamp": "2026-03-16T03:33:03.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Melvin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1h1m61f",
+      "timestamp": "2026-03-15T17:57:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Carlos",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-dbixtc",
+      "timestamp": "2026-03-13T15:43:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "A szoba, a személyzet, az ellátás.",
+      "author": "Anita",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-17224gi",
+      "timestamp": "2026-03-13T13:52:28.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Canan",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-pfprgj",
+      "timestamp": "2026-03-11T21:00:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exclente",
+      "text": "Buffet / Viento",
+      "author": "Elvis",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1yijon0",
+      "timestamp": "2026-03-10T23:58:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Average",
+      "text": "The rooms were spacious and clean. / The interaction with the staff. I had some questionable interaction with certain staff members, and we did not feel well at all.",
+      "author": "Takou",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-2ewjbj",
+      "timestamp": "2026-03-10T02:02:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excellent",
+      "text": "Everything is clean. \nThe room are comfortable \nThe customer service is great",
+      "author": "Marquez",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1oo9pll",
+      "timestamp": "2026-03-10T01:05:57.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Un bel hôtel avec un service très moyen",
+      "text": "L’emplacement et la piscine / Le personnel très irrégulier dans sa qualité. Aucune information sur l hôtel, ses restaurants ses équipements. Impossible de réserver une table dans les restaurants.",
+      "author": "Julien",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-113uoiy",
+      "timestamp": "2026-03-09T10:45:09.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "author": "Marius",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-iz2wlg",
+      "timestamp": "2026-03-08T09:26:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "David",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ucmyob",
+      "timestamp": "2026-03-05T17:48:37.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Beautiful, fun and well maintained resort!",
+      "text": "Everything! / Reservations for restaurants were tough to get",
+      "author": "Karen",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1sum1gf",
+      "timestamp": "2026-03-03T03:41:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Ambar",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1j9h8ej",
+      "timestamp": "2026-03-03T03:12:46.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "El servicio por parte del personal del hotel desde que llegas se siente que es personalizado. La habitación siempre impecable y la ubicación fue la que reservamos. La comida variada en el buffet y en los restaurantes toda la comida muy buena, es importante reservar con tiempo para poder ir. Las camas de playa muy bien ubicadas y el acceso a bebidas en todo lugar me encantó.",
+      "author": "Fernando",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-x1hgo8",
+      "timestamp": "2026-03-02T17:02:26.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "La comida y el.personal / El Jacuzzi exterior está en malas condiciones.",
+      "author": "Cesar",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-77vh66",
+      "timestamp": "2026-03-02T01:02:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "El hotel está bien la comida buena el servicio regular un poco masivo no exclusivo / Demasiada gente lo que hace que los servicios decaiigan, falta un buen bar",
+      "author": "Carlos",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-174jfz1",
+      "timestamp": "2026-02-28T19:07:46.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Victoria",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-12ac1pg",
+      "timestamp": "2026-02-28T15:27:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "It was awesome",
+      "text": "The beach / No complaints",
+      "author": "Sharashal",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-w99agi",
+      "timestamp": "2026-02-26T19:24:24.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bueno, pero un poco aburrido para niños",
+      "text": "La playa estaba perfecta, las piscinas también, buenas bebidas y variedad de comida. El personal del bar del sportbar muy amable, igual el del bar de la piscina. / Mo había cupo en ningún restaurante a la carta y tardan un poco en servir las bebidas en el buffet, en ocasiones me tuve que parar a buscar a alguien que nos atendiera. Viaje con mi hijo adolescente y resulta un poco aburrido, solo hay una mesa de billar y nada mas con lo que un joven de 12 años se pueda entretener.",
+      "author": "Alexis",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1o43gjk",
+      "timestamp": "2026-02-26T13:08:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "No quedé conforme no voy nunca más al ese hotel",
+      "text": "Muchas cosas no están como esperaba por la suite que reserve / Faltó la atención del moyordomo cero atención la playa privada estaba todo viejo algunas camas viejas rotas",
+      "author": "Norma",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-exiq8b",
+      "timestamp": "2026-02-26T01:21:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Beautiful beach and nice hotel",
+      "text": "The room was a full apartment very modern / Sometimes de reservation are not at the best Restaurantes they have",
+      "author": "Arbaje",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-2le7yf",
+      "timestamp": "2026-02-25T18:46:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Muy placentera",
+      "author": "Manuel",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1o7hiex",
+      "timestamp": "2026-02-23T14:55:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Vista, trato del personal y comida estuvo espectacular",
+      "text": "La comida espectacular, la alberca excelente y las habitaciones muy cómodas y amplias. / La habitación cuando la entregaron tenía en los cajones ropa del huésped anterior.\nLa boutique del hotel no acepta pesos dominicanos cuando el cajero que está dentro del hotel solo te da la moneda nacional, se me hace una contradicción",
+      "author": "Larios",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1yoin4h",
+      "timestamp": "2026-02-23T12:08:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Bone",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-fklw0h",
+      "timestamp": "2026-02-18T22:17:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Francisco",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-10jtalx",
+      "timestamp": "2026-02-18T15:42:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Luis",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1m31ts5",
+      "timestamp": "2026-02-14T16:08:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "La struttura e bellissima direttamente sulla spiaggia.\r\nCamera molto bella moderna e spaziosa / Il CIBO è molto per quanto riguarda la quantità ma la qualità dei prodotti usati , rispetto alla categoria del resort e veramente molto scarsa; sia nel buffet che nei ristoranti alla carta. Molto molto deludente.",
+      "author": "Massimo",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-3jmhtf",
+      "timestamp": "2026-02-13T13:49:03.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Ogunjeminiyi",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-em9tlh",
+      "timestamp": "2026-02-13T07:09:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "author": "Oleksandr",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ff0zss",
+      "timestamp": "2026-02-13T01:03:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Fantástico. Vale muito apena !!",
+      "text": "A infraestrutura do hotel é excelente, tanto de praia quanto das piscinas. O quarto é ótimo. Me hospedei em quarto frente ao mar com varanda e hidro, foi fantástico. As comodidades do quarto, banheiro, tudo excelente. Várias opções de restaurante, buffet e a La Carte. Qualidade da comida muito boa. / As bebidas do pacote tudo incluso poderiam ser um pouco melhores e ter mais opções. Pelo valor que é pago pela hospedagem, entendo que seria possível melhorar um pouco a qualidade e ter mais opções de cerveja e vinho.",
+      "author": "Carlos",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ljmtug",
+      "timestamp": "2026-02-06T16:38:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Cómoda",
+      "text": "Limpio / Tenías q caminar mucho para llegar a tu habitación y casi todo tenía precio extra ósea no era un verdadero all inclusive",
+      "author": "Jessica",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-162k6ln",
+      "timestamp": "2026-02-05T17:14:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Perfect 10/10 would stay again",
+      "text": "The bars and restaurants food / The beach was a little boring",
+      "author": "Davon",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ljfcrx",
+      "timestamp": "2026-02-05T11:44:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "text": "Gostamos do nosso quarto e dos itens de higiene, a estrutura é muito boa(restaurantes, piscinas, espaço).\nAs bebidas alcoólicas eram bem feitas e sem pressão de dar gorjetas. / Piscinas sujas,\nComida fraca (percerbemos que era reutilizado preparações de café da manhã eram vistos no almoço e do almoço no jantar...exemplo peixe assado que doi servido no almcoço foi servido no jantar a metade que sobrou, queijos e salames praticamente passa o dia no buffet e sem refrigeração).\nPedimos serviço de quarto e simplismente não levaram. \nMuitos restaurantes funcionam apenas com reserva prévia e somente o principal não precisa de reserva que é buffet geral.\nReservamos um restaurante de carne e infelizmente não estava bom o jantar. Ficamos em outro all incluse e foi muito melhor e mais barato.\nBanheiro da piscina apenas um por pessoa(achei bem simples) por se tratar de um resort spa.",
+      "author": "Gustavo",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-16jbt7v",
+      "timestamp": "2026-02-04T09:01:14.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "No acorde precio calidad la atención del personal muy mala, poco predispuestos y el resto popular sobrellenado, sucio y",
+      "text": "La arquitectura y la calidad de los materiales, mármol en casi en casi todo el edificio, lo que lo hace prestigioso. / Algunos detalles del mal revoqué de las paredes. Las habitaciones se condensaban de agua en los pisos y las paredes.",
+      "author": "Eliana",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-wkvtdy",
+      "timestamp": "2026-02-01T16:56:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "An unforgettable escape in every sense!!",
+      "text": "From the moment we arrived, this resort felt like stepping into a dream. The location is absolutely breathtaking, surrounded by stunning scenery that instantly melts stress away. Every corner of the property is thoughtfully designed, blending luxury with nature in a way that feels both elegant and welcoming.\nThe staff truly make this place exceptional. Warm, attentive, and genuinely kind, they go above and beyond to ensure every detail of your stay is perfect. You never feel like just a guest here, you feel valued.\nThe rooms are spacious, beautifully decorated, and impeccably clean, with views that are nothing short of spectacular. Waking up to such peaceful surroundings was one of the highlights of our stay.\nDining was another standout experience. We were attended by Manuel and Jose. The variety and quality of food were outstanding, offering fresh ingredients, creative menus, and flavors that satisfied every craving. Each meal felt like a special occasion.\nActivities and amenities were perfectly balanced between relaxation and adventure.\nThis is not just a resort… Highly recommended for anyone seeking luxury, tranquility, and an unforgettable getaway. / Loved Everything and will be returning 🙌🏽😊",
+      "author": "Maria",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-a2zeb7",
+      "timestamp": "2026-01-29T16:28:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Buena experiencia para descansar",
+      "text": "Amabilidad del personal / Que no tiene demasiadas actividades diversas",
+      "author": "Marlenín",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1hcc44i",
+      "timestamp": "2026-01-26T15:16:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Pablo",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1qu96dw",
+      "timestamp": "2026-01-26T12:13:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Experiencia relajante y entretenida!",
+      "text": "La habitación era muy cómoda. El personal es muy amable y súper atento a cualquier necesidad.  Las piscinas siempre estaban limpias y habían varias por si no deseabas estar con mucha gente. / La privacidad de la tina de baño.",
+      "author": "Catherin",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1sg542h",
+      "timestamp": "2026-01-26T01:52:42.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excelente, recomendaría este hotel, el personal es muy amable, atentos y simpáticos.",
+      "text": "Muy buena la comida y muy higiénicos / Solo no me gustó que llamábamos para que llenen el minibar y no iban",
+      "author": "Alanna",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-gravvr",
+      "timestamp": "2026-01-26T01:05:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "Really nice hotel, right at the beach. Beach was cleaned every morning (compared to other hotels) so this was big plus. / Reception stuff could be more helpful, they didn’t explain us anything upon arrival and we had some issues regarding the vouchers they are offering. But thanks to Booking stuff this was resolved ( and not by hotel stuff). \nIt’s just sad that hotel like this doesn’t have own Sauna and you have to go to another hotel and pay for it.",
+      "author": "Antonela",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-oawjit",
+      "timestamp": "2026-01-25T10:17:31.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Doris",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ukkfsf",
+      "timestamp": "2026-01-23T00:24:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": ". / .",
+      "author": "Yocaira",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-14vkv3g",
+      "timestamp": "2026-01-19T18:02:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": ". / .",
+      "author": "Yocaira",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1vv22y2",
+      "timestamp": "2026-01-19T18:02:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Spettacolare",
+      "text": "Proprio come il nome, è un vero paradiso!",
+      "author": "Ines",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-18zaaek",
+      "timestamp": "2026-01-19T12:16:58.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "Room, service, people / Food in the restaurants was mediocre. Food in the buffet was very good",
+      "author": "Peter",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-q0iaw5",
+      "timestamp": "2026-01-17T02:31:17.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Deybis",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-10g0dth",
+      "timestamp": "2026-01-15T15:28:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Beautiful resort!",
+      "text": "Wait staff was amazing. Restaurants were very good. The hydratherapy session included with our stay at Zel was amazing and would absolutely pay for that service. Room was gorgeous and the beachs and pools amazing!! / We went with friends who are Dominican and they were able to speak the language and they received many upgrades. My husband and I however, did not get any. As soon as our friends checked out, we were definitely treated differently. Our only  special request was for a late check out since our flight didn't leave till 7:30 pm. We were not given that. Our friends who came with us got an early check in while we had to wait. They got a free upgraded room which we were not even offered even to pay for it. They also received a late check out which we were denied. The service definitely went down once our Dominican friends left us. That was disappointing.",
+      "author": "Tammy",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1wa7uww",
+      "timestamp": "2026-01-14T18:33:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Súper acogedor",
+      "text": "Todo, la área de playa, las habitaciones 10 de 10 , la comida excelente, trato del personal en especial el señor Guillermo súper atento el señor, / N/A",
+      "author": "Harold",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1stl3x8",
+      "timestamp": "2026-01-14T17:06:46.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Schönes Hotel, doch man fühlt sich als Gast der 2. Klasse",
+      "text": "Das Hotel ist grundsätzlich sehr schön, liegt an einem tollen Strand und man kann dort gut baden und spazieren gehen. Das Hotel selbst hat tolle Pools und das Essen als All-Inklusiv war gut bis akzeptabel. / Das Hotel gehört zu MELIA Kette und leider sind einige Bereiche des Hotels für NICHT-MELIA Member nicht nutzbar, d.h. es gibt verschieden farbige Armbänder. Das vermittelt ein etwas diskriminierendes Gefühl, zumal wir eine recht teure Juniorsuite gebucht hatten und das Verhalten im Grunde affig ist. Da sind die Strandstühle für die \"normalen\" Gäste eher voll und ein paar Meter weiter sind die besser gepolsterten Stühle für die MELIA Member alle leer. Das setzt sich bei den Restaurant und anderen Bereichen so fort und ist im Grunde diskriminierend und unangebracht. Man fühlt sich dadurch als Gast 2. Klasse. Desweiteren wurde uns  beim check-out ein zuvor durch booking.com zugesagtes Guthaben in Höhe von US-$ 200 nicht gewährt, da dies angeblich \"abgeschafft\" hätte. Ewige Diskussion ohne Ergebnis an der Rezeption, die nicht entgegenkommend war. Dies ist unseriös und machte unseren ansonsten schönen Urlaub letztendlich unerfreulich.",
+      "author": "Dr",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1luroq5",
+      "timestamp": "2026-01-14T16:59:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Luis",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-c20d6n",
+      "timestamp": "2026-01-13T21:20:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "El alojamiento es muy lindo y agradable. El personal es muy amable. / La fiesta de fin de año.  Creo que fallaron en pretender vender una fiesta en la playa que debía incluirse en la estadía. Al final. Nadie compró entradas, y tuvieron que hacer algo muy mediocre en la playa con lo que ya estaba montado",
+      "author": "Erika",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-44a438",
+      "timestamp": "2026-01-13T00:34:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Verschillende culinaire mogelijkheden",
+      "text": "De diversiteit aan culinaire reataurants biedt de mogelijkheid om elke avond een unieke wereldkeuken te ervaren. / De check-in procedure duurde ongeveer 30 minuut.",
+      "author": "Marlin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-tvc6pa",
+      "timestamp": "2026-01-11T20:30:45.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "No volveria en ningun hotel Melia, por su politica de LEVEL y membresia",
+      "text": "El patio central decorado de Navidad y la cúpula de la piscina. Zonas de la piscina con espacio en las tumbonas. \nLas toallas en varios sitios del hotel se cogían y se recogían de las tumbonas sin necesidad de llevar-traer a la habitación. \nEl bufet variado. Sin opciones de postre vegano, aparte de la fruta. / A la llegada no encontraban la reserva. En mi reserva era cama extra grande y 2 sofas y en realidad en la habitación 6011 y 6019 - suite junior deluxe, dos camas individuales y un sofa cama. Mueble roto, puerta corredera del dormitorio se abría muy difícil. El baño sin puerta - con visillo medio enganchado, aunque he pedido 3 veces arreglarlo, nos tropezábamos con el por el suelo. \nSin espacio para poner la ropa para 4 pers. Sin baldas. Una balda muy arriba que necesitaba escalera. Solo servia poner bolsos, viseras, gafas de sol.\nSin secador  funcional 7 de 8 noches, 3 chicas con pelo largo. He reportado 5 veces para pedir un secador. La última vez se ha traído. Ultima noche hemos podido usar el secador. Ibamos a buscar a la suite de los amigos. \nLa limpieza se hacia muy tarde, justo cuando queríamos descansar en la habitación, sobre las 15:00-15:30.\nSin espacio para secar bañadores mojados. \nNo recomendaría por la calidad precio. Por este precio, prefiero elegir un hotel que no me engaña en la descripción de la habitación, ya que en función de la descripción elijo el hotel. \nEn los restaurantes a la carte, un frio que te levantabas con la nariz congestionada.\nUna persona del grupo ha sido diagnosticada con gastroenteritis y ha tenido que pagar sobre 1500$ al medico y hospital para recibir tratamiento. Menciono que no se ha comido nada desde fuera, solo en el hotel.\nMuy repartido el hotel en zonas exclusivas de membresía. No a toda zona que se veía en las fotos del hotel se podía acceder. La política - Melia. No es de mi agrado para nada. Tienes que pagar mas dinero para tener acceso a todas las zonas. La playa también dividida.",
+      "author": "Grigore",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-u7mxqb",
+      "timestamp": "2026-01-09T00:23:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Buena, con ese tipo de incidentes que ya mencioné que sucedían todos los días.",
+      "text": "Era hermoso, buenas atenciones, personal calificado. / Que había que batallar con las reservaciones de los restaurantes , no había cupos, todo estaba agotado, etc  También te dicen que es todo incluido pero no te incluye ciertas áreas o bebidas que en otros sitios te incluyen por default en el precio que no es nada barato, por ejemplo solo incluía cerveza nacional lo cual es una aberración.",
+      "author": "Erwann",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-tbu4iq",
+      "timestamp": "2026-01-05T16:58:14.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "No nos hospedamos",
+      "text": "Ubicacion / Reserve una Jr suite y me estaban dando una habitacion con 2 camas twin",
+      "author": "Dionisio",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1qoqcda",
+      "timestamp": "2026-01-05T16:39:24.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Una experiencia regular",
+      "text": "Las habitaciones / Que le roban los impuestos al Estado, porque se niegan a darte comprobante fiscal \nLos restaurantes son malos",
+      "author": "Diogenes",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-11liukv",
+      "timestamp": "2026-01-05T12:35:09.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "text": "Nada. / Nos trataram muito mal e ainda contratei um passeio onde abusaram da minha esposa!! Nunca mais volto na República Dominicana e nunca mais volto nessa rede de hotéis",
+      "author": "Matheus",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-el5itm",
+      "timestamp": "2026-01-05T03:57:36.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "author": "Marjorie",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-zskg63",
+      "timestamp": "2026-01-05T03:34:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Ab",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-vekuy9",
+      "timestamp": "2026-01-04T18:47:21.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant",
+      "text": "Las instalaciones y la comida! (Menos el show del restaurante asiático que nos dieron arroz con carne, pollo y langostinos.) Nada que ver con la comida japonesa / Algunos empleados ni saludan ni hablan...además de ser todo incluido hay muchas cosas que tenes que pagar aparte como las camas de la playa (todas) y al entrar ya te hacen saber que hay personas que pagaron mas porque hay bares unicos para ellos que no están incluidos y las camas que tambien en particular hay unas que tenes que pagar 250usd por dia solo para usarlas...una exageración, se siente feo que te digan que es todo incluido y que al final hayan muchas cosas que no lo están terrible.",
+      "author": "Omar",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-iuzlg5",
+      "timestamp": "2026-01-04T02:01:12.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Nicht zum empfehlen",
+      "text": "Strand / Leider entsprach mein Aufenthalt in keiner Weise dem gebuchten Standard, insbesondere im Bereich „The Reserve“. Hier ist eine Zusammenfassung meiner Erfahrungen:\nCheck-in & Zimmer-Chaos\nBei der Ankunft wurde mir mitgeteilt, dass mein gebuchtes Zimmer besetzt sei. Man gab mir eine Alternative, die jedoch ca. 500 CHF günstiger war als meine Buchung – zudem ohne die gebuchten „The Reserve“-Zusatzleistungen. Erst nach langem Hin und Her am nächsten Tag erhielt ich ein besseres Zimmer, das jedoch immer noch nicht der ursprünglichen Buchung entsprach.\nTechnische Mängel\nIm neuen Zimmer war die Terrassentür defekt. Zudem schaltete sich der Whirlpool nachts von alleine ein und ließ sich nicht ausschalten. Es dauerte sehr lange, bis jemand kam, um das Gerät vom Strom zu trennen.\nMassive Hygienemängel (Video vorhanden)\nDas ist der kritischste Punkt: Das Personal im Restaurant nutzte das Eiswasser, das zum Kühlen von Wein gedacht war, um benutzte Löffel und sogar die eigenen Hände zu „reinigen“. Dasselbe Eis wurde danach an Gäste serviert! Ich habe diese unhaltbaren Zustände auf Video festgehalten.\nGesundheitliche Folgen & Kulinarik\nObwohl das Essen geschmacklich gut war, litten viele Gäste (mich eingeschlossen) unter massiven Magen-Darm-Problemen. Im Austausch mit anderen Gästen stellte sich heraus, dass mindestens drei Personen sogar mit Fieber tagelang das Bett hüten mussten.\nService\nDas Personal war nur dann freundlich, wenn man Trinkgeld gab – ansonsten war der Umgangston sehr frech. Beim Frühstück gab es zudem extrem lange Wartezeiten auf Getränke.\nFazit: Ein Hotel dieser Preisklasse darf sich solche Fehler – besonders im Bereich Hygiene und bei der Einhaltung von Buchungen – nicht erlauben. Ich kann dieses Haus absolut nicht weiterempfehlen.",
+      "author": "Losynova",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-10uvnfr",
+      "timestamp": "2026-01-03T18:14:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very poor",
+      "author": "Feng",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-jyf6bf",
+      "timestamp": "2026-01-02T15:31:16.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Huge disapointment",
+      "text": "The location was good and the beach was nice. I liked that our room (1204) was close to everything. They have several board games to play at the lobby and use the time while it is raining outside. / There were only 2 elevators and only at the lobby making it difficult to use the stairs with a stroller and bags. Pool water temperature is cold. At the buffet restaurants everything looks mouthwatering but has no flavor or does not taste good at all. Huge disappointment 😪\nService is so slow we had to wait 5 hours for a baby crib after check-in and calling 3 times... Hard to make sense of the light switches. \nDirty surfaces and sticky to touch baby toys at the \"kidsdom\" play area, would not leave my baby there! Granted late check-out till 1pm but could not Center room after 12pm...\nThe Resort gave an overall bad feeling. This was our second Melia Resort after staying át Melia Zanzibar... \nIf I had known it was a Melia Resort I would not have booked since it provides the same quality as we experienced in Zanzibar.",
+      "author": "Mercedesz",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-10msz45",
+      "timestamp": "2026-01-02T11:35:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Overall really nice but like you'd expect from all inclusives, the food was suspect.",
+      "text": "Pretty clean, friendly staff. Right on the beach. / 2 of the 4 nights we were there the food was not good at all.  The Dominican and Italian restaurants were like a 7 out of 10. Buffett was a 4 or 5.  \r\nThe good wine you could purchase was 3.5x what you could buy it for 5 min away in a store.  Pretty abusive.",
+      "author": "Michael",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-e4d1dv",
+      "timestamp": "2026-01-02T03:31:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Definitely a great place to disconnect and relax.",
+      "text": "The room was very comfortable with a view of the beatiful beach, the staff was friendly, the food was delicious, the beach itself was the definition of serenity, and the golf course was superb. / Check in time was supposed to be at 3:00pm but was notified at 3:40pm that the room was ready. Other than that, I don't have much to say about what I didn't like.",
+      "author": "Moo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-18td1pp",
+      "timestamp": "2025-12-31T15:00:57.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Hilda",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-oo38d3",
+      "timestamp": "2025-12-31T03:18:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "Todo está muy cerca y el personal es muy atento. Las instalaciones muy bonitas / Por la ocupación del hotel no pudimos reservar restaurante temático. La habitación que nos asignaron tenía dos camas que resultaron pequeñas en lugar de una matrimonial",
+      "author": "Johanna",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-py7n33",
+      "timestamp": "2025-12-30T02:57:56.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Un séjour très décevant, marqué par un manque de professionnalisme, une mauvaise communication, un service client inexis",
+      "text": "- la localisation était vraiment très bien\n- plusieurs piscines, plusieurs restaurants\n- la proximité avec la plage / - pas de navette de proposée.. entre l’aéroport et l’hôtel, obligé de se débrouiller seul avec les taxis et leurs supers « tarifs pour pigeons étrangers »\n- le ménage fait sans envie.. un personnel qui ne parle pas un seul mot d’anglais, donc obligé de tout traduire - obligé de répéter 3 voire 4 fois par jours qu’on veut avoir 3 serviettes et un tapis de bain.. elles ont enfin compris le 9 ème jour !! Sur un séjour de 10 nuits..\n- aucune clarté entre les emplacements des deux hôtels « paradisus » .. ça nous semblait logique qu’en sortant de notre chambre, on aille droit devant pour prendre une place sur un transat.. et bah non, on avait pas le droit ! Ça appartient à l’autre hôtel.. en face qui arbore le même nom.. fin bref - toujours pas compris à ce jour !\n- le personnel au buffet, je ne sais pas si c’est leur mode de vie d’être aigri.. mais alors je pense que les français se font largement dépassés, franchement on avait l’impression de les déranger à chaque fois qu’on leur demandait quelque chose..\n- au bout de 3 jours, notre charmante hôtesse « Rosmery » qui nous avait été attribué à notre arrivée pour nous accompagner tout le séjour, nous a amené dans le coin « VIP » et nous montrer qu’il y avait une sorte de kids club pour nous appâter, attention, c’était pour nous amener vers une zone commerciale pour nous proposer soit disant une offre exclusive, réservé aux membres « Meliá » enfin bref.. du démarchage en physique, au bout de 3 jours je pense que c’était inapproprié - merci d’attendre au moins la fin du séjour et de s’assurer au minimum que le séjour se passe à merveille !! Oh.. et comme par hasard, notre chère Rosmery nous a complètement délaissé.. jusqu’à la fin du séjour, puisqu’elle n’a pas touché sa commission..\n- notre petite fille de 16 mois nous a fait la surprise pour cette fin d’année d’attraper la varicelle, nous avons demandé au lobby de nous indiquer s’il y avait un médecin.. et nous y avons été conduits.",
+      "author": "Maxime",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-11qvh3h",
+      "timestamp": "2025-12-27T14:14:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Paradisus Palma Real",
+      "text": "Impecable las instalaciones / El personal de las barra de bebidas",
+      "author": "Leandro",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-odsqey",
+      "timestamp": "2025-12-22T17:12:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Nos robaron",
+      "text": "La playa / Nos robaron de la caja fuerte 40 dólares y no recibí la ayuda inmediata por parte de los administradores , tuve que hablar con varias personas y el responsable de seguridad prácticamente nos dijo que dudaba lo que estábamos diciendo, nos rebuscó todas las carteras para ver si teníamos los 40 dólares que habíamos dicho perder , como esa es su  área de responsabilidad y ante la respuesta de que era IMPOSIBLE que nos robaran dinero de la caja fuerte , ya me imagino la respuesta de su investigación que será negativa .  Esto me hizo pasar una experiencia pésima ya que con el dinero estaban todas mis tarjetas de crédito .",
+      "author": "Claudia",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-5m44eu",
+      "timestamp": "2025-12-21T04:53:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Regli",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-q249c",
+      "timestamp": "2025-12-19T13:45:25.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Elvar",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1p95qwi",
+      "timestamp": "2025-12-18T16:34:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "I have already recommended the resort to my friends and family. I felt like a VIP guest the entire t",
+      "text": "The property itself was beautiful The beach access was superb.  The food was excellent. The staff was attentive and helpful. Pool experience was so much with the staff getting everyone involved in the activities. / Honestly it was a great experience",
+      "author": "Jennifer",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-tf33ir",
+      "timestamp": "2025-12-17T18:35:34.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "The staff are very wonderful and helpful.",
+      "text": "Everything you do is wonderful and special / Check in take 20 min",
+      "author": "Abdulrahman",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1yiy7j9",
+      "timestamp": "2025-12-17T01:57:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "text": "It’s was beautiful / Flora restaurant was great. The Asian restaurant, room service, and KICKS was horrible.",
+      "author": "Alanae",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-r67ov0",
+      "timestamp": "2025-12-16T15:35:10.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Angelica",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-7lymge",
+      "timestamp": "2025-12-15T12:45:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Bertoli",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1c75ns3",
+      "timestamp": "2025-12-15T11:41:51.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Juan",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1yrmsop",
+      "timestamp": "2025-12-15T02:14:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Perfecto",
+      "text": "La comida y las atenciones del personal. En especial a mis amigos Erikson y Yani del Kicks sportbar. Y también a las atenciones de los colaboradores del restaurante Asiatico / Restaurante con reservas",
+      "author": "Victoriano",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-6a3nb1",
+      "timestamp": "2025-12-15T01:03:55.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "A 5 star room with a 2 star service!!!",
+      "text": "The size of the room was good (paid for the suite of 75 sq meters), design was puristic, nice. / Booking.com offered an upgrade on the room to one with jacuzzi- which we never received. The all inclusive offered in this hotel is quite a farse: you want nice chairs in the beach, you have to pay 180 dollars - what? in an all inclusive? You better get ready for bad food, even in the restaurants, the typical mass oriented buffet- but wasn't this a 5 stars? The nice restaurants were for circle only members or adults only area (which was not clear in the booking.com page)Our friends stayed at the adults only which had a concierge which never managed anything. Get ready to wait 2 days for the concierge to pick up your golf bag, our friend left it in the cloark room and it got lost for a day. At arrival you think you just reached the most crowded and horrible train station- full of luggages (no aesthetic value for a welcoming area) Room service was horrorific- 2 hours for 2 cups of tea which at the end arrived without the ordered milk- sorry,was that such a difficult order? Going golfing early? not even a cup of coffee available- there is a 24 hours coffee shop (theorically) but it is closed, abandeoned!This is one of the places where you feel you are being constantly fooled! the smallest and simplest requests falls into a chain of yes, i will tell my manager kind of thing and nothing happens.!!!!!",
+      "author": "Chrsitopher",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1bvqp8x",
+      "timestamp": "2025-12-14T11:28:58.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Never come back to this hotel",
+      "text": "The food and restaurants were very good. / We had a very bad experience. Our booking reservation was clear of an ocean front king size bed room.\r\nWe arrive at the reception on the 6 of December, we find Robenson in the front desk who looks so sad and unhappy.\r\nAfter 10 to 15 min checking the already paid reservation, he started to ask why the card on the reservation and the card I have do not match in numbers. after a long explanation that the card on the reservation is a virtual card generated by the internet banking and showing him all the evidence for around 30 to 45 min he accepted, He offered us an ocean front room in the adultes only area for 500 USD and when we accept, he said sorry it's not available. \r\nThen started the real problem after around one hour standing in the front desk. That there is no King size bed available and that the hotel offers the king size bed depend on the availability while in my reservation in booking it was clear that the room is King size bed. I was so mad but i didn't have another choice than accept the situation and sadly stayed in a doble bed with my wife after they promise to change our room on Monday. We had to give up 2 nights from our 6 nights.\r\nOn Monday we were able to change the room by 7 pm but the system was down so they said that they couldn't program the key for the new room, so the solution for that night was to send someone to open the room for us.\r\nOn the next day I reached to the front desk again, but they said that they still have the same problem and every time I'm out of the room I have to come to the front desk to ask for someone to open the room for me. Again, I had to talk with the supervisor of the front desk Daniela to explain that I can't lose more time of my vacation coming 5 or 6 times to the front desk to open my room and I need a solution. But she couldn't do anything than giving me her WhatsApp number to send someone instead of me going to the front desk.\r\nFinally, they were able to give me a key by Tuesday night.",
+      "author": "Mohamed",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1khudhp",
+      "timestamp": "2025-12-13T07:35:50.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "Beautiful resort / Some of the staff was not friendly. Depending on what bar you visited, you were not allowed the same alcoholic beverages. Food was good for the most part, limited side dishes. Specialty restaurants required reservations and were usually booked.",
+      "author": "Willamena",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1cq5go9",
+      "timestamp": "2025-12-11T18:26:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "La mia piú bella vacanza per paesaggi e relax.",
+      "text": "Struttura bellissima e vastissima con una grande varietà di cose da fare. Praticamente non ti stufi mai. Mangiare ottimo, sia nei diversi ristoranti “a la carte” che al buffet. Spiaggia e piscina curatissime in ogni dettaglio. Nessuna difficoltà a trovare lettini liberi neanche di tarda mattinata, grazie alla vastità della struttura. Personale molto amichevole, sempre con il sorriso e a ritmo di salsa dominicana.\nIn generale é stata un esperienza favolosa, che sicuramente consiglierei sia a coppie, che a gruppi di amici o famiglie. / Unico accorgimento: a volte bisognava aspettare un po’ per ricevere portato il caffè la mattina o le bibite ai pasti.",
+      "author": "Daniel",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ip3bh",
+      "timestamp": "2025-12-11T13:43:07.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Extrêmement déçue du service, je n’y retournerai pas",
+      "text": "L’emplacement proche de la plage, les fontaines et l’aménagement paysager / Mini bar, téléphone ne fonctionnait pas. Rapporté mais personne n’est venu le réparer. On n’y a donc pas touché. Gérant arrogant. Évidemment il ne peut rien faire pour nous, même pas de late check out parce que….attention…le classique…hotel est plein.",
+      "author": "Loana",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-dy05f1",
+      "timestamp": "2025-12-09T14:01:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Eduardo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-vkq8z8",
+      "timestamp": "2025-12-01T15:53:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "La cercania de todo",
+      "author": "Nicole",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-m64gu1",
+      "timestamp": "2025-11-25T17:45:21.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "Die Anlage ist sehr schön konzipiert. Unser Zimmer war sehr geräumig und für eine vierköpfige Familie absolut ausreichend. Das Personal, insbesondere Alexandra & Lisbeth, im KidsDom möchten wir besonders positiv hervorheben. Unsere Kinder haben sich dort super wohl gefühlt. Das Gym war auch klasse. / Laut booking.com hatten wir einen 200 USD Guthaben bei Abschluss der Reservierung gebucht.. Leider konnte uns niemand im Hotel Informationen geben, ob wir Gutscheine (für SPA etc.) erhalten. Somit ist es für mich immer noch fraglich was es mit den 200 USD auf sich hat. Auch bereits am ersten Tag mussten wir leider die schlechte Laune einzelner Kellner im Frühstücksrestaurant erleben. An den Tagen darauf haben wir uns einfach woanders hingesetzt. Die Kellner sind nach Trinkgeldern aus, was grundsätzlich okay ist. Nur hatten wir als nicht US-Amerikaner keine 1 Dollarscheine. Ich hatte jeden Tag an der Rezeption gefragt, ob man mir nicht 10 oder 20 USD in kleine Scheine tauschen könnte. Ich wurde immer auf den nächsten Tag vertröstet. \n\nDie Anlage verfügt über einen Wasserpark für Kinder (Aguazone). Nur war uns nicht klar und wurde auch nicht erklärt,  ob wir dort auch mit unseren Kindern Zutritt haben. Schlussendlich durfte am Abreisetag unser Taxi nicht bis zur Lobby vorfahren und wir mussten bis zum Haupteingang mit unseren kleinen Kindern.",
+      "author": "Frank",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1varjro",
+      "timestamp": "2025-11-23T16:40:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Foi ótima !",
+      "text": "Quarto bonito e bem limpo ! / Subir escada para ir ao quarto",
+      "author": "Leandro",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-4qgntr",
+      "timestamp": "2025-11-23T14:50:34.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Ana",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1ougf4r",
+      "timestamp": "2025-11-19T04:32:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Natalie",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1kl0f42",
+      "timestamp": "2025-11-14T13:22:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Un verdadero Paraíso",
+      "text": "Un verdadero paraíso como indica su nombre. Las habitaciones con diseño como un apartamento la hacen mas funcionales, de esta forma no solo vas a la habitación a dormir, sino también a compartir con la familia y relajarse. La decoración minimalista de la habitación es agradable. Nos encanto contar con una piscina familiar a la salida de la habitación, podíamos disfrutar de ella cómodamente. La playa también estaba a pocos pasos caminando. El hotel cuenta con varios kilómetros de playa, por lo que hay varias camas donde acostarte a disfrutar, no debes esperar que alguien desocupe. Las camas y sillas de playa están bajo techo de cana por lo que si deseas alguna sombra puedes tenerla cómodamente. Las piscinas son limpias y hermosas. La piscina grande tiene jacuzzis donde puedes relajarte cómodamente.  Tienen varios restaurantes y siempre hay alguno abierto para comer. Tiene room service incluido. Todo el personal es dominicano y muy servicial y atento. Todo hermoso y limpio, definitivamente volveremos. / El segundo día el aire acondicionado se bloqueó y no permitía bajar la temperatura menos de 22 grados, lo queríamos un poco mas frío y no lo permitía.",
+      "author": "Dimisel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-yc39xu",
+      "timestamp": "2025-11-11T14:42:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Piero",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1ht84h8",
+      "timestamp": "2025-11-11T04:23:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Agradable",
+      "text": "La estancia estuvo tranquila y sin ruidos / Había cucarachas y mosquitos",
+      "author": "Rosa",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1ooij1n",
+      "timestamp": "2025-11-11T01:10:26.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "De ensueño",
+      "text": "Hermoso, moderno, lugares shoer bonitos y tranquilidad / Todo me encantó quizá permits que los Restaurantes se puritan apartar tanto para almuerzos como para cena el resto todo espectacular",
+      "author": "Gabriela",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1vtyvql",
+      "timestamp": "2025-11-07T00:08:53.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Asistencia a congreso.",
+      "author": "Angela",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-jwbg2d",
+      "timestamp": "2025-10-28T21:53:22.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Nos gustó mucho, solo que poner cosas más de entretenimiento como discotecas, etc",
+      "text": "Todo muy organizado y la comida muy buena / No fueron a limpiar la habitación en los días que estuvimos",
+      "author": "Rayneris",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-12wdm1h",
+      "timestamp": "2025-10-28T12:18:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "Areas sociales cerca de habitación, playa, piscinas grandes. / No hay lugar para comer si sales de playa o piscina mojado, a horas especificas que no hay comida disponible, ni bebida en playa o piscina.",
+      "author": "Sandra",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-v7to9v",
+      "timestamp": "2025-10-27T20:10:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant",
+      "author": "Sebastian",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-p4tn8v",
+      "timestamp": "2025-10-17T23:03:48.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Muy hermoso hotel",
+      "text": "Me gustó mucho en su mayoría la atención, fueron bastante atentos. Perdí mi celular y lo recuperaron muy rápido! / La comida en el buffet podría mejorar, no tenía muy buena calidad especialmente para almuerzos y cenas",
+      "author": "Elisa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-h870cz",
+      "timestamp": "2025-10-05T15:48:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Un lugar que permite relajarse",
+      "text": "La tranquilidad y las piscinas / Pudieran mejorar la comida del buffet.",
+      "author": "Yinis",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-q5xubo",
+      "timestamp": "2025-09-29T22:02:48.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Antonio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-hsnzf8",
+      "timestamp": "2025-09-27T11:13:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "La decadencia de un hotel que fue muy bueno",
+      "text": "La atención de la Concierge Zenovia, Richard en los restaurantes y de Biondi en la recepción, / La comida no corresponde a un hotel 5 estrellas, le doy un dos, la mala atención, la falta de limpieza en la playa (área reserve), no había ni una sola tienda abierta, tuve que salir a comprar repelente, demoraron mas de 24 horas desde que llegamos en llenar el mini bar, malo el restaurante de Tepanyaki, nos dieron pollo, arroz y carne recocida y el lugar oscuro y feo, nuevamente no corresponde a un hotel 5 estrellas, estábamos en The Reserve, muy mala la carta de los restaurantes y mal ejecutada la comida, solo es bueno pero no espectacular el restaurante de carnes, en los bares 5 personas haciendo nada, la playa sucia, las toallas manchadas, el servicio de turismo Otis pésimo, nos vendieron una excursión que supuestamente haria un recorrido por lugares con vegetación, playa y barro por 5 horas pero resultó en un recorrido de 10 minutos por una calle pavimentada para llegar a una cafetería/gift Shop a una \"degustacion' de café y souvenirs feos por 40 minutos, luego 8 minutos de recorrido en moto hasta una playa pública en la que nos dejaron por mas de media hora en unas mesas pegajosas y sucias en que nuevamente tuvimos que soportar a insistentes vendedores para luego regresar, de las 5 horas que duró esta pesadilla solo media hora correspondió a un recorrido efectivo en moto de 4 ruedas pero no por los lugares prometidos,n un desastre!!",
+      "author": "María",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-zwentt",
+      "timestamp": "2025-09-23T11:52:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "text": "Las habitaciones / La comida",
+      "author": "Veronica",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-11prj44",
+      "timestamp": "2025-09-20T15:53:01.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Juan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-nig4hv",
+      "timestamp": "2025-09-12T14:12:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Facilities, staff, relax, breakfast was really good and complete. Exclusive section. I really love the wrist bracelet to open the rooms. I still have it.... super chic way to avoid room cards. / The taste of the food was ok, not outstanding. Few restaurants option.",
+      "author": "Maria",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-15jx807",
+      "timestamp": "2025-08-23T11:37:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Ezekiel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-1807c9v",
+      "timestamp": "2025-08-17T21:01:28.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "todos los restaurante y las diferentes piscinas están cerca, no hay que caminar mucho en el hotel \r\nMuy buenas atenciones de todo el personal . / El HOTEL NO QUISO EMITIR UNA FACTURA CON COMPROBANTE FISCAL.",
+      "author": "Ramses",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-77h2yd",
+      "timestamp": "2025-08-10T22:25:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Beautiful place but would not return.",
+      "text": "Beautiful property with friendly staff / You are not able to experience the whole resort.  We had a suite yet not only had to maneuver around the pool right below our balcony but could not go by certain areas reserved for owners only. That was uncomfortable.",
+      "author": "Cathy",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-21kiut",
+      "timestamp": "2025-08-09T17:44:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Ruth",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html#review-ytn5hj",
+      "timestamp": "2025-08-07T12:39:28.000Z"
+    }
+  ]
+}
