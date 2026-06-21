@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-21T01:09:16.791Z",
+  "generatedAt": "2026-06-21T16:42:33.889Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -9,35 +9,51 @@
     {
       "platformId": "google",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "google: no DataForSEO review tasks were created — sort:newest: DataForSEO google task_post returned HTTP 402; sort:highest_rating: DataForSEO google task_post returned HTTP 402; sort:lowest_rating: DataForSEO google task_post returned HTTP 402",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 4 in queue",
       "recordsAdded": 0,
       "duplicatesSkipped": 0,
-      "queriesRun": 4,
-      "queriesFailed": 4,
-      "truncatedQueries": []
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 0,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
     },
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "tripadvisor: no DataForSEO review tasks were created — sort:most_recent: DataForSEO tripadvisor task_post returned HTTP 402; sort:detailed_reviews: DataForSEO tripadvisor task_post returned HTTP 402; rating:excellent: DataForSEO tripadvisor task_post returned HTTP 402",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 21 in queue",
       "recordsAdded": 0,
       "duplicatesSkipped": 0,
-      "queriesRun": 24,
-      "queriesFailed": 24,
-      "truncatedQueries": []
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 0,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
     },
     {
       "platformId": "booking",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "Apify booking: hotel-URL auto-resolve failed: hotel-URL resolve (booking) returned HTTP 402",
+      "status": "ok",
+      "message": "Apify booking: captured 0 new, skipped 165 dup(s).; 165 available",
       "recordsAdded": 0,
-      "duplicatesSkipped": 0,
+      "duplicatesSkipped": 165,
       "queriesRun": 1,
-      "queriesFailed": 1,
-      "truncatedQueries": []
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 165,
+        "availableReviews": 165,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
     },
     {
       "platformId": "expedia",
@@ -71,9 +87,9 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 3 new, skipped 82 duplicate(s); 9383 total in archive.",
-      "recordsAdded": 3,
-      "duplicatesSkipped": 82,
+      "message": "captured 0 new, skipped 84 duplicate(s); 9383 total in archive.",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 84,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [
