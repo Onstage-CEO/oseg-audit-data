@@ -160,6 +160,15 @@ jobs:
           left=$(pending_count)
           echo "collect finished — $left DataForSEO task(s) still pending" >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Build entertainment evidence discovery
+        working-directory: engine
+        env:
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- entertainment-discovery "$WS"
+          echo "Built entertainment evidence discovery worklist." >> "$GITHUB_STEP_SUMMARY"
+
       - name: Commit (attributed) and push
         working-directory: data-repo
         env:
