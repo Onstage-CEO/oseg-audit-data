@@ -44,9 +44,11 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Validate actor email
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
         run: |
           set -euo pipefail
-          case "${{ inputs.actorEmail }}" in
+          case "$ACTOR_EMAIL" in
             joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
             *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
           esac

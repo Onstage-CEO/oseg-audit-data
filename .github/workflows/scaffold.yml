@@ -45,7 +45,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: f117fa9deb6224e06c5c0f3d93d867b00a3ca257
+  ENGINE_REF: bfbf20b91c113c7d87fde911c6a6969499be1d2d
 
 permissions:
   contents: write
@@ -57,9 +57,11 @@ jobs:
       slug: ${{ steps.commit.outputs.slug }}
     steps:
       - name: Validate actor email
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
         run: |
           set -euo pipefail
-          case "${{ inputs.actorEmail }}" in
+          case "$ACTOR_EMAIL" in
             joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
             *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
           esac
@@ -73,7 +75,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: f117fa9deb6224e06c5c0f3d93d867b00a3ca257
+          ref: bfbf20b91c113c7d87fde911c6a6969499be1d2d
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -112,6 +114,8 @@ jobs:
       - name: Commit (attributed) and push
         id: commit
         working-directory: data-repo
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
         run: |
           set -euo pipefail
           git add data/clients
@@ -122,11 +126,11 @@ jobs:
           slug=$(git diff --cached --name-only | head -1 | sed -E 's|^data/clients/([^/]+)/.*|\1|')
           git config user.name "oseg-audit-bot"
           git config user.email "actions@onstage.biz"
-          git commit -m "scaffold: ${slug} — requested by ${{ inputs.actorEmail }}"
+          git commit -m "scaffold: ${slug} — requested by ${ACTOR_EMAIL}"
           git push
           echo "slug=${slug}" >> "$GITHUB_OUTPUT"
           echo "### Scaffolded \`${slug}\`" >> "$GITHUB_STEP_SUMMARY"
-          echo "Requested by: ${{ inputs.actorEmail }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Requested by: ${ACTOR_EMAIL}" >> "$GITHUB_STEP_SUMMARY"
 
   # GITHUB_TOKEN pushes never fire the push trigger, so a fresh workspace
   # would sit without a verify-report.json — call status explicitly instead.

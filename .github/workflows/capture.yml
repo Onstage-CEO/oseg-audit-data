@@ -33,7 +33,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: f117fa9deb6224e06c5c0f3d93d867b00a3ca257
+  ENGINE_REF: bfbf20b91c113c7d87fde911c6a6969499be1d2d
 
 permissions:
   contents: write
@@ -44,9 +44,11 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Validate actor email
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
         run: |
           set -euo pipefail
-          case "${{ inputs.actorEmail }}" in
+          case "$ACTOR_EMAIL" in
             joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
             *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
           esac
@@ -76,7 +78,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: f117fa9deb6224e06c5c0f3d93d867b00a3ca257
+          ref: bfbf20b91c113c7d87fde911c6a6969499be1d2d
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
