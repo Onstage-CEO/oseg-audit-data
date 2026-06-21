@@ -1,6 +1,6 @@
 {
   "reportVersion": "entertainment-discovery-v1",
-  "generatedAt": "2026-06-21T19:58:32.842Z",
+  "generatedAt": "2026-06-21T21:43:20.216Z",
   "target": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -177,22 +177,6 @@
       "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 5,
-      "text": "The beach is unreal I went here as a couple in the beginning of May for 5 days. The forecast was supposed to be thunderstorms for most of the week but fortunately it doesn't seem like the rain lasts long here. We got plenty of sunshine and sunburn. ======== Landing ======== As soon as we landed in the airport, we got approached by some sort of travel agen...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r487253064-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
-      "matchedTerms": [
-        "dance",
-        "dancing",
-        "dj",
-        "entertainment",
-        "nightlife",
-        "show",
-        "vibe"
-      ]
-    },
-    {
-      "role": "watch_item",
-      "platform": "tripadvisor",
-      "rating": 5,
       "text": "Paradisus Cancun Royal Service - Another Trip to Paradise My wife and I stayed at Paradisus Cancun Royal Service for the third time from June 27 through July 5, 2017 and had what can only so simply described as an absolutely amazing time. The general manager, Lazaro, our butler, Sergio, and all of the staff went out of their way to ensure we had the time...",
       "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r500993929-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
       "matchedTerms": [
@@ -225,29 +209,31 @@
       "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 5,
-      "text": "Can’t wait to go back Travelled with my 2 daughters, 9 and 10 years of age. We have travelled many times to various resorts in Cancun, Mayan Riviera and Puerto Vallarta. Some more upscale and some less. The 3 of us thoroughly enjoyed our vacation to Paradisus and this is the first time I’d consider returning to the same resort as typically I prefer to try...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r951030795-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+      "text": "The beach is unreal I went here as a couple in the beginning of May for 5 days. The forecast was supposed to be thunderstorms for most of the week but fortunately it doesn't seem like the rain lasts long here. We got plenty of sunshine and sunburn. ======== Landing ======== As soon as we landed in the airport, we got approached by some sort of travel agen...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r487253064-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
       "matchedTerms": [
-        "activities",
+        "dance",
         "dancing",
+        "dj",
         "entertainment",
-        "kids club",
-        "performer",
-        "show"
+        "nightlife",
+        "show",
+        "vibe"
       ]
     },
     {
       "role": "watch_item",
       "platform": "tripadvisor",
-      "rating": 5,
-      "text": "Cant wait to go back...Everything was great! Just returned yesterday from a 5 night getaway and it was so much fun. I had stayed here a while back when it was Gran Melia and liked it a lot. As a paradisus, I loved it all over again. The lobby is gorgeous with the greenery, the rooms are nice, food was great (didnt have a single bad meal...we loved vento,...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r150216536-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+      "rating": 4,
+      "text": "Beautiful but lacking during low season We went to the Paradisus late August with family concierge package and it was definitely low-season considering the hotel was empty and quiet. Here's the run-down: Staff - Wonderfully courteous and very gracious. We were greeted at the door with cool towels and were directed to Family Concierge check-in. The room in...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r176780153-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
       "matchedTerms": [
         "activities",
-        "activity",
-        "dancing",
+        "bingo",
+        "dance",
         "entertainment",
-        "performer",
+        "kids club",
+        "nightly show",
         "show"
       ]
     },
@@ -271,22 +257,6 @@
       "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 4,
-      "text": "Beautiful but lacking during low season We went to the Paradisus late August with family concierge package and it was definitely low-season considering the hotel was empty and quiet. Here's the run-down: Staff - Wonderfully courteous and very gracious. We were greeted at the door with cool towels and were directed to Family Concierge check-in. The room in...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r176780153-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
-      "matchedTerms": [
-        "activities",
-        "bingo",
-        "dance",
-        "entertainment",
-        "kids club",
-        "nightly show",
-        "show"
-      ]
-    },
-    {
-      "role": "watch_item",
-      "platform": "tripadvisor",
-      "rating": 4,
       "text": "Great vacation Overall we had a great time in Paradisus when we stayed there on vacation last week, but the hotel still has room for improvement. I am not a complainer by any means, instead I want to provide objective feedback so it can be used by the hotel management to improve this hotel even further in the future. Rooms/Accommodations - 3.5 stars here...",
       "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r334439772-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
       "matchedTerms": [
@@ -297,6 +267,36 @@
         "nightly show",
         "show",
         "vibe"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "tripadvisor",
+      "rating": 5,
+      "text": "Cant wait to go back...Everything was great! Just returned yesterday from a 5 night getaway and it was so much fun. I had stayed here a while back when it was Gran Melia and liked it a lot. As a paradisus, I loved it all over again. The lobby is gorgeous with the greenery, the rooms are nice, food was great (didnt have a single bad meal...we loved vento,...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r150216536-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+      "matchedTerms": [
+        "activities",
+        "activity",
+        "dancing",
+        "entertainment",
+        "performer",
+        "show"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "tripadvisor",
+      "rating": 5,
+      "text": "Can’t wait to go back Travelled with my 2 daughters, 9 and 10 years of age. We have travelled many times to various resorts in Cancun, Mayan Riviera and Puerto Vallarta. Some more upscale and some less. The 3 of us thoroughly enjoyed our vacation to Paradisus and this is the first time I’d consider returning to the same resort as typically I prefer to try...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r951030795-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+      "matchedTerms": [
+        "activities",
+        "dancing",
+        "entertainment",
+        "kids club",
+        "performer",
+        "show"
       ]
     },
     {
@@ -316,15 +316,16 @@
     {
       "role": "watch_item",
       "platform": "tripadvisor",
-      "rating": 5,
-      "text": "We Would Return I am writing after spending a week in the resort staying on the LaPerla side. It is January 2025, and the resort seems quiet. We had no problems getting a sun lounger on day 1 at 11:00am. It is noon now and there are still chairs available. Most poolside are taken with a few exceptions. This is the main pool and the live DJ starts at noon...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r990400201-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+      "rating": 4,
+      "text": "Paradisus Cancun - FULL REVIEW! Paradisus Cancun - FULL REVIEW! Some notes: when reading reviews, consider the number of suggestions a reviewer has posted and ask yourself if you want to trust your precious vacation days to someone with 1 review. Also, be open-minded and fair when looking at 1 or 2-star reviews as there are some people who write negative...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g150807-d282106-r896735545-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
       "matchedTerms": [
         "dance",
-        "dj",
         "entertainment",
-        "live music",
-        "show"
+        "fiesta",
+        "karaoke",
+        "pool entertainment",
+        "vibe"
       ]
     }
   ],
