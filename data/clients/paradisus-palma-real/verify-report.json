@@ -5,7 +5,7 @@
   "status": "not_ready",
   "exitCode": 1,
   "summary": {
-    "okCount": 6,
+    "okCount": 8,
     "warningCount": 1,
     "failCount": 2
   },
@@ -75,6 +75,22 @@
       ]
     },
     {
+      "id": "capture_archive",
+      "label": "Capture-archive provenance cross-check",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence claims a capturePath (nothing to cross-check); archive has 0 capture localPath(s)"
+      ]
+    },
+    {
+      "id": "evidence_freshness",
+      "label": "Evidence freshness",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence could be dated against the capture archive (nothing to age)"
+      ]
+    },
+    {
       "id": "teaser_generation",
       "label": "Teaser generation",
       "status": "ok",
@@ -134,6 +150,22 @@
     "liveVerifiedInvalid": [],
     "otherInvalid": []
   },
+  "captureCrossCheck": {
+    "archiveLocalPaths": 0,
+    "liveVerifiedWithCapturePath": 0,
+    "matched": 0,
+    "unmatched": []
+  },
+  "evidenceFreshness": {
+    "windowMonths": 12,
+    "now": "2026-06-21T23:14:38.807Z",
+    "liveVerifiedTotal": 0,
+    "dated": 0,
+    "stale": 0,
+    "ageUnknown": 0,
+    "staleRecords": [],
+    "ageUnknownRecords": []
+  },
   "teaserFirewall": {
     "generated": true,
     "charsGenerated": 8802,
@@ -147,7 +179,7 @@
     "headline": "NOT READY — 2 blockers",
     "nextAction": "Resolve 2 blockers before shipping: Required research source coverage; Source lane coverage (registry)",
     "checks": {
-      "ok": 6,
+      "ok": 8,
       "warn": 1,
       "fail": 2
     },
@@ -212,7 +244,12 @@
       "liveVerified": 0,
       "inference": 0,
       "unverified": 0
+    },
+    "captureProvenance": {
+      "claimed": 0,
+      "matched": 0,
+      "unmatched": 0
     }
   },
-  "timestamp": "2026-06-21T23:00:19.014Z"
+  "timestamp": "2026-06-21T23:14:38.821Z"
 }
