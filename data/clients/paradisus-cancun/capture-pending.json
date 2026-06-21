@@ -1,12 +1,4 @@
 {
   "reportVersion": "V1",
-  "tasks": [
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06220032-1943-0353-0000-d46a3eccf35e",
-      "submittedAt": "2026-06-21T21:31:58.459Z",
-      "note": "sort:most_recent"
-    }
-  ]
+  "tasks": []
 }
