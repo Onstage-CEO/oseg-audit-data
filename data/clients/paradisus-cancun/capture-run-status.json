@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-21T19:20:49.657Z",
+  "generatedAt": "2026-06-21T19:58:29.379Z",
   "property": {
     "propertyName": "Paradisus Cancún",
     "location": "Cancun, Mexico"
@@ -9,33 +9,26 @@
     {
       "platformId": "google",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 2472 review(s), 9052 dup; 15991 available",
-      "recordsAdded": 2472,
-      "duplicatesSkipped": 9052,
-      "queriesRun": 0,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 11524,
-        "availableReviews": 15991,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "status": "error",
+      "message": "google: no DataForSEO review tasks were created — sort:newest: task not created (status 40501: Invalid Field: 'language_name'.); sort:highest_rating: task not created (status 40501: Invalid Field: 'language_name'.); sort:lowest_rating: task not created (status 40501: Invalid Field: 'language_name'.)",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 4,
+      "queriesFailed": 4,
+      "truncatedQueries": []
     },
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 0 review(s), 27055 dup; 21610 available",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 6 in queue",
       "recordsAdded": 0,
-      "duplicatesSkipped": 27055,
+      "duplicatesSkipped": 0,
       "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 27055,
-        "availableReviews": 21610,
+        "capturedReviews": 0,
         "requestedDepth": 4490,
         "mode": "deep"
       }
@@ -43,29 +36,23 @@
     {
       "platformId": "booking",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify booking: captured 0 new, skipped 54 dup(s).; 165 available",
+      "status": "needs_key",
+      "message": "Apify booking: token rejected (HTTP 403).",
       "recordsAdded": 0,
-      "duplicatesSkipped": 54,
+      "duplicatesSkipped": 0,
       "queriesRun": 1,
       "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 54,
-        "availableReviews": 165,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "truncatedQueries": []
     },
     {
       "platformId": "expedia",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "Apify expedia: actor run failed (HTTP 400).",
+      "status": "needs_key",
+      "message": "Apify expedia: token rejected (HTTP 403).",
       "recordsAdded": 0,
       "duplicatesSkipped": 0,
       "queriesRun": 1,
-      "queriesFailed": 1,
+      "queriesFailed": 0,
       "truncatedQueries": []
     },
     {
@@ -83,9 +70,9 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 8 new, skipped 82 duplicate(s); 20550 total in archive.",
-      "recordsAdded": 8,
-      "duplicatesSkipped": 82,
+      "message": "captured 5 new, skipped 84 duplicate(s); 23035 total in archive.",
+      "recordsAdded": 5,
+      "duplicatesSkipped": 84,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [
