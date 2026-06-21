@@ -1,0 +1,142 @@
+{
+  "target": {
+    "propertyName": "Paradisus Palma Real",
+    "location": "Punta Cana, Dominican Republic"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Paradisus Palma Real Punta Cana, Dominican Republic reviews",
+        "Paradisus Palma Real entertainment reviews",
+        "Paradisus Palma Real nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Paradisus Palma Real Hotel_Review",
+        "Paradisus Palma Real Punta Cana, Dominican Republic TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Paradisus Palma Real",
+        "Paradisus Palma Real Punta Cana, Dominican Republic booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Paradisus Palma Real",
+        "Paradisus Palma Real Punta Cana, Dominican Republic Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Paradisus Palma Real"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "Paradisus Palma Real review",
+        "Paradisus Palma Real nightlife",
+        "Paradisus Palma Real entertainment",
+        "Paradisus Palma Real Punta Cana, Dominican Republic"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Paradisus Palma Real walkthrough",
+        "Paradisus Palma Real resort tour",
+        "Paradisus Palma Real review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Paradisus Palma Real\" review blog",
+        "\"Paradisus Palma Real\" honest review",
+        "Paradisus Palma Real Punta Cana, Dominican Republic travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Paradisus Palma Real official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Paradisus Palma Real instagram",
+        "Paradisus Palma Real tiktok",
+        "site:instagram.com Paradisus Palma Real"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Paradisus Palma Real Punta Cana, Dominican Republic satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "Paradisus Palma Real reviews",
+    "Paradisus Palma Real entertainment reviews",
+    "Paradisus Palma Real nightlife",
+    "site:reddit.com Paradisus Palma Real",
+    "Paradisus Palma Real YouTube review",
+    "Paradisus Palma Real travel blog review",
+    "Paradisus Palma Real family review",
+    "Paradisus Palma Real couples review",
+    "Paradisus Palma Real business traveler review",
+    "Paradisus Palma Real rooftop review",
+    "Paradisus Palma Real bar review",
+    "Paradisus Palma Real dining review"
+  ]
+}

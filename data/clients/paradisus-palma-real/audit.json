@@ -1,0 +1,25 @@
+{
+  "client": {
+    "name": "Meliá Hotels International",
+    "propertyName": "Paradisus Palma Real",
+    "location": "Punta Cana, Dominican Republic",
+    "audience": "Management",
+    "presentedBy": [],
+    "version": "V0.1 — Working Draft",
+    "status": "draft"
+  },
+  "oneLineThesis": "",
+  "coreFinding": "",
+  "platforms": [],
+  "skippedSources": [],
+  "evidence": [],
+  "venues": [],
+  "segments": [],
+  "hypotheses": [],
+  "recommendations": [],
+  "namedTalent": [],
+  "firewall": {
+    "forbiddenTerms": [],
+    "calibratedPhrasings": []
+  }
+}
