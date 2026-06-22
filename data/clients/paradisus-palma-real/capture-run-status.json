@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-21T23:47:13.882Z",
+  "generatedAt": "2026-06-22T00:05:25.232Z",
   "property": {
     "propertyName": "Paradisus Palma Real",
     "location": "Punta Cana, Dominican Republic"
@@ -9,27 +9,31 @@
     {
       "platformId": "google",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "google: no DataForSEO review tasks were created — sort:newest: task not created (status 40501: Invalid Field: 'language_name'.); sort:highest_rating: task not created (status 40501: Invalid Field: 'language_name'.); sort:lowest_rating: task not created (status 40501: Invalid Field: 'language_name'.)",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 1 in queue",
       "recordsAdded": 0,
       "duplicatesSkipped": 0,
-      "queriesRun": 4,
-      "queriesFailed": 4,
-      "truncatedQueries": []
-    },
-    {
-      "platformId": "tripadvisor",
-      "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 0 review(s), 2542 dup; 26391 available",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 2542,
       "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 2542,
-        "availableReviews": 26391,
+        "capturedReviews": 0,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "tripadvisor",
+      "mechanism": "aggregator",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 6 in queue",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 0,
         "requestedDepth": 4490,
         "mode": "deep"
       }
@@ -38,14 +42,14 @@
       "platformId": "booking",
       "mechanism": "aggregator",
       "status": "ok",
-      "message": "Apify booking: captured 0 new, skipped 200 dup(s).; 436 available",
-      "recordsAdded": 0,
+      "message": "Apify booking: captured 236 new, skipped 200 dup(s).; 436 available",
+      "recordsAdded": 236,
       "duplicatesSkipped": 200,
       "queriesRun": 1,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 200,
+        "capturedReviews": 436,
         "availableReviews": 436,
         "requestedDepth": 4490,
         "mode": "deep"
@@ -54,19 +58,13 @@
     {
       "platformId": "expedia",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify expedia: captured 0 new, skipped 150 dup(s).; 1629 available",
+      "status": "error",
+      "message": "capture timed out after 180000ms — recorded as error; re-run capture-round to retry.",
       "recordsAdded": 0,
-      "duplicatesSkipped": 150,
-      "queriesRun": 1,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 150,
-        "availableReviews": 1629,
-        "requestedDepth": 4490,
-        "mode": "deep"
-      }
+      "duplicatesSkipped": 0,
+      "queriesRun": 2,
+      "queriesFailed": 2,
+      "truncatedQueries": []
     },
     {
       "platformId": "reddit",
@@ -83,13 +81,14 @@
       "platformId": "youtube",
       "mechanism": "official_api",
       "status": "ok",
-      "message": "captured 25 new, skipped 85 duplicate(s); 26871 total in archive.",
-      "recordsAdded": 25,
-      "duplicatesSkipped": 85,
+      "message": "captured 4 new, skipped 97 duplicate(s); 27111 total in archive.",
+      "recordsAdded": 4,
+      "duplicatesSkipped": 97,
       "queriesRun": 3,
       "queriesFailed": 0,
       "truncatedQueries": [
         "Paradisus Palma Real walkthrough",
+        "Paradisus Palma Real resort tour",
         "Paradisus Palma Real review vlog"
       ]
     }
