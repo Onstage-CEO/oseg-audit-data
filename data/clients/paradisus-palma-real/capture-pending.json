@@ -2,13 +2,6 @@
   "reportVersion": "V1",
   "tasks": [
     {
-      "platformId": "google",
-      "vendor": "dataforseo",
-      "taskId": "06220250-1943-0298-0000-c288190e2fe3",
-      "submittedAt": "2026-06-21T23:50:25.890Z",
-      "note": "sort:newest"
-    },
-    {
       "platformId": "tripadvisor",
       "vendor": "dataforseo",
       "taskId": "06220250-1943-0353-0000-a6535b0b095d",
@@ -21,20 +14,6 @@
       "taskId": "06220250-1943-0353-0000-bffdd7dfe8e0",
       "submittedAt": "2026-06-21T23:50:25.890Z",
       "note": "rating:excellent"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06220250-1943-0353-0000-608b211b1c43",
-      "submittedAt": "2026-06-21T23:50:25.890Z",
-      "note": "visit_type:families"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
-      "taskId": "06220250-1943-0353-0000-a8b1a90563d4",
-      "submittedAt": "2026-06-21T23:50:25.890Z",
-      "note": "visit_type:couples"
     }
   ]
 }
