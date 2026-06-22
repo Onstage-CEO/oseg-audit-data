@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-22T00:29:09.289Z",
+  "generatedAt": "2026-06-22T00:44:28.163Z",
   "property": {
     "propertyName": "Paradisus Palma Real",
     "location": "Punta Cana, Dominican Republic"
@@ -60,13 +60,19 @@
     {
       "platformId": "expedia",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "capture timed out after 180000ms — recorded as error; re-run capture-round to retry.",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 0,
-      "queriesRun": 2,
-      "queriesFailed": 2,
-      "truncatedQueries": []
+      "status": "ok",
+      "message": "Apify expedia: captured 1012 new, skipped 150 dup(s).; 1629 available; ⚠ only 71% of available captured",
+      "recordsAdded": 1012,
+      "duplicatesSkipped": 150,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 1162,
+        "availableReviews": 1629,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
     },
     {
       "platformId": "reddit",
