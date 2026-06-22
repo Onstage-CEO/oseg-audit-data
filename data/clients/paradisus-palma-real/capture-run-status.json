@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-22T00:20:27.005Z",
+  "generatedAt": "2026-06-22T00:22:45.200Z",
   "property": {
     "propertyName": "Paradisus Palma Real",
     "location": "Punta Cana, Dominican Republic"
@@ -26,16 +26,15 @@
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "ok",
-      "message": "collected 0 review(s), 4490 dup; 26391 available; 1 in queue",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 1 in queue",
       "recordsAdded": 0,
-      "duplicatesSkipped": 4490,
+      "duplicatesSkipped": 0,
       "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 4490,
-        "availableReviews": 26391,
+        "capturedReviews": 0,
         "requestedDepth": 4490,
         "mode": "deep"
       }
