@@ -6,7 +6,9 @@
     "audience": "Management",
     "presentedBy": [],
     "version": "V0.1 — Working Draft",
-    "status": "draft"
+    "status": "draft",
+    "expediaUrl": "https://www.expedia.com/Punta-Cana-Hotels-Paradisus-Palma-Real-Golf-Spa-Resort-All-Inclusive.h1348106.Hotel-Information",
+    "bookingUrl": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.html"
   },
   "oneLineThesis": "",
   "coreFinding": "",
