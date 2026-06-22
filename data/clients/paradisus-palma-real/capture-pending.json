@@ -11,13 +11,6 @@
     {
       "platformId": "tripadvisor",
       "vendor": "dataforseo",
-      "taskId": "06220250-1943-0353-0000-40489465edf1",
-      "submittedAt": "2026-06-21T23:50:25.890Z",
-      "note": "sort:most_recent"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
       "taskId": "06220250-1943-0353-0000-a6535b0b095d",
       "submittedAt": "2026-06-21T23:50:25.890Z",
       "note": "sort:detailed_reviews"
