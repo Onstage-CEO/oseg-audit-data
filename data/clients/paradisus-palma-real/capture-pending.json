@@ -32,13 +32,6 @@
     {
       "platformId": "tripadvisor",
       "vendor": "dataforseo",
-      "taskId": "06220250-1943-0353-0000-7ac9fb954ffa",
-      "submittedAt": "2026-06-21T23:50:25.890Z",
-      "note": "rating:very_good"
-    },
-    {
-      "platformId": "tripadvisor",
-      "vendor": "dataforseo",
       "taskId": "06220250-1943-0353-0000-608b211b1c43",
       "submittedAt": "2026-06-21T23:50:25.890Z",
       "note": "visit_type:families"
