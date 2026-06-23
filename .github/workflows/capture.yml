@@ -33,7 +33,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 4da87ba751538cde1bd1e7ce31b998936b55fae5
+  ENGINE_REF: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
 
 permissions:
   contents: write
@@ -78,7 +78,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Onstage-CEO/oseg-resort-audit
-          ref: 4da87ba751538cde1bd1e7ce31b998936b55fae5
+          ref: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -121,6 +121,11 @@ jobs:
           # Full sweep submits multiple vendor-supported review passes instead
           # of treating a single 4,490-item DataForSEO task as the audit limit.
           OSEG_CAPTURE_FULL_SWEEP: ${{ vars.OSEG_CAPTURE_FULL_SWEEP || '1' }}
+          # Google review source: 'apify' (compass actor, ~100% of public reviews,
+          # REPLACES prior google rows so no source-mix inflation) or 'dataforseo'
+          # (legacy ~49% cap). Default 'apify' for complete capture; needs the
+          # property's audit.client.googleUrl (or the resolver) + APIFY_TOKEN.
+          OSEG_GOOGLE_CAPTURE_SOURCE: ${{ vars.OSEG_GOOGLE_CAPTURE_SOURCE || 'apify' }}
           WS: ${{ steps.resolve.outputs.ws }}
         run: |
           set -euo pipefail
