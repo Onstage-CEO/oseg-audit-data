@@ -1,0 +1,324 @@
+{
+  "reportVersion": "open-web-evidence-v1",
+  "generatedAt": "2026-06-23T23:10:18.740Z",
+  "findings": [
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=wsnobuw3cy0&lc=Ugxv8EKDySPqVu3WmDJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@samuel.dominicano",
+      "snippet": "Thank you so much for this amazing review! ❤️It was a real pleasure to meet such popular bloggers like you. The video is very well edited and looks truly professional. 👍🏽You made an excellent review that shows the atmosphere of our hotel perfectly. Our whole team is very happy and impressed — we even watched your video together several times! For us, this is very important and truly valuable. We’re very grateful that you visited us and enjoyed your stay. Thank you for the great work you’ve done. We’ll definitely leave a like and highly recommend your video to everyone. It was an honor to serve you, because we know that guests experience the Dominican Republic 🇩🇴through the resort and through their stay with us. We hope to see you again soon! 🌴☀️🌊",
+      "matchedTerms": [
+        "atmosphere",
+        "shows"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=wsnobuw3cy0&lc=Ugx9lC_yghGsLA1dyg94AaABAg",
+      "domain": "youtube.com",
+      "title": "@AJ-zg7sc",
+      "snippet": "Just got back from there today, there was a foam party with swimming games and a dj",
+      "matchedTerms": [
+        "party",
+        "games",
+        "dj"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=wsnobuw3cy0&lc=UgzA9sGuZufYYP6Q3HB4AaABAg",
+      "domain": "youtube.com",
+      "title": "@joyrhodes2084",
+      "snippet": "We just returned from the Paradisus Palma Real Punta Cana (July 2025).  The best parts of our trip were certainly the service, the rooms and grounds and the community there.  The people there from the receptionists, bar tenders, our butler, Christian, the activity directors, etc. were enthusiastic, caring, friendly, personable and overly helpful.  The room and the grounds were beautiful, clean, and sufficient.  Punta Cana is beautiful:  the views, the water, the buildings, the pools, etc. We stayed in a Master Room with a swim up pool and our friends stayed in the Reserve.  Having a pool right outside our door was fantastic.  The large main pool with the swim up bar was wonderful.  There were enough free activities (A foam pool party, balloon games, daily water aerobics, Virtual Reality games, hat painting, pool pole dancing, pool trampoline exercise, nighly music in the restaurant square, etc.) to keep us busy, but not too many to make us feel like we didn't have a restful vacation.  All of the food was meh; we tried all of the restaurants.  I am not exaggerating.  Room service, however, was great.  We ordered breakfast, lunch and sometimes dinner.  We did go on two excursions:  Soana Island and a snorkeling trip. Soana island was a long day.  It was gorgeous, but the snorkeling there was lackluster and the food on the island was mediocre.  The snorkeling trip was ok; the seaweed covered most of what we were supposed to see. Overall, it was a great vacation.  We have previously stayed at the Paradisus Cancun (which was lovely with good food).",
+      "matchedTerms": [
+        "activities",
+        "dancing",
+        "music",
+        "party",
+        "games",
+        "pool",
+        "bar"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=wsnobuw3cy0&lc=Ugz6ErBcmojJdE45uAJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@cindymaulick3022",
+      "snippet": "We love this resort and the people! We have there 14 times and are treated like family. Your review is accurate. Not much nightlife but keep in mind that it is a golf resort and SPA. Food, as vegetarians, is alright. But you can't beat the vibe, the beautiful resort itself, the other guests and especially the staff! We have made many friends, some we see year after year. This is our home away from home! PS. we do go thru a third party and pay just over $200 per night for Adults Only. Can't wait to return.",
+      "matchedTerms": [
+        "nightlife",
+        "family",
+        "adults",
+        "party",
+        "night",
+        "vibe"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=xtLDTepcDRg&lc=Ugzh0GpnLGvZF6X2eKx4AaABAg",
+      "domain": "youtube.com",
+      "title": "@joyrhodes2084",
+      "snippet": "We just returned from the Paradisus Palma Real Punta Cana (July 2025).  The best parts of our trip were certainly the service, the rooms and grounds and the community there.  The people there from the receptionists, bar tenders, our butler, Christian, the activity directors, etc. were enthusiastic, caring, friendly, personable and overly helpful.  The room and the grounds were beautiful, clean, and sufficient.  Punta Cana is beautiful:  the views, the water, the buildings, the pools, etc. We stayed in a Master Room with a swim up pool and our friends stayed in the Reserve.  Having a pool right outside our door was fantastic.  The large main pool with the swim up bar was wonderful.  There were enough free activities (A foam pool party, balloon games, daily water aerobics, Virtual Reality games, hat painting, pool pole dancing, pool trampoline exercise, nighly music in the restaurant square, etc.) to keep us busy, but not too many to make us feel like we didn't have a restful vacation.  All of the food was meh; we tried all of the restaurants.  I am not exaggerating.  Room service, however, was great.  We ordered breakfast, lunch and sometimes dinner.  We did go on two excursions:  Soana Island and a snorkeling trip. Soana island was a long day.  It was gorgeous, but the snorkeling there was lackluster and the food on the island was mediocre.  The snorkeling trip was ok; the seaweed covered most of what we were supposed to see. Overall, it was a great vacation.  We have previously stayed at the Paradisus Cancun (which was lovely with good food).",
+      "matchedTerms": [
+        "activities",
+        "dancing",
+        "music",
+        "party",
+        "games",
+        "pool",
+        "bar"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=xtLDTepcDRg&lc=UgxPcR57todRPpUXBVF4AaABAg",
+      "domain": "youtube.com",
+      "title": "@MariaChen-g6v",
+      "snippet": "kids water park is free?",
+      "matchedTerms": [
+        "kids"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=xtLDTepcDRg&lc=UgyZpc29gZ5DhjB3A2B4AaABAg",
+      "domain": "youtube.com",
+      "title": "@Money-1122",
+      "snippet": "I’m thinking about booking in the end of July for a family of 4 , 2 boys 14 and 9 I’m leaning toward paradisus grand Cana ( must more affordable) any  input will be much appreciated",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=xtLDTepcDRg&lc=UgyJmo0qEQw40PFSXj54AaABAg",
+      "domain": "youtube.com",
+      "title": "@anaclaudiacardoso9047",
+      "snippet": "Hi guys, have been watching a lot of your videos recently! Me and my husband are traveling with our four year old. We love the falcon but the fact that it's not on the first line of the beach was a bit of a deal breaker, but Falcon's got a water park that Paradisus Palma does not. I wonder if they have any restrictions about guests from Paradisus Palma using the water park or not.",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=xtLDTepcDRg&lc=Ugx1iMxAq06kh0MuxmV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@StephiePpn",
+      "snippet": "We stayed at the Paradisus a couple years before Renos. I would miss the buffet/bar directly on the beach at night. That was so lively and fun. Our room was lovely, very very similar to yours just a little less modern, but it was still very nice and maintained just fine. The organically shaped pools and having the squiggly pool entrance attached to the buffet was amazing. Had the best massage of my life in a cabana on the beach. We had an amazing time except for a couple small things. The biggest thing was all the difficulty we had making dinner reservations. Despite that we really looked forward to going back until it closed for Reno’s :(. \n\nTwo questions. 1) is there any type of reservation system now to avoid miscommunication?\n\n2) 10th anniversary. Do you reccommend this or Lopesan?",
+      "matchedTerms": [
+        "night",
+        "beach",
+        "pool",
+        "fun",
+        "bar"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=dcd3n1JKIoc&lc=UgzgOed0bFuBEv4OIq94AaABAg",
+      "domain": "youtube.com",
+      "title": "@cindymaulick3022",
+      "snippet": "I guess a golf resort and spa screams nightlife to some, hard rock implies that to me personally. Golf and spa invoke relaxation to me.\nFood is OK, if you expect NYC 5 star status you won't find it there. \nAs for the staff, they do the best they can. They work long hours for very little money.\nWe are going back in a few weeks for our 15th time to celebrate our anniversary. Wouldn't go anywhere else, love this place and the wonderful Dominican people. \nAs for communicating with locals, use a translator app, they have guests from all over the globe so you can't expect them to know your language. You give respect, you will get it back",
+      "matchedTerms": [
+        "nightlife",
+        "night"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=ejRLc6lntwc&lc=Ugw5RBEqff9q2MCy7fJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@TheRaccAcademy",
+      "snippet": "thank you for the review, im doing the same that you guys do but with my friends, next hotel we will check is the punta cana beach (the only melia that has a discoteca apparently)",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=PzJugPHogps&lc=UgzIOXkMBSh63d-4KjB4AaABAg",
+      "domain": "youtube.com",
+      "title": "@brittneyniqolebeauty",
+      "snippet": "I love the video!!!! From you showing your personality 😂 to the beautiful resort! This look like a fun and productive trip!!!",
+      "matchedTerms": [
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=PzJugPHogps&lc=UgyDHDgrmszSKMd2YEV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@spinedoc893",
+      "snippet": "Does staying at the Reserve feel like an actual adult only hotel? ie does it have its own lobby, restaurants etc or is it just a sectioned off area of pools, beach and rooms??",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=n7CpTRehPlE&lc=Ugww4gTD19EyJbvY_JJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@joyrhodes2084",
+      "snippet": "My daughter and her boyfriend stayed here last week.  Their buffet was much better than ours (we were in the regular, family section and not in the reserve).  She really appreciated the free beach bag that they gifted her and the ability to go do sunrise yoga as a part of her reserve experience.",
+      "matchedTerms": [
+        "family",
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=n7CpTRehPlE&lc=UgwirtDfWVnXr3Jc9gF4AaABAg",
+      "domain": "youtube.com",
+      "title": "@rubenbarbieri6772",
+      "snippet": "Please Take care. The hotel is under construction. There are no toilets restaurants and WiFi at the beach. We hace to wait 40 minutes to go to Circle or The Reserve. People are complainig all the time. We can not believe it how they sold rooms without letting us know about this unpleasant situation.",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=n7CpTRehPlE&lc=UgwpXcZ04Kc15EMlJY54AaABAg",
+      "domain": "youtube.com",
+      "title": "@petersampson5202",
+      "snippet": "DEAR DETAILS IN LUXURY, \n\nGOD BLESS YOU MY FRIENDS.  I AM VERY PROUD OF YOU AND VERY HAPPY FOR YOU. I HOPE ALL OF YOUR DREAMS COME TRUE. I HOPE YOU HAD THE BEST AND HAPPIEST CHRISTMAS OF YOUR ENTIRE LIFE AND THE BEST AND HAPPIEST 2022 OF YOUR ENTIRE LIFE.    I LOVE YOU.  🙏\n\nSINCERELY PETER",
+      "matchedTerms": [
+        "christmas"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=mTiAw6AprdQ&lc=UgyLzFEGohfeHG29s2l4AaABAg",
+      "domain": "youtube.com",
+      "title": "@ZIW7",
+      "snippet": "Look very cool! Beach super 👌💥",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=mTiAw6AprdQ&lc=UgyAVHjUEILZUw2KEC14AaABAg",
+      "domain": "youtube.com",
+      "title": "@oksa-j3x",
+      "snippet": "Beautiful! Amazing beach!",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=yOcf5N2V_8c&lc=Ugydrb7V4UstxKmueC94AaABAg",
+      "domain": "youtube.com",
+      "title": "@rundaljabasini1793",
+      "snippet": "Was there a lot of seaweed on the beach?",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=yOcf5N2V_8c&lc=Ugz5esNlxkBJNBFqaJN4AaABAg",
+      "domain": "youtube.com",
+      "title": "@maureenp7622",
+      "snippet": "Great review.  Was your room at the Adults only ?  Can you please provide room type?  Master suit , ocean front or jr suite garden view?  They have an Adults only and family friendly rooms.  Trying to decide a room.  Thank you.  Love your video",
+      "matchedTerms": [
+        "family",
+        "adults"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=bMjVyR1cgOY&lc=Ugi5Q3UMZYvJfngCoAEC",
+      "domain": "youtube.com",
+      "title": "@riquerebelo",
+      "snippet": "Hi! Ty for the detailed video. Would you please tell me if the beach area at 7:14 is an \"open area\"? From what I read the Royal Service private area should be to the right and I think I saw that the \"Reserve\" area was roped. Ty!",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=bMjVyR1cgOY&lc=UgjAGiCD1TjqpXgCoAEC",
+      "domain": "youtube.com",
+      "title": "@trinhk",
+      "snippet": "Great video, thanks for sharing.  Is this a family resort?  I understand there's an adult section, and noticed there isn't much kids around.  I have 2 kids and planning on going there.  Any recommendation?  Thanks.",
+      "matchedTerms": [
+        "family",
+        "kids"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=KxUsB1WiuI8&lc=Ugyo87LKnh-5VMSUuX14AaABAg",
+      "domain": "youtube.com",
+      "title": "@JorgeQuezada-uc4dw",
+      "snippet": "I’m going to the Reserve in June.   Will we be allowed to used the premises at The Paradisus also? Like the swimming pool and restaurants? Thanks you!",
+      "matchedTerms": [
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=KxUsB1WiuI8&lc=Ugjs1yN2dwW0iXgCoAEC",
+      "domain": "youtube.com",
+      "title": "@CoachPattyBlueHayes",
+      "snippet": "The place looks wonderful. If you go back to the DR, I'd encourage you to consider visiting a local boys and girls club and taking a little bit of your vacation time to learn about the local living conditions for many of the locals. I was in Puerto Plata in neighborhoods where families have no running water, sewage running through the tiny streets and their homes are shacks (many taken with last year's floods) of metal or at best, cinderblock. They don't have room service - lucky to have enough to eat every day. \nYou know how amazing the local people are - the kids I met have the brightest smiles and now they have educational dreams! I volunteered with Dove Missions, if you go to the north of the DR. There are great resorts there, too - and you can meet the awesome kids from Dove Missions. :-)",
+      "matchedTerms": [
+        "kids"
+      ]
+    }
+  ],
+  "queriesRun": 24,
+  "packsRun": 1
+}
