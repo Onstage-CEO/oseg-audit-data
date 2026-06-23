@@ -1,12 +1,12 @@
-# Web-discovery CAPTURE (Moat Phase 2) — automated open-web entertainment search.
+# Capture extra sources (hosted) — Yelp reviews + YouTube comments + social.
 #
-# Runs the discovery worklist's TEXT lanes (forums, blogs/guides, complaint sites,
-# competitors) through the DataForSEO Google-organic SERP server-side and commits
-# sourced findings (web-discovery-evidence.json + .md). Open-web evidence only,
-# never blended into the captured-review numbers. Engine pinned (bump deliberately).
+# Runs the engine's capture-extra-sources for one workspace: Yelp (Apify -> review
+# corpus), YouTube comments (official API -> evidence), social IG/TikTok/FB (Apify
+# -> evidence). Each self-gates on its secret/config; comments + social are sourced
+# open-web evidence, never folded into the rating numbers. Engine pinned.
 
-name: capture-web-discovery
-run-name: "web-discovery: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
+name: capture-extra-sources
+run-name: "extra-sources: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
 on:
   workflow_dispatch:
     inputs:
@@ -20,7 +20,7 @@ on:
         type: string
 
 concurrency:
-  group: web-discovery-${{ inputs.slug }}
+  group: extra-sources-${{ inputs.slug }}
   cancel-in-progress: false
 
 env:
@@ -31,9 +31,9 @@ permissions:
   contents: write
 
 jobs:
-  web-discovery:
+  extra-sources:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - name: Validate actor email
         env:
@@ -83,21 +83,18 @@ jobs:
         working-directory: engine
         run: npm ci
 
-      - name: Run web-discovery capture
+      - name: Capture extra sources
         working-directory: engine
-        # Secrets reach the engine ONLY via env (never inline ${{ }} in run:).
         env:
-          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
-          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
           WS: ${{ steps.resolve.outputs.ws }}
         run: |
           set -euo pipefail
-          if [ -z "${DATAFORSEO_LOGIN:-}" ] || [ -z "${DATAFORSEO_PASSWORD:-}" ]; then
-            echo "::error::DataForSEO creds not set on this repo"; exit 1
-          fi
-          npm run dev --silent -- capture-web-discovery "$WS" 2>/tmp/wd.err || { cat /tmp/wd.err >&2; exit 1; }
-          cat /tmp/wd.err >&2
-          grep -E 'capture-web-discovery' /tmp/wd.err | tail -1 | sed 's/^\[capture-web-discovery\] /web discovery: /' >> "$GITHUB_STEP_SUMMARY" || true
+          npm run dev --silent -- capture-extra-sources "$WS" 2>/tmp/ex.err || { cat /tmp/ex.err >&2; true; }
+          cat /tmp/ex.err >&2
+          grep -E 'capture-extra-sources' /tmp/ex.err | sed 's/^\[capture-extra-sources\] /extra: /' >> "$GITHUB_STEP_SUMMARY" || true
 
       - name: Commit (attributed) and push
         working-directory: data-repo
@@ -108,18 +105,17 @@ jobs:
           set -euo pipefail
           git add "data/clients/$IN_SLUG"
           if git diff --cached --quiet; then
-            echo "Web discovery produced no changes — nothing committed."
-            echo "### Web discovery \`$IN_SLUG\`: no change" >> "$GITHUB_STEP_SUMMARY"
+            echo "Extra sources produced no changes — nothing committed."
+            echo "### Extra sources \`$IN_SLUG\`: no change" >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           git config user.name "oseg-audit-bot"
           git config user.email "actions@onstage.biz"
-          git commit -m "web-discovery: $IN_SLUG — requested by $ACTOR"
+          git commit -m "extra-sources: $IN_SLUG — requested by $ACTOR"
           pushed=0
           for k in 1 2 3; do
             if git push; then pushed=1; break; fi
             git pull --rebase --autostash
           done
           [ "$pushed" = "1" ] || { echo "::error::push failed after 3 attempts"; exit 1; }
-          echo "### Web discovery for \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
-          echo "Requested by: $ACTOR" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Captured extra sources for \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"

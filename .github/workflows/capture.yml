@@ -33,7 +33,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 7040c653afbe0250c2e5492c82eefc59465ae82a
+  ENGINE_REF: 90f3709e327e9ec0a87f9b715b23eca2d9e23ee7
 
 permissions:
   contents: write
@@ -193,6 +193,21 @@ jobs:
           fi
           npm run dev --silent -- capture-web-discovery "$WS" 2>/tmp/wd.err || { cat /tmp/wd.err >&2; exit 1; }
           grep -E 'capture-web-discovery' /tmp/wd.err | tail -1 | sed 's/^\[capture-web-discovery\] /open-web: /' >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Capture extra sources — Yelp + YouTube comments + social (auto, best-effort)
+        working-directory: engine
+        # Each source self-gates on its secret/config; per-adapter failures are
+        # caught inside the command, so this step never fails the capture.
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- capture-extra-sources "$WS" 2>/tmp/ex.err || { cat /tmp/ex.err >&2; true; }
+          cat /tmp/ex.err >&2
+          grep -E 'capture-extra-sources' /tmp/ex.err | sed 's/^\[capture-extra-sources\] /extra: /' >> "$GITHUB_STEP_SUMMARY" || true
 
       - name: Commit (attributed) and push
         working-directory: data-repo

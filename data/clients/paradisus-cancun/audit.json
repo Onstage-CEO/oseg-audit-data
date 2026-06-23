@@ -9,7 +9,8 @@
     "status": "draft",
     "expediaUrl": "https://www.expedia.com/Cancun-Hotels-Paradisus-Cancun-All-Inclusive.h525789.Hotel-Information",
     "googleUrl": "https://www.google.com/maps/place/Paradisus+Canc%C3%BAn/@21.083659,-86.771986,972m/data=!3m2!1e3!5s0x8f4c28377387533b:0x64723fcda95ee3b3!4m11!3m10!1s0x8f4c28370abdd883:0x911f472d975d75cf!5m2!4m1!1i2!8m2!3d21.083659!4d-86.771986!9m1!1b1!16s%2Fg%2F1pv2ldy4b",
-    "renovationDate": "2026-04-01"
+    "renovationDate": "2026-04-01",
+    "yelpUrl": "https://www.yelp.com/biz/paradisus-canc%C3%BAn"
   },
   "oneLineThesis": "",
   "coreFinding": "",
