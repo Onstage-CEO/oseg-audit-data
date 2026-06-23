@@ -33,7 +33,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
+  ENGINE_REF: 7040c653afbe0250c2e5492c82eefc59465ae82a
 
 permissions:
   contents: write
@@ -77,8 +77,8 @@ jobs:
       - name: Checkout engine (pinned, read-only deploy key)
         uses: actions/checkout@v4
         with:
-          repository: Onstage-CEO/oseg-resort-audit
-          ref: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -179,6 +179,20 @@ jobs:
           set -euo pipefail
           npm run dev --silent -- entertainment-discovery "$WS"
           echo "Built entertainment evidence discovery worklist." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Capture open-web entertainment evidence (auto)
+        working-directory: engine
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          if [ -z "${DATAFORSEO_LOGIN:-}" ] || [ -z "${DATAFORSEO_PASSWORD:-}" ]; then
+            echo "open-web search skipped (no DataForSEO creds)" >> "$GITHUB_STEP_SUMMARY"; exit 0
+          fi
+          npm run dev --silent -- capture-web-discovery "$WS" 2>/tmp/wd.err || { cat /tmp/wd.err >&2; exit 1; }
+          grep -E 'capture-web-discovery' /tmp/wd.err | tail -1 | sed 's/^\[capture-web-discovery\] /open-web: /' >> "$GITHUB_STEP_SUMMARY" || true
 
       - name: Commit (attributed) and push
         working-directory: data-repo
