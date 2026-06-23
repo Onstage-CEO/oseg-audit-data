@@ -27,7 +27,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: b0dd6e68afd23653747b251156011daf38889fa1
+  ENGINE_REF: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
 
 permissions:
   contents: write
@@ -113,3 +113,14 @@ jobs:
           git commit -m "import-apify-run: $IN_SLUG <- run $RUN_ID — requested by $ACTOR"
           git pull --rebase origin main
           git push
+
+  # GITHUB_TOKEN pushes don't fire the push trigger, so refresh verify/summary
+  # explicitly (mirrors capture.yml) — the imported totals then show in the UI.
+  status:
+    needs: import-apify-run
+    uses: ./.github/workflows/status.yml
+    with:
+      slug: ${{ inputs.slug }}
+    secrets: inherit
+    permissions:
+      contents: write
