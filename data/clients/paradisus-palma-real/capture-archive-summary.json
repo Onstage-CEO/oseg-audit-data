@@ -1,11 +1,11 @@
 {
-  "total": 36186,
+  "total": 48405,
   "byPlatform": {
     "booking": 436,
     "expedia": 1162,
     "youtube": 131,
     "tripadvisor": 26394,
-    "google": 8063
+    "google": 20282
   },
-  "latestCapturedAt": "2026-06-22T00:44:28.163Z"
+  "latestCapturedAt": "2026-06-23T02:55:25.416Z"
 }
