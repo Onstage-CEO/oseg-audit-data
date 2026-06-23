@@ -26,6 +26,21 @@ on:
         description: 'Access-verified email of the requesting user'
         required: true
         type: string
+      splitDate:
+        description: 'Renovation/reopening date YYYY-MM-DD (optional): report shows a pre/post split'
+        required: false
+        type: string
+        default: ''
+      dateFrom:
+        description: 'Analyze only reviews on/after YYYY-MM-DD (optional)'
+        required: false
+        type: string
+        default: ''
+      dateTo:
+        description: 'Analyze only reviews on/before YYYY-MM-DD (optional)'
+        required: false
+        type: string
+        default: ''
 
 concurrency:
   group: client-report-${{ inputs.slug }}
@@ -33,7 +48,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: b73e5162a99c3dcdc0768dc3a3053d9078446ad0
+  ENGINE_REF: bf4c1042303bc33e3cae30239e40538625d068ed
 
 permissions:
   contents: write
@@ -73,6 +88,30 @@ jobs:
             echo "::error::workspace not found: $IN_SLUG"; exit 1
           fi
           echo "ws=$ws" >> "$GITHUB_OUTPUT"
+
+      - name: Apply date controls to audit.json (optional, persisted)
+        if: ${{ inputs.splitDate != '' || inputs.dateFrom != '' || inputs.dateTo != '' }}
+        env:
+          WS: ${{ steps.resolve.outputs.ws }}
+          IN_SPLIT: ${{ inputs.splitDate }}
+          IN_FROM: ${{ inputs.dateFrom }}
+          IN_TO: ${{ inputs.dateTo }}
+        run: |
+          set -euo pipefail
+          for v in "$IN_SPLIT" "$IN_FROM" "$IN_TO"; do
+            if [ -n "$v" ] && ! printf '%s' "$v" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+              echo "::error::date must be YYYY-MM-DD: $v"; exit 1
+            fi
+          done
+          f="$WS/audit.json"
+          tmp="$(mktemp)"
+          jq --arg split "$IN_SPLIT" --arg from "$IN_FROM" --arg to "$IN_TO" '
+            (if $split != "" then .client.renovationDate = $split else . end)
+            | (if ($from != "" or $to != "")
+               then .client.dateRange = ((if $from != "" then {from:$from} else {} end) + (if $to != "" then {to:$to} else {} end))
+               else . end)
+          ' "$f" > "$tmp" && mv "$tmp" "$f"
+          echo "Applied date controls:"; jq '.client | {renovationDate, dateRange}' "$f"
 
       - name: Checkout engine (pinned, read-only deploy key)
         uses: actions/checkout@v4

@@ -32,6 +32,21 @@ on:
         required: false
         type: string
         default: ''
+      renovationDate:
+        description: 'Renovation/reopening date YYYY-MM-DD (optional): report shows a pre/post split'
+        required: false
+        type: string
+        default: ''
+      dateFrom:
+        description: 'Analyze only reviews on/after YYYY-MM-DD (optional)'
+        required: false
+        type: string
+        default: ''
+      dateTo:
+        description: 'Analyze only reviews on/before YYYY-MM-DD (optional)'
+        required: false
+        type: string
+        default: ''
       actorEmail:
         description: 'Access-verified email of the requesting user'
         required: true
@@ -45,7 +60,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
+  ENGINE_REF: bf4c1042303bc33e3cae30239e40538625d068ed
 
 permissions:
   contents: write
@@ -74,8 +89,8 @@ jobs:
       - name: Checkout engine (pinned, read-only deploy key)
         uses: actions/checkout@v4
         with:
-          repository: Onstage-CEO/oseg-resort-audit
-          ref: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -99,6 +114,9 @@ jobs:
           IN_LOCATION: ${{ inputs.location }}
           IN_BRAND: ${{ inputs.brand }}
           IN_WEBSITE: ${{ inputs.website }}
+          IN_RENOVATION: ${{ inputs.renovationDate }}
+          IN_DATE_FROM: ${{ inputs.dateFrom }}
+          IN_DATE_TO: ${{ inputs.dateTo }}
         run: |
           set -euo pipefail
           args=(new-property --yes
@@ -109,6 +127,9 @@ jobs:
             --registry config/source-registry.json)
           [ -n "$IN_BRAND" ] && args+=(--brand "$IN_BRAND")
           [ -n "$IN_WEBSITE" ] && args+=(--website "$IN_WEBSITE")
+          [ -n "$IN_RENOVATION" ] && args+=(--renovation-date "$IN_RENOVATION")
+          [ -n "$IN_DATE_FROM" ] && args+=(--date-from "$IN_DATE_FROM")
+          [ -n "$IN_DATE_TO" ] && args+=(--date-to "$IN_DATE_TO")
           npm run dev -- "${args[@]}"
 
       - name: Commit (attributed) and push
