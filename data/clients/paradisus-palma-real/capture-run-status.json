@@ -1,27 +1,11 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-23T02:30:18.662Z",
+  "generatedAt": "2026-06-23T02:55:25.416Z",
   "property": {
     "propertyName": "Paradisus Palma Real",
     "location": "Punta Cana, Dominican Republic"
   },
   "sources": [
-    {
-      "platformId": "google",
-      "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify google: captured 20282 new, skipped 0 dup(s).; 1284 rating-only (no text)",
-      "recordsAdded": 20282,
-      "duplicatesSkipped": 0,
-      "queriesRun": 1,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 20282,
-        "requestedDepth": 50000,
-        "mode": "deep"
-      }
-    },
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
@@ -98,6 +82,21 @@
         "Paradisus Palma Real resort tour",
         "Paradisus Palma Real review vlog"
       ]
+    },
+    {
+      "platformId": "google",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "import-apify-run google: imported 20282 new, skipped 0 dup(s).",
+      "recordsAdded": 20282,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 20282,
+        "mode": "deep"
+      }
     }
   ]
 }
