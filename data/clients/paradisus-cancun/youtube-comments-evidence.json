@@ -1,0 +1,530 @@
+{
+  "reportVersion": "open-web-evidence-v1",
+  "generatedAt": "2026-06-23T22:07:19.563Z",
+  "findings": [
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=jXmBf7rqoE4&lc=Ugym-1mzDHLv_YwKv3Z4AaABAg",
+      "domain": "youtube.com",
+      "title": "@RianaAnaïs",
+      "snippet": "He said there were no day beds but proceeded to show many of them lol",
+      "matchedTerms": [
+        "show"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=jXmBf7rqoE4&lc=UgxikfS2h5NEPensWrh4AaABAg",
+      "domain": "youtube.com",
+      "title": "@stevenschindler8342",
+      "snippet": "Great video you guys. Please tell me this. I have knee issues and going up and down stairs is a problem wirh me. Does this resort have facilities in place (elevators, ramps, golf carts etc) to help me get everywhere I might want to go? (ie: from room to restaurants, beach, pool etc..) Thanks so much h, Steve S.",
+      "matchedTerms": [
+        "beach",
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=nYBE5sXknH0&lc=Ugx9Ol0_xwmi7wE-z2Z4AaABAg",
+      "domain": "youtube.com",
+      "title": "@syedaliabidi1346",
+      "snippet": "I just came back from Cancun with family and stayed at Paradisus...its geared more towards families and older people coming to to just relax and take the stress off",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=nYBE5sXknH0&lc=Ugw_-qtwLlePMNsQCzZ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@lauracolby6038",
+      "snippet": "James, that pool and beach were beautiful areas! You definitely have a sweet tooth. The atrium was so zen and that sushi restaurant layout was so unique! Too bad about the night life. Great video, thanks! All the best to you!",
+      "matchedTerms": [
+        "night life",
+        "night",
+        "beach",
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=nYBE5sXknH0&lc=Ugy8tS8Emnygj-tg1bp4AaABAg",
+      "domain": "youtube.com",
+      "title": "@Miriam-7128",
+      "snippet": "We keep going back! We’ve stayed there already 5 times I keep trying to find a more prettier/luxurious resort with a fun pool and none match it on the zona hotelera and none compare I hate how tiny the rooms are but I looooove how stunning the lobby is",
+      "matchedTerms": [
+        "pool",
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=-pcgu1ZVy6I&lc=UgwQ4EyhUh-qJ0SlEQ14AaABAg",
+      "domain": "youtube.com",
+      "title": "@swarringimj",
+      "snippet": "Beautiful resort with great food and pools.  My wife and I stayed a week there in 2022. The only downside was, it was a ghost town after 10:30pm. Without the kids, we were looking for a little more nightlife on site.",
+      "matchedTerms": [
+        "nightlife",
+        "night",
+        "kids"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=OHt46Yqsxpw&lc=UgzzYhR5EV5EOGbVa4J4AaABAg",
+      "domain": "youtube.com",
+      "title": "@bknylaw",
+      "snippet": "Great video. Was the central music at night disturbing to those who want to sleep in their rooms?",
+      "matchedTerms": [
+        "music",
+        "night"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=dANsBx64QRU&lc=UgzjfRsLgMuznjcag-d4AaABAg",
+      "domain": "youtube.com",
+      "title": "@davidgonzalez9435",
+      "snippet": "Do they have nightly entertainment??",
+      "matchedTerms": [
+        "entertainment",
+        "night"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=1dV8p3IrbSo&lc=UgzZQPMJ7s2cjBmb-Ah4AaABAg",
+      "domain": "youtube.com",
+      "title": "@sarapeacock8531",
+      "snippet": "I absolutely love you guys! I look forward to your videos. My favorite part is how real you both are and show everything, drunk or not...lol. Can't wait till your next one.",
+      "matchedTerms": [
+        "show"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=9WfObr0tRcc&lc=UgxRLlPANpKS_-_sTj94AaABAg",
+      "domain": "youtube.com",
+      "title": "@fishingtacklechannel",
+      "snippet": "For family with kids, is there an option for reserve to use cabanas and other reserve only use?  Also, what was the shuttle service company you mentioned?",
+      "matchedTerms": [
+        "family",
+        "kids"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=9WfObr0tRcc&lc=UgwoifAV2uksFDFCVqR4AaABAg",
+      "domain": "youtube.com",
+      "title": "@ThingsUShouldLike",
+      "snippet": "hi!! thanks for the great info! I'm planning to go to cancun with my family in december, we're 4 people (all above 18) and was considering paradisus as a hotel option. but when I try to book it online it only lets me select up to 3 maximum people for a room.. I was wondering if the rooms actually only allow a maximum of 3 people or is this just an issue on their website? also was wondering, would you recommend paradisus or hyatt ziva if we're looking for quiet/luxury vibes (not into clubbing or anything) i'm going with my parents and sister so we're hoping for something peaceful but still including fun family-type activities. sorry to bother 😭",
+      "matchedTerms": [
+        "activities",
+        "family",
+        "quiet",
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=JwXMZz8PIdA&lc=Ugz-xz2BZ29TCsdIWcZ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@avanelson1674",
+      "snippet": "FINALLY a review that shows the room. Its always the most important part for me but no one ever shows that. Thank you!!",
+      "matchedTerms": [
+        "shows"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=JwXMZz8PIdA&lc=UgxL180aRwwk9oD7Wnt4AaABAg",
+      "domain": "youtube.com",
+      "title": "@taran1986007",
+      "snippet": "Is there kids section ? Also shallow water pool for kids?",
+      "matchedTerms": [
+        "kids",
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=JwXMZz8PIdA&lc=UgxNyStX5IkYundzzMZ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@lionelbrown7829",
+      "snippet": "There out side bar at night turns it to a hookah lounge which is dope .",
+      "matchedTerms": [
+        "night",
+        "bar"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=sw8dBrECgRY&lc=UgyjfDgmkVZ1rNGDsy14AaABAg",
+      "domain": "youtube.com",
+      "title": "@ChristianPharisees",
+      "snippet": "Oh my gosh!!! I wish I was there....I went to cancun before and loved it. Have fun men!!! ❤❤🎉🎉",
+      "matchedTerms": [
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=sw8dBrECgRY&lc=UgxOqT02Foa0PA8nrtF4AaABAg",
+      "domain": "youtube.com",
+      "title": "@CharlotteNightstarWerewolf",
+      "snippet": "Great episode, you two! Love watching your content. Keep up the good work and life and family. We love you. Stay safe. Love and Peace always. :)",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=sw8dBrECgRY&lc=UgxeoAEgprJMVbdwAZ54AaABAg",
+      "domain": "youtube.com",
+      "title": "@Gor800",
+      "snippet": "What a wonderful getaway for you two, who definitely deserve it. What fun! 😊",
+      "matchedTerms": [
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=sw8dBrECgRY&lc=Ugw70zC5P6uNR0i3kiV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@dougslaback3459",
+      "snippet": "I just love the way you two look at each other. You show what pure love is about. No words can EVER replace your looks at each other.",
+      "matchedTerms": [
+        "show"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=mqNGMKjY28A&lc=UgyNGc5S4k_srO6E6W14AaABAg",
+      "domain": "youtube.com",
+      "title": "@MrsMoore1",
+      "snippet": "I appreciate this video so much!!! It really put me at ease.😊🌿🍃🌱 Can’t wait to visit with my family in April!! 💚",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=jfJx4_yPsvQ&lc=Ugzt19iDib_R5LDbvoF4AaABAg",
+      "domain": "youtube.com",
+      "title": "@jeannearc9879",
+      "snippet": "Love it if it is a big resort because I'm planning to do this. My family and I normally go on the cruise big boat like harmony of the seas.",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=jfJx4_yPsvQ&lc=UgzcuuW9G-RTsgoEzSV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@mettaarunkumar",
+      "snippet": "I have a quick question. Do they have photographers in the hotel to hire them to take family/personal pictures? Thanks!",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Ii4zlzuRVTw&lc=Ugxd6Ydrr1AZfPL6GcR4AaABAg",
+      "domain": "youtube.com",
+      "title": "@Allebasi.08",
+      "snippet": "We have been here 3 times!  We always get the Family Concierge Suite and it’s so nice! We Love it!!!!!",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Ii4zlzuRVTw&lc=Ugj5ulAFMNnGaHgCoAEC",
+      "domain": "youtube.com",
+      "title": "@oscarach",
+      "snippet": "Yes!!! Great Walkthrough!!!  I am a Club Melia member and I can share GREAT EXPERIENCES from Paradisus Cancun.  It is amazing.  You wil Be Safe and Ready to be treated like Royal.  Food, Entertainment, Service, and Location are 100% Wonderful.  Thank you Rashaud for your GREAT and Detailed video!!!",
+      "matchedTerms": [
+        "entertainment"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Ii4zlzuRVTw&lc=UgiSVSa522rJRXgCoAEC",
+      "domain": "youtube.com",
+      "title": "@424mandi",
+      "snippet": "Thank you for sharing your video this helped me make up my mind to book this resort. Looking foward to June when my family and I will be there. Thanks again",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=avs2gc4WiW8&lc=UgyswIOZTvx5tyHZIOh4AaABAg",
+      "domain": "youtube.com",
+      "title": "@RianaAnaïs",
+      "snippet": "Omg yall posting the activities list WAS EVERYTHING",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=avs2gc4WiW8&lc=Ugy5qaH-f6mesotumJ14AaABAg",
+      "domain": "youtube.com",
+      "title": "@KandJTravel",
+      "snippet": "Amazing looking resort. Love the sunrise walk out with the beach and water right there. Great piecing together the drone footage, too. Well done, video! Looks like an amazing resort.",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=jgb-eWqnQr0&lc=Ugyw8zlH95PE3a8MKLd4AaABAg",
+      "domain": "youtube.com",
+      "title": "@AP-qu8sl",
+      "snippet": "How are the rooms? Through expedia it just says double bed. We have 2 kids so want to make sure the space is enough",
+      "matchedTerms": [
+        "kids"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=jgb-eWqnQr0&lc=Ugz5ucApUVYWul6YTMB4AaABAg",
+      "domain": "youtube.com",
+      "title": "@victoriaheppell2643",
+      "snippet": "We went in November and the buffet was my favourite 🤣 we would go for breakfast at 7am and it was my favourite time of day and the service was so pleasant in the early morning on the patio side, breathless. We paid extra for the lobster dinner at Fuego on of the nights and it wasn’t the best.",
+      "matchedTerms": [
+        "night"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=AUcRVrdLdPs&lc=Ugxj64QYOrEJEuGJrpF4AaABAg",
+      "domain": "youtube.com",
+      "title": "@justsimplythequeen",
+      "snippet": "It's a great resort. Since I watched my favourite Telenovela \"Rubi\" which was filmed here, is this my dream place to visit once. But it's super expensive. The amount of alga on the beach is disgustingly terrible though....",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=AUcRVrdLdPs&lc=Ugx1EDdTz2EqnkH0qrZ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@RianaAnaïs",
+      "snippet": "This awesome! I know a lot has changed since this video but it's still so helpful!!! I only wish you would have shown us the kids club. I'm bringing my 4 year old",
+      "matchedTerms": [
+        "kids"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=AUcRVrdLdPs&lc=UgxOgRRgAUeQFJLnmrR4AaABAg",
+      "domain": "youtube.com",
+      "title": "@aaronquitugua9389",
+      "snippet": "Great video. Love your positivity. Glad your family had fun!",
+      "matchedTerms": [
+        "family",
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=GLaX1k-ORRI&lc=UgxqeQRAfu3iu8k_PwB4AaABAg",
+      "domain": "youtube.com",
+      "title": "@ahnal5595",
+      "snippet": "You guys are seriously the couple/family that me and my husband wish we could freakin travel with. \n\nIf friends arent broke they cant because they might be broke. Lol\n\nYall are so fun. Energetic and REALLLLLL. I love your chemistry! Please plan a group cruise. \n\nWe have triplets and would sooo love to travel with you guys ⛴️",
+      "matchedTerms": [
+        "family",
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=GLaX1k-ORRI&lc=UgyMhyjjl5F14wl1O8x4AaABAg",
+      "domain": "youtube.com",
+      "title": "@thecoincollector1684",
+      "snippet": "Ixnay on the excusionvay.... i can't swim... but i love the silent party",
+      "matchedTerms": [
+        "party"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Fkxy6lStTkU&lc=UgyZXCMrSLLGo8fjLN14AaABAg",
+      "domain": "youtube.com",
+      "title": "@oliverb549",
+      "snippet": "You guys are priceless. Love the margarita song,  at 14min lol\n\nYou're like us. Lots of fun!🎉 We are going in December.",
+      "matchedTerms": [
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=aknWp9gbefA&lc=Ugx6yuXeEqDTqpSy6XV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@orainefreestyleadventures",
+      "snippet": "Watch paradisus resort pool tour herehttps://youtu.be/7qiI4qqyLFk",
+      "matchedTerms": [
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=aknWp9gbefA&lc=Ugzh937Q00iud6SUwKx4AaABAg",
+      "domain": "youtube.com",
+      "title": "@marshallfamily103",
+      "snippet": "Extremely beautiful definitely a place to take the family",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=aknWp9gbefA&lc=Ugxoq6kv6bu1LopkyiV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@bubbzndee",
+      "snippet": "The beach 🏝️ looks amazing I would have lived out there",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=rwZ7PJxSiVA&lc=UgwlNBgRy4yxz2kiwtp4AaABAg",
+      "domain": "youtube.com",
+      "title": "@ElleG-q6q",
+      "snippet": "I'm booked to go with my family this month... I hope I don't experience the bad things you experienced",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=rwZ7PJxSiVA&lc=UgzROqCT-ygGr5Wmiwx4AaABAg",
+      "domain": "youtube.com",
+      "title": "@juancarlostejeda6977",
+      "snippet": "I stayed in this hotel 2 months ago, and we had problems with the AC, it didn’t work great in our stay, what help was that we asked for a fan, but for the price that you pay, the AC better be at full blast specially when you trying to get some sleep.  Only positive about the hotel is the food and the waiters at pool areas.  But as far as room is a downer. And I do agree in the entertainment, we had stay at cheaper hotels and the entertainment was way better than here.",
+      "matchedTerms": [
+        "entertainment",
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=rwZ7PJxSiVA&lc=UgybTEGtd8ecGD71lmJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@truthspeaks29",
+      "snippet": "Im scared because my family of 12 people are almost set on booking this resort. I have heard about the rooms and thats concerning",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=r8aFHmAABV0&lc=UgwRUprRMQEIo7tS9fN4AaABAg",
+      "domain": "youtube.com",
+      "title": "@KanchanKumarkaykay",
+      "snippet": "The aerial view of the resort is absolutely majestic. You got to experience it in the perfect month, with such less crowd.  The entire resort walk trip I guess it was shot by Ranjit was so so cool. Smooth cinematic experience and it felt like you are all alone in the resort .. so many pools and the white sand beach a perfect escape.  Loved the underwater clips, very well shot.  As usual very very informative, but food not being so satisfying the only drawback but it's absolutely worthy experiencing it..",
+      "matchedTerms": [
+        "beach"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=r8aFHmAABV0&lc=UgyQ3l4EOGeu-5p2nu14AaABAg",
+      "domain": "youtube.com",
+      "title": "@stephaniecansfield2430",
+      "snippet": "Great video, looks fun! ❤",
+      "matchedTerms": [
+        "fun"
+      ]
+    }
+  ],
+  "queriesRun": 42,
+  "packsRun": 1
+}
