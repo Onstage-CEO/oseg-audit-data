@@ -33,7 +33,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: b0723edf2c3302d114254609a5ca1035f5a91a0a
+  ENGINE_REF: a41d1b2f38e4714f3aed2f28233d549d9234151b
 
 permissions:
   contents: write
@@ -202,6 +202,8 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
           WS: ${{ steps.resolve.outputs.ws }}
         run: |
           set -euo pipefail
