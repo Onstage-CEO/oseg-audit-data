@@ -1,0 +1,605 @@
+{
+  "reportVersion": "web-discovery-v1",
+  "generatedAt": "2026-06-23T21:03:39.603Z",
+  "target": {
+    "propertyName": "Paradisus Palma Real",
+    "location": "Punta Cana, Dominican Republic"
+  },
+  "findings": [
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Paradisus Palma Real\" entertainment",
+      "url": "https://www.facebook.com/groups/119439744746187/posts/25599385946324883/",
+      "domain": "www.facebook.com",
+      "title": "Paradisus Palma Real resort daily activities schedule?",
+      "snippet": "Paradisus Palma Real resort daily activities schedule? Read more",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Paradisus Palma Real\" entertainment",
+      "url": "https://www.facebook.com/groups/119439744746187/",
+      "domain": "www.facebook.com",
+      "title": "Paradisus Palma Real Resort",
+      "snippet": "... Paradisus Palma Real (not Reserve, not Circle, etc) , there is a very small ... Nightly Entertainment typical resort. Daily Activity: Water yoga ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Paradisus Palma Real\" entertainment",
+      "url": "https://www.facebook.com/groups/119439744746187/posts/26627687376828063/",
+      "domain": "www.facebook.com",
+      "title": "What fun activities for moms near Paradisus Palma Real?",
+      "snippet": "Excursions/Fun (personal experiences only - no ads)\nHi! I'm arriving here with a group of girl friends in about a month. \n\n1) I hear the night life and ...",
+      "matchedTerms": [
+        "night life",
+        "activities",
+        "night"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Paradisus Palma Real\" entertainment",
+      "url": "https://www.facebook.com/groups/119439744746187/posts/26737947235802076/",
+      "domain": "www.facebook.com",
+      "title": "Is paradisus palma real resort kid friendly?",
+      "snippet": "Is Paradisus Palma Real resort kid-friendly and can guests access ... There isn't a lot of nightly entertainment and they have zero proper seating ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Paradisus Palma Real\" activities",
+      "url": "https://www.facebook.com/groups/1151523502937993/posts/1485691462854527/",
+      "domain": "www.facebook.com",
+      "title": "What activities are available daily at Paradisus Grand Cana?",
+      "snippet": "Paradisus Grand Cana Does anyone know if we will have access to the bars, restaurants and pool at Paradisus Palma Real if we stay at the ... Read more",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Paradisus Palma Real\" activities",
+      "url": "https://www.facebook.com/groups/girlsjustwanttotravel/posts/1980387449025076/",
+      "domain": "www.facebook.com",
+      "title": "Things to do at Paradisus Palma Real Resort in Punta ...",
+      "snippet": "Activities : Activities are at minimum, spécialy at the beach. ... What are the pros and cons of Paradisus Palma Real and are there enough ... Read more",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" entertainment",
+      "url": "https://www.reddit.com/r/PuntaCana/comments/1iwjey8/help_me_decide_paradisus_palma_reel_or_majestic/",
+      "domain": "www.reddit.com",
+      "title": "Paradisus Palma Reel or Majestic Elegence/Mirage",
+      "snippet": "Looking for details on the beach, the service, the spa and entertainment. ... Paradisus Palma Real or Majestic Mirage? 1. 2. Recently stayed at an ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" entertainment",
+      "url": "https://www.reddit.com/r/PuntaCana/comments/1rr2hj2/grand_bavaro_princess_vs_paradisus_palma_real/",
+      "domain": "www.reddit.com",
+      "title": "Grand Bavaro Princess vs Paradisus Palma Real",
+      "snippet": "The food was great, nightly entertainment was great, service was great. ... We've done the paradisus Palma real the last two winters and love it ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" kids club",
+      "url": "https://www.reddit.com/r/PuntaCana/comments/18bij9h/paradisus_palma_real_review/",
+      "domain": "www.reddit.com",
+      "title": "Paradisus Palma Real Review : r/PuntaCana",
+      "snippet": "Paradisus Palma Real Review. My wife, 2 year old son, and I stayed ... kids club. This was to the to get him comfortable with it. We ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" kids club",
+      "url": "https://www.reddit.com/r/AllInclusiveResorts/comments/1jf5td2/help_me_decide_family_ai_with_kids_club/",
+      "domain": "www.reddit.com",
+      "title": "Help Me Decide! Family AI with kids club",
+      "snippet": "Paradisus Palma Real. Beaches Negril. Upvote 0. Downvote 13 Go to comments ... We've been to Paradisus and Club Med from your list-Club Med was ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" kids club",
+      "url": "https://www.reddit.com/r/AllInclusiveResorts/rising/",
+      "domain": "www.reddit.com",
+      "title": "r/AllInclusiveResorts",
+      "snippet": "Mar 6, 2019 — Paradisus Palma Real with Kids · Specific resort question · thanks for ... kids club was really underwhelming. we have younger kids, 1 and ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" kids club",
+      "url": "https://www.reddit.com/r/PuntaCana/comments/1ckf6zm/help_narrowing_ai_resorts_for_a_july_trip_with/",
+      "domain": "www.reddit.com",
+      "title": "Help narrowing AI resorts for a July trip with family and ...",
+      "snippet": "Paradisus Palma Real, $17,191 (Nikte) or $13,301 for regular ... The kids LOVED the water park, and we didn't use the Kids Club so can't speak to ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" kids club",
+      "url": "https://www.reddit.com/r/PuntaCana/comments/11adwca/paradisus_palma_real_resort/",
+      "domain": "www.reddit.com",
+      "title": "Paradisus Palma Real Resort : r/PuntaCana",
+      "snippet": "Paradisus Palma Real Resort. Has anyone stayed here? Was it good? My ... They had a beach party last year and some things for kids. Not ... Read more",
+      "matchedTerms": [
+        "party"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" kids club",
+      "url": "https://www.reddit.com/r/AllInclusiveResorts/comments/1qj7l4j/all_inclusive_family_resort/",
+      "domain": "www.reddit.com",
+      "title": "All Inclusive Family Resort : r/AllInclusiveResorts",
+      "snippet": "Or as long as there is a lot of kids stuff outside of the kids club area. ... We love Paradisus Palma Real in the DR and have been looking at ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" nightlife",
+      "url": "https://www.reddit.com/r/AllInclusiveResorts/comments/1smmufc/punta_cana_resort_help_needed/",
+      "domain": "www.reddit.com",
+      "title": "Punta Cana Resort Help Needed : r/AllInclusiveResorts",
+      "snippet": "-Nightlife on the resort but not a crazy party scene. Any help ... 89.5 Paradisus Palma Real Golf & Spa Resort (Great food, good beach ... Read more",
+      "matchedTerms": [
+        "nightlife",
+        "party"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" nightlife",
+      "url": "https://www.reddit.com/r/PuntaCana/comments/1iusxb0/resort_advice_solo_female/",
+      "domain": "www.reddit.com",
+      "title": "Resort Advice, Solo Female : r/PuntaCana",
+      "snippet": "Paradisus Palma Real is a very nice spot, especially the Reserve. ... The only downside is the lack of nightlife but it's a great place for ... Read more",
+      "matchedTerms": [
+        "nightlife"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Paradisus Palma Real\" nightlife",
+      "url": "https://www.reddit.com/r/PuntaCana/comments/1ruuvwm/the_reserve_paradisus_palms_real/",
+      "domain": "www.reddit.com",
+      "title": "The Reserve: Paradisus Palms Real : r/PuntaCana",
+      "snippet": "I will be heading to the Paradisus Palma Real and staying in the reserve. ... No nightlife there, just the shows they provide and a small ... Read more",
+      "matchedTerms": [
+        "show",
+        "shows",
+        "nightlife"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"honest review\" entertainment",
+      "url": "https://www.tripadvisor.in/Hotel_Feature-g3176298-d583034-zft18953-Paradisus_Palma_Real_Golf_Spa_Resort.html",
+      "domain": "www.tripadvisor.in",
+      "title": "Paradisus Palma Real Golf & Spa Resort Evening ...",
+      "snippet": "... Paradisus Palma Real Golf & Spa Resort evening entertainment at Tripadvisor ... I would like to thank you for your wonderful and honest review and for your ... Read more",
+      "matchedTerms": [
+        "entertain",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"honest review\" entertainment",
+      "url": "https://www.tiktok.com/@rileejsmith/video/7602420812536155422",
+      "domain": "www.tiktok.com",
+      "title": "Review of All-Inclusive Dining at Paradisus Palma Real",
+      "snippet": "I stayed at the Paradisus Palma Real all-inclusive resort in Punta Cana My Cost: $456/night including taxes | Dates: Jan. 20-24, 2026 *Non- ...",
+      "matchedTerms": [
+        "night"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.com/Hotel_Feature-g3176298-d583034-zft6216-Paradisus_Palma_Real_Golf_Spa_Resort.html",
+      "domain": "www.tripadvisor.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort Family Amenities",
+      "snippet": "Kids Club. Overall score for Kids Club/ Babysitting - 8 Our room itself was a Junior Garden Suite and was well designed and well laid out,... Children ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://www.facebook.com/groups/1151523502937993/posts/1428881378535536/",
+      "domain": "www.facebook.com",
+      "title": "What to expect from Kids Club and Fun Republic at ...",
+      "snippet": "Hi everyone, 😁 \nWe have our trip planned for the end of April with our 5 and 8 year old, and I would love to hear about your experiences with the kids ...",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g3176298-d583034-r895637413-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Do.html",
+      "domain": "www.tripadvisor.com",
+      "title": "Review of - Paradisus Palma Real Golf & Spa Resort",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort: Spring ... Paradisus Palma Real Golf & Spa Resort at Tripadvisor ... - Kids Club: Great staff for all ages. Having a 1 ...",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g3176298-d583034-r1043567275-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_D.html",
+      "domain": "www.tripadvisor.com",
+      "title": "Review of Paradisus Palma Real Golf & Spa Resort ...",
+      "snippet": "Beach side drink service was good and they had very nice kids club staff and activities. ... Hotel Manager, Owner at Paradisus Palma Real ... - Paradisus Palma Real ...",
+      "matchedTerms": [
+        "kids club",
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://gfrtravel.com/all-inclusive-resorts-with-teens/",
+      "domain": "gfrtravel.com",
+      "title": "Are All-Inclusive Resorts Still Worth It With a Teen? Real ...",
+      "snippet": "Sep 2, 2025 — Just sun, snacks, and a kids club when we needed a grown-up break. ... Paradisus Palma Real, Dominican Republic Paradisus Palma Real. When ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://www.facebook.com/groups/433221734721588/posts/1818504249526656/",
+      "domain": "www.facebook.com",
+      "title": "What to expect at Parrotel Lagoon resort in Sharm El Sheikh?",
+      "snippet": "Kids Club : They have morning and late afternoon activities. ... Is Paradisus Palma Real resort kid-friendly and can guests access the ... Read more",
+      "matchedTerms": [
+        "kids club",
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://www.tiktok.com/@deviajeconadrian/video/7568929406001909023",
+      "domain": "www.tiktok.com",
+      "title": "Hotel Familiar en Punta Cana con Toboganes Divertidos",
+      "snippet": "... Paradisus Palma Real by Meliá! La calidad y lo que está incluído ... the breakfast pastries were unreal - Kids club felt really safe – they take ...",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"family review\" \"kids club\"",
+      "url": "https://www.tiktok.com/@lafamiliaallinclusive/video/7399301688894524677",
+      "domain": "www.tiktok.com",
+      "title": "Todo sobre el Kids Club en Bahía Príncipe Fantasía",
+      "snippet": "Our honest family review of the Bahia Principe Fantasia all inclusive ... Paradisus Palma Real será tu escape ideal en Punta Cana ✨   ¿ ...",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Paradisus Palma Real\" \"travel blog\" nightlife",
+      "url": "https://www.travelweek.ca/blog/paradisus-palma-real-where-white-sand-beaches-and-luxury-await-you/5/",
+      "domain": "www.travelweek.ca",
+      "title": "Paradisus Palma Real – Where white sand beaches and luxury ...",
+      "snippet": "Paradisus Palma Real – Where white sand beaches and luxury await you ... Lighting and music transform spaces from day to night. Dine on the beach, dance the night ...",
+      "matchedTerms": [
+        "music",
+        "dance"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" animación",
+      "url": "https://www.tripadvisor.es/Hotel_Feature-g3176298-d583034-zft18953-Paradisus_Palma_Real_Golf_Spa_Resort.html",
+      "domain": "www.tripadvisor.es",
+      "title": "Fotos y opiniones del animación nocturna del Paradisus ...",
+      "snippet": "Mira las fotos y lee las opiniones del animación nocturna del Paradisus Palma Real Golf & Spa Resort en Bávaro, República Dominicana.",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" animación",
+      "url": "https://www.expedia.com/es/Punta-Cana-Hoteles-Paradisus-Palma-Real-Golf-Spa-Resort-All-Inclusive.h1348106.Informacion-Hotel",
+      "domain": "www.expedia.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort All Inclusive",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort All Inclusive se encuentra en una ... Entretenimiento. Animación y actividades. Espectáculos en vivo. Fiestas temáticas. Read more",
+      "matchedTerms": [
+        "animaci",
+        "actividad",
+        "espectácul"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" animación",
+      "url": "https://www.booking.com/reviews/do/hotel/paradisus-palma-real-resort.es-ar.html",
+      "domain": "www.booking.com",
+      "title": "Comentarios de Paradisus by Meliá Palma Real Golf and ...",
+      "snippet": "5,0 “Decepcionante retorno a Paradisus Palma Real”. Cristián. Fecha del ... Para quienes buscan bares, discoteca o un ambiente más animado, existen ... Read more",
+      "matchedTerms": [
+        "disco"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" animación",
+      "url": "https://www.es.kayak.com/Punta-Cana-Hoteles-Paradisus-Palma-Real-Golf-Spa-Resort.621265.ksp",
+      "domain": "www.es.kayak.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort - Hoteles",
+      "snippet": "Compara precios y encuentra la mejor oferta en el Paradisus Palma Real Golf & Spa Resort. Precios a partir de $308 ... animación, actividades diarias en ... Read more",
+      "matchedTerms": [
+        "animaci",
+        "actividad"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" animación",
+      "url": "https://en.tripadvisor.com.hk/LocationPhotoDirectLink-g3176298-d583034-i40036495-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Prov.html",
+      "domain": "en.tripadvisor.com.hk",
+      "title": "Animación...Excelente!! - Picture of Paradisus Palma Real Golf ...",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort, Dominican Republic Picture: Animación...Excelente!! - Check out Tripadvisor members' 23024 candid photos and videos.",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" animación",
+      "url": "https://www.myboutiquehotel.com/es/boutique-hotels-punta-cana/paradisus-palma-real-golf-spa-resort-all-inclusive.html",
+      "domain": "www.myboutiquehotel.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort All Inclusive",
+      "snippet": "Reversa el hotel Paradisus Palma Real Golf & Spa Resort All Inclusive en Punta Cana con myBoutiqueHotel. ... Personal de animación; Situado frente a la playa ... Read more",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" equipo de animación",
+      "url": "https://www.melia.com/es/hoteles/republica-dominicana/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+      "domain": "www.melia.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort",
+      "snippet": "Este bar deportivo será el lugar perfecto para animar a tu equipo favorito o disfrutar de música en directo. ... Gracias a todo el equipo de Paradisus Palma Real ... Read more",
+      "matchedTerms": [
+        "música"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" equipo de animación",
+      "url": "https://www.tripadvisor.es/ShowUserReviews-g3176298-d583034-r1054207742-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_D.html",
+      "domain": "www.tripadvisor.es",
+      "title": "Paradisus Palma Real Golf & Spa Resort - Bávaro",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort: Instalaciones calidad de la comida y equipo de animación - 26.258 opiniones y 21.802 fotos de viajeros, y ofertas ...",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" equipo de animación",
+      "url": "https://www.tripadvisor.co/ShowUserReviews-g3176298-d583034-r886248164-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Do.html",
+      "domain": "www.tripadvisor.co",
+      "title": "Paradisus Palma Real Golf & Spa Resort - Bávaro - Tripadvisor",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort: The best, the kids club - 26.334 ... animación diurna y nocturna, y en particular, del equipo del Kids club. Read more",
+      "matchedTerms": [
+        "animaci",
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" equipo de animación",
+      "url": "https://gerardomartin.wixsite.com/viajes-dominicana/paradisus-palma-real",
+      "domain": "gerardomartin.wixsite.com",
+      "title": "Paradisus Palma Real",
+      "snippet": "En Paradisus Palma Real queremos que te diviertas las 24 horas. Para ello, te ofrecemos durante el día un amplio y variado programa de animación compuesto ... Read more",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" equipo de animación",
+      "url": "https://www.booking.com/hotel/do/paradisus-palma-real-resort.es.html",
+      "domain": "www.booking.com",
+      "title": "Paradisus by Meliá Palma Real Golf and Spa Resort",
+      "snippet": "Corte de pelo; Clases de yoga; Manicura; Personal de animación; Envoltura corporal. ¿A qué distancia está Paradisus by Meliá Palma Real Golf and Spa Resort - ... Read more",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" equipo de animación",
+      "url": "https://obinsa.com/myproyectos/hotel-paradisus-palma-real/",
+      "domain": "obinsa.com",
+      "title": "HOTEL PARADISUS (PALMA REAL) BY MELIÁ",
+      "snippet": "HOTEL PARADISUS (PALMA REAL) BY MELIÁ. PROYECTOS: HOTEL PARADISUS (PALMA REAL) ... Animación y Teatro, Casino, Gimnasio, Back of the House, que incluye ... Read more",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Paradisus Palma Real\" equipo de animación",
+      "url": "https://www.trivago.cl/es-CL/oar/complejo-tur%C3%ADstico-paradisus-palma-real-golf-spa-resort-all-inclusive-playa-b%C3%A1varo",
+      "domain": "www.trivago.cl",
+      "title": "Paradisus Palma Real Golf & Spa Resort All Inclusive",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort All Inclusive (Playa Bávaro ... Equipo de animación. Doctor en el hotel. Alquiler de autos. Conserje. Wifi gratis en ... Read more",
+      "matchedTerms": [
+        "animaci"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Paradisus Palma Real\" vs resort entertainment",
+      "url": "https://www.tripadvisor.com/Hotel_Feature-g3176298-d583034-zft18953-Paradisus_Palma_Real_Golf_Spa_Resort.html",
+      "domain": "www.tripadvisor.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort Evening ...",
+      "snippet": "See photos and read reviews for the Paradisus Palma Real Golf & Spa Resort evening entertainment in Bavaro, Dominican Republic. Everything you need to know ...",
+      "matchedTerms": [
+        "entertain",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Paradisus Palma Real\" vs resort entertainment",
+      "url": "https://www.palmarealresort.com/",
+      "domain": "www.palmarealresort.com",
+      "title": "Paradisus Palma Real Resort",
+      "snippet": "Activities & Entertainment – Paradisus Palma Real · Games Room with video consoles · Computer area · Volleyball, basketball, tennis and paddle tennis · Climbing ... Read more",
+      "matchedTerms": [
+        "entertain",
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Paradisus Palma Real\" vs resort entertainment",
+      "url": "https://www.facebook.com/groups/383947442181445/posts/2126019821307523/",
+      "domain": "www.facebook.com",
+      "title": "How does Melia Punta Cana compare to Paradisus Palma ...",
+      "snippet": "How do you compare Melia Punta Cana in The Level to Paradisus Palma Real in The Reserve? Things like entertainment, food, facilities etc.?",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Paradisus Palma Real\" vs resort entertainment",
+      "url": "https://www.instagram.com/reel/DUQgDrGDexL/",
+      "domain": "www.instagram.com",
+      "title": "I still can't believe this was actually free at our all inclusive. I ...",
+      "snippet": "... Paradisus Palma Real Golf @paradisus.palmareal ZEL Punta Cana ... This beachfront resort combines luxury entertainment and family-friendly fun ...",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Paradisus Palma Real\" vs resort entertainment",
+      "url": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+      "domain": "www.melia.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort",
+      "snippet": "Located at Palma Real Plaza, as a guest of Paradisus Palma Real Golf & Spa Resort you enjoy complimentary access to exciting attractions, live shows, and dining ... Read more",
+      "matchedTerms": [
+        "show",
+        "shows"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Paradisus Palma Real\" vs resort entertainment",
+      "url": "https://www.allinclusiveoutlet.com/resorts/paradisus-palma-real-golf-and-spa-resort",
+      "domain": "www.allinclusiveoutlet.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort",
+      "snippet": "Paradisus Palma Real also features a theater and a world class spa. Beach Volleyball. Board Games. Cooking Classes. Read more",
+      "matchedTerms": [
+        "theater"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Paradisus Palma Real\" compared to entertainment",
+      "url": "https://www.applevacations.com/hotels/paradisus-palma-real-resort-all-inclusive/",
+      "domain": "www.applevacations.com",
+      "title": "Paradisus Palma Real Golf & Spa Resort",
+      "snippet": "Discover the Paradisus Palma Real Golf & Spa Resort in beautiful Punta Cana ... Golf cart mandatory at additional cost. On-Site Attraction. On-site Entertainment. Read more",
+      "matchedTerms": [
+        "entertain",
+        "disco"
+      ]
+    }
+  ],
+  "queriesRun": 18,
+  "packsRun": 6
+}
