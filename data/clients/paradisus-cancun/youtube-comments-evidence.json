@@ -1,6 +1,6 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-06-23T22:07:19.563Z",
+  "generatedAt": "2026-06-23T22:13:43.788Z",
   "findings": [
     {
       "sourceId": "youtube-comments",
@@ -176,6 +176,18 @@
       "sourceId": "youtube-comments",
       "lane": "community",
       "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=JwXMZz8PIdA&lc=Ugz4RgnH2c0h-2CbskR4AaABAg",
+      "domain": "youtube.com",
+      "title": "@imleorak4676",
+      "snippet": "My family just booked the Paradisus and we really loved your vlog!  Great job!!",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
       "url": "https://www.youtube.com/watch?v=JwXMZz8PIdA&lc=UgxNyStX5IkYundzzMZ4AaABAg",
       "domain": "youtube.com",
       "title": "@lionelbrown7829",
@@ -261,18 +273,6 @@
       "sourceId": "youtube-comments",
       "lane": "community",
       "query": "youtube comments",
-      "url": "https://www.youtube.com/watch?v=jfJx4_yPsvQ&lc=UgzcuuW9G-RTsgoEzSV4AaABAg",
-      "domain": "youtube.com",
-      "title": "@mettaarunkumar",
-      "snippet": "I have a quick question. Do they have photographers in the hotel to hire them to take family/personal pictures? Thanks!",
-      "matchedTerms": [
-        "family"
-      ]
-    },
-    {
-      "sourceId": "youtube-comments",
-      "lane": "community",
-      "query": "youtube comments",
       "url": "https://www.youtube.com/watch?v=Ii4zlzuRVTw&lc=Ugxd6Ydrr1AZfPL6GcR4AaABAg",
       "domain": "youtube.com",
       "title": "@Allebasi.08",
@@ -339,18 +339,6 @@
       "snippet": "How are the rooms? Through expedia it just says double bed. We have 2 kids so want to make sure the space is enough",
       "matchedTerms": [
         "kids"
-      ]
-    },
-    {
-      "sourceId": "youtube-comments",
-      "lane": "community",
-      "query": "youtube comments",
-      "url": "https://www.youtube.com/watch?v=jgb-eWqnQr0&lc=Ugz5ucApUVYWul6YTMB4AaABAg",
-      "domain": "youtube.com",
-      "title": "@victoriaheppell2643",
-      "snippet": "We went in November and the buffet was my favourite 🤣 we would go for breakfast at 7am and it was my favourite time of day and the service was so pleasant in the early morning on the patio side, breathless. We paid extra for the lobster dinner at Fuego on of the nights and it wasn’t the best.",
-      "matchedTerms": [
-        "night"
       ]
     },
     {
@@ -525,6 +513,6 @@
       ]
     }
   ],
-  "queriesRun": 42,
+  "queriesRun": 41,
   "packsRun": 1
 }
