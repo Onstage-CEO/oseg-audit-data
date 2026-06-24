@@ -67,6 +67,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: data-repo
+          # Branch TIP, not the triggering SHA. When this runs as a chained step of
+          # scaffold.yml (workflow_call), github.sha is main BEFORE scaffold's commit,
+          # so a default checkout wouldn't see the just-created workspace. Standalone
+          # dispatch is unaffected (tip == the dispatched commit).
+          ref: ${{ github.ref_name }}
 
       - name: Resolve workspace dir from slug
         id: resolve

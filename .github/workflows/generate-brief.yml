@@ -72,6 +72,9 @@ jobs:
           # Full history so we can read captures-raw/'s last-commit time for a
           # deterministic "generated" stamp (see the Generate brief step).
           fetch-depth: 0
+          # Branch tip (see capture.yml): chained workflow_call must see the workspace
+          # scaffold.yml just committed, not the pre-scaffold triggering SHA.
+          ref: ${{ github.ref_name }}
 
       - name: Resolve workspace dir from slug
         id: resolve
