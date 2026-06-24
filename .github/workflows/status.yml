@@ -44,7 +44,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 8d3c772c50f741874cee730c09389236e75f413a
+  ENGINE_REF: 7079a49c782d845c8dfa228a0643a17c3dba2e28
 
 permissions:
   contents: write
@@ -66,8 +66,8 @@ jobs:
       - name: Checkout engine (pinned, read-only deploy key)
         uses: actions/checkout@v4
         with:
-          repository: Onstage-CEO/oseg-resort-audit
-          ref: 4da87ba751538cde1bd1e7ce31b998936b55fae5
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
@@ -114,13 +114,8 @@ jobs:
           for slug in $SLUGS; do
             ws="$GITHUB_WORKSPACE/data-repo/data/clients/$slug"
             [ -f "$ws/audit.json" ] || { echo "skip $slug (no audit.json)"; continue; }
-            args=(verify "$ws/audit.json" --json --summary)
-            [ -f "$ws/captures.json" ] && args+=(--capture-archive "$ws/captures.json")
-            # NOT_READY exits 1 by design — status is data here, not an error.
-            npm run dev --silent -- "${args[@]}" > "$ws/verify-report.json" || true
-            node -e "const r=require('$ws/verify-report.json'); console.log('$slug →', r.status ?? r.overall)"
-            # Small CUMULATIVE archive summary for the hosted console — it must
-            # never fetch the multi-MB captures.json itself (that 503'd the Worker).
+            # 1. CUMULATIVE archive summary FIRST (the console reads this small file, never
+            #    the multi-MB captures.json which 503'd the Worker). Also the sync input.
             if [ -f "$ws/captures.json" ]; then
               node -e '
                 const fs=require("fs"); const ws=process.argv[1];
@@ -130,6 +125,14 @@ jobs:
                 fs.writeFileSync(ws+"/capture-archive-summary.json", JSON.stringify({total:c.length,byPlatform,latestCapturedAt:latest},null,2)+"\n");
               ' "$ws"
             fi
+            # 2. Auto-populate the source registry from the archive (no-op if already
+            #    declared) so verify's source/lane-coverage gate reflects real coverage.
+            npm run dev --silent -- sync-source-registry "$ws/audit.json" 2>&1 || true
+            # 3. Verify (now reads the populated registry). NOT_READY exits 1 by design.
+            args=(verify "$ws/audit.json" --json --summary)
+            [ -f "$ws/captures.json" ] && args+=(--capture-archive "$ws/captures.json")
+            npm run dev --silent -- "${args[@]}" > "$ws/verify-report.json" || true
+            node -e "const r=require('$ws/verify-report.json'); console.log('$slug →', r.status ?? r.overall)"
           done
 
       - name: Commit reports (only when changed)
@@ -153,7 +156,7 @@ jobs:
               echo "unchanged (timestamp only): $f"
             fi
           done
-          git add data/clients/*/verify-report.json data/clients/*/capture-archive-summary.json
+          git add data/clients/*/verify-report.json data/clients/*/capture-archive-summary.json data/clients/*/audit.json
           if git diff --cached --quiet; then
             echo "Reports unchanged — nothing to commit."
             exit 0
