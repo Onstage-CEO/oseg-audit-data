@@ -1,7 +1,17 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-06-24T21:38:00.721Z",
+  "generatedAt": "2026-06-24T21:52:20.630Z",
   "findings": [
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@_kyleecole/video/7635326389670989086",
+      "domain": "tiktok.com",
+      "title": "_kyleecole",
+      "snippet": "Maybe my favorite tea experience I have ever been to\n\n#afternoontea #thephoenician #tea #travel",
+      "matchedTerms": []
+    },
     {
       "sourceId": "tiktok",
       "lane": "social",
@@ -10,16 +20,6 @@
       "domain": "tiktok.com",
       "title": "stitchedbyleannab",
       "snippet": "Phoenician Taverna is a hidden gem dinner spot in the Mason area of greater Cincinnati 🍽️✨ It’s one of our local favorites and everything is always so good. Fresh food, great vibes, 10/10! #Cincinnati #cincinnatifoodie #FoodieFinds #OhioEats #cincinnatiohio #HiddenGems #cincyfoodie #MidwestEats",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@destinyliley/video/7603762686131801358",
-      "domain": "tiktok.com",
-      "title": "destinyliley",
-      "snippet": "Solo girl dinner at the golf course is actually a vibe!! 😂 Sitting on top of the luxury golf course at the Phoenician Resort in Scottsdale, AZ is Phoenician Tavern!!\n\nThis place was such a casual vibe with a beautiful view of the golf course. Some of my favorites on the menu were:\n\n•Nashville, hot chicken bites\n•Dungeness Crab Dip\n•Triple bacon burger with bacon onion jam, and Mezcal BBQ sauce\n•Table-side s’mores \n\nCheck this place out if you’re looking for a change of scenery for your weeknight dinner spot! #scottsdalearizona #golfcourselife #azfoodie #girldinners #resorts",
       "matchedTerms": []
     },
     {
@@ -46,90 +46,20 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@oliviaakumu/video/7505272739616345350",
+      "url": "https://www.tiktok.com/@destinyliley/video/7603762686131801358",
       "domain": "tiktok.com",
-      "title": "oliviaakumu",
-      "snippet": "Afternoons in the sun with friends at The Phoenician Restaurant in Westlands. They’ve been in business for an incredible 25 years!\n\nThey have an amazing Lebanese and Japanese menu that’s packed full of flavour and cocktails to match. There’s lots of little plates to share so that makes it perfect for a group date\n\n#restaurantsinnairobi #nairobirestaurants #thephonecian #nairobitiktokers #tiktokkenya🇰🇪 #fyp",
+      "title": "destinyliley",
+      "snippet": "Solo girl dinner at the golf course is actually a vibe!! 😂 Sitting on top of the luxury golf course at the Phoenician Resort in Scottsdale, AZ is Phoenician Tavern!!\n\nThis place was such a casual vibe with a beautiful view of the golf course. Some of my favorites on the menu were:\n\n•Nashville, hot chicken bites\n•Dungeness Crab Dip\n•Triple bacon burger with bacon onion jam, and Mezcal BBQ sauce\n•Table-side s’mores \n\nCheck this place out if you’re looking for a change of scenery for your weeknight dinner spot! #scottsdalearizona #golfcourselife #azfoodie #girldinners #resorts",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@lalisuh/video/7630675094494285069",
+      "url": "https://www.tiktok.com/@influencers.girlfriend/video/7515585487344618798",
       "domain": "tiktok.com",
-      "title": "lalisuh",
-      "snippet": "Afternoon Tea at the Phoenician was such a treat! 🫖 10/10. I will definitely visit again! The service was great from start to finish! I enjoyed the variety of tea sandwiches and each course was very tasty! I went on a solo date. This is great for solo, duos or group visits! #afternoontea #thephoenician #teatime #solodate #thingstodoinarizona",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@c_njeru_/video/7549813088543935800",
-      "domain": "tiktok.com",
-      "title": "c_njeru_",
-      "snippet": "Fridays at The Phoenician\n📍The Phoenician \nMatundu Lane, Nairobi\n\n✨ The Phoenician – Nairobi ✨\nCoastal-earth neutrals, soft golden lighting, and chic indoor and outdoor seating set the scene.\nFriday nights? A live band with velvet vocals that are pure 💋 🎶.\n\nFood Highlights\n\t•\tPrawn Gyoza (KSh 1,250)\nThinly wrapped dumplings filled with perfectly seasoned pork—delicate yet flavorful.\n\t•\tTokyo Ramen (KSh 1,600)\nComfort in a bowl: rich broth with tender chicken and a perfectly cooked egg.\n\t•\tNabeyaki Udon (KSh 1,600)\nThick, chewy noodles served with chicken and egg—hearty and satisfying.\n\t•\tPhoenician Mixed Grill (KSh 2,500)\nA carnivore’s dream: charcoal-grilled skewers of seasoned lamb kafta, chicken shish taouk, and beef cubes, served with a fragrant garlic sauce.\n\t•\tPhoenician Char-Grilled Chicken\nMarinated boneless chicken paired with crispy golden fries and the restaurant’s signature garlic sauce.\n\t•\tFurushi Salad\nFresh, vibrant, and a great palate cleanser, perfect as a starter or a light side.\n\n#thephoenician #kenyantiktok🇰🇪 #kenyanfoodie #restaurant #nairobi",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@yo_9777/video/7637633462643494164",
-      "domain": "tiktok.com",
-      "title": "yo_9777",
-      "snippet": "The Phoenician Restaurant #viralvideo #somalitiktok #kenyantiktok🇰🇪 #foryoupage",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@1amsaadaq/video/7496175905010765061",
-      "domain": "tiktok.com",
-      "title": "1amsaadaq",
-      "snippet": "#nairobi #fyp #kenya #thephoenicianrestaurant #resturant #hiddengems",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@shetiluvy/video/7613037625397497095",
-      "domain": "tiktok.com",
-      "title": "shetiluvy",
-      "snippet": "Such a cozy hidden gem with beautiful coastal architecture.\nThe perfect place to celebrate your birthday.\n\nAbsolutely loved their service and food\n#restaurantsinnairobi #restaurants #fyppppppppppppppppppppppp #wheretoeatinnairobi #nairobirestaurants",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@isma.harun/video/7513242578548968709",
-      "domain": "tiktok.com",
-      "title": "isma.harun",
-      "snippet": "The phoenician,located in westlands area.Good vibes,didnt have food so i cant comment on that but drinks were a 10/10.#kenyantiktok🇰🇪",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@thephoenixtavern_/video/7601235738339986702",
-      "domain": "tiktok.com",
-      "title": "thephoenixtavern_",
-      "snippet": "Hello adventurers! After 24 hours in the pressure pot, I finally unmolded my Amazon dice set and I’m beyond happy with how they turned out — almost zero bubbles and just one tiny edge fix with UV resin. 😅✨ \n\nI’ll be sharing the rest of the molds soon, but for now I’m celebrating this small crafting victory. Painting these tonight and keeping the other set I was working on because I love the color way too much. \n\nThank you all for the love and support — more reveals coming soon!\n\n#DiceMaking #ResinDice #DnDCreator #CraftTok #PhoenixTavern",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@electa2point0/video/7568547001671994654",
-      "domain": "tiktok.com",
-      "title": "electa2point0",
-      "snippet": "If you haven’t been to The Phoenician for Tea- you should go. I have been to several in the valley and I think they are truly the best! The tea is always good, they come around with extra sandwiches, service is great and the live music is such a nice touch. #hightea #phoenix #experience",
+      "title": "influencers.girlfriend",
+      "snippet": "Night 1 at the Phoenician Hotel in phoenix! Dinner at the tavern with dueling pianos and s’mores! #thephoenicianresort #lengendarysummers #thetavern #influencersgirlfriend",
       "matchedTerms": []
     },
     {
@@ -146,90 +76,30 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@bluesavannahlive/video/7595798978222886199",
+      "domain": "tiktok.com",
+      "title": "bluesavannahlive",
+      "snippet": "Exited to have performed at The Phoenician, thank you to the event host and everyone who welcomed us beautifully! #bossajazz #bolerojazz #flamencopop #thephoenician #scottsdale",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@electa2point0/video/7568547001671994654",
+      "domain": "tiktok.com",
+      "title": "electa2point0",
+      "snippet": "If you haven’t been to The Phoenician for Tea- you should go. I have been to several in the valley and I think they are truly the best! The tea is always good, they come around with extra sandwiches, service is great and the live music is such a nice touch. #hightea #phoenix #experience",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
       "url": "https://www.tiktok.com/@thephoenixtavern_/video/7649188873163017486",
       "domain": "tiktok.com",
       "title": "thephoenixtavern_",
       "snippet": "Big things are happening at The Phoenix Tavern! \n\nI’m currently back at the bench making more of those glow-in-the-dark dice, with sanding and polishing next on the to-do list. \n\nPlus, I’m deep into writing a brand new lore manual for a TTRPG idea I’ve been developing. Stay tuned for more!\n\n#ThePhoenixTavern #DiceMaker #TTRPG #HandmadeDice #GlowInTheDark",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@atlantanewsfirst/video/7651343344777432333",
-      "domain": "tiktok.com",
-      "title": "atlantanewsfirst",
-      "snippet": "One of Atlanta's most beloved neighborhoods could soon be recognized as a national historic site. 🏛️\nThe Atlanta Preservation Center is pursuing a listing on the National Register of Historic Places for the Poncey-Highland Historic District, home to iconic spots like the Majestic Diner, the Plaza Theatre and Manuel's Tavern.\nThe neighborhood also played a key role in Atlanta's history, with residents organizing against urban renewal plans in the 1960s and 1970s, which led to the creation of Atlanta's Neighborhood Planning Unit program.\n#atlanta #poncehighland #historic #preservation",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@wiscodivebars/video/7650461432294788365",
-      "domain": "tiktok.com",
-      "title": "wiscodivebars",
-      "snippet": "The Stone Tavern in Gordon, WI #beautiful #support #positivevibes #wiscodivebars #family",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@longlivecleveland_/video/7651299068051787039",
-      "domain": "tiktok.com",
-      "title": "longlivecleveland_",
-      "snippet": "lunch trips make the world go round #cleveland #rockyriver #lunchspot #lunch",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@fafski1/video/7608628847398980886",
-      "domain": "tiktok.com",
-      "title": "fafski1",
-      "snippet": "The Phoenicians were the first real colonial power in the world.\n\n#ancienthistory #ancient #education #geography #historytime",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@audreyatlas/video/7555270819308522782",
-      "domain": "tiktok.com",
-      "title": "audreyatlas",
-      "snippet": "Afternoon Tea at the Phoenician is the best place to spill all the tea with your friends. #arizona #phoenix #hightea #brunch #momsoftiktok",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@theblackfoodies1/video/7651983577059462430",
-      "domain": "tiktok.com",
-      "title": "theblackfoodies1",
-      "snippet": "NEW WEEKEND BRUNCH New Line Tavern is located 📍201 Clinton Street in Chicago’s West Loop. They now offer a weekend brunch that is absolutely delicious! New Line Tavern is top 3 in the city when it comes to bar food. It is upscale with Cajun Creole influences. Stop by any day of the week and indulge on great cocktails and amazing cuisine! FYI THEY HAVE THE BEST WINGS IN THE CITY! @newlinetavern #chicago #delicious #brunch #bar #restaurant",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@topnotch.idiots94345/video/7650484503223242015",
-      "domain": "tiktok.com",
-      "title": "topnotch.idiots94345",
-      "snippet": "Part 3 Barstool Pizza Review - Jojo's Tavern (Trenton, NJ) presented by Rhoback#daveportnoy #pizza #pizzareview #barstool #barstoolsports",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@ricxn__/video/7643492672245714207",
-      "domain": "tiktok.com",
-      "title": "ricxn__",
-      "snippet": "#bar #phebes #nyc",
       "matchedTerms": []
     },
     {
@@ -246,40 +116,140 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@nai.luhv/video/7653191326825008415",
+      "domain": "tiktok.com",
+      "title": "nai.luhv",
+      "snippet": "I 💛 Cincinnati",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@ricxn__/video/7643492672245714207",
+      "domain": "tiktok.com",
+      "title": "ricxn__",
+      "snippet": "#bar #phebes #nyc",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@topnotch.idiots94345/video/7650484503223242015",
+      "domain": "tiktok.com",
+      "title": "topnotch.idiots94345",
+      "snippet": "Part 3 Barstool Pizza Review - Jojo's Tavern (Trenton, NJ) presented by Rhoback#daveportnoy #pizza #pizzareview #barstool #barstoolsports",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@gflipmusic/video/7654404034454899969",
+      "domain": "tiktok.com",
+      "title": "gflipmusic",
+      "snippet": "THANK YOU WHISKEYGIRL TAVERN CHICAGO 🫶🏼 sorry we couldn’t play our normal show but we hope everyone got home safe! #fyp #gflip #wlw #lesbian #lgbt",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@longlivecleveland_/video/7651299068051787039",
+      "domain": "tiktok.com",
+      "title": "longlivecleveland_",
+      "snippet": "lunch trips make the world go round #cleveland #rockyriver #lunchspot #lunch",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@taterchasetate/video/7636956809781185823",
+      "domain": "tiktok.com",
+      "title": "taterchasetate",
+      "snippet": "#301tavern #prince #kiss #fyp",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@ohsovera/video/7633212129054690590",
+      "domain": "tiktok.com",
+      "title": "ohsovera",
+      "snippet": "I love Greek food #phoenicia #greek #lebanese #fyp #inlandempire",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@travelwithfrannie/video/7649588216374267150",
+      "domain": "tiktok.com",
+      "title": "travelwithfrannie",
+      "snippet": "Needed this #catskills #upstateny #catskillsny #phoeniciadiner #peekamoosebluehole",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@atlantanewsfirst/video/7651343344777432333",
+      "domain": "tiktok.com",
+      "title": "atlantanewsfirst",
+      "snippet": "One of Atlanta's most beloved neighborhoods could soon be recognized as a national historic site. 🏛️\nThe Atlanta Preservation Center is pursuing a listing on the National Register of Historic Places for the Poncey-Highland Historic District, home to iconic spots like the Majestic Diner, the Plaza Theatre and Manuel's Tavern.\nThe neighborhood also played a key role in Atlanta's history, with residents organizing against urban renewal plans in the 1960s and 1970s, which led to the creation of Atlanta's Neighborhood Planning Unit program.\n#atlanta #poncehighland #historic #preservation",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@palestinian_expat/video/7640915984370453791",
+      "domain": "tiktok.com",
+      "title": "palestinian_expat",
+      "snippet": "Palestinians are also Phoenician ☝🏼🍉🐦‍🔥 #palestinian #phoenician #canaanite #lebanese #arab",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@munchinwithmoonshot/video/7622804336929803550",
+      "domain": "tiktok.com",
+      "title": "munchinwithmoonshot",
+      "snippet": "POCONO TAVERN 🌲🔥 \n📍 4740 Long Run Road, Lehighton PA 18235 #poconos #wings #foodreview #mukbangeatingshow #pennsylvania",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@nyizzleee/video/7635355872637570335",
+      "domain": "tiktok.com",
+      "title": "nyizzleee",
+      "snippet": "I’m still gagged this is the diner from severance 🥞 #upstateny #nydaytrip #phoeniciadiner #catskillsny #nyrestaurants",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@topnotch.idiots94345/video/7650483267841428766",
+      "domain": "tiktok.com",
+      "title": "topnotch.idiots94345",
+      "snippet": "Part 1 Barstool Pizza Review - Jojo's Tavern (Trenton, NJ) presented by Rhoback#daveportnoy #pizza #pizzareview #barstool #barstoolsports",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
       "url": "https://www.tiktok.com/@briosrestaurant/video/7648772921392958733",
       "domain": "tiktok.com",
       "title": "briosrestaurant",
       "snippet": "offering the Catskills the best breakfast, lunch, dinner, Desserts around!\n\n#Phoenicia #catskills #upstateny #newyork #familyowned",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@danishdlite/video/7650520513596493070",
-      "domain": "tiktok.com",
-      "title": "danishdlite",
-      "snippet": "Thank you @dewolftavern for giving day four of #staycation extra tropical vibes. #bristolri #vacationvibes also definitely try the Monkier Lemonade over ice with a slice of lemon. Soo refreshing!!",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@tanztanz12/video/7521408245941013782",
-      "domain": "tiktok.com",
-      "title": "tanztanz12",
-      "snippet": "Bundoran The Phoenix Tavern what a spot lovely friendly place an great music 🎵💚🙌🏼 #fyp #4yourpage #govisitdonegal #donegal",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@joyjoy09_19/video/7625725231780384033",
-      "domain": "tiktok.com",
-      "title": "joyjoy09_19",
-      "snippet": "Dinner at  the famous Medieval Tavern Restaurant in Prague Czech Republic 🇨🇿\n#Upavouka \n#prague \n#czechrepubliс \n#fyp",
       "matchedTerms": []
     },
     {
@@ -296,10 +266,40 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Phoenician Tavern",
-      "url": "https://www.tiktok.com/@palestinian_expat/video/7640915984370453791",
+      "url": "https://www.tiktok.com/@tanztanz12/video/7521408245941013782",
       "domain": "tiktok.com",
-      "title": "palestinian_expat",
-      "snippet": "Palestinians are also Phoenician ☝🏼🍉🐦‍🔥 #palestinian #phoenician #canaanite #lebanese #arab",
+      "title": "tanztanz12",
+      "snippet": "Bundoran The Phoenix Tavern what a spot lovely friendly place an great music 🎵💚🙌🏼 #fyp #4yourpage #govisitdonegal #donegal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@ellienotellaa/video/7580830441788214559",
+      "domain": "tiktok.com",
+      "title": "ellienotellaa",
+      "snippet": "HONEST THOUGHTS BELOW👇\nThe service and ambiance was exceptional 🥰 but here is my HONEST thoughts (it’s just my opinion) the crab cake layered on the lobster bisque was genius but the crab cake itself was a bit salty. YOU MUST get the baked potato rolls - again genius. My favorite dish of the night was the Brussels sprouts. Yes I said the Brussels Sprouts. They were seasoned to perfection and I have never had such tender and flavorful pork belly in my life. I would get this dish 100000x over. The 10oz filet mignon came medium rare with a tender char all over it. Personally I don’t enjoy when the outside is tough. It almost tasted like bison cut. I’m more of a use a butter knife to cut your meat type girl. Will definitely be coming back to try the lobster Wellington (paired with the Brussel sprouts lol). The Mac and cheese - no notes. Ate the entire thing. Lastly I got a glass of red (Pinot noir) from Italy. FABULOUS.\nThey pay attention to details here, you are served on! From the second you walk into the door, check your coat, walk to your table, serve your food for you, fill up your waters without asking, explanation of the food when it comes. Can not wait to go back!! Hope you enjoyed my thoughts and honest feedback - if you did shoot me a follow and I’ll be sure to leave more of my reviews! 🫶🏼🥰 #cleaverman #steakhouse #phoenix #foodreview #restaurantreview",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@fafski1/video/7608628847398980886",
+      "domain": "tiktok.com",
+      "title": "fafski1",
+      "snippet": "The Phoenicians were the first real colonial power in the world.\n\n#ancienthistory #ancient #education #geography #historytime",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Phoenician Tavern",
+      "url": "https://www.tiktok.com/@phoenicia.restaur/video/7632208023003450654",
+      "domain": "tiktok.com",
+      "title": "phoenicia.restaur",
+      "snippet": "This Saturday \n📍Phoenicia patio\n🕗 8:00 pm\n🎤 Qurlyma\n💃 Georgette  \n\n#arab #armenian #losangeles #glendale #music",
       "matchedTerms": []
     }
   ],
