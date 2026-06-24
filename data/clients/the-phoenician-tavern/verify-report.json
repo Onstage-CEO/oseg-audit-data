@@ -5,9 +5,9 @@
   "status": "not_ready",
   "exitCode": 1,
   "summary": {
-    "okCount": 6,
+    "okCount": 9,
     "warningCount": 1,
-    "failCount": 2
+    "failCount": 1
   },
   "checks": [
     {
@@ -21,10 +21,14 @@
     {
       "id": "source_coverage",
       "label": "Required research source coverage",
-      "status": "fail",
+      "status": "ok",
       "messages": [
-        "missing required platforms: google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite",
-        "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
+        "2 covered, 5 skipped with reason",
+        "skipped: google (not_found) — Not present in the captured corpus.",
+        "skipped: booking (not_found) — Not present in the captured corpus.",
+        "skipped: expedia (not_found) — Not present in the captured corpus.",
+        "skipped: reddit (blocked) — Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google...",
+        "skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captured-revie..."
       ]
     },
     {
@@ -32,13 +36,8 @@
       "label": "Source lane coverage (registry)",
       "status": "fail",
       "messages": [
-        "6 gating lane(s) neither covered nor explicitly skipped:",
-        "Review platforms [required] — needs one of: google, tripadvisor — capture it, or add a skippedSources entry with kind + rationale",
-        "OTA review platforms [required] — needs one of: booking, expedia, travelocity — capture it, or add a skippedSources entry with kind + rationale",
-        "Community / social discussion [required] — needs one of: reddit — capture it, or add a skippedSources entry with kind + rationale",
-        "Video / creator content [required] — needs one of: youtube — capture it, or add a skippedSources entry with kind + rationale",
-        "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
-        "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+        "1 gating lane(s) neither covered nor explicitly skipped:",
+        "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale"
       ]
     },
     {
@@ -75,6 +74,22 @@
       ]
     },
     {
+      "id": "capture_archive",
+      "label": "Capture-archive provenance cross-check",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence claims a capturePath (nothing to cross-check); archive has 0 capture localPath(s)"
+      ]
+    },
+    {
+      "id": "evidence_freshness",
+      "label": "Evidence freshness",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence could be dated against the capture archive (nothing to age)"
+      ]
+    },
+    {
       "id": "teaser_generation",
       "label": "Teaser generation",
       "status": "ok",
@@ -93,19 +108,40 @@
     }
   ],
   "sourceCoverage": {
-    "coveredCount": 0,
-    "skippedCount": 0,
-    "missingRequired": [
-      "google",
+    "coveredCount": 2,
+    "skippedCount": 5,
+    "missingRequired": [],
+    "coveredPlatforms": [
       "tripadvisor",
-      "booking",
-      "expedia",
-      "reddit",
-      "youtube",
-      "aerial_satellite"
+      "youtube"
     ],
-    "coveredPlatforms": [],
-    "skipped": []
+    "skipped": [
+      {
+        "platformId": "google",
+        "kind": "not_found",
+        "reason": "Not present in the captured corpus."
+      },
+      {
+        "platformId": "booking",
+        "kind": "not_found",
+        "reason": "Not present in the captured corpus."
+      },
+      {
+        "platformId": "expedia",
+        "kind": "not_found",
+        "reason": "Not present in the captured corpus."
+      },
+      {
+        "platformId": "reddit",
+        "kind": "blocked",
+        "reason": "Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google index) instead."
+      },
+      {
+        "platformId": "aerial_satellite",
+        "kind": "not_applicable",
+        "reason": "Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captured-review audit."
+      }
+    ]
   },
   "keywordCoverage": {
     "totalGroups": 8,
@@ -134,6 +170,22 @@
     "liveVerifiedInvalid": [],
     "otherInvalid": []
   },
+  "captureCrossCheck": {
+    "archiveLocalPaths": 0,
+    "liveVerifiedWithCapturePath": 0,
+    "matched": 0,
+    "unmatched": []
+  },
+  "evidenceFreshness": {
+    "windowMonths": 12,
+    "now": "2026-06-24T21:53:39.763Z",
+    "liveVerifiedTotal": 0,
+    "dated": 0,
+    "stale": 0,
+    "ageUnknown": 0,
+    "staleRecords": [],
+    "ageUnknownRecords": []
+  },
   "teaserFirewall": {
     "generated": true,
     "charsGenerated": 8804,
@@ -144,22 +196,20 @@
   },
   "readinessSummary": {
     "overall": "not_ready",
-    "headline": "NOT READY — 2 blockers",
-    "nextAction": "Resolve 2 blockers before shipping: Required research source coverage; Source lane coverage (registry)",
+    "headline": "NOT READY — 1 blocker",
+    "nextAction": "Resolve 1 blocker before shipping: Source lane coverage (registry)",
     "checks": {
-      "ok": 6,
+      "ok": 9,
       "warn": 1,
-      "fail": 2
+      "fail": 1
     },
     "blockers": [
-      "Required research source coverage",
       "Source lane coverage (registry)"
     ],
     "warnings": [
       "Keyword group coverage"
     ],
     "blockerIds": [
-      "source_coverage",
       "lane_coverage"
     ],
     "warningIds": [
@@ -167,24 +217,11 @@
     ],
     "blockerDetails": [
       {
-        "id": "source_coverage",
-        "check": "Required research source coverage",
-        "details": [
-          "missing required platforms: google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite",
-          "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
-        ]
-      },
-      {
         "id": "lane_coverage",
         "check": "Source lane coverage (registry)",
         "details": [
-          "6 gating lane(s) neither covered nor explicitly skipped:",
-          "Review platforms [required] — needs one of: google, tripadvisor — capture it, or add a skippedSources entry with kind + rationale",
-          "OTA review platforms [required] — needs one of: booking, expedia, travelocity — capture it, or add a skippedSources entry with kind + rationale",
-          "Community / social discussion [required] — needs one of: reddit — capture it, or add a skippedSources entry with kind + rationale",
-          "Video / creator content [required] — needs one of: youtube — capture it, or add a skippedSources entry with kind + rationale",
-          "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
-          "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+          "1 gating lane(s) neither covered nor explicitly skipped:",
+          "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale"
         ]
       }
     ],
@@ -199,9 +236,9 @@
       }
     ],
     "sourceCoverage": {
-      "covered": 0,
-      "skipped": 0,
-      "missingRequired": 7
+      "covered": 2,
+      "skipped": 5,
+      "missingRequired": 0
     },
     "keywordGroups": {
       "withKeywords": 0,
@@ -212,7 +249,12 @@
       "liveVerified": 0,
       "inference": 0,
       "unverified": 0
+    },
+    "captureProvenance": {
+      "claimed": 0,
+      "matched": 0,
+      "unmatched": 0
     }
   },
-  "timestamp": "2026-06-24T21:37:55.642Z"
+  "timestamp": "2026-06-24T21:53:39.769Z"
 }
