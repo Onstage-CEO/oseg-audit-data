@@ -1,7 +1,7 @@
 {
   "auditName": "Paradisus Cancún",
   "version": "V0.1 — Working Draft",
-  "auditPath": "/Users/joepcostello/OSEG/oseg-audit-data/data/clients/paradisus-cancun/audit.json",
+  "auditPath": "/home/runner/work/oseg-audit-data/oseg-audit-data/data-repo/data/clients/paradisus-cancun/audit.json",
   "status": "ready_with_warnings",
   "exitCode": 0,
   "summary": {
@@ -173,7 +173,7 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-06-24T16:26:54.039Z",
+    "now": "2026-06-24T16:28:34.137Z",
     "liveVerifiedTotal": 0,
     "dated": 0,
     "stale": 0,
@@ -238,5 +238,5 @@
       "unmatched": 0
     }
   },
-  "timestamp": "2026-06-24T16:26:54.048Z"
+  "timestamp": "2026-06-24T16:28:34.153Z"
 }
