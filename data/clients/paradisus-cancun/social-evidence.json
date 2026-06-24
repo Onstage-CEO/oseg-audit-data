@@ -1,7 +1,37 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-06-23T23:28:29.179Z",
+  "generatedAt": "2026-06-24T00:02:18.011Z",
   "findings": [
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DZLFJuTPiXI/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "An icon at every hour. For 40 years, Paradisus Cancun has transformed with the light, revealing a different kind of beauty from sunrise to nightfall.\nWhich hour is your favorite?\n\n#ParadisusCancun #DesignedByDestination #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DXho3jUFW9w/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Our Icon has been creating the best memories and moments for over 30 years, we can not wait to continue this legacy. \n\nWhat about you?\n\n#TheIconIsBack #ParadisusCancún #DesignedByDestination",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DZDHHAKvtaq/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "In 2026? \n\n#ParadisusCancun #DesignedByDestination #ParadisusByMelia",
+      "matchedTerms": []
+    },
     {
       "sourceId": "instagram",
       "lane": "social",
@@ -26,40 +56,20 @@
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DZoJAG1vzt_/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Paradisus Cancun has been nominated for The 2026’s Readers’ Choice Awards. We appreciate your participation and support through votes. \n\n#ParadisusCancun",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
       "url": "https://www.instagram.com/p/DZp5YNola5G/",
       "domain": "instagram.com",
       "title": "paradisuscancun",
       "snippet": "Nothing compares to sunlit days spent having fun.\n\n#ParadisusCancun #DesignedByDestination #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DZXSCTrjHHg/",
-      "domain": "instagram.com",
-      "title": "paradisusbymelia",
-      "snippet": "Lush tropical landscapes or turquoise Caribbean waters? Whether you’re dreaming of Bali’s serenity or Cancún’s vibrant coastal charm, both destinations offer the perfect setting to unwind, reconnect and create unforgettable memories.\n\n#ParadisusCancún #ParadisusBali #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DZDHHAKvtaq/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "In 2026? \n\n#ParadisusCancun #DesignedByDestination #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DZLFJuTPiXI/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "An icon at every hour. For 40 years, Paradisus Cancun has transformed with the light, revealing a different kind of beauty from sunrise to nightfall.\nWhich hour is your favorite?\n\n#ParadisusCancun #DesignedByDestination #ParadisusByMelia",
       "matchedTerms": []
     },
     {
@@ -96,120 +106,10 @@
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DZfrE1dFVo7/",
+      "url": "https://www.instagram.com/p/DYxeEVglRot/",
       "domain": "instagram.com",
       "title": "paradisuscancun",
-      "snippet": "Quick snapshots of sunlit days, meaningful moments, and memories made at Paradisus Cancun.\n\n#ParadisusCancun #DesignedByDestination #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DXho3jUFW9w/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Our Icon has been creating the best memories and moments for over 30 years, we can not wait to continue this legacy. \n\nWhat about you?\n\n#TheIconIsBack #ParadisusCancún #DesignedByDestination",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DXPl1nwD-vw/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Fire, meat & salt. On the grill at Sal Steakhouse.",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DYP9Ar6FXo6/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Enjoy being present  and active rest while in paradise\n#ParadisusCancun #DesignedbyDestination #paradisusbymelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DYFXxGyPI8C/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Meet the key to deep rest, endless days, relaxation and memories that will last forever. \n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DYZtMqPvtJM/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Always.\n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DXIhKYgj1FO/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Welcome Back!\n\nA new chapter starts at Paradisus Cancún.\n\nCrafting new and exciting flavours, refreshed rooms, kids fun re imagined and more surprises. \n\n#TheIconIsBack #ParadisusCancún #DesignedByDestination",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DXJlzPPjA8k/",
-      "domain": "instagram.com",
-      "title": "paradisusbymelia",
-      "snippet": "We have been waiting for you.\n\nParadisus Cancún has been thoughtfully redesigned to welcome you back to the Caribbean with renewed spaces, elevated experiences and even more ways to enjoy every moment.\n\nChoose The Reserve, an exclusive adults-only retreat for couples seeking serenity, privacy and meaningful time together. Or discover Family Concierge, where every detail is prepared so families can relax, play and create unforgettable memories side by side.\n\nTwo ways to experience Paradisus Cancún.\nOne destination designed for unforgettable moments.\n\n#ParadisusByMelia #DestinationInclusive #ParadisusCancún",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DZoJAG1vzt_/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Paradisus Cancun has been nominated for The 2026’s Readers’ Choice Awards. We appreciate your participation and support through votes. \n\n#ParadisusCancun",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DYplaJIFUd0/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Spend a day at Paradisus Cancun, filled with adventures at your own rhythm. \n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DX7AzqSFROO/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "A destination where every taste finds its moment, and every experience brings you closer to nature.\n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "instagram",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DXzO8v_PLJY/",
-      "domain": "instagram.com",
-      "title": "paradisuscancun",
-      "snippet": "Small moments captured in time, creating memories that stay with you.\n\n#ParadisusCancun #DesignedbyDestination #TheIconIsBack",
+      "snippet": "Endless blues, fun and adventures\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
       "matchedTerms": []
     },
     {
@@ -226,6 +126,36 @@
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DXIhKYgj1FO/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Welcome Back!\n\nA new chapter starts at Paradisus Cancún.\n\nCrafting new and exciting flavours, refreshed rooms, kids fun re imagined and more surprises. \n\n#TheIconIsBack #ParadisusCancún #DesignedByDestination",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DYFXxGyPI8C/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Meet the key to deep rest, endless days, relaxation and memories that will last forever. \n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DYP9Ar6FXo6/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Enjoy being present  and active rest while in paradise\n#ParadisusCancun #DesignedbyDestination #paradisusbymelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
       "url": "https://www.instagram.com/p/DXZ9Ai2D1WS/",
       "domain": "instagram.com",
       "title": "paradisuscancun",
@@ -236,40 +166,60 @@
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DWmFeLAD1hz/",
+      "url": "https://www.instagram.com/p/DYZtMqPvtJM/",
       "domain": "instagram.com",
       "title": "paradisuscancun",
-      "snippet": "Ink on paper.\nSunlight on skin.\nA familiar feeling, reimagined.\n\nThe news is out.\nAnd every page leads to the same headline:\n\nThe icon is back.\n\n#ParadisusCancun #TheIconIsBack #ParadisusByMelia",
+      "snippet": "Always.\n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
       "matchedTerms": []
     },
     {
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DW3kO9FR8oC/",
+      "url": "https://www.instagram.com/p/DYplaJIFUd0/",
       "domain": "instagram.com",
-      "title": "paradisusbymelia",
-      "snippet": "The icon is blue.\nThe icon is sand.\nThe icon is light.\nThe icon is destination.\n\nA new chapter begins at Paradisus Cancún, where timeless architecture, Caribbean nature and renewed experiences come together once again.\n\nThe Icon Is Back.\n\n#ParadisusByMelia #DestinationInclusive #ParadisusCancún",
+      "title": "paradisuscancun",
+      "snippet": "Spend a day at Paradisus Cancun, filled with adventures at your own rhythm. \n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
       "matchedTerms": []
     },
     {
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DYxeEVglRot/",
+      "url": "https://www.instagram.com/p/DXPl1nwD-vw/",
       "domain": "instagram.com",
       "title": "paradisuscancun",
-      "snippet": "Endless blues, fun and adventures\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
+      "snippet": "Fire, meat & salt. On the grill at Sal Steakhouse.",
       "matchedTerms": []
     },
     {
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.instagram.com/p/DWxWeYcFf81/",
+      "url": "https://www.instagram.com/p/DXzO8v_PLJY/",
       "domain": "instagram.com",
       "title": "paradisuscancun",
-      "snippet": "Between mangroves, ocean tides and the quiet rhythm of the lagoon, you slow down, you breathe deeper, you begin to notice more.\n\nAre you ready to experience the destiantion?\n\n#ParadisusCancun #DestinationInclusive #ParadisusByMelia",
+      "snippet": "Small moments captured in time, creating memories that stay with you.\n\n#ParadisusCancun #DesignedbyDestination #TheIconIsBack",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DX7AzqSFROO/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "A destination where every taste finds its moment, and every experience brings you closer to nature.\n\n#ParadisusCancun #DesignedbyDestination #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DZfrE1dFVo7/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Quick snapshots of sunlit days, meaningful moments, and memories made at Paradisus Cancun.\n\n#ParadisusCancun #DesignedByDestination #ParadisusByMelia",
       "matchedTerms": []
     },
     {
@@ -286,10 +236,40 @@
       "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DZXSCTrjHHg/",
+      "domain": "instagram.com",
+      "title": "paradisusbymelia",
+      "snippet": "Lush tropical landscapes or turquoise Caribbean waters? Whether you’re dreaming of Bali’s serenity or Cancún’s vibrant coastal charm, both destinations offer the perfect setting to unwind, reconnect and create unforgettable memories.\n\n#ParadisusCancún #ParadisusBali #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
       "url": "https://www.instagram.com/p/DWRsacOFQ40/",
       "domain": "instagram.com",
       "title": "paradisuscancun",
       "snippet": "A way to connect with the place, its rhythm, its people and maybe, with yourself.\n\nThis is not just all-inclusive. It’s Destination Inclusive.\n\n#ParadisusCancun #DestinationInclusive #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DW3kO9FR8oC/",
+      "domain": "instagram.com",
+      "title": "paradisusbymelia",
+      "snippet": "The icon is blue.\nThe icon is sand.\nThe icon is light.\nThe icon is destination.\n\nA new chapter begins at Paradisus Cancún, where timeless architecture, Caribbean nature and renewed experiences come together once again.\n\nThe Icon Is Back.\n\n#ParadisusByMelia #DestinationInclusive #ParadisusCancún",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DWmFeLAD1hz/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Ink on paper.\nSunlight on skin.\nA familiar feeling, reimagined.\n\nThe news is out.\nAnd every page leads to the same headline:\n\nThe icon is back.\n\n#ParadisusCancun #TheIconIsBack #ParadisusByMelia",
       "matchedTerms": []
     },
     {
@@ -303,33 +283,33 @@
       "matchedTerms": []
     },
     {
-      "sourceId": "tiktok",
+      "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@tipsytouristtravels/video/7649044329863908639",
-      "domain": "tiktok.com",
-      "title": "tipsytouristtravels",
-      "snippet": "$50 million later and Paradisus Cancun is back! ✨ The iconic pyramid resort has been completely transformed with renovated rooms, new dining, updated pools, and The Reserve adults-only experience. Would you stay here? 👀 \n\n#ParadisusCancun #CancunMexico #AllInclusiveResort #MexicoTravel #ResortTour",
+      "url": "https://www.instagram.com/p/DWxWeYcFf81/",
+      "domain": "instagram.com",
+      "title": "paradisuscancun",
+      "snippet": "Between mangroves, ocean tides and the quiet rhythm of the lagoon, you slow down, you breathe deeper, you begin to notice more.\n\nAre you ready to experience the destiantion?\n\n#ParadisusCancun #DestinationInclusive #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.instagram.com/p/DXJlzPPjA8k/",
+      "domain": "instagram.com",
+      "title": "paradisusbymelia",
+      "snippet": "We have been waiting for you.\n\nParadisus Cancún has been thoughtfully redesigned to welcome you back to the Caribbean with renewed spaces, elevated experiences and even more ways to enjoy every moment.\n\nChoose The Reserve, an exclusive adults-only retreat for couples seeking serenity, privacy and meaningful time together. Or discover Family Concierge, where every detail is prepared so families can relax, play and create unforgettable memories side by side.\n\nTwo ways to experience Paradisus Cancún.\nOne destination designed for unforgettable moments.\n\n#ParadisusByMelia #DestinationInclusive #ParadisusCancún",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@beyondtheweddingtravels/video/7654388278812052766",
+      "url": "https://www.tiktok.com/@jessica.millenniumtours/video/7649492056368319774",
       "domain": "tiktok.com",
-      "title": "beyondtheweddingtravels",
-      "snippet": "🌴 Resort Spotlight: Paradisus Cancun 🌴\n\nParadisus Cancun has officially reopened after a year-long renovation, and after recently attending a webinar to learn more about all of the updates, I can see why so many travelers are excited about this resort.\n\nThe resort has a huge \"wow factor\" when you walk in, with soaring architecture, lush greenery, and beautiful design throughout. The newly renovated spaces feel fresh, modern, and thoughtfully designed while still maintaining that tropical Cancun vibe.\n\nOne of my favorite details is that the resort is divided into three distinct areas:\n\n👨‍👩‍👧‍👦 Family Concierge\n🌴 Main Resort Area\n✨ The Reserve\n\nEach section has its own pool, coffee shop, and atmosphere, making the resort feel like multiple experiences within one property.\n\nA few things that really caught my attention:\n\n☕ Multiple coffee shops throughout the resort, including a main café that's open 24/7\n\n🚤 Complimentary sunset boat experience for Family Concierge and Reserve guests\n\n💆 Hydrotherapy circuit included for Family Concierge and Reserve guests\n\n🏖️ Bali beds available throughout the resort, with many included for upgraded room categories\n\n🌊 Beautiful Cancun beachfront with those iconic turquoise waters\n\n🍽️ Family Concierge and Reserve guests can reserve restaurants before arrival\n\nWho do I think would love Paradisus Cancun?\n\n✔️ Families with younger children\n✔️ Multi-generational family vacations\n✔️ Couples who want a beautiful upscale resort without an adults-only atmosphere\n✔️ Friend groups looking for a relaxing getaway\n\nOne thing to note: while there is a water park and kids club, the activities are geared more toward younger children. If you're traveling with teens who want nonstop activities, there may be better options in Cancun.\n\nOverall, the renovation appears to have completely transformed the resort. The attention to detail, beautiful design, and variety of experiences make this one of the most impressive family-friendly resorts currently available in Cancun.\n\nHave questions about Paradisus Cancun or wondering how it compares to other resorts? Drop them below! 👇\n\n#mexico #vacation #paradisuscancun",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@tanya.buyak/video/7653499710631644429",
-      "domain": "tiktok.com",
-      "title": "tanya.buyak",
-      "snippet": "#CapCut #roomtour #allinclusive #mexico #mustvisit",
+      "title": "jessica.millenniumtours",
+      "snippet": "After a renovation that completely transformed the property, Paradisus Cancun has reopened and the details inside are stunning. This all-inclusive resort in Cancun's Hotel Zone is family-friendly with an adults-only reserve section for couples looking for their own escape. I love the boho chic design that flows from the public spaces right into the rooms.\n#resorts #resortreview #cancunmexico #cancunvacation #traveladvisor",
       "matchedTerms": []
     },
     {
@@ -346,30 +326,20 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@ericabfrancis/video/7646230153214856461",
+      "url": "https://www.tiktok.com/@taylordonoghuee/video/7654728609495584030",
       "domain": "tiktok.com",
-      "title": "ericabfrancis",
-      "snippet": "📍Paradisus Cancun 🇲🇽 #vacation #allinclusiveresort",
+      "title": "taylordonoghuee",
+      "snippet": "Replying to @user2394907494265 we stayed at the Reserve Paradisus Cancún !!!",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@viajaconbren/video/7631757796807068948",
+      "url": "https://www.tiktok.com/@paradisusbymelia/video/7623883169166560534",
       "domain": "tiktok.com",
-      "title": "viajaconbren",
-      "snippet": "✨ El nuevo Paradisus Cancún ya reabrió… y quedó espectacular 🤍\nRecién reinaugurado, con un lobby único dentro de sus icónicas pirámides y opciones para todos: familias o solo adultos. 🌿✨\n¿Te gustaría hospedarte aquí? Podemos reservarlo por ti 👇\n📲 Escríbenos por WhatsApp\n📞 56 1901 4024\n\n#paradisuscancun #cancun #hotel #agenciadeviajes #viajaconbren",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@alcabservice/video/7650742726039735566",
-      "domain": "tiktok.com",
-      "title": "alcabservice",
-      "snippet": "🚨 El Paradisus Cancún está mejor que nunca.\n\n💦 Nuevo Aquazone Water Park\n🏨 Suites renovadas\n🍽️ Nuevos restaurantes\n🌴 Más experiencias para toda la familia\n\n¿Te hospedarías aquí? 👀\n\n#ParadisusCancun #Cancun #ResortTodoIncluido #Vacaciones2026 #AlcabService",
+      "title": "paradisusbymelia",
+      "snippet": "The icon is back ✨ \nCancún looks better than ever…don’t miss it.\n\n#Paradisusbymelia #ParadisusCancún #TravelTok",
       "matchedTerms": []
     },
     {
@@ -380,6 +350,116 @@
       "domain": "tiktok.com",
       "title": "shoppingaddictdee",
       "snippet": "Room tour 🌴 #mexico #roomtour #resort #cancun #paradisuscancun",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@ericabfrancis/video/7646230153214856461",
+      "domain": "tiktok.com",
+      "title": "ericabfrancis",
+      "snippet": "📍Paradisus Cancun 🇲🇽 #vacation #allinclusiveresort",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@cass.checksin/video/7652792238153469198",
+      "domain": "tiktok.com",
+      "title": "cass.checksin",
+      "snippet": "Fresh Coconuts taste better on Vacation! 🥥📍Resort: @Paradisus by Melia @Paradisus Cancun \n\n#travelcreator #cancunmexico #traveltiktok #vacations #travelblogger \n\ntravel blog • travel blogger • family travel • all-inclusive resorts • family-friendly resorts • best resorts for kids • adults-only resorts • Mexico resorts • resort reviews • family travel tips • couples getaways\n • vacation planning • Traveling with kids • all inclusive resorts Mexico • family friendly all inclusive resorts • best resort for kids Mexico • Mexico all inclusive • travel content creator •best deals for all inclusives in Mexico • Cancun Mexico • puerto Vallarta Mexico • hotels in mexicos • resorts in Mexico • Punta Cana Dominican Republic hotels • all inclusive resorts in Punta Cana • adult only resorts in Punta cana • best all inclusive resort in Punta Cana •",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@mkhix.travels/video/7652437102847642894",
+      "domain": "tiktok.com",
+      "title": "mkhix.travels",
+      "snippet": "Paradisus Cancun is officially back open after a full year of renovations… and she’s stunning. Fresh rooms, gorgeous lobbies, and a big wow factor throughout.\nGreat for adults, couples, friend groups, and families with younger kids. Probably one of the cutest kids clubs I’ve ever seen!\n\n#travelagent\n#paradisuscancun\n#allinclusive\n#familyresort\n#CapCut",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@audiovisualesymas/video/7652634297945361677",
+      "domain": "tiktok.com",
+      "title": "audiovisualesymas",
+      "snippet": "#paradisuscancun #vacation #travel #relaxing",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@marianamarianamg/video/7633846925220941069",
+      "domain": "tiktok.com",
+      "title": "marianamarianamg",
+      "snippet": "Renovated Paradisus Cancun Tour.\n@Paradisus by Melia #cancun #caribbean #resorts #trending #vaca",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@goexploreusa/video/7644962778289098015",
+      "domain": "tiktok.com",
+      "title": "goexploreusa",
+      "snippet": "The 5-Star Cancun Resort That Makes Your Wallet Useless \n\n$179 a Night to Live Like a Millionaire in Cancun? Most Would Call You Crazy \n\n#ParadisusCancun  \n\n#CancunAllInclusive  \n\n#CancunResort  \n\n#MexicoLuxuryResort  \n\n#CancunVacation\n\n#travel\n\n#luxuryresort\n\n#allinclusive\n\n#travalusa\n\n#caribe\n\n#cancun",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@tipsytouristtravels/video/7649044329863908639",
+      "domain": "tiktok.com",
+      "title": "tipsytouristtravels",
+      "snippet": "$50 million later and Paradisus Cancun is back! ✨ The iconic pyramid resort has been completely transformed with renovated rooms, new dining, updated pools, and The Reserve adults-only experience. Would you stay here? 👀 \n\n#ParadisusCancun #CancunMexico #AllInclusiveResort #MexicoTravel #ResortTour",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@condantravel/video/7626147826312940818",
+      "domain": "tiktok.com",
+      "title": "condantravel",
+      "snippet": "Cancún en modo lujo ✨ TODO incluido desde $24,089 😳🌊\n📲 Escribe PARADISUS y te cotizo.  #agenciadeviajes #parati #cancun #paradisus #marcaribe",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@nyanagomez/video/7627264453804903687",
+      "domain": "tiktok.com",
+      "title": "nyanagomez",
+      "snippet": "#playitatime #paradisuscancun #amo🐚🌊 #🏝️☀️ #🐚beautiful🤍",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@lamucmen/video/7641856036197911815",
+      "domain": "tiktok.com",
+      "title": "lamucmen",
+      "snippet": "AYUDÓ A DIFUNDIR EL CASO DE UN AMIGO.\nViajamos al hotel Paradisus Cancún (Meliá Hoteles) para celebrar el cumpleaños de mi mamá, la Sra. Ma. Guillermina Velázquez Núñez, y terminamos en el hospital por una grave negligencia en sus instalaciones. 💔\n\nNos encontramos varados en Cancún, enfrentando solos gastos médicos y viáticos extraordinarios porque el hotel se niega a activar su Seguro de Responsabilidad Civil (obligatorio por la ley NOM-07-TUR-2002 en México). Lo peor de todo es su cinismo: emitieron un comunicado culpando a mi mamá para lavarse las manos. 🤬\n\n¡No es justo! Exigimos justicia y que el hotel se haga responsable de inmediato. Ayúdanos compartiendo, comentando y etiquetando a las autoridades para que este caso no quede impune. 👇✨\n@paradisuscancun @meliahoteles_es @profeco_oficial @profeco_oficial @sectur_mx\n¡Exigimos que respondan conforme a la ley!\n\nNegligencia médica y accidente en el Hotel Paradisus by Meliá Cancún denuncia Profeco #fypppppppppppppppppppppp #ParadisusCancun #MeliaHoteles #NegligenciaHotelera #@Profeco @Paradisus Cancun @Sectur_Mex @Imagen Noticias",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@vitalalina/video/7652947680812862740",
+      "domain": "tiktok.com",
+      "title": "vitalalina",
+      "snippet": "#paradisuscancun #cancun #mexico #playasmexicanas #sinsargazo",
       "matchedTerms": []
     },
     {
@@ -406,50 +486,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@vitalalina/video/7652947680812862740",
+      "url": "https://www.tiktok.com/@alcabservice/video/7650742726039735566",
       "domain": "tiktok.com",
-      "title": "vitalalina",
-      "snippet": "#paradisuscancun #cancun #mexico #playasmexicanas #sinsargazo",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@travelwith.nat/video/7649039029710654741",
-      "domain": "tiktok.com",
-      "title": "travelwith.nat",
-      "snippet": "Last week I had the opportunity to tour Paradisus Cancun, and I have to say… the renovation is impressive.\n\nThis resort was closed for an entire year while undergoing a massive transformation, and the attention to detail shows from the moment you walk into the lobby. Think soaring architecture, lush greenery throughout the resort, and beautiful modern finishes everywhere you look.\n\n✨ What stood out to me:\n\n✔️ Located right in Cancun’s Hotel Zone\n✔️ 773 rooms\n✔️ Three distinct sections: Standard, Family Concierge, and The Reserve\n✔️ Multiple pools throughout the resort\n✔️ Stunning turquoise Cancun beach\n✔️ 24-hour coffee shop with smoothies in the morning and ice cream available into the evening\n✔️ Family Concierge and Reserve guests enjoy extra perks including a sunset boat cruise, hydrotherapy spa experience, restaurant reservations before arrival, and complimentary Bali beds\n\n👨‍👩‍👧‍👦 For families:\n\nThe Family Concierge section is located on its own end of the resort and offers upgraded service, private check-in, family-friendly suites, and even suites that can accommodate up to 10 guests.\n\nThere is a water play area and kids club, but this resort is definitely geared more toward younger children than teenagers. If you have little ones, I think this resort works well. If you’re travelling with teens looking for waterslides, sports, or lots of activities, there are stronger options in Cancun.\n\n💑 For adults:\n\nThe Reserve section feels elevated and more exclusive, with its own pool area, private lounge, upgraded suites, and premium amenities. I can easily see couples, friend groups, and adults celebrating special occasions enjoying this resort.\n\nA few things to know:\n\n⚠️ The beach is beautiful but can be rough at times, which is common in the Cancun Hotel Zone.\n⚠️ The resort is quite large, so expect some walking.\n⚠️ Storage space in the rooms is surprisingly limited.\n⚠️ The main lobby and public areas are not air conditioned, which can make some spaces feel warm during the day.\n\n⭐ My overall impression?\n\nParadisus Cancun feels fresh, upscale, and thoughtfully redesigned. It offers a more luxurious feel than many resorts in the Hotel Zone and is one I’d happily recommend for couples, friend groups, and families with younger children.\n\nHave you stayed at Paradisus Cancun before the renovation or are you considering it for a future trip? I’d love to hear your thoughts 👇",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@nm.luxtravel/video/7630539863548333330",
-      "domain": "tiktok.com",
-      "title": "nm.luxtravel",
-      "snippet": "✨PARADISUS CANCUN✨\n\n¡¡ TOTELMENTE REMODELADO !! \n\nLes juro que Melia JAMÁS me desepciona.... Y PARADISUS CANCÚN... TOP!!\n\n#nmluxtravel #viajar #agentedeviajes #traveltiktok  #cancun",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@paradisusbymelia/video/7623883169166560534",
-      "domain": "tiktok.com",
-      "title": "paradisusbymelia",
-      "snippet": "The icon is back ✨ \nCancún looks better than ever…don’t miss it.\n\n#Paradisusbymelia #ParadisusCancún #TravelTok",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@cass.checksin/video/7652792238153469198",
-      "domain": "tiktok.com",
-      "title": "cass.checksin",
-      "snippet": "Fresh Coconuts taste better on Vacation! 🥥📍Resort: @Paradisus by Melia @Paradisus Cancun \n\n#travelcreator #cancunmexico #traveltiktok #vacations #travelblogger \n\ntravel blog • travel blogger • family travel • all-inclusive resorts • family-friendly resorts • best resorts for kids • adults-only resorts • Mexico resorts • resort reviews • family travel tips • couples getaways\n • vacation planning • Traveling with kids • all inclusive resorts Mexico • family friendly all inclusive resorts • best resort for kids Mexico • Mexico all inclusive • travel content creator •best deals for all inclusives in Mexico • Cancun Mexico • puerto Vallarta Mexico • hotels in mexicos • resorts in Mexico • Punta Cana Dominican Republic hotels • all inclusive resorts in Punta Cana • adult only resorts in Punta cana • best all inclusive resort in Punta Cana •",
+      "title": "alcabservice",
+      "snippet": "🚨 El Paradisus Cancún está mejor que nunca.\n\n💦 Nuevo Aquazone Water Park\n🏨 Suites renovadas\n🍽️ Nuevos restaurantes\n🌴 Más experiencias para toda la familia\n\n¿Te hospedarías aquí? 👀\n\n#ParadisusCancun #Cancun #ResortTodoIncluido #Vacaciones2026 #AlcabService",
       "matchedTerms": []
     },
     {
@@ -466,10 +506,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@jedibae/video/7653223965179055374",
+      "url": "https://www.tiktok.com/@armitrip/video/7644746706248125704",
       "domain": "tiktok.com",
-      "title": "jedibae",
-      "snippet": "#paradiuscancun @Meliá Hotels International",
+      "title": "armitrip",
+      "snippet": "Hoy por fin se me hizo conocer este hotel que tenía mucha curiosidad por sus edificios y la verdad valió totalmente la pena y algo que me encantó fue la cantidad de plantas que tiene por todo el hotel. ¿Te hospedarías aquí? \nMándame mensaje si quieres cotizar este hotel o si buscas otro tipo de experiencias 🙌🏼🥰\n#cancun #caribemexicano #agentedeviajes #paradisuscancun #vlogtravel",
       "matchedTerms": []
     },
     {
@@ -486,80 +526,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@jessica.millenniumtours/video/7649492056368319774",
+      "url": "https://www.tiktok.com/@clothingcollection/video/7378322534632115498",
       "domain": "tiktok.com",
-      "title": "jessica.millenniumtours",
-      "snippet": "After a renovation that completely transformed the property, Paradisus Cancun has reopened and the details inside are stunning. This all-inclusive resort in Cancun's Hotel Zone is family-friendly with an adults-only reserve section for couples looking for their own escape. I love the boho chic design that flows from the public spaces right into the rooms.\n#resorts #resortreview #cancunmexico #cancunvacation #traveladvisor",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@nyanagomez/video/7627264453804903687",
-      "domain": "tiktok.com",
-      "title": "nyanagomez",
-      "snippet": "#playitatime #paradisuscancun #amo🐚🌊 #🏝️☀️ #🐚beautiful🤍",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@ab.by24/video/7566752920088186142",
-      "domain": "tiktok.com",
-      "title": "ab.by24",
-      "snippet": "All I wanna do is go back 😭🩷 (especially now that it’s getting so cold)\n#mexico #cancun #beach #travel #trip \n————————————————————\n*Paradisus Cancún 🌴 \nIf you’ve never been to an all-inclusive resort, it’s a must ‼️",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@postcards_from_matt/video/7593475100494613773",
-      "domain": "tiktok.com",
-      "title": "postcards_from_matt",
-      "snippet": "This past week I was invited to experience the all inclusive Paradisus Hotel in Playa del Carmen Cancún a luxury resort in Mexico set within the jungle along the shores of a tranquil bay. \n\nThis was far more than a hotel stay. The resort is designed to exist in harmony with its surroundings with open air walkways tropical foliage and meticulously designed waterways that flow throughout the property creating a seamless connection between architecture and nature.\n\nThe imagery mirrors the experience of the resort itself quiet luxury immersive design and a slower pace of travel.\n\nA true luxury all inclusive resort in Playa del Carmen Cancún where travel photography relaxation and connection to nature come together in what can only be described as paradise.\n\n#paradisuscancun #travelphotography #fujifilm #fujifilmxseries #filmsimulation",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@a.b.creates/video/7536274238320168205",
-      "domain": "tiktok.com",
-      "title": "a.b.creates",
-      "snippet": "Paradisus Cancún has to be one of our favorite all inclusive resorts we have stayed at! \n\nDuring our stay here we booked a tour that took us to a cenote, a local city, and to Chichén Itzá. We also booked a boat ride to Isla Mujeres where we got to relax and enjoy the island! \n\n#cancun #paradisuscancun #allinclusiveresort #allinclusive #travel #mexico #traveltiktok #explore #beach #fyp #foryou #foryoupage #vacation #couplestiktok #food",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@thees0urce/video/7420563118977207598",
-      "domain": "tiktok.com",
-      "title": "thees0urce",
-      "snippet": "Favorite eats at Paradisus Cancun MX\n#traveltok #paradisuscancun #allinclusiveresort #baecation #2024",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@dommythetravelista/video/7444370762179398958",
-      "domain": "tiktok.com",
-      "title": "dommythetravelista",
-      "snippet": "brought to you by your fave travel agent 🤭 #mexico #cancun #mexicotravel #travel #playadelcarmen #luxuryresort #luxurytravel #allinclusive #fyp #allinclusiveresort",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@rach_izayboo/video/7450865471223647519",
-      "domain": "tiktok.com",
-      "title": "rach_izayboo",
-      "snippet": "My first time at an all inclusive-  would go back to Mexico specifically for the shortrib at Lemonfish 😮‍💨😮‍💨😮‍💨",
+      "title": "clothingcollection",
+      "snippet": "Took a chance and booked this hotel after seeing a deal on costco travel and watching a few tiktoks. It did not disappoint! Everything was amazing. Costco planned our travel smoothly. The resort is huge- would recommend the resevre adults only upgrade. We had our own concierge, poolside service, and amazing food. One of my favs was the cafe that had fruit, snacks, and coffees all throughout the day and all for “free”. Definitely check out paradisus cancun for uour next vacay. #costcotravel #cancun #mexic #paradisuscancun",
       "matchedTerms": []
     },
     {
@@ -576,10 +546,30 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@thees0urce/video/7420626992187362606",
+      "url": "https://www.tiktok.com/@travelwith.nat/video/7649039029710654741",
       "domain": "tiktok.com",
-      "title": "thees0urce",
-      "snippet": "Yummy Mediterranean at Paradisus Cancún #traveltok #paradisuscancun #allinclusiveresort #baecation #2024",
+      "title": "travelwith.nat",
+      "snippet": "Last week I had the opportunity to tour Paradisus Cancun, and I have to say… the renovation is impressive.\n\nThis resort was closed for an entire year while undergoing a massive transformation, and the attention to detail shows from the moment you walk into the lobby. Think soaring architecture, lush greenery throughout the resort, and beautiful modern finishes everywhere you look.\n\n✨ What stood out to me:\n\n✔️ Located right in Cancun’s Hotel Zone\n✔️ 773 rooms\n✔️ Three distinct sections: Standard, Family Concierge, and The Reserve\n✔️ Multiple pools throughout the resort\n✔️ Stunning turquoise Cancun beach\n✔️ 24-hour coffee shop with smoothies in the morning and ice cream available into the evening\n✔️ Family Concierge and Reserve guests enjoy extra perks including a sunset boat cruise, hydrotherapy spa experience, restaurant reservations before arrival, and complimentary Bali beds\n\n👨‍👩‍👧‍👦 For families:\n\nThe Family Concierge section is located on its own end of the resort and offers upgraded service, private check-in, family-friendly suites, and even suites that can accommodate up to 10 guests.\n\nThere is a water play area and kids club, but this resort is definitely geared more toward younger children than teenagers. If you have little ones, I think this resort works well. If you’re travelling with teens looking for waterslides, sports, or lots of activities, there are stronger options in Cancun.\n\n💑 For adults:\n\nThe Reserve section feels elevated and more exclusive, with its own pool area, private lounge, upgraded suites, and premium amenities. I can easily see couples, friend groups, and adults celebrating special occasions enjoying this resort.\n\nA few things to know:\n\n⚠️ The beach is beautiful but can be rough at times, which is common in the Cancun Hotel Zone.\n⚠️ The resort is quite large, so expect some walking.\n⚠️ Storage space in the rooms is surprisingly limited.\n⚠️ The main lobby and public areas are not air conditioned, which can make some spaces feel warm during the day.\n\n⭐ My overall impression?\n\nParadisus Cancun feels fresh, upscale, and thoughtfully redesigned. It offers a more luxurious feel than many resorts in the Hotel Zone and is one I’d happily recommend for couples, friend groups, and families with younger children.\n\nHave you stayed at Paradisus Cancun before the renovation or are you considering it for a future trip? I’d love to hear your thoughts 👇",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@a.b.creates/video/7536274238320168205",
+      "domain": "tiktok.com",
+      "title": "a.b.creates",
+      "snippet": "Paradisus Cancún has to be one of our favorite all inclusive resorts we have stayed at! \n\nDuring our stay here we booked a tour that took us to a cenote, a local city, and to Chichén Itzá. We also booked a boat ride to Isla Mujeres where we got to relax and enjoy the island! \n\n#cancun #paradisuscancun #allinclusiveresort #allinclusive #travel #mexico #traveltiktok #explore #beach #fyp #foryou #foryoupage #vacation #couplestiktok #food",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@danielalara_of/video/7337513202240048390",
+      "domain": "tiktok.com",
+      "title": "danielalara_of",
+      "snippet": "#paradisuscancun #xcaret",
       "matchedTerms": []
     },
     {
@@ -596,10 +586,20 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Cancún",
-      "url": "https://www.tiktok.com/@carlodoci31/video/7473657213974744342",
+      "url": "https://www.tiktok.com/@dommythetravelista/video/7444370762179398958",
       "domain": "tiktok.com",
-      "title": "carlodoci31",
-      "snippet": "you were there? #laisla #laislacancun #laislacancunmexico #mexico🇲🇽 #cancun #paradisuscancun #paradisuscancunresort #paradisus #laislacancún",
+      "title": "dommythetravelista",
+      "snippet": "brought to you by your fave travel agent 🤭 #mexico #cancun #mexicotravel #travel #playadelcarmen #luxuryresort #luxurytravel #allinclusive #fyp #allinclusiveresort",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Cancún",
+      "url": "https://www.tiktok.com/@will.fischer7/video/7472053355406200106",
+      "domain": "tiktok.com",
+      "title": "will.fischer7",
+      "snippet": "Highlights from my stay at Paradisus resort in Cancun, Mexico 📸 \n\n@Meliá Hotels International #meliahotels #paradisus #paradisuscancun #paradisusbymelia #cancun #mexico #cancunmexico #allinclusive #springbreak #hotelreview #mexicotiktok #travel #fyp #foryou #viral",
       "matchedTerms": []
     }
   ],
