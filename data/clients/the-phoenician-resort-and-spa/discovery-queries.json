@@ -1,0 +1,144 @@
+{
+  "target": {
+    "propertyName": "The Phoenician Resort and Spa",
+    "location": "Scottsdale, AZ",
+    "website": "https://www.thephoenician.com/"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, AZ reviews",
+        "The Phoenician Resort and Spa entertainment reviews",
+        "The Phoenician Resort and Spa nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com The Phoenician Resort and Spa Hotel_Review",
+        "The Phoenician Resort and Spa Scottsdale, AZ TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com The Phoenician Resort and Spa",
+        "The Phoenician Resort and Spa Scottsdale, AZ booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com The Phoenician Resort and Spa",
+        "The Phoenician Resort and Spa Scottsdale, AZ Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com The Phoenician Resort and Spa"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa review",
+        "The Phoenician Resort and Spa nightlife",
+        "The Phoenician Resort and Spa entertainment",
+        "The Phoenician Resort and Spa Scottsdale, AZ"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa walkthrough",
+        "The Phoenician Resort and Spa resort tour",
+        "The Phoenician Resort and Spa review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"The Phoenician Resort and Spa\" review blog",
+        "\"The Phoenician Resort and Spa\" honest review",
+        "The Phoenician Resort and Spa Scottsdale, AZ travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "https://www.thephoenician.com/",
+        "The Phoenician Resort and Spa official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa instagram",
+        "The Phoenician Resort and Spa tiktok",
+        "site:instagram.com The Phoenician Resort and Spa"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, AZ satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "The Phoenician Resort and Spa reviews",
+    "The Phoenician Resort and Spa entertainment reviews",
+    "The Phoenician Resort and Spa nightlife",
+    "site:reddit.com The Phoenician Resort and Spa",
+    "The Phoenician Resort and Spa YouTube review",
+    "The Phoenician Resort and Spa travel blog review",
+    "The Phoenician Resort and Spa family review",
+    "The Phoenician Resort and Spa couples review",
+    "The Phoenician Resort and Spa business traveler review",
+    "The Phoenician Resort and Spa rooftop review",
+    "The Phoenician Resort and Spa bar review",
+    "The Phoenician Resort and Spa dining review"
+  ]
+}
