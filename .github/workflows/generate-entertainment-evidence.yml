@@ -1,0 +1,141 @@
+# Generate Entertainment Evidence Appendix — the client-facing PROOF doc
+#
+# Dispatched by the audit-console-api Worker on behalf of an Access-authenticated
+# user. Runs the engine's entertainment-evidence command over one workspace's
+# captured review corpus + open-web/social/Yelp evidence, and commits a
+# client-facing entertainment-evidence.html (every entertainment-mentioning review
+# + mention, verbatim, with the entertainment language highlighted).
+#
+# Deterministic (no LLM, no API key) — it just filters + highlights captured text.
+# Engine pinned to a known-good SHA (bump deliberately, never 'main').
+
+name: generate-entertainment-evidence
+run-name: "entertainment-evidence: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Workspace slug to build the entertainment evidence appendix for'
+        required: true
+        type: string
+      actorEmail:
+        description: 'Access-verified email of the requesting user'
+        required: true
+        type: string
+      maxReviews:
+        description: 'Cap rendered reviews for shippability (the TRUE total is still shown)'
+        required: false
+        type: string
+        default: '1000'
+
+concurrency:
+  group: entertainment-evidence-${{ inputs.slug }}
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: d4f31d18a7f8057de8b952945334bc919f307c47
+
+permissions:
+  contents: write
+
+jobs:
+  entertainment-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Validate actor email
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          case "$ACTOR_EMAIL" in
+            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
+            *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+
+      - name: Resolve workspace dir from slug
+        id: resolve
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          if ! printf '%s' "$IN_SLUG" | grep -Eq '^[a-z0-9][a-z0-9-]{0,99}$'; then
+            echo "::error::invalid slug"; exit 1
+          fi
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$IN_SLUG"
+          if [ ! -f "$ws/audit.json" ]; then
+            echo "::error::workspace not found: $IN_SLUG"; exit 1
+          fi
+          echo "ws=$ws" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout engine (pinned, read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Generate entertainment evidence appendix
+        working-directory: engine
+        env:
+          WS: ${{ steps.resolve.outputs.ws }}
+          DATA_REPO: ${{ github.workspace }}/data-repo
+          IN_SLUG: ${{ inputs.slug }}
+          MAX_REVIEWS: ${{ inputs.maxReviews }}
+        run: |
+          set -euo pipefail
+          NOW=$(git -C "$DATA_REPO" log -1 --format=%cI -- "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true)
+          ARGS=(entertainment-evidence "$WS" --max-reviews "${MAX_REVIEWS:-1000}")
+          if [ -n "$NOW" ]; then ARGS+=(--now "$NOW"); fi
+          npm run dev --silent -- "${ARGS[@]}" 2>/tmp/ee.err || { cat /tmp/ee.err >&2; exit 1; }
+          cat /tmp/ee.err >&2
+          grep -E 'wrote entertainment-evidence' /tmp/ee.err | tail -1 | sed 's/^\[entertainment-evidence\] /entertainment evidence: /' >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Commit (attributed) and push
+        working-directory: data-repo
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+          ACTOR: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          git add "data/clients/$IN_SLUG/entertainment-evidence.html"
+          if git diff --cached --quiet; then
+            echo "Entertainment evidence produced no changes — nothing committed."
+            exit 0
+          fi
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "entertainment-evidence: $IN_SLUG — requested by $ACTOR"
+          pushed=0
+          for k in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            git pull --rebase --autostash
+          done
+          [ "$pushed" = "1" ] || { echo "::error::push failed after 3 attempts"; exit 1; }
+          echo "### Built entertainment evidence for \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
+
+  status:
+    needs: entertainment-evidence
+    uses: ./.github/workflows/status.yml
+    with:
+      slug: ${{ inputs.slug }}
+    secrets: inherit
+    permissions:
+      contents: write
