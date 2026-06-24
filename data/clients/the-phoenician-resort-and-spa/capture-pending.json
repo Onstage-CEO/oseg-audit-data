@@ -1,0 +1,26 @@
+{
+  "reportVersion": "V1",
+  "tasks": [
+    {
+      "platformId": "tripadvisor",
+      "vendor": "dataforseo",
+      "taskId": "06242320-1943-0353-0000-61524e298bc2",
+      "submittedAt": "2026-06-24T20:20:20.725Z",
+      "note": "sort:most_recent"
+    },
+    {
+      "platformId": "tripadvisor",
+      "vendor": "dataforseo",
+      "taskId": "06242320-1943-0353-0000-bd9f3511c450",
+      "submittedAt": "2026-06-24T20:20:20.725Z",
+      "note": "sort:detailed_reviews"
+    },
+    {
+      "platformId": "tripadvisor",
+      "vendor": "dataforseo",
+      "taskId": "06242320-1943-0353-0000-feb043074e43",
+      "submittedAt": "2026-06-24T20:20:20.725Z",
+      "note": "rating:excellent"
+    }
+  ]
+}

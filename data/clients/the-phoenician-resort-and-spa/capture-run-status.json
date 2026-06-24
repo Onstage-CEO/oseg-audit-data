@@ -1,0 +1,97 @@
+{
+  "reportVersion": "V1",
+  "generatedAt": "2026-06-24T20:34:54.292Z",
+  "property": {
+    "propertyName": "The Phoenician Resort and Spa",
+    "location": "Scottsdale, AZ"
+  },
+  "sources": [
+    {
+      "platformId": "google",
+      "mechanism": "aggregator",
+      "status": "no_queries",
+      "message": "Apify google: could not confidently auto-find the hotel page for \"The Phoenician Resort and Spa\" — set googleUrl in audit.json.",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": []
+    },
+    {
+      "platformId": "tripadvisor",
+      "mechanism": "aggregator",
+      "status": "pending_async",
+      "message": "collected 0 review(s); 3 in queue",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 0,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "booking",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify booking: captured 55 new, skipped 0 dup(s).; 55 available",
+      "recordsAdded": 55,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 55,
+        "availableReviews": 55,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "expedia",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify expedia: captured 599 new, skipped 0 dup(s).; 1000 available; 401 rating-only (no text)",
+      "recordsAdded": 599,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 599,
+        "availableReviews": 1000,
+        "requestedDepth": 4490,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "reddit",
+      "mechanism": "official_api",
+      "status": "needs_key",
+      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": []
+    },
+    {
+      "platformId": "youtube",
+      "mechanism": "official_api",
+      "status": "ok",
+      "message": "captured 94 new, skipped 0 duplicate(s); 748 total in archive.",
+      "recordsAdded": 94,
+      "duplicatesSkipped": 0,
+      "queriesRun": 3,
+      "queriesFailed": 0,
+      "truncatedQueries": [
+        "The Phoenician Resort and Spa walkthrough",
+        "The Phoenician Resort and Spa resort tour",
+        "The Phoenician Resort and Spa review vlog"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "reportVersion": "web-discovery-v1",
+  "generatedAt": "2026-06-24T20:35:54.944Z",
+  "target": {
+    "propertyName": "The Phoenician Resort and Spa",
+    "location": "Scottsdale, AZ"
+  },
+  "findings": [
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"The Phoenician Resort and Spa\" entertainment",
+      "url": "https://www.facebook.com/groups/americansouthwest/posts/1339189120043892/",
+      "domain": "www.facebook.com",
+      "title": "Phoenix to Sedona hotel recommendations for last day",
+      "snippet": "The Phoenician Resort and Spa. 3y. 2. Profile photo of Nicole. Nicole ... What are the must-see attractions and activities in Sedona, Arizona for ... Read more",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Scottsdale, AZ\" \"The Phoenician Resort and Spa\"",
+      "url": "https://www.facebook.com/groups/2090038354698298/posts/2631323613903100/",
+      "domain": "www.facebook.com",
+      "title": "Four Seasons Scottsdale, AZ with kids?",
+      "snippet": "Has anyone stayed at the Four Seasons Residence club Scottsdale with kids ages 4-16? Just wondering how the pool is? Activities? We normally stay ...",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" entertainment",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1mewaki/best_scottsdale_resort/",
+      "domain": "www.reddit.com",
+      "title": "Best Scottsdale resort",
+      "snippet": "The only downside is there's not a separate spa pool, but the main pool is more relaxed (less party atmosphere) than most other resorts. Read more",
+      "matchedTerms": [
+        "party"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" entertainment",
+      "url": "https://www.reddit.com/r/AskPhoenix/comments/1r0bfp1/solo_adult_trip_to_phoenixscottsdale_resort/",
+      "domain": "www.reddit.com",
+      "title": "Solo adult trip to Phoenix/Scottsdale — resort ...",
+      "snippet": "Nightlife or evening energy — somewhere I can meet people or enjoy a fun scene. If the resort is on Costco Travel, even better! I've stayed at ... Read more",
+      "matchedTerms": [
+        "nightlife",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" entertainment",
+      "url": "https://www.reddit.com/r/hyatt/comments/1q5ayt8/scottsdale_royal_palms_vs_andaz_vs_grand_hyatt/",
+      "domain": "www.reddit.com",
+      "title": "Scottsdale: Royal Palms vs Andaz vs Grand Hyatt",
+      "snippet": "Andaz lovely but in that “Californian image of AZ” kind of way with a club and sceney type vibe. Rooms mid but very proximate to the party. Read more",
+      "matchedTerms": [
+        "vibe",
+        "party"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
+      "url": "https://www.reddit.com/r/chubbytravel/comments/1tleup1/help_with_phoenix_or_scottsdale_resorts/",
+      "domain": "www.reddit.com",
+      "title": "Help with Phoenix or Scottsdale resorts : r/chubbytravel",
+      "snippet": "It's a fun hotel. My kids were 4 and 10 here and loved the water slides and lazy river. They turned the lazy river into a 'club' at night with a ... Read more",
+      "matchedTerms": [
+        "night"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1s02hhz/jw_camelback_vs_desert_ridge_vs_westin_vs/",
+      "domain": "www.reddit.com",
+      "title": "JW Camelback vs Desert Ridge vs Westin vs Phoenician or ...",
+      "snippet": "The Phoenician- especially if you can do the suites is good for families too- got a great kids club and has been recently renovated. Not a huge ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
+      "url": "https://www.reddit.com/r/chubbytravel/comments/1f44xb8/phoenix_area_with_kids_just_before_thanksgiving/",
+      "domain": "www.reddit.com",
+      "title": "Phoenix area with kids just before Thanksgiving",
+      "snippet": "Free kids club. If you're willing to go a little further, dove mountain ritz outside of Tuscon is fantastic. Both have great heated pools. Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
+      "url": "https://www.reddit.com/r/VisitScottsdale/new/",
+      "domain": "www.reddit.com",
+      "title": "r/VisitScottsdale",
+      "snippet": "Does anyone have experience with the Kids Club located there? If my wife ... Is doing a spa/dinner day at The Phoenician without staying there worth it? Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" nightlife",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1m7nzwf/which_hotel_too_many_great_choices/",
+      "domain": "www.reddit.com",
+      "title": "Which hotel? Too many great choices : r/Scottsdale",
+      "snippet": "Depends on what you're looking for… the Phoenician is great if you're looking for a good resort. ... nightlife if you care about doing evenings ... Read more",
+      "matchedTerms": [
+        "nightlife",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" nightlife",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1jxgt9v/omni_at_montelucia_or_biltmore/",
+      "domain": "www.reddit.com",
+      "title": "Omni at Montelucia or Biltmore : r/Scottsdale",
+      "snippet": "We are open to dining on site or off in the evening. Which hotel is better for that? Not looking for a party scene pool-want to be able to get a ... Read more",
+      "matchedTerms": [
+        "party",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" nightlife",
+      "url": "https://www.reddit.com/r/phoenix/comments/1bcpblv/where_to_stay_go_in_phoenix_for_late_20searly_30s/",
+      "domain": "www.reddit.com",
+      "title": "Where to stay /go in Phoenix for late 20's/early 30's gals ...",
+      "snippet": "Cornish Pasty, Pomo, Blanco, Pa'la…too much food to name. Copper Blues for free live music, Crescent Ballroom, The Van Buren for paid shows. Read more",
+      "matchedTerms": [
+        "show",
+        "shows",
+        "music",
+        "live music"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" nightlife",
+      "url": "https://www.reddit.com/r/golf/comments/1rz4g37/golf_resorts_that_are_still_great_for_non_golfing/",
+      "domain": "www.reddit.com",
+      "title": "Golf Resorts that are still great for non golfing spouse",
+      "snippet": "If you have the connections, get on Eastward Ho! For the wife, there is spa, beach, shopping in Chatham, and some good nightlife. Read more",
+      "matchedTerms": [
+        "nightlife"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"The Phoenician Resort and Spa\" \"family review\" \"kids club\"",
+      "url": "https://www.thephoenician.com/family-fun/",
+      "domain": "www.thephoenician.com",
+      "title": "Family Fun",
+      "snippet": "Young guests can delight in interactive activities and educational explorations, while older children and teens can enjoy golf, tennis, and pickleball clinics ... Read more",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"The Phoenician Resort and Spa\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.com/Hotel_Feature-g31350-d1646985-zft12121-The_Canyon_Suites_and_Villas_at_The_Phoenician_a_Luxury_Collection_Resort_Scottsdale.html",
+      "domain": "www.tripadvisor.com",
+      "title": "Is there a kids club at The Canyon Suites and Villas ...",
+      "snippet": "See photos and read reviews for the The Canyon Suites and Villas at The Phoenician, a Luxury Collection Resort, Scottsdale kids club in AZ.",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"The Phoenician Resort and Spa\" \"family review\" \"kids club\"",
+      "url": "https://managedmoms.com/2011/10/resort-review-for-families-the-phoenician/",
+      "domain": "managedmoms.com",
+      "title": "Resort Review for Families - The Phoenician",
+      "snippet": "Oct 11, 2011 — The Phoenician also offers a Funician Kids Club if parents need some adult/spa/business meeting time. My tween liked the room that contained ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"The Phoenician Resort and Spa\" entretenimiento",
+      "url": "https://www.tiktok.com/discover/esty-phoenix-spa",
+      "domain": "www.tiktok.com",
+      "title": "Esty Phoenix Spa",
+      "snippet": "The Phoenician Resort and Spa : Your Ultimate Wellness Retreat in Arizona. ... actividades gay Phoenix, cultura LGBT en Phoenix, espacios inclusivos en Phoenix, ...",
+      "matchedTerms": [
+        "actividad"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Phoenician Resort and Spa\" vs resort entertainment",
+      "url": "https://www.tiktok.com/@rushing2thefront/video/7532623934894656798",
+      "domain": "www.tiktok.com",
+      "title": "Exclusive Review of The Phoenician Resort in Scottsdale",
+      "snippet": "... entertainment : 7 Overall comfort: 8 View: 9 ... Embark on a rejuvenating solo trip at The Phoenician Resort and Spa in Scottsdale, Arizona.",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Phoenician Resort and Spa\" vs resort entertainment",
+      "url": "https://www.scottsdaleone.com/tag/the-phoenician-resort-and-spa/",
+      "domain": "www.scottsdaleone.com",
+      "title": "The Phoenician Resort and Spa Archives - Scottsdale One",
+      "snippet": "The Phoenician Resort and Spa. The Phoenician Resort and Spa Phoenician ... Entertainment · Fashion · Featured Scottsdale Dining · Featured Scottsdale Golf ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Phoenician Resort and Spa\" vs resort entertainment",
+      "url": "https://www.tiktok.com/@thespalover/video/7561981745369845023",
+      "domain": "www.tiktok.com",
+      "title": "Discover the Phoenician Spa Tour in Scottsdale, AZ",
+      "snippet": "For all my girls looking for a solo trip or a wellness vacation in Arizona . Check out The Phoenician Resort and Spa. 10/10☺️ #fyp ...",
+      "matchedTerms": [
+        "disco"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Phoenician Resort and Spa\" compared to entertainment",
+      "url": "https://www.instagram.com/p/DYHemj4Ffdm/",
+      "domain": "www.instagram.com",
+      "title": "If you're going to fall in love with Arizona, do it right. 💎🌵 ...",
+      "snippet": "The Phoenician Resort and Spa in Phoenix isn't just a place to stay ... entertainment, this location makes seasonal living and travel incredibly ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    }
+  ],
+  "queriesRun": 18,
+  "packsRun": 6
+}
