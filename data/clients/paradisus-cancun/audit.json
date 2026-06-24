@@ -15,8 +15,50 @@
   },
   "oneLineThesis": "",
   "coreFinding": "",
-  "platforms": [],
-  "skippedSources": [],
+  "platforms": [
+    {
+      "platformId": "google",
+      "scoreLabel": null,
+      "volume": 12247
+    },
+    {
+      "platformId": "tripadvisor",
+      "scoreLabel": null,
+      "volume": 21613
+    },
+    {
+      "platformId": "booking",
+      "scoreLabel": null,
+      "volume": 165
+    },
+    {
+      "platformId": "expedia",
+      "scoreLabel": null,
+      "volume": 122
+    },
+    {
+      "platformId": "youtube",
+      "scoreLabel": null,
+      "volume": 127
+    }
+  ],
+  "skippedSources": [
+    {
+      "platformId": "reddit",
+      "kind": "blocked",
+      "reason": "Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google index) instead."
+    },
+    {
+      "platformId": "blogs",
+      "kind": "not_applicable",
+      "reason": "Travel-blog and editorial mentions are captured via open-web discovery (SERP), not a dedicated native-blogs capture."
+    },
+    {
+      "platformId": "aerial_satellite",
+      "kind": "not_applicable",
+      "reason": "Aerial/satellite context belongs to the fresh-property browser-capture flow, not the captured-review audit."
+    }
+  ],
   "evidence": [],
   "venues": [],
   "segments": [],
