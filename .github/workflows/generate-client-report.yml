@@ -16,6 +16,8 @@
 name: generate-client-report
 run-name: "client-report: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
 on:
+  # Dispatched standalone by the Worker (/api/client-report) AND called as a
+  # reusable step by scaffold.yml so one New Audit runs the whole pipeline.
   workflow_dispatch:
     inputs:
       slug:
@@ -38,6 +40,26 @@ on:
         default: ''
       dateTo:
         description: 'Analyze only reviews on/before YYYY-MM-DD (optional)'
+        required: false
+        type: string
+        default: ''
+  workflow_call:
+    inputs:
+      slug:
+        required: true
+        type: string
+      actorEmail:
+        required: true
+        type: string
+      splitDate:
+        required: false
+        type: string
+        default: ''
+      dateFrom:
+        required: false
+        type: string
+        default: ''
+      dateTo:
         required: false
         type: string
         default: ''

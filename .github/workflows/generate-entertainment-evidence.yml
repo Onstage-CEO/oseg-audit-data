@@ -12,6 +12,8 @@
 name: generate-entertainment-evidence
 run-name: "entertainment-evidence: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
 on:
+  # Dispatched standalone by the Worker (/api/entertainment-evidence) AND called as
+  # a reusable step by scaffold.yml so one New Audit runs the whole pipeline.
   workflow_dispatch:
     inputs:
       slug:
@@ -24,6 +26,18 @@ on:
         type: string
       maxReviews:
         description: 'Cap rendered reviews for shippability (the TRUE total is still shown)'
+        required: false
+        type: string
+        default: '1000'
+  workflow_call:
+    inputs:
+      slug:
+        required: true
+        type: string
+      actorEmail:
+        required: true
+        type: string
+      maxReviews:
         required: false
         type: string
         default: '1000'

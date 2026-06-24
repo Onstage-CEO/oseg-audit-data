@@ -14,6 +14,8 @@
 name: capture
 run-name: "capture: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
 on:
+  # Dispatched standalone by the Worker (/api/capture) AND called as a reusable
+  # step by scaffold.yml so one New Audit runs the whole pipeline. Inputs mirror.
   workflow_dispatch:
     inputs:
       slug:
@@ -22,6 +24,14 @@ on:
         type: string
       actorEmail:
         description: 'Access-verified email of the requesting user'
+        required: true
+        type: string
+  workflow_call:
+    inputs:
+      slug:
+        required: true
+        type: string
+      actorEmail:
         required: true
         type: string
 

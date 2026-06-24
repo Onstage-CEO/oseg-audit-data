@@ -52,12 +52,6 @@ on:
         required: true
         type: string
 
-# One scaffold at a time repo-wide: serializes the commit+push and makes
-# same-slug races lose cleanly at the existing-directory check.
-concurrency:
-  group: scaffold
-  cancel-in-progress: false
-
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
   ENGINE_REF: bf4c1042303bc33e3cae30239e40538625d068ed
@@ -68,6 +62,14 @@ permissions:
 jobs:
   scaffold:
     runs-on: ubuntu-latest
+    # Repo-wide lock on the SCAFFOLD COMMIT ONLY (serializes commit+push, makes
+    # same-slug races lose cleanly at the existing-directory check). This is at the
+    # JOB level, not the workflow, so the lock releases after the ~60s scaffold —
+    # NOT held for the full ~10-min capture→…→evidence chain below. Two different
+    # resorts can therefore audit concurrently; only the scaffold commits serialize.
+    concurrency:
+      group: scaffold
+      cancel-in-progress: false
     outputs:
       slug: ${{ steps.commit.outputs.slug }}
     steps:
@@ -153,13 +155,67 @@ jobs:
           echo "### Scaffolded \`${slug}\`" >> "$GITHUB_STEP_SUMMARY"
           echo "Requested by: ${ACTOR_EMAIL}" >> "$GITHUB_STEP_SUMMARY"
 
-  # GITHUB_TOKEN pushes never fire the push trigger, so a fresh workspace
-  # would sit without a verify-report.json — call status explicitly instead.
-  status:
+  # One button = the whole audit. Scaffolding alone left an EMPTY workspace that
+  # silently waited for a manual "Run deep capture" click — the begin button that
+  # didn't begin. New Audit now runs the FULL pipeline server-side, sequentially,
+  # so the user comes back to a finished audit:
+  #   scaffold → capture → brief → client report → entertainment evidence
+  # Sequential (each `needs` the previous) so per-slug commits never race; each
+  # reusable workflow refreshes verify (status.yml) where relevant. The standalone
+  # /api/capture, /api/brief, … endpoints still work for re-running any one step.
+  # Every job also `needs: scaffold` to read its slug output. A downstream failure
+  # stops the chain but leaves every already-committed step intact.
+  capture:
     needs: scaffold
-    uses: ./.github/workflows/status.yml
+    uses: ./.github/workflows/capture.yml
     with:
       slug: ${{ needs.scaffold.outputs.slug }}
+      actorEmail: ${{ inputs.actorEmail }}
+    secrets: inherit
+    permissions:
+      contents: write
+
+  # brief / report / evidence run SEQUENTIALLY (each `needs` the previous) so their
+  # per-slug commits never race — but their SUCCESS is decoupled: each gates only on
+  # `capture` succeeding (the one real data dependency, the review corpus), via
+  # `if: always() && needs.capture.result == 'success'`. So a missing ANTHROPIC_API_KEY
+  # that fails the (LLM) report no longer also kills the deterministic evidence doc;
+  # evidence still builds. `always()` lets a job run even when the PRIOR sibling failed,
+  # while the capture gate keeps everything skipped if there is no corpus to work on.
+  brief:
+    needs: [scaffold, capture]
+    if: ${{ needs.capture.result == 'success' }}
+    uses: ./.github/workflows/generate-brief.yml
+    with:
+      slug: ${{ needs.scaffold.outputs.slug }}
+      actorEmail: ${{ inputs.actorEmail }}
+    secrets: inherit
+    permissions:
+      contents: write
+
+  report:
+    needs: [scaffold, capture, brief]
+    if: ${{ always() && needs.capture.result == 'success' }}
+    uses: ./.github/workflows/generate-client-report.yml
+    with:
+      slug: ${{ needs.scaffold.outputs.slug }}
+      actorEmail: ${{ inputs.actorEmail }}
+      # Renovation date drives the report's pre/post split + the post-reno case
+      # examples; the analysis window (if any) is carried through too.
+      splitDate: ${{ inputs.renovationDate }}
+      dateFrom: ${{ inputs.dateFrom }}
+      dateTo: ${{ inputs.dateTo }}
+    secrets: inherit
+    permissions:
+      contents: write
+
+  evidence:
+    needs: [scaffold, capture, report]
+    if: ${{ always() && needs.capture.result == 'success' }}
+    uses: ./.github/workflows/generate-entertainment-evidence.yml
+    with:
+      slug: ${{ needs.scaffold.outputs.slug }}
+      actorEmail: ${{ inputs.actorEmail }}
     secrets: inherit
     permissions:
       contents: write
