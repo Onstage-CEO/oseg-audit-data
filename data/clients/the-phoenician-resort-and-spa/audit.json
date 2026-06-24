@@ -10,7 +10,10 @@
     "renovationDate": "2017-10-06",
     "dateRange": {
       "from": "2017-10-06"
-    }
+    },
+    "yelpUrl": "https://www.yelp.com/biz/the-phoenician-a-luxury-collection-resort-scottsdale-scottsdale",
+    "instagramUrl": "https://www.instagram.com/phoenicianscottsdale/",
+    "facebookUrl": "https://www.facebook.com/PhoenicianScottsdale/"
   },
   "oneLineThesis": "",
   "coreFinding": "",
