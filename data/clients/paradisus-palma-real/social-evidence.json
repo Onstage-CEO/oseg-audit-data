@@ -1,15 +1,305 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-06-23T23:10:18.740Z",
+  "generatedAt": "2026-06-24T02:20:55.690Z",
   "findings": [
     {
-      "sourceId": "tiktok",
+      "sourceId": "instagram",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@jacqui_travels/video/7650640108760173837",
-      "domain": "tiktok.com",
-      "title": "jacqui_travels",
-      "snippet": "This is the Paradisus Palma Real ! A resort with great food, great beach, and perfect for the whole family! Would you stay here? \n\nSave this video for planning your next trip to Punta Cana. Follow along for more luxury hotels reviews and tours from a travel agent who has actually been to these resorts. \n\n#puntacana #allinclusive #paradisuspalmareal #dreamvaction #traveladvisor",
+      "url": "https://www.instagram.com/p/DYz5-bFx46c/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Currently collecting calm in all its prettiest forms. \n\n#paradisuspalmareal #paradisusbymelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DZId55Np7a9/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "There are places that entertain you, and places that restore you. \n\n#ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DYfCCvADVbX/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Some days are for plans. Others are for being pretty and peaceful by the sea. \n\n#paradisusbymeliá #paradisuspalmareal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DZgUqF2jerR/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Rest begins when the environment stops demanding and starts supporting.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DY-NwRzkS1K/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "This mood? Keep it all season. \n\n#paradisuspalmareal #paradisusbymelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DZX-jynJwmg/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "For evenings shaped by connection, comfort, and the kind of luxury that feels personal.\n\n#ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DZRBkb_t86o/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Every shoreline deserves an entrance like this. \n\n#ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DZu27LHOzKZ/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "A treatment like this only works when the care behind it is just as good. \n\n#ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DZ2y_x3OsSZ/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Not every notification changes your mood, but this one does. \n\n#ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DXwfpQwlLFt/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Where the destination becomes part of your game.\n\nStep onto the greens of Cocotal Golf & Country Club and elevate your stay.\n\nPlan your round at cocotalgolfclub.com @cocotalgolfbymelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DWPfBHgklFX/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Moments that feel like they were made just for you. #ParadisusPalmaReal #MomentsToTreasure",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DXFg3f0Eleb/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Experience elevated comfort at The Reserve Adults Only Junior Suite Garden View.\n\nA spacious suite with a private terrace and garden surroundings, created for adults seeking a more refined stay. #ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DZnfY3_JwtQ/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Focus turns a simple action into a full experience. \n\n#ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DXkMwkbFLiu/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Start the day by the sea, wander through lush gardens, discover new experiences… and end it all at Plaza Colonial as the sun goes down 🌴\n\nThis is how a day unfolds at #ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DXeZ-M5kmgQ/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Crafted by the destination.\n\nShaped by the colors, the rhythm, and the stories of Punta Cana.\n\n#ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DYNgRl1D-5m/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Spaces that invite you to wander a little slower. ✨ #ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DW1yWxAjtnA/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Designed for connection. Set in the heart of Punta Cana.\n\nDiscover event spaces at Paradisus Palma Real where every detail inspires memorable gatherings. #ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DWmkw-nEcYa/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "From early morning yoga by the beach to relaxed afternoons by the pool, every moment at #ParadisusPalmaReal is designed to bring balance back into your day. 📸 @jennymanceraf #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DWjXgM_jWgT/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "A space where architecture, art, and nature come together to create a true sense of arrival.\n\nWelcome to Paradisus Palma Real.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DWHoafZkbJd/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "A journey of flavors, all in one destination.\n\nAt Paradisus Palma Real, your table takes you around the world, from Asian flavors and authentic Italian dishes to refined steakhouse dining and fresh Caribbean-inspired cuisine. \n\nDesigned to be explored, one evening at a time. #ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DXaAcwkFFb5/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Where every moment feels easy, and every view feels like a postcard. 📸 @laila_elnaggar #ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DVRBjR3kXJY/",
+      "domain": "instagram.com",
+      "title": "kannabeachclubpc",
+      "snippet": "Donde el Caribe en Punta Cana se disfruta sin prisa.\n\nBali beds frente al mar y el ambiente único de Kanna Beach Club. 🌴\n\nReserva tu experiencia y encuentra más información en el link en bio.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DVtwpnTEU0N/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Stay active while you escape to paradise. \n\nAt Paradisus Palma Real, wellness flows naturally, with a modern fitness center, weight training machines, and a serene studio space designed for mindful movement.\n\nMorning cardio. Afternoon strength. Sunset stretch.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DVeppFBkbeJ/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Where family memories begin. 🤍\n\nDiscover Paradisus Palma Real, an all-inclusive resort in Punta Cana made for every generation. 🌴",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DV1t8MBjuL3/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "The Reserve Presidential Suite Ocean Front invites you to wake up to the Caribbean, unwind in your private terrace hot tub, and experience the elevated world of The Reserve at Paradisus Palma Real.\n\nTwo bedrooms, expansive living spaces, and a front-row seat to paradise.\n\nBecause some escapes are meant to feel truly extraordinary. #ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DW9EtsHDWX8/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Wellness, redefined.\n\nJoin us for SUDA Experience at Paradisus Palma Real\n🗓 May 28 - 30\n\nYoga, meditation, movement, and nature, curated into one immersive journey.\n\nReady to reconnect?\n\n#ParadisusPalmaReal #SUDA #WellnessEscape",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DVjli2ejrIp/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "This is where it all connects. 🤍\n\nPlaza Colonial, the heart of Paradisus Palma Real in Punta Cana.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DX_4PcdFdtF/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "Some mornings are meant to be savored slowly. #ParadisusPalmaReal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DV_6SNcCZpa/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "A day by the pool…\nOr a day by the sea?\n\nAt Paradisus Palma Real, your only decision is how you want to unwind. #ParadisusPalmaReal #ParadisusByMelia",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.instagram.com/p/DYmwFgPFDQ2/",
+      "domain": "instagram.com",
+      "title": "paradisus.palmareal",
+      "snippet": "This is what “do not disturb” should actually feel like\n\n#paradisusbymeliá #paradisuspalmareal",
       "matchedTerms": []
     },
     {
@@ -26,10 +316,50 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@jacqui_travels/video/7650640108760173837",
+      "domain": "tiktok.com",
+      "title": "jacqui_travels",
+      "snippet": "This is the Paradisus Palma Real ! A resort with great food, great beach, and perfect for the whole family! Would you stay here? \n\nSave this video for planning your next trip to Punta Cana. Follow along for more luxury hotels reviews and tours from a travel agent who has actually been to these resorts. \n\n#puntacana #allinclusive #paradisuspalmareal #dreamvaction #traveladvisor",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
       "url": "https://www.tiktok.com/@jacqui_travels/video/7649941609311767821",
       "domain": "tiktok.com",
       "title": "jacqui_travels",
       "snippet": "The Master Suite Deluxe at the Paradisus Palma Real !!! One of many things Paradisus does right are these rooms! So spacious !\n\nHi I’m Jacqui and I’m a travel advisor focusing in all inclusive resorts and private luxury villas. I have a great relationship with the team at the Meliá resorts in Punta Cana. If you’re interested in booking with me my contact information is in my bio. \n\n#paradisuspalmareal #paradisuspalmarealresort #roomtour #meliaparadisus #allinclusive",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@thedominiquemonee/video/7653976123885309198",
+      "domain": "tiktok.com",
+      "title": "thedominiquemonee",
+      "snippet": "The rooms at @Paradisus by Melia get a solid 10/10, no complaints at all. I’ll give yall a review of the overall resort if yall want. Just let me know 🩷\n\n#puntacana #dominicanrepublic #allinclusiveresort #familyvacation #vacations",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@ashli.mah/video/7640247820401872142",
+      "domain": "tiktok.com",
+      "title": "ashli.mah",
+      "snippet": "Here’s your sign to leave your kiddo(s) at home and spend solo time together. If that feels like a big step- they’re also a family friendly friendly resort 🙃 Paradisus Palma Real in Punta Cana was an absolute dream and we never had to leave the resort 🥰 Definitely add this one to the list as your planning an adults only or a family trip this summer! #ugccreator #ugcexample #travelvlog #blackugccreator",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@justinlowtan/video/7649081333184089358",
+      "domain": "tiktok.com",
+      "title": "justinlowtan",
+      "snippet": "day 1 at paradisus palma real! 🛬\n\n#paradisuspalmareal \n#puntacana \n#dominicanrepublic",
       "matchedTerms": []
     },
     {
@@ -56,10 +386,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@maciel.castillo0/video/7651290608115436831",
+      "url": "https://www.tiktok.com/@justinlowtan/video/7650255096210590989",
       "domain": "tiktok.com",
-      "title": "maciel.castillo0",
-      "snippet": "🌴✨ ¿Te imaginas despertar aquí? ✨🌴\n\nParadisus Palma Real Punta Cana no es solo un hotel, es el destino donde los sueños se hacen realidad. 🏝️☀️\n\nHoy lo ves en video, mañana puedes estar disfrutándolo en persona. 💎✈️\n\n🔥 Trabaja por tus metas.\n🔥 Cree en tu potencial.\n🔥 Vive la experiencia que mereces.\n\nViaje Salvaje 2026 está cada vez más cerca. ¿Serás uno de los próximos ganadores? 🌊🌴🇩🇴\n\n#ViajeSalvaje2026 #PuntaCana #ParadisusPalmaReal #Kromasol #SueñaEnGrande     @Armando Tovar",
+      "title": "justinlowtan",
+      "snippet": "🌅 paradisus palma real golf & spa resort! 🏖️\n\n#paradisuspalmareal \n#puntacana \n#dominicanrepublic",
       "matchedTerms": []
     },
     {
@@ -76,50 +406,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@justinlowtan/video/7649081333184089358",
+      "url": "https://www.tiktok.com/@bekka_xx0/video/7644208687027981582",
       "domain": "tiktok.com",
-      "title": "justinlowtan",
-      "snippet": "day 1 at paradisus palma real! 🛬\n\n#paradisuspalmareal \n#puntacana \n#dominicanrepublic",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@justinlowtan/video/7650255096210590989",
-      "domain": "tiktok.com",
-      "title": "justinlowtan",
-      "snippet": "🌅 paradisus palma real golf & spa resort! 🏖️\n\n#paradisuspalmareal \n#puntacana \n#dominicanrepublic",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@ashli.mah/video/7640247820401872142",
-      "domain": "tiktok.com",
-      "title": "ashli.mah",
-      "snippet": "Here’s your sign to leave your kiddo(s) at home and spend solo time together. If that feels like a big step- they’re also a family friendly friendly resort 🙃 Paradisus Palma Real in Punta Cana was an absolute dream and we never had to leave the resort 🥰 Definitely add this one to the list as your planning an adults only or a family trip this summer! #ugccreator #ugcexample #travelvlog #blackugccreator",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@level21ask/video/7642294420561218836",
-      "domain": "tiktok.com",
-      "title": "level21ask",
-      "snippet": "Paradisus Palma Real, The Reserved Adults Only Breakfast Buffet",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@rileejsmith/video/7600213372952448286",
-      "domain": "tiktok.com",
-      "title": "rileejsmith",
-      "snippet": "Room tour!! 👏🏼🌴 Here’s a full tour of my swim-up suite at the all-inclusive Paradisus Palma Real resort in Punta Cana! #allinclusive\n\n🛌 Room Type: The Reserve Adults Only Junior Suite Swim-Up\n💵 Cost: $456/night including taxes | My dates: Jan. 20-24, 2026\n✨ Included: Drinks + food at the all inclusive resort, special Reserve / Adults-Only access to additional pools and restaurants, private concierge. \n\n#vacation #puntacana #swimuproom #dominicanrepublic🇩🇴 | all inclusive resort swim up room",
+      "title": "bekka_xx0",
+      "snippet": "Piña coladas in the DR sounded too good to pass up #puntacana #paradisuspalmareal #allinclusive #pinacolada #fyp",
       "matchedTerms": []
     },
     {
@@ -136,30 +426,20 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@mariagabrielabravog/video/7633559128627072276",
-      "domain": "tiktok.com",
-      "title": "mariagabrielabravog",
-      "snippet": "Almorzando hoy en el Paradisus Palma Real de Punta Cana 🍽️ ☀️  #puntacana #paradisuspalmareal #meliaresort",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@rileejsmith/video/7602420812536155422",
+      "url": "https://www.tiktok.com/@rileejsmith/video/7600213372952448286",
       "domain": "tiktok.com",
       "title": "rileejsmith",
-      "snippet": "Replying to @gonzosfanclub Rating everything I ate at my all-inclusive in Punta Cana! 🍧🌴 \n\nI stayed at the Paradisus Palma Real all-inclusive resort in Punta Cana\n💵 My Cost: $456/night including taxes | Dates: Jan. 20-24, 2026\n*Non-spon! I paid for everything myself!\n\nEvery single thing in this video was included in my all-inclusive rate, including the drinks and dinners!\n\n#allinclusive #puntacana #dominicanrepublic #resort #vacation",
+      "snippet": "Room tour!! 👏🏼🌴 Here’s a full tour of my swim-up suite at the all-inclusive Paradisus Palma Real resort in Punta Cana! #allinclusive\n\n🛌 Room Type: The Reserve Adults Only Junior Suite Swim-Up\n💵 Cost: $456/night including taxes | My dates: Jan. 20-24, 2026\n✨ Included: Drinks + food at the all inclusive resort, special Reserve / Adults-Only access to additional pools and restaurants, private concierge. \n\n#vacation #puntacana #swimuproom #dominicanrepublic🇩🇴 | all inclusive resort swim up room",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@chalatours.rd/video/7645797647130922247",
+      "url": "https://www.tiktok.com/@level21ask/video/7642294420561218836",
       "domain": "tiktok.com",
-      "title": "chalatours.rd",
-      "snippet": "Desde su espectacular lobby con vista a la piscina y al mar, hasta sus amplias suites, excelente gastronomía y la privilegiada ubicación en Playa Bávaro, cada rincón invita a desconectarse y disfrutar.\n\nUn resort ideal para quienes buscan comodidad, buen servicio y momentos inolvidables en el Caribe. ☀️🌊\n\n¿Te gustaría despertar aquí? 😍\n\n📲 Reserva con Chala Tours\n📞 829-707-0233\n\n✈️ Vive la experiencia con Chala Tours\n\n#ParadisusPalmaReal #PlayaBavaro #PuntaCana #ResortFamiliar #LuxuryResort",
+      "title": "level21ask",
+      "snippet": "Paradisus Palma Real, The Reserved Adults Only Breakfast Buffet",
       "matchedTerms": []
     },
     {
@@ -176,20 +456,40 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@tripswithkatelyn/video/7610390002668670228",
+      "url": "https://www.tiktok.com/@rileejsmith/video/7602420812536155422",
       "domain": "tiktok.com",
-      "title": "tripswithkatelyn",
-      "snippet": "Paradisus Palma Real Golf & Spa Resort is calling your name.\n\nMarch 31 | 7 Nights\nFrom Toronto\n2 Adults\nJunior Suite Garden View – Adults Only\n$2,465 per person ($4,930 total)\n\nIf you’ve been waiting for the perfect excuse to escape to Punta Cana, this is it. Seven nights of luxury, incredible food, white sand beaches, and adults-only relaxation.\n\nHere’s why this one stands out:\n\n✔ Adults-Only Section – quieter atmosphere, elevated service, perfect for couples\n✔ Beautiful Bavaro Beach location with calm, swimmable turquoise water\n✔ Multiple à la carte restaurants + premium drinks included\n✔ Stunning pools and modern tropical design throughout\n✔ YHI Spa for full relaxation mode\n✔ Access to Cocotal Golf & Country Club – a gorgeous 27-hole course. Complimentary green fees are typically included (cart fees extra), which is a huge perk if you or your partner love to golf\n\nThis is such a good option for couples wanting luxury without going over the top on price. March weather in Punta Cana is perfect, and these rates do not stick around.\n\nIf you’re thinking about it, message me and let’s secure it before it’s gone. #traveladvisor #traveladvisorlife #travelplanning #TravelAdvisor #vacationmode",
+      "title": "rileejsmith",
+      "snippet": "Replying to @gonzosfanclub Rating everything I ate at my all-inclusive in Punta Cana! 🍧🌴 \n\nI stayed at the Paradisus Palma Real all-inclusive resort in Punta Cana\n💵 My Cost: $456/night including taxes | Dates: Jan. 20-24, 2026\n*Non-spon! I paid for everything myself!\n\nEvery single thing in this video was included in my all-inclusive rate, including the drinks and dinners!\n\n#allinclusive #puntacana #dominicanrepublic #resort #vacation",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@time.to.travel.wi7/video/7588243330799078711",
+      "url": "https://www.tiktok.com/@findingfrancesca_/video/7641965864341835021",
       "domain": "tiktok.com",
-      "title": "time.to.travel.wi7",
-      "snippet": "🌴✨ Punta Cana Luxury All-Inclusive Getaway ✨🌴\nBeachfront elegance with incredible value!\n\n🏨 Paradisus Palma Real Golf & Spa Resort – All-Inclusive\n📍 Punta Cana, Dominican Republic\n📅 Feb 22–28, 2026 (6 nights)\n✈️ Roundtrip flights to Punta Cana (PUJ)\n👫 2 Adults | 1 Room\n\n💰 Total Package: $5,007.13\n💸 Package Savings: $1,990.22\n➡️ Average per person: $2,503.57\n⚠️ Prices subject to change | Limited availability\n\nExpect lush tropical grounds, white-sand beaches, world-class dining, a full-service spa, and championship golf—perfect for couples who want luxury with plenty to do.\n\n📩 DM me “PUNTA CANA” to lock in this deal\n✈️ I’ll take care of the details while you enjoy the countdown to paradise!\n\n#ParadisusPalmaReal #PuntaCanaVacation #AllInclusiveLuxury #CaribbeanGetaway #CouplesTravel     🌊✨",
+      "title": "findingfrancesca_",
+      "snippet": "my morning at @paradisus.palmareal \n@paradisusbymelia \n\nThe older I get the more I understand why people disappear to islands lol \n\nI used to think travel had to look a certain way to “count.” Meaning it needed to have full itineraries, waking up at sunrise to see everything, walking 20,000 steps a day to see the whole city, museums, tours, constantly moving. \n\nLately I’m realizing there’s something special about slowing down too. A slow morning in Punta Cana, eating breakfast outside, hearing the ocean, spending uninterrupted time with my husband, being present without worrying about what’s next.\n\nI used to kind of look down on all inclusive resorts because I thought “real travel” had to be nonstop exploring and experiencing the culture. But now I take it all back lmao I fully understand the appeal of going somewhere warm and peaceful just to rest, recharge, and enjoy life a little softer for a few days.\n\nSo if y’all eventually see me being apart of the great migration from nj to florida or disappearing to an island somewhere……don’t act surprised 😂\n\n#PuntaCana #DominicanRepublic #TravelCreator #LuxuryTravel CaribbeanTravel",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@mariagabrielabravog/video/7633052629626637589",
+      "domain": "tiktok.com",
+      "title": "mariagabrielabravog",
+      "snippet": "Por aquí una fiel amante de Punta Cana y del Paradisus Palma Real PC 🙋🏽‍♀️🌴🥥🌊\n#puntacana #republicadominicana🇩🇴 #meliaresort",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@tripswithkatelyn/video/7610390002668670228",
+      "domain": "tiktok.com",
+      "title": "tripswithkatelyn",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort is calling your name.\n\nMarch 31 | 7 Nights\nFrom Toronto\n2 Adults\nJunior Suite Garden View – Adults Only\n$2,465 per person ($4,930 total)\n\nIf you’ve been waiting for the perfect excuse to escape to Punta Cana, this is it. Seven nights of luxury, incredible food, white sand beaches, and adults-only relaxation.\n\nHere’s why this one stands out:\n\n✔ Adults-Only Section – quieter atmosphere, elevated service, perfect for couples\n✔ Beautiful Bavaro Beach location with calm, swimmable turquoise water\n✔ Multiple à la carte restaurants + premium drinks included\n✔ Stunning pools and modern tropical design throughout\n✔ YHI Spa for full relaxation mode\n✔ Access to Cocotal Golf & Country Club – a gorgeous 27-hole course. Complimentary green fees are typically included (cart fees extra), which is a huge perk if you or your partner love to golf\n\nThis is such a good option for couples wanting luxury without going over the top on price. March weather in Punta Cana is perfect, and these rates do not stick around.\n\nIf you’re thinking about it, message me and let’s secure it before it’s gone. #traveladvisor #traveladvisorlife #travelplanning #TravelAdvisor #vacationmode",
       "matchedTerms": []
     },
     {
@@ -216,30 +516,20 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@riendoconlucas4/video/7546983081190722871",
+      "url": "https://www.tiktok.com/@fitabo06/video/7606984268752948487",
       "domain": "tiktok.com",
-      "title": "riendoconlucas4",
-      "snippet": "Hola, soy Lucas! Tengo 9 meses y me divertí mucho en la piscina del Paradisus Palma Real. Agua fresquita, risas, juegos y abrazos con mami. Vacaciones inolvidables en un paraíso de alegría tropical!!!",
+      "title": "fitabo06",
+      "snippet": "Leader K wrote:\n\nParadise 🏝️ is waiting for us ahead. 🙌❤️\n\nToday we are flying to Dominican Republic 🇩🇴 ALL EXPENSES PAID by FOREVER. Our Resort name is Paradisus Palma Real Golf & Spa Resort, in Punta Cana. Forever do only 5* and above! \n\nWe will be taking 3 flights with total of over 20 hours on Air! \n\nI am Grateful to be able to travel BUSINESS CLASS. This doesn’t come cheap so it is a blessing to be able to get to experience this.\n\nLet me plug you\n0796324374",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@hidden.gem.luxury8/video/7491432414191914282",
+      "url": "https://www.tiktok.com/@time.to.travel.wi7/video/7588243330799078711",
       "domain": "tiktok.com",
-      "title": "hidden.gem.luxury8",
-      "snippet": "Paradisus Palma Real Golf & Spa Resort \n📍 Punta Cana, DR\n#hiddengemluxurytravel #luxurylifestyle  #luxurytravel  #luxurytraveladvisor  #LuxuryLiving  #bookwithme💋",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@annazamakhina/video/7579803872550554892",
-      "domain": "tiktok.com",
-      "title": "annazamakhina",
-      "snippet": "Bavaro Beach at sunrise near the hotel #paradisuspalmareal",
+      "title": "time.to.travel.wi7",
+      "snippet": "🌴✨ Punta Cana Luxury All-Inclusive Getaway ✨🌴\nBeachfront elegance with incredible value!\n\n🏨 Paradisus Palma Real Golf & Spa Resort – All-Inclusive\n📍 Punta Cana, Dominican Republic\n📅 Feb 22–28, 2026 (6 nights)\n✈️ Roundtrip flights to Punta Cana (PUJ)\n👫 2 Adults | 1 Room\n\n💰 Total Package: $5,007.13\n💸 Package Savings: $1,990.22\n➡️ Average per person: $2,503.57\n⚠️ Prices subject to change | Limited availability\n\nExpect lush tropical grounds, white-sand beaches, world-class dining, a full-service spa, and championship golf—perfect for couples who want luxury with plenty to do.\n\n📩 DM me “PUNTA CANA” to lock in this deal\n✈️ I’ll take care of the details while you enjoy the countdown to paradise!\n\n#ParadisusPalmaReal #PuntaCanaVacation #AllInclusiveLuxury #CaribbeanGetaway #CouplesTravel     🌊✨",
       "matchedTerms": []
     },
     {
@@ -256,6 +546,26 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@hidden.gem.luxury8/video/7491432414191914282",
+      "domain": "tiktok.com",
+      "title": "hidden.gem.luxury8",
+      "snippet": "Paradisus Palma Real Golf & Spa Resort \n📍 Punta Cana, DR\n#hiddengemluxurytravel #luxurylifestyle  #luxurytravel  #luxurytraveladvisor  #LuxuryLiving  #bookwithme💋",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@theeplanningconcierge/video/7407907197360819489",
+      "domain": "tiktok.com",
+      "title": "theeplanningconcierge",
+      "snippet": "Planning a trip to Punta Cana? 🌴 Here are 4 resorts to consider:\n\n1. Paradisus Palma Real Golf & Spa Resort: This luxurious resort offers world-class golf, a serene spa, and stunning ocean views.\n\n2. Live Aqua Beach Resort: Indulge in ultimate relaxation at this adults-only resort with its innovative hydrotherapy circuit and gourmet dining.\n\n3. Excellence Paradise: Experience beachfront bliss at this all-inclusive resort featuring luxurious suites, gourmet dining, and a vibrant nightlife.\n\n4. Excellence El Carmen: Discover a secluded paradise at this adults-only resort with its pristine beach, gourmet dining, and exclusive amenities.\n\nWhich resort would you choose? Let us know in the comments! \n\n#puntacana #dominicanrepublic #resort #vacation #travelgoals #luxurytravel #beachlife #allinclusive #travelgram #dr #eventplanner #eventplanning #theeplanningconcierge #theplanningconcierge #tpc",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
       "url": "https://www.tiktok.com/@marvelousdreamsva/video/7611398306672938253",
       "domain": "tiktok.com",
       "title": "marvelousdreamsva",
@@ -266,10 +576,20 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@anamigenes/video/7559292315219627319",
+      "url": "https://www.tiktok.com/@annazamakhina/video/7579803872550554892",
       "domain": "tiktok.com",
-      "title": "anamigenes",
-      "snippet": "Book your wedding group at Paradisus Palma Real and earn up to $1,500 in total rewards!\n✨ $500 bonus credit for 26+ paid rooms\n✨ $1,000 VIP Reward credit for 75+ paid room nights\nUse your rewards for room upgrades, standout events, or flight credits - the choice is yours!\n💫 And the best part? I can help you plan your wedding for FREE!\n\n🏖️ This offer also applies to:\nParadisus Palma Real\nMajestic Costa Mujeres\nMajestic Elegance Punta Cana\nParadisus Playa Del Carmen\n...and more dream destinations!\n\n📅 Book by October 31, 2025 - don’t miss this limited-time offer.\n\n💬 Comment “INFO” below and I’ll reach out with more details or message me directly!\n\n#DestinationWedding #2026Brides #CaribbeanWedding #MexicoWedding #luxuryresort",
+      "title": "annazamakhina",
+      "snippet": "Bavaro Beach at sunrise near the hotel #paradisuspalmareal",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Paradisus Palma Real",
+      "url": "https://www.tiktok.com/@riendoconlucas4/video/7546983081190722871",
+      "domain": "tiktok.com",
+      "title": "riendoconlucas4",
+      "snippet": "Hola, soy Lucas! Tengo 9 meses y me divertí mucho en la piscina del Paradisus Palma Real. Agua fresquita, risas, juegos y abrazos con mami. Vacaciones inolvidables en un paraíso de alegría tropical!!!",
       "matchedTerms": []
     },
     {
@@ -281,28 +601,8 @@
       "title": "sylviecharetteaquaterra",
       "snippet": "✨ Vivez le luxe les pieds dans le sable à Punta Cana! ✨\n\n🏝️ Offrez-vous des vacances inoubliables au Paradisus Palma Real Golf & Spa Resort 5★!\nSitué directement sur la splendide plage de Bávaro, cet hôtel prestigieux vous promet :\n✅ Des piscines magnifiques pour vous détendre\n✅ Du golf à volonté au Cocotal Golf Course & Country Club\n✅ Des activités uniques pour tous les goûts\n✅ Un cadre de rêve pour des vacances de pur bonheur\n\n🌴 Le luxe, le confort et la détente vous attendent ici!\n\n📩 Contactez-moi dès maintenant pour réserver vos vacances de rêve au Paradisus Palma Real avant qu’il ne soit trop tard!\n📞 819-446-0332\n📧 sylviecharette@voyagesaquaterra.com",
       "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@exclusivehotelpuntacana/video/7457000308422577413",
-      "domain": "tiktok.com",
-      "title": "exclusivehotelpuntacana",
-      "snippet": "Reserva Paradisus Palma Real | Ofertas de 20 %\nHoteles en ubicaciones privilegiadas. #puntacana #vacation #travel",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Paradisus Palma Real",
-      "url": "https://www.tiktok.com/@chelsieskitchenfriends/video/7356789421854690603",
-      "domain": "tiktok.com",
-      "title": "chelsieskitchenfriends",
-      "snippet": "Days 1 & 2 of this amazing trip to Punta Cana have been amazing!! @Pampered Chef has outdone themsleves at the gorgeous Paradisus Palma Real resort for our 2023 Incentive Trip! This trip was earned through hard work & amazing support from my friends, customers & hosts! I couldnt do this amazing job without each of you!! #pamperedvacay #travelpc  #heykitchenfriends  #beachvibes #vacation #blessedbypc #letsgetcooking",
-      "matchedTerms": []
     }
   ],
-  "queriesRun": 30,
+  "queriesRun": 60,
   "packsRun": 1
 }
