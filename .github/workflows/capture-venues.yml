@@ -1,0 +1,119 @@
+# Capture per-VENUE reviews (hosted) — a property's named outlets.
+#
+# Runs the engine's capture-venues for one workspace: each venue in audit.json
+# venues[] with a yelpUrl is captured via Apify Yelp into captures-raw/venue-*.json.
+# These are a SEPARATE labeled layer (loadVenueReviews) and NEVER blend into the
+# resort rating (loadReviewCorpus ignores the venue- prefix). Engine pinned.
+
+name: capture-venues
+run-name: "capture-venues: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Workspace slug'
+        required: true
+        type: string
+      actorEmail:
+        description: 'Access-verified email of the requesting user'
+        required: true
+        type: string
+
+concurrency:
+  group: capture-venues-${{ inputs.slug }}
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: d781868f8b28b6ed61e8ccad68d03b9dc5258695
+
+permissions:
+  contents: write
+
+jobs:
+  capture-venues:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Validate actor email
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          case "$ACTOR_EMAIL" in
+            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
+            *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+
+      - name: Resolve workspace dir from slug
+        id: resolve
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          if ! printf '%s' "$IN_SLUG" | grep -Eq '^[a-z0-9][a-z0-9-]{0,99}$'; then
+            echo "::error::invalid slug"; exit 1
+          fi
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$IN_SLUG"
+          if [ ! -f "$ws/audit.json" ]; then
+            echo "::error::workspace not found: $IN_SLUG"; exit 1
+          fi
+          echo "ws=$ws" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout engine (pinned, read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Capture venues
+        working-directory: engine
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- capture-venues "$WS" 2>/tmp/v.err || { cat /tmp/v.err >&2; true; }
+          cat /tmp/v.err >&2
+          grep -E 'capture-venues' /tmp/v.err | sed 's/^\[capture-venues\] /venues: /' >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Commit (attributed) and push
+        working-directory: data-repo
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+          ACTOR: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          git add "data/clients/$IN_SLUG"
+          if git diff --cached --quiet; then
+            echo "Venue capture produced no changes — nothing committed."
+            exit 0
+          fi
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "capture-venues: $IN_SLUG — requested by $ACTOR"
+          pushed=0
+          for k in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            git pull --rebase --autostash
+          done
+          [ "$pushed" = "1" ] || { echo "::error::push failed after 3 attempts"; exit 1; }
+          echo "### Captured venues for \`$IN_SLUG\`" >> "$GITHUB_STEP_SUMMARY"
