@@ -1,0 +1,18 @@
+{
+  "platform": "yelp",
+  "venue": "The Phoenician Tavern",
+  "venueSlug": "the-phoenician-tavern",
+  "listingUrl": "https://www.yelp.com/biz/the-phoenician-tavern-scottsdale",
+  "reviews": [
+    {
+      "platform": "yelp",
+      "rating": 3.9,
+      "ratingMax": 5,
+      "title": "The Phoenician Tavern",
+      "text": null,
+      "author": null,
+      "sourceUrl": "https://www.yelp.com/biz/the-phoenician-tavern-scottsdale#review-139ezj0",
+      "timestamp": "2026-06-25 00:23:33"
+    }
+  ]
+}
