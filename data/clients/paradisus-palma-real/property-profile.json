@@ -1,0 +1,16 @@
+{
+  "propertyName": "Paradisus Palma Real",
+  "profileStatus": "researched",
+  "sources": [{ "url": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real", "note": "Onstage consulting research (proposal v3)" }],
+  "venues": [
+    { "name": "Ginger lobby bar", "category": "bar_lounge", "entertainment": ["live Caribbean dance music (all evening)"], "notes": "Carries live Caribbean dance music across the whole evening." },
+    { "name": "Olympus Theater", "category": "nightclub_live", "entertainment": ["produced show (nightly, rotating)"], "notes": "A different produced show nearly every night." },
+    { "name": "Red Lounge", "category": "nightclub_live", "entertainment": ["late-night (post-theater)"], "notes": "Picks up when the theater empties." },
+    { "name": "Adult pool", "category": "pool_common", "entertainment": ["afternoon live sets", "midday dance lesson"], "notes": "Daytime live entertainment thread; dance lesson preps guests for the night bands." },
+    { "name": "Plaza Colonial", "category": "nightclub_live", "entertainment": ["weekly signature party"], "notes": "Weekly Plaza Colonial party." }
+  ],
+  "venueCategoriesPresent": ["bar_lounge", "restaurant", "pool_common", "nightclub_live"],
+  "nightclubExists": true,
+  "entertainmentProgram": "Denser and later, built around a designed flow: the Ginger lobby bar carries live Caribbean dance music all evening, the Olympus Theater runs a different produced show nearly every night, and the Red Lounge picks up when the theater empties. A daytime thread Cancún lacks: live sets by the adult pool and a midday dance lesson that connects day to night. Weekly Plaza Colonial party.",
+  "dayNightFlow": "Daytime live sets + a midday dance lesson; dense evening flow theater->lounge; weekly Plaza Colonial party (sometimes clashes with the nightly theater show)."
+}

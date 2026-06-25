@@ -1,0 +1,16 @@
+{
+  "propertyName": "Paradisus Cancún",
+  "profileStatus": "researched",
+  "sources": [{ "url": "https://www.melia.com/en/hotels/mexico/cancun/paradisus-cancun", "note": "Onstage consulting research (proposal v3)" }],
+  "venues": [
+    { "name": "The Avenue (central hub)", "category": "bar_lounge", "entertainment": ["live music"], "notes": "Central evening hub; dining bars run live music in parallel." },
+    { "name": "Central Atrium", "category": "nightclub_live", "entertainment": ["produced show (rotating nights)"], "notes": "Produced-show space." },
+    { "name": "Red Bar", "category": "nightclub_live", "entertainment": ["late-night DJ past midnight"], "notes": "Late-night DJ anchor." },
+    { "name": "Dining bars", "category": "bar_lounge", "entertainment": ["live music"] },
+    { "name": "Pools & beach", "category": "pool_common", "entertainment": [] }
+  ],
+  "venueCategoriesPresent": ["bar_lounge", "restaurant", "pool_common", "nightclub_live"],
+  "nightclubExists": true,
+  "entertainmentProgram": "Entertainment concentrates in the evening: dining bars and the central Avenue hub run live music in parallel from ~6pm, a produced show in the Central Atrium rotates nightly, and a late-night DJ anchors the Red Bar past midnight. Daytime carries far less programmed entertainment.",
+  "dayNightFlow": "Thin daytime entertainment; dense evening from ~6pm; late-night DJ at the Red Bar."
+}
