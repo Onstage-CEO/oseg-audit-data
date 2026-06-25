@@ -1,0 +1,157 @@
+name: capture-tripadvisor
+run-name: "capture-tripadvisor: ${{ inputs.slug }} — requested by ${{ inputs.actorEmail }}"
+
+# TripAdvisor-only capture, PINNED to the exact listing via audit.client.tripadvisorUrl
+# (DataForSEO url_path, "highest accuracy"). Built to recover from the wrong-hotel
+# (Khyber) class of bug WITHOUT re-running — or re-paying for — the other sources.
+# Single deep task (FULL_SWEEP off) keeps cost low; the listing pin + the ingest-time
+# wrong-hotel guard together make the result trustworthy. Merges into the existing
+# capture run-status (never clobbers Google/Booking/Expedia coverage).
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Workspace slug to capture TripAdvisor for'
+        required: true
+        type: string
+      actorEmail:
+        description: 'Access-verified email of the requesting user'
+        required: true
+        type: string
+
+concurrency:
+  group: capture-tripadvisor-${{ inputs.slug }}
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 0af0d6e12c3520269443dc47b3e234748663749c
+
+permissions:
+  contents: write
+
+jobs:
+  capture-tripadvisor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Validate actor email
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          case "$ACTOR_EMAIL" in
+            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
+            *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+
+      - name: Resolve workspace dir from slug
+        id: resolve
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          if ! printf '%s' "$IN_SLUG" | grep -Eq '^[a-z0-9][a-z0-9-]{0,99}$'; then
+            echo "::error::invalid slug"; exit 1
+          fi
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$IN_SLUG"
+          if [ ! -f "$ws/audit.json" ]; then
+            echo "::error::workspace not found: $IN_SLUG"; exit 1
+          fi
+          echo "ws=$ws" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout engine
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Capture TripAdvisor only (pinned listing)
+        working-directory: engine
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_CAPTURE_DEPTH: ${{ vars.OSEG_CAPTURE_DEPTH || '4490' }}
+          # Single deep pinned task — NOT the 30-task sweep. Cost-conscious.
+          OSEG_CAPTURE_FULL_SWEEP: '0'
+          OSEG_CAPTURE_TIMEOUT_MS: ${{ vars.OSEG_CAPTURE_TIMEOUT_MS || '180000' }}
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          cat > .tmp-capture-tripadvisor.ts <<'TS'
+          import { readFile } from 'node:fs/promises';
+          import { tripadvisorDataForSeoAdapter } from './src/capture/dataforseo-adapter.js';
+          import { runCaptureCollect } from './src/capture/collect.js';
+
+          const ws = process.env.WS;
+          if (!ws) throw new Error('WS is required');
+          const audit = JSON.parse(await readFile(`${ws}/audit.json`, 'utf8'));
+          const tripadvisorUrl = audit.client?.tripadvisorUrl;
+          if (typeof tripadvisorUrl !== 'string' || !tripadvisorUrl) {
+            throw new Error('audit.client.tripadvisorUrl is required (the listing PIN)');
+          }
+          const target = {
+            propertyName: String(audit.client.propertyName),
+            location: String(audit.client.location),
+            tripadvisorUrl: String(tripadvisorUrl),
+          };
+          const requestedDepth = Math.trunc(Number(process.env.OSEG_CAPTURE_DEPTH || 4490));
+          const depth = Number.isFinite(requestedDepth) && requestedDepth > 0 ? requestedDepth : 4490;
+
+          // 1) POST the pinned TripAdvisor task (async).
+          const post = await tripadvisorDataForSeoAdapter.capture({
+            workspaceDir: ws, target, queries: [], env: process.env,
+            now: new Date().toISOString(), maxResults: depth,
+          });
+          console.log('post:', JSON.stringify(post, null, 2));
+          if (post.status === 'needs_key') throw new Error('DataForSEO creds missing');
+
+          // 2) DRAIN: DataForSEO is async — collect until no task is left pending.
+          let pending = Infinity;
+          for (let i = 1; i <= 40 && pending !== 0; i++) {
+            await new Promise((r) => setTimeout(r, 30_000));
+            const c = await runCaptureCollect({ workspaceDir: ws, env: process.env, now: new Date().toISOString() });
+            pending = c.stillPending;
+            const ta = c.sources.find((s) => s.platformId === 'tripadvisor');
+            console.log(`collect ${i}: status=${c.status} stillPending=${pending} | ${c.message}` +
+              (ta?.wrongListing ? ` | ⛔ wrongListing=${ta.wrongListing}` : ''));
+            if (c.status === 'no_pending') break;
+          }
+          if (pending !== 0) console.log(`::warning::TripAdvisor capture left ${pending} task(s) pending after ceiling — re-run to drain.`);
+          TS
+          npx tsx .tmp-capture-tripadvisor.ts
+          rm .tmp-capture-tripadvisor.ts
+
+      - name: Commit and push
+        working-directory: data-repo
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+          ACTOR: ${{ inputs.actorEmail }}
+        run: |
+          set -euo pipefail
+          git add "data/clients/$IN_SLUG"
+          if git diff --cached --quiet; then
+            echo "TripAdvisor capture produced no changes."
+            exit 0
+          fi
+          git config user.name "oseg-audit-console"
+          git config user.email "$ACTOR"
+          git commit -m "capture-tripadvisor: $IN_SLUG (pinned listing) — requested by $ACTOR"
+          git pull --rebase origin main
+          git push
