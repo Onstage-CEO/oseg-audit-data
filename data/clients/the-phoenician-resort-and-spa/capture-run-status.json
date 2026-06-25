@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-25T20:18:26.710Z",
+  "generatedAt": "2026-06-25T20:33:21.127Z",
   "property": {
     "propertyName": "The Phoenician Resort and Spa",
     "location": "Scottsdale, AZ"
@@ -26,14 +26,15 @@
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
       "status": "ok",
-      "message": "collected 0 review(s)",
-      "recordsAdded": 0,
+      "message": "collected 3186 review(s); 3186 available",
+      "recordsAdded": 3186,
       "duplicatesSkipped": 0,
       "queriesRun": 0,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 0,
+        "capturedReviews": 3186,
+        "availableReviews": 3186,
         "requestedDepth": 4490,
         "mode": "deep"
       }
