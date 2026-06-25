@@ -58,7 +58,32 @@
     }
   ],
   "evidence": [],
-  "venues": [],
+  "venues": [
+    {
+      "name": "The Phoenician Tavern",
+      "type": "Bar & Lounge (dueling pianos)",
+      "slug": "the-phoenician-tavern",
+      "yelpUrl": "https://www.yelp.com/biz/the-phoenician-tavern-scottsdale"
+    },
+    {
+      "name": "J&G Steakhouse",
+      "type": "Restaurant",
+      "slug": "j-and-g-steakhouse",
+      "yelpUrl": "https://www.yelp.com/biz/j-and-g-steakhouse-scottsdale"
+    },
+    {
+      "name": "Mowry & Cotton",
+      "type": "Restaurant",
+      "slug": "mowry-and-cotton",
+      "yelpUrl": "https://www.yelp.com/biz/mowry-and-cotton-scottsdale"
+    },
+    {
+      "name": "The Thirsty Camel",
+      "type": "Lounge (afternoon tea)",
+      "slug": "thirsty-camel",
+      "yelpUrl": "https://www.yelp.com/biz/thirsty-camel-at-the-phoenician-scottsdale"
+    }
+  ],
   "segments": [],
   "hypotheses": [],
   "recommendations": [],
