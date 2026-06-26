@@ -1,0 +1,61 @@
+{
+  "status": "EXPORT_BLOCKED",
+  "gates": [
+    {
+      "gateId": "report_generated",
+      "label": "Client report generated",
+      "pass": true,
+      "material": true,
+      "blocks": "client_ready",
+      "detail": "client-report.html present",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "verify_ready",
+      "label": "verify-report resolved",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "verify overall = not_ready",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "source_coverage_matrix",
+      "label": "Source Coverage Matrix present",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "source-coverage-matrix present",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "outlet_matrix",
+      "label": "Outlet/Venue Evidence Matrix (where present)",
+      "pass": true,
+      "material": false,
+      "blocks": "nothing",
+      "detail": "outlet matrix not present (not required at this phase)",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "programming_inventory",
+      "label": "Programming Inventory Matrix",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "programming inventory required but missing",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "forbidden_language",
+      "label": "No forbidden client-facing language",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "7 forbidden hit(s): \"Not yet captured\" (overclaim_not_yet_captured), \"not yet pulled\" (overclaim_not_yet_pulled), \"Not yet captured\" (overclaim_not_yet_captured), \"not yet pulled\" (overclaim_not_yet_pulled), \"not yet pulled\" (overclaim_not_yet_pulled)",
+      "overriddenBy": null
+    }
+  ],
+  "overrides": [],
+  "computedAt": "2026-06-26T00:00:00Z"
+}
