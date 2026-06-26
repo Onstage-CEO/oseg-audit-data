@@ -77,7 +77,8 @@
       "name": "Mowry & Cotton",
       "type": "Restaurant",
       "slug": "mowry-and-cotton",
-      "yelpUrl": "https://www.yelp.com/biz/mowry-and-cotton-scottsdale"
+      "yelpUrl": "https://www.yelp.com/biz/mowry-and-cotton-scottsdale",
+      "googleUrl": "https://www.google.com/maps/search/Mowry%20%26%20Cotton%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
     },
     {
       "name": "The Thirsty Camel",
