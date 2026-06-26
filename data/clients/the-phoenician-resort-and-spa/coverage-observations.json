@@ -1,0 +1,36 @@
+{
+  "_note": "Recorded research (workflow wf_53f61625): confirmed external outlet listings the engine cannot capture yet. Counts from aggregators/SERP are marked low/medium confidence and are NOT review data — they prove a body EXISTS, not its exact size. Operator artifact, not a client doc.",
+  "property": [
+    { "source": "resort_pages", "knownListingExists": true, "identifier": "thephoenician.com", "entertainmentSignal": "yes", "usedInReport": true, "confidence": "high" },
+    { "source": "local_media", "knownListingExists": true, "identifier": "arizonafoothillsmagazine.com (dueling pianos coverage)", "entertainmentSignal": "yes", "confidence": "medium" }
+  ],
+  "outlets": [
+    { "name": "The Phoenician Tavern", "observed": [
+      { "source": "google", "knownListingExists": true, "countFound": 831, "identifier": "Google listing (count via Restaurant Guru aggregator, unverified)", "entertainmentSignal": "yes", "confidence": "low" },
+      { "source": "resort_pages", "knownListingExists": true, "identifier": "thephoenician.com/events/dueling-pianos", "entertainmentSignal": "yes", "confidence": "high" }
+    ]},
+    { "name": "J&G Steakhouse", "observed": [
+      { "source": "google", "knownListingExists": true, "countFound": 674, "identifier": "Google Business listing (count via aggregator, unverified)", "entertainmentSignal": "no", "confidence": "low" },
+      { "source": "tripadvisor", "knownListingExists": true, "countFound": 598, "identifier": "tripadvisor.com Restaurant_Review d334373", "entertainmentSignal": "no", "confidence": "medium" },
+      { "source": "opentable", "knownListingExists": true, "countFound": 3403, "identifier": "OpenTable J&G Steakhouse Scottsdale (SERP count)", "entertainmentSignal": "no", "confidence": "medium" }
+    ]},
+    { "name": "Mowry & Cotton", "observed": [
+      { "source": "google", "knownListingExists": true, "identifier": "Google Business listing", "entertainmentSignal": "no", "confidence": "low" },
+      { "source": "tripadvisor", "knownListingExists": true, "identifier": "tripadvisor.com Restaurant_Review d13009103 (4.7, #4/966)", "entertainmentSignal": "no", "confidence": "medium" },
+      { "source": "opentable", "knownListingExists": true, "countFound": 1160, "identifier": "OpenTable Mowry & Cotton (SERP count)", "entertainmentSignal": "no", "confidence": "medium" }
+    ]},
+    { "name": "Kalio Kabobery", "observed": [
+      { "source": "yelp", "knownListingExists": true, "countFound": 12, "identifier": "Yelp Kalio Kabobery (yelpUrl not configured)", "entertainmentSignal": "no", "confidence": "medium" },
+      { "source": "tripadvisor", "knownListingExists": true, "identifier": "tripadvisor.com d19402659", "entertainmentSignal": "no", "confidence": "medium" }
+    ]},
+    { "name": "The Marketplace", "observed": [
+      { "source": "yelp", "knownListingExists": true, "countFound": 14, "identifier": "Yelp The Marketplace (yelpUrl not configured)", "entertainmentSignal": "no", "confidence": "medium" }
+    ]},
+    { "name": "19th Hole", "observed": [
+      { "source": "tripadvisor", "knownListingExists": true, "identifier": "tripadvisor.com d23195304 (near-zero reviews)", "entertainmentSignal": "no", "confidence": "low" }
+    ]},
+    { "name": "Thirsty Camel", "observed": [
+      { "source": "resort_pages", "knownListingExists": true, "identifier": "thephoenician.com/dine/thirsty-camel (live music Thu-Sat)", "entertainmentSignal": "yes", "confidence": "high" }
+    ]}
+  ]
+}
