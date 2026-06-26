@@ -63,18 +63,6 @@
       ]
     },
     {
-      "sourceId": "spanish_language",
-      "lane": "community",
-      "query": "\"The Phoenician Resort and Spa\" entretenimiento",
-      "url": "https://www.tiktok.com/discover/esty-phoenix-spa",
-      "domain": "www.tiktok.com",
-      "title": "Esty Phoenix Spa",
-      "snippet": "The Phoenician Resort and Spa : Your Ultimate Wellness Retreat in Arizona. ... actividades gay Phoenix, cultura LGBT en Phoenix, espacios inclusivos en Phoenix, ...",
-      "matchedTerms": [
-        "actividad"
-      ]
-    },
-    {
       "sourceId": "competitor_contrast",
       "lane": "competitors",
       "query": "\"The Phoenician Resort and Spa\" vs resort entertainment",
