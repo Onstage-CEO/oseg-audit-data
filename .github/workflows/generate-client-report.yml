@@ -70,7 +70,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 16e001f65bdf9ba524318f871c49f44dd5df888c
+  ENGINE_REF: 1a85256a1a287ee5380f06a12c21705cb0584860
 
 permissions:
   contents: write
@@ -181,6 +181,25 @@ jobs:
           fi
           cat /tmp/cr.err >&2
           grep -E 'wrote client-report' /tmp/cr.err | tail -1 | sed 's/^\[generate-client-report\] /client report: /' >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Surface report readiness (does NOT block the draft)
+        working-directory: engine
+        env:
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          # generate-client-report already computed + wrote report-readiness.json.
+          # Re-run the standalone gate to print the lifecycle status into the run
+          # summary. This is a DRAFT-generation job, so a red report is surfaced,
+          # never failed here — the export path (future PDF/deploy step) is what
+          # must call `readiness --require-client-ready` and refuse a non-ready report.
+          npm run dev --silent -- readiness "$WS" --now "$(date -u +%FT%TZ)" --json > /tmp/readiness.json 2>/tmp/readiness.err || { cat /tmp/readiness.err >&2; }
+          STATUS=$(jq -r '.status // "UNKNOWN"' /tmp/readiness.json 2>/dev/null || echo UNKNOWN)
+          echo "### Report readiness: \`$STATUS\`" >> "$GITHUB_STEP_SUMMARY"
+          jq -r '.gates[] | "- " + (if .pass then "[PASS]" else (if .overriddenBy then "[OVERRIDE]" else "[FAIL]" end) end) + " " + .gateId + " — " + .detail' /tmp/readiness.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          if [ "$STATUS" != "CLIENT_READY" ]; then
+            echo "::warning::Report for ${{ inputs.slug }} is a DRAFT ($STATUS) — NOT client-ready and not eligible for export until the blocking gates pass or an explicit logged override is recorded."
+          fi
 
       - name: Commit (attributed) and push
         working-directory: data-repo
