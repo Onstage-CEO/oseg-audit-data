@@ -50,11 +50,11 @@ _3/2 engine-supported sources captured_
 | Quora / Q&A platforms | 🚫 not supported yet | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context. |
 
 ### OUTLET — Thirsty Camel
-_1/2 engine-supported sources captured_
+_2/2 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
-| Google / Google Maps reviews | ⬜ not checked | no | yes | no | ? | 0 | unknown | no | medium | Not checked — no capture was attempted for this source. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
+| Google / Google Maps reviews | ✅ captured | yes | yes | yes | 74 | 74 | unknown | yes | high | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
 | TripAdvisor reviews | 🚫 not supported yet | no | no | no | ? | 0 | unknown | no | medium | The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 81 | 81 | unknown | yes | high | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |

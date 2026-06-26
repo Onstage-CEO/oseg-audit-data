@@ -1,6 +1,6 @@
 {
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-06-26T04:30:00Z",
+  "generatedAt": "2026-06-26T04:40:00Z",
   "scopes": [
     {
       "scope": "property",
@@ -506,16 +506,16 @@
           "source": "google",
           "label": "Google / Google Maps reviews",
           "identifier": "",
-          "checked": false,
+          "checked": true,
           "supportedByEngine": true,
-          "captured": false,
-          "countFound": "unknown",
-          "countCaptured": 0,
+          "captured": true,
+          "countFound": 74,
+          "countCaptured": 74,
           "entertainmentSignal": "unknown",
-          "usedInReport": false,
-          "status": "not_checked",
-          "reason": "Not checked — no capture was attempted for this source. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
-          "confidence": "medium",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "high",
           "supplemental": false
         },
         {
@@ -743,7 +743,7 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 1,
+      "capturedSources": 2,
       "supportedSources": 2
     },
     {
