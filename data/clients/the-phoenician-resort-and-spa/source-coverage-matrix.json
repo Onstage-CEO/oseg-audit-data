@@ -1,6 +1,6 @@
 {
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-06-26T03:00:00Z",
+  "generatedAt": "2026-06-26T04:30:00Z",
   "scopes": [
     {
       "scope": "property",
@@ -1250,15 +1250,15 @@
           "source": "google",
           "label": "Google / Google Maps reviews",
           "identifier": "Google Business listing",
-          "checked": false,
+          "checked": true,
           "supportedByEngine": true,
-          "captured": false,
-          "countFound": "unknown",
-          "countCaptured": 0,
+          "captured": true,
+          "countFound": 242,
+          "countCaptured": 242,
           "entertainmentSignal": "no",
-          "usedInReport": false,
-          "status": "missing_capture",
-          "reason": "A listing/body exists but was not captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
           "confidence": "low",
           "supplemental": false
         },
@@ -1487,7 +1487,7 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 1,
+      "capturedSources": 2,
       "supportedSources": 2
     },
     {
@@ -2238,7 +2238,6 @@
   "summary": {
     "outletGoogleImplemented": true,
     "blockers": [
-      "Mowry & Cotton: Google / Google Maps reviews listing exists but was not captured.",
       "Kalio Kabobery: Yelp reviews listing exists but was not captured.",
       "The Marketplace: Yelp reviews listing exists but was not captured."
     ]
