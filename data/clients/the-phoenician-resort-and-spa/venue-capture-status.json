@@ -1,6 +1,6 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-06-26T02:55:52.688Z",
+  "generatedAt": "2026-06-26T03:03:18.860Z",
   "venues": [
     {
       "venue": "The Phoenician Tavern",
@@ -12,23 +12,23 @@
     {
       "venue": "J&G Steakhouse",
       "slug": "j-and-g-steakhouse",
-      "yelp": 500,
+      "yelp": 0,
       "google": 478,
-      "note": ""
+      "note": "yelp: 0 reviews returned"
     },
     {
       "venue": "Mowry & Cotton",
       "slug": "mowry-and-cotton",
-      "yelp": 254,
-      "google": 0,
-      "note": ""
+      "yelp": 0,
+      "google": 20,
+      "note": "yelp: 0 reviews returned"
     },
     {
       "venue": "The Thirsty Camel",
       "slug": "thirsty-camel",
-      "yelp": 81,
+      "yelp": 0,
       "google": 0,
-      "note": ""
+      "note": "yelp: 0 reviews returned"
     }
   ]
 }
