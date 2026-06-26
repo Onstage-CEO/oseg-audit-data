@@ -40,10 +40,10 @@
     {
       "gateId": "programming_inventory",
       "label": "Programming Inventory Matrix",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "programming inventory required but missing",
+      "detail": "programming inventory present (8 program(s), all material programs guest-signal-checked)",
       "overriddenBy": null
     },
     {

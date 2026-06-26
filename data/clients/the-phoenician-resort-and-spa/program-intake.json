@@ -1,0 +1,163 @@
+[
+  {
+    "programName": "Dueling Pianos at The Phoenician Tavern",
+    "property": "The Phoenician",
+    "venue": "The Phoenician Tavern",
+    "programType": "live_music",
+    "schedule": "Saturday 8-10pm (resort events page); historically Friday & Saturday",
+    "seasonality": "Year-round",
+    "sourceConfirming": [
+      { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/dueling-pianos/", "note": "Official resort events page; Saturday 8-10pm" },
+      { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/the-phoenician-tavern/", "note": "Tavern dining page" }
+    ],
+    "discoverySourceCategory": "event_calendar",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "moderate",
+    "clientReportTreatment": "feature",
+    "confidence": "high",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "material"
+  },
+  {
+    "programName": "Thirsty Camel Live Music",
+    "property": "The Phoenician",
+    "venue": "Thirsty Camel (lobby lounge)",
+    "programType": "live_music",
+    "schedule": "Schedule varies; ~5-7pm on weekday evenings per public listing, Thu-Sat per resort profile",
+    "seasonality": "Year-round",
+    "sourceConfirming": [
+      { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/thirsty-camel/", "note": "Official lounge dining page" },
+      { "category": "local_listing", "ref": "https://www.experiencescottsdale.com/listing/thirsty-camel-at-the-phoenician/49441/", "note": "Experience Scottsdale listing" },
+      { "category": "social", "ref": "https://www.facebook.com/events/the-phoenician-a-luxury-collection-resort-scottsdale/live-music-at-the-thirsty-camel-lounge/659402907855806/", "note": "Facebook live-music event" }
+    ],
+    "discoverySourceCategory": "resort_pages",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "strong",
+    "clientReportTreatment": "feature",
+    "confidence": "high",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "material"
+  },
+  {
+    "programName": "Afternoon Tea",
+    "property": "The Phoenician",
+    "venue": "Afternoon Tea room",
+    "programType": "afternoon_tea",
+    "schedule": "Thursday-Sunday, 2-3pm seatings; closed Mon-Wed; live pianist accompaniment",
+    "seasonality": "Seasonal/popular; reservations essential",
+    "sourceConfirming": [
+      { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/afternoon-tea/", "note": "Official afternoon tea page; Thu-Sun 2-3pm; pianist Lisa Pressman" },
+      { "category": "menu", "ref": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale", "note": "OpenTable reservation/menu listing" },
+      { "category": "resort_pages", "ref": "https://www.canyonsuites.com/afternoon-tea/", "note": "Canyon Suites afternoon tea page" }
+    ],
+    "discoverySourceCategory": "resort_pages",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "strong",
+    "clientReportTreatment": "feature",
+    "confidence": "high",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "material"
+  },
+  {
+    "programName": "Mowry & Cotton Weekend Brunch",
+    "property": "The Phoenician",
+    "venue": "Mowry & Cotton",
+    "programType": "brunch",
+    "schedule": "Saturday-Sunday, 11am-2pm",
+    "seasonality": "Year-round (weekly)",
+    "sourceConfirming": [
+      { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/mowry-cotton/", "note": "Official restaurant page; weekend brunch Sat-Sun 11am-2pm" }
+    ],
+    "discoverySourceCategory": "resort_pages",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "strong",
+    "clientReportTreatment": "mention",
+    "confidence": "high",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "material"
+  },
+  {
+    "programName": "Seasonal & Holiday Programming",
+    "property": "The Phoenician",
+    "venue": "Resort-wide",
+    "programType": "holiday_seasonal",
+    "schedule": "Recurring seasonal: 4th of July weekend, Memorial Day weekend, winter holiday festivities (festive decor, light tours), wine tastings",
+    "seasonality": "Seasonal (summer holidays + winter holidays)",
+    "sourceConfirming": [
+      { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/", "note": "Resort events hub" },
+      { "category": "event_calendar", "ref": "https://www.thephoenician.com/seasonal-events/", "note": "Seasonal events page" },
+      { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/", "note": "4th of July weekend" },
+      { "category": "resort_pages", "ref": "https://www.marriott.com/en-us/hotels/phxlc-the-phoenician-a-luxury-collection-resort-scottsdale/experiences/holidays/", "note": "Marriott holidays page" }
+    ],
+    "discoverySourceCategory": "event_calendar",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "moderate",
+    "clientReportTreatment": "mention",
+    "confidence": "high",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "material"
+  },
+  {
+    "programName": "Poolside Programming (Yacht Club Summer live music + Dive-In Movies)",
+    "property": "The Phoenician",
+    "venue": "Mother of Pearl Pool / main pools",
+    "programType": "pool_beach",
+    "schedule": "Seasonal (summer): poolside live music series and dive-in movies",
+    "seasonality": "Summer season",
+    "sourceConfirming": [
+      { "category": "resort_pages", "ref": "https://www.thephoenician.com/pool-area/", "note": "Pool area page (dive-in movies, poolside)" },
+      { "category": "local_listing", "ref": "https://www.arizonafoothillsmagazine.com/resorts/news/resort-events/a-yacht-club-summer-at-the-phoenician-scottsdale", "note": "Yacht Club Summer poolside live music (e.g. Yachtzilla)" }
+    ],
+    "discoverySourceCategory": "resort_pages",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "moderate",
+    "clientReportTreatment": "mention",
+    "confidence": "medium",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "material"
+  },
+  {
+    "programName": "Family Fun Programming (Kids Zone, dive-in movies, family activities)",
+    "property": "The Phoenician",
+    "venue": "Pool area / resort-wide",
+    "programType": "kids_family",
+    "schedule": "Recurring family programming; Kids Zone at the pool",
+    "seasonality": "Year-round, expanded in summer/holidays",
+    "sourceConfirming": [
+      { "category": "resort_pages", "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/", "note": "Family getaway page (Kids Zone, family activities)" }
+    ],
+    "discoverySourceCategory": "resort_pages",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "moderate",
+    "clientReportTreatment": "mention",
+    "confidence": "medium",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "material"
+  },
+  {
+    "programName": "Common-area / Pool Ambient Atmosphere",
+    "property": "The Phoenician",
+    "venue": "Pools and shared common areas",
+    "programType": "ambient_soundscape",
+    "schedule": "Ongoing background/ambient sound in shared spaces (not a scheduled performance)",
+    "seasonality": "Year-round",
+    "sourceConfirming": [
+      { "category": "review_snippet", "ref": "captures.json + yelp-evidence.json: guest references to background/ambient music and common-area atmosphere", "note": "Atmosphere watch-item surfaced by guest reviews, not a resort-scheduled program" }
+    ],
+    "discoverySourceCategory": "review_snippet",
+    "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+    "guestSignalFound": true,
+    "evidenceStrength": "weak",
+    "clientReportTreatment": "appendix",
+    "confidence": "low",
+    "lastVerifiedDate": "2026-06-26",
+    "materiality": "immaterial"
+  }
+]
