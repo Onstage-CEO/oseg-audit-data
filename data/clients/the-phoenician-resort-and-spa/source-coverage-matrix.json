@@ -1,6 +1,6 @@
 {
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-06-25T00:00:00Z",
+  "generatedAt": "2026-06-26T00:00:00Z",
   "scopes": [
     {
       "scope": "property",
@@ -18,8 +18,9 @@
           "entertainmentSignal": "unknown",
           "usedInReport": true,
           "status": "captured",
-          "reason": "Captured. Outlet-level Google capture is the next priority and is NOT implemented yet.",
-          "confidence": "high"
+          "reason": "Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -34,7 +35,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -49,7 +51,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -64,7 +67,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -79,7 +83,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured. Outlets have no Expedia listing — N/A.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -94,7 +99,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -109,7 +115,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -124,7 +131,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -139,7 +147,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -154,7 +163,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -169,7 +179,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -184,7 +195,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -199,7 +211,8 @@
           "usedInReport": true,
           "status": "checked_no_data",
           "reason": "Checked; the source returned no usable data. Property-level only; per-outlet resort pages exist but are not auto-captured per outlet.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -214,11 +227,28 @@
           "usedInReport": false,
           "status": "checked_no_data",
           "reason": "Checked; the source returned no usable data. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": false,
+          "countFound": 0,
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "checked_no_data",
+          "reason": "SUPPLEMENTAL (never rating math). Checked; the source returned no usable data. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 11,
-      "supportedSources": 13
+      "supportedSources": 14
     },
     {
       "scope": "outlet",
@@ -229,15 +259,16 @@
           "label": "Google / Google Maps reviews",
           "identifier": "Google listing (count via Restaurant Guru aggregator, unverified)",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": 831,
           "countCaptured": 0,
           "entertainmentSignal": "yes",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "Outlet-level Google capture is the next priority and is NOT implemented yet. A listing/body exists (~831) but the engine cannot capture it at this level yet.",
-          "confidence": "low"
+          "status": "missing_capture",
+          "reason": "A listing/body exists but was not captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "low",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -252,7 +283,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -267,7 +299,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -282,7 +315,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -297,7 +331,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -312,7 +347,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -327,7 +363,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -342,7 +379,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -357,7 +395,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -372,7 +411,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -387,7 +427,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -402,7 +443,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -417,7 +459,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "Property-level only; per-outlet resort pages exist but are not auto-captured per outlet. A listing/body exists but the engine cannot capture it at this level yet.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -432,11 +475,28 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 2,
-      "supportedSources": 1
+      "supportedSources": 2
     },
     {
       "scope": "outlet",
@@ -447,15 +507,16 @@
           "label": "Google / Google Maps reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. Outlet-level Google capture is the next priority and is NOT implemented yet.",
-          "confidence": "medium"
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -470,7 +531,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -485,7 +547,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -500,7 +563,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -515,7 +579,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -530,7 +595,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -545,7 +611,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -560,7 +627,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -575,7 +643,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -590,7 +659,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -605,7 +675,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -620,7 +691,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -635,7 +707,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "Property-level only; per-outlet resort pages exist but are not auto-captured per outlet. A listing/body exists but the engine cannot capture it at this level yet.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -650,11 +723,28 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 1,
-      "supportedSources": 1
+      "supportedSources": 2
     },
     {
       "scope": "outlet",
@@ -665,15 +755,16 @@
           "label": "Google / Google Maps reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. Outlet-level Google capture is the next priority and is NOT implemented yet.",
-          "confidence": "medium"
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -688,7 +779,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet.",
-          "confidence": "low"
+          "confidence": "low",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -703,7 +795,8 @@
           "usedInReport": false,
           "status": "not_checked",
           "reason": "Not checked — no capture was attempted for this source.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -718,7 +811,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -733,7 +827,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -748,7 +843,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -763,7 +859,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -778,7 +875,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -793,7 +891,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -808,7 +907,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -823,7 +923,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -838,7 +939,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -853,7 +955,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Property-level only; per-outlet resort pages exist but are not auto-captured per outlet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -868,11 +971,28 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 1
+      "supportedSources": 2
     },
     {
       "scope": "outlet",
@@ -882,16 +1002,17 @@
           "source": "google",
           "label": "Google / Google Maps reviews",
           "identifier": "Google Business listing (count via aggregator, unverified)",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
           "countFound": 674,
-          "countCaptured": 0,
+          "countCaptured": 478,
           "entertainmentSignal": "no",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "Outlet-level Google capture is the next priority and is NOT implemented yet. A listing/body exists (~674) but the engine cannot capture it at this level yet.",
-          "confidence": "low"
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "low",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -906,7 +1027,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists (~598) but the engine cannot capture it at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -921,7 +1043,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -936,7 +1059,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -951,7 +1075,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -966,7 +1091,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry). A listing/body exists (~3403) but the engine cannot capture it at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -981,7 +1107,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -996,7 +1123,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -1011,7 +1139,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -1026,7 +1155,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -1041,7 +1171,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -1056,7 +1187,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -1071,7 +1203,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Property-level only; per-outlet resort pages exist but are not auto-captured per outlet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -1086,11 +1219,28 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
-      "capturedSources": 1,
-      "supportedSources": 1
+      "capturedSources": 2,
+      "supportedSources": 2
     },
     {
       "scope": "outlet",
@@ -1101,15 +1251,16 @@
           "label": "Google / Google Maps reviews",
           "identifier": "Google Business listing",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "no",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "Outlet-level Google capture is the next priority and is NOT implemented yet. A listing/body exists but the engine cannot capture it at this level yet.",
-          "confidence": "low"
+          "status": "missing_capture",
+          "reason": "A listing/body exists but was not captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "low",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -1124,7 +1275,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -1139,7 +1291,8 @@
           "usedInReport": true,
           "status": "captured",
           "reason": "Captured.",
-          "confidence": "high"
+          "confidence": "high",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -1154,7 +1307,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -1169,7 +1323,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -1184,7 +1339,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry). A listing/body exists (~1160) but the engine cannot capture it at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -1199,7 +1355,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -1214,7 +1371,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -1229,7 +1387,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -1244,7 +1403,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -1259,7 +1419,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -1274,7 +1435,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -1289,7 +1451,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Property-level only; per-outlet resort pages exist but are not auto-captured per outlet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -1304,11 +1467,28 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 1,
-      "supportedSources": 1
+      "supportedSources": 2
     },
     {
       "scope": "outlet",
@@ -1319,15 +1499,16 @@
           "label": "Google / Google Maps reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. Outlet-level Google capture is the next priority and is NOT implemented yet.",
-          "confidence": "medium"
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -1342,7 +1523,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -1357,7 +1539,8 @@
           "usedInReport": false,
           "status": "missing_capture",
           "reason": "A listing/body exists but was not captured.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -1372,7 +1555,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -1387,7 +1571,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -1402,7 +1587,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -1417,7 +1603,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -1432,7 +1619,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -1447,7 +1635,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -1462,7 +1651,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -1477,7 +1667,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -1492,7 +1683,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -1507,7 +1699,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Property-level only; per-outlet resort pages exist but are not auto-captured per outlet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -1522,11 +1715,28 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 1
+      "supportedSources": 2
     },
     {
       "scope": "outlet",
@@ -1537,15 +1747,16 @@
           "label": "Google / Google Maps reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. Outlet-level Google capture is the next priority and is NOT implemented yet.",
-          "confidence": "medium"
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -1560,7 +1771,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -1575,7 +1787,8 @@
           "usedInReport": false,
           "status": "missing_capture",
           "reason": "A listing/body exists but was not captured.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -1590,7 +1803,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -1605,7 +1819,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -1620,7 +1835,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -1635,7 +1851,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -1650,7 +1867,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -1665,7 +1883,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -1680,7 +1899,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -1695,7 +1915,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -1710,7 +1931,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -1725,7 +1947,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Property-level only; per-outlet resort pages exist but are not auto-captured per outlet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -1740,11 +1963,28 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 1
+      "supportedSources": 2
     },
     {
       "scope": "outlet",
@@ -1755,15 +1995,16 @@
           "label": "Google / Google Maps reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. Outlet-level Google capture is the next priority and is NOT implemented yet.",
-          "confidence": "medium"
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tripadvisor",
@@ -1778,7 +2019,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "yelp",
@@ -1793,7 +2035,8 @@
           "usedInReport": false,
           "status": "not_checked",
           "reason": "Not checked — no capture was attempted for this source.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "booking",
@@ -1808,7 +2051,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "expedia",
@@ -1823,7 +2067,8 @@
           "usedInReport": false,
           "status": "na",
           "reason": "Not applicable at this level. Outlets have no Expedia listing — N/A.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "opentable",
@@ -1838,7 +2083,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "facebook",
@@ -1853,7 +2099,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "instagram",
@@ -1868,7 +2115,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "tiktok",
@@ -1883,7 +2131,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "youtube",
@@ -1898,7 +2147,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "reddit",
@@ -1913,7 +2163,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "blogs",
@@ -1928,7 +2179,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "resort_pages",
@@ -1943,7 +2195,8 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Property-level only; per-outlet resort pages exist but are not auto-captured per outlet.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
         },
         {
           "source": "local_media",
@@ -1958,19 +2211,35 @@
           "usedInReport": false,
           "status": "not_supported_yet",
           "reason": "The engine has no capture path for this source at this level yet. Surfaced opportunistically via web-discovery, not a dedicated lane.",
-          "confidence": "medium"
+          "confidence": "medium",
+          "supplemental": false
+        },
+        {
+          "source": "quora",
+          "label": "Quora / Q&A platforms",
+          "identifier": "",
+          "checked": false,
+          "supportedByEngine": false,
+          "captured": false,
+          "countFound": "unknown",
+          "countCaptured": 0,
+          "entertainmentSignal": "unknown",
+          "usedInReport": false,
+          "status": "not_supported_yet",
+          "reason": "SUPPLEMENTAL (never rating math). The engine has no capture path for this source at this level yet. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context.",
+          "confidence": "medium",
+          "supplemental": true
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 1
+      "supportedSources": 2
     }
   ],
   "summary": {
-    "outletGoogleImplemented": false,
+    "outletGoogleImplemented": true,
     "blockers": [
-      "The Phoenician Tavern: outlet Google reviews exist but are not captured (engine has no outlet-Google path).",
-      "J&G Steakhouse: outlet Google reviews exist but are not captured (engine has no outlet-Google path).",
-      "Mowry & Cotton: outlet Google reviews exist but are not captured (engine has no outlet-Google path).",
+      "The Phoenician Tavern: Google / Google Maps reviews listing exists but was not captured.",
+      "Mowry & Cotton: Google / Google Maps reviews listing exists but was not captured.",
       "Kalio Kabobery: Yelp reviews listing exists but was not captured.",
       "The Marketplace: Yelp reviews listing exists but was not captured."
     ]
