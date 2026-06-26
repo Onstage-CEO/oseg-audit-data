@@ -1,6 +1,6 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-06-26T04:09:42.742Z",
+  "generatedAt": "2026-06-26T04:25:21.000Z",
   "venues": [
     {
       "venue": "The Phoenician Tavern",
@@ -27,7 +27,7 @@
       "venue": "The Thirsty Camel",
       "slug": "thirsty-camel",
       "yelp": 81,
-      "google": 0,
+      "google": 74,
       "note": ""
     }
   ]
