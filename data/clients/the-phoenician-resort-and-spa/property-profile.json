@@ -1,18 +1,67 @@
 {
   "propertyName": "The Phoenician Resort and Spa",
   "profileStatus": "researched",
-  "sources": [{ "url": "https://www.thephoenician.com/dine/", "note": "official dining/venue list" }],
-  "venues": [
-    { "name": "The Phoenician Tavern", "category": "bar_lounge", "entertainment": ["dueling pianos (Fri/Sat)"], "notes": "Golf clubhouse tavern; the property's signature live entertainment." },
-    { "name": "Thirsty Camel", "category": "bar_lounge", "entertainment": [], "notes": "Lobby lounge; afternoon tea; named a top hotel bar." },
-    { "name": "19th Hole", "category": "bar_lounge", "entertainment": [], "notes": "Golf-adjacent bar." },
-    { "name": "J&G Steakhouse", "category": "restaurant", "entertainment": [] },
-    { "name": "Mowry & Cotton", "category": "restaurant", "entertainment": [] },
-    { "name": "Kalio Kabobery", "category": "restaurant", "entertainment": [] },
-    { "name": "The Marketplace", "category": "restaurant", "entertainment": [] },
-    { "name": "Mother of Pearl pool / pool decks", "category": "pool_common", "entertainment": [] }
+  "sources": [
+    {
+      "url": "https://www.thephoenician.com/dine/",
+      "note": "official dining/venue list"
+    }
   ],
-  "venueCategoriesPresent": ["bar_lounge", "restaurant", "pool_common"],
+  "venues": [
+    {
+      "name": "The Phoenician Tavern",
+      "category": "bar_lounge",
+      "entertainment": [
+        "dueling pianos (Fri/Sat)"
+      ],
+      "notes": "Golf clubhouse tavern; the property's signature live entertainment."
+    },
+    {
+      "name": "Thirsty Camel",
+      "category": "bar_lounge",
+      "entertainment": [
+        "live music (Thu–Sat)"
+      ],
+      "notes": "Lobby lounge; afternoon tea; named a top hotel bar.",
+      "entertainmentSource": "thephoenician.com/dine/thirsty-camel (resort schedule)"
+    },
+    {
+      "name": "19th Hole",
+      "category": "bar_lounge",
+      "entertainment": [],
+      "notes": "Golf-adjacent bar."
+    },
+    {
+      "name": "J&G Steakhouse",
+      "category": "restaurant",
+      "entertainment": []
+    },
+    {
+      "name": "Mowry & Cotton",
+      "category": "restaurant",
+      "entertainment": []
+    },
+    {
+      "name": "Kalio Kabobery",
+      "category": "restaurant",
+      "entertainment": []
+    },
+    {
+      "name": "The Marketplace",
+      "category": "restaurant",
+      "entertainment": []
+    },
+    {
+      "name": "Mother of Pearl pool / pool decks",
+      "category": "pool_common",
+      "entertainment": []
+    }
+  ],
+  "venueCategoriesPresent": [
+    "bar_lounge",
+    "restaurant",
+    "pool_common"
+  ],
   "nightclubExists": false,
   "entertainmentProgram": "Entertainment is focused and venue-specific: dueling pianos at The Phoenician Tavern on weekend evenings, and ambient live music in the bars and lounges. A luxury golf and spa resort, it runs NO dedicated nightclub, disco, or produced-show theater.",
   "dayNightFlow": "Daytime centers on the pools, golf, and spa. Evening entertainment is concentrated at the Tavern (dueling pianos, Fri/Sat 8-10pm) and the lounges; there is no late-night programmed venue."
