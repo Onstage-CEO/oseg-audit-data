@@ -1,6 +1,6 @@
 {
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-06-26T00:00:00Z",
+  "generatedAt": "2026-06-26T03:00:00Z",
   "scopes": [
     {
       "scope": "property",
@@ -258,15 +258,15 @@
           "source": "google",
           "label": "Google / Google Maps reviews",
           "identifier": "Google listing (count via Restaurant Guru aggregator, unverified)",
-          "checked": false,
+          "checked": true,
           "supportedByEngine": true,
-          "captured": false,
+          "captured": true,
           "countFound": 831,
-          "countCaptured": 0,
+          "countCaptured": 111,
           "entertainmentSignal": "yes",
-          "usedInReport": false,
-          "status": "missing_capture",
-          "reason": "A listing/body exists but was not captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[].",
           "confidence": "low",
           "supplemental": false
         },
@@ -495,7 +495,7 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 2,
+      "capturedSources": 3,
       "supportedSources": 2
     },
     {
@@ -2238,7 +2238,6 @@
   "summary": {
     "outletGoogleImplemented": true,
     "blockers": [
-      "The Phoenician Tavern: Google / Google Maps reviews listing exists but was not captured.",
       "Mowry & Cotton: Google / Google Maps reviews listing exists but was not captured.",
       "Kalio Kabobery: Yelp reviews listing exists but was not captured.",
       "The Marketplace: Yelp reviews listing exists but was not captured."

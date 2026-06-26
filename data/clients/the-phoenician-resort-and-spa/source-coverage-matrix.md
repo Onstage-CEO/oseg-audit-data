@@ -2,7 +2,6 @@
 _Generated 2026-06-26 · proves what was checked, captured, used, and what the engine cannot support._
 
 ## ⛔ Coverage blockers (report may not imply completeness while these stand)
-- The Phoenician Tavern: Google / Google Maps reviews listing exists but was not captured.
 - Mowry & Cotton: Google / Google Maps reviews listing exists but was not captured.
 - Kalio Kabobery: Yelp reviews listing exists but was not captured.
 - The Marketplace: Yelp reviews listing exists but was not captured.
@@ -31,11 +30,11 @@ _11/14 engine-supported sources captured_
 | Quora / Q&A platforms | ☑️ checked, no data | yes | yes | no | 0 | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Checked; the source returned no usable data. SUPPLEMENTAL traveler-intent / public-perception signal only. Never enters rating math or any figure; accounted for as context. |
 
 ### OUTLET — The Phoenician Tavern
-_2/2 engine-supported sources captured_
+_3/2 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
-| Google / Google Maps reviews | ⚠️ missing capture | no | yes | no | 831 | 0 | yes | no | low | A listing/body exists but was not captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
+| Google / Google Maps reviews | ✅ captured | yes | yes | yes | 831 | 111 | yes | yes | low | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
 | TripAdvisor reviews | ✅ captured | yes | no | yes | 132 | 132 | unknown | yes | high | Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 97 | 97 | unknown | yes | high | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
