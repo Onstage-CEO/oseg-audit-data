@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-06-25T20:33:21.127Z",
+  "generatedAt": "2026-06-26T17:01:45.040Z",
   "property": {
     "propertyName": "The Phoenician Resort and Spa",
     "location": "Scottsdale, AZ"
@@ -60,9 +60,9 @@
       "platformId": "expedia",
       "mechanism": "aggregator",
       "status": "ok",
-      "message": "Apify expedia: captured 599 new, skipped 0 dup(s).; 1000 available; 401 rating-only (no text)",
-      "recordsAdded": 599,
-      "duplicatesSkipped": 0,
+      "message": "Apify expedia: captured 0 new, skipped 599 dup(s).; 1000 available; 401 rating-only (no text)",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 599,
       "queriesRun": 1,
       "queriesFailed": 0,
       "truncatedQueries": [],
