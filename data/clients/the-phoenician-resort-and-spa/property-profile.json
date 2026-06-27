@@ -12,7 +12,7 @@
       "name": "The Phoenician Tavern",
       "category": "bar_lounge",
       "entertainment": [
-        "dueling pianos (Fri/Sat)"
+        "dueling pianos (Sat)"
       ],
       "notes": "Golf clubhouse tavern; the property's signature live entertainment."
     },
@@ -20,7 +20,7 @@
       "name": "Thirsty Camel",
       "category": "bar_lounge",
       "entertainment": [
-        "live music (Thu–Sat)"
+        "live music (Thu\u2013Sat)"
       ],
       "notes": "Lobby lounge; afternoon tea; named a top hotel bar.",
       "entertainmentSource": "thephoenician.com/dine/thirsty-camel (resort schedule)"
