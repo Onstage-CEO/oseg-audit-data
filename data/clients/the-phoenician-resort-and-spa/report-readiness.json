@@ -1,5 +1,5 @@
 {
-  "status": "EXPORT_BLOCKED",
+  "status": "CLIENT_READY",
   "gates": [
     {
       "gateId": "report_generated",
@@ -49,13 +49,13 @@
     {
       "gateId": "forbidden_language",
       "label": "No forbidden client-facing language",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "4 forbidden hit(s): \"11pm\" (time_late_night_pm), \"11pm\" (time_late_night_pm), \"10pm\" (time_late_night_pm), \"9pm\" (time_late_night_pm)",
+      "detail": "no forbidden terms in report",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-27T19:11:59Z"
+  "computedAt": "2026-06-27T19:39:32Z"
 }
