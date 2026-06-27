@@ -49,7 +49,8 @@
       "clientReportTreatment": "feature",
       "confidence": "high",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Friday to Sunday, afternoon seatings"
     },
     {
       "programName": "Thirsty Camel Live Music",
@@ -100,7 +101,8 @@
       "clientReportTreatment": "feature",
       "confidence": "high",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Friday and Saturday evenings"
     },
     {
       "programName": "Dueling Pianos at The Phoenician Tavern",
@@ -146,7 +148,9 @@
       "clientReportTreatment": "feature",
       "confidence": "high",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Saturday evening",
+      "clientSignalNote": "Official, clearly-branded weekly show; the Tavern's own outlet reviews include positive guest discussion of the entertainment, though the exact phrase 'dueling pianos' is sparse in the broader review corpus."
     },
     {
       "programName": "Cactus Garden Tour",
@@ -186,7 +190,8 @@
       "clientReportTreatment": "feature",
       "confidence": "high",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Daily (self-guided)"
     },
     {
       "programName": "Mowry & Cotton Weekend Brunch",
@@ -227,7 +232,8 @@
       "clientReportTreatment": "mention",
       "confidence": "high",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Weekend brunch (late morning)"
     },
     {
       "programName": "Tasting & Mixology Series",
@@ -271,7 +277,8 @@
       "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Weekly tastings (Thursday to Saturday) plus daily samplings"
     },
     {
       "programName": "Art History / Sculpture Tour",
@@ -313,7 +320,8 @@
       "clientReportTreatment": "appendix",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Daily (self-guided)"
     },
     {
       "programName": "Guided Bike & Hike Tours (seasonal)",
@@ -355,7 +363,8 @@
       "clientReportTreatment": "appendix",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Weekly, October to May (seasonal)"
     },
     {
       "programName": "Seasonal & Holiday Programming",
@@ -407,7 +416,8 @@
       "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Recurring seasonal (summer and winter holidays)"
     },
     {
       "programName": "Dive-In Movies (summer)",
@@ -453,7 +463,8 @@
       "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Select summer evenings"
     },
     {
       "programName": "Yacht Club Summer Poolside Live Music",
@@ -501,7 +512,8 @@
       "clientReportTreatment": "appendix",
       "confidence": "low",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Select summer evenings"
     },
     {
       "programName": "The Funicians Club (kids & family programming)",
@@ -548,7 +560,8 @@
       "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-27",
-      "materiality": "material"
+      "materiality": "material",
+      "clientFacingSchedule": "Daily kids and family activities"
     }
   ],
   "themes": [
