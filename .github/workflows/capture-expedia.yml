@@ -18,7 +18,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 77864a9cf3d3db8276ceac60d5f31cc0b2e49154
+  ENGINE_REF: 08196bcc11923a86027875e5bab7fb7a41aeee6f
 
 permissions:
   contents: write

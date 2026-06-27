@@ -161,10 +161,10 @@
       "venue": "Cactus Garden (northern edge of the resort)",
       "programType": "cultural",
       "schedule": null,
-      "officialSchedule": "Daily",
+      "officialSchedule": "Daily (resort events page lists 'Cactus Garden Tour - Daily'; editorial coverage describes it as self-guided)",
       "thirdPartySchedule": null,
-      "chosenSchedule": "Daily",
-      "scheduleReason": null,
+      "chosenSchedule": "Daily (self-guided)",
+      "scheduleReason": "Resort lists it daily; editorial (Taking the Kids) clarifies it is self-guided, so it is not presented as a guided tour.",
       "scheduleConfidence": "high",
       "seasonality": "Year-round (daily)",
       "sourceConfirming": [
@@ -532,7 +532,7 @@
       "venue": "Pool area / resort-wide",
       "programType": "kids_family",
       "schedule": null,
-      "officialSchedule": "Daily kids & family activities at The Funicians Club; 'Hoppy Hour at The Funicians Club' late afternoon",
+      "officialSchedule": "Daily kids & family activities at The Funicians Club (Main Lobby Floor); 'Hoppy Hour' late afternoon; an evening 'Night Owl' program (5-9pm) is editorially documented (KidTripster 2018) but not on the current resort pages",
       "thirdPartySchedule": null,
       "chosenSchedule": "Daily kids & family activities",
       "scheduleReason": null,
@@ -543,6 +543,11 @@
           "category": "resort_pages",
           "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/",
           "note": "Family getaway page names 'The Funicians Club' + 'Hoppy Hour at The Funicians club'"
+        },
+        {
+          "category": "local_listing",
+          "ref": "https://kidtripster.com/stories/the-phoenician-scottsdale-arizona/",
+          "note": "KidTripster (2018): Funician Kids Club + evening 'Night Owl' program"
         }
       ],
       "discoverySourceCategory": "resort_pages",
@@ -561,7 +566,7 @@
       "guestSignalHitCount": 17,
       "representativeGuestEvidence": "\"...great kids club activities throughout the day...\" ('kids club' 14 + 'funicians' 3 guest hits)",
       "guestSignalStrength": "weak",
-      "guestSignalNotes": "Corrected: the official page names the program 'The Funicians Club' (NOT 'Kids Zone', which the page does not use). Guests reference it as 'kids club' (14 hits) and 'funicians' (3 hits). Dive-in movies removed (now its own row). Recurring schedule not precisely sourced.",
+      "guestSignalNotes": "Corrected: the official page names the program 'The Funicians Club' (NOT 'Kids Zone'). Guests reference it as 'kids club' (14 hits) and 'funicians' (3 hits). An evening 'Night Owl' program (5-9pm: crafts, games, movies, dinner) is documented editorially (KidTripster, 2018) and FOLDED here as a component, but it is NOT named on the current resort family pages - treated as a possibly-historical evening extension, not asserted as current. Dive-in movies are a separate row.",
       "guestSignalFound": true,
       "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
@@ -603,5 +608,5 @@
     }
   ],
   "sources": [],
-  "generatedAt": "2026-06-27T00:00:00Z"
+  "generatedAt": "2026-06-27T20:30:00Z"
 }

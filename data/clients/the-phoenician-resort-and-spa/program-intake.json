@@ -12,13 +12,34 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round (popular; reservations essential)",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/afternoon-tea/", "note": "Official afternoon tea page; Fri-Sun 2-3pm; live pianist" },
-        { "category": "resort_pages", "ref": "https://www.canyonsuites.com/afternoon-tea/", "note": "Canyon Suites afternoon tea page (Fri-Sun)" },
-        { "category": "menu", "ref": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale", "note": "OpenTable reservation listing (lists Thu-Sun)" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/dine/afternoon-tea/",
+          "note": "Official afternoon tea page; Fri-Sun 2-3pm; live pianist"
+        },
+        {
+          "category": "resort_pages",
+          "ref": "https://www.canyonsuites.com/afternoon-tea/",
+          "note": "Canyon Suites afternoon tea page (Fri-Sun)"
+        },
+        {
+          "category": "menu",
+          "ref": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale",
+          "note": "OpenTable reservation listing (lists Thu-Sun)"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["afternoon tea", "high tea"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "afternoon tea",
+        "high tea"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 144,
       "representativeGuestEvidence": "\"...had afternoon tea for my birthday, made me feel very special...\"",
       "guestSignalStrength": "strong",
@@ -42,13 +63,34 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/thirsty-camel/", "note": "Official lounge page; Fri-Sat live music times" },
-        { "category": "local_listing", "ref": "https://www.experiencescottsdale.com/listing/thirsty-camel-at-the-phoenician/49441/", "note": "Experience Scottsdale listing" },
-        { "category": "social", "ref": "https://www.facebook.com/events/the-phoenician-a-luxury-collection-resort-scottsdale/live-music-at-the-thirsty-camel-lounge/659402907855806/", "note": "Facebook live-music event" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/dine/thirsty-camel/",
+          "note": "Official lounge page; Fri-Sat live music times"
+        },
+        {
+          "category": "local_listing",
+          "ref": "https://www.experiencescottsdale.com/listing/thirsty-camel-at-the-phoenician/49441/",
+          "note": "Experience Scottsdale listing"
+        },
+        {
+          "category": "social",
+          "ref": "https://www.facebook.com/events/the-phoenician-a-luxury-collection-resort-scottsdale/live-music-at-the-thirsty-camel-lounge/659402907855806/",
+          "note": "Facebook live-music event"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["thirsty camel", "live music"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "thirsty camel",
+        "live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 45,
       "representativeGuestEvidence": "\"...shout out to Jasmine at the Thirsty Camel bar...\" (45 distributed mentions)",
       "guestSignalStrength": "strong",
@@ -72,12 +114,29 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/dueling-pianos/", "note": "Official events page; Every Saturday 8-10pm" },
-        { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/the-phoenician-tavern/", "note": "Tavern dining page" }
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/dueling-pianos/",
+          "note": "Official events page; Every Saturday 8-10pm"
+        },
+        {
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/dine/the-phoenician-tavern/",
+          "note": "Tavern dining page"
+        }
       ],
       "discoverySourceCategory": "event_calendar",
-      "guestSignalSearchTerms": ["dueling", "dueling pianos"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "dueling",
+        "dueling pianos"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 1,
       "representativeGuestEvidence": "\"...get ready for live entertainment from dueling pianos...\" (single truncated, opinion-less mention)",
       "guestSignalStrength": "absent",
@@ -94,18 +153,30 @@
       "property": "The Phoenician",
       "venue": "Cactus Garden (northern edge of the resort)",
       "programType": "cultural",
-      "officialSchedule": "Daily",
+      "officialSchedule": "Daily (resort events page lists 'Cactus Garden Tour - Daily'; editorial coverage describes it as self-guided)",
       "thirdPartySchedule": null,
-      "chosenSchedule": "Daily",
-      "scheduleReason": null,
+      "chosenSchedule": "Daily (self-guided)",
+      "scheduleReason": "Resort lists it daily; editorial (Taking the Kids) clarifies it is self-guided, so it is not presented as a guided tour.",
       "scheduleConfidence": "high",
       "seasonality": "Year-round (daily)",
       "sourceConfirming": [
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/", "note": "Resort events hub: 'Cactus Garden Tour - Daily'" }
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: 'Cactus Garden Tour - Daily'"
+        }
       ],
       "discoverySourceCategory": "event_calendar",
-      "guestSignalSearchTerms": ["cactus garden"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "cactus garden"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 134,
       "representativeGuestEvidence": "The cactus garden is referenced 134 times (108 captures + 26 Yelp); a signature, frequently-mentioned grounds feature, with a daily guided tour.",
       "guestSignalStrength": "strong",
@@ -129,11 +200,24 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.thephoenician.com/dine/mowry-cotton/", "note": "Official restaurant page; weekend brunch Sat-Sun 11am-2pm" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/dine/mowry-cotton/",
+          "note": "Official restaurant page; weekend brunch Sat-Sun 11am-2pm"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["brunch", "mowry"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "brunch",
+        "mowry"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 77,
       "representativeGuestEvidence": "Brunch referenced 77 times (40 captures + 37 Yelp); Mowry & Cotton 100+ mentions.",
       "guestSignalStrength": "strong",
@@ -157,11 +241,27 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round (weekly + daily)",
       "sourceConfirming": [
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/", "note": "Resort events hub: Wine/Bourbon/Tequila/Tap tastings + Mixology Experience with stated weekly days" }
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: Wine/Bourbon/Tequila/Tap tastings + Mixology Experience with stated weekly days"
+        }
       ],
       "discoverySourceCategory": "event_calendar",
-      "guestSignalSearchTerms": ["tasting", "bourbon", "tequila", "mixology", "wine tasting"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "tasting",
+        "bourbon",
+        "tequila",
+        "mixology",
+        "wine tasting"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 17,
       "representativeGuestEvidence": "'tasting' 17, 'bourbon' 6, 'tequila' 6, 'mixology' 4, 'wine tasting' 2 across the corpus.",
       "guestSignalStrength": "weak",
@@ -185,11 +285,25 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round (daily)",
       "sourceConfirming": [
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/", "note": "Resort events hub: 'Art History Tour - Daily' (11 Allan Houser sculptures)" }
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: 'Art History Tour - Daily' (11 Allan Houser sculptures)"
+        }
       ],
       "discoverySourceCategory": "event_calendar",
-      "guestSignalSearchTerms": ["art history", "houser", "sculpture"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "art history",
+        "houser",
+        "sculpture"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 7,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "absent",
@@ -213,11 +327,25 @@
       "scheduleConfidence": "medium",
       "seasonality": "Cooler season (October-May)",
       "sourceConfirming": [
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/", "note": "Resort events hub: Guided Bike Tour (Sat) + Guided Hike at Camelback (Fri), Oct-May" }
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: Guided Bike Tour (Sat) + Guided Hike at Camelback (Fri), Oct-May"
+        }
       ],
       "discoverySourceCategory": "event_calendar",
-      "guestSignalSearchTerms": ["bike tour", "guided hike", "camelback"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "bike tour",
+        "guided hike",
+        "camelback"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "absent",
@@ -241,13 +369,35 @@
       "scheduleConfidence": "medium",
       "seasonality": "Seasonal umbrella (summer + winter holidays); exact calendar varies year to year",
       "sourceConfirming": [
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/", "note": "Resort events hub" },
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/seasonal-events/", "note": "Seasonal events page" },
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/", "note": "4th of July weekend" }
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub"
+        },
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/seasonal-events/",
+          "note": "Seasonal events page"
+        },
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/",
+          "note": "4th of July weekend"
+        }
       ],
       "discoverySourceCategory": "event_calendar",
-      "guestSignalSearchTerms": ["holiday", "4th of july", "fireworks"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "holiday",
+        "4th of july",
+        "fireworks"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 110,
       "representativeGuestEvidence": "'holiday' 110 mentions; '4th of July' 32; 'fireworks' 19 across the corpus.",
       "guestSignalStrength": "medium",
@@ -271,12 +421,29 @@
       "scheduleConfidence": "medium",
       "seasonality": "Summer season",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/", "note": "Family getaway page (dive-in movies)" },
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/", "note": "Holiday weekend programming incl. dive-in movies" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/",
+          "note": "Family getaway page (dive-in movies)"
+        },
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/",
+          "note": "Holiday weekend programming incl. dive-in movies"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["dive-in", "dive in movie"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "dive-in",
+        "dive in movie"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 2,
       "representativeGuestEvidence": "\"...they host dive-in movies on certain nights...\" (2 secondhand Yelp mentions)",
       "guestSignalStrength": "weak",
@@ -300,12 +467,31 @@
       "scheduleConfidence": "low",
       "seasonality": "Summer season",
       "sourceConfirming": [
-        { "category": "local_listing", "ref": "https://www.arizonafoothillsmagazine.com/resorts/news/resort-events/a-yacht-club-summer-at-the-phoenician-scottsdale", "note": "Arizona Foothills Magazine - 'Yacht Club Summer' brand with summer live music" },
-        { "category": "event_calendar", "ref": "https://www.thephoenician.com/seasonal-events/", "note": "Seasonal events page" }
+        {
+          "category": "local_listing",
+          "ref": "https://www.arizonafoothillsmagazine.com/resorts/news/resort-events/a-yacht-club-summer-at-the-phoenician-scottsdale",
+          "note": "Arizona Foothills Magazine - 'Yacht Club Summer' brand with summer live music"
+        },
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/seasonal-events/",
+          "note": "Seasonal events page"
+        }
       ],
       "discoverySourceCategory": "local_listing",
-      "guestSignalSearchTerms": ["yacht", "yacht club", "summer concert", "poolside live music"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "yacht",
+        "yacht club",
+        "summer concert",
+        "poolside live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "absent",
@@ -322,22 +508,41 @@
       "property": "The Phoenician",
       "venue": "Pool area / resort-wide",
       "programType": "kids_family",
-      "officialSchedule": "Daily kids & family activities at The Funicians Club; 'Hoppy Hour at The Funicians Club' late afternoon",
+      "officialSchedule": "Daily kids & family activities at The Funicians Club (Main Lobby Floor); 'Hoppy Hour' late afternoon; an evening 'Night Owl' program (5-9pm) is editorially documented (KidTripster 2018) but not on the current resort pages",
       "thirdPartySchedule": null,
       "chosenSchedule": "Daily kids & family activities",
       "scheduleReason": null,
       "scheduleConfidence": "medium",
       "seasonality": "Year-round, expanded in summer/holidays",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/", "note": "Family getaway page names 'The Funicians Club' + 'Hoppy Hour at The Funicians club'" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/",
+          "note": "Family getaway page names 'The Funicians Club' + 'Hoppy Hour at The Funicians club'"
+        },
+        {
+          "category": "local_listing",
+          "ref": "https://kidtripster.com/stories/the-phoenician-scottsdale-arizona/",
+          "note": "KidTripster (2018): Funician Kids Club + evening 'Night Owl' program"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["funicians", "kids club", "family activities"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "funicians",
+        "kids club",
+        "family activities"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 17,
       "representativeGuestEvidence": "\"...great kids club activities throughout the day...\" ('kids club' 14 + 'funicians' 3 guest hits)",
       "guestSignalStrength": "weak",
-      "guestSignalNotes": "Corrected: the official page names the program 'The Funicians Club' (NOT 'Kids Zone', which the page does not use). Guests reference it as 'kids club' (14 hits) and 'funicians' (3 hits). Dive-in movies removed (now its own row). Recurring schedule not precisely sourced.",
+      "guestSignalNotes": "Corrected: the official page names the program 'The Funicians Club' (NOT 'Kids Zone'). Guests reference it as 'kids club' (14 hits) and 'funicians' (3 hits). An evening 'Night Owl' program (5-9pm: crafts, games, movies, dinner) is documented editorially (KidTripster, 2018) and FOLDED here as a component, but it is NOT named on the current resort family pages - treated as a possibly-historical evening extension, not asserted as current. Dive-in movies are a separate row.",
       "guestSignalFound": true,
       "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
@@ -353,10 +558,24 @@
       "kind": "atmosphere",
       "description": "Background/ambient music in shared common areas and around the pools - the audit's common-area sound watch-item. An atmosphere/operational signal, NOT a resort-scheduled performance.",
       "sourceConfirming": [
-        { "category": "review_snippet", "ref": "captures.json + yelp-evidence.json: guest references to background/ambient music in common areas", "note": "Surfaced by guest reviews, no resort programming provenance" }
+        {
+          "category": "review_snippet",
+          "ref": "captures.json + yelp-evidence.json: guest references to background/ambient music in common areas",
+          "note": "Surfaced by guest reviews, no resort programming provenance"
+        }
       ],
-      "guestSignalSearchTerms": ["ambient", "background music", "music by the pool"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "ambient",
+        "background music",
+        "music by the pool"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 2,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "weak",
