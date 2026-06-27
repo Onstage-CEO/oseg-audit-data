@@ -49,13 +49,13 @@
     {
       "gateId": "forbidden_language",
       "label": "No forbidden client-facing language",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "1 forbidden hit(s): \"Not yet captured\" (overclaim_not_yet_captured)",
+      "detail": "no forbidden terms in report",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-27T18:23:37Z"
+  "computedAt": "2026-06-27T18:32:57Z"
 }
