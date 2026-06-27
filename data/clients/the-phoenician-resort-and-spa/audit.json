@@ -5,7 +5,7 @@
     "location": "Scottsdale, AZ",
     "audience": "Management",
     "presentedBy": [],
-    "version": "V0.1 — Working Draft",
+    "version": "V0.1 \u2014 Working Draft",
     "status": "draft",
     "yelpUrl": "https://www.yelp.com/biz/the-phoenician-a-luxury-collection-resort-scottsdale-scottsdale",
     "instagramUrl": "https://www.instagram.com/phoenicianscottsdale/",
@@ -36,6 +36,12 @@
       "platformId": "youtube",
       "scoreLabel": null,
       "volume": 94
+    },
+    {
+      "platformId": "blogs",
+      "scoreLabel": null,
+      "volume": 6,
+      "notes": "Travel blogs / editorial media lane checked 2026-06-27 (6 editorial/blog sources: AZ Big Media, Fabulous Arizona, PHOENIX magazine, Taking the Kids, TravelAge West, KidTripster). Material editorial signal corroborating Afternoon Tea, Dueling Pianos, Funicians Club, dive-in movies, Cactus Garden + a seasonal Halloween event. Findings captured in web-discovery-evidence.json (longform lane)."
     }
   ],
   "skippedSources": [

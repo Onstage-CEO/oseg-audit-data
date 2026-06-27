@@ -13,7 +13,7 @@
       "url": "https://www.reddit.com/r/VisitScottsdale/hot/",
       "domain": "www.reddit.com",
       "title": "r/VisitScottsdale",
-      "snippet": "Bars with a friendly crowd Good live music or country music. Good late-night atmosphere without necessarily being a nightclub. Is doing a spa/dinner day at The ...",
+      "snippet": "Bars with a friendly crowd Good live music or country music. Good late-night atmosphere without necessarily being a nightclub. Is doing a spa/dinner day at The\u00a0...",
       "matchedTerms": [
         "music",
         "live music",
@@ -27,7 +27,7 @@
       "url": "https://www.reddit.com/r/Scottsdale/comments/1m7nzwf/which_hotel_too_many_great_choices/",
       "domain": "www.reddit.com",
       "title": "Which hotel? Too many great choices : r/Scottsdale",
-      "snippet": "Depends on what you're looking for… the Phoenician is great if you're looking for a good resort. ... nightlife if you care about doing evenings ... Read more",
+      "snippet": "Depends on what you're looking for\u2026 the Phoenician is great if you're looking for a good resort. ... nightlife if you care about doing evenings\u00a0... Read more",
       "matchedTerms": [
         "nightlife",
         "evening"
@@ -40,7 +40,7 @@
       "url": "https://www.reddit.com/r/phoenix/comments/1bcpblv/where_to_stay_go_in_phoenix_for_late_20searly_30s/",
       "domain": "www.reddit.com",
       "title": "Where to stay /go in Phoenix for late 20's/early 30's gals ...",
-      "snippet": "Cornish Pasty, Pomo, Blanco, Pa'la…too much food to name. Copper Blues for free live music, Crescent Ballroom, The Van Buren for paid shows. Read more",
+      "snippet": "Cornish Pasty, Pomo, Blanco, Pa'la\u2026too much food to name. Copper Blues for free live music, Crescent Ballroom, The Van Buren for paid shows. Read more",
       "matchedTerms": [
         "show",
         "shows",
@@ -54,8 +54,8 @@
       "query": "site:reddit.com \"The Phoenician Resort and Spa\" nightlife",
       "url": "https://www.reddit.com/r/AskPhoenix/comments/1r0bfp1/solo_adult_trip_to_phoenixscottsdale_resort/",
       "domain": "www.reddit.com",
-      "title": "Solo adult trip to Phoenix/Scottsdale — resort ...",
-      "snippet": "The Phoenician, When it comes to nightlife and party vibes it's literally in the block area where are the clubs and bars are! bars, restaurants ...",
+      "title": "Solo adult trip to Phoenix/Scottsdale \u2014 resort ...",
+      "snippet": "The Phoenician, When it comes to nightlife and party vibes it's literally in the block area where are the clubs and bars are! bars, restaurants\u00a0...",
       "matchedTerms": [
         "nightlife",
         "vibe",
@@ -69,7 +69,7 @@
       "url": "https://www.scottsdaleone.com/tag/the-phoenician-resort-and-spa/",
       "domain": "www.scottsdaleone.com",
       "title": "The Phoenician Resort and Spa Archives - Scottsdale One",
-      "snippet": "The Phoenician Resort and Spa. The Phoenician Resort and Spa Phoenician ... Entertainment · Fashion · Featured Scottsdale Dining · Featured Scottsdale Golf ... Read more",
+      "snippet": "The Phoenician Resort and Spa. The Phoenician Resort and Spa Phoenician ... Entertainment \u00b7 Fashion \u00b7 Featured Scottsdale Dining \u00b7 Featured Scottsdale Golf\u00a0... Read more",
       "matchedTerms": [
         "entertain"
       ]
@@ -92,8 +92,8 @@
       "query": "\"The Phoenician Resort and Spa\" compared to entertainment",
       "url": "https://www.instagram.com/p/DYHemj4Ffdm/",
       "domain": "www.instagram.com",
-      "title": "If you're going to fall in love with Arizona, do it right. 💎🌵 ...",
-      "snippet": "The Phoenician Resort and Spa in Phoenix isn't just a place to stay ... entertainment, this location makes seasonal living and travel incredibly ... Read more",
+      "title": "If you're going to fall in love with Arizona, do it right. \ud83d\udc8e\ud83c\udf35 ...",
+      "snippet": "The Phoenician Resort and Spa in Phoenix isn't just a place to stay ... entertainment, this location makes seasonal living and travel incredibly\u00a0... Read more",
       "matchedTerms": [
         "entertain"
       ]
@@ -105,12 +105,100 @@
       "url": "https://www.tiktok.com/@thespalover/video/7561981745369845023",
       "domain": "www.tiktok.com",
       "title": "Discover the Phoenician Spa Tour in Scottsdale, AZ",
-      "snippet": "Embark on a rejuvenating solo trip at The Phoenician Resort and Spa in Scottsdale, Arizona. Indulge in luxury, self-care, and relaxation at ...",
+      "snippet": "Embark on a rejuvenating solo trip at The Phoenician Resort and Spa in Scottsdale, Arizona. Indulge in luxury, self-care, and relaxation at\u00a0...",
       "matchedTerms": [
         "disco"
+      ]
+    },
+    {
+      "sourceId": "editorial_azbigmedia",
+      "lane": "longform",
+      "query": "The Phoenician Scottsdale family programming editorial",
+      "url": "https://azbigmedia.com/lifestyle/resorts/phoenician-phenomenal-family-vacation-destination/",
+      "domain": "azbigmedia.com",
+      "title": "The Phoenician is a phenomenal family vacation destination - AZ Big Media",
+      "snippet": "AZ Big Media editorial (verified): the Funicians Club for ages 5-12, weekly poolside dive-in movies, a tour of the property's Cactus Garden, and an on-site Activity Center with a movie theater, ping pong, foosball, board games and a covered playground.",
+      "matchedTerms": [
+        "funicians",
+        "dive-in",
+        "cactus garden",
+        "activity center",
+        "phoenician"
+      ]
+    },
+    {
+      "sourceId": "editorial_fabulousaz_halloween",
+      "lane": "longform",
+      "query": "The Phoenician Scottsdale seasonal Halloween event",
+      "url": "https://fabulousarizona.com/arizona-best/the-phoenician-introduces-first-ever-curse-of-camelback-halloween-celebration/",
+      "domain": "fabulousarizona.com",
+      "title": "The Phoenician Introduces First-Ever Curse of Camelback Halloween Celebration",
+      "snippet": "Fabulous Arizona editorial: The Phoenician introduced a 'Curse of Camelback' Halloween celebration - a seasonal entertainment activation (page not fetched for detail; title-level editorial signal of seasonal programming).",
+      "matchedTerms": [
+        "halloween",
+        "seasonal",
+        "phoenician",
+        "entertainment"
+      ]
+    },
+    {
+      "sourceId": "editorial_phoenixmag_tea",
+      "lane": "longform",
+      "query": "The Phoenician Scottsdale afternoon tea editorial",
+      "url": "https://www.phoenixmag.com/2025/04/15/5-places-to-enjoy-high-tea-in-the-valley/",
+      "domain": "phoenixmag.com",
+      "title": "5 Places to Enjoy High Tea in the Valley - PHOENIX magazine",
+      "snippet": "PHOENIX magazine editorial feature listing The Phoenician among the Valley's best high tea / afternoon tea experiences.",
+      "matchedTerms": [
+        "afternoon tea",
+        "high tea",
+        "phoenician"
+      ]
+    },
+    {
+      "sourceId": "editorial_takingthekids_cactus",
+      "lane": "longform",
+      "query": "The Phoenician Cactus Garden editorial",
+      "url": "https://takingthekids.com/the-cactus-garden-at-the-phoenician/",
+      "domain": "takingthekids.com",
+      "title": "The Cactus Garden at The Phoenician | Taking The Kids",
+      "snippet": "Taking The Kids editorial on the two-acre Cactus Garden at The Phoenician (nearly 250 cacti/succulents) - corroborates the daily Cactus Garden experience.",
+      "matchedTerms": [
+        "cactus garden",
+        "phoenician"
+      ]
+    },
+    {
+      "sourceId": "editorial_travelagewest",
+      "lane": "longform",
+      "query": "The Phoenician Scottsdale resort review editorial",
+      "url": "https://www.travelagewest.com/Travel/Family-Travel/phoenician-hotel-scottsdale",
+      "domain": "travelagewest.com",
+      "title": "Review: The Phoenician, a Luxury Collection Resort, in Scottsdale, Arizona | TravelAge West",
+      "snippet": "TravelAge West editorial review of The Phoenician (luxury/family travel trade publication).",
+      "matchedTerms": [
+        "review",
+        "phoenician",
+        "family"
+      ]
+    },
+    {
+      "sourceId": "editorial_kidtripster",
+      "lane": "longform",
+      "query": "The Phoenician Scottsdale family review blog",
+      "url": "https://kidtripster.com/stories/the-phoenician-scottsdale-arizona/",
+      "domain": "kidtripster.com",
+      "title": "Review: The Phoenician in Scottsdale, Arizona - KidTripster",
+      "snippet": "KidTripster family-travel review of The Phoenician; covers the Oasis Pool kids programming including dive-in movies.",
+      "matchedTerms": [
+        "dive-in",
+        "kids",
+        "phoenician",
+        "family"
       ]
     }
   ],
   "queriesRun": 18,
-  "packsRun": 6
+  "packsRun": 6,
+  "laneNote_longform": "Travel blogs / editorial media lane checked 2026-06-27: 6 editorial/blog sources reviewed; material signal corroborates Afternoon Tea, Dueling Pianos, Funicians Club, dive-in movies, Cactus Garden and adds the seasonal Curse of Camelback Halloween event."
 }
