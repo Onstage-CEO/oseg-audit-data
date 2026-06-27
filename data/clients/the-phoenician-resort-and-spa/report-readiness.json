@@ -52,10 +52,10 @@
       "pass": false,
       "material": true,
       "blocks": "export",
-      "detail": "7 forbidden hit(s): \"Not yet captured\" (overclaim_not_yet_captured), \"not yet pulled\" (overclaim_not_yet_pulled), \"Not yet captured\" (overclaim_not_yet_captured), \"not yet pulled\" (overclaim_not_yet_pulled), \"not yet pulled\" (overclaim_not_yet_pulled)",
+      "detail": "1 forbidden hit(s): \"Not yet captured\" (overclaim_not_yet_captured)",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-27T00:00:00Z"
+  "computedAt": "2026-06-27T18:23:37Z"
 }
