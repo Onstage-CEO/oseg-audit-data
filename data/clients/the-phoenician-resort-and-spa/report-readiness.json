@@ -43,7 +43,7 @@
       "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "programming inventory present (8 program(s), all material programs carry program-specific guest-signal evidence)",
+      "detail": "programming inventory present (12 program(s), all material programs carry program-specific guest-signal evidence)",
       "overriddenBy": null
     },
     {
@@ -57,5 +57,5 @@
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-26T00:00:00Z"
+  "computedAt": "2026-06-27T00:00:00Z"
 }

@@ -43,15 +43,15 @@
         "yelp"
       ],
       "guestSignalHitCount": 144,
-      "representativeGuestEvidence": "\"...wonderful stay at the Phoenician, had afternoon tea for my birthday, made me feel very special, thank you...\"",
+      "representativeGuestEvidence": "\"...had afternoon tea for my birthday, made me feel very special...\"",
       "guestSignalStrength": "strong",
-      "guestSignalNotes": "Highest-density signal in the corpus: 'afternoon tea' 144 mentions (96 captures + 48 Yelp), 'high tea' a further 104; OpenTable/Yelp listing with 111 reviews.",
+      "guestSignalNotes": "Highest-density guest signal: 'afternoon tea' 144 mentions (96 captures + 48 Yelp), 'high tea' a further 104; OpenTable/Yelp listing with 111 reviews.",
       "guestSignalFound": true,
       "evidenceStrength": "strong",
       "clientReportTreatment": "feature",
       "omitReason": null,
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     },
     {
@@ -63,7 +63,7 @@
       "officialSchedule": "Friday: Soloist 5:30-7:30pm + Duo 8-11pm; Saturday: Soloist 8-11pm (Summer Social adds Thu-Sat 3-5pm)",
       "thirdPartySchedule": "Some public listings say ~5-7pm on weekday evenings / Thu-Sat",
       "chosenSchedule": "Friday & Saturday evenings (Fri 5:30-7:30pm + 8-11pm; Sat 8-11pm)",
-      "scheduleReason": "Official resort dine page (verified 2026-06-26) is authoritative over third-party listings; the 'weekday ~5-7pm / Thu-Sat' variant is unsourced/stale.",
+      "scheduleReason": "Official resort dine page (verified 2026-06-27) is authoritative over third-party listings; the 'weekday ~5-7pm / Thu-Sat' variant is unsourced/stale.",
       "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
@@ -96,7 +96,7 @@
         "yelp"
       ],
       "guestSignalHitCount": 45,
-      "representativeGuestEvidence": "\"...shout out to Jasmine at the Thirsty Camel bar...\" (45 distributed mentions across the corpus)",
+      "representativeGuestEvidence": "\"...shout out to Jasmine at the Thirsty Camel bar...\" (45 distributed mentions)",
       "guestSignalStrength": "strong",
       "guestSignalNotes": "45 distributed mentions (27 captures + 18 Yelp), 81-review Yelp page; Forbes-recognized hotel bar.",
       "guestSignalFound": true,
@@ -104,7 +104,7 @@
       "clientReportTreatment": "feature",
       "omitReason": null,
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     },
     {
@@ -113,17 +113,17 @@
       "venue": "The Phoenician Tavern",
       "programType": "live_music",
       "schedule": null,
-      "officialSchedule": "Saturday 8-10pm at The Phoenician Tavern",
-      "thirdPartySchedule": "Some listings / the older resort profile say Friday & Saturday",
-      "chosenSchedule": "Saturday 8-10pm",
-      "scheduleReason": "Official resort events page + events hub (verified 2026-06-26) state Saturday; the Friday & Saturday variant is from older/unsourced listings.",
-      "scheduleConfidence": "medium",
+      "officialSchedule": "Every Saturday, 8-10pm at The Phoenician Tavern",
+      "thirdPartySchedule": "Some older listings/profile say Friday & Saturday",
+      "chosenSchedule": "Every Saturday, 8-10pm",
+      "scheduleReason": "Official events page AND the resort events hub both state 'Every Saturday' (verified 2026-06-27); the Friday & Saturday variant is from older/unsourced listings.",
+      "scheduleConfidence": "high",
       "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
         {
           "category": "event_calendar",
           "ref": "https://www.thephoenician.com/events/dueling-pianos/",
-          "note": "Official events page; Saturday 8-10pm"
+          "note": "Official events page; Every Saturday 8-10pm"
         },
         {
           "category": "resort_pages",
@@ -144,15 +144,57 @@
         "yelp"
       ],
       "guestSignalHitCount": 1,
-      "representativeGuestEvidence": "\"...get ready for live entertainment from dueling pianos, l...\" (single truncated, opinion-less mention)",
+      "representativeGuestEvidence": "\"...get ready for live entertainment from dueling pianos...\" (single truncated, opinion-less mention)",
       "guestSignalStrength": "absent",
-      "guestSignalNotes": "Guest-review signal is NEAR-ABSENT: exactly 1 generic, opinion-less mention across the ~5.3MB corpus and 0 on Yelp. The 'pianist' hits map to the Afternoon Tea / Thirsty Camel pianists, not the Tavern show. Featured on official-provenance grounds (the resort's branded weekly show), NOT on guest validation.",
+      "guestSignalNotes": "Guest-review signal is NEAR-ABSENT: exactly 1 generic, opinion-less mention across the corpus and 0 on Yelp. The 'pianist' hits map to the Afternoon Tea / Thirsty Camel pianists, not the Tavern show. Render as an official, branded weekly show NOT YET guest-discussed - never as guest-validated.",
       "guestSignalFound": false,
       "evidenceStrength": "moderate",
       "clientReportTreatment": "feature",
       "omitReason": null,
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
+      "materiality": "material"
+    },
+    {
+      "programName": "Cactus Garden Tour",
+      "property": "The Phoenician",
+      "venue": "Cactus Garden (northern edge of the resort)",
+      "programType": "cultural",
+      "schedule": null,
+      "officialSchedule": "Daily",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Daily",
+      "scheduleReason": null,
+      "scheduleConfidence": "high",
+      "seasonality": "Year-round (daily)",
+      "sourceConfirming": [
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: 'Cactus Garden Tour - Daily'"
+        }
+      ],
+      "discoverySourceCategory": "event_calendar",
+      "guestSignalSearchTerms": [
+        "cactus garden"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 134,
+      "representativeGuestEvidence": "The cactus garden is referenced 134 times (108 captures + 26 Yelp); a signature, frequently-mentioned grounds feature, with a daily guided tour.",
+      "guestSignalStrength": "strong",
+      "guestSignalNotes": "134 'cactus garden' mentions (166 'cactus') - one of the property's most-mentioned grounds features. The DAILY tour is the programmed experience; mention density is mixed-sentiment but high.",
+      "guestSignalFound": true,
+      "evidenceStrength": "strong",
+      "clientReportTreatment": "feature",
+      "omitReason": null,
+      "confidence": "high",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     },
     {
@@ -195,7 +237,141 @@
       "clientReportTreatment": "mention",
       "omitReason": null,
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
+      "materiality": "material"
+    },
+    {
+      "programName": "Tasting & Mixology Series",
+      "property": "The Phoenician",
+      "venue": "J&G Steakhouse / The Phoenician Tavern / resort-wide",
+      "programType": "cultural",
+      "schedule": null,
+      "officialSchedule": "Wine Tasting every Friday (J&G); Bourbon Tasting every Thursday; Tequila Tasting every Saturday; Tavern Tap Tasting every Saturday; Mixology Experience every Friday; Phoenician Iced Tea & Crunch samplings daily",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Weekly recurring tastings (Thu-Sat) + daily samplings",
+      "scheduleReason": null,
+      "scheduleConfidence": "high",
+      "seasonality": "Year-round (weekly + daily)",
+      "sourceConfirming": [
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: Wine/Bourbon/Tequila/Tap tastings + Mixology Experience with stated weekly days"
+        }
+      ],
+      "discoverySourceCategory": "event_calendar",
+      "guestSignalSearchTerms": [
+        "tasting",
+        "bourbon",
+        "tequila",
+        "mixology",
+        "wine tasting"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 17,
+      "representativeGuestEvidence": "'tasting' 17, 'bourbon' 6, 'tequila' 6, 'mixology' 4, 'wine tasting' 2 across the corpus.",
+      "guestSignalStrength": "weak",
+      "guestSignalNotes": "A labeled SERIES of distinct recurring weekly tastings + daily samplings (official events page). Weak, scattered guest signal - present but not a headline; days are source-confirmed.",
+      "guestSignalFound": true,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "mention",
+      "omitReason": null,
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-27",
+      "materiality": "material"
+    },
+    {
+      "programName": "Art History / Sculpture Tour",
+      "property": "The Phoenician",
+      "venue": "Resort grounds",
+      "programType": "cultural",
+      "schedule": null,
+      "officialSchedule": "Daily (self-guided tour of 11 Allan Houser sculptures)",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Daily (self-guided)",
+      "scheduleReason": null,
+      "scheduleConfidence": "high",
+      "seasonality": "Year-round (daily)",
+      "sourceConfirming": [
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: 'Art History Tour - Daily' (11 Allan Houser sculptures)"
+        }
+      ],
+      "discoverySourceCategory": "event_calendar",
+      "guestSignalSearchTerms": [
+        "art history",
+        "houser",
+        "sculpture"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 7,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Property-owned context: a daily self-guided sculpture tour on the official events page. Guest signal is effectively absent for the tour itself (0 'art history', 1 'Houser', 7 'sculpture' - mostly incidental). Not guest-validated; appendix only.",
+      "guestSignalFound": false,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "appendix",
+      "omitReason": null,
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-27",
+      "materiality": "material"
+    },
+    {
+      "programName": "Guided Bike & Hike Tours (seasonal)",
+      "property": "The Phoenician",
+      "venue": "Old Town Scottsdale / Camelback Mountain",
+      "programType": "signature_weekly",
+      "schedule": null,
+      "officialSchedule": "Guided Bike Tour Saturdays (Oct-May); Guided Hike at Camelback Fridays (Oct-May)",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Weekly, October-May (seasonal)",
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": "Cooler season (October-May)",
+      "sourceConfirming": [
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/",
+          "note": "Resort events hub: Guided Bike Tour (Sat) + Guided Hike at Camelback (Fri), Oct-May"
+        }
+      ],
+      "discoverySourceCategory": "event_calendar",
+      "guestSignalSearchTerms": [
+        "bike tour",
+        "guided hike",
+        "camelback"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 0,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Property-owned context: recurring seasonal guided bike/hike tours on the official events page. The guided PROGRAM itself has ~0 guest mentions ('bike tour' 0); the heavy 'Camelback'/'hike' counts (370/78) are about the adjacent mountain, not this guided tour. Appendix only.",
+      "guestSignalFound": false,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "appendix",
+      "omitReason": null,
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     },
     {
@@ -204,7 +380,7 @@
       "venue": "Resort-wide",
       "programType": "holiday_seasonal",
       "schedule": null,
-      "officialSchedule": "Recurring seasonal events: 4th of July weekend, Memorial Day weekend, winter holiday festivities (festive decor, light tours), wine tastings. Specific dates vary by year.",
+      "officialSchedule": "Recurring seasonal events: 4th of July weekend, Memorial Day weekend, winter holiday festivities (festive decor, light tours). Specific dates vary by year.",
       "thirdPartySchedule": null,
       "chosenSchedule": "Recurring seasonal (summer holidays + winter holidays); calendar varies year to year",
       "scheduleReason": null,
@@ -249,7 +425,7 @@
       "clientReportTreatment": "mention",
       "omitReason": null,
       "confidence": "medium",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     },
     {
@@ -297,7 +473,7 @@
       "clientReportTreatment": "mention",
       "omitReason": null,
       "confidence": "medium",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     },
     {
@@ -306,7 +482,7 @@
       "venue": "Pool area",
       "programType": "pool_beach",
       "schedule": null,
-      "officialSchedule": "Summer poolside live-music series (e.g. Yachtzilla); select nights",
+      "officialSchedule": "Yacht Club Summer brand programming includes live music on select summer/holiday-weekend nights",
       "thirdPartySchedule": null,
       "chosenSchedule": "Summer season; select nights",
       "scheduleReason": null,
@@ -316,7 +492,7 @@
         {
           "category": "local_listing",
           "ref": "https://www.arizonafoothillsmagazine.com/resorts/news/resort-events/a-yacht-club-summer-at-the-phoenician-scottsdale",
-          "note": "Arizona Foothills Magazine — Yacht Club Summer poolside live music"
+          "note": "Arizona Foothills Magazine - 'Yacht Club Summer' brand with summer live music"
         },
         {
           "category": "event_calendar",
@@ -341,22 +517,22 @@
       "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "absent",
-      "guestSignalNotes": "Split out of the former bundled 'Poolside Programming' row. ZERO guest-corpus mentions; provenance is a single Arizona Foothills Magazine PR listing. Property-owned / PR context, NOT guest-validated.",
+      "guestSignalNotes": "Split out of the former bundled 'Poolside Programming' row. ZERO guest-corpus mentions; provenance is a single Arizona Foothills Magazine PR listing describing the 'Yacht Club Summer' brand (no specific recurring act confirmed on the official events page). Property-owned / PR context, NOT guest-validated; appendix only.",
       "guestSignalFound": false,
       "evidenceStrength": "weak",
-      "clientReportTreatment": "mention",
+      "clientReportTreatment": "appendix",
       "omitReason": null,
       "confidence": "low",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     },
     {
-      "programName": "Kids Club / Family Programming",
+      "programName": "The Funicians Club (kids & family programming)",
       "property": "The Phoenician",
       "venue": "Pool area / resort-wide",
       "programType": "kids_family",
       "schedule": null,
-      "officialSchedule": "Daily kids & family activities (resort page calls the pool offering 'Kids Zone')",
+      "officialSchedule": "Daily kids & family activities at The Funicians Club; 'Hoppy Hour at The Funicians Club' late afternoon",
       "thirdPartySchedule": null,
       "chosenSchedule": "Daily kids & family activities",
       "scheduleReason": null,
@@ -366,13 +542,13 @@
         {
           "category": "resort_pages",
           "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/",
-          "note": "Family getaway page (Kids Zone, family activities)"
+          "note": "Family getaway page names 'The Funicians Club' + 'Hoppy Hour at The Funicians club'"
         }
       ],
       "discoverySourceCategory": "resort_pages",
       "guestSignalSearchTerms": [
+        "funicians",
         "kids club",
-        "kids zone",
         "family activities"
       ],
       "guestSignalSourcesChecked": [
@@ -382,16 +558,16 @@
         "google",
         "yelp"
       ],
-      "guestSignalHitCount": 14,
-      "representativeGuestEvidence": "\"...great kids club activities throughout the day...\" (14 'kids club' mentions)",
+      "guestSignalHitCount": 17,
+      "representativeGuestEvidence": "\"...great kids club activities throughout the day...\" ('kids club' 14 + 'funicians' 3 guest hits)",
       "guestSignalStrength": "weak",
-      "guestSignalNotes": "Renamed from 'Family Fun / Kids Zone' to match guest language: guests say 'kids club' (14 hits); 'Kids Zone' is the resort-page term (0 guest hits). Dive-in movies removed (now its own row). Recurring schedule not precisely sourced.",
+      "guestSignalNotes": "Corrected: the official page names the program 'The Funicians Club' (NOT 'Kids Zone', which the page does not use). Guests reference it as 'kids club' (14 hits) and 'funicians' (3 hits). Dive-in movies removed (now its own row). Recurring schedule not precisely sourced.",
       "guestSignalFound": true,
       "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
       "omitReason": null,
       "confidence": "medium",
-      "lastVerifiedDate": "2026-06-26",
+      "lastVerifiedDate": "2026-06-27",
       "materiality": "material"
     }
   ],
@@ -427,5 +603,5 @@
     }
   ],
   "sources": [],
-  "generatedAt": "2026-06-26T00:00:00Z"
+  "generatedAt": "2026-06-27T00:00:00Z"
 }
