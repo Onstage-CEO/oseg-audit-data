@@ -2,12 +2,12 @@
   "auditName": "The Phoenician Resort and Spa",
   "version": "V0.1 — Working Draft",
   "auditPath": "/home/runner/work/oseg-audit-data/oseg-audit-data/data-repo/data/clients/the-phoenician-resort-and-spa/audit.json",
-  "status": "not_ready",
-  "exitCode": 1,
+  "status": "ready_with_warnings",
+  "exitCode": 0,
   "summary": {
-    "okCount": 9,
+    "okCount": 10,
     "warningCount": 1,
-    "failCount": 1
+    "failCount": 0
   },
   "checks": [
     {
@@ -23,7 +23,7 @@
       "label": "Required research source coverage",
       "status": "ok",
       "messages": [
-        "4 covered, 3 skipped with reason",
+        "5 covered, 3 skipped with reason",
         "skipped: google (not_found) — Not present in the captured corpus.",
         "skipped: reddit (blocked) — Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google...",
         "skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captured-revie..."
@@ -32,10 +32,14 @@
     {
       "id": "lane_coverage",
       "label": "Source lane coverage (registry)",
-      "status": "fail",
+      "status": "ok",
       "messages": [
-        "1 gating lane(s) neither covered nor explicitly skipped:",
-        "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale"
+        "Review platforms: covered by tripadvisor",
+        "OTA review platforms: covered by booking",
+        "Community / social discussion: explicitly skipped: reddit (blocked) — Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery…",
+        "Video / creator content: covered by youtube",
+        "Travel blogs / editorial media: covered by blogs",
+        "Aerial / maps context: explicitly skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captur…"
       ]
     },
     {
@@ -106,14 +110,15 @@
     }
   ],
   "sourceCoverage": {
-    "coveredCount": 4,
+    "coveredCount": 5,
     "skippedCount": 3,
     "missingRequired": [],
     "coveredPlatforms": [
       "tripadvisor",
       "booking",
       "expedia",
-      "youtube"
+      "youtube",
+      "blogs"
     ],
     "skipped": [
       {
@@ -168,7 +173,7 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-06-27T18:33:32.792Z",
+    "now": "2026-06-27T18:42:57.393Z",
     "liveVerifiedTotal": 0,
     "dated": 0,
     "stale": 0,
@@ -185,36 +190,23 @@
     "hits": []
   },
   "readinessSummary": {
-    "overall": "not_ready",
-    "headline": "NOT READY — 1 blocker",
-    "nextAction": "Resolve 1 blocker before shipping: Source lane coverage (registry)",
+    "overall": "ready_with_warnings",
+    "headline": "READY with 1 warning",
+    "nextAction": "Shippable — 1 warning optional to address: Keyword group coverage",
     "checks": {
-      "ok": 9,
+      "ok": 10,
       "warn": 1,
-      "fail": 1
+      "fail": 0
     },
-    "blockers": [
-      "Source lane coverage (registry)"
-    ],
+    "blockers": [],
     "warnings": [
       "Keyword group coverage"
     ],
-    "blockerIds": [
-      "lane_coverage"
-    ],
+    "blockerIds": [],
     "warningIds": [
       "keyword_coverage"
     ],
-    "blockerDetails": [
-      {
-        "id": "lane_coverage",
-        "check": "Source lane coverage (registry)",
-        "details": [
-          "1 gating lane(s) neither covered nor explicitly skipped:",
-          "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale"
-        ]
-      }
-    ],
+    "blockerDetails": [],
     "warningDetails": [
       {
         "id": "keyword_coverage",
@@ -226,7 +218,7 @@
       }
     ],
     "sourceCoverage": {
-      "covered": 4,
+      "covered": 5,
       "skipped": 3,
       "missingRequired": 0
     },
@@ -246,5 +238,5 @@
       "unmatched": 0
     }
   },
-  "timestamp": "2026-06-27T18:33:32.805Z"
+  "timestamp": "2026-06-27T18:42:57.407Z"
 }
