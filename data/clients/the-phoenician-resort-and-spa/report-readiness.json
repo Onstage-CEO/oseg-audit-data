@@ -43,7 +43,7 @@
       "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "programming inventory present (8 program(s), all material programs guest-signal-checked)",
+      "detail": "programming inventory present (8 program(s), all material programs carry program-specific guest-signal evidence)",
       "overriddenBy": null
     },
     {

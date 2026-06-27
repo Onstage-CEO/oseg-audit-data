@@ -2,25 +2,39 @@
   "propertyName": "The Phoenician Resort and Spa",
   "programs": [
     {
-      "programName": "Dueling Pianos at The Phoenician Tavern",
+      "programName": "Afternoon Tea",
       "property": "The Phoenician",
-      "venue": "The Phoenician Tavern",
-      "programType": "live_music",
-      "schedule": "Saturday 8-10pm (resort events page); historically Friday & Saturday",
-      "seasonality": "Year-round",
+      "venue": "Afternoon Tea room",
+      "programType": "afternoon_tea",
+      "schedule": null,
+      "officialSchedule": "Friday-Sunday, 2-3pm seatings (closed Mon-Thu); live pianist accompaniment (Lisa Pressman)",
+      "thirdPartySchedule": "OpenTable lists Thursday-Sunday",
+      "chosenSchedule": "Friday-Sunday, 2-3pm seatings",
+      "scheduleReason": "Official resort page + Canyon Suites page both state Friday-Sunday; OpenTable's Thursday-Sunday is the minority third-party claim. Official resort-owned source preferred.",
+      "scheduleConfidence": "high",
+      "seasonality": "Year-round (popular; reservations essential)",
       "sourceConfirming": [
         {
-          "category": "event_calendar",
-          "ref": "https://www.thephoenician.com/events/dueling-pianos/",
-          "note": "Official resort events page; Saturday 8-10pm"
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/dine/afternoon-tea/",
+          "note": "Official afternoon tea page; Fri-Sun 2-3pm; live pianist"
         },
         {
           "category": "resort_pages",
-          "ref": "https://www.thephoenician.com/dine/the-phoenician-tavern/",
-          "note": "Tavern dining page"
+          "ref": "https://www.canyonsuites.com/afternoon-tea/",
+          "note": "Canyon Suites afternoon tea page (Fri-Sun)"
+        },
+        {
+          "category": "menu",
+          "ref": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale",
+          "note": "OpenTable reservation listing (lists Thu-Sun)"
         }
       ],
-      "discoverySourceCategory": "event_calendar",
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "afternoon tea",
+        "high tea"
+      ],
       "guestSignalSourcesChecked": [
         "tripadvisor",
         "booking",
@@ -28,8 +42,12 @@
         "google",
         "yelp"
       ],
+      "guestSignalHitCount": 144,
+      "representativeGuestEvidence": "\"...wonderful stay at the Phoenician, had afternoon tea for my birthday, made me feel very special, thank you...\"",
+      "guestSignalStrength": "strong",
+      "guestSignalNotes": "Highest-density signal in the corpus: 'afternoon tea' 144 mentions (96 captures + 48 Yelp), 'high tea' a further 104; OpenTable/Yelp listing with 111 reviews.",
       "guestSignalFound": true,
-      "evidenceStrength": "moderate",
+      "evidenceStrength": "strong",
       "clientReportTreatment": "feature",
       "omitReason": null,
       "confidence": "high",
@@ -41,13 +59,18 @@
       "property": "The Phoenician",
       "venue": "Thirsty Camel (lobby lounge)",
       "programType": "live_music",
-      "schedule": "Schedule varies; ~5-7pm on weekday evenings per public listing, Thu-Sat per resort profile",
+      "schedule": null,
+      "officialSchedule": "Friday: Soloist 5:30-7:30pm + Duo 8-11pm; Saturday: Soloist 8-11pm (Summer Social adds Thu-Sat 3-5pm)",
+      "thirdPartySchedule": "Some public listings say ~5-7pm on weekday evenings / Thu-Sat",
+      "chosenSchedule": "Friday & Saturday evenings (Fri 5:30-7:30pm + 8-11pm; Sat 8-11pm)",
+      "scheduleReason": "Official resort dine page (verified 2026-06-26) is authoritative over third-party listings; the 'weekday ~5-7pm / Thu-Sat' variant is unsourced/stale.",
+      "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
         {
           "category": "resort_pages",
           "ref": "https://www.thephoenician.com/dine/thirsty-camel/",
-          "note": "Official lounge dining page"
+          "note": "Official lounge page; Fri-Sat live music times"
         },
         {
           "category": "local_listing",
@@ -61,6 +84,10 @@
         }
       ],
       "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "thirsty camel",
+        "live music"
+      ],
       "guestSignalSourcesChecked": [
         "tripadvisor",
         "booking",
@@ -68,6 +95,10 @@
         "google",
         "yelp"
       ],
+      "guestSignalHitCount": 45,
+      "representativeGuestEvidence": "\"...shout out to Jasmine at the Thirsty Camel bar...\" (45 distributed mentions across the corpus)",
+      "guestSignalStrength": "strong",
+      "guestSignalNotes": "45 distributed mentions (27 captures + 18 Yelp), 81-review Yelp page; Forbes-recognized hotel bar.",
       "guestSignalFound": true,
       "evidenceStrength": "strong",
       "clientReportTreatment": "feature",
@@ -77,30 +108,34 @@
       "materiality": "material"
     },
     {
-      "programName": "Afternoon Tea",
+      "programName": "Dueling Pianos at The Phoenician Tavern",
       "property": "The Phoenician",
-      "venue": "Afternoon Tea room",
-      "programType": "afternoon_tea",
-      "schedule": "Thursday-Sunday, 2-3pm seatings; closed Mon-Wed; live pianist accompaniment",
-      "seasonality": "Seasonal/popular; reservations essential",
+      "venue": "The Phoenician Tavern",
+      "programType": "live_music",
+      "schedule": null,
+      "officialSchedule": "Saturday 8-10pm at The Phoenician Tavern",
+      "thirdPartySchedule": "Some listings / the older resort profile say Friday & Saturday",
+      "chosenSchedule": "Saturday 8-10pm",
+      "scheduleReason": "Official resort events page + events hub (verified 2026-06-26) state Saturday; the Friday & Saturday variant is from older/unsourced listings.",
+      "scheduleConfidence": "medium",
+      "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
         {
-          "category": "resort_pages",
-          "ref": "https://www.thephoenician.com/dine/afternoon-tea/",
-          "note": "Official afternoon tea page; Thu-Sun 2-3pm; pianist Lisa Pressman"
-        },
-        {
-          "category": "menu",
-          "ref": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale",
-          "note": "OpenTable reservation/menu listing"
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/dueling-pianos/",
+          "note": "Official events page; Saturday 8-10pm"
         },
         {
           "category": "resort_pages",
-          "ref": "https://www.canyonsuites.com/afternoon-tea/",
-          "note": "Canyon Suites afternoon tea page"
+          "ref": "https://www.thephoenician.com/dine/the-phoenician-tavern/",
+          "note": "Tavern dining page"
         }
       ],
-      "discoverySourceCategory": "resort_pages",
+      "discoverySourceCategory": "event_calendar",
+      "guestSignalSearchTerms": [
+        "dueling",
+        "dueling pianos"
+      ],
       "guestSignalSourcesChecked": [
         "tripadvisor",
         "booking",
@@ -108,8 +143,12 @@
         "google",
         "yelp"
       ],
-      "guestSignalFound": true,
-      "evidenceStrength": "strong",
+      "guestSignalHitCount": 1,
+      "representativeGuestEvidence": "\"...get ready for live entertainment from dueling pianos, l...\" (single truncated, opinion-less mention)",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Guest-review signal is NEAR-ABSENT: exactly 1 generic, opinion-less mention across the ~5.3MB corpus and 0 on Yelp. The 'pianist' hits map to the Afternoon Tea / Thirsty Camel pianists, not the Tavern show. Featured on official-provenance grounds (the resort's branded weekly show), NOT on guest validation.",
+      "guestSignalFound": false,
+      "evidenceStrength": "moderate",
       "clientReportTreatment": "feature",
       "omitReason": null,
       "confidence": "high",
@@ -121,7 +160,12 @@
       "property": "The Phoenician",
       "venue": "Mowry & Cotton",
       "programType": "brunch",
-      "schedule": "Saturday-Sunday, 11am-2pm",
+      "schedule": null,
+      "officialSchedule": "Saturday-Sunday, 11am-2pm",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Saturday-Sunday, 11am-2pm",
+      "scheduleReason": null,
+      "scheduleConfidence": "high",
       "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
         {
@@ -131,6 +175,10 @@
         }
       ],
       "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "brunch",
+        "mowry"
+      ],
       "guestSignalSourcesChecked": [
         "tripadvisor",
         "booking",
@@ -138,6 +186,10 @@
         "google",
         "yelp"
       ],
+      "guestSignalHitCount": 77,
+      "representativeGuestEvidence": "Brunch referenced 77 times (40 captures + 37 Yelp); Mowry & Cotton 100+ mentions.",
+      "guestSignalStrength": "strong",
+      "guestSignalNotes": "Schedule confirmed exactly by the official page; strong distributed brunch/Mowry signal.",
       "guestSignalFound": true,
       "evidenceStrength": "strong",
       "clientReportTreatment": "mention",
@@ -151,8 +203,13 @@
       "property": "The Phoenician",
       "venue": "Resort-wide",
       "programType": "holiday_seasonal",
-      "schedule": "Recurring seasonal: 4th of July weekend, Memorial Day weekend, winter holiday festivities (festive decor, light tours), wine tastings",
-      "seasonality": "Seasonal (summer holidays + winter holidays)",
+      "schedule": null,
+      "officialSchedule": "Recurring seasonal events: 4th of July weekend, Memorial Day weekend, winter holiday festivities (festive decor, light tours), wine tastings. Specific dates vary by year.",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Recurring seasonal (summer holidays + winter holidays); calendar varies year to year",
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": "Seasonal umbrella (summer + winter holidays); exact calendar varies year to year",
       "sourceConfirming": [
         {
           "category": "event_calendar",
@@ -168,14 +225,14 @@
           "category": "event_calendar",
           "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/",
           "note": "4th of July weekend"
-        },
-        {
-          "category": "resort_pages",
-          "ref": "https://www.marriott.com/en-us/hotels/phxlc-the-phoenician-a-luxury-collection-resort-scottsdale/experiences/holidays/",
-          "note": "Marriott holidays page"
         }
       ],
       "discoverySourceCategory": "event_calendar",
+      "guestSignalSearchTerms": [
+        "holiday",
+        "4th of july",
+        "fireworks"
+      ],
       "guestSignalSourcesChecked": [
         "tripadvisor",
         "booking",
@@ -183,41 +240,10 @@
         "google",
         "yelp"
       ],
-      "guestSignalFound": true,
-      "evidenceStrength": "moderate",
-      "clientReportTreatment": "mention",
-      "omitReason": null,
-      "confidence": "high",
-      "lastVerifiedDate": "2026-06-26",
-      "materiality": "material"
-    },
-    {
-      "programName": "Poolside Programming (Yacht Club Summer live music + Dive-In Movies)",
-      "property": "The Phoenician",
-      "venue": "Mother of Pearl Pool / main pools",
-      "programType": "pool_beach",
-      "schedule": "Seasonal (summer): poolside live music series and dive-in movies",
-      "seasonality": "Summer season",
-      "sourceConfirming": [
-        {
-          "category": "resort_pages",
-          "ref": "https://www.thephoenician.com/pool-area/",
-          "note": "Pool area page (dive-in movies, poolside)"
-        },
-        {
-          "category": "local_listing",
-          "ref": "https://www.arizonafoothillsmagazine.com/resorts/news/resort-events/a-yacht-club-summer-at-the-phoenician-scottsdale",
-          "note": "Yacht Club Summer poolside live music (e.g. Yachtzilla)"
-        }
-      ],
-      "discoverySourceCategory": "resort_pages",
-      "guestSignalSourcesChecked": [
-        "tripadvisor",
-        "booking",
-        "expedia",
-        "google",
-        "yelp"
-      ],
+      "guestSignalHitCount": 110,
+      "representativeGuestEvidence": "'holiday' 110 mentions; '4th of July' 32; 'fireworks' 19 across the corpus.",
+      "guestSignalStrength": "medium",
+      "guestSignalNotes": "Seasonal UMBRELLA, not a single weekly program: genuine guest support for holiday/July-4th programming, but specific events rotate by season. Treat as a seasonal umbrella with calendar uncertainty.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
       "clientReportTreatment": "mention",
@@ -227,11 +253,114 @@
       "materiality": "material"
     },
     {
-      "programName": "Family Fun Programming (Kids Zone, dive-in movies, family activities)",
+      "programName": "Dive-In Movies (summer)",
+      "property": "The Phoenician",
+      "venue": "Mother of Pearl Pool / main pools",
+      "programType": "pool_beach",
+      "schedule": null,
+      "officialSchedule": "Summer season; select nights, poolside",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Summer; select nights",
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": "Summer season",
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.thephoenician.com/family-getaway-at-the-phoenician/",
+          "note": "Family getaway page (dive-in movies)"
+        },
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/",
+          "note": "Holiday weekend programming incl. dive-in movies"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "dive-in",
+        "dive in movie"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 2,
+      "representativeGuestEvidence": "\"...they host dive-in movies on certain nights...\" (2 secondhand Yelp mentions)",
+      "guestSignalStrength": "weak",
+      "guestSignalNotes": "Split out of the former bundled 'Poolside Programming' row. Weak guest signal (2 secondhand Yelp mentions); zero in the review corpus.",
+      "guestSignalFound": true,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "mention",
+      "omitReason": null,
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-26",
+      "materiality": "material"
+    },
+    {
+      "programName": "Yacht Club Summer Poolside Live Music",
+      "property": "The Phoenician",
+      "venue": "Pool area",
+      "programType": "pool_beach",
+      "schedule": null,
+      "officialSchedule": "Summer poolside live-music series (e.g. Yachtzilla); select nights",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Summer season; select nights",
+      "scheduleReason": null,
+      "scheduleConfidence": "low",
+      "seasonality": "Summer season",
+      "sourceConfirming": [
+        {
+          "category": "local_listing",
+          "ref": "https://www.arizonafoothillsmagazine.com/resorts/news/resort-events/a-yacht-club-summer-at-the-phoenician-scottsdale",
+          "note": "Arizona Foothills Magazine — Yacht Club Summer poolside live music"
+        },
+        {
+          "category": "event_calendar",
+          "ref": "https://www.thephoenician.com/seasonal-events/",
+          "note": "Seasonal events page"
+        }
+      ],
+      "discoverySourceCategory": "local_listing",
+      "guestSignalSearchTerms": [
+        "yacht",
+        "yacht club",
+        "summer concert",
+        "poolside live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 0,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Split out of the former bundled 'Poolside Programming' row. ZERO guest-corpus mentions; provenance is a single Arizona Foothills Magazine PR listing. Property-owned / PR context, NOT guest-validated.",
+      "guestSignalFound": false,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "mention",
+      "omitReason": null,
+      "confidence": "low",
+      "lastVerifiedDate": "2026-06-26",
+      "materiality": "material"
+    },
+    {
+      "programName": "Kids Club / Family Programming",
       "property": "The Phoenician",
       "venue": "Pool area / resort-wide",
       "programType": "kids_family",
-      "schedule": "Recurring family programming; Kids Zone at the pool",
+      "schedule": null,
+      "officialSchedule": "Daily kids & family activities (resort page calls the pool offering 'Kids Zone')",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Daily kids & family activities",
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
       "seasonality": "Year-round, expanded in summer/holidays",
       "sourceConfirming": [
         {
@@ -241,6 +370,11 @@
         }
       ],
       "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "kids club",
+        "kids zone",
+        "family activities"
+      ],
       "guestSignalSourcesChecked": [
         "tripadvisor",
         "booking",
@@ -248,29 +382,37 @@
         "google",
         "yelp"
       ],
+      "guestSignalHitCount": 14,
+      "representativeGuestEvidence": "\"...great kids club activities throughout the day...\" (14 'kids club' mentions)",
+      "guestSignalStrength": "weak",
+      "guestSignalNotes": "Renamed from 'Family Fun / Kids Zone' to match guest language: guests say 'kids club' (14 hits); 'Kids Zone' is the resort-page term (0 guest hits). Dive-in movies removed (now its own row). Recurring schedule not precisely sourced.",
       "guestSignalFound": true,
-      "evidenceStrength": "moderate",
+      "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
       "omitReason": null,
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-26",
       "materiality": "material"
-    },
+    }
+  ],
+  "themes": [
     {
-      "programName": "Common-area / Pool Ambient Atmosphere",
+      "name": "Common-area / Pool Ambient Atmosphere",
       "property": "The Phoenician",
-      "venue": "Pools and shared common areas",
-      "programType": "ambient_soundscape",
-      "schedule": "Ongoing background/ambient sound in shared spaces (not a scheduled performance)",
-      "seasonality": "Year-round",
+      "kind": "atmosphere",
+      "description": "Background/ambient music in shared common areas and around the pools - the audit's common-area sound watch-item. An atmosphere/operational signal, NOT a resort-scheduled performance.",
       "sourceConfirming": [
         {
           "category": "review_snippet",
-          "ref": "captures.json + yelp-evidence.json: guest references to background/ambient music and common-area atmosphere",
-          "note": "Atmosphere watch-item surfaced by guest reviews, not a resort-scheduled program"
+          "ref": "captures.json + yelp-evidence.json: guest references to background/ambient music in common areas",
+          "note": "Surfaced by guest reviews, no resort programming provenance"
         }
       ],
-      "discoverySourceCategory": "review_snippet",
+      "guestSignalSearchTerms": [
+        "ambient",
+        "background music",
+        "music by the pool"
+      ],
       "guestSignalSourcesChecked": [
         "tripadvisor",
         "booking",
@@ -278,13 +420,10 @@
         "google",
         "yelp"
       ],
-      "guestSignalFound": true,
-      "evidenceStrength": "weak",
-      "clientReportTreatment": "appendix",
-      "omitReason": null,
-      "confidence": "low",
-      "lastVerifiedDate": "2026-06-26",
-      "materiality": "immaterial"
+      "guestSignalHitCount": 2,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "weak",
+      "note": "Moved out of programs[] per review: this is an atmosphere/watch-item theme, not a recurring program. No resort programming provenance."
     }
   ],
   "sources": [],
