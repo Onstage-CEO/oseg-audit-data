@@ -1,5 +1,5 @@
 {
-  "status": "EXPORT_BLOCKED",
+  "status": "CLIENT_READY",
   "gates": [
     {
       "gateId": "report_generated",
@@ -13,10 +13,10 @@
     {
       "gateId": "verify_ready",
       "label": "verify-report resolved",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "verify overall = not_ready",
+      "detail": "verify overall = ready_with_warnings",
       "overriddenBy": null
     },
     {
@@ -57,5 +57,5 @@
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-27T18:32:57Z"
+  "computedAt": "2026-06-27T19:00:00Z"
 }
