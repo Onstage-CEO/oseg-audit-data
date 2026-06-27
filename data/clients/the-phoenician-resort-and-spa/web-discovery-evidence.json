@@ -133,13 +133,14 @@
       "url": "https://fabulousarizona.com/arizona-best/the-phoenician-introduces-first-ever-curse-of-camelback-halloween-celebration/",
       "domain": "fabulousarizona.com",
       "title": "The Phoenician Introduces First-Ever Curse of Camelback Halloween Celebration",
-      "snippet": "Fabulous Arizona editorial: The Phoenician introduced a 'Curse of Camelback' Halloween celebration - a seasonal entertainment activation (page not fetched for detail; title-level editorial signal of seasonal programming).",
+      "snippet": "Fabulous Arizona editorial: The Phoenician's 'Curse of Camelback' Halloween celebration - a seasonal entertainment activation (page returned 403 - title-level editorial signal only, no detail asserted).",
       "matchedTerms": [
         "halloween",
         "seasonal",
         "phoenician",
         "entertainment"
-      ]
+      ],
+      "verified": false
     },
     {
       "sourceId": "editorial_phoenixmag_tea",
@@ -148,12 +149,13 @@
       "url": "https://www.phoenixmag.com/2025/04/15/5-places-to-enjoy-high-tea-in-the-valley/",
       "domain": "phoenixmag.com",
       "title": "5 Places to Enjoy High Tea in the Valley - PHOENIX magazine",
-      "snippet": "PHOENIX magazine editorial feature listing The Phoenician among the Valley's best high tea / afternoon tea experiences.",
+      "snippet": "PHOENIX magazine editorial (Apr 15 2025) - 'Best high tea in the Valley' feature including The Phoenician's Afternoon Tea; verified: finger sandwiches, scones with clotted cream, and 'the atmosphere is amplified with a live piano performance'.",
       "matchedTerms": [
         "afternoon tea",
         "high tea",
         "phoenician"
-      ]
+      ],
+      "verified": true
     },
     {
       "sourceId": "editorial_takingthekids_cactus",
@@ -162,11 +164,12 @@
       "url": "https://takingthekids.com/the-cactus-garden-at-the-phoenician/",
       "domain": "takingthekids.com",
       "title": "The Cactus Garden at The Phoenician | Taking The Kids",
-      "snippet": "Taking The Kids editorial on the two-acre Cactus Garden at The Phoenician (nearly 250 cacti/succulents) - corroborates the daily Cactus Garden experience.",
+      "snippet": "Taking The Kids editorial (May 15 2021) - the two-acre Cactus Garden at The Phoenician (~250 cacti/succulents, plants from the Galapagos and Madagascar; hummingbirds). Corroborates the Cactus Garden feature (described as self-guided here; the DAILY guided tour is sourced separately from the resort events page).",
       "matchedTerms": [
         "cactus garden",
         "phoenician"
-      ]
+      ],
+      "verified": true
     },
     {
       "sourceId": "editorial_travelagewest",
@@ -175,12 +178,13 @@
       "url": "https://www.travelagewest.com/Travel/Family-Travel/phoenician-hotel-scottsdale",
       "domain": "travelagewest.com",
       "title": "Review: The Phoenician, a Luxury Collection Resort, in Scottsdale, Arizona | TravelAge West",
-      "snippet": "TravelAge West editorial review of The Phoenician (luxury/family travel trade publication).",
+      "snippet": "TravelAge West editorial review of The Phoenician (luxury/family travel trade publication; page returned 403 - title-level editorial-existence signal only, no content asserted).",
       "matchedTerms": [
         "review",
         "phoenician",
         "family"
-      ]
+      ],
+      "verified": false
     },
     {
       "sourceId": "editorial_kidtripster",
@@ -189,16 +193,17 @@
       "url": "https://kidtripster.com/stories/the-phoenician-scottsdale-arizona/",
       "domain": "kidtripster.com",
       "title": "Review: The Phoenician in Scottsdale, Arizona - KidTripster",
-      "snippet": "KidTripster family-travel review of The Phoenician; covers the Oasis Pool kids programming including dive-in movies.",
+      "snippet": "KidTripster family-travel review (May 14 2018) - verified: the Funician Kids Club (ages 5-12) and a complimentary evening 'Night Owl' program (5-9pm: crafts, games, movies, dinner), plus the air-conditioned activity center. (Does NOT mention dive-in movies - that is sourced via AZ Big Media.)",
       "matchedTerms": [
         "dive-in",
         "kids",
         "phoenician",
         "family"
-      ]
+      ],
+      "verified": true
     }
   ],
   "queriesRun": 18,
   "packsRun": 6,
-  "laneNote_longform": "Travel blogs / editorial media lane checked 2026-06-27: 6 editorial/blog sources reviewed; material signal corroborates Afternoon Tea, Dueling Pianos, Funicians Club, dive-in movies, Cactus Garden and adds the seasonal Curse of Camelback Halloween event."
+  "laneNote_longform": "Travel blogs / editorial media lane checked + re-verified 2026-06-27. 6 editorial/blog sources; 4 WebFetch-verified (AZ Big Media, PHOENIX magazine, Taking the Kids, KidTripster), 2 title-level only (TravelAge West + Fabulous Arizona Halloween, both 403). Material signal corroborates Afternoon Tea (+live piano), Funician Kids Club (+Night Owl evening program), Cactus Garden, dive-in movies, Activity Center; adds the seasonal Curse-of-Camelback Halloween event. NOTE for inventory follow-up: KidTripster surfaced a recurring 'Night Owl' evening kids program not yet in the programming inventory."
 }
