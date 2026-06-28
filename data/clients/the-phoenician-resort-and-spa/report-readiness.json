@@ -1,5 +1,5 @@
 {
-  "status": "EXPORT_BLOCKED",
+  "status": "CLIENT_READY",
   "gates": [
     {
       "gateId": "report_generated",
@@ -49,13 +49,13 @@
     {
       "gateId": "forbidden_language",
       "label": "No forbidden client-facing language",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "1 forbidden hit(s): \"bass\" (acoustic_bass)",
+      "detail": "no forbidden terms in report",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-28T17:43:26Z"
+  "computedAt": "2026-06-28T21:35:44Z"
 }
