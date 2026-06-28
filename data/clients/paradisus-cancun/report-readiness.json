@@ -52,10 +52,10 @@
       "pass": false,
       "material": true,
       "blocks": "export",
-      "detail": "1 forbidden hit(s): \"midnight\" (time_midnight)",
+      "detail": "2 forbidden hit(s): \"silent disco\" (phrase_silent_disco), \"silent disco\" (phrase_silent_disco)",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-28T22:04:05Z"
+  "computedAt": "2026-06-28T22:26:58Z"
 }
