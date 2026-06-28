@@ -54,7 +54,7 @@ on:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 3afe3505be088a5b60ca0ec5abe8610f320fa92a
+  ENGINE_REF: c89d996ce30289dd5058b5a2ce95f433e73a3b27
 
 permissions:
   contents: write
