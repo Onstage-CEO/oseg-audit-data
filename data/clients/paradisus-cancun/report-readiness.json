@@ -52,10 +52,10 @@
       "pass": false,
       "material": true,
       "blocks": "export",
-      "detail": "2 forbidden hit(s): \"midnight\" (time_midnight), \"2am\" (time_after_midnight_am)",
+      "detail": "1 forbidden hit(s): \"midnight\" (time_midnight)",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-28T17:47:13Z"
+  "computedAt": "2026-06-28T22:04:05Z"
 }
