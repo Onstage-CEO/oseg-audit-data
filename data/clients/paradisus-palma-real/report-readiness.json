@@ -1,5 +1,5 @@
 {
-  "status": "EXPORT_BLOCKED",
+  "status": "CLIENT_READY",
   "gates": [
     {
       "gateId": "report_generated",
@@ -40,22 +40,22 @@
     {
       "gateId": "programming_inventory",
       "label": "Programming Inventory Matrix",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "programming inventory required but missing",
+      "detail": "programming inventory present (8 program(s), all material programs carry program-specific guest-signal evidence)",
       "overriddenBy": null
     },
     {
       "gateId": "forbidden_language",
       "label": "No forbidden client-facing language",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "1 forbidden hit(s): \"9PM\" (time_late_night_pm)",
+      "detail": "no forbidden terms in report",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-28T17:05:10Z"
+  "computedAt": "2026-06-28T23:09:29Z"
 }
