@@ -13,12 +13,30 @@
       "scheduleConfidence": "medium",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.paradisuscancun.com/", "note": "Resort site: the Avenue central hub" },
-        { "category": "review_snippet", "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6668126-Shows_or_music_at_Paradisus-Cancun_Yucatan_Peninsula.html", "note": "Guests: nightly show at the Avenue Bar starts ~8:30, brief, usually over by ~9pm" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Resort site: the Avenue central hub"
+        },
+        {
+          "category": "review_snippet",
+          "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6668126-Shows_or_music_at_Paradisus-Cancun_Yucatan_Peninsula.html",
+          "note": "Guests: nightly show at the Avenue Bar starts ~8:30, brief, usually over by ~9pm"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["avenue", "show", "live music"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "avenue",
+        "show",
+        "live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 14,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "weak",
@@ -29,7 +47,7 @@
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
-      "clientSignalNote": "A nightly evening showcase runs at the Avenue hub, but guests consistently describe it as brief and early-ending — the property's central entertainment opportunity."
+      "clientSignalNote": "A nightly evening showcase runs at the Avenue hub, but guests consistently describe it as brief and early-ending, the property's central entertainment opportunity."
     },
     {
       "programName": "Central Atrium Live Music",
@@ -44,12 +62,30 @@
       "scheduleConfidence": "medium",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.paradisuscancun.com/", "note": "Profile (researched): produced/live entertainment rotates in the Central Atrium" },
-        { "category": "review_snippet", "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6668126-Shows_or_music_at_Paradisus-Cancun_Yucatan_Peninsula.html", "note": "Guests: nightly live music (acoustic) in the Atrium" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Profile (researched): produced/live entertainment rotates in the Central Atrium"
+        },
+        {
+          "category": "review_snippet",
+          "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6668126-Shows_or_music_at_Paradisus-Cancun_Yucatan_Peninsula.html",
+          "note": "Guests: nightly live music (acoustic) in the Atrium"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["atrium", "atrio", "live music"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "atrium",
+        "atrio",
+        "live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 124,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "medium",
@@ -74,12 +110,31 @@
       "scheduleConfidence": "medium",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.paradisuscancun.com/", "note": "Profile (researched): late-night DJ anchors the Red Bar" },
-        { "category": "review_snippet", "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6431281-Nightlife_at_Paradisus-Cancun_Yucatan_Peninsula.html", "note": "Guests: Red Lounge DJ + dancing; opens late, can be quiet" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Profile (researched): late-night DJ anchors the Red Bar"
+        },
+        {
+          "category": "review_snippet",
+          "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6431281-Nightlife_at_Paradisus-Cancun_Yucatan_Peninsula.html",
+          "note": "Guests: Red Lounge DJ + dancing; opens late, can be quiet"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["red lounge", "red bar", "DJ", "disco"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "red lounge",
+        "red bar",
+        "DJ",
+        "disco"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 30,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "medium",
@@ -104,11 +159,24 @@
       "scheduleConfidence": "low",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.paradisuscancun.com/restaurants_bars.asp", "note": "Resort site: dining bars; live music in parallel (profile)" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/restaurants_bars.asp",
+          "note": "Resort site: dining bars; live music in parallel (profile)"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["live music", "bar music"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "live music",
+        "bar music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 14,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "weak",
@@ -133,22 +201,36 @@
       "scheduleConfidence": "low",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "review_snippet", "ref": "captures.json: guest reviews of the Red Lounge themed headphone night", "note": "Multiple enthusiastic guest mentions of the themed headphone night" }
+        {
+          "category": "review_snippet",
+          "ref": "captures.json: guest reviews of the Red Lounge themed headphone night",
+          "note": "Multiple enthusiastic guest mentions of the themed headphone night"
+        }
       ],
       "discoverySourceCategory": "review_snippet",
-      "guestSignalSearchTerms": ["themed headphone night", "headphone party", "Red Lounge theme"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "themed headphone night",
+        "headphone party",
+        "Red Lounge theme"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 6,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "medium",
-      "guestSignalNotes": "A guest-loved themed headphone night surfaces repeatedly in reviews — a bright spot in an otherwise modest evening program.",
+      "guestSignalNotes": "A guest-loved themed headphone night surfaces repeatedly in reviews, a bright spot in an otherwise modest evening program.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
       "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
-      "clientSignalNote": "A guest-participation themed headphone night at the Red Lounge draws warm guest reviews — a bright spot to build on."
+      "clientSignalNote": "A guest-participation themed headphone night at the Red Lounge draws warm guest reviews, a bright spot to build on."
     },
     {
       "programName": "Kids Club / Family Programming",
@@ -163,11 +245,25 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.paradisuscancun.com/", "note": "Resort: family / kids programming" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Resort: family / kids programming"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["kids club", "kids", "children"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
+      "guestSignalSearchTerms": [
+        "kids club",
+        "kids",
+        "children"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
       "guestSignalHitCount": 1591,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "strong",
