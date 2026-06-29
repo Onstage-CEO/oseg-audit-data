@@ -1,20 +1,38 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-06-29T00:35:48.215Z",
+  "generatedAt": "2026-06-29T01:00:20.478Z",
   "venues": [
+    {
+      "venue": "J&G Steakhouse",
+      "slug": "jandg-steakhouse",
+      "yelp": 0,
+      "google": 0,
+      "tripadvisor": 0,
+      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
+    },
+    {
+      "venue": "Mowry & Cotton",
+      "slug": "mowry-and-cotton",
+      "yelp": 0,
+      "google": 0,
+      "tripadvisor": 0,
+      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
+    },
     {
       "venue": "Kalio Kabobery",
       "slug": "kalio-kabobery",
-      "yelp": 14,
+      "yelp": 0,
       "google": 0,
-      "note": ""
+      "tripadvisor": 0,
+      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
     },
     {
-      "venue": "The Marketplace",
-      "slug": "the-marketplace",
-      "yelp": 14,
+      "venue": "19th Hole",
+      "slug": "19th-hole",
+      "yelp": 0,
       "google": 0,
-      "note": ""
+      "tripadvisor": 0,
+      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
     }
   ]
 }
