@@ -16,8 +16,10 @@
       "status": "fail",
       "messages": [
         "Invalid audit JSON at /home/runner/work/oseg-audit-data/oseg-audit-data/data-repo/data/clients/the-phoenician-resort-and-spa/audit.json:",
-        "  - venues.4.type: Required",
-        "  - venues.5.type: Required"
+        "  - venues.0.type: Required",
+        "  - venues.1.type: Required",
+        "  - venues.2.type: Required",
+        "  - venues.3.type: Required"
       ]
     }
   ],
@@ -54,5 +56,5 @@
     "clientForbiddenTermsApplied": 0,
     "hits": []
   },
-  "timestamp": "2026-06-29T00:52:25.985Z"
+  "timestamp": "2026-06-29T01:00:20.965Z"
 }
