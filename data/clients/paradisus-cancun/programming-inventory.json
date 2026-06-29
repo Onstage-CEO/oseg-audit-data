@@ -1,0 +1,295 @@
+{
+  "propertyName": "Paradisus Cancún",
+  "programs": [
+    {
+      "programName": "Avenue Bar Nightly Showcase",
+      "property": "Paradisus Cancún",
+      "venue": "The Avenue (central hub)",
+      "programType": "produced_show",
+      "officialSchedule": "A brief nightly evening show (dancers / musicians) at the Avenue Bar, plus live music",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Nightly, early evening (brief showcase)",
+      "clientFacingSchedule": "Nightly, early evening (brief showcase)",
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": "Year-round",
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Resort site: the Avenue central hub"
+        },
+        {
+          "category": "review_snippet",
+          "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6668126-Shows_or_music_at_Paradisus-Cancun_Yucatan_Peninsula.html",
+          "note": "Guests: nightly show at the Avenue Bar starts ~8:30, brief, usually over by ~9pm"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "avenue",
+        "show",
+        "live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 14,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "weak",
+      "guestSignalNotes": "Nightly but BRIEF: guests report the evening show is short and the programmed entertainment winds down early (~9pm). This is the property's core entertainment gap, not a strength.",
+      "guestSignalFound": true,
+      "evidenceStrength": "moderate",
+      "clientReportTreatment": "feature",
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "clientSignalNote": "A nightly evening showcase runs at the Avenue hub, but guests consistently describe it as brief and early-ending — the property's central entertainment opportunity.",
+      "schedule": null,
+      "omitReason": null
+    },
+    {
+      "programName": "Central Atrium Live Music",
+      "property": "Paradisus Cancún",
+      "venue": "Central Atrium",
+      "programType": "live_music",
+      "officialSchedule": "Live music (e.g. acoustic guitar) in the Central Atrium most nights",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Most evenings",
+      "clientFacingSchedule": "Most evenings",
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": "Year-round",
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Profile (researched): produced/live entertainment rotates in the Central Atrium"
+        },
+        {
+          "category": "review_snippet",
+          "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6668126-Shows_or_music_at_Paradisus-Cancun_Yucatan_Peninsula.html",
+          "note": "Guests: nightly live music (acoustic) in the Atrium"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "atrium",
+        "atrio",
+        "live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 124,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "medium",
+      "guestSignalNotes": "124 atrium mentions; live music is a recurring evening fixture there.",
+      "guestSignalFound": true,
+      "evidenceStrength": "moderate",
+      "clientReportTreatment": "feature",
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "schedule": null,
+      "omitReason": null
+    },
+    {
+      "programName": "Red Bar Late-Night DJ",
+      "property": "Paradisus Cancún",
+      "venue": "Red Bar",
+      "programType": "dj",
+      "officialSchedule": "Resident DJ + dancing at the Red Bar / Red Lounge, the late-night anchor",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Late evening (DJ + dancing)",
+      "clientFacingSchedule": "Late evening (DJ + dancing)",
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": "Year-round",
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Profile (researched): late-night DJ anchors the Red Bar"
+        },
+        {
+          "category": "review_snippet",
+          "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6431281-Nightlife_at_Paradisus-Cancun_Yucatan_Peninsula.html",
+          "note": "Guests: Red Lounge DJ + dancing; opens late, can be quiet"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "red lounge",
+        "red bar",
+        "DJ",
+        "disco"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 30,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "medium",
+      "guestSignalNotes": "The late-night anchor; guests note it opens late and can be under-attended.",
+      "guestSignalFound": true,
+      "evidenceStrength": "moderate",
+      "clientReportTreatment": "mention",
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "schedule": null,
+      "omitReason": null
+    },
+    {
+      "programName": "Dining Bars Live Music",
+      "property": "Paradisus Cancún",
+      "venue": "Dining bars",
+      "programType": "live_music",
+      "officialSchedule": "Live music in the dining bars in parallel through the evening",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Evenings",
+      "clientFacingSchedule": "Evenings",
+      "scheduleReason": null,
+      "scheduleConfidence": "low",
+      "seasonality": "Year-round",
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/restaurants_bars.asp",
+          "note": "Resort site: dining bars; live music in parallel (profile)"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "live music",
+        "bar music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 14,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "weak",
+      "guestSignalNotes": "Part of the resort's ~14 live-music mentions; a low-key evening layer.",
+      "guestSignalFound": true,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "mention",
+      "confidence": "low",
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "schedule": null,
+      "omitReason": null
+    },
+    {
+      "programName": "Themed Headphone Night",
+      "property": "Paradisus Cancún",
+      "venue": "Red Bar / Red Lounge",
+      "programType": "signature_weekly",
+      "officialSchedule": "A guest-participation themed headphone night at the Red Lounge",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Periodic (themed night)",
+      "clientFacingSchedule": "Periodic themed night",
+      "scheduleReason": null,
+      "scheduleConfidence": "low",
+      "seasonality": "Year-round",
+      "sourceConfirming": [
+        {
+          "category": "review_snippet",
+          "ref": "captures.json: guest reviews of the Red Lounge themed headphone night",
+          "note": "Multiple enthusiastic guest mentions of the themed headphone night"
+        }
+      ],
+      "discoverySourceCategory": "review_snippet",
+      "guestSignalSearchTerms": [
+        "themed headphone night",
+        "headphone party",
+        "Red Lounge theme"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 6,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "medium",
+      "guestSignalNotes": "A guest-loved themed headphone night surfaces repeatedly in reviews — a bright spot in an otherwise modest evening program.",
+      "guestSignalFound": true,
+      "evidenceStrength": "moderate",
+      "clientReportTreatment": "mention",
+      "confidence": "medium",
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "clientSignalNote": "A guest-participation themed headphone night at the Red Lounge draws warm guest reviews — a bright spot to build on.",
+      "schedule": null,
+      "omitReason": null
+    },
+    {
+      "programName": "Kids Club / Family Programming",
+      "property": "Paradisus Cancún",
+      "venue": "Resort-wide",
+      "programType": "kids_family",
+      "officialSchedule": "Daily kids & family activities",
+      "thirdPartySchedule": null,
+      "chosenSchedule": "Daily kids and family activities",
+      "clientFacingSchedule": "Daily kids and family activities",
+      "scheduleReason": null,
+      "scheduleConfidence": "high",
+      "seasonality": "Year-round",
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.paradisuscancun.com/",
+          "note": "Resort: family / kids programming"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [
+        "kids club",
+        "kids",
+        "children"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 1591,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "strong",
+      "guestSignalNotes": "Strong family signal: 1,591 kids/children mentions; a frequently-discussed daytime family program.",
+      "guestSignalFound": true,
+      "evidenceStrength": "strong",
+      "clientReportTreatment": "feature",
+      "confidence": "high",
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "schedule": null,
+      "omitReason": null
+    }
+  ],
+  "themes": [],
+  "sources": [],
+  "generatedAt": "2026-06-29T02:30:00Z"
+}
