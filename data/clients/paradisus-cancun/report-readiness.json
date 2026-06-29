@@ -61,10 +61,10 @@
       "pass": false,
       "material": true,
       "blocks": "export",
-      "detail": "5 forbidden hit(s): \"acoustic\" (acoustic_words), \"acoustic\" (acoustic_words), \"acoustic\" (acoustic_words), \"silent disco\" (phrase_silent_disco), \"silent disco\" (phrase_silent_disco)",
+      "detail": "2 forbidden hit(s): \"silent disco\" (phrase_silent_disco), \"silent disco\" (phrase_silent_disco)",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-29T04:20:29Z"
+  "computedAt": "2026-06-29T04:52:02Z"
 }
