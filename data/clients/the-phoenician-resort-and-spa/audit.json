@@ -64,40 +64,20 @@
   "evidence": [],
   "venues": [
     {
-      "name": "The Phoenician Tavern",
-      "type": "Bar & Lounge (dueling pianos)",
-      "slug": "the-phoenician-tavern",
-      "yelpUrl": "https://www.yelp.com/biz/the-phoenician-tavern-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/The%20Phoenician%20Tavern%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
-    },
-    {
       "name": "J&G Steakhouse",
-      "type": "Restaurant",
-      "slug": "j-and-g-steakhouse",
-      "yelpUrl": "https://www.yelp.com/biz/j-and-g-steakhouse-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/J%26G%20Steakhouse%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d334373-Reviews-J_G_Steakhouse-Scottsdale_Arizona.html"
     },
     {
       "name": "Mowry & Cotton",
-      "type": "Restaurant",
-      "slug": "mowry-and-cotton",
-      "yelpUrl": "https://www.yelp.com/biz/mowry-and-cotton-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/Mowry%20%26%20Cotton%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
-    },
-    {
-      "name": "The Thirsty Camel",
-      "type": "Lounge (afternoon tea)",
-      "slug": "thirsty-camel",
-      "yelpUrl": "https://www.yelp.com/biz/thirsty-camel-at-the-phoenician-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/Thirsty%20Camel%20at%20The%20Phoenician%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d13009103-Reviews-Mowry_Cotton-Scottsdale_Arizona.html"
     },
     {
       "name": "Kalio Kabobery",
-      "yelpUrl": "https://www.yelp.com/biz/kalio-kabobery-scottsdale"
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d19402659-Reviews-Kalio_Kebobery-Scottsdale_Arizona.html"
     },
     {
-      "name": "The Marketplace",
-      "yelpUrl": "https://www.yelp.com/biz/the-marketplace-scottsdale"
+      "name": "19th Hole",
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d23195304-Reviews-19th_Hole_Grill_And_Patio-Scottsdale_Arizona.html"
     }
   ],
   "segments": [],
