@@ -1,0 +1,151 @@
+{
+  "_note": "Per-outlet × per-source listing-reality attempts, web-verified 2026-06-28 (outlet-listing-verification workflow). Each cell: captured, or a documented miss (duplicated_into_property / no_standalone_listing) with the checked URL as proof. Feeds the Source Coverage Matrix via generate-coverage-matrix.",
+  "property": [],
+  "outlets": [
+    {
+      "name": "Ginger lobby bar",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.yelp.com/search?find_desc=Ginger+bar+Paradisus+Palma+Real&find_loc=Punta+Cana",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/s?term=Ginger%20Paradisus%20Palma%20Real",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Olympus Theater",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.yelp.com/search?find_desc=Olympus+Theater+Paradisus+Palma+Real&find_loc=Punta+Cana",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/s?term=Olympus+Theater+Paradisus+Palma+Real",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Red Lounge",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.yelp.com/search?find_desc=Red+Lounge+Paradisus+Palma+Real&find_loc=Punta+Cana",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/s?term=Red+Lounge+Paradisus+Palma+Real",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Adult pool",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.yelp.com/search?find_desc=Adult+pool+Paradisus+Palma+Real&find_loc=Punta+Cana",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/s?term=Adult+pool+Paradisus+Palma+Real",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Plaza Colonial",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.yelp.com/search?find_desc=Plaza+Colonial+Paradisus+Palma+Real&find_loc=Punta+Cana",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/s?term=Plaza+Colonial+Paradisus+Palma+Real",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}

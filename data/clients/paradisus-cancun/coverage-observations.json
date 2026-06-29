@@ -1,0 +1,151 @@
+{
+  "_note": "Per-outlet × per-source listing-reality attempts, web-verified 2026-06-28. Documented miss (duplicated/no_standalone) with proof URL, or a known standalone listing flagged for capture.",
+  "property": [],
+  "outlets": [
+    {
+      "name": "The Avenue (central hub)",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Cancún",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.yelp.com/biz/paradisus-cancún",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/s?term=The+Avenue+Paradisus+Cancun",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Central Atrium",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Canc%C3%BAn",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.yelp.com/biz/paradisus-canc%C3%BAn",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/landmark/restaurants-near-paradisus-cancun-resort-and-spa",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Red Bar",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Cancún",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "knownListingExists": true,
+          "identifier": "https://www.yelp.com/biz/red-lounge-canc%C3%BAn",
+          "confidence": "medium"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/landmark/restaurants-near-paradisus-cancun-resort-and-spa",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Dining bars",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Cancún",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.yelp.com/biz/paradisus-canc%C3%BAn",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.opentable.com/landmark/restaurants-near-paradisus-cancun-resort-and-spa",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "name": "Pools & beach",
+      "observed": [
+        {
+          "source": "google",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.google.com/maps/place/Paradisus+Cancún",
+          "confidence": "high"
+        },
+        {
+          "source": "yelp",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.yelp.com/biz/paradisus-cancún",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html",
+          "confidence": "high"
+        },
+        {
+          "source": "opentable",
+          "attemptKind": "no_standalone_listing",
+          "attemptedUrl": "https://www.paradisuscancun.com/",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
