@@ -30,11 +30,11 @@
     },
     {
       "gateId": "outlet_matrix",
-      "label": "Outlet/Venue Evidence Matrix (where present)",
+      "label": "Outlet × Source Coverage (no casual gaps)",
       "pass": true,
-      "material": false,
-      "blocks": "nothing",
-      "detail": "outlet matrix not present (not required at this phase)",
+      "material": true,
+      "blocks": "export",
+      "detail": "every outlet × source cell is captured or a documented miss",
       "overriddenBy": null
     },
     {
@@ -57,5 +57,5 @@
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-28T23:09:29Z"
+  "computedAt": "2026-06-29T01:00:00Z"
 }
