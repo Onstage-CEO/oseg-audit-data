@@ -1,22 +1,22 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-06-29T01:10:48.307Z",
+  "generatedAt": "2026-06-29T01:20:55.104Z",
   "venues": [
     {
       "venue": "J&G Steakhouse",
       "slug": "jandg-steakhouse",
       "yelp": 0,
       "google": 0,
-      "tripadvisor": 0,
-      "note": "tripadvisor: timed out (still in queue) — re-run capture-venues to collect"
+      "tripadvisor": 598,
+      "note": ""
     },
     {
       "venue": "Mowry & Cotton",
       "slug": "mowry-and-cotton",
       "yelp": 0,
       "google": 0,
-      "tripadvisor": 0,
-      "note": "tripadvisor: timed out (still in queue) — re-run capture-venues to collect"
+      "tripadvisor": 504,
+      "note": ""
     }
   ]
 }
