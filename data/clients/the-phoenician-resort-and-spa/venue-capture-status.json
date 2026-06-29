@@ -1,6 +1,6 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-06-29T01:00:20.478Z",
+  "generatedAt": "2026-06-29T01:02:37.077Z",
   "venues": [
     {
       "venue": "J&G Steakhouse",
@@ -8,7 +8,7 @@
       "yelp": 0,
       "google": 0,
       "tripadvisor": 0,
-      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
+      "note": "tripadvisor: timed out (still in queue) — re-run capture-venues to collect"
     },
     {
       "venue": "Mowry & Cotton",
@@ -16,15 +16,15 @@
       "yelp": 0,
       "google": 0,
       "tripadvisor": 0,
-      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
+      "note": "tripadvisor: timed out (still in queue) — re-run capture-venues to collect"
     },
     {
       "venue": "Kalio Kabobery",
       "slug": "kalio-kabobery",
       "yelp": 0,
       "google": 0,
-      "tripadvisor": 0,
-      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
+      "tripadvisor": 2,
+      "note": ""
     },
     {
       "venue": "19th Hole",
@@ -32,7 +32,7 @@
       "yelp": 0,
       "google": 0,
       "tripadvisor": 0,
-      "note": "tripadvisor: needs DATAFORSEO_LOGIN + DATAFORSEO_PASSWORD"
+      "note": "tripadvisor: empty"
     }
   ]
 }
