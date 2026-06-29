@@ -136,6 +136,12 @@
           "attemptKind": "duplicated_into_property",
           "attemptedUrl": "https://www.google.com/maps?cid=7979147976159927655",
           "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html",
+          "confidence": "high"
         }
       ]
     },
@@ -145,9 +151,10 @@
         {
           "source": "tripadvisor",
           "knownListingExists": true,
-          "identifier": "tripadvisor.com d23195304 (near-zero reviews)",
+          "identifier": "TripAdvisor 19th Hole Grill And Patio (d23195304) — listing exists but carries ~0 reviews; capture returned empty.",
           "entertainmentSignal": "no",
-          "confidence": "low"
+          "confidence": "low",
+          "attemptedNoData": true
         },
         {
           "source": "google",
@@ -172,6 +179,12 @@
           "identifier": "thephoenician.com/dine/thirsty-camel (live music Thu-Sat)",
           "entertainmentSignal": "yes",
           "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html",
+          "confidence": "high"
         }
       ]
     },
@@ -188,6 +201,12 @@
           "source": "yelp",
           "attemptKind": "duplicated_into_property",
           "attemptedUrl": "https://www.yelp.com/biz/the-phoenician-a-luxury-collection-resort-scottsdale-scottsdale",
+          "confidence": "high"
+        },
+        {
+          "source": "tripadvisor",
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html",
           "confidence": "high"
         }
       ]

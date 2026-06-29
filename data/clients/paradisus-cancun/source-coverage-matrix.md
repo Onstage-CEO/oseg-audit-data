@@ -12,7 +12,7 @@ _10/14 engine-supported sources captured_
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured | yes | yes | yes | 24,494 | 24,494 | unknown | yes | high | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
-| TripAdvisor reviews | ✅ captured | yes | yes | yes | 108,810 | 108,810 | unknown | yes | high | Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
+| TripAdvisor reviews | ✅ captured | yes | yes | yes | 108,810 | 108,810 | unknown | yes | high | Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 360 | 360 | unknown | yes | high | Captured. |
 | Booking.com reviews | ✅ captured | yes | yes | yes | 684 | 684 | unknown | yes | high | Captured. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | ✅ captured | yes | yes | yes | 367 | 367 | unknown | yes | high | Captured. Outlets have no Expedia listing — N/A. |
@@ -28,12 +28,12 @@ _10/14 engine-supported sources captured_
 | Quora / Q&A platforms | ☑️ checked, no data | yes | yes | no | 0 | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Checked; the source returned no usable data. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — The Avenue (central hub)
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Cancún. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
 | Yelp reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Checked: https://www.yelp.com/biz/paradisus-cancún. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -49,12 +49,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Central Atrium
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Canc%C3%BAn. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
 | Yelp reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Checked: https://www.yelp.com/biz/paradisus-canc%C3%BAn. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -70,12 +70,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Red Bar
-_1/2 engine-supported sources captured_
+_1/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Cancún. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 4 | 4 | unknown | yes | medium | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -91,12 +91,12 @@ _1/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Dining bars
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Cancún. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
 | Yelp reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Checked: https://www.yelp.com/biz/paradisus-canc%C3%BAn. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -112,12 +112,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Pools & beach
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Cancún. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html. |
 | Yelp reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Checked: https://www.yelp.com/biz/paradisus-cancún. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |

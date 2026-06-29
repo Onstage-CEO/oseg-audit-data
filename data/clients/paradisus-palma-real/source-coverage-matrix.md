@@ -12,7 +12,7 @@ _9/14 engine-supported sources captured_
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured | yes | yes | yes | 40,564 | 40,564 | unknown | yes | high | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
-| TripAdvisor reviews | ✅ captured | yes | yes | yes | 155,664 | 155,664 | unknown | yes | high | Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
+| TripAdvisor reviews | ✅ captured | yes | yes | yes | 155,664 | 155,664 | unknown | yes | high | Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | ☑️ checked, no data | yes | yes | no | 0 | 0 | unknown | no | medium | Checked; the source returned no usable data. |
 | Booking.com reviews | ✅ captured | yes | yes | yes | 836 | 836 | unknown | yes | high | Captured. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | ✅ captured | yes | yes | yes | 1,462 | 1,462 | unknown | yes | high | Captured. Outlets have no Expedia listing — N/A. |
@@ -28,12 +28,12 @@ _9/14 engine-supported sources captured_
 | Quora / Q&A platforms | ☑️ checked, no data | yes | yes | no | 0 | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Checked; the source returned no usable data. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Ginger lobby bar
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
 | Yelp reviews | 🔍 no standalone listing | yes | yes | no | 0 | 0 | unknown | no | high | Searched the provider; this outlet has no standalone listing. Checked: https://www.yelp.com/search?find_desc=Ginger+bar+Paradisus+Palma+Real&find_loc=Punta+Cana. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -49,12 +49,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Olympus Theater
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
 | Yelp reviews | 🔍 no standalone listing | yes | yes | no | 0 | 0 | unknown | no | high | Searched the provider; this outlet has no standalone listing. Checked: https://www.yelp.com/search?find_desc=Olympus+Theater+Paradisus+Palma+Real&find_loc=Punta+Cana. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -70,12 +70,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Red Lounge
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
 | Yelp reviews | 🔍 no standalone listing | yes | yes | no | 0 | 0 | unknown | no | high | Searched the provider; this outlet has no standalone listing. Checked: https://www.yelp.com/search?find_desc=Red+Lounge+Paradisus+Palma+Real&find_loc=Punta+Cana. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -91,12 +91,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Adult pool
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
 | Yelp reviews | 🔍 no standalone listing | yes | yes | no | 0 | 0 | unknown | no | high | Searched the provider; this outlet has no standalone listing. Checked: https://www.yelp.com/search?find_desc=Adult+pool+Paradisus+Palma+Real&find_loc=Punta+Cana. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -112,12 +112,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Plaza Colonial
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps/place/Paradisus+Palma+Real+Golf+%26+Spa+Resort. |
-| TripAdvisor reviews | 🔁 in property capture | yes | no | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g3176298-d583034-Reviews-Paradisus_Palma_Real_Golf_Spa_Resort-Bavaro_Punta_Cana_La_Altagracia_Province_Dominica.html. |
 | Yelp reviews | 🔍 no standalone listing | yes | yes | no | 0 | 0 | unknown | no | high | Searched the provider; this outlet has no standalone listing. Checked: https://www.yelp.com/search?find_desc=Plaza+Colonial+Paradisus+Palma+Real&find_loc=Punta+Cana. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |

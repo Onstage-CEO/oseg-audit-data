@@ -12,7 +12,7 @@ _11/14 engine-supported sources captured_
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured | yes | yes | yes | 2,170 | 2,170 | unknown | yes | high | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
-| TripAdvisor reviews | ✅ captured | yes | yes | yes | 3,186 | 3,186 | unknown | yes | high | Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
+| TripAdvisor reviews | ✅ captured | yes | yes | yes | 3,186 | 3,186 | unknown | yes | high | Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 769 | 769 | unknown | yes | high | Captured. |
 | Booking.com reviews | ✅ captured | yes | yes | yes | 55 | 55 | unknown | yes | high | Captured. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | ✅ captured | yes | yes | yes | 1,198 | 1,198 | unknown | yes | high | Captured. Outlets have no Expedia listing — N/A. |
@@ -28,12 +28,12 @@ _11/14 engine-supported sources captured_
 | Quora / Q&A platforms | ☑️ checked, no data | yes | yes | no | 0 | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Checked; the source returned no usable data. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — The Phoenician Tavern
-_3/2 engine-supported sources captured_
+_3/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured | yes | yes | yes | 831 | 111 | yes | yes | low | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
-| TripAdvisor reviews | ✅ captured | yes | no | yes | 132 | 132 | unknown | yes | high | Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
+| TripAdvisor reviews | ✅ captured | yes | yes | yes | 132 | 132 | unknown | yes | high | Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 97 | 97 | unknown | yes | high | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -49,12 +49,12 @@ _3/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Thirsty Camel
-_2/2 engine-supported sources captured_
+_2/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured | yes | yes | yes | 74 | 74 | unknown | yes | high | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
-| TripAdvisor reviews | 🚫 not supported yet | no | no | no | ? | 0 | unknown | no | medium | The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 81 | 81 | unknown | yes | high | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -70,12 +70,12 @@ _2/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — 19th Hole
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps?cid=7979147976159927655. |
-| TripAdvisor reviews | 🚫 not supported yet | no | no | no | ? | 0 | no | no | low | A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet. |
+| TripAdvisor reviews | ☑️ checked, no data | yes | yes | no | 0 | 0 | no | no | low | Checked; the source returned no usable data. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Checked: https://www.yelp.com/biz/the-phoenician-a-luxury-collection-resort-scottsdale-scottsdale. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -91,12 +91,12 @@ _0/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — J&G Steakhouse
-_2/2 engine-supported sources captured_
+_3/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured | yes | yes | yes | 674 | 478 | no | yes | low | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
-| TripAdvisor reviews | 🚫 not supported yet | no | no | no | 598 | 0 | no | no | medium | A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists (~598) but the engine cannot capture it at this level yet. |
+| TripAdvisor reviews | ✅ captured | yes | yes | yes | 598 | 598 | no | yes | medium | Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 500 | 500 | unknown | yes | high | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -112,12 +112,12 @@ _2/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Mowry & Cotton
-_2/2 engine-supported sources captured_
+_3/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured | yes | yes | yes | 242 | 242 | no | yes | low | Captured. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. |
-| TripAdvisor reviews | 🚫 not supported yet | no | no | no | ? | 0 | no | no | medium | A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet. |
+| TripAdvisor reviews | ✅ captured | yes | yes | yes | 504 | 504 | no | yes | medium | Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 255 | 255 | unknown | yes | high | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -133,12 +133,12 @@ _2/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Kalio Kabobery
-_1/2 engine-supported sources captured_
+_2/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps?cid=7979147976159927655. |
-| TripAdvisor reviews | 🚫 not supported yet | no | no | no | ? | 0 | no | no | medium | A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet. |
+| TripAdvisor reviews | ✅ captured | yes | yes | yes | 2 | 2 | no | yes | medium | Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 12 | 14 | no | yes | medium | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -154,12 +154,12 @@ _1/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — The Marketplace
-_1/2 engine-supported sources captured_
+_1/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps?cid=7979147976159927655. |
-| TripAdvisor reviews | 🚫 not supported yet | no | no | no | ? | 0 | unknown | no | medium | The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html. |
 | Yelp reviews | ✅ captured | yes | yes | yes | 14 | 14 | no | yes | medium | Captured. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |
@@ -175,12 +175,12 @@ _1/2 engine-supported sources captured_
 | Quora / Q&A platforms | — n/a | no | no | no | ? | 0 | unknown | no | medium | SUPPLEMENTAL (never rating math). Not applicable at this level. SUPPLEMENTAL traveler-intent / public-perception signal only (never enters rating math). No per-outlet Quora listing; outlet mentions are captured within the property-level capture. |
 
 ### OUTLET — Mother of Pearl pool / pool decks
-_0/2 engine-supported sources captured_
+_0/3 engine-supported sources captured_
 
 | Source | Status | Checked | Engine | Captured | Found | Got | Ent. | In report | Conf | Reason |
 |---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|:-:|---|
 | Google / Google Maps reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level Google capture runs when a venue carries a googleUrl in audit.json venues[]. Checked: https://www.google.com/maps?cid=7979147976159927655. |
-| TripAdvisor reviews | 🚫 not supported yet | no | no | no | ? | 0 | unknown | no | medium | The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. |
+| TripAdvisor reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html. |
 | Yelp reviews | 🔁 in property capture | yes | yes | no | ? | 0 | unknown | no | high | No standalone outlet listing; this outlet appears within the property-wide capture. Checked: https://www.yelp.com/biz/the-phoenician-a-luxury-collection-resort-scottsdale-scottsdale. |
 | Booking.com reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Individual restaurants/bars have no Booking.com listing — outlet level is N/A. |
 | Expedia reviews | — n/a | no | no | no | ? | 0 | unknown | no | medium | Not applicable at this level. Outlets have no Expedia listing — N/A. |

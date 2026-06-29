@@ -1,6 +1,6 @@
 {
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-06-29T00:50:22.251Z",
+  "generatedAt": "2026-06-29T01:42:27.360Z",
   "scopes": [
     {
       "scope": "property",
@@ -34,7 +34,7 @@
           "entertainmentSignal": "unknown",
           "usedInReport": true,
           "status": "captured",
-          "reason": "Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
+          "reason": "Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues.",
           "confidence": "high",
           "supplemental": false
         },
@@ -275,14 +275,14 @@
           "label": "TripAdvisor reviews",
           "identifier": "",
           "checked": true,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": true,
           "countFound": 132,
           "countCaptured": 132,
           "entertainmentSignal": "unknown",
           "usedInReport": true,
           "status": "captured",
-          "reason": "Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
+          "reason": "Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues.",
           "confidence": "high",
           "supplemental": false
         },
@@ -496,7 +496,7 @@
         }
       ],
       "capturedSources": 3,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -522,17 +522,19 @@
           "source": "tripadvisor",
           "label": "TripAdvisor reviews",
           "identifier": "",
-          "checked": false,
-          "supportedByEngine": false,
+          "checked": true,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "medium",
-          "supplemental": false
+          "status": "duplicated",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html.",
+          "confidence": "high",
+          "supplemental": false,
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html"
         },
         {
           "source": "yelp",
@@ -744,7 +746,7 @@
         }
       ],
       "capturedSources": 2,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -771,16 +773,16 @@
         {
           "source": "tripadvisor",
           "label": "TripAdvisor reviews",
-          "identifier": "tripadvisor.com d23195304 (near-zero reviews)",
-          "checked": false,
-          "supportedByEngine": false,
+          "identifier": "TripAdvisor 19th Hole Grill And Patio (d23195304) — listing exists but carries ~0 reviews; capture returned empty.",
+          "checked": true,
+          "supportedByEngine": true,
           "captured": false,
-          "countFound": "unknown",
+          "countFound": 0,
           "countCaptured": 0,
           "entertainmentSignal": "no",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet.",
+          "status": "checked_no_data",
+          "reason": "Checked; the source returned no usable data. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues.",
           "confidence": "low",
           "supplemental": false
         },
@@ -996,7 +998,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -1022,15 +1024,15 @@
           "source": "tripadvisor",
           "label": "TripAdvisor reviews",
           "identifier": "tripadvisor.com Restaurant_Review d334373",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
           "countFound": 598,
-          "countCaptured": 0,
+          "countCaptured": 598,
           "entertainmentSignal": "no",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists (~598) but the engine cannot capture it at this level yet.",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -1243,8 +1245,8 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 2,
-      "supportedSources": 2
+      "capturedSources": 3,
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -1270,15 +1272,15 @@
           "source": "tripadvisor",
           "label": "TripAdvisor reviews",
           "identifier": "tripadvisor.com Restaurant_Review d13009103 (4.7, #4/966)",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
-          "countFound": "unknown",
-          "countCaptured": 0,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
+          "countFound": 504,
+          "countCaptured": 504,
           "entertainmentSignal": "no",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet.",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -1491,8 +1493,8 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 2,
-      "supportedSources": 2
+      "capturedSources": 3,
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -1520,15 +1522,15 @@
           "source": "tripadvisor",
           "label": "TripAdvisor reviews",
           "identifier": "tripadvisor.com d19402659",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
-          "countFound": "unknown",
-          "countCaptured": 0,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
+          "countFound": 2,
+          "countCaptured": 2,
           "entertainmentSignal": "no",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. A listing/body exists but the engine cannot capture it at this level yet.",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -1741,8 +1743,8 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 1,
-      "supportedSources": 2
+      "capturedSources": 2,
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -1770,17 +1772,19 @@
           "source": "tripadvisor",
           "label": "TripAdvisor reviews",
           "identifier": "",
-          "checked": false,
-          "supportedByEngine": false,
+          "checked": true,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "medium",
-          "supplemental": false
+          "status": "duplicated",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html.",
+          "confidence": "high",
+          "supplemental": false,
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html"
         },
         {
           "source": "yelp",
@@ -1992,7 +1996,7 @@
         }
       ],
       "capturedSources": 1,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -2020,17 +2024,19 @@
           "source": "tripadvisor",
           "label": "TripAdvisor reviews",
           "identifier": "",
-          "checked": false,
-          "supportedByEngine": false,
+          "checked": true,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
-          "confidence": "medium",
-          "supplemental": false
+          "status": "duplicated",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html.",
+          "confidence": "high",
+          "supplemental": false,
+          "attemptKind": "duplicated_into_property",
+          "attemptedUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html"
         },
         {
           "source": "yelp",
@@ -2244,7 +2250,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 2
+      "supportedSources": 3
     }
   ],
   "summary": {

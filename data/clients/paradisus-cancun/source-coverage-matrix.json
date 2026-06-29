@@ -1,6 +1,6 @@
 {
   "property": "Paradisus Cancún",
-  "generatedAt": "2026-06-29T00:50:18.596Z",
+  "generatedAt": "2026-06-29T01:42:22.353Z",
   "scopes": [
     {
       "scope": "property",
@@ -34,7 +34,7 @@
           "entertainmentSignal": "unknown",
           "usedInReport": true,
           "status": "captured",
-          "reason": "Captured. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path.",
+          "reason": "Captured. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues.",
           "confidence": "high",
           "supplemental": false
         },
@@ -277,14 +277,14 @@
           "label": "TripAdvisor reviews",
           "identifier": "",
           "checked": true,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
           "status": "duplicated",
-          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
           "confidence": "high",
           "supplemental": false,
           "attemptKind": "duplicated_into_property",
@@ -504,7 +504,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -533,14 +533,14 @@
           "label": "TripAdvisor reviews",
           "identifier": "",
           "checked": true,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
           "status": "duplicated",
-          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
           "confidence": "high",
           "supplemental": false,
           "attemptKind": "duplicated_into_property",
@@ -760,7 +760,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -789,14 +789,14 @@
           "label": "TripAdvisor reviews",
           "identifier": "",
           "checked": true,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
           "status": "duplicated",
-          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
           "confidence": "high",
           "supplemental": false,
           "attemptKind": "duplicated_into_property",
@@ -1014,7 +1014,7 @@
         }
       ],
       "capturedSources": 1,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -1043,14 +1043,14 @@
           "label": "TripAdvisor reviews",
           "identifier": "",
           "checked": true,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
           "status": "duplicated",
-          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
           "confidence": "high",
           "supplemental": false,
           "attemptKind": "duplicated_into_property",
@@ -1270,7 +1270,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 2
+      "supportedSources": 3
     },
     {
       "scope": "outlet",
@@ -1299,14 +1299,14 @@
           "label": "TripAdvisor reviews",
           "identifier": "",
           "checked": true,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
           "status": "duplicated",
-          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. A single outlet (the Tavern) was hand-folded once; there is no repeatable outlet-level TripAdvisor path. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
+          "reason": "No standalone outlet listing; this outlet appears within the property-wide capture. Outlet-level TripAdvisor capture runs when a venue carries a tripadvisorUrl in audit.json venues[] — submitted as a DataForSEO url_path task (Khyber-safe), collected by capture-venues. Checked: https://www.tripadvisor.com/Hotel_Review-g150807-d282106-Reviews-Paradisus_Cancun-Cancun_Yucatan_Peninsula.html.",
           "confidence": "high",
           "supplemental": false,
           "attemptKind": "duplicated_into_property",
@@ -1526,7 +1526,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 2
+      "supportedSources": 3
     }
   ],
   "summary": {
