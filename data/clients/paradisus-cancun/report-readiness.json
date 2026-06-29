@@ -1,5 +1,5 @@
 {
-  "status": "CLIENT_READY",
+  "status": "EXPORT_BLOCKED",
   "gates": [
     {
       "gateId": "report_generated",
@@ -47,15 +47,24 @@
       "overriddenBy": null
     },
     {
-      "gateId": "forbidden_language",
-      "label": "No forbidden client-facing language",
+      "gateId": "program_readiness",
+      "label": "Program Readiness (per-program evidence verdict; no buried programs)",
       "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "no forbidden terms in report",
+      "detail": "all 6 program(s) carry a complete evidence verdict; no meaningful program is buried",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "forbidden_language",
+      "label": "No forbidden client-facing language",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "5 forbidden hit(s): \"acoustic\" (acoustic_words), \"acoustic\" (acoustic_words), \"acoustic\" (acoustic_words), \"silent disco\" (phrase_silent_disco), \"silent disco\" (phrase_silent_disco)",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-29T02:54:42Z"
+  "computedAt": "2026-06-29T04:20:29Z"
 }
