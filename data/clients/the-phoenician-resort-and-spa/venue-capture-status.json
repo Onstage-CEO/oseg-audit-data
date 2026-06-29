@@ -1,6 +1,6 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-06-26T04:25:21.000Z",
+  "generatedAt": "2026-06-29T00:24:33.534Z",
   "venues": [
     {
       "venue": "The Phoenician Tavern",
@@ -19,7 +19,7 @@
     {
       "venue": "Mowry & Cotton",
       "slug": "mowry-and-cotton",
-      "yelp": 254,
+      "yelp": 255,
       "google": 242,
       "note": ""
     },
