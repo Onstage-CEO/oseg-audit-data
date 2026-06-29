@@ -20,7 +20,7 @@
       "name": "Thirsty Camel",
       "category": "bar_lounge",
       "entertainment": [
-        "live music (Thu\u2013Sat)"
+        "live music (weekend evenings)"
       ],
       "notes": "Lobby lounge; afternoon tea; named a top hotel bar.",
       "entertainmentSource": "thephoenician.com/dine/thirsty-camel (resort schedule)"
@@ -64,5 +64,5 @@
   ],
   "nightclubExists": false,
   "entertainmentProgram": "Entertainment is focused and venue-specific: dueling pianos at The Phoenician Tavern on weekend evenings, and ambient live music in the bars and lounges. A luxury golf and spa resort, it runs NO dedicated nightclub, disco, or produced-show theater.",
-  "dayNightFlow": "Daytime centers on the pools, golf, and spa. Evening entertainment is concentrated at the Tavern (dueling pianos, Fri/Sat 8-10pm) and the lounges; there is no late-night programmed venue."
+  "dayNightFlow": "Daytime centers on the pools, golf, and spa. Evening entertainment is concentrated at the Tavern (dueling pianos, Saturday evenings) and the lounges; there is no late-night programmed venue."
 }
