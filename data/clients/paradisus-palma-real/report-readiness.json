@@ -47,6 +47,15 @@
       "overriddenBy": null
     },
     {
+      "gateId": "program_readiness",
+      "label": "Program Readiness (per-program evidence verdict; no buried programs)",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "all 8 program(s) carry a complete evidence verdict; no meaningful program is buried",
+      "overriddenBy": null
+    },
+    {
       "gateId": "forbidden_language",
       "label": "No forbidden client-facing language",
       "pass": true,
@@ -57,5 +66,5 @@
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-29T02:34:07Z"
+  "computedAt": "2026-06-29T04:03:27Z"
 }
