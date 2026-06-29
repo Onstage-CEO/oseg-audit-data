@@ -1,0 +1,48 @@
+{
+  "platform": "yelp",
+  "venue": "Red Bar",
+  "venueSlug": "red-bar",
+  "listingUrl": "https://www.yelp.com/biz/red-lounge-cancún",
+  "reviews": [
+    {
+      "platform": "yelp",
+      "rating": 1,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Very nice decor of the place but the DJ is not so great. The music will make you fall asleep Zzzzzzzzz",
+      "author": "Ricardo R.",
+      "sourceUrl": "https://www.yelp.com/biz/red-lounge-cancún#review-h8eRxYtHdRQ5Eh0RCuclBw",
+      "timestamp": null
+    },
+    {
+      "platform": "yelp",
+      "rating": 2,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Decor is good although they should put more effort into getting people into the lounge multiple times. Like someone else already said, the same music is played over and over every night and on the beach. It is literally the same playlist we don't even think he's doing anything behind the DJ booth. He was the most bored DJ I've ever seen and I use to work in the Hollywood clubs so I've seen a lot of DJs.",
+      "author": "Randy C.",
+      "sourceUrl": "https://www.yelp.com/biz/red-lounge-cancún#review-fqcs5v15tUsmM7IIwbh41w",
+      "timestamp": null
+    },
+    {
+      "platform": "yelp",
+      "rating": 3,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Was fun because my friends and I made it fun. Didn't want to leave the resort due to heavy rain so we decided to party here. DJ's need a better play list, they played the same ish throughout the night. For being the only \"club\" option it served its purpose.",
+      "author": "Kim S.",
+      "sourceUrl": "https://www.yelp.com/biz/red-lounge-cancún#review-ceZplR90BzwyszOBS9zwyQ",
+      "timestamp": null
+    },
+    {
+      "platform": "yelp",
+      "rating": 4,
+      "ratingMax": 5,
+      "title": null,
+      "text": "\"Some people have to have the sultry evenings\n Cocktails in the blue, red and grey\n But I like every minute of the day\"\n\n(Blue Red and Grey by the Who)\n\nThe Red Lounge is visually stunning.\n\nLots of reds and golds and blacks. Lots of chairs shaped like a huge open golden hand, so you sit on an oversized palm, and lean back against a set of gargantuan outstretched fingers.\n\nBar stools are shaped like corkscrews and there are lots of cool seating nooks throughout the space.\n\nWe were here tonight for a tequila tasting, and I was very impressed by the passion and knowledge of the guy who ran the class. \n\nBut as I was sipping away, my eyes wandered around the Red Lounge and I marvelled at how sweet a place it is.",
+      "author": "Dan R.",
+      "sourceUrl": "https://www.yelp.com/biz/red-lounge-cancún#review-4FEdnIsCPQ9mCqOer1oV8A",
+      "timestamp": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "reportVersion": "venue-capture-v1",
+  "generatedAt": "2026-06-29T00:07:42.542Z",
+  "venues": [
+    {
+      "venue": "Red Bar",
+      "slug": "red-bar",
+      "yelp": 4,
+      "google": 0,
+      "note": ""
+    }
+  ]
+}
