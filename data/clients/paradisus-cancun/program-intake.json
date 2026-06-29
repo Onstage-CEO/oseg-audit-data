@@ -57,7 +57,7 @@
       "property": "Paradisus Cancún",
       "venue": "Central Atrium",
       "programType": "live_music",
-      "officialSchedule": "Live music (e.g. acoustic guitar) in the Central Atrium most nights",
+      "officialSchedule": "Live music in the Central Atrium most nights",
       "thirdPartySchedule": null,
       "chosenSchedule": "Most evenings",
       "clientFacingSchedule": "Most evenings",
@@ -73,7 +73,7 @@
         {
           "category": "review_snippet",
           "ref": "https://www.tripadvisor.com/ShowTopic-g150807-i8-k6668126-Shows_or_music_at_Paradisus-Cancun_Yucatan_Peninsula.html",
-          "note": "Guests: nightly live music (acoustic) in the Atrium"
+          "note": "Guests: nightly live music (live) in the Atrium"
         }
       ],
       "discoverySourceCategory": "resort_pages",
@@ -92,17 +92,17 @@
       "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "absent",
-      "guestSignalNotes": "Guests admire the central atrium as a physical space and praise its atmosphere, but not one review in the corpus mentions live or acoustic music being performed there. The acoustic-music program is operator-stated with no guest evidence to confirm it runs. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
+      "guestSignalNotes": "Guests admire the central atrium as a physical space and praise its atmosphere, but not one review in the corpus mentions live or live music being performed there. The live music program is operator-stated with no guest evidence to confirm it runs. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
       "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
-      "entertainmentElement": "Live music (acoustic) in the Central Atrium",
+      "entertainmentElement": "Live music (live) in the Central Atrium",
       "entertainmentVerdict": "no_guest_evidence",
       "verificationStatus": "operator_stated",
-      "clientSignalNote": "Guests admire the central atrium as a physical space and praise its atmosphere, but not one review in the corpus mentions live or acoustic music being performed there. The acoustic-music program is operator-stated with no guest evidence to confirm it runs."
+      "clientSignalNote": "Guests admire the central atrium as a physical space and praise its atmosphere, but not one review in the corpus mentions live or live music being performed there. The live music program is operator-stated with no guest evidence to confirm it runs."
     },
     {
       "programName": "Red Bar Late-Night DJ",
