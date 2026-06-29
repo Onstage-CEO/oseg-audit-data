@@ -1,7 +1,7 @@
 {
   "auditName": "Paradisus Palma Real",
   "version": "V0.1 — Working Draft",
-  "auditPath": "/Users/joepcostello/OSEG/oseg-audit-data/data/clients/paradisus-palma-real/audit.json",
+  "auditPath": "/home/runner/work/oseg-audit-data/oseg-audit-data/data-repo/data/clients/paradisus-palma-real/audit.json",
   "status": "ready_with_warnings",
   "exitCode": 0,
   "summary": {
@@ -173,7 +173,7 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-06-29T02:25:47.715Z",
+    "now": "2026-06-29T02:28:30.838Z",
     "liveVerifiedTotal": 0,
     "dated": 0,
     "stale": 0,
@@ -189,5 +189,54 @@
     "clientForbiddenTermsApplied": 0,
     "hits": []
   },
-  "timestamp": "2026-06-29T02:25:47.722Z"
+  "readinessSummary": {
+    "overall": "ready_with_warnings",
+    "headline": "READY with 1 warning",
+    "nextAction": "Shippable — 1 warning optional to address: Keyword group coverage",
+    "checks": {
+      "ok": 10,
+      "warn": 1,
+      "fail": 0
+    },
+    "blockers": [],
+    "warnings": [
+      "Keyword group coverage"
+    ],
+    "blockerIds": [],
+    "warningIds": [
+      "keyword_coverage"
+    ],
+    "blockerDetails": [],
+    "warningDetails": [
+      {
+        "id": "keyword_coverage",
+        "check": "Keyword group coverage",
+        "details": [
+          "0 of 8 taxonomy groups have keywords searched",
+          "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+        ]
+      }
+    ],
+    "sourceCoverage": {
+      "covered": 5,
+      "skipped": 3,
+      "missingRequired": 0
+    },
+    "keywordGroups": {
+      "withKeywords": 0,
+      "total": 8
+    },
+    "evidence": {
+      "total": 0,
+      "liveVerified": 0,
+      "inference": 0,
+      "unverified": 0
+    },
+    "captureProvenance": {
+      "claimed": 0,
+      "matched": 0,
+      "unmatched": 0
+    }
+  },
+  "timestamp": "2026-06-29T02:28:30.848Z"
 }
