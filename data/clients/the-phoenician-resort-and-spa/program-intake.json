@@ -53,7 +53,8 @@
       "clientFacingSchedule": "Thursday to Sunday, afternoon seatings",
       "clientSignalNote": "Afternoon Tea at The Thirsty Camel Lounge is a beloved, well-reviewed program (about 38 deduplicated mentions, roughly 4.7 of 5 among rated reviews, with guests calling it the best in Arizona). The live tea pianist, however, surfaces in only one of those reviews, an under-credited asset that is currently invisible to guests despite running with the service.",
       "entertainmentElement": "Live pianist (Lisa Pressman)",
-      "entertainmentVerdict": "invisible"
+      "entertainmentVerdict": "invisible",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Thirsty Camel Live Music",
@@ -108,7 +109,8 @@
       "clientFacingSchedule": "Evenings (cadence to confirm with operator)",
       "clientSignalNote": "Thirsty Camel is a beloved lounge (37 mentions, roughly 4.5 star) and its live music is a real, repeatedly praised asset, called out positively in about a dozen reviews as amazing and memorable. Note one schedule flag: guests report the music on Thursdays and pretty much every night, not just Fri and Sat, so the stated cadence and the soloist/duo format should be confirmed with the operator.",
       "entertainmentElement": "Live soloist / duo",
-      "entertainmentVerdict": "praised"
+      "entertainmentVerdict": "praised",
+      "verificationStatus": "needs_human_confirmation"
     },
     {
       "programName": "Dueling Pianos at The Phoenician Tavern",
@@ -158,7 +160,8 @@
       "clientFacingSchedule": "Friday and Saturday evenings",
       "clientSignalNote": "The Dueling Pianos at The Phoenician Tavern are a genuine draw, named in roughly 23 reviews averaging about 4.1 stars, with guests calling the act \"fun and talented\" and saying it \"makes this place special\" and turns the night into \"a PARTY.\" The live entertainment itself is clearly praised, not invisible, though two recurring caveats surface in the data: the volume is too loud for table conversation, and a few guests felt the act played as ordinary live music rather than true interactive dueling. The corpus also shows the program running both Friday and Saturday in some reviews, so the listed day(s) should be confirmed with the operator.",
       "entertainmentElement": "Dueling pianos",
-      "entertainmentVerdict": "praised"
+      "entertainmentVerdict": "praised",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Cactus Garden Tour",
@@ -202,7 +205,8 @@
       "clientFacingSchedule": "Daily, self-guided (operator-stated)",
       "clientSignalNote": "The Cactus Garden draws small but consistently warm mentions (6 reviews, roughly 4.3 stars), with guests calling it a \"great activity\" and an \"incredible way to round out the evening,\" often paired with after-dinner strolls and praised for being beautifully lit at night. It is a self-guided experience with no live entertainment element, so there is no performance component to evaluate; the schedule should be confirmed with the operator since reviews do not state hours or daily availability.",
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Mowry & Cotton Weekend Brunch",
@@ -247,7 +251,8 @@
       "clientFacingSchedule": "Weekend brunch",
       "clientSignalNote": "The weekend brunch is well regarded (80 reviews, roughly 3.95 stars, with guests repeatedly calling it the best brunch in Scottsdale or Arizona); the scheduled live DJ is noticed but only lightly, surfacing in four reviews and praised when it lands (\"the DJ was incredible, old school R&B\"), making it an under-credited atmosphere asset rather than a headline draw.",
       "entertainmentElement": "Live DJ",
-      "entertainmentVerdict": "noticed"
+      "entertainmentVerdict": "noticed",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Tasting & Mixology Series",
@@ -295,7 +300,8 @@
       "clientFacingSchedule": "Weekly tastings and classes",
       "clientSignalNote": "The mixology and tasting program is genuinely loved (about 13 corpus mentions, roughly 4.9 of 5, with named bartender-instructors like Myron and Raul repeatedly called a trip highlight), but the inventory misplaces it: the classes run at Mowry & Cotton and Thirsty Camel, not J&G, and there is no entertainment element to credit since this is an experiential program rather than a live-music one.",
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Art History / Sculpture Tour",
@@ -341,7 +347,8 @@
       "clientFacingSchedule": "Daily, self-guided (operator-stated, not guest-verified)",
       "clientSignalNote": "The self-guided Allan Houser sculpture program is essentially absent from guest reviews, with zero on-point mentions across 6,204 deduplicated reviews and only one incidental nod to property art and sculpture in a restaurant review. It carries no live entertainment element, and operator confirmation is needed on its venue and daily schedule since the corpus neither validates nor contradicts them.",
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Guided Bike & Hike Tours (seasonal)",
@@ -387,7 +394,8 @@
       "clientFacingSchedule": "Weekly, Oct to May (operator-stated, not guest-verified)",
       "clientSignalNote": "The Guided Bike and Hike Tours program is operator-listed but absent from the 6,204-review corpus, with zero mentions of any organized bike or hike tour and only 5 references to guests hiking Camelback Mountain on their own. It carries no entertainment element by design, and its stated weekly Oct to May schedule and venue cannot be verified from guest data and need operator confirmation.",
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Seasonal & Holiday Programming",
@@ -443,7 +451,8 @@
       "clientFacingSchedule": "Recurring seasonal (holiday weekends)",
       "clientSignalNote": "Seasonal and holiday occasions are a real draw and dining sentiment is mixed-to-positive (about 14 program-relevant mentions, roughly 4.0 stars, with praise for holiday buffets and an epic Easter brunch). The seasonal entertainment itself, however, is nearly invisible: only one review documents actual Christmas programming (professional carolers, Mrs. Claus, story time), the July 4th fireworks guests enjoy are distant city shows rather than a resort production, and at least one New Year guest reported no countdown, toast, or celebration at all, an under-delivered and under-credited programming gap.",
       "entertainmentElement": "Seasonal events (carolers, holiday programming)",
-      "entertainmentVerdict": "noticed"
+      "entertainmentVerdict": "noticed",
+      "verificationStatus": "needs_human_confirmation"
     },
     {
       "programName": "Dive-In Movies (summer)",
@@ -493,7 +502,8 @@
       "clientFacingSchedule": "Select summer evenings (operator-stated, not guest-verified)",
       "clientSignalNote": "Dive-In Movies does not surface in any of the 6,204 deduplicated guest reviews (0 mentions of movie, film, screening, or dive-in), so guest sentiment is absent and the stated Mother of Pearl Pool venue and select-summer-evenings schedule need operator confirmation rather than guest validation. The program carries no live entertainment element, so there is no performer component to credit.",
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Yacht Club Summer Poolside Live Music",
@@ -545,7 +555,8 @@
       "clientFacingSchedule": "Select summer evenings (operator-stated)",
       "clientSignalNote": "Guest sentiment for the poolside live-music program is effectively absent: across 6,204 deduplicated reviews only one mentions a live band at the pool, and the corpus never references the program by name, a summer schedule, or a concert series. The entertainment element is invisible in guest feedback (the lone mention treats it as pleasant background), so the venue is only thinly supported and the seasonal schedule needs operator confirmation before it is presented as guest-validated.",
       "entertainmentElement": "Poolside live music",
-      "entertainmentVerdict": "invisible"
+      "entertainmentVerdict": "invisible",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "The Funicians Club (kids & family programming)",
@@ -596,7 +607,8 @@
       "clientFacingSchedule": "Daily kids and family / supervised childcare (operator-stated)",
       "clientSignalNote": "The Funicians Club is barely visible in guest reviews (only 2 deduplicated mentions, one 5-star positive about the dinner-time \"night owls\" childcare slot and one negative title with no detail), so sentiment is too sparse to grade. Guests treat it as supervised childcare rather than a programmed experience, with no live or counselor-led entertainment element appearing in any review; venue and a \"daily\" schedule both need operator confirmation.",
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     }
   ],
   "themes": [

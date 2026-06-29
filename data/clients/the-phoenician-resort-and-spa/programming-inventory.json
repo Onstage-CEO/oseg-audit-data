@@ -56,7 +56,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": "Live pianist (Lisa Pressman)",
-      "entertainmentVerdict": "invisible"
+      "entertainmentVerdict": "invisible",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Thirsty Camel Live Music",
@@ -113,7 +114,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": "Live soloist / duo",
-      "entertainmentVerdict": "praised"
+      "entertainmentVerdict": "praised",
+      "verificationStatus": "needs_human_confirmation"
     },
     {
       "programName": "Dueling Pianos at The Phoenician Tavern",
@@ -165,7 +167,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": "Dueling pianos",
-      "entertainmentVerdict": "praised"
+      "entertainmentVerdict": "praised",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Cactus Garden Tour",
@@ -211,7 +214,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Mowry & Cotton Weekend Brunch",
@@ -258,7 +262,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": "Live DJ",
-      "entertainmentVerdict": "noticed"
+      "entertainmentVerdict": "noticed",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Tasting & Mixology Series",
@@ -308,7 +313,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "verified"
     },
     {
       "programName": "Art History / Sculpture Tour",
@@ -356,7 +362,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Guided Bike & Hike Tours (seasonal)",
@@ -404,7 +411,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Seasonal & Holiday Programming",
@@ -462,7 +470,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": "Seasonal events (carolers, holiday programming)",
-      "entertainmentVerdict": "noticed"
+      "entertainmentVerdict": "noticed",
+      "verificationStatus": "needs_human_confirmation"
     },
     {
       "programName": "Dive-In Movies (summer)",
@@ -514,7 +523,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Yacht Club Summer Poolside Live Music",
@@ -568,7 +578,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": "Poolside live music",
-      "entertainmentVerdict": "invisible"
+      "entertainmentVerdict": "invisible",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "The Funicians Club (kids & family programming)",
@@ -621,7 +632,8 @@
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": null,
-      "entertainmentVerdict": "none"
+      "entertainmentVerdict": "none",
+      "verificationStatus": "operator_stated"
     }
   ],
   "themes": [

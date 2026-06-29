@@ -38,19 +38,22 @@
         "google",
         "yelp"
       ],
-      "guestSignalHitCount": 14,
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "weak",
-      "guestSignalNotes": "Nightly but BRIEF: guests report the evening show is short and the programmed entertainment winds down early (~9pm). This is the property's core entertainment gap, not a strength.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Guests praise the Avenue Bar's bartenders and cocktail service, but no review in the corpus describes a nightly show or live music at the Avenue hub. The showcase as a programmed entertainment element has effectively zero guest signal. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
-      "clientReportTreatment": "feature",
+      "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
-      "clientSignalNote": "A nightly evening showcase runs at the Avenue hub, but guests consistently describe it as brief and early-ending, the property's central entertainment opportunity.",
+      "clientSignalNote": "Guests praise the Avenue Bar's bartenders and cocktail service, but no review in the corpus describes a nightly show or live music at the Avenue hub. The showcase as a programmed entertainment element has effectively zero guest signal.",
       "schedule": null,
-      "omitReason": null
+      "omitReason": null,
+      "entertainmentElement": "Brief nightly evening show plus live music at the Avenue Bar hub",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Central Atrium Live Music",
@@ -89,18 +92,22 @@
         "google",
         "yelp"
       ],
-      "guestSignalHitCount": 124,
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "medium",
-      "guestSignalNotes": "124 atrium mentions; live music is a recurring evening fixture there.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Guests admire the central atrium as a physical space and praise its atmosphere, but not one review in the corpus mentions live or acoustic music being performed there. The acoustic-music program is operator-stated with no guest evidence to confirm it runs. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
-      "clientReportTreatment": "feature",
+      "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
       "schedule": null,
-      "omitReason": null
+      "omitReason": null,
+      "entertainmentElement": "Live music (acoustic) in the Central Atrium",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated",
+      "clientSignalNote": "Guests admire the central atrium as a physical space and praise its atmosphere, but not one review in the corpus mentions live or acoustic music being performed there. The acoustic-music program is operator-stated with no guest evidence to confirm it runs."
     },
     {
       "programName": "Red Bar Late-Night DJ",
@@ -140,9 +147,9 @@
         "google",
         "yelp"
       ],
-      "guestSignalHitCount": 30,
+      "guestSignalHitCount": 4,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "medium",
+      "guestSignalStrength": "weak",
       "guestSignalNotes": "The late-night anchor; guests note it opens late and can be under-attended.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
@@ -151,7 +158,11 @@
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
       "schedule": null,
-      "omitReason": null
+      "omitReason": null,
+      "entertainmentElement": "Resident DJ and dancing at the Red Bar / Red Lounge",
+      "entertainmentVerdict": "under_credited",
+      "verificationStatus": "verified",
+      "clientSignalNote": "The Red Lounge resident DJ is confirmed by guests but the few mentions are mostly critical, calling the music repetitive and the DJ disengaged, while the venue's decor draws separate praise. Late-night DJ entertainment runs but is under-credited and weakly received, with the lounge functioning as the resort's only club option."
     },
     {
       "programName": "Dining Bars Live Music",
@@ -184,10 +195,10 @@
         "google",
         "yelp"
       ],
-      "guestSignalHitCount": 14,
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "weak",
-      "guestSignalNotes": "Part of the resort's ~14 live-music mentions; a low-key evening layer.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Guests review the dining bars heavily but only for bartenders, drinks, and service; live music in those bars draws zero mentions. The only bar entertainment guests cite is recorded DJ playlists, which they criticize as repetitive, so the listed live-music element is operator-stated with no guest corroboration. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
@@ -195,7 +206,11 @@
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
       "schedule": null,
-      "omitReason": null
+      "omitReason": null,
+      "entertainmentElement": "Live music in the dining bars",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated",
+      "clientSignalNote": "Guests review the dining bars heavily but only for bartenders, drinks, and service; live music in those bars draws zero mentions. The only bar entertainment guests cite is recorded DJ playlists, which they criticize as repetitive, so the listed live-music element is operator-stated with no guest corroboration."
     },
     {
       "programName": "Themed Headphone Night",
@@ -229,19 +244,22 @@
         "google",
         "yelp"
       ],
-      "guestSignalHitCount": 6,
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "medium",
-      "guestSignalNotes": "A guest-loved themed headphone night surfaces repeatedly in reviews, a bright spot in an otherwise modest evening program.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Across the full deduplicated corpus, no guest mentions a silent disco, headphones, or a themed headphone night at the Red Lounge. The only Red Lounge review praises the venue's decor and a tequila tasting, so this program has no guest evidence at all. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
       "clientReportTreatment": "mention",
       "confidence": "medium",
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
-      "clientSignalNote": "A guest-participation themed headphone night at the Red Lounge draws warm guest reviews, a bright spot to build on.",
+      "clientSignalNote": "Across the full deduplicated corpus, no guest mentions a silent disco, headphones, or a themed headphone night at the Red Lounge. The only Red Lounge review praises the venue's decor and a tequila tasting, so this program has no guest evidence at all.",
       "schedule": null,
-      "omitReason": null
+      "omitReason": null,
+      "entertainmentElement": "Guest-participation themed headphone night (silent disco) at the Red Lounge",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Kids Club / Family Programming",
@@ -275,7 +293,7 @@
         "google",
         "yelp"
       ],
-      "guestSignalHitCount": 1591,
+      "guestSignalHitCount": 39,
       "representativeGuestEvidence": null,
       "guestSignalStrength": "strong",
       "guestSignalNotes": "Strong family signal: 1,591 kids/children mentions; a frequently-discussed daytime family program.",
@@ -286,7 +304,11 @@
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
       "schedule": null,
-      "omitReason": null
+      "omitReason": null,
+      "entertainmentElement": "Kids and family activities (children's club / Kids Zone / Kidsdom)",
+      "entertainmentVerdict": "praised",
+      "verificationStatus": "verified",
+      "clientSignalNote": "Guests overwhelmingly praise the children's program, branded as Kids Zone / Kids Club / Kidsdom, naming it a top reason to return and even crediting individual staff. A small minority call the activity programming weak, but the dominant sentiment is strongly positive. Note: \"Family Concierge\" mentions are a separate paid room tier, not the kids program."
     }
   ],
   "themes": [],

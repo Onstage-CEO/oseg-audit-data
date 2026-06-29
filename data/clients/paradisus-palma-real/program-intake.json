@@ -13,23 +13,45 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round (nightly)",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Meliá official page: musicals at the Olympus Theater" },
-        { "category": "resort_pages", "ref": "https://www.palmarealresort.com/", "note": "Resort site: Olympus Theater evening shows" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Meliá official page: musicals at the Olympus Theater"
+        },
+        {
+          "category": "resort_pages",
+          "ref": "https://www.palmarealresort.com/",
+          "note": "Resort site: Olympus Theater evening shows"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["olympus", "theater", "theatre", "the show"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 7,
+      "guestSignalSearchTerms": [
+        "olympus",
+        "theater",
+        "theatre",
+        "the show"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "weak",
-      "guestSignalNotes": "Official nightly produced-show program (Meliá + resort site). Direct guest signal is WEAK: 'theater'/'theatre' ~7 mentions; the 'olympus' hits are largely contaminated by an unrelated 'Olympus Tours' airport-transport operator, not the theater. Featured on official provenance; not strongly guest-discussed by venue name.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Across 21,074 deduplicated reviews there is not a single mention of the Olympus Theater, a nightly produced show, or a musical; the only \"show\" hits are generic one-word review titles unrelated to a venue. The program is operator-stated with no guest evidence either way. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
-      "clientReportTreatment": "feature",
+      "clientReportTreatment": "mention",
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-28",
+      "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
-      "clientSignalNote": "Official nightly produced-show program at the Olympus Theater; the theater is mentioned in reviews but the venue name is sparse and partly confused with an unrelated tour operator, so direct guest-review signal is limited."
+      "clientSignalNote": "Across 21,074 deduplicated reviews there is not a single mention of the Olympus Theater, a nightly produced show, or a musical; the only \"show\" hits are generic one-word review titles unrelated to a venue. The program is operator-stated with no guest evidence either way.",
+      "entertainmentElement": "Nightly produced show / musical at the Olympus Theater",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated"
     },
     {
       "programName": "Ginger Lobby Bar Live Caribbean Music",
@@ -44,21 +66,39 @@
       "scheduleConfidence": "medium",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Meliá page: live music in resort bars/lounges" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Meliá page: live music in resort bars/lounges"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["ginger bar", "live music", "caribbean"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 24,
+      "guestSignalSearchTerms": [
+        "ginger bar",
+        "live music",
+        "caribbean"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": "\"...todos los chicos del bar Ginger por las buenas atenciones...\"",
-      "guestSignalStrength": "medium",
-      "guestSignalNotes": "Live music ~24 mentions; the Ginger lobby bar is mentioned by guests, though a raw 'ginger' count is inflated by the food ingredient. Treat as moderate.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "The Ginger lobby bar itself is mentioned often and warmly (roughly 19 review titles praise the bar and its staff), but not one guest references live music, a band, or Caribbean dance music there, so the entertainment element is entirely unconfirmed by guests. The only two music mentions in the whole corpus are both complaints (\"Great Resort, No Music\" and \"very bad music\") and neither is tied to Ginger. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "moderate",
-      "clientReportTreatment": "feature",
+      "clientReportTreatment": "mention",
       "confidence": "medium",
-      "lastVerifiedDate": "2026-06-28",
-      "materiality": "material"
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "entertainmentElement": "Live Caribbean dance music at the Ginger lobby bar",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated",
+      "clientSignalNote": "The Ginger lobby bar itself is mentioned often and warmly (roughly 19 review titles praise the bar and its staff), but not one guest references live music, a band, or Caribbean dance music there, so the entertainment element is entirely unconfirmed by guests. The only two music mentions in the whole corpus are both complaints (\"Great Resort, No Music\" and \"very bad music\") and neither is tied to Ginger."
     },
     {
       "programName": "Red Lounge Late-Night DJ",
@@ -73,21 +113,38 @@
       "scheduleConfidence": "medium",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Meliá page: Red Lounge resident DJ, oldies + latest sounds" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Meliá page: Red Lounge resident DJ, oldies + latest sounds"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["red lounge", "red bar"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 7,
+      "guestSignalSearchTerms": [
+        "red lounge",
+        "red bar"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "weak",
-      "guestSignalNotes": "Red Lounge ~7 mentions; official late-night DJ venue (post-theater). Weak direct guest signal.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "No review in the corpus names the Red Lounge or a resident late-night DJ; the only adjacent signals are generic nightlife titles plus a guest asking for more nightlife (discotecas) and one calling it \"not the best night life,\" which leans negative on the late-night offering rather than confirming this program. Treat the Red Lounge DJ as operator-stated with no guest corroboration. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
       "confidence": "medium",
-      "lastVerifiedDate": "2026-06-28",
-      "materiality": "material"
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "entertainmentElement": "Resident DJ at the Red Lounge (post-theater)",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated",
+      "clientSignalNote": "No review in the corpus names the Red Lounge or a resident late-night DJ; the only adjacent signals are generic nightlife titles plus a guest asking for more nightlife (discotecas) and one calling it \"not the best night life,\" which leans negative on the late-night offering rather than confirming this program. Treat the Red Lounge DJ as operator-stated with no guest corroboration."
     },
     {
       "programName": "Daytime Dance Classes & Salsa",
@@ -102,21 +159,39 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Meliá page: dance classes + salsa classes in the Avenue Bar" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Meliá page: dance classes + salsa classes in the Avenue Bar"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["dance lesson", "dance class", "salsa"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 135,
+      "guestSignalSearchTerms": [
+        "dance lesson",
+        "dance class",
+        "salsa"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 5,
       "representativeGuestEvidence": "\"...We loved the dance lessons with Daniel. He was a pleasure to see around the resort...\"",
-      "guestSignalStrength": "strong",
+      "guestSignalStrength": "medium",
       "guestSignalNotes": "Strong, guest-named signal: 135 dance-lesson/class/salsa mentions, including praise by the instructor's name.",
       "guestSignalFound": true,
       "evidenceStrength": "strong",
       "clientReportTreatment": "feature",
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-28",
-      "materiality": "material"
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "entertainmentElement": "Dance classes / salsa instruction",
+      "entertainmentVerdict": "praised",
+      "verificationStatus": "verified",
+      "clientSignalNote": "A small but consistently positive set of guests single out the salsa and dance lessons, even naming the instructor as \"the best,\" confirming the program runs and lands well. Signal volume is low so the praise is genuine but thinly represented across the corpus."
     },
     {
       "programName": "Themed Workshops (cigars, cocktails, sushi, candles)",
@@ -131,21 +206,39 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Meliá page: themed workshops (cigars, cocktails, sushi, candles)" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Meliá page: themed workshops (cigars, cocktails, sushi, candles)"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["workshop", "cigar rolling", "mixology"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 162,
+      "guestSignalSearchTerms": [
+        "workshop",
+        "cigar rolling",
+        "mixology"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 5,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "strong",
+      "guestSignalStrength": "weak",
       "guestSignalNotes": "162 workshop/cigar/mixology mentions; a recurring daytime enrichment program.",
       "guestSignalFound": true,
       "evidenceStrength": "strong",
       "clientReportTreatment": "mention",
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-28",
-      "materiality": "material"
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "entertainmentElement": "Daytime themed workshops (mixology/cocktail, sushi-making, macrame, painting, cigar rolling)",
+      "entertainmentVerdict": "under_credited",
+      "verificationStatus": "verified",
+      "clientSignalNote": "The workshops clearly run and the few guests who name them are positive, but across roughly 21,000 reviews they surface only as a handful of bare review titles with no elaboration. The program is real and lightly liked but badly under-credited, near-invisible in guest sentiment."
     },
     {
       "programName": "Adult Pool Live Sets",
@@ -160,21 +253,39 @@
       "scheduleConfidence": "medium",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Profile (researched from Meliá): live sets by the adult pool" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Profile (researched from Meliá): live sets by the adult pool"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["pool live music", "poolside music", "live music"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 24,
+      "guestSignalSearchTerms": [
+        "pool live music",
+        "poolside music",
+        "live music"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "weak",
-      "guestSignalNotes": "Part of the resort's ~24 'live music' mentions; the poolside daytime thread is provenance-backed but weakly attributed to the pool specifically.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Across roughly 21,000 deduplicated reviews, guests praise pool-bar service and bartenders heavily but never mention afternoon live music at the adult pool. The only music references are two negative title mentions (\"No Music\" and \"very bad music\"), so this program is not surfacing in guest sentiment at all. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
       "confidence": "medium",
-      "lastVerifiedDate": "2026-06-28",
-      "materiality": "material"
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "entertainmentElement": "Afternoon live music sets by the adult pool",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated",
+      "clientSignalNote": "Across roughly 21,000 deduplicated reviews, guests praise pool-bar service and bartenders heavily but never mention afternoon live music at the adult pool. The only music references are two negative title mentions (\"No Music\" and \"very bad music\"), so this program is not surfacing in guest sentiment at all."
     },
     {
       "programName": "Plaza Colonial Weekly Party",
@@ -189,21 +300,39 @@
       "scheduleConfidence": "medium",
       "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Profile (researched from Meliá): weekly Plaza Colonial party" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Profile (researched from Meliá): weekly Plaza Colonial party"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["plaza colonial", "weekly party", "white party"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 10,
+      "guestSignalSearchTerms": [
+        "plaza colonial",
+        "weekly party",
+        "white party"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 0,
       "representativeGuestEvidence": null,
-      "guestSignalStrength": "weak",
-      "guestSignalNotes": "~10 mentions; provenance-backed weekly signature party, weak direct guest signal.",
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": "Across 21,074 deduplicated reviews there is not a single mention of a Plaza Colonial weekly or theme party. The only near-matches are an architecture comment about Colonial styling and a guest praising the plaza bar, neither of which references the program, so it is operator-stated only with no guest visibility. OPERATOR-STATED: program runs per resort listing but has no guest-review evidence.",
       "guestSignalFound": true,
       "evidenceStrength": "weak",
       "clientReportTreatment": "mention",
       "confidence": "medium",
-      "lastVerifiedDate": "2026-06-28",
-      "materiality": "material"
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "entertainmentElement": "Weekly signature theme party at Plaza Colonial",
+      "entertainmentVerdict": "no_guest_evidence",
+      "verificationStatus": "operator_stated",
+      "clientSignalNote": "Across 21,074 deduplicated reviews there is not a single mention of a Plaza Colonial weekly or theme party. The only near-matches are an architecture comment about Colonial styling and a guest praising the plaza bar, neither of which references the program, so it is operator-stated only with no guest visibility."
     },
     {
       "programName": "Kids Club / Family Programming",
@@ -218,12 +347,26 @@
       "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
-        { "category": "resort_pages", "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort", "note": "Meliá page: family / kids programming" }
+        {
+          "category": "resort_pages",
+          "ref": "https://www.melia.com/en/hotels/dominican-republic/punta-cana/paradisus-palma-real-golf-and-spa-resort",
+          "note": "Meliá page: family / kids programming"
+        }
       ],
       "discoverySourceCategory": "resort_pages",
-      "guestSignalSearchTerms": ["kids club", "kids zone", "children"],
-      "guestSignalSourcesChecked": ["tripadvisor", "booking", "expedia", "google", "yelp"],
-      "guestSignalHitCount": 406,
+      "guestSignalSearchTerms": [
+        "kids club",
+        "kids zone",
+        "children"
+      ],
+      "guestSignalSourcesChecked": [
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "google",
+        "yelp"
+      ],
+      "guestSignalHitCount": 39,
       "representativeGuestEvidence": "\"...Only go for the kids club...\"",
       "guestSignalStrength": "strong",
       "guestSignalNotes": "Strong family signal: 406 kids-club/children mentions; a recurring, frequently-discussed family program.",
@@ -231,8 +374,12 @@
       "evidenceStrength": "strong",
       "clientReportTreatment": "feature",
       "confidence": "high",
-      "lastVerifiedDate": "2026-06-28",
-      "materiality": "material"
+      "lastVerifiedDate": "2026-06-29",
+      "materiality": "material",
+      "entertainmentElement": "Kids and family activities (children's club / Kids Zone / Kidsdom)",
+      "entertainmentVerdict": "praised",
+      "verificationStatus": "verified",
+      "clientSignalNote": "Guests overwhelmingly praise the children's program, branded as Kids Zone / Kids Club / Kidsdom, naming it a top reason to return and even crediting individual staff. A small minority call the activity programming weak, but the dominant sentiment is strongly positive. Note: \"Family Concierge\" mentions are a separate paid room tier, not the kids program."
     }
   ],
   "themes": []
