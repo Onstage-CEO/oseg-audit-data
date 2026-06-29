@@ -60,7 +60,12 @@
     }
   ],
   "evidence": [],
-  "venues": [],
+  "venues": [
+    {
+      "name": "Red Bar",
+      "yelpUrl": "https://www.yelp.com/biz/red-lounge-cancún"
+    }
+  ],
   "segments": [],
   "hypotheses": [],
   "recommendations": [],
