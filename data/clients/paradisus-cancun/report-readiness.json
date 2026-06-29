@@ -1,5 +1,5 @@
 {
-  "status": "EXPORT_BLOCKED",
+  "status": "CLIENT_READY",
   "gates": [
     {
       "gateId": "report_generated",
@@ -58,13 +58,13 @@
     {
       "gateId": "forbidden_language",
       "label": "No forbidden client-facing language",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "2 forbidden hit(s): \"silent disco\" (phrase_silent_disco), \"silent disco\" (phrase_silent_disco)",
+      "detail": "no forbidden terms in report",
       "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-06-29T04:52:02Z"
+  "computedAt": "2026-06-29T04:56:27Z"
 }
