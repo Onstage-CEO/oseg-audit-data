@@ -5,7 +5,7 @@
     "location": "Scottsdale, AZ",
     "audience": "Management",
     "presentedBy": [],
-    "version": "V0.1 \u2014 Working Draft",
+    "version": "V0.1 — Working Draft",
     "status": "draft",
     "yelpUrl": "https://www.yelp.com/biz/the-phoenician-a-luxury-collection-resort-scottsdale-scottsdale",
     "instagramUrl": "https://www.instagram.com/phoenicianscottsdale/",
@@ -64,32 +64,12 @@
   "evidence": [],
   "venues": [
     {
-      "name": "The Phoenician Tavern",
-      "type": "Bar & Lounge (dueling pianos)",
-      "slug": "the-phoenician-tavern",
-      "yelpUrl": "https://www.yelp.com/biz/the-phoenician-tavern-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/The%20Phoenician%20Tavern%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
+      "name": "Kalio Kabobery",
+      "yelpUrl": "https://www.yelp.com/biz/kalio-kabobery-scottsdale"
     },
     {
-      "name": "J&G Steakhouse",
-      "type": "Restaurant",
-      "slug": "j-and-g-steakhouse",
-      "yelpUrl": "https://www.yelp.com/biz/j-and-g-steakhouse-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/J%26G%20Steakhouse%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
-    },
-    {
-      "name": "Mowry & Cotton",
-      "type": "Restaurant",
-      "slug": "mowry-and-cotton",
-      "yelpUrl": "https://www.yelp.com/biz/mowry-and-cotton-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/Mowry%20%26%20Cotton%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
-    },
-    {
-      "name": "The Thirsty Camel",
-      "type": "Lounge (afternoon tea)",
-      "slug": "thirsty-camel",
-      "yelpUrl": "https://www.yelp.com/biz/thirsty-camel-at-the-phoenician-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/Thirsty%20Camel%20at%20The%20Phoenician%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
+      "name": "The Marketplace",
+      "yelpUrl": "https://www.yelp.com/biz/the-marketplace-scottsdale"
     }
   ],
   "segments": [],
