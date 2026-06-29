@@ -1,0 +1,193 @@
+{
+  "auditName": "Paradisus Palma Real",
+  "version": "V0.1 — Working Draft",
+  "auditPath": "/Users/joepcostello/OSEG/oseg-audit-data/data/clients/paradisus-palma-real/audit.json",
+  "status": "ready_with_warnings",
+  "exitCode": 0,
+  "summary": {
+    "okCount": 10,
+    "warningCount": 1,
+    "failCount": 0
+  },
+  "checks": [
+    {
+      "id": "schema",
+      "label": "Schema validation",
+      "status": "ok",
+      "messages": [
+        "audit JSON parsed and conforms to AuditSchema"
+      ]
+    },
+    {
+      "id": "source_coverage",
+      "label": "Required research source coverage",
+      "status": "ok",
+      "messages": [
+        "5 covered, 3 skipped with reason",
+        "skipped: reddit (blocked) — Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google...",
+        "skipped: blogs (not_applicable) — Travel-blog and editorial mentions are captured via open-web discovery (SERP), not a dedicated na...",
+        "skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not the captured-rev..."
+      ]
+    },
+    {
+      "id": "lane_coverage",
+      "label": "Source lane coverage (registry)",
+      "status": "ok",
+      "messages": [
+        "Review platforms: covered by google",
+        "OTA review platforms: covered by booking",
+        "Community / social discussion: explicitly skipped: reddit (blocked) — Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery…",
+        "Video / creator content: covered by youtube",
+        "Travel blogs / editorial media: explicitly skipped: blogs (not_applicable) — Travel-blog and editorial mentions are captured via open-web discovery (SERP), not a dedi…",
+        "Aerial / maps context: explicitly skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not the capt…"
+      ]
+    },
+    {
+      "id": "discovery_plan",
+      "label": "Discovery plan generated",
+      "status": "ok",
+      "messages": [
+        "research-plan.json present next to the audit"
+      ]
+    },
+    {
+      "id": "keyword_coverage",
+      "label": "Keyword group coverage",
+      "status": "warn",
+      "messages": [
+        "0 of 8 taxonomy groups have keywords searched",
+        "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+      ]
+    },
+    {
+      "id": "evidence_integrity",
+      "label": "Evidence integrity",
+      "status": "ok",
+      "messages": [
+        "0 live-verified, 0 inference, 0 unverified"
+      ]
+    },
+    {
+      "id": "provenance_url",
+      "label": "Provenance URL shape (offline)",
+      "status": "ok",
+      "messages": [
+        "no live_verified record carries a sourceUrl to shape-check (nothing to validate)"
+      ]
+    },
+    {
+      "id": "capture_archive",
+      "label": "Capture-archive provenance cross-check",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence claims a capturePath (nothing to cross-check); archive has 0 capture localPath(s)"
+      ]
+    },
+    {
+      "id": "evidence_freshness",
+      "label": "Evidence freshness",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence could be dated against the capture archive (nothing to age)"
+      ]
+    },
+    {
+      "id": "teaser_generation",
+      "label": "Teaser generation",
+      "status": "ok",
+      "messages": [
+        "generated 8802 chars in memory (not written)"
+      ]
+    },
+    {
+      "id": "teaser_firewall",
+      "label": "Teaser Tier-A firewall lint (with per-client terms)",
+      "status": "ok",
+      "messages": [
+        "130 lines scanned, 0 forbidden-term hits",
+        "client-specific forbidden terms applied: 0"
+      ]
+    }
+  ],
+  "sourceCoverage": {
+    "coveredCount": 5,
+    "skippedCount": 3,
+    "missingRequired": [],
+    "coveredPlatforms": [
+      "google",
+      "tripadvisor",
+      "booking",
+      "expedia",
+      "youtube"
+    ],
+    "skipped": [
+      {
+        "platformId": "reddit",
+        "kind": "blocked",
+        "reason": "Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google index) instead."
+      },
+      {
+        "platformId": "blogs",
+        "kind": "not_applicable",
+        "reason": "Travel-blog and editorial mentions are captured via open-web discovery (SERP), not a dedicated native-blogs capture."
+      },
+      {
+        "platformId": "aerial_satellite",
+        "kind": "not_applicable",
+        "reason": "Aerial/satellite context belongs to the fresh-property browser-capture flow, not the captured-review audit."
+      }
+    ]
+  },
+  "keywordCoverage": {
+    "totalGroups": 8,
+    "groupsWithKeywords": 0,
+    "untouchedGroups": [
+      "entertainment_general",
+      "activity",
+      "sentiment_negative",
+      "sentiment_positive",
+      "segment",
+      "time_of_day",
+      "location",
+      "seasonal"
+    ],
+    "keywordsSearched": 0,
+    "keywordsInTaxonomy": 45
+  },
+  "evidenceIntegrity": {
+    "total": 0,
+    "liveVerified": 0,
+    "inference": 0,
+    "unverified": 0
+  },
+  "provenanceUrl": {
+    "liveVerifiedChecked": 0,
+    "liveVerifiedInvalid": [],
+    "otherInvalid": []
+  },
+  "captureCrossCheck": {
+    "archiveLocalPaths": 0,
+    "liveVerifiedWithCapturePath": 0,
+    "matched": 0,
+    "unmatched": []
+  },
+  "evidenceFreshness": {
+    "windowMonths": 12,
+    "now": "2026-06-29T02:25:47.715Z",
+    "liveVerifiedTotal": 0,
+    "dated": 0,
+    "stale": 0,
+    "ageUnknown": 0,
+    "staleRecords": [],
+    "ageUnknownRecords": []
+  },
+  "teaserFirewall": {
+    "generated": true,
+    "charsGenerated": 8802,
+    "linesScanned": 130,
+    "forbiddenHitCount": 0,
+    "clientForbiddenTermsApplied": 0,
+    "hits": []
+  },
+  "timestamp": "2026-06-29T02:25:47.722Z"
+}
