@@ -63,7 +63,9 @@
   "venues": [
     {
       "name": "Red Bar",
-      "yelpUrl": "https://www.yelp.com/biz/red-lounge-cancún"
+      "yelpUrl": "https://www.yelp.com/biz/red-lounge-cancún",
+      "type": "Nightclub / live-music",
+      "slug": "red-bar"
     }
   ],
   "segments": [],

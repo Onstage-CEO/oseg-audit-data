@@ -96,11 +96,15 @@
     {
       "name": "Kalio Kabobery",
       "yelpUrl": "https://www.yelp.com/biz/kalio-kabobery-scottsdale",
-      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d19402659-Reviews-Kalio_Kebobery-Scottsdale_Arizona.html"
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d19402659-Reviews-Kalio_Kebobery-Scottsdale_Arizona.html",
+      "type": "Restaurant (poolside Mediterranean)",
+      "slug": "kalio-kabobery"
     },
     {
       "name": "The Marketplace",
-      "yelpUrl": "https://www.yelp.com/biz/the-marketplace-scottsdale"
+      "yelpUrl": "https://www.yelp.com/biz/the-marketplace-scottsdale",
+      "type": "Bakery / cafe",
+      "slug": "the-marketplace"
     }
   ],
   "segments": [],
