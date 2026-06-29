@@ -1,6 +1,6 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-06-29T01:02:37.077Z",
+  "generatedAt": "2026-06-29T01:10:48.307Z",
   "venues": [
     {
       "venue": "J&G Steakhouse",
@@ -17,22 +17,6 @@
       "google": 0,
       "tripadvisor": 0,
       "note": "tripadvisor: timed out (still in queue) — re-run capture-venues to collect"
-    },
-    {
-      "venue": "Kalio Kabobery",
-      "slug": "kalio-kabobery",
-      "yelp": 0,
-      "google": 0,
-      "tripadvisor": 2,
-      "note": ""
-    },
-    {
-      "venue": "19th Hole",
-      "slug": "19th-hole",
-      "yelp": 0,
-      "google": 0,
-      "tripadvisor": 0,
-      "note": "tripadvisor: empty"
     }
   ]
 }
