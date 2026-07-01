@@ -1,0 +1,28 @@
+{
+  "platform": "tripadvisor",
+  "venue": "Kalio Kabobery",
+  "venueSlug": "kalio-kabobery",
+  "listingUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d19402659-Reviews-Kalio_Kebobery-Scottsdale_Arizona.html",
+  "reviews": [
+    {
+      "platform": "tripadvisor",
+      "rating": 4,
+      "ratingMax": 5,
+      "title": "Poolside service",
+      "text": "I recently stayed at the Canyon Suites and ordered poolside service, which is serviced by Kalio Kebobery.  I placed 3 separate orders at three separate times that I visited the pool.  The order arrived rather quickly athough I did exprience some outages and had to make a quick decision and adjust my order.  Be aware that availability may vary depending on the time of the day you visit the pool.  I have also ordered drinks and each time the drinks were excellent!",
+      "author": "T Logan",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d19402659-r813942727-Kalio_Kebobery-Scottsdale_Arizona.html",
+      "timestamp": "2021-10-10 00:00:00 +00:00"
+    },
+    {
+      "platform": "tripadvisor",
+      "rating": 4,
+      "ratingMax": 5,
+      "title": "Poolside Dining",
+      "text": "This is a restaurant in the Phoenician Hotel complex, by the pool, which serves the pool at the main Phonetician Hotel and the Canyon Suites. We stayed at the Canyon Suites and had food by the pool on three occasions. Overall, the food was very good, and we tried the gyro sandwich, fish tacos, and Ceasar salad with added kabobs. The sandwich and tacos came with choices of fries or Armenian cucumber salad. We always had the side salad which was good,  but to have some other choices would have been better, like fruit or plain raw veggies. The tacos were excellent, and the gyro sandwich was very tasty.\n\nThe salads had the option of adding a kabob for protein - but the amount of protein was minuscule: two very small shrimp on a skewer, at most an ounce of meat. They need a dietician looking at the nutritional values of their meals: if someone is adding protein, they expect a recommended 4 ounces. \n\nThe staff at the Canyon Pool were fantastic and very attentive, bringing water and towels, and moving umbrellas as needed.\n\nFood came promptly...except for one time, when salads took (and I am not exaggerating) 2 hours. We eventually gave up and went back to our room, where the very frustrated pool attendant eventually delivered them. Subsequent experiences were not like this, so it must have been an aberration, and the hotel made amends for the situation. \n\nOverall, for poolside food, it was very good.",
+      "author": "TravelinJabbo",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d19402659-r783719769-Kalio_Kebobery-Scottsdale_Arizona.html",
+      "timestamp": "2021-02-28 00:00:00 +00:00"
+    }
+  ]
+}
