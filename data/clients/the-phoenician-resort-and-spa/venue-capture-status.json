@@ -1,6 +1,6 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-07-01T00:54:28.501Z",
+  "generatedAt": "2026-07-01T01:29:58.144Z",
   "venues": [
     {
       "venue": "The Phoenician Tavern",
@@ -9,52 +9,52 @@
       "google": 111,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "opentable: 0 reviews (failed)"
+      "note": "opentable: 0 reviews (failed HTTP 400)"
     },
     {
       "venue": "J&G Steakhouse",
       "slug": "j-and-g-steakhouse",
-      "yelp": 0,
+      "yelp": 500,
       "google": 478,
       "tripadvisor": 598,
       "opentable": 0,
-      "note": "yelp: 0 reviews returned; opentable: 0 reviews (failed)"
+      "note": "opentable: 0 reviews (failed HTTP 400)"
     },
     {
       "venue": "Mowry & Cotton",
       "slug": "mowry-and-cotton",
-      "yelp": 0,
-      "google": 0,
+      "yelp": 255,
+      "google": 242,
       "tripadvisor": 504,
       "opentable": 0,
-      "note": "google: 0 reviews (failed); yelp: 0 reviews returned; opentable: 0 reviews (auth_error)"
+      "note": "opentable: 0 reviews (failed HTTP 400)"
     },
     {
       "venue": "The Thirsty Camel",
       "slug": "thirsty-camel",
-      "yelp": 0,
-      "google": 0,
+      "yelp": 81,
+      "google": 74,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "google: 0 reviews (auth_error); yelp: 0 reviews returned; opentable: 0 reviews (auth_error)"
+      "note": "opentable: 0 reviews (failed HTTP 400)"
     },
     {
       "venue": "Kalio Kabobery",
       "slug": "kalio-kabobery",
-      "yelp": 0,
+      "yelp": 14,
       "google": 0,
       "tripadvisor": 2,
       "opentable": 0,
-      "note": "yelp: 0 reviews returned"
+      "note": ""
     },
     {
       "venue": "The Marketplace",
       "slug": "the-marketplace",
-      "yelp": 0,
+      "yelp": 14,
       "google": 0,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "yelp: 0 reviews returned"
+      "note": ""
     }
   ]
 }
