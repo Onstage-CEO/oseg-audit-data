@@ -68,7 +68,8 @@
       "type": "Bar & Lounge (dueling pianos)",
       "slug": "the-phoenician-tavern",
       "yelpUrl": "https://www.yelp.com/biz/the-phoenician-tavern-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/The%20Phoenician%20Tavern%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
+      "googleUrl": "https://www.google.com/maps/search/The%20Phoenician%20Tavern%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "opentableUrl": "https://www.opentable.com/r/the-phoenician-tavern-the-phoenician-scottsdale-2"
     },
     {
       "name": "J&G Steakhouse",
@@ -76,7 +77,8 @@
       "slug": "j-and-g-steakhouse",
       "yelpUrl": "https://www.yelp.com/biz/j-and-g-steakhouse-scottsdale",
       "googleUrl": "https://www.google.com/maps/search/J%26G%20Steakhouse%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
-      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d334373-Reviews-J_G_Steakhouse-Scottsdale_Arizona.html"
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d334373-Reviews-J_G_Steakhouse-Scottsdale_Arizona.html",
+      "opentableUrl": "https://www.opentable.com/j-and-g-steakhouse-scottsdale-at-the-phoenician"
     },
     {
       "name": "Mowry & Cotton",
@@ -84,14 +86,16 @@
       "slug": "mowry-and-cotton",
       "yelpUrl": "https://www.yelp.com/biz/mowry-and-cotton-scottsdale",
       "googleUrl": "https://www.google.com/maps/search/Mowry%20%26%20Cotton%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
-      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d13009103-Reviews-Mowry_Cotton-Scottsdale_Arizona.html"
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d13009103-Reviews-Mowry_Cotton-Scottsdale_Arizona.html",
+      "opentableUrl": "https://www.opentable.com/r/mowry-and-cotton-scottsdale"
     },
     {
       "name": "The Thirsty Camel",
       "type": "Lounge (afternoon tea)",
       "slug": "thirsty-camel",
       "yelpUrl": "https://www.yelp.com/biz/thirsty-camel-at-the-phoenician-scottsdale",
-      "googleUrl": "https://www.google.com/maps/search/Thirsty%20Camel%20at%20The%20Phoenician%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
+      "googleUrl": "https://www.google.com/maps/search/Thirsty%20Camel%20at%20The%20Phoenician%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "opentableUrl": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale"
     },
     {
       "name": "Kalio Kabobery",
