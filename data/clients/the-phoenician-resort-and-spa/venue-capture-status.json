@@ -1,6 +1,6 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-07-01T01:29:58.144Z",
+  "generatedAt": "2026-07-01T01:50:57.135Z",
   "venues": [
     {
       "venue": "The Phoenician Tavern",
@@ -9,7 +9,7 @@
       "google": 111,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "opentable: 0 reviews (failed HTTP 400)"
+      "note": "opentable: 0 reviews (empty)"
     },
     {
       "venue": "J&G Steakhouse",
@@ -18,7 +18,7 @@
       "google": 478,
       "tripadvisor": 598,
       "opentable": 0,
-      "note": "opentable: 0 reviews (failed HTTP 400)"
+      "note": "opentable: 0 reviews (failed)"
     },
     {
       "venue": "Mowry & Cotton",
@@ -27,7 +27,7 @@
       "google": 242,
       "tripadvisor": 504,
       "opentable": 0,
-      "note": "opentable: 0 reviews (failed HTTP 400)"
+      "note": "opentable: 0 reviews (empty)"
     },
     {
       "venue": "The Thirsty Camel",
@@ -36,7 +36,7 @@
       "google": 74,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "opentable: 0 reviews (failed HTTP 400)"
+      "note": "opentable: 0 reviews (empty)"
     },
     {
       "venue": "Kalio Kabobery",
