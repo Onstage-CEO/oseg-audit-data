@@ -8,8 +8,8 @@
       "yelp": 97,
       "google": 111,
       "tripadvisor": 0,
-      "opentable": 0,
-      "note": "opentable: 0 reviews (empty)"
+      "opentable": 423,
+      "note": "opentable: 423 reviews staged-ingested 2026-07-02 (manual-cdp, fidelity-checked; not Apify)"
     },
     {
       "venue": "J&G Steakhouse",
@@ -17,8 +17,8 @@
       "yelp": 500,
       "google": 478,
       "tripadvisor": 598,
-      "opentable": 0,
-      "note": "opentable: 0 reviews (failed)"
+      "opentable": 3436,
+      "note": "opentable: 3436 reviews staged-ingested 2026-07-02 (manual-cdp, fidelity-checked; not Apify)"
     },
     {
       "venue": "Mowry & Cotton",
@@ -26,8 +26,8 @@
       "yelp": 255,
       "google": 242,
       "tripadvisor": 504,
-      "opentable": 0,
-      "note": "opentable: 0 reviews (empty)"
+      "opentable": 1162,
+      "note": "opentable: 1162 reviews staged-ingested 2026-07-02 (manual-cdp, fidelity-checked; not Apify)"
     },
     {
       "venue": "The Thirsty Camel",
