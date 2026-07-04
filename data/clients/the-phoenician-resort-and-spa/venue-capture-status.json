@@ -55,6 +55,13 @@
       "tripadvisor": 0,
       "opentable": 0,
       "note": ""
+    },
+    {
+      "venue": "Afternoon Tea – The Phoenician",
+      "slug": "afternoon-tea-the-phoenician",
+      "parentVenueSlug": "thirsty-camel",
+      "opentable": 1678,
+      "note": "distinct OpenTable listing line (parent: The Thirsty Camel); 1678 reviews staged-ingested 2026-07-02 (manual-cdp, fidelity-checked; not Apify)"
     }
   ]
 }
