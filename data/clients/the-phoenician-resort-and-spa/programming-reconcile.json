@@ -15,19 +15,6 @@
       }
     },
     {
-      "program": "Thirsty Camel Live Music",
-      "direction": "downgrade",
-      "from": "strong/praised",
-      "to": "weak/invisible",
-      "signal": {
-        "total": 1678,
-        "hits": 4,
-        "rate": 0.2,
-        "avg": 4,
-        "negFrac": 0.5
-      }
-    },
-    {
       "program": "Dueling Pianos at The Phoenician Tavern",
       "direction": "refresh",
       "from": "strong/praised",
