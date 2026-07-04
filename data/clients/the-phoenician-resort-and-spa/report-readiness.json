@@ -31,19 +31,19 @@
     {
       "gateId": "outlet_matrix",
       "label": "Outlet × Source Coverage (no casual gaps)",
-      "pass": true,
+      "pass": false,
       "material": true,
       "blocks": "export",
-      "detail": "every outlet × source cell is captured or a documented miss",
+      "detail": "4 outlet × source cell(s) not checked (casual gap): 19th Hole / opentable, Kalio Kabobery / opentable, The Marketplace / opentable, Mother of Pearl pool / pool decks / opentable",
       "overriddenBy": null
     },
     {
       "gateId": "material_source_no_adapter",
       "label": "No material source documented-away (known body, no adapter)",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "2 material source(s) have a confirmed body but no capture path: J&G Steakhouse / opentable (~3403), Mowry & Cotton / opentable (~1160) — capture, manually ingest, or record a logged override",
+      "detail": "no material source has a known body left uncaptured",
       "overriddenBy": null
     },
     {
@@ -75,5 +75,5 @@
     }
   ],
   "overrides": [],
-  "computedAt": "2026-07-04T17:51:17Z"
+  "computedAt": "2026-07-04T18:27:06Z"
 }
