@@ -65,6 +65,15 @@
       "overriddenBy": null
     },
     {
+      "gateId": "programming_verification",
+      "label": "Current Programming Verification (status vs guest response; source-level authority)",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "PENDING: the 12 inventoried programs do not yet carry current-programming verification (programmingStatus category + programmingSourceLevel L1-L5 + onsiteValidationRequired), and no L1 Onstage Programming Snapshot has been attached. Populate per docs/PROGRAMMING_VERIFICATION_GATE.md before final send.",
+      "overriddenBy": null
+    },
+    {
       "gateId": "forbidden_language",
       "label": "No forbidden client-facing language",
       "pass": true,
