@@ -1,0 +1,84 @@
+{
+  "artifact": "onstage-programming-snapshot",
+  "sourceLevel": "L1",
+  "property": "The Phoenician",
+  "asOf": "2026-07-07",
+  "source": "Onstage Entertainment Group booking-system export, 7 venue/program event files dated 2026-07-07. Performer names, pay, and contact details are deliberately excluded from this snapshot.",
+  "windows": {
+    "trailing12mo": "2025-07-07 to 2026-07-07",
+    "forward": "confirmed future bookings on the books as of 2026-07-07"
+  },
+  "lines": [
+    {
+      "venueProgram": "The Phoenician Tavern, dueling pianos",
+      "bookingsTrailing12mo": 93,
+      "monthsActiveTrailing12mo": 12,
+      "lastBooked": "2026-07-04",
+      "futureBookings": 17,
+      "bookedThrough": "2026-09-26 (weekly residency) plus NYE 2026-12-31",
+      "cadence": "Friday and Saturday evenings, weekly residency",
+      "status": "current_active"
+    },
+    {
+      "venueProgram": "Thirsty Camel Lounge, live music (solo performer format)",
+      "bookingsTrailing12mo": 203,
+      "monthsActiveTrailing12mo": 12,
+      "lastBooked": "2026-07-05",
+      "futureBookings": 48,
+      "bookedThrough": "2026-09-27 (recurring residency)",
+      "cadence": "Thursday through Sunday evenings, solo performer, four nights weekly",
+      "status": "current_active"
+    },
+    {
+      "venueProgram": "Thirsty Camel Lounge, pop duo format",
+      "bookingsTrailing12mo": 0,
+      "lastBooked": "2025-03-29",
+      "futureBookings": 0,
+      "status": "discontinued",
+      "note": "Operator (Joe Costello, 2026-07-07) confirms the duo format is no longer running."
+    },
+    {
+      "venueProgram": "Thirsty Camel Lounge, pop trio format",
+      "bookingsTrailing12mo": 3,
+      "lastBooked": "2025-11-14",
+      "futureBookings": 0,
+      "status": "discontinued",
+      "note": "Operator (Joe Costello, 2026-07-07) confirms the trio format is no longer running."
+    },
+    {
+      "venueProgram": "Thirsty Camel Lounge, special events (holiday one-offs)",
+      "bookingsTrailing12mo": 4,
+      "lastBooked": "2025-12-31",
+      "futureBookings": 1,
+      "bookedThrough": "NYE 2026-12-31 booked forward",
+      "status": "recurring_holiday",
+      "note": "Feeds the Seasonal and Holiday Programming umbrella (Halloween, NYE)."
+    },
+    {
+      "venueProgram": "J&G Steakhouse, weekend live music (solo residency)",
+      "bookingsTrailing12mo": 16,
+      "lastBooked": "2025-12-31",
+      "futureBookings": 1,
+      "bookedThrough": "NYE 2026-12-31 one-off only",
+      "status": "discontinued",
+      "note": "Weekend solo residency ended after 2025-12-31; the January 2026 residency block was cancelled in full. Operator (Joe Costello, 2026-07-07) confirms J&G recurring live music is no longer running. A single NYE 2026 one-off remains booked."
+    },
+    {
+      "venueProgram": "Mowry & Cotton, brunch DJ and event entertainment",
+      "bookingsTrailing12mo": 17,
+      "lastBooked": "2026-07-04",
+      "futureBookings": 3,
+      "bookedThrough": "Labor Day 2026-09-05 plus NYE 2026-12-31",
+      "status": "pending_operator_confirmation",
+      "note": "Recurring Sunday brunch DJ last booked 2025-12-28. All 2026 activity is holiday/event one-offs (Kentucky Derby 2026-05-02, Memorial Day 2026-05-23, July 4th 2026-07-04). Whether the recurring brunch DJ lapsed or moved to event-driven cadence needs operator confirmation."
+    }
+  ],
+  "operatorConfirmations": [
+    "Joe Costello, 2026-07-07: J&G recurring live music, Thirsty Camel pop duo format, and Thirsty Camel pop trio format are no longer running."
+  ],
+  "pending": [
+    "Afternoon Tea booking export (operator sending separately); Afternoon Tea verification stays PENDING until it lands.",
+    "Mowry & Cotton recurring brunch DJ: lapsed vs event-driven, operator to confirm.",
+    "Yacht Club summer poolside live music: no booking file provided; operator to confirm whether Onstage books it (L1) or it is property-run (L2/L3 path)."
+  ]
+}

@@ -66,9 +66,9 @@
       "programType": "live_music",
       "officialSchedule": "Friday: Soloist 5:30-7:30pm + Duo 8-11pm; Saturday: Soloist 8-11pm (Summer Social adds Thu-Sat 3-5pm)",
       "thirdPartySchedule": "Some public listings say ~5-7pm on weekday evenings / Thu-Sat",
-      "chosenSchedule": "Evenings (cadence to confirm with operator)",
-      "scheduleReason": "Official resort dine page (verified 2026-06-27) is authoritative over third-party listings; the 'weekday ~5-7pm / Thu-Sat' variant is unsourced/stale.",
-      "scheduleConfidence": "medium",
+      "chosenSchedule": "Thursday through Sunday evenings (solo performer)",
+      "scheduleReason": "Onstage booking records (2026-07-07) resolve the cadence: solo performer four nights weekly (Thursday to Sunday), 203 bookings in the trailing 12 months, booked forward through late September 2026. Duo and trio formats are discontinued (last ran 2025-03-29 and 2025-11-14; operator-confirmed).",
+      "scheduleConfidence": "high",
       "seasonality": "Year-round",
       "sourceConfirming": [
         {
@@ -85,6 +85,11 @@
           "category": "social",
           "ref": "https://www.facebook.com/events/the-phoenician-a-luxury-collection-resort-scottsdale/live-music-at-the-thirsty-camel-lounge/659402907855806/",
           "note": "Facebook live-music event"
+        },
+        {
+          "category": "manual",
+          "ref": "Onstage booking snapshot 2026-07-07 (onstage-programming-snapshot.json)",
+          "note": "L1 Onstage booking-system export, trailing 12 months plus forward bookings"
         }
       ],
       "discoverySourceCategory": "resort_pages",
@@ -109,13 +114,16 @@
       "confidence": "high",
       "lastVerifiedDate": "2026-06-29",
       "materiality": "material",
-      "clientFacingSchedule": "Weekend evenings (cadence to confirm with operator)",
+      "clientFacingSchedule": "Evenings, Thursday through Sunday",
       "clientSignalNote": "Thirsty Camel is a beloved lounge (37 mentions, roughly 4.5 star) and its live music is a real, repeatedly praised asset, called out positively in about a dozen reviews as amazing and memorable. The exact cadence and live-music format are best confirmed with the operator.",
       "schedule": null,
       "omitReason": null,
       "entertainmentElement": "Live music (format varies)",
       "entertainmentVerdict": "praised",
-      "verificationStatus": "needs_human_confirmation"
+      "verificationStatus": "verified",
+      "programmingStatus": "current_verified_active",
+      "programmingSourceLevel": "L1",
+      "onsiteValidationRequired": false
     },
     {
       "programName": "Dueling Pianos at The Phoenician Tavern",
@@ -125,8 +133,8 @@
       "officialSchedule": "Every Saturday, 8-10pm at The Phoenician Tavern",
       "thirdPartySchedule": "Some older listings/profile say Friday & Saturday",
       "chosenSchedule": "Friday and Saturday evenings",
-      "scheduleReason": "Official events page AND the resort events hub both state 'Every Saturday' (verified 2026-06-27); the Friday & Saturday variant is from older/unsourced listings.",
-      "scheduleConfidence": "medium",
+      "scheduleReason": "Onstage booking records (2026-07-07): weekly Friday and Saturday residency, 93 bookings in the trailing 12 months, booked forward through late September 2026 plus NYE.",
+      "scheduleConfidence": "high",
       "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
         {
@@ -138,6 +146,11 @@
           "category": "resort_pages",
           "ref": "https://www.thephoenician.com/dine/the-phoenician-tavern/",
           "note": "Tavern dining page"
+        },
+        {
+          "category": "manual",
+          "ref": "Onstage booking snapshot 2026-07-07 (onstage-programming-snapshot.json)",
+          "note": "L1 Onstage booking-system export, trailing 12 months plus forward bookings"
         }
       ],
       "discoverySourceCategory": "event_calendar",
@@ -168,7 +181,10 @@
       "omitReason": null,
       "entertainmentElement": "Dueling pianos",
       "entertainmentVerdict": "praised",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "programmingStatus": "current_verified_active",
+      "programmingSourceLevel": "L1",
+      "onsiteValidationRequired": false
     },
     {
       "programName": "Cactus Garden Tour",
@@ -215,7 +231,10 @@
       "omitReason": null,
       "entertainmentElement": null,
       "entertainmentVerdict": "none",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "programmingStatus": "inventory_listed_recency_unverified",
+      "programmingSourceLevel": "L3",
+      "onsiteValidationRequired": true
     },
     {
       "programName": "Mowry & Cotton Weekend Brunch",
@@ -314,7 +333,10 @@
       "omitReason": null,
       "entertainmentElement": null,
       "entertainmentVerdict": "none",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "programmingStatus": "inventory_listed_recency_unverified",
+      "programmingSourceLevel": "L3",
+      "onsiteValidationRequired": true
     },
     {
       "programName": "Art History / Sculpture Tour",
@@ -363,7 +385,10 @@
       "omitReason": null,
       "entertainmentElement": null,
       "entertainmentVerdict": "none",
-      "verificationStatus": "operator_stated"
+      "verificationStatus": "operator_stated",
+      "programmingStatus": "inventory_listed_recency_unverified",
+      "programmingSourceLevel": "L3",
+      "onsiteValidationRequired": true
     },
     {
       "programName": "Guided Bike & Hike Tours (seasonal)",
@@ -412,7 +437,10 @@
       "omitReason": null,
       "entertainmentElement": null,
       "entertainmentVerdict": "none",
-      "verificationStatus": "operator_stated"
+      "verificationStatus": "operator_stated",
+      "programmingStatus": "inventory_listed_recency_unverified",
+      "programmingSourceLevel": "L3",
+      "onsiteValidationRequired": true
     },
     {
       "programName": "Seasonal & Holiday Programming",
@@ -422,7 +450,7 @@
       "officialSchedule": "Recurring seasonal events: 4th of July weekend, Memorial Day weekend, winter holiday festivities (festive decor, light tours). Specific dates vary by year.",
       "thirdPartySchedule": null,
       "chosenSchedule": "Recurring seasonal (holiday weekends)",
-      "scheduleReason": null,
+      "scheduleReason": "Onstage booking records (2026-07-07): recurring holiday entertainment bookings across venues (NYE at four venues, July 4th, Memorial Day, Labor Day, Halloween, Thanksgiving, Christmas), with NYE 2026 and Labor Day 2026 already booked forward.",
       "scheduleConfidence": "low",
       "seasonality": "Seasonal umbrella (summer + winter holidays); exact calendar varies year to year",
       "sourceConfirming": [
@@ -440,6 +468,11 @@
           "category": "event_calendar",
           "ref": "https://www.thephoenician.com/events/4th-of-july-weekend/",
           "note": "4th of July weekend"
+        },
+        {
+          "category": "manual",
+          "ref": "Onstage booking snapshot 2026-07-07 (onstage-programming-snapshot.json)",
+          "note": "L1 Onstage booking-system export, trailing 12 months plus forward bookings"
         }
       ],
       "discoverySourceCategory": "event_calendar",
@@ -471,7 +504,10 @@
       "omitReason": null,
       "entertainmentElement": "Seasonal events (carolers, holiday programming)",
       "entertainmentVerdict": "noticed",
-      "verificationStatus": "needs_human_confirmation"
+      "verificationStatus": "verified",
+      "programmingStatus": "current_verified_active",
+      "programmingSourceLevel": "L1",
+      "onsiteValidationRequired": false
     },
     {
       "programName": "Dive-In Movies (summer)",
@@ -524,7 +560,10 @@
       "omitReason": null,
       "entertainmentElement": null,
       "entertainmentVerdict": "none",
-      "verificationStatus": "operator_stated"
+      "verificationStatus": "operator_stated",
+      "programmingStatus": "inventory_listed_recency_unverified",
+      "programmingSourceLevel": "L3",
+      "onsiteValidationRequired": true
     },
     {
       "programName": "Yacht Club Summer Poolside Live Music",
@@ -633,7 +672,10 @@
       "omitReason": null,
       "entertainmentElement": null,
       "entertainmentVerdict": "none",
-      "verificationStatus": "operator_stated"
+      "verificationStatus": "operator_stated",
+      "programmingStatus": "inventory_listed_recency_unverified",
+      "programmingSourceLevel": "L3",
+      "onsiteValidationRequired": true
     }
   ],
   "themes": [
