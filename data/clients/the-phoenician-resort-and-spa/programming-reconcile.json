@@ -1,0 +1,44 @@
+{
+  "source": "programming-inventory.json vs recovered venue reviews (#285)",
+  "changes": [
+    {
+      "program": "Afternoon Tea",
+      "direction": "upgrade",
+      "from": "strong/invisible",
+      "to": "strong/noticed",
+      "signal": {
+        "total": 1678,
+        "hits": 273,
+        "rate": 16.3,
+        "avg": 4.74,
+        "negFrac": 0.07
+      }
+    },
+    {
+      "program": "Dueling Pianos at The Phoenician Tavern",
+      "direction": "refresh",
+      "from": "strong/praised",
+      "to": "strong/grounded",
+      "signal": {
+        "total": 682,
+        "hits": 107,
+        "rate": 15.7,
+        "avg": 4.33,
+        "negFrac": 0.18
+      }
+    },
+    {
+      "program": "Mowry & Cotton Weekend Brunch",
+      "direction": "downgrade",
+      "from": "medium/noticed",
+      "to": "weak/invisible",
+      "signal": {
+        "total": 2163,
+        "hits": 12,
+        "rate": 0.6,
+        "avg": 3.75,
+        "negFrac": 0.5
+      }
+    }
+  ]
+}

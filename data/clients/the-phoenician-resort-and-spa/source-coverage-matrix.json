@@ -1,6 +1,6 @@
 {
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-06-29T01:42:27.360Z",
+  "generatedAt": "2026-07-04T17:59:07.009Z",
   "scopes": [
     {
       "scope": "property",
@@ -97,8 +97,8 @@
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
+          "status": "na",
+          "reason": "Not applicable at this level. Outlet-level capture via Apify (shahidirfan~opentable-reviews-scraper), per-venue opentableUrl in capture-venues. Property level is N/A — OpenTable lists restaurants, not whole resorts.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -172,14 +172,14 @@
           "identifier": "",
           "checked": true,
           "supportedByEngine": true,
-          "captured": true,
-          "countFound": 4,
-          "countCaptured": 4,
+          "captured": false,
+          "countFound": 0,
+          "countCaptured": 0,
           "entertainmentSignal": "unknown",
-          "usedInReport": true,
-          "status": "captured",
-          "reason": "Captured. No per-outlet Reddit/forum listing; outlet mentions appear within the property-level Reddit/forum capture, not as a separate outlet listing.",
-          "confidence": "high",
+          "usedInReport": false,
+          "status": "checked_no_data",
+          "reason": "Checked; the source returned no usable data. No per-outlet Reddit/forum listing; outlet mentions appear within the property-level Reddit/forum capture, not as a separate outlet listing.",
+          "confidence": "medium",
           "supplemental": false
         },
         {
@@ -189,8 +189,8 @@
           "checked": true,
           "supportedByEngine": true,
           "captured": true,
-          "countFound": 10,
-          "countCaptured": 10,
+          "countFound": 9,
+          "countCaptured": 9,
           "entertainmentSignal": "unknown",
           "usedInReport": true,
           "status": "captured",
@@ -247,7 +247,7 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 11,
+      "capturedSources": 10,
       "supportedSources": 14
     },
     {
@@ -338,16 +338,17 @@
           "source": "opentable",
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
-          "countFound": "unknown",
-          "countCaptured": 0,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
+          "countFound": 423,
+          "countCaptured": 423,
           "entertainmentSignal": "unknown",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured via manual-cdp.",
+          "captureMethod": "manual-cdp",
+          "confidence": "high",
           "supplemental": false
         },
         {
@@ -495,8 +496,8 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 3,
-      "supportedSources": 3
+      "capturedSources": 4,
+      "supportedSources": 4
     },
     {
       "scope": "outlet",
@@ -588,16 +589,17 @@
           "source": "opentable",
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
-          "countFound": "unknown",
-          "countCaptured": 0,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
+          "countFound": 1678,
+          "countCaptured": 1678,
           "entertainmentSignal": "unknown",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
-          "confidence": "medium",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured via manual-cdp.",
+          "captureMethod": "manual-cdp",
+          "confidence": "high",
           "supplemental": false
         },
         {
@@ -745,8 +747,8 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 2,
-      "supportedSources": 3
+      "capturedSources": 3,
+      "supportedSources": 4
     },
     {
       "scope": "outlet",
@@ -841,14 +843,14 @@
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level capture via Apify (shahidirfan~opentable-reviews-scraper), per-venue opentableUrl in capture-venues. Property level is N/A — OpenTable lists restaurants, not whole resorts.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -998,7 +1000,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 3
+      "supportedSources": 4
     },
     {
       "scope": "outlet",
@@ -1088,15 +1090,16 @@
           "source": "opentable",
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "OpenTable J&G Steakhouse Scottsdale (SERP count)",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
           "countFound": 3403,
-          "countCaptured": 0,
+          "countCaptured": 3436,
           "entertainmentSignal": "no",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry). A listing/body exists (~3403) but the engine cannot capture it at this level yet.",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured via manual-cdp.",
+          "captureMethod": "manual-cdp",
           "confidence": "medium",
           "supplemental": false
         },
@@ -1245,8 +1248,8 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 3,
-      "supportedSources": 3
+      "capturedSources": 4,
+      "supportedSources": 4
     },
     {
       "scope": "outlet",
@@ -1336,15 +1339,16 @@
           "source": "opentable",
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "OpenTable Mowry & Cotton (SERP count)",
-          "checked": false,
-          "supportedByEngine": false,
-          "captured": false,
+          "checked": true,
+          "supportedByEngine": true,
+          "captured": true,
           "countFound": 1160,
-          "countCaptured": 0,
+          "countCaptured": 1162,
           "entertainmentSignal": "no",
-          "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry). A listing/body exists (~1160) but the engine cannot capture it at this level yet.",
+          "usedInReport": true,
+          "status": "captured",
+          "reason": "Captured via manual-cdp.",
+          "captureMethod": "manual-cdp",
           "confidence": "medium",
           "supplemental": false
         },
@@ -1493,8 +1497,8 @@
           "supplemental": true
         }
       ],
-      "capturedSources": 3,
-      "supportedSources": 3
+      "capturedSources": 4,
+      "supportedSources": 4
     },
     {
       "scope": "outlet",
@@ -1587,14 +1591,14 @@
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level capture via Apify (shahidirfan~opentable-reviews-scraper), per-venue opentableUrl in capture-venues. Property level is N/A — OpenTable lists restaurants, not whole resorts.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -1744,7 +1748,7 @@
         }
       ],
       "capturedSources": 2,
-      "supportedSources": 3
+      "supportedSources": 4
     },
     {
       "scope": "outlet",
@@ -1839,14 +1843,14 @@
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level capture via Apify (shahidirfan~opentable-reviews-scraper), per-venue opentableUrl in capture-venues. Property level is N/A — OpenTable lists restaurants, not whole resorts.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -1996,7 +2000,7 @@
         }
       ],
       "capturedSources": 1,
-      "supportedSources": 3
+      "supportedSources": 4
     },
     {
       "scope": "outlet",
@@ -2093,14 +2097,14 @@
           "label": "OpenTable / reservation-platform reviews",
           "identifier": "",
           "checked": false,
-          "supportedByEngine": false,
+          "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "not_supported_yet",
-          "reason": "The engine has no capture path for this source at this level yet. No capture path. Confirmed outlet OpenTable bodies exist (J&G, Mowry).",
+          "status": "not_checked",
+          "reason": "Not checked — no capture was attempted for this source. Outlet-level capture via Apify (shahidirfan~opentable-reviews-scraper), per-venue opentableUrl in capture-venues. Property level is N/A — OpenTable lists restaurants, not whole resorts.",
           "confidence": "medium",
           "supplemental": false
         },
@@ -2250,7 +2254,7 @@
         }
       ],
       "capturedSources": 0,
-      "supportedSources": 3
+      "supportedSources": 4
     }
   ],
   "summary": {
