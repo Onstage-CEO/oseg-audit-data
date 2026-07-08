@@ -29,6 +29,11 @@
   .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 8px;}
   .metric{min-width:0;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;}
   @media (max-width:560px){.metrics{grid-template-columns:repeat(2,1fr);}}
+  @media print{
+    .metrics,.metric,.venuespot,blockquote,figure,tr{break-inside:avoid;page-break-inside:avoid;}
+    h2,h3{break-after:avoid;page-break-after:avoid;}
+    .appendix{break-before:page;page-break-before:always;}
+  }
   .ml{display:block;font-size:10.5px;line-height:1.4;letter-spacing:.02em;text-transform:uppercase;color:var(--mute);white-space:nowrap;}
   .mv{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:36px;line-height:1.1;font-weight:600;margin:10px 0 6px;}
   .ms{display:block;font-size:12px;color:var(--mute);}
