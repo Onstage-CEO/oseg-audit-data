@@ -10,6 +10,17 @@
   },
   "lines": [
     {
+      "venueProgram": "Thirsty Camel Lounge, Afternoon Tea live solo piano",
+      "bookingsTrailing12mo": 222,
+      "monthsActiveTrailing12mo": 12,
+      "lastBooked": "2026-07-05",
+      "futureBookings": 40,
+      "bookedThrough": "2026-09-27 (recurring residency)",
+      "cadence": "Afternoon seatings (2 to 5 PM sets), core Thursday through Sunday; forward bookings run Friday through Sunday with periodic Thursdays; holiday extras",
+      "status": "current_active",
+      "note": "382 live bookings on record since January 2025, all solo piano. Grounds the Afternoon Tea pianist finding: the program is real, year-round, and continuously booked."
+    },
+    {
       "venueProgram": "The Phoenician Tavern, dueling pianos",
       "bookingsTrailing12mo": 93,
       "monthsActiveTrailing12mo": 12,
@@ -69,16 +80,18 @@
       "lastBooked": "2026-07-04",
       "futureBookings": 3,
       "bookedThrough": "Labor Day 2026-09-05 plus NYE 2026-12-31",
-      "status": "pending_operator_confirmation",
-      "note": "Recurring Sunday brunch DJ last booked 2025-12-28. All 2026 activity is holiday/event one-offs (Kentucky Derby 2026-05-02, Memorial Day 2026-05-23, July 4th 2026-07-04). Whether the recurring brunch DJ lapsed or moved to event-driven cadence needs operator confirmation."
+      "status": "recurring_dj_discontinued_events_continue",
+      "note": "Operator (Joe Costello, 2026-07-07) confirms the recurring Sunday brunch DJ was stopped (last booked 2025-12-28). 2026 Mowry entertainment is holiday/event one-offs (Kentucky Derby, Memorial Day, July 4th, Labor Day, NYE), covered under Seasonal and Holiday Programming."
+    },
+    {
+      "venueProgram": "Poolside / Mowry patio, yacht rock party bands",
+      "status": "seasonal_holiday_only",
+      "note": "Operator (Joe Costello, 2026-07-07): the yacht rock bands are holiday special events (Memorial Day, July 4th, Labor Day), not a regular summer series. Bookings appear in the Mowry & Cotton file as holiday one-offs; Labor Day 2026-09-05 booked forward."
     }
   ],
   "operatorConfirmations": [
-    "Joe Costello, 2026-07-07: J&G recurring live music, Thirsty Camel pop duo format, and Thirsty Camel pop trio format are no longer running."
+    "Joe Costello, 2026-07-07: J&G recurring live music, Thirsty Camel pop duo format, and Thirsty Camel pop trio format are no longer running.",
+    "Joe Costello, 2026-07-07: the recurring Mowry & Cotton brunch DJ was stopped; the yacht rock poolside bands are holiday special events, not a regular series."
   ],
-  "pending": [
-    "Afternoon Tea booking export (operator sending separately); Afternoon Tea verification stays PENDING until it lands.",
-    "Mowry & Cotton recurring brunch DJ: lapsed vs event-driven, operator to confirm.",
-    "Yacht Club summer poolside live music: no booking file provided; operator to confirm whether Onstage books it (L1) or it is property-run (L2/L3 path)."
-  ]
+  "pending": []
 }

@@ -67,10 +67,10 @@
     {
       "gateId": "programming_verification",
       "label": "Current Programming Verification (status vs guest response; source-level authority)",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "3 program(s) fail current-programming verification: Afternoon Tea [missing programmingStatus (status category)]; Mowry & Cotton Weekend Brunch [missing programmingStatus (status category)]; Yacht Club Summer Poolside Live Music [missing programmingStatus (status category)]",
+      "detail": "every material program carries a verified current-programming status (category + source level + on-site flag)",
       "overriddenBy": null
     },
     {
@@ -84,5 +84,5 @@
     }
   ],
   "overrides": [],
-  "computedAt": "2026-07-07T23:30:00Z"
+  "computedAt": "2026-07-08T01:30:00Z"
 }

@@ -9,7 +9,7 @@
       "officialSchedule": "Friday-Sunday, 2-3pm seatings (closed Mon-Thu); live pianist accompaniment (Lisa Pressman)",
       "thirdPartySchedule": "OpenTable lists Thursday-Sunday",
       "chosenSchedule": "Thursday to Sunday, afternoon seatings",
-      "scheduleReason": "Official resort page + Canyon Suites page both state Friday-Sunday; OpenTable's Thursday-Sunday is the minority third-party claim. Official resort-owned source preferred.",
+      "scheduleReason": "Onstage booking records (2026-07-07): live solo piano at every Afternoon Tea seating, 222 bookings in the trailing 12 months across all 12 months, 382 since January 2025, booked forward through late September 2026. Core cadence Thursday to Sunday; forward bookings run Friday to Sunday with periodic Thursdays.",
       "scheduleConfidence": "high",
       "seasonality": "Year-round (popular; reservations essential)",
       "sourceConfirming": [
@@ -27,6 +27,11 @@
           "category": "menu",
           "ref": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale",
           "note": "OpenTable reservation listing (lists Thu-Sun)"
+        },
+        {
+          "category": "manual",
+          "ref": "Onstage booking snapshot 2026-07-07 (onstage-programming-snapshot.json)",
+          "note": "L1 Onstage booking-system export, trailing 12 months plus forward bookings"
         }
       ],
       "discoverySourceCategory": "resort_pages",
@@ -57,7 +62,10 @@
       "omitReason": null,
       "entertainmentElement": "Live pianist (Lisa Pressman)",
       "entertainmentVerdict": "invisible",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "programmingStatus": "current_verified_active",
+      "programmingSourceLevel": "L1",
+      "onsiteValidationRequired": false
     },
     {
       "programName": "Thirsty Camel Live Music",
@@ -244,7 +252,7 @@
       "officialSchedule": "Saturday-Sunday, 11am-2pm",
       "thirdPartySchedule": null,
       "chosenSchedule": "Weekend brunch",
-      "scheduleReason": null,
+      "scheduleReason": "Onstage booking records + operator confirmation (2026-07-07): the recurring Sunday brunch DJ was stopped (last booked 2025-12-28). 2026 Mowry entertainment is holiday/event one-offs, carried under Seasonal & Holiday Programming. The brunch as an F&B offering is not asserted current or discontinued here; this record's entertainment element is what the booking records govern.",
       "scheduleConfidence": "medium",
       "seasonality": "Year-round (weekly)",
       "sourceConfirming": [
@@ -252,6 +260,11 @@
           "category": "resort_pages",
           "ref": "https://www.thephoenician.com/dine/mowry-cotton/",
           "note": "Official restaurant page; weekend brunch Sat-Sun 11am-2pm"
+        },
+        {
+          "category": "manual",
+          "ref": "Onstage booking snapshot 2026-07-07 (onstage-programming-snapshot.json)",
+          "note": "L1 Onstage booking-system export, trailing 12 months plus forward bookings"
         }
       ],
       "discoverySourceCategory": "resort_pages",
@@ -282,7 +295,10 @@
       "omitReason": null,
       "entertainmentElement": "Live DJ",
       "entertainmentVerdict": "noticed",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "programmingStatus": "historical_previously_active",
+      "programmingSourceLevel": "L1",
+      "onsiteValidationRequired": false
     },
     {
       "programName": "Tasting & Mixology Series",
@@ -573,7 +589,7 @@
       "officialSchedule": "Yacht Club Summer brand programming includes live music on select summer/holiday-weekend nights",
       "thirdPartySchedule": null,
       "chosenSchedule": "Select summer evenings (operator-stated)",
-      "scheduleReason": null,
+      "scheduleReason": "Operator confirmation (2026-07-07): the yacht rock party bands are holiday special events (Memorial Day, July 4th, Labor Day), not a regular summer series. Matching holiday one-off bookings appear in Onstage records, with Labor Day 2026 booked forward.",
       "scheduleConfidence": "low",
       "seasonality": "Summer season",
       "sourceConfirming": [
@@ -586,6 +602,11 @@
           "category": "event_calendar",
           "ref": "https://www.thephoenician.com/seasonal-events/",
           "note": "Seasonal events page"
+        },
+        {
+          "category": "manual",
+          "ref": "Onstage booking snapshot 2026-07-07 (onstage-programming-snapshot.json)",
+          "note": "L1 Onstage booking-system export, trailing 12 months plus forward bookings"
         }
       ],
       "discoverySourceCategory": "local_listing",
@@ -618,7 +639,10 @@
       "omitReason": null,
       "entertainmentElement": "Poolside live music",
       "entertainmentVerdict": "invisible",
-      "verificationStatus": "operator_stated"
+      "verificationStatus": "verified",
+      "programmingStatus": "seasonal_holiday_only",
+      "programmingSourceLevel": "L1",
+      "onsiteValidationRequired": false
     },
     {
       "programName": "The Funicians Club (kids & family programming)",
