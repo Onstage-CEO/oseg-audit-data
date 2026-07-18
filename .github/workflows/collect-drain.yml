@@ -74,8 +74,8 @@ jobs:
         if: steps.precheck.outputs.has_pending == 'true'
         uses: actions/checkout@v4
         with:
-          repository: Onstage-CEO/oseg-resort-audit
-          ref: 5a71f011b5b14dd8dcfee13a644511bb1e86991e
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
           ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
           path: engine
 
