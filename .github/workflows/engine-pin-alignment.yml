@@ -6,12 +6,14 @@ on:
       - '.github/workflows/**'
       - '.github/engine-release.json'
       - '.github/scripts/check-engine-pins.mjs'
+      - '.github/scripts/check-engine-pins.test.mjs'
   push:
     branches: [main]
     paths:
       - '.github/workflows/**'
       - '.github/engine-release.json'
       - '.github/scripts/check-engine-pins.mjs'
+      - '.github/scripts/check-engine-pins.test.mjs'
   schedule:
     - cron: '23 15 * * 1'
   workflow_dispatch:
@@ -28,5 +30,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Verify every engine workflow uses the approved release
+      - name: Test the pin checker against drift fixtures
+        run: node --test .github/scripts/check-engine-pins.test.mjs
+      - name: Verify every engine workflow executes the approved release
         run: node .github/scripts/check-engine-pins.mjs
