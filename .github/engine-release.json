@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "V1",
+  "engineRepository": "Onstage-CEO/oseg-resort-audit",
+  "approvedEngineRef": "67daf35c887e3509434978ffe7937df6b6385980",
+  "approvalPolicy": "Bump deliberately through one reviewed pull request; never follow main automatically.",
+  "cleanRoomValidated": false
+}
