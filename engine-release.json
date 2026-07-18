@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "V1",
+  "approvedEngineCommit": "67daf35c887e3509434978ffe7937df6b6385980",
+  "validatedEngineCommit": "f06fd520fa50e9b3ed2914165d5b36e7977e9fa4",
+  "deploymentState": "lagging",
+  "updatedDate": "2026-07-18",
+  "policy": "Every hosted workflow checkout must use approvedEngineCommit. Updating the approved commit is a reviewed release action and is never automatic."
+}
