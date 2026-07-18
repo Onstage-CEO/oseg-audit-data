@@ -1,0 +1,46 @@
+name: Engine pin truth
+
+on:
+  pull_request:
+    paths:
+      - 'engine-release.json'
+      - '.github/workflows/**'
+      - '.github/scripts/check-engine-pins.mjs'
+  schedule:
+    - cron: '41 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  engine-pin-truth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check every hosted engine checkout
+        id: pins
+        continue-on-error: true
+        run: node .github/scripts/check-engine-pins.mjs
+      - name: Open or update pin-drift issue
+        if: steps.pins.outcome == 'failure' && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          title='ENGINE PIN DRIFT: hosted workflows do not match approved release'
+          body="The read-only engine-pin audit failed on ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}. Inspect \`engine-release.json\` and every engine checkout. Do not auto-bump the release pin."
+          number="$(gh issue list --repo "$REPO" --state open --search "in:title $title" --json number --jq '.[0].number // empty')"
+          if [[ -n "$number" ]]; then
+            gh issue comment "$number" --repo "$REPO" --body "$body"
+          else
+            gh issue create --repo "$REPO" --title "$title" --body "$body"
+          fi
+      - name: Fail when pin truth is broken
+        if: steps.pins.outcome == 'failure'
+        run: exit 1
