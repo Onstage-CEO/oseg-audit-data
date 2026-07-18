@@ -1,0 +1,32 @@
+name: engine-pin-alignment
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - '.github/engine-release.json'
+      - '.github/scripts/check-engine-pins.mjs'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - '.github/engine-release.json'
+      - '.github/scripts/check-engine-pins.mjs'
+  schedule:
+    - cron: '23 15 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Verify every engine workflow uses the approved release
+        run: node .github/scripts/check-engine-pins.mjs
