@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "V1",
+  "trialId": "clean-room-the-scott-v1",
+  "measuredAt": "2026-07-19T03:51:37.813Z",
+  "property": "The Scott Resort & Spa",
+  "capture": {
+    "acceptedPrimaryTextRecords": 3088,
+    "acceptedByPlatform": {
+      "google": 1664,
+      "tripadvisor": 1215,
+      "booking": 122,
+      "youtube": 87
+    },
+    "providerResultCounts": {
+      "google": 2653,
+      "tripadvisor": 1215,
+      "booking": 122,
+      "expedia": 876
+    },
+    "expediaPartial": {
+      "analyzableText": 480,
+      "ratingOnly": 396,
+      "ratingScaleCounts": {
+        "10": 480
+      },
+      "quarantined": true,
+      "scoringRecords": 0
+    },
+    "additionalPublicWebFindings": 24,
+    "outletTripadvisorRecords": 73
+  },
+  "spend": {
+    "apifyRunPageVerifiedSubtotalUsd": 3.623,
+    "expediaProviderApiActualCostUsd": 2.1965,
+    "dataForSeoHistoricalActualCostUsd": null,
+    "totalTrialSpendUsd": null,
+    "additionalPaidStageBlocked": true
+  },
+  "researchWindow": {
+    "currentScoreMonths": 12,
+    "expansionMonths": [
+      24,
+      36
+    ],
+    "expansionOnlyFor": [
+      "sparse entertainment signal",
+      "seasonality",
+      "corroboration",
+      "trend"
+    ],
+    "olderEvidenceTreatment": "historical_context_not_current_score"
+  },
+  "readiness": {
+    "status": "not_ready",
+    "reasons": [
+      "captured sources are not yet reconciled into audit.json",
+      "aerial/maps context lane is unresolved",
+      "evidence and analytical conclusions are not yet constructed",
+      "second-operator reproduction has not occurred",
+      "historical DataForSEO actual cost is unavailable"
+    ]
+  },
+  "authority": {
+    "paidLlm": false,
+    "paidRetry": false,
+    "export": false,
+    "send": false,
+    "deploy": false,
+    "productionPinChange": false
+  }
+}
