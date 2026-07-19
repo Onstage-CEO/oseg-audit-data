@@ -1,46 +1,46 @@
 # Entertainment Evidence Discovery — The Scott Resort & Spa
 
-Generated: 2026-07-19T04:34:00.000Z
+Generated: 2026-07-19T04:38:00.000Z
 
 This is the entertainment evidence hunt: start with the highest-yield visual, social, forum, blog, complaint, Spanish-language, and competitor searches, then preserve the strongest sourced findings for human review before anything becomes client-facing.
 
 ## In-Corpus Nuggets
-- **Watch item** · booking · 1/5 · raw 2/10 · 2026-03-05T13:13:32.000Z · Jane · music, vibe
+- **Watch item** · booking · 1/5 · raw 2/10 · 2026-03-05T13:13:32.000Z · current_12m · Jane · music, vibe
   > My meant to be relaxing vacation was anything but. I understand there are several lovely resorts in Scottsdale and my ad The property was clean and was well landscaped. Rooms were comfortable, although not worthy of their nightly fee. The lobby was pretty with a Cuban vibe. I will say, the spa was the highlight of the trip. My massage was excellent and th...
   Source: https://www.booking.com/hotel/us/firesky-resort-spa.html#review-10sxi3t
-- **Watch item** · tripadvisor · 1/5 · raw 1/5 · 2024-10-20 00:00:00 +00:00 · Nick G · dj, music
-  > Not a memorable stay Unfortunate stay. We did a staycation for our wedding anniversary and my wife who is expecting our first child. Zero extra accommodations were added for our special stay, the pool was closed for the 2nd day of our stay for a private event including a DJ playing club music (which we were not made aware of), slow service and unenthusias...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r974728954-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Watch item** · tripadvisor · 2/5 · raw 2/5 · 2022-01-23 00:00:00 +00:00 · Melissa S · live music, music, vibe
-  > Lipstick on a Pig This iconic Scottsdale Boutique hotel has outlived it prime! Let me start by saying what a lovely welcoming front entrance with the classic car and bicycles. The Lobby was beautiful with its Havana vibe. The front desk staff was welcoming, and check in was prompt. We went to room 116, and were please with the size, layout and decor, but...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r825716600-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Strength** · google · 5/5 · raw 5/5 · 2023-08-28T02:20:57.883Z · Shelly F · activity, dj, live music, music
-  > The Scott rooms are great very comfortable beds , mini bar items, plush towels and bathrobes .. we had a courtyard room that could get us directly over to the pool area. Double doors open up to a cute little patio with wicker furniture ..only downfall that any of us found with the room is that it has a slotted shutter door on the bathroom so there’s no pr...
-  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDpw9mI-AE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB
-- **Watch item** · google · 2/5 · raw 2/5 · 2023-03-09T22:30:12.819Z · Leanne S · dj, music, vibe
-  > Let’s Start with the Good: -Hotel is beautifully decorated- loved the vibe, you can tell the designers looked at every angle when designing each space and rooms. - nice pool areas and lots of seating but it does get a little pool party ish - free parking - spa is nice and relaxing, be sure to book in advance Bad: ( I want to note we are experienced travel...
-  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDhvsiiTw%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE
-- **Watch item** · tripadvisor · 1/5 · raw 1/5 · 2024-06-02 00:00:00 +00:00 · mariannecollins35 · show
-  > Shocking show Tonny scott comedean? I dont think so, not a bit funny, racist scumbag, told not to film him incase he's targeted if he's that brave why is he hiding, there's better and funnier in benidorm plus the drinks are a ripoff howe they get-away with that i dont know
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r953492403-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Watch item** · tripadvisor · 1/5 · raw 1/5 · 2023-03-06 00:00:00 +00:00 · Joshua D · vibe
-  > AWFUL- run. NoT a 4 star hotel! It was so rundown, our room was filthy- paint coming off walls, black marks in bathroom, tikes coming up in shower / just to make a few! The gym had drinks sitting there for 2 days! Half the rooms have a view of the parking lot! Service was terrible, attitude awful- this was supposed to be a special trip and they managed to...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r881262780-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Watch item** · tripadvisor · 2/5 · raw 2/5 · 2022-09-01 00:00:00 +00:00 · lynnef505 · dj, music
-  > Loud music, packed pool, poor service. This hotel clearly caters to weddings, bachelorette parties, girls weekends. If you’re in that group you may love this spot. Hotel rooms are pleasant, but mini fridge and shelves filled with booze and snacks to buy. No other space. Couldn’t get reservations in dining room because “kitchen was backed up” from a large...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r857905333-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Watch item** · tripadvisor · 1/5 · raw 1/5 · 2019-12-14 00:00:00 +00:00 · Connector534302 · vibe
-  > Dont waste your money Horrible horrible place to stay. The overpriced resort and pool is okay and has a relaxing vibe so points for that. Staying at the hotel is however really bad. The living areas are Dingy and1950’s vibe. Carpet dirty and dull. The room ot self leaves alot to be desired. No bathtub. Shower small without a door!! Really!!! Who has a sho...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r732704885-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Watch item** · tripadvisor · 5/5 · raw 5/5 · 2019-07-07 00:00:00 +00:00 · macelim · vibe
-  > Breezy, chill vibe, if it's not too busy Stayed for a week and it was fantastic! The weekends can get busy from day-passes, but other than that, I really enjoyed the chill, relaxed vibe. Upon entering, the lobby impresses, with it's high ceilings that streams in natural light. Makes you just want to lounge and have long chats on a couch with a bunch of fr...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r687634712-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Strength** · tripadvisor · 5/5 · raw 5/5 · 2019-05-08 00:00:00 +00:00 · Kate_lalaluna · music, show, vibe
-  > Anniversary Oasis in the Desert I knew from the pictures on Instagram and Trip Advisor I was going to love this resort. From the minute we stepped onto the property, we felt like we had stepped back in time to a 1950's movie set in Havana. Checking in was easy and even though our room wasn't ready, we enjoyed hand-crafted cocktails out in the cabanas whil...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r672660894-The_Scott_Resort_Spa-Scottsdale_Arizona.html
-- **Strength** · tripadvisor · 5/5 · raw 5/5 · 2019-04-22 00:00:00 +00:00 · Angela W · activity, music, vibe
-  > Fun Spring Training Trip We planned a quick weekend jaunt to Scottsdale for spring training. Go Cubs!! The Scott was a perfect choice for our needs. The atmosphere has a warm, appealing vibe. The lobby, bar area is bustling with activity and music. The staff was friendly and helpful. The hotel offers a free Escalade shuttle within three miles. We used it...
-  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r668346534-The_Scott_Resort_Spa-Scottsdale_Arizona.html
+- **Watch item** · google · 1/5 · raw 1/5 · 2026-07-03T21:52:36.914Z · current_12m · Jina Jilek · vibe
+  > 2026 review: I am so bummed. This was my second stay at this hotel and I only ranked it at 4 stars last time but loved the vibe of the hotel so much that I booked our babymoon here. I upgraded us prior to check in to a king pool view room with early check in that morning at 6 am. When we arrived at the hotel at 2:30 pm. We were told the room was not ready...
+  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREcHF1a1F3EAE!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDDpqukQw%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSUREcHF1a1F3EAE
+- **Watch item** · google · 1/5 · raw 1/5 · 2025-11-03T19:22:57.479Z · current_12m · Eric Crane · music
+  > Horrible experience. Nice looking hotel, but they put us in a room adjacent to a major wedding with the reception happening in front of our room on the grass without letting us know. House music pounded until 10:30pm and there was a party going on in the room next to us and the hotel staff did nothing to quiet them either. Not what my wife and I expected...
+  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOm9vaFZzRXVBU0dCT0hoWjN4aTkzX0E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB
+- **Watch item** · google · 1/5 · raw 1/5 · 2025-09-20T14:46:14.544Z · current_12m · Jonathan Swann · music
+  > My wife and I are staying at The Scott for our 10-year anniversary. Instead of a resort and spa, it seems to be a small event and conference hotel. The name is misleading. There is very little rest and relaxation here. Our room has paper thin walls with noise and loud music from the outside pool bar, loud talking from housekeeping in the hallway most morn...
+  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOlphc2d5WUg0ZW1VXzNDUkR3Z0tuMkE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB
+- **Watch item** · booking · 1.5/5 · raw 3/10 · 2025-10-29T21:09:54.000Z · current_12m · Eissra · vibe
+  > Disorganised, and a let down given the photos. The location is good - close to fashion and / The staff — general tone and disorganised. I checked out early one morning, and then I was still chased later that day asking for confirmation I had checked out. Also valet claimed the car park was full as they had an event but that was just valet option. Pool sta...
+  Source: https://www.booking.com/hotel/us/firesky-resort-spa.html#review-90bqpe
+- **Watch item** · tripadvisor · 3/5 · raw 3/5 · 2026-03-31 00:00:00 +00:00 · current_12m · Marisa W · music, vibe
+  > Needs one of the pools designated to adults. Sewage smelling room This resort could be 5 stars. Avid traveler here...The decor, music and vibe is nice, however where it misses the mark is there should be a designated pool for families with kids and one for adults trying to relax. As I sit here poolside now, its hard to relax when parents let there kids us...
+  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r1054921996-The_Scott_Resort_Spa-Scottsdale_Arizona.html
+- **Watch item** · google · 3/5 · raw 3/5 · 2026-03-31T20:18:19.272Z · current_12m · Marisa Wilson · music, vibe
+  > This resort could be 5 stars. Avid traveler here...The decor, music and vibe is nice, however where it misses the mark is there should be a designated pool for families with kids and one for adults trying to relax. As I sit here poolside now, its hard to relax when parents let there kids use the pool like there own personal pool throwing footballs as peop...
+  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pRd1p5MXhRMGh2YUhSZmQyOVRlRGQzV2pkVlltYxAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOjQwZy1xQ0hvaHRfd29TeDd3WjdVYmc%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2pRd1p5MXhRMGh2YUhSZmQyOVRlRGQzV2pkVlltYxAB
+- **Watch item** · google · 3/5 · raw 3/5 · 2025-11-18T22:36:05.893Z · current_12m · Becky Rothstein · music, vibe
+  > Our stay had both highlights and disappointments. There was a noticeable lack of hospitality — no greetings or warm interactions from the front desk, which set a cold tone for the visit and continued on throughout our stay with all hotel staff interactions. Internal calls went unanswered multiple times, which made simple requests frustrating. Calls were o...
+  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wa1lXRlZkbEJwU25FeGIyTjFXRXhaVjFsM2EzYxAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOnVkYWFVdlBpSnExb2N1WExZV1l3a3c%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT25Wa1lXRlZkbEJwU25FeGIyTjFXRXhaVjFsM2EzYxAB
+- **Strength** · google · 5/5 · raw 5/5 · 2025-08-06T16:58:55.517Z · current_12m · Jesse Robertson · show, vibe
+  > We absolutely LOVE The Scott! This has been one of our favorite places to stay over the years thanks to the incredible staff, the beautiful Canal Club and lobby area, and the consistently amazing food. The guest rooms are comfortable, and the overall vibe is truly special. That said, we’ve noticed that some areas are starting to show their age. The paint,...
+  Source: https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OTmREWmlSREZ5YTNGNllrNVZXbUpGVVZCS1MxRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOnNNdDZiRDFya3F6Yk5VWmJFUVBKS1E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT25OTmREWmlSREZ5YTNGNllrNVZXbUpGVVZCS1MxRRAB
+- **Strength** · booking · 5/5 · raw 10/10 · 2026-05-12T15:25:56.000Z · current_12m · Teresa · vibe
+  > Exceptional Pool, overall vibe / Air conditioning
+  Source: https://www.booking.com/hotel/us/firesky-resort-spa.html#review-1s72c1i
+- **Watch item** · tripadvisor · 3/5 · raw 3/5 · 2026-03-24 00:00:00 +00:00 · current_12m · Em T · vibe
+  > Not what we were expecting for price point Not what we were expecting for the price point. This hotel had cool vibe but was lacking in quality of food and overall experience. The pool was nice and we liked our balcony view. But the hotel room smelled of musty dog urine and there was a French fry on the carpet. The staff was nice, except for one of the fro...
+  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r1054107996-The_Scott_Resort_Spa-Scottsdale_Arizona.html
+- **Watch item** · tripadvisor · 3/5 · raw 3/5 · 2025-09-05 00:00:00 +00:00 · current_12m · wavelength2014 · vibe
+  > Old and Trendy? Cute hotel! It's very old and outdated but has a trendy vibe. The drinks are expensive. We thought about ordering coffee in the morning with room service. We were shocked and horrified to learn there's a 25% service charge PLUS $5:00 delivery charge! The rooms are just okay, outdated but clean. We were facing the parking lot. The best room...
+  Source: https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r1028968290-The_Scott_Resort_Spa-Scottsdale_Arizona.html
 
 ## Discovery Query Packs
 ### TikTok guest videos — must_check
