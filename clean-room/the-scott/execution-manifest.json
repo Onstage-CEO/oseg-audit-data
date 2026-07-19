@@ -2,7 +2,7 @@
   "schemaVersion": "V1",
   "executionId": "the-scott-option-a-2026-07-19",
   "trialId": "clean-room-the-scott-v1",
-  "state": "capture_completed_pending_readiness_review",
+  "state": "capture_completed_llm_blocked",
   "authorization": {
     "option": "A",
     "issue": "https://github.com/Onstage-CEO/oseg-resort-audit/issues/323",
@@ -19,7 +19,7 @@
     "artifactSha256": "a6bda3d734697e474a9b5cf9742e7fb36ae5a3889757e7c08cee849dab245ced"
   },
   "stage": {
-    "name": "capture",
+    "name": "readiness_review",
     "paidLlmAllowed": false,
     "exportAllowed": false,
     "sendAllowed": false,
@@ -77,5 +77,17 @@
     "completedAt": "2026-07-19T00:58:53.133Z",
     "jobStatus": "success",
     "runUrl": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
+  },
+  "readinessReview": {
+    "decidedAt": "2026-07-19T01:01:00Z",
+    "decision": "hold_paid_llm",
+    "decisionFile": "clean-room/the-scott/readiness-decision.json",
+    "verifierStatus": "not_ready",
+    "machineBlockers": [
+      "Required research source coverage",
+      "Source lane coverage (registry)"
+    ],
+    "billingVerifiedUsd": null,
+    "paidRetryAllowed": false
   }
 }
