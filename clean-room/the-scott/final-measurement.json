@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "trialId": "clean-room-the-scott-v1",
-  "measuredAt": "2026-07-19T03:51:37.813Z",
+  "measuredAt": "2026-07-19T04:20:24.274Z",
   "property": "The Scott Resort & Spa",
   "capture": {
     "acceptedPrimaryTextRecords": 3088,
@@ -27,7 +27,13 @@
       "scoringRecords": 0
     },
     "additionalPublicWebFindings": 24,
-    "outletTripadvisorRecords": 73
+    "outletTripadvisorRecords": 73,
+    "publicWebEvidence": {
+      "officialAndEditorialRecords": 3,
+      "reviewedSourceDocuments": 6,
+      "spatialContextSources": 4,
+      "satelliteImageryInspected": false
+    }
   },
   "spend": {
     "apifyRunPageVerifiedSubtotalUsd": 3.623,
@@ -52,13 +58,27 @@
   },
   "readiness": {
     "status": "not_ready",
+    "verifierEngineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
+    "verifierRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29673152660",
+    "requiredSourceCoverageClosed": true,
+    "registryLaneCoverageClosed": true,
+    "machineBlockers": [
+      "Analytical substance"
+    ],
+    "warnings": [
+      "Keyword group coverage: segment and seasonal remain untouched"
+    ],
+    "evidence": {
+      "total": 3,
+      "liveVerified": 3,
+      "guestReviewLiveVerified": 0
+    },
     "reasons": [
-      "captured sources are not yet reconciled into audit.json",
-      "aerial/maps context lane is unresolved",
-      "evidence and analytical conclusions are not yet constructed",
+      "guest-review candidates have not been independently adjudicated and promoted",
       "second-operator reproduction has not occurred",
-      "historical DataForSEO actual cost is unavailable"
-    ]
+      "historical DataForSEO actual cost is unavailable, so additional paid stages remain blocked"
+    ],
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json"
   },
   "authority": {
     "paidLlm": false,
