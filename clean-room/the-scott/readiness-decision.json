@@ -35,7 +35,8 @@
       "No taxonomy keyword group was recorded as searched.",
       "Apify's account-wide USD 70 monthly platform usage limit was exceeded during the run; all running actors were aborted. Preflight validated credential presence but did not validate remaining billing headroom.",
       "The Google actor returned 2,653 provider results despite the reviewed maxReviewDepthPerPropertySource of 2,000; the static depth-based spend guard did not bound provider output count.",
-      "The aborted Expedia run exposed 876 provider results, but the adapter persisted zero records; aborted partial datasets require explicit salvage/quarantine handling with provenance."
+      "The aborted Expedia run exposed 876 provider results, but the adapter persisted zero records; aborted partial datasets require explicit salvage/quarantine handling with provenance.",
+      "The Expedia Actor console displayed Maximum cost per run = Unlimited; the workflow's static estimate was not backed by a provider-enforced per-run charge ceiling."
     ]
   },
   "spend": {
@@ -52,7 +53,11 @@
       "runningActorsAborted": true,
       "nextMonthlyCycleStarts": "2026-07-21",
       "incrementalTrialSpendUsd": null,
-      "interpretation": "The USD 70 value is cumulative account-month usage, not verified incremental spend attributable to this trial."
+      "interpretation": "The USD 70 value is cumulative account-month usage, not verified incremental spend attributable to this trial.",
+      "consoleUsageDisplay": "$70 / $70",
+      "expediaActorAdvertisedPricing": "from $2.50 per 1,000 results",
+      "expediaActorConsoleMaxCostPerRun": "Unlimited",
+      "caveat": "Actor landing-page input and pricing are not the specific run's immutable input or actual charged USD."
     },
     "providerRunEvidence": [
       {
@@ -100,6 +105,7 @@
     "paidRetryAllowed": false
   },
   "nextActions": [
+    "Require a provider-enforced maxTotalChargeUsd (or equivalent immutable per-run maximum) on every paid Actor launch; refuse providers/Actors that cannot enforce it.",
     "Use read-only Apify run metadata for run 4DWzkgi0DL7QUb4G8 to resolve its default dataset and inspect the existing 876 results; do not restart the Actor.",
     "Salvage or quarantine partial datasets from ABORTED/TIMED-OUT runs instead of silently discarding existing results; never call them complete.",
     "Add provider-run result and cost reconciliation that distinguishes requested depth, provider output count, accepted text records, rating-only records, and actual charged USD.",
