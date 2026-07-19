@@ -1,0 +1,160 @@
+name: The Scott entertainment discovery regeneration
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: clean-room-the-scott-entertainment-discovery-regeneration
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    if: >-
+      github.event.issue.number == 35 &&
+      github.event.issue.pull_request != null &&
+      github.event.comment.user.login == 'Onstage-CEO' &&
+      github.event.comment.author_association == 'OWNER' &&
+      github.event.comment.body == '/refresh-the-scott-discovery SCOTT-DISCOVERY-20260719-4BEEDB4'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      EXECUTION_BRANCH: trial/the-scott-execution-v1
+      ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+      ENGINE_REF: 4beedb495c007a3c745db9dae0c52daf03d93994
+      WORKSPACE_SLUG: the-scott-resort-spa
+      RESULT_FILE: clean-room/the-scott/discovery-regeneration.json
+      PR_NUMBER: '35'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.EXECUTION_BRANCH }}
+          fetch-depth: 0
+
+      - name: Refuse reuse and preserve old worklist
+        run: |
+          set -euo pipefail
+          test ! -e "$RESULT_FILE" || { echo "::error::one-shot already used"; exit 1; }
+          cp "data/clients/$WORKSPACE_SLUG/entertainment-discovery.json" "$RUNNER_TEMP/discovery-before.json"
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync('clean-room/the-scott/execution-manifest.json', 'utf8'));
+          if (m.stage.paidLlmAllowed || m.stage.exportAllowed ||
+              m.stage.sendAllowed || m.stage.productionPinChangeAllowed) {
+            throw new Error('closed-gate precondition failed');
+          }
+          NODE
+
+      - name: Checkout corrected discovery engine
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: discovery-engine
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: discovery-engine/package-lock.json
+
+      - name: Install engine
+        working-directory: discovery-engine
+        run: npm ci
+
+      - name: Regenerate from existing corpus only
+        working-directory: discovery-engine
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- entertainment-discovery "$WS"
+
+      - name: Validate boundary and provenance corrections
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const before = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/discovery-before.json', 'utf8'));
+          const after = JSON.parse(fs.readFileSync(process.env.WS + '/entertainment-discovery.json', 'utf8'));
+          const rows = after.inCorpusNuggets;
+          for (const row of rows) {
+            for (const key of ['ratingRaw','ratingMax','author','timestamp']) {
+              if (!(key in row)) throw new Error('missing provenance field ' + key);
+            }
+            const text = row.text.toLowerCase();
+            if (row.matchedTerms.includes('dj') && !/(^|[^a-z0-9])dj(?=$|[^a-z0-9])/.test(text)) {
+              throw new Error('dj boundary violation');
+            }
+            if (row.matchedTerms.includes('show') && !/(^|[^a-z0-9])show(?=$|[^a-z0-9])/.test(text)) {
+              throw new Error('show boundary violation');
+            }
+          }
+          const bookingUrl = 'https://www.booking.com/hotel/us/firesky-resort-spa.html#review-10sxi3t';
+          const booking = rows.find((r) => r.sourceUrl === bookingUrl);
+          if (!booking || !booking.matchedTerms.includes('music')) {
+            throw new Error('known Booking loud-music candidate not recovered');
+          }
+          if (booking.ratingRaw !== 2 || booking.ratingMax !== 10 ||
+              booking.timestamp !== '2026-03-05T13:13:32.000Z') {
+            throw new Error('Booking provenance not preserved');
+          }
+          const beforeUrls = new Set(before.inCorpusNuggets.map((r) => r.sourceUrl));
+          const afterUrls = new Set(rows.map((r) => r.sourceUrl));
+          const result = {
+            schemaVersion: 'V1',
+            regeneratedAt: new Date().toISOString(),
+            engineSha: process.env.ENGINE_REF,
+            input: 'existing captured corpus only',
+            providerCalls: 0,
+            beforeCount: before.inCorpusNuggets.length,
+            afterCount: rows.length,
+            addedSourceUrls: [...afterUrls].filter((u) => !beforeUrls.has(u)),
+            removedSourceUrls: [...beforeUrls].filter((u) => !afterUrls.has(u)),
+            boundaryViolations: 0,
+            provenanceFieldsPresent: true,
+            bookingKnownCandidate: {
+              sourceUrl: booking.sourceUrl,
+              normalizedRating: booking.rating,
+              rawRating: booking.ratingRaw,
+              ratingMax: booking.ratingMax,
+              timestamp: booking.timestamp,
+              matchedTerms: booking.matchedTerms
+            },
+            limitations: [
+              'Exact word boundaries remove substring noise but do not prove property relevance.',
+              'Generic vibe/show matches and possible provider contamination still require second-operator adjudication.',
+              'No candidate was promoted into audit evidence by this job.'
+            ],
+            authority: {
+              newPaidApi: false, paidLlm: false, export: false,
+              send: false, deploy: false, productionPinChange: false
+            }
+          };
+          fs.writeFileSync(process.env.GITHUB_WORKSPACE + '/' + process.env.RESULT_FILE,
+            JSON.stringify(result, null, 2) + '\n');
+          NODE
+
+      - name: Commit corrected worklist
+        run: |
+          set -euo pipefail
+          git config user.name "oseg-clean-room-bot"
+          git config user.email "actions@onstage.biz"
+          git add             "$RESULT_FILE"             "data/clients/$WORKSPACE_SLUG/entertainment-discovery.json"             "data/clients/$WORKSPACE_SLUG/entertainment-discovery.md"
+          git commit -m "trial: regenerate The Scott entertainment candidate worklist"
+          git push origin HEAD:"$EXECUTION_BRANCH"
+
+      - name: Post checkpoint
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments"             -f body="The Scott entertainment worklist was regenerated from the existing corpus only at engine \`$ENGINE_REF\`. Substring-boundary violations are zero and raw rating/scale, author, and timestamp are preserved for operator review. No candidate was promoted and no paid or delivery action ran. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
