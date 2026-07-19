@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "V1",
+  "executionId": "the-scott-option-a-2026-07-19",
+  "trialId": "clean-room-the-scott-v1",
+  "state": "authorized_not_started",
+  "authorization": {
+    "option": "A",
+    "issue": "https://github.com/Onstage-CEO/oseg-resort-audit/issues/323",
+    "authorizationComment": "https://github.com/Onstage-CEO/oseg-resort-audit/issues/323#issuecomment-5013497699",
+    "absoluteCapUsd": 35,
+    "captureHardCapUsd": 23,
+    "llmHardCapUsd": 10,
+    "contingencyUsd": 2
+  },
+  "preflight": {
+    "status": "passed_with_known_credential_gap",
+    "engineSha": "79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6",
+    "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667058495",
+    "artifactSha256": "a6bda3d734697e474a9b5cf9742e7fb36ae5a3889757e7c08cee849dab245ced"
+  },
+  "stage": {
+    "name": "capture",
+    "paidLlmAllowed": false,
+    "exportAllowed": false,
+    "sendAllowed": false,
+    "productionPinChangeAllowed": false
+  },
+  "controls": {
+    "oneShot": true,
+    "triggerNonce": "SCOTT-A-20260719-79DF0AD",
+    "workspaceBranch": "trial/the-scott-execution-v1",
+    "workspaceSlug": "the-scott-resort-spa",
+    "maxReviewDepthPerPropertySource": 2000,
+    "fullSweep": false,
+    "expectedCaptureSpendUsd": {
+      "min": 6,
+      "max": 15
+    },
+    "captureHardCapUsd": 23
+  },
+  "property": {
+    "clientName": "Clean Room Trial — Public Sources Only",
+    "propertyName": "The Scott Resort & Spa",
+    "location": "Scottsdale, Arizona",
+    "website": "https://www.thescottresort.com/",
+    "googleUrl": "https://www.google.com/maps/search/The%20Scott%20Resort%20%26%20Spa%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d115494-Reviews-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+    "bookingUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html",
+    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
+    "instagramUrl": "https://www.instagram.com/thescottresort/",
+    "facebookUrl": "https://www.facebook.com/TheScottResort/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLWuUiyV9tZ-SZblaK4xQ4o3i_GcDU3Cas"
+  },
+  "venues": [
+    {
+      "name": "The Canal Club",
+      "type": "Restaurant / bar / recurring entertainment venue",
+      "slug": "the-canal-club",
+      "googleUrl": "https://www.google.com/maps/search/The%20Canal%20Club%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d12989592-Reviews-The_Canal_Club-Scottsdale_Arizona.html",
+      "website": "https://thecanalclubaz.com/"
+    }
+  ],
+  "knownGaps": [
+    {
+      "id": "reddit_official_api_credentials_absent",
+      "requiredState": "needs_key_or_blocked",
+      "fallback": "bounded public-web Reddit discovery",
+      "forbiddenState": "checked_no_data_from_unexecuted_api"
+    }
+  ],
+  "publicSourceOnly": true
+}
