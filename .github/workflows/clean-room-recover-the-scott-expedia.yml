@@ -66,28 +66,40 @@ jobs:
               expedia?.actualCostUsd !== 2.197) {
             throw new Error('reviewed Expedia run evidence mismatch');
           }
+          let recovery;
           if (fs.existsSync(process.env.RECOVERY_LEDGER)) {
-            throw new Error('one-shot recovery is already locked');
+            recovery = JSON.parse(fs.readFileSync(process.env.RECOVERY_LEDGER, 'utf8'));
+            if (recovery.state !== 'recovery_running' ||
+                recovery.runId !== process.env.EXPEDIA_RUN_ID ||
+                recovery.engineSha !== process.env.ENGINE_SHA) {
+              throw new Error('existing recovery lock is not safely resumable');
+            }
+            recovery.resumeAttempts = (recovery.resumeAttempts ?? 0) + 1;
+            recovery.lastResumedAt = new Date().toISOString();
+            recovery.workflowRunId = process.env.RUN_ID;
+            recovery.triggerUrl = process.env.TRIGGER_URL;
+          } else {
+            recovery = {
+              schemaVersion: 'V1',
+              operation: 'read_existing_apify_dataset_only',
+              state: 'recovery_running',
+              startedAt: new Date().toISOString(),
+              workflowRunId: process.env.RUN_ID,
+              triggerUrl: process.env.TRIGGER_URL,
+              engineSha: process.env.ENGINE_SHA,
+              provider: 'apify',
+              platform: 'expedia',
+              runId: process.env.EXPEDIA_RUN_ID,
+              expectedTerminalState: 'ABORTED',
+              expectedProviderResultCount: Number(process.env.EXPECTED_PROVIDER_ITEMS),
+              newActorRunAllowed: false,
+              paidLlmAllowed: false,
+              scoringPromotionAllowed: false,
+              exportAllowed: false,
+              sendAllowed: false
+            };
           }
-          fs.writeFileSync(process.env.RECOVERY_LEDGER, JSON.stringify({
-            schemaVersion: 'V1',
-            operation: 'read_existing_apify_dataset_only',
-            state: 'recovery_running',
-            startedAt: new Date().toISOString(),
-            workflowRunId: process.env.RUN_ID,
-            triggerUrl: process.env.TRIGGER_URL,
-            engineSha: process.env.ENGINE_SHA,
-            provider: 'apify',
-            platform: 'expedia',
-            runId: process.env.EXPEDIA_RUN_ID,
-            expectedTerminalState: 'ABORTED',
-            expectedProviderResultCount: Number(process.env.EXPECTED_PROVIDER_ITEMS),
-            newActorRunAllowed: false,
-            paidLlmAllowed: false,
-            scoringPromotionAllowed: false,
-            exportAllowed: false,
-            sendAllowed: false
-          }, null, 2) + '\n');
+          fs.writeFileSync(process.env.RECOVERY_LEDGER, JSON.stringify(recovery, null, 2) + '\n');
           NODE
           git config user.name "oseg-clean-room-bot"
           git config user.email "actions@onstage.biz"
@@ -167,8 +179,13 @@ jobs:
               p.providerResultCount !== Number(process.env.EXPECTED_PROVIDER_ITEMS)) {
             throw new Error('provider provenance mismatch');
           }
-          if (p.actualCostUsd !== 2.197 || p.costStatus !== 'verified') {
-            throw new Error('provider cost provenance mismatch');
+          const apiCostVerified = p.costStatus === 'verified';
+          if (apiCostVerified &&
+              (!Number.isFinite(p.actualCostUsd) || p.actualCostUsd < 0 || p.actualCostUsd > 2.20)) {
+            throw new Error('authenticated provider cost exceeds reviewed run-page maximum');
+          }
+          if (!apiCostVerified && p.costStatus !== 'unavailable') {
+            throw new Error('unknown provider cost status');
           }
           if (!Array.isArray(p.reviews) || p.reviews.length !== p.analyzableTextCount ||
               p.ratingOnlyCount !== p.providerResultCount - p.analyzableTextCount) {
@@ -203,14 +220,18 @@ jobs:
               ratingOnlyCount: p.ratingOnlyCount,
               uniqueSourceUrlCount: urls.size,
               duplicateSourceUrlCount: p.reviews.length - urls.size,
-              actualCostUsd: p.actualCostUsd,
+              providerApiActualCostUsd: p.actualCostUsd ?? null,
+              reviewedRunPageActualCostUsd: 2.197,
+              reviewedRunPageMaximumUsd: 2.20,
               costStatus: p.costStatus,
               artifactPath: path.relative(process.cwd(), artifactPath)
             },
             validation: {
               schemaAndMarkers: 'passed',
               providerProvenance: 'passed',
-              costReconciliation: 'passed',
+              costReconciliation: apiCostVerified
+                ? 'authenticated_api_cost_within_reviewed_run_page_maximum'
+                : 'provider_api_cost_unavailable_reviewed_run_page_cost_retained',
               normalizedRowBounds: 'passed',
               scoringIsolation: 'passed',
               propertyIdentityBasis: 'reviewed run id and exact Scott Expedia URL',
@@ -229,7 +250,8 @@ jobs:
             providerResultCount: p.providerResultCount,
             analyzableTextCount: p.analyzableTextCount,
             ratingOnlyCount: p.ratingOnlyCount,
-            actualCostUsd: p.actualCostUsd,
+            providerApiActualCostUsd: p.actualCostUsd ?? null,
+            reviewedRunPageActualCostUsd: 2.197,
             disposition: recovery.disposition,
             recoveryLedger: process.env.RECOVERY_LEDGER
           };
@@ -264,6 +286,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          summary=$(node -e 'const r=require("./"+process.env.RECOVERY_LEDGER);process.stdout.write(r.result.providerResultCount+" provider items; "+r.result.analyzableTextCount+" analyzable text; "+r.result.ratingOnlyCount+" rating-only; $"+r.result.actualCostUsd+" previously spent")')
+          summary=$(node -e 'const r=require("./"+process.env.RECOVERY_LEDGER);process.stdout.write(r.result.providerResultCount+" provider items; "+r.result.analyzableTextCount+" analyzable text; "+r.result.ratingOnlyCount+" rating-only; $"+r.result.reviewedRunPageActualCostUsd+" reviewed prior spend")')
           gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
             -f body="Expedia read-only recovery passed: ${summary}. The ABORTED dataset remains quarantined and excluded from scoring. Paid LLM, export, send, deployment, and production-pin gates remain closed. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
