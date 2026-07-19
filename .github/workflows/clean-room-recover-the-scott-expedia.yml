@@ -194,13 +194,20 @@ jobs:
 
           let invalidUrl = 0, invalidRating = 0, invalidTimestamp = 0;
           const urls = new Set();
+          const ratingScaleCounts = {};
           for (const r of p.reviews) {
             if (typeof r.sourceUrl !== 'string' || !r.sourceUrl.trim()) invalidUrl++;
             else urls.add(r.sourceUrl);
-            if (r.rating != null && (!Number.isFinite(r.rating) || r.rating < 0 || r.rating > 5)) {
+            if (r.ratingMax != null) {
+              const scale = String(r.ratingMax);
+              ratingScaleCounts[scale] = (ratingScaleCounts[scale] ?? 0) + 1;
+              if (r.ratingMax !== 5 && r.ratingMax !== 10) invalidRating++;
+            }
+            if (r.rating != null &&
+                (!Number.isFinite(r.rating) || r.rating < 0 ||
+                 !Number.isFinite(r.ratingMax) || r.rating > r.ratingMax)) {
               invalidRating++;
             }
-            if (r.ratingMax != null && r.ratingMax !== 5) invalidRating++;
             if (r.timestamp != null && Number.isNaN(Date.parse(r.timestamp))) invalidTimestamp++;
           }
           if (invalidUrl || invalidRating || invalidTimestamp) {
@@ -220,6 +227,7 @@ jobs:
               ratingOnlyCount: p.ratingOnlyCount,
               uniqueSourceUrlCount: urls.size,
               duplicateSourceUrlCount: p.reviews.length - urls.size,
+              ratingScaleCounts,
               providerApiActualCostUsd: p.actualCostUsd ?? null,
               reviewedRunPageActualCostUsd: 2.197,
               reviewedRunPageMaximumUsd: 2.20,
