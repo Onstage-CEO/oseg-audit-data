@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "trialId": "clean-room-the-scott-v1",
-  "status": "decisions_complete_attestation_pending",
+  "status": "second_operator_complete_not_ready",
   "recordedAt": "2026-07-19T17:16:44Z",
   "operator": {
     "name": "Joe Costello",
@@ -9,12 +9,13 @@
     "submissionChannel": "ChatGPT conversation"
   },
   "independenceAttestation": {
-    "status": "pending_explicit_confirmation",
-    "statement": null,
-    "note": "All 12 decisions were submitted directly by Joe Costello. The packet's formal independence attestation and review start/completion times were not included in the submission and are not inferred."
+    "status": "attested",
+    "statement": "I, Joe Costello, attest that I independently reviewed all 12 candidates without relying on the proposed thesis or prior operator decisions.",
+    "attestedAt": "2026-07-19T17:18:47Z",
+    "submissionChannel": "ChatGPT conversation"
   },
   "startedAt": null,
-  "completedAt": null,
+  "completedAt": "2026-07-19T17:18:47Z",
   "executionBranchHeadShaReviewed": "f8692b05adfbe058d7169a946ad4768ec9b55d79",
   "engineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
   "worklistCandidateCount": 12,
@@ -143,7 +144,7 @@
     "worklist-07-google-marisa-wilson",
     "worklist-10-booking-1s72c1i"
   ],
-  "verifierStatus": "not_run_pending_attestation; expected_not_ready",
+  "verifierStatus": "pending_rerun; expected_not_ready",
   "blockerIds": [
     "audit_content"
   ],
@@ -161,5 +162,6 @@
   "exports": 0,
   "sends": 0,
   "deployments": 0,
-  "productionPinChanges": 0
+  "productionPinChanges": 0,
+  "startedAtStatus": "not_recorded"
 }
