@@ -3,52 +3,82 @@ import { describe, it } from 'node:test';
 import { checkWorkflowText, engineCheckoutBlocks } from './check-engine-pins.mjs';
 
 const repo = 'Onstage-CEO/oseg-resort-audit';
-const ref = '67daf35c887e3509434978ffe7937df6b6385980';
+const productionRef = '67daf35c887e3509434978ffe7937df6b6385980';
+const candidateRef = '79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6';
 
-function workflow(repository = '${{ env.ENGINE_REPO }}', checkoutRef = '${{ env.ENGINE_REF }}') {
-  return `name: fixture
-env:
-  ENGINE_REPO: ${repo}
-  ENGINE_REF: ${ref}
-jobs:
-  verify:
-    steps:
-      - uses: actions/checkout@v4
-      - name: Checkout engine
-        uses: actions/checkout@v4
-        with:
-          repository: ${repository}
-          ref: ${checkoutRef}
-          path: engine
-      - run: npm test
-`;
+function workflow(path = 'engine', refName = 'ENGINE_REF') {
+  return [
+    'name: fixture',
+    'env:',
+    '  ENGINE_REPO: ' + repo,
+    '  ENGINE_REF: ' + productionRef,
+    '  ENGINE_SHA: ' + candidateRef,
+    'jobs:',
+    '  verify:',
+    '    steps:',
+    '      - uses: actions/checkout@v4',
+    '      - name: Checkout engine',
+    '        uses: actions/checkout@v4',
+    '        with:',
+    '          repository: ${{ env.ENGINE_REPO }}',
+    '          ref: ${{ env.' + refName + ' }}',
+    '          path: ' + path,
+    ''
+  ].join('\n');
 }
 
 describe('engine checkout pin alignment', () => {
-  it('accepts checkout values derived from the validated declarations', () => {
-    assert.deepEqual(checkWorkflowText('good.yml', workflow(), repo, ref).failures, []);
+  it('accepts the production pin regardless of checkout path name', () => {
+    const result = checkWorkflowText('capture.yml', workflow('engine'), repo, productionRef, {});
+    assert.deepEqual(result.failures, []);
+    assert.equal(result.isolated, false);
   });
 
-  it('accepts an approved literal repository with the approved env ref', () => {
-    assert.deepEqual(checkWorkflowText('literal.yml', workflow(repo), repo, ref).failures, []);
+  it('detects candidate-engine instead of hiding it', () => {
+    assert.equal(engineCheckoutBlocks(workflow('candidate-engine')).length, 1);
   });
 
-  it('rejects a different actual checkout repository even when declarations remain approved', () => {
-    const result = checkWorkflowText('wrong-repo.yml', workflow('Onstage-CEO/other-engine'), repo, ref);
-    assert.match(result.failures.join('\n'), /checkout repository .* expected Onstage-CEO\/oseg-resort-audit/);
+  it('accepts an explicitly declared isolated clean-room SHA', () => {
+    const filename = 'clean-room.yml';
+    const result = checkWorkflowText(
+      filename,
+      workflow('candidate-engine', 'ENGINE_SHA'),
+      repo,
+      productionRef,
+      { [filename]: candidateRef }
+    );
+    assert.deepEqual(result.failures, []);
+    assert.equal(result.isolated, true);
   });
 
-  it('rejects a different actual checkout ref even when declarations remain approved', () => {
-    const result = checkWorkflowText('wrong-ref.yml', workflow(repo, '1111111111111111111111111111111111111111'), repo, ref);
-    assert.match(result.failures.join('\n'), /checkout ref .* expected 67daf35c/);
+  it('rejects an undeclared candidate SHA', () => {
+    const result = checkWorkflowText(
+      'hidden-candidate.yml',
+      workflow('candidate-engine', 'ENGINE_SHA'),
+      repo,
+      productionRef,
+      {}
+    );
+    assert.match(result.failures.join('\n'), /expected 67daf35c/);
   });
 
-  it('rejects an engine workflow with no path: engine checkout', () => {
-    const text = workflow().replace('          path: engine\n', '');
-    assert.match(checkWorkflowText('missing.yml', text, repo, ref).failures.join('\n'), /found 0/);
+  it('rejects a declared clean-room workflow on the wrong candidate SHA', () => {
+    const filename = 'clean-room.yml';
+    const result = checkWorkflowText(
+      filename,
+      workflow('candidate-engine', 'ENGINE_REF'),
+      repo,
+      productionRef,
+      { [filename]: candidateRef }
+    );
+    assert.match(result.failures.join('\n'), /expected 79df0ad7/);
   });
 
-  it('isolates only the checkout block that writes path: engine', () => {
-    assert.deepEqual(engineCheckoutBlocks(workflow()), [{ repository: '${{ env.ENGINE_REPO }}', ref: '${{ env.ENGINE_REF }}' }]);
+  it('rejects an external checkout without an isolated path', () => {
+    const text = workflow('engine').replace('          path: engine\n', '');
+    assert.match(
+      checkWorkflowText('missing-path.yml', text, repo, productionRef, {}).failures.join('\n'),
+      /isolated path/
+    );
   });
 });
