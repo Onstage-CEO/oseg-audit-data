@@ -79,13 +79,12 @@
     "runUrl": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
   },
   "readinessReview": {
-    "decidedAt": "2026-07-19T01:01:00Z",
+    "decidedAt": "2026-07-19T04:20:24.274Z",
     "decision": "hold_paid_llm",
     "decisionFile": "clean-room/the-scott/readiness-decision.json",
     "verifierStatus": "not_ready",
     "machineBlockers": [
-      "Required research source coverage",
-      "Source lane coverage (registry)"
+      "Analytical substance"
     ],
     "billingVerifiedUsd": null,
     "paidRetryAllowed": false,
@@ -124,7 +123,12 @@
         "maxCostPerRunUsd": 2.28,
         "datasetResultCount": 122
       }
-    }
+    },
+    "strengthenedVerifierRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29673152660",
+    "requiredSourceCoverageClosed": true,
+    "registryLaneCoverageClosed": true,
+    "guestReviewLiveVerified": 0,
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json"
   },
   "expediaPartialRecovery": {
     "state": "recovered_valid_partial",
