@@ -32,14 +32,26 @@
       "The Canal Club Google capture failed with auth_error.",
       "The official Reddit API honestly remained needs_credentials; bounded public-web discovery returned nine Reddit findings.",
       "Aerial/satellite visual context was not attempted.",
-      "No taxonomy keyword group was recorded as searched."
+      "No taxonomy keyword group was recorded as searched.",
+      "Apify's account-wide USD 70 monthly platform usage limit was exceeded during the run; all running actors were aborted. Preflight validated credential presence but did not validate remaining billing headroom."
     ]
   },
   "spend": {
     "captureHardCapUsd": 23,
     "providerArtifactCostSignals": [],
     "billingVerifiedUsd": null,
-    "status": "provider billing reconciliation required before any further paid stage"
+    "status": "account limit reached; provider billing detail is required to attribute incremental trial spend",
+    "accountBillingEvidence": {
+      "source": "user_provided_apify_limit_notification",
+      "receivedAt": "2026-07-19T01:03:00Z",
+      "provider": "Apify",
+      "monthlyPlatformUsageLimitUsd": 70,
+      "limitExceeded": true,
+      "runningActorsAborted": true,
+      "nextMonthlyCycleStarts": "2026-07-21",
+      "incrementalTrialSpendUsd": null,
+      "interpretation": "The USD 70 value is cumulative account-month usage, not verified incremental spend attributable to this trial."
+    }
   },
   "authority": {
     "paidLlmAllowed": false,
@@ -50,6 +62,7 @@
     "paidRetryAllowed": false
   },
   "nextActions": [
+    "Add a mandatory provider headroom preflight that verifies remaining account capacity against the reviewed run ceiling before any actor starts.",
     "Fix the engine path that converts the captured corpus and explicit attempt ledger into audit source/lane coverage and evidence.",
     "Fix or honestly gate the degraded social/Yelp, Expedia, outlet Google, and aerial/satellite paths.",
     "Reconcile actual provider billing against the authorized capture cap.",
