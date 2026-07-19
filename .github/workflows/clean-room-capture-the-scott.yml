@@ -1,0 +1,392 @@
+name: The Scott one-shot clean-room capture
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: clean-room-the-scott-option-a
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    name: Authorized capture only
+    if: >-
+      github.event.issue.number == 35 &&
+      github.event.issue.pull_request != null &&
+      github.event.comment.user.login == 'Onstage-CEO' &&
+      github.event.comment.author_association == 'OWNER' &&
+      github.event.comment.body == '/execute-the-scott-option-a SCOTT-A-20260719-79DF0AD'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      EXECUTION_BRANCH: trial/the-scott-execution-v1
+      EXECUTION_MANIFEST: clean-room/the-scott/execution-manifest.json
+      ENGINE_SHA: 79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6
+      WORKSPACE_SLUG: the-scott-resort-spa
+      TRIGGER_NONCE: SCOTT-A-20260719-79DF0AD
+      PR_NUMBER: '35'
+
+    steps:
+      - name: Checkout isolated execution branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.EXECUTION_BRANCH }}
+          fetch-depth: 0
+
+      - name: Validate authorization and acquire one-shot lock
+        env:
+          RUN_ID: ${{ github.run_id }}
+          TRIGGER_URL: ${{ github.event.comment.html_url }}
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const path = process.env.EXECUTION_MANIFEST;
+          const m = JSON.parse(fs.readFileSync(path, 'utf8'));
+          if (m.schemaVersion !== 'V1' || m.executionId !== 'the-scott-option-a-2026-07-19') {
+            throw new Error('execution identity mismatch');
+          }
+          if (m.state !== 'authorized_not_started') throw new Error('one-shot execution is not armed');
+          if (m.authorization.option !== 'A' || m.authorization.captureHardCapUsd !== 23 || m.authorization.absoluteCapUsd !== 35) {
+            throw new Error('authorization or cap mismatch');
+          }
+          if (m.preflight.status !== 'passed_with_known_credential_gap' || m.preflight.engineSha !== process.env.ENGINE_SHA) {
+            throw new Error('preflight evidence mismatch');
+          }
+          if (m.controls.triggerNonce !== process.env.TRIGGER_NONCE || m.controls.fullSweep !== false) {
+            throw new Error('trigger or sweep control mismatch');
+          }
+          if (m.controls.maxReviewDepthPerPropertySource > 2000) throw new Error('depth exceeds reviewed bound');
+          if (m.stage.paidLlmAllowed || m.stage.exportAllowed || m.stage.sendAllowed || m.stage.productionPinChangeAllowed) {
+            throw new Error('forbidden later-stage authority');
+          }
+          m.state = 'capture_running';
+          m.execution = {
+            startedAt: new Date().toISOString(),
+            workflowRunId: process.env.RUN_ID,
+            triggerUrl: process.env.TRIGGER_URL
+          };
+          fs.writeFileSync(path, JSON.stringify(m, null, 2) + '\n');
+          NODE
+          git config user.name "oseg-clean-room-bot"
+          git config user.email "actions@onstage.biz"
+          git add "$EXECUTION_MANIFEST"
+          git commit -m "trial: lock The Scott one-shot capture"
+          git push origin HEAD:"$EXECUTION_BRANCH"
+
+      - name: Post start checkpoint
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            -f body="The Scott one-shot capture started in run ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. The committed lock is in place. Paid LLM, export, send, deployment, and production-pin changes remain disabled."
+
+      - name: Checkout preflighted engine separately
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: ${{ env.ENGINE_SHA }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: candidate-engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: candidate-engine/package-lock.json
+
+      - name: Install engine dependencies
+        working-directory: candidate-engine
+        run: npm ci
+
+      - name: Validate static capture budget guard
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync(process.env.EXECUTION_MANIFEST, 'utf8'));
+          const max = m.controls.maxReviewDepthPerPropertySource;
+          const estimates = {
+            google: Math.ceil(max / 1000) * 0.30,
+            booking: 4,
+            expedia: Math.ceil(max / 1000) * 2.50,
+            yelpAndSocial: 5,
+            tripadvisorAndWeb: 4
+          };
+          const conservative = Object.values(estimates).reduce((a, b) => a + b, 0);
+          if (conservative > m.controls.captureHardCapUsd) {
+            throw new Error(`static capture ceiling $${conservative} exceeds $${m.controls.captureHardCapUsd}`);
+          }
+          fs.writeFileSync('clean-room/the-scott/capture-budget-guard.json', JSON.stringify({
+            checkedAt: new Date().toISOString(),
+            maxReviewDepthPerPropertySource: max,
+            fullSweep: false,
+            conservativeCeilingUsd: conservative,
+            captureHardCapUsd: m.controls.captureHardCapUsd,
+            estimates,
+            note: 'Static worst-case guard; provider task cost signals are recorded after capture.'
+          }, null, 2) + '\n');
+          NODE
+
+      - name: Scaffold isolated public-source workspace
+        working-directory: candidate-engine
+        run: |
+          set -euo pipefail
+          WS="$GITHUB_WORKSPACE/data/clients/$WORKSPACE_SLUG"
+          if [ -e "$WS" ]; then
+            echo "::error::workspace already exists; one-shot runner refuses reuse"
+            exit 1
+          fi
+          npm run dev --silent -- new-property --yes \
+            --client-name "Clean Room Trial — Public Sources Only" \
+            --property "The Scott Resort & Spa" \
+            --location "Scottsdale, Arizona" \
+            --website "https://www.thescottresort.com/" \
+            --root "$GITHUB_WORKSPACE/data/clients" \
+            --registry "$GITHUB_WORKSPACE/candidate-engine/config/source-registry.json"
+
+      - name: Apply reviewed public identities
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync(process.env.EXECUTION_MANIFEST, 'utf8'));
+          const auditPath = process.env.WS + '/audit.json';
+          const audit = JSON.parse(fs.readFileSync(auditPath, 'utf8'));
+          const p = m.property;
+          Object.assign(audit.client, {
+            name: p.clientName,
+            propertyName: p.propertyName,
+            location: p.location,
+            website: p.website,
+            googleUrl: p.googleUrl,
+            tripadvisorUrl: p.tripadvisorUrl,
+            bookingUrl: p.bookingUrl,
+            expediaUrl: p.expediaUrl,
+            instagramUrl: p.instagramUrl,
+            facebookUrl: p.facebookUrl,
+            youtubeUrl: p.youtubeUrl
+          });
+          audit.venues = m.venues;
+          audit.skippedSources = (audit.skippedSources || []).filter((x) => x.platformId !== 'reddit');
+          fs.writeFileSync(auditPath, JSON.stringify(audit, null, 2) + '\n');
+          const profile = {
+            propertyName: p.propertyName,
+            profileStatus: 'researched',
+            sources: [
+              { url: p.website, note: 'official property page' },
+              { url: 'https://www.thescottresort.com/whats-on/', note: 'official recurring program' },
+              { url: 'https://www.thescottresort.com/dining/', note: 'official dining and outlet identity' }
+            ],
+            venues: [{
+              name: 'The Canal Club',
+              category: 'restaurant',
+              entertainment: [
+                'Juego Wednesday game night',
+                'Thursday live local artists',
+                'Friday Havana Nights movies',
+                'Friday and Saturday DJs',
+                'Sunday live brunch'
+              ],
+              notes: 'Primary recurring entertainment outlet; public-source identity only.',
+              entertainmentSource: 'https://www.thescottresort.com/whats-on/'
+            }],
+            venueCategoriesPresent: ['restaurant', 'bar_lounge', 'pool_common'],
+            nightclubExists: false,
+            entertainmentProgram: 'Recurring entertainment centers on The Canal Club and poolside resort programming.',
+            dayNightFlow: 'Pool and spa by day; Canal Club live artists, DJs, movies, games, and brunch programming.'
+          };
+          fs.writeFileSync(process.env.WS + '/property-profile.json', JSON.stringify(profile, null, 2) + '\n');
+          NODE
+
+      - name: Commit public scaffold before provider calls
+        run: |
+          set -euo pipefail
+          git add "$EXECUTION_MANIFEST" clean-room/the-scott/capture-budget-guard.json "data/clients/$WORKSPACE_SLUG"
+          git commit -m "trial: scaffold The Scott public-source workspace"
+          git push origin HEAD:"$EXECUTION_BRANCH"
+
+      - name: Capture round under reviewed bounds
+        working-directory: candidate-engine
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          OSEG_CAPTURE_YOUTUBE: '1'
+          OSEG_CAPTURE_DEPTH: '2000'
+          OSEG_CAPTURE_FULL_SWEEP: '0'
+          OSEG_GOOGLE_CAPTURE_SOURCE: 'apify'
+          OSEG_CAPTURE_TIMEOUT_MS: '180000'
+          OSEG_APIFY_MAX_WAIT_MS: '900000'
+          OSEG_APIFY_POLL_INTERVAL_MS: '5000'
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- capture-round "$WS" --json > "$WS/clean-room-capture-round.json"
+          status=$(node -e 'const r=require(process.argv[1]);process.stdout.write(String(r.status||""))' "$WS/clean-room-capture-round.json")
+          [ "$status" = "ok" ] || { echo "::error::capture-round status=$status"; exit 1; }
+
+      - name: Collect bounded async results
+        working-directory: candidate-engine
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_CAPTURE_DEPTH: '2000'
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          pending_count() {
+            node -e 'const fs=require("fs");const f=process.env.WS+"/capture-pending.json";let n=0;try{n=(JSON.parse(fs.readFileSync(f,"utf8")).tasks||[]).length}catch{}process.stdout.write(String(n))'
+          }
+          : > "$WS/clean-room-collect.log"
+          for i in $(seq 1 30); do
+            n=$(pending_count)
+            [ "$n" = "0" ] && break
+            echo "attempt $i: $n pending" | tee -a "$WS/clean-room-collect.log"
+            npm run dev --silent -- capture-collect "$WS" --json >> "$WS/clean-room-collect.log" || true
+            n=$(pending_count)
+            [ "$n" = "0" ] && break
+            [ "$i" = "30" ] || sleep 30
+          done
+          echo "remaining=$(pending_count)" >> "$WS/clean-room-collect.log"
+
+      - name: Build and capture bounded public-web discovery
+        working-directory: candidate-engine
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- entertainment-discovery "$WS"
+          npm run dev --silent -- capture-web-discovery "$WS" 2> "$WS/clean-room-web-discovery.log" || true
+
+      - name: Capture bounded extra and outlet sources
+        working-directory: candidate-engine
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          OSEG_CAPTURE_YOUTUBE: '1'
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- capture-extra-sources "$WS" 2> "$WS/clean-room-extra-sources.log" || true
+          npm run dev --silent -- capture-venues "$WS" 2> "$WS/clean-room-venues.log" || true
+
+      - name: Build attempt ledger, coverage matrix, and readiness
+        working-directory: candidate-engine
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- generate-coverage-matrix "$WS"
+          npm run dev --silent -- sync-source-registry "$WS/audit.json" 2>&1 || true
+          args=(verify "$WS/audit.json" --json --summary)
+          [ -f "$WS/captures.json" ] && args+=(--capture-archive "$WS/captures.json")
+          npm run dev --silent -- "${args[@]}" > "$WS/verify-report.json" || true
+          npm run dev --silent -- doctor "$WORKSPACE_SLUG" \
+            --clients-dir "$GITHUB_WORKSPACE/data/clients" --json > "$WS/doctor-report.json" || true
+
+      - name: Measure capture
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const read = (name, fallback = null) => {
+            try { return JSON.parse(fs.readFileSync(path.join(process.env.WS, name), 'utf8')); }
+            catch { return fallback; }
+          };
+          const archive = read('captures.json', { captures: [] });
+          const captures = Array.isArray(archive) ? archive : (archive.captures || []);
+          const byPlatform = {};
+          for (const row of captures) {
+            const p = row.platformId || 'unknown';
+            byPlatform[p] = (byPlatform[p] || 0) + 1;
+          }
+          const costSignals = [];
+          const seen = new Set();
+          function walk(value, p = '') {
+            if (!value || typeof value !== 'object' || seen.has(value)) return;
+            seen.add(value);
+            for (const [k, v] of Object.entries(value)) {
+              const next = p ? p + '.' + k : k;
+              if (typeof v === 'number' && /cost|usd|price/i.test(k)) costSignals.push({ path: next, value: v });
+              else walk(v, next);
+            }
+          }
+          const runStatus = read('capture-run-status.json', null);
+          const pending = read('capture-pending.json', { tasks: [] });
+          walk(runStatus, 'captureRunStatus');
+          walk(pending, 'capturePending');
+          const attempts = read('property-source-attempts.json', null);
+          const coverage = read('source-coverage-matrix.json', null);
+          const verify = read('verify-report.json', null);
+          const measurement = {
+            schemaVersion: 'V1',
+            trialId: 'clean-room-the-scott-v1',
+            measuredAt: new Date().toISOString(),
+            engineSha: process.env.ENGINE_SHA,
+            totalAcceptedCaptures: captures.length,
+            acceptedByPlatform: byPlatform,
+            pendingTaskCount: Array.isArray(pending?.tasks) ? pending.tasks.length : 0,
+            captureRunStatus: runStatus,
+            propertySourceAttempts: attempts,
+            coverageSummary: coverage?.summary || null,
+            readiness: verify,
+            providerCostSignals: costSignals,
+            billingVerifiedUsd: null,
+            billingVerificationStatus: 'adapter artifacts inspected; provider billing reconciliation required before LLM stage',
+            redditApiExpectedState: 'needs_key_or_blocked',
+            paidLlmCalls: 0,
+            exported: false,
+            sent: false
+          };
+          fs.writeFileSync(path.join(process.env.WS, 'clean-room-measurement.json'), JSON.stringify(measurement, null, 2) + '\n');
+          NODE
+
+      - name: Finalize and commit execution evidence
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const p = process.env.EXECUTION_MANIFEST;
+          const m = JSON.parse(fs.readFileSync(p, 'utf8'));
+          m.state = process.env.JOB_STATUS === 'success'
+            ? 'capture_completed_pending_readiness_review'
+            : 'capture_failed_review_required';
+          m.execution = {
+            ...(m.execution || {}),
+            completedAt: new Date().toISOString(),
+            jobStatus: process.env.JOB_STATUS,
+            runUrl: process.env.RUN_URL
+          };
+          fs.writeFileSync(p, JSON.stringify(m, null, 2) + '\n');
+          NODE
+          git add "$EXECUTION_MANIFEST" clean-room/the-scott "data/clients/$WORKSPACE_SLUG" 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "trial: record The Scott capture evidence (${JOB_STATUS})"
+            git push origin HEAD:"$EXECUTION_BRANCH"
+          fi
+          state=$(node -e 'const m=require("./"+process.env.EXECUTION_MANIFEST);process.stdout.write(m.state)')
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            -f body="The Scott capture workflow finished with job status **${JOB_STATUS}** and ledger state \`${state}\`: ${RUN_URL}. Evidence was committed to \`$EXECUTION_BRANCH\`. Paid LLM, export, send, deployment, and production-pin changes remain closed."
