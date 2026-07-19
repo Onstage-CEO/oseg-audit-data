@@ -12,8 +12,8 @@
     "googleUrl": "https://www.google.com/maps/search/The%20Scott%20Resort%20%26%20Spa%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
     "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d115494-Reviews-The_Scott_Resort_Spa-Scottsdale_Arizona.html"
   },
-  "oneLineThesis": "",
-  "coreFinding": "",
+  "oneLineThesis": "The Scott currently advertises a recurring, venue-centered entertainment calendar, but the captured guest corpus does not yet establish how strongly that programming affects guest perception, demand, or commercial performance.",
+  "coreFinding": "Public sources confirm recurring live music, DJs, movies, games, tastings, and brunch performance at The Canal Club; strict entertainment mentions are sparse in the dated review sample, so the audit must separate verified programming supply from still-unproven guest impact.",
   "platforms": [
     {
       "platformId": "google",
@@ -70,6 +70,51 @@
       "keywordsSearched": [],
       "independentSource": true,
       "notes": "Capture reconciliation admitted this source because the provider status was ok with 87 captured/provider record(s). Score is intentionally null: capture alone does not prove a representative public-platform average."
+    },
+    {
+      "platformId": "blogs",
+      "scoreLabel": null,
+      "volume": 5,
+      "categoryScores": {},
+      "topicChips": {
+        "present": [],
+        "absent": []
+      },
+      "sortStrategiesRun": [],
+      "keywordsSearched": [
+        "entertainment",
+        "music",
+        "live music",
+        "DJ",
+        "show",
+        "games",
+        "quiet",
+        "atmosphere",
+        "evening",
+        "bar",
+        "pool",
+        "beach"
+      ],
+      "independentSource": true,
+      "notes": "Reviewed three independent editorial pages plus current official Story, Dining, and What's On pages. Independent coverage supplies positioning and historical spatial context; official pages establish current advertised programming. No editorial rating is treated as a platform score."
+    },
+    {
+      "platformId": "aerial_satellite",
+      "scoreLabel": null,
+      "volume": 4,
+      "categoryScores": {},
+      "topicChips": {
+        "present": [],
+        "absent": []
+      },
+      "sortStrategiesRun": [],
+      "keywordsSearched": [
+        "bar",
+        "pool",
+        "beach"
+      ],
+      "independentSource": true,
+      "notes": "Legacy platform ID used for the registry's aerial/maps-context lane. Four sources were reviewed for spatial context: official Story and Dining pages plus Planet Blue Adventure and The Hotel Guru. No satellite or aerial imagery was inspected, and no acoustic or line-of-sight claim is made."
     }
   ],
   "skippedSources": [
@@ -84,14 +129,62 @@
       "reason": "Provider output is explicitly partial/quarantined and excluded from scoring. import-apify-run expedia: quarantined 876 provider item(s) from ABORTED; not admitted to analysis."
     }
   ],
-  "evidence": [],
+  "evidence": [
+    {
+      "id": "ev-scott-official-program-001",
+      "author": "The Scott Resort & Spa (official website)",
+      "platformId": "blogs",
+      "date": "2026-07-19",
+      "quote": "From classic movie screenings to live music and special dinners, there’s always something happening here.",
+      "sentiment": "positive",
+      "primaryTheme": "live_music_shows_dj",
+      "themes": [
+        "live_music_shows_dj",
+        "cultural_programming"
+      ],
+      "verification": "live_verified",
+      "sourceUrl": "https://www.thescottresort.com/whats-on/",
+      "consultingImplication": "Confirms an active recurring program supply; it does not by itself prove guest demand, satisfaction, attendance, or revenue."
+    },
+    {
+      "id": "ev-scott-editorial-spatial-001",
+      "author": "Planet Blue Adventure",
+      "platformId": "blogs",
+      "date": "2019-08-19",
+      "quote": "The Canal Club Bar is the gathering place in the evening for smart cocktails.",
+      "sentiment": "positive",
+      "primaryTheme": "general",
+      "themes": [
+        "general",
+        "renovation_context"
+      ],
+      "verification": "live_verified",
+      "sourceUrl": "https://www.planetblueadventure.com/the-scott-resort-and-spa/",
+      "consultingImplication": "Historical, disclosed-stay editorial context places the evening social hub at The Canal Club; use as context, not current performance proof."
+    },
+    {
+      "id": "ev-scott-editorial-position-001",
+      "author": "The Hotel Guru",
+      "platformId": "blogs",
+      "quote": "This is perfect for a relaxing sunshine getaway.",
+      "sentiment": "positive",
+      "primaryTheme": "general",
+      "themes": [
+        "general"
+      ],
+      "verification": "live_verified",
+      "sourceUrl": "https://www.thehotelguru.com/en-us/hotel/the-scott-resort-spa-scottsdale",
+      "consultingImplication": "Independent editorial positioning emphasizes relaxation. That positioning may coexist with entertainment and is not proof of an evening deficit."
+    }
+  ],
   "venues": [
     {
       "name": "The Canal Club",
       "type": "Restaurant / bar / recurring entertainment venue",
       "slug": "the-canal-club",
       "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d12989592-Reviews-The_Canal_Club-Scottsdale_Arizona.html",
-      "googleUrl": "https://www.google.com/maps/search/The%20Canal%20Club%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
+      "googleUrl": "https://www.google.com/maps/search/The%20Canal%20Club%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "notes": "Current official What's On page advertises recurring Wednesday games, Thursday live local artists, Friday movies, Friday/Saturday DJs, Sunday patio performance, and periodic tastings. Schedule is time-sensitive and must be rechecked for any client-facing release."
     }
   ],
   "segments": [],
@@ -101,5 +194,6 @@
   "firewall": {
     "forbiddenTerms": [],
     "calibratedPhrasings": []
-  }
+  },
+  "scoreNuance": "This is not evidence of a property failure. It is a measurement gap: current programming is visible, while its guest-experience and commercial contribution remain insufficiently evidenced until guest-review candidates are reviewed and promoted."
 }
