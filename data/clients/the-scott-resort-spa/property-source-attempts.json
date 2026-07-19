@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-19T00:58:50.255Z",
+  "generatedAt": "2026-07-19T04:13:00.000Z",
   "property": "The Scott Resort & Spa",
   "attempts": [
     {
@@ -141,15 +141,16 @@
     },
     {
       "source": "blogs",
-      "mechanism": "workspace-corpus",
-      "provider": "workspace-corpus",
+      "mechanism": "public-web targeted review",
+      "provider": "public_web",
       "result": "captured_partial",
-      "recordsReturned": 15,
-      "recordsAccepted": 15,
+      "recordsReturned": 6,
+      "recordsAccepted": 6,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
+      "message": "Explicitly reviewed three current official property/program pages and three independent editorial pages. Findings and caveats are recorded in clean-room/the-scott/spatial-editorial-evidence.json.",
+      "attemptedAt": "2026-07-19T04:13:00.000Z"
     },
     {
       "source": "resort_pages",
@@ -183,6 +184,19 @@
       "truncated": false,
       "retryable": false,
       "message": "SUPPLEMENTAL traveler-intent/public-perception signal only and never rating math. It remains in the canonical accounting set so the unsupported gap is visible."
+    },
+    {
+      "source": "aerial_satellite",
+      "mechanism": "public-web maps/spatial context review",
+      "provider": "public_web",
+      "attemptedAt": "2026-07-19T04:13:00.000Z",
+      "result": "captured_partial",
+      "recordsReturned": 4,
+      "recordsAccepted": 4,
+      "completeness": "unknown",
+      "truncated": false,
+      "retryable": true,
+      "message": "Closed the registry's aerial/maps-context lane with four text sources describing property layout and venue/amenity adjacency. No satellite or aerial imagery was inspected; no acoustic, capacity, line-of-sight, or feasibility claim is permitted."
     }
   ]
 }
