@@ -88,6 +88,15 @@
       "Source lane coverage (registry)"
     ],
     "billingVerifiedUsd": null,
-    "paidRetryAllowed": false
+    "paidRetryAllowed": false,
+    "billingEvidence": {
+      "provider": "Apify",
+      "source": "user_provided_limit_notification",
+      "monthlyPlatformUsageLimitUsd": 70,
+      "limitExceeded": true,
+      "runningActorsAborted": true,
+      "nextMonthlyCycleStarts": "2026-07-21",
+      "incrementalTrialSpendUsd": null
+    }
   }
 }
