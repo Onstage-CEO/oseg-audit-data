@@ -5,9 +5,9 @@
   "status": "not_ready",
   "exitCode": 1,
   "summary": {
-    "okCount": 8,
+    "okCount": 10,
     "warningCount": 1,
-    "failCount": 2
+    "failCount": 1
   },
   "checks": [
     {
@@ -21,20 +21,24 @@
     {
       "id": "source_coverage",
       "label": "Required research source coverage",
-      "status": "fail",
+      "status": "ok",
       "messages": [
-        "missing required platforms: aerial_satellite",
-        "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
+        "6 covered, 2 skipped with reason",
+        "skipped: reddit (blocked) — Source could not be executed with the configured credentials. Reddit capture is not configured. S...",
+        "skipped: expedia (blocked) — Provider output is explicitly partial/quarantined and excluded from scoring. import-apify-run exp..."
       ]
     },
     {
       "id": "lane_coverage",
       "label": "Source lane coverage (registry)",
-      "status": "fail",
+      "status": "ok",
       "messages": [
-        "2 gating lane(s) neither covered nor explicitly skipped:",
-        "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
-        "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+        "Review platforms: covered by google",
+        "OTA review platforms: covered by booking",
+        "Community / social discussion: explicitly skipped: reddit (blocked) — Source could not be executed with the configured credentials. Reddit capture is not confi…",
+        "Video / creator content: covered by youtube",
+        "Travel blogs / editorial media: covered by blogs",
+        "Aerial / maps context: covered by aerial_satellite"
       ]
     },
     {
@@ -50,8 +54,17 @@
       "label": "Keyword group coverage",
       "status": "warn",
       "messages": [
-        "0 of 8 taxonomy groups have keywords searched",
-        "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+        "6 of 8 taxonomy groups have keywords searched",
+        "untouched groups: segment, seasonal"
+      ]
+    },
+    {
+      "id": "audit_content",
+      "label": "Analytical substance",
+      "status": "fail",
+      "messages": [
+        "missing ship-gating audit content: at least one live_verified guest-review evidence record",
+        "source coverage alone cannot make an audit READY; add supported analysis and provenance-bearing evidence"
       ]
     },
     {
@@ -59,7 +72,7 @@
       "label": "Evidence integrity",
       "status": "ok",
       "messages": [
-        "0 live-verified, 0 inference, 0 unverified"
+        "3 live-verified, 0 inference, 0 unverified"
       ]
     },
     {
@@ -67,7 +80,7 @@
       "label": "Provenance URL shape (offline)",
       "status": "ok",
       "messages": [
-        "no live_verified record carries a sourceUrl to shape-check (nothing to validate)"
+        "all 3 live_verified sourceUrl(s) are well-formed, non-placeholder absolute http(s) URLs"
       ]
     },
     {
@@ -83,7 +96,8 @@
       "label": "Evidence freshness",
       "status": "ok",
       "messages": [
-        "no live-verified evidence could be dated against the capture archive (nothing to age)"
+        "no live-verified evidence could be dated against the capture archive (nothing to age)",
+        "3 live-verified record(s) could not be dated (age unknown — not failed)"
       ]
     },
     {
@@ -91,7 +105,7 @@
       "label": "Teaser generation",
       "status": "ok",
       "messages": [
-        "generated 8806 chars in memory (not written)"
+        "generated 8887 chars in memory (not written)"
       ]
     },
     {
@@ -99,22 +113,22 @@
       "label": "Teaser Tier-A firewall lint (with per-client terms)",
       "status": "ok",
       "messages": [
-        "130 lines scanned, 0 forbidden-term hits",
+        "131 lines scanned, 0 forbidden-term hits",
         "client-specific forbidden terms applied: 0"
       ]
     }
   ],
   "sourceCoverage": {
-    "coveredCount": 4,
+    "coveredCount": 6,
     "skippedCount": 2,
-    "missingRequired": [
-      "aerial_satellite"
-    ],
+    "missingRequired": [],
     "coveredPlatforms": [
       "google",
       "tripadvisor",
       "booking",
-      "youtube"
+      "youtube",
+      "blogs",
+      "aerial_satellite"
     ],
     "skipped": [
       {
@@ -131,28 +145,22 @@
   },
   "keywordCoverage": {
     "totalGroups": 8,
-    "groupsWithKeywords": 0,
+    "groupsWithKeywords": 6,
     "untouchedGroups": [
-      "entertainment_general",
-      "activity",
-      "sentiment_negative",
-      "sentiment_positive",
       "segment",
-      "time_of_day",
-      "location",
       "seasonal"
     ],
-    "keywordsSearched": 0,
+    "keywordsSearched": 12,
     "keywordsInTaxonomy": 45
   },
   "evidenceIntegrity": {
-    "total": 0,
-    "liveVerified": 0,
+    "total": 3,
+    "liveVerified": 3,
     "inference": 0,
     "unverified": 0
   },
   "provenanceUrl": {
-    "liveVerifiedChecked": 0,
+    "liveVerifiedChecked": 3,
     "liveVerifiedInvalid": [],
     "otherInvalid": []
   },
@@ -164,61 +172,63 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-07-19T04:02:56.910Z",
-    "liveVerifiedTotal": 0,
+    "now": "2026-07-19T04:20:23.993Z",
+    "liveVerifiedTotal": 3,
     "dated": 0,
     "stale": 0,
-    "ageUnknown": 0,
+    "ageUnknown": 3,
     "staleRecords": [],
-    "ageUnknownRecords": []
+    "ageUnknownRecords": [
+      {
+        "evidenceId": "ev-scott-official-program-001",
+        "reason": "no capturePath to date against the capture archive"
+      },
+      {
+        "evidenceId": "ev-scott-editorial-spatial-001",
+        "reason": "no capturePath to date against the capture archive"
+      },
+      {
+        "evidenceId": "ev-scott-editorial-position-001",
+        "reason": "no capturePath to date against the capture archive"
+      }
+    ]
   },
   "teaserFirewall": {
     "generated": true,
-    "charsGenerated": 8806,
-    "linesScanned": 130,
+    "charsGenerated": 8887,
+    "linesScanned": 131,
     "forbiddenHitCount": 0,
     "clientForbiddenTermsApplied": 0,
     "hits": []
   },
   "readinessSummary": {
     "overall": "not_ready",
-    "headline": "NOT READY — 2 blockers",
-    "nextAction": "Resolve 2 blockers before shipping: Required research source coverage; Source lane coverage (registry)",
+    "headline": "NOT READY — 1 blocker",
+    "nextAction": "Resolve 1 blocker before shipping: Analytical substance",
     "checks": {
-      "ok": 8,
+      "ok": 10,
       "warn": 1,
-      "fail": 2
+      "fail": 1
     },
     "blockers": [
-      "Required research source coverage",
-      "Source lane coverage (registry)"
+      "Analytical substance"
     ],
     "warnings": [
       "Keyword group coverage"
     ],
     "blockerIds": [
-      "source_coverage",
-      "lane_coverage"
+      "audit_content"
     ],
     "warningIds": [
       "keyword_coverage"
     ],
     "blockerDetails": [
       {
-        "id": "source_coverage",
-        "check": "Required research source coverage",
+        "id": "audit_content",
+        "check": "Analytical substance",
         "details": [
-          "missing required platforms: aerial_satellite",
-          "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
-        ]
-      },
-      {
-        "id": "lane_coverage",
-        "check": "Source lane coverage (registry)",
-        "details": [
-          "2 gating lane(s) neither covered nor explicitly skipped:",
-          "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
-          "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+          "missing ship-gating audit content: at least one live_verified guest-review evidence record",
+          "source coverage alone cannot make an audit READY; add supported analysis and provenance-bearing evidence"
         ]
       }
     ],
@@ -227,23 +237,23 @@
         "id": "keyword_coverage",
         "check": "Keyword group coverage",
         "details": [
-          "0 of 8 taxonomy groups have keywords searched",
-          "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+          "6 of 8 taxonomy groups have keywords searched",
+          "untouched groups: segment, seasonal"
         ]
       }
     ],
     "sourceCoverage": {
-      "covered": 4,
+      "covered": 6,
       "skipped": 2,
-      "missingRequired": 1
+      "missingRequired": 0
     },
     "keywordGroups": {
-      "withKeywords": 0,
+      "withKeywords": 6,
       "total": 8
     },
     "evidence": {
-      "total": 0,
-      "liveVerified": 0,
+      "total": 3,
+      "liveVerified": 3,
       "inference": 0,
       "unverified": 0
     },
@@ -253,5 +263,5 @@
       "unmatched": 0
     }
   },
-  "timestamp": "2026-07-19T04:02:56.917Z"
+  "timestamp": "2026-07-19T04:20:24.000Z"
 }
