@@ -20,7 +20,7 @@ jobs:
       github.event.issue.pull_request != null &&
       github.event.comment.user.login == 'Onstage-CEO' &&
       github.event.comment.author_association == 'OWNER' &&
-      github.event.comment.body == '/refresh-the-scott-discovery SCOTT-DISCOVERY-20260719-4BEEDB4'
+      github.event.comment.body == '/refresh-the-scott-discovery SCOTT-DISCOVERY-20260719-4BEEDB4-V2'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
@@ -32,6 +32,13 @@ jobs:
       PR_NUMBER: '35'
 
     steps:
+      - name: Post run start
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            -f body="The Scott corrected discovery regeneration started: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
       - uses: actions/checkout@v4
         with:
           ref: ${{ env.EXECUTION_BRANCH }}
