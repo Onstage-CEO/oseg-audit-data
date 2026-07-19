@@ -20,8 +20,8 @@ export function checkoutBlocks(text) {
     }
     const block = blockLines.join('\n');
     blocks.push({
-      repository: block.match(/^\s*repository:\s*([^\s#]+)\s*$/m)?.[1] ?? null,
-      ref: block.match(/^\s*ref:\s*([^\s#]+)\s*$/m)?.[1] ?? null,
+      repository: block.match(/^\s*repository:\s*(\$\{\{[^\n]+\}\}|[^\s#]+)\s*$/m)?.[1] ?? null,
+      ref: block.match(/^\s*ref:\s*(\$\{\{[^\n]+\}\}|[^\s#]+)\s*$/m)?.[1] ?? null,
       path: block.match(/^\s*path:\s*([^\s#]+)\s*$/m)?.[1] ?? null,
     });
   }
