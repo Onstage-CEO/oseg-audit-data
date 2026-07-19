@@ -40,7 +40,9 @@
       "The original entertainment discovery used substring matching: dj matched adjacent and show matched shower/showed; engine PR #343 corrected the boundary defect and added standalone music.",
       "The original entertainment worklist discarded raw rating scale, author, and timestamp; engine PR #344 preserves those fields for reproducible adjudication.",
       "Current official pages advertise recurring games, live local artists, classic-film screenings, DJs, Sunday patio performance, and tastings at The Canal Club.",
-      "Text-source spatial context was reviewed, but no satellite or aerial imagery was inspected and no acoustic/capacity/feasibility claim is allowed."
+      "Text-source spatial context was reviewed, but no satellite or aerial imagery was inspected and no acoustic/capacity/feasibility claim is allowed.",
+      "The first corrected worklist still ranked by signal without recency, allowing 2019 generic-vibe records to displace a November 2025 direct music/noise record; engine PR #345 now ranks current 12-month candidates before corroboration and historical bands.",
+      "After recency-first regeneration, all 12 operator candidates are dated within the trailing 12 months; no candidate is automatically evidence, and all 12 require independent adjudication."
     ],
     "strengthenedVerifier": {
       "engineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
@@ -50,7 +52,20 @@
       "evidenceTotal": 3,
       "guestReviewLiveVerified": 0
     },
-    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json"
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json",
+    "discoveryCorrection": {
+      "engineSha": "cec50dcf02da57cca333fc87e031b7128e34b340",
+      "rawReviewRecordsProcessed": 3001,
+      "candidateCount": 12,
+      "ageBandCounts": {
+        "current_12m": 12,
+        "corroboration_12_to_24m": 0,
+        "historical_over_24m": 0,
+        "unknown": 0
+      },
+      "promotedEvidence": 0,
+      "ledger": "clean-room/the-scott/discovery-regeneration.json"
+    }
   },
   "spend": {
     "captureHardCapUsd": 23,
