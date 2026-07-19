@@ -44,7 +44,7 @@
     "captureHardCapUsd": 23,
     "providerArtifactCostSignals": [],
     "billingVerifiedUsd": null,
-    "status": "account limit reached; provider billing detail is required to attribute incremental trial spend",
+    "status": "Apify subtotal verified at USD 3.623; DataForSEO and any other provider charges still require artifact/account reconciliation.",
     "accountBillingEvidence": {
       "source": "user_provided_apify_limit_notification",
       "receivedAt": "2026-07-19T01:03:00Z",
@@ -71,7 +71,9 @@
         "auditAcceptedTextRecords": 1664,
         "auditRatingOnlyRecords": 989,
         "reconciliation": "2653 provider results = 1664 accepted text records + 989 rating-only records",
-        "runId": "Twl870efdmcVzPVQS"
+        "runId": "Twl870efdmcVzPVQS",
+        "actualCostUsd": 1.194,
+        "displayedMaxCostPerRunUsd": 3.39
       },
       {
         "provider": "Apify",
@@ -82,7 +84,9 @@
         "providerResultCount": 122,
         "auditAcceptedRecords": 122,
         "reconciliation": "provider and audit counts match",
-        "runId": "IlIvRs8uGISkaIVvD"
+        "runId": "IlIvRs8uGISkaIVvD",
+        "actualCostUsd": 0.232,
+        "displayedMaxCostPerRunUsd": 2.28
       },
       {
         "provider": "Apify",
@@ -93,15 +97,17 @@
         "providerResultCount": 876,
         "auditAcceptedRecords": 0,
         "reconciliation": "partial provider dataset exists but the adapter discarded it because terminal run status was ABORTED",
-        "runId": "4DWzkgi0DL7QUb4G8"
+        "runId": "4DWzkgi0DL7QUb4G8",
+        "actualCostUsd": 2.197,
+        "displayedMaxCostPerRunUsd": 2.2
       }
     ],
     "verifiedPerRunUsd": {
-      "expedia": 2.197,
-      "google": null,
-      "booking": null
+      "google": 1.194,
+      "booking": 0.232,
+      "expedia": 2.197
     },
-    "verifiedSubtotalUsd": 2.197,
+    "verifiedSubtotalUsd": 3.623,
     "incrementalTrialSpendUsd": null,
     "expediaRunCharging": {
       "runId": "4DWzkgi0DL7QUb4G8",
@@ -115,7 +121,8 @@
       "terminalStatus": "ABORTED",
       "datasetResultCount": 876,
       "interpretation": "Apify derived the effective charge ceiling from available account headroom; engine source did not send maxTotalChargeUsd."
-    }
+    },
+    "verifiedApifySubtotalUsd": 3.623
   },
   "authority": {
     "paidLlmAllowed": false,
