@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "V1",
+  "trialId": "clean-room-the-scott-v1",
+  "status": "decisions_complete_attestation_pending",
+  "recordedAt": "2026-07-19T17:16:44Z",
+  "operator": {
+    "name": "Joe Costello",
+    "role": "Onstage CEO / independent human reviewer",
+    "submissionChannel": "ChatGPT conversation"
+  },
+  "independenceAttestation": {
+    "status": "pending_explicit_confirmation",
+    "statement": null,
+    "note": "All 12 decisions were submitted directly by Joe Costello. The packet's formal independence attestation and review start/completion times were not included in the submission and are not inferred."
+  },
+  "startedAt": null,
+  "completedAt": null,
+  "executionBranchHeadShaReviewed": "f8692b05adfbe058d7169a946ad4768ec9b55d79",
+  "engineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
+  "worklistCandidateCount": 12,
+  "worklistDecisionsCompleted": 12,
+  "decisionSummary": {
+    "promote": 0,
+    "reject": 7,
+    "defer": 5
+  },
+  "candidateDecisions": [
+    {
+      "candidateNumber": 1,
+      "candidateId": "worklist-01-booking-10sxi3t",
+      "platform": "booking",
+      "author": "Jane",
+      "decision": "defer",
+      "rationale": "I can't find the review.",
+      "sourceAccessibility": "unavailable_to_operator"
+    },
+    {
+      "candidateNumber": 2,
+      "candidateId": "worklist-02-google-jina-jilek",
+      "platform": "google",
+      "author": "Jina Jilek",
+      "decision": "reject",
+      "rationale": "I don't see anything about entertainment, music, DJ, volume, etc., so I'm not sure why it's in here."
+    },
+    {
+      "candidateNumber": 3,
+      "candidateId": "worklist-03-google-eric-crane",
+      "platform": "google",
+      "author": "Eric Crane",
+      "decision": "reject",
+      "rationale": "This has nothing to do with entertainment on the property but instead a complaint about a wedding happening down on the lawn below a room."
+    },
+    {
+      "candidateNumber": 4,
+      "candidateId": "worklist-04-google-jonathan-swann",
+      "platform": "google",
+      "author": "Jonathan Swann",
+      "decision": "reject",
+      "rationale": "This complaint is about the house music through the speakers at the pool which is not under our realm."
+    },
+    {
+      "candidateNumber": 5,
+      "candidateId": "worklist-05-booking-90bqpe",
+      "platform": "booking",
+      "author": "Eissra",
+      "decision": "defer",
+      "rationale": "I can't find the review.",
+      "sourceAccessibility": "unavailable_to_operator"
+    },
+    {
+      "candidateNumber": 6,
+      "candidateId": "worklist-06-tripadvisor-marisa-w",
+      "platform": "tripadvisor",
+      "author": "Marisa W",
+      "decision": "defer",
+      "rationale": "The review says 'The decor, music and vibe is nice.' It's hard to tell if the music mentioned is house music through the speakers or live music."
+    },
+    {
+      "candidateNumber": 7,
+      "candidateId": "worklist-07-google-marisa-wilson",
+      "platform": "google",
+      "author": "Marisa Wilson",
+      "decision": "defer",
+      "rationale": "This is the same review from Candidate 6, copied from TripAdvisor to Google.",
+      "duplicateOfCandidateNumber": 6
+    },
+    {
+      "candidateNumber": 8,
+      "candidateId": "worklist-08-google-becky-rothstein",
+      "platform": "google",
+      "author": "Becky Rothstein",
+      "decision": "reject",
+      "rationale": "This is another complaint about noise and music coming from an event, not from our programmed music."
+    },
+    {
+      "candidateNumber": 9,
+      "candidateId": "worklist-09-google-jesse-robertson",
+      "platform": "google",
+      "author": "Jesse Robertson",
+      "decision": "reject",
+      "rationale": "This says nothing about the music programming."
+    },
+    {
+      "candidateNumber": 10,
+      "candidateId": "worklist-10-booking-1s72c1i",
+      "platform": "booking",
+      "author": "Teresa",
+      "decision": "defer",
+      "rationale": "I can't find the review.",
+      "sourceAccessibility": "unavailable_to_operator"
+    },
+    {
+      "candidateNumber": 11,
+      "candidateId": "worklist-11-tripadvisor-em-t",
+      "platform": "tripadvisor",
+      "author": "Em T",
+      "decision": "reject",
+      "rationale": "This says nothing about the music programming."
+    },
+    {
+      "candidateNumber": 12,
+      "candidateId": "worklist-12-tripadvisor-wavelength2014",
+      "platform": "tripadvisor",
+      "author": "wavelength2014",
+      "decision": "reject",
+      "rationale": "This says nothing about the music programming."
+    }
+  ],
+  "promotedEvidenceIds": [],
+  "rejectedCandidateIds": [
+    "worklist-02-google-jina-jilek",
+    "worklist-03-google-eric-crane",
+    "worklist-04-google-jonathan-swann",
+    "worklist-08-google-becky-rothstein",
+    "worklist-09-google-jesse-robertson",
+    "worklist-11-tripadvisor-em-t",
+    "worklist-12-tripadvisor-wavelength2014"
+  ],
+  "deferredCandidateIds": [
+    "worklist-01-booking-10sxi3t",
+    "worklist-05-booking-90bqpe",
+    "worklist-06-tripadvisor-marisa-w",
+    "worklist-07-google-marisa-wilson",
+    "worklist-10-booking-1s72c1i"
+  ],
+  "verifierStatus": "not_run_pending_attestation; expected_not_ready",
+  "blockerIds": [
+    "audit_content"
+  ],
+  "expectedMachineOutcome": {
+    "status": "not_ready",
+    "reason": "The second operator promoted zero guest-review evidence, so the existing audit_content blocker remains."
+  },
+  "learningSignals": [
+    "Seven of 12 automated candidates were rejected as outside OSEG music-programming scope.",
+    "Five candidates were deferred; three were inaccessible Booking review permalinks, one was ambiguous house-versus-live music, and one was a cross-platform duplicate.",
+    "The corrected discovery queue achieved zero independently accepted guest-review evidence.",
+    "Booking review anchors are not reliable operator evidence links; captured source text must be embedded in the review packet."
+  ],
+  "paidCalls": 0,
+  "exports": 0,
+  "sends": 0,
+  "deployments": 0,
+  "productionPinChanges": 0
+}
