@@ -1,18 +1,26 @@
 {
-  "schemaVersion": "V2",
+  "schemaVersion": "V3",
   "engineRepository": "Onstage-CEO/oseg-resort-audit",
   "approvedEngineRef": "67daf35c887e3509434978ffe7937df6b6385980",
+  "isolatedCleanRoomEngineRefs": {
+    "clean-room-capture-the-scott.yml": "79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6",
+    "clean-room-recover-the-scott-expedia.yml": "6d07fec737cf9ef374e588486f1ae1127f02007e",
+    "clean-room-preflight-the-scott.yml": "79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6"
+  },
   "enginePackageVersion": "0.1.0",
   "sourceCapabilitySchemaVersion": null,
   "propertySourceAttemptSchemaVersion": null,
   "coverageMatrixSchemaVersion": null,
   "paidCapturedCorpusVerificationVersion": null,
-  "engineWorkflowCount": 15,
+  "productionEngineWorkflowCount": 15,
+  "isolatedCleanRoomWorkflowCount": 3,
+  "engineWorkflowCount": 18,
   "declaredPinsValidated": true,
   "executedCheckoutTargetsValidated": true,
+  "detectsNonstandardCheckoutPaths": true,
   "pinProofCommit": "76a0ad374dac317383fe709df7d52c7d292584c8",
   "cleanRoomValidated": false,
   "commercialRepeatabilityStatus": "not_approved",
-  "approvalPolicy": "Bump deliberately through one reviewed pull request; never follow main automatically.",
-  "note": "The approved hosted engine predates the versioned property-attempt and paid captured-corpus verification contracts now present on engine main. Null schema fields mean absent or unversioned in this deployed SHA, not unknown success."
+  "approvalPolicy": "Production workflows use one approved SHA. Isolated clean-room exceptions must be filename-bound and SHA-bound in this manifest; they never change the production pin.",
+  "note": "The 15 production workflows remain on the approved hosted engine. Three isolated, one-shot clean-room workflows execute reviewed candidate SHAs and are now explicitly detected instead of being invisible because of nonstandard checkout path names."
 }

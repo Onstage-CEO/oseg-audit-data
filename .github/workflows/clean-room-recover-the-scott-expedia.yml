@@ -1,0 +1,269 @@
+name: The Scott read-only Expedia recovery
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: clean-room-the-scott-expedia-recovery
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    name: Recover existing Expedia dataset (read-only)
+    if: >-
+      github.event.issue.number == 35 &&
+      github.event.issue.pull_request != null &&
+      github.event.comment.user.login == 'Onstage-CEO' &&
+      github.event.comment.author_association == 'OWNER' &&
+      github.event.comment.body == '/recover-the-scott-expedia SCOTT-EXPEDIA-RECOVERY-20260719-6D07FEC'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      EXECUTION_BRANCH: trial/the-scott-execution-v1
+      EXECUTION_MANIFEST: clean-room/the-scott/execution-manifest.json
+      RECOVERY_LEDGER: clean-room/the-scott/expedia-recovery.json
+      ENGINE_SHA: 6d07fec737cf9ef374e588486f1ae1127f02007e
+      WORKSPACE_SLUG: the-scott-resort-spa
+      EXPEDIA_RUN_ID: 4DWzkgi0DL7QUb4G8
+      EXPECTED_PROVIDER_ITEMS: '876'
+      PR_NUMBER: '35'
+
+    steps:
+      - name: Checkout isolated execution branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.EXECUTION_BRANCH }}
+          fetch-depth: 0
+
+      - name: Validate closed gates and acquire one-shot recovery lock
+        env:
+          RUN_ID: ${{ github.run_id }}
+          TRIGGER_URL: ${{ github.event.comment.html_url }}
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync(process.env.EXECUTION_MANIFEST, 'utf8'));
+          if (m.schemaVersion !== 'V1' || m.executionId !== 'the-scott-option-a-2026-07-19') {
+            throw new Error('execution identity mismatch');
+          }
+          if (m.state !== 'capture_completed_llm_blocked') {
+            throw new Error('recovery requires capture_completed_llm_blocked');
+          }
+          if (m.stage.paidLlmAllowed || m.stage.exportAllowed || m.stage.sendAllowed ||
+              m.stage.productionPinChangeAllowed) {
+            throw new Error('a forbidden later-stage gate is open');
+          }
+          const expedia = m.readinessReview?.billingEvidence?.expediaRun;
+          if (expedia?.runId !== process.env.EXPEDIA_RUN_ID ||
+              expedia?.datasetResultCount !== Number(process.env.EXPECTED_PROVIDER_ITEMS) ||
+              expedia?.actualCostUsd !== 2.197) {
+            throw new Error('reviewed Expedia run evidence mismatch');
+          }
+          if (fs.existsSync(process.env.RECOVERY_LEDGER)) {
+            throw new Error('one-shot recovery is already locked');
+          }
+          fs.writeFileSync(process.env.RECOVERY_LEDGER, JSON.stringify({
+            schemaVersion: 'V1',
+            operation: 'read_existing_apify_dataset_only',
+            state: 'recovery_running',
+            startedAt: new Date().toISOString(),
+            workflowRunId: process.env.RUN_ID,
+            triggerUrl: process.env.TRIGGER_URL,
+            engineSha: process.env.ENGINE_SHA,
+            provider: 'apify',
+            platform: 'expedia',
+            runId: process.env.EXPEDIA_RUN_ID,
+            expectedTerminalState: 'ABORTED',
+            expectedProviderResultCount: Number(process.env.EXPECTED_PROVIDER_ITEMS),
+            newActorRunAllowed: false,
+            paidLlmAllowed: false,
+            scoringPromotionAllowed: false,
+            exportAllowed: false,
+            sendAllowed: false
+          }, null, 2) + '\n');
+          NODE
+          git config user.name "oseg-clean-room-bot"
+          git config user.email "actions@onstage.biz"
+          git add "$RECOVERY_LEDGER"
+          git commit -m "trial: lock read-only Expedia recovery"
+          git push origin HEAD:"$EXECUTION_BRANCH"
+
+      - name: Post start checkpoint
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            -f body="Read-only recovery of the already-paid Expedia run started: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. This job cannot start an Actor and cannot promote partial rows into scoring."
+
+      - name: Checkout recovery engine
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: ${{ env.ENGINE_SHA }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: recovery-engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: recovery-engine/package-lock.json
+
+      - name: Install engine dependencies
+        working-directory: recovery-engine
+        run: npm ci
+
+      - name: Recover existing dataset into quarantine
+        working-directory: recovery-engine
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          before=$(sha256sum "$WS/captures.json" | cut -d' ' -f1)
+          npm run dev --silent -- import-apify-run "$WS" \
+            --platform expedia \
+            --run-id "$EXPEDIA_RUN_ID" \
+            --force \
+            --json > /tmp/expedia-recovery-result.json
+          after=$(sha256sum "$WS/captures.json" | cut -d' ' -f1)
+          [ "$before" = "$after" ] || {
+            echo "::error::captures.json changed; partial output escaped quarantine"
+            exit 1
+          }
+
+      - name: Validate recovered partial corpus and isolation
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const result = JSON.parse(fs.readFileSync('/tmp/expedia-recovery-result.json', 'utf8'));
+          if (result.status !== 'quarantined' || result.runStatus !== 'ABORTED') {
+            throw new Error('unexpected import result: ' + result.status + '/' + result.runStatus);
+          }
+          if (result.fetched !== Number(process.env.EXPECTED_PROVIDER_ITEMS)) {
+            throw new Error('provider count mismatch: ' + result.fetched);
+          }
+          const artifactPath = path.resolve(result.rawArtifactPath);
+          const partialRoot = path.resolve(process.env.WS, 'captures-partial') + path.sep;
+          if (!artifactPath.startsWith(partialRoot)) throw new Error('artifact escaped captures-partial');
+          const p = JSON.parse(fs.readFileSync(artifactPath, 'utf8'));
+          if (p.platform !== 'expedia' || p.completeness !== 'partial' || p.quarantined !== true) {
+            throw new Error('partial/quarantine markers missing');
+          }
+          if (p.provider?.runId !== process.env.EXPEDIA_RUN_ID ||
+              p.provider?.terminalState !== 'ABORTED' ||
+              p.providerResultCount !== Number(process.env.EXPECTED_PROVIDER_ITEMS)) {
+            throw new Error('provider provenance mismatch');
+          }
+          if (p.actualCostUsd !== 2.197 || p.costStatus !== 'verified') {
+            throw new Error('provider cost provenance mismatch');
+          }
+          if (!Array.isArray(p.reviews) || p.reviews.length !== p.analyzableTextCount ||
+              p.ratingOnlyCount !== p.providerResultCount - p.analyzableTextCount) {
+            throw new Error('corpus count reconciliation mismatch');
+          }
+
+          let invalidUrl = 0, invalidRating = 0, invalidTimestamp = 0;
+          const urls = new Set();
+          for (const r of p.reviews) {
+            if (typeof r.sourceUrl !== 'string' || !r.sourceUrl.trim()) invalidUrl++;
+            else urls.add(r.sourceUrl);
+            if (r.rating != null && (!Number.isFinite(r.rating) || r.rating < 0 || r.rating > 5)) {
+              invalidRating++;
+            }
+            if (r.ratingMax != null && r.ratingMax !== 5) invalidRating++;
+            if (r.timestamp != null && Number.isNaN(Date.parse(r.timestamp))) invalidTimestamp++;
+          }
+          if (invalidUrl || invalidRating || invalidTimestamp) {
+            throw new Error('invalid normalized rows: url=' + invalidUrl +
+              ', rating=' + invalidRating + ', timestamp=' + invalidTimestamp);
+          }
+
+          const recovery = JSON.parse(fs.readFileSync(process.env.RECOVERY_LEDGER, 'utf8'));
+          Object.assign(recovery, {
+            state: 'recovered_valid_partial',
+            completedAt: new Date().toISOString(),
+            result: {
+              status: result.status,
+              runStatus: result.runStatus,
+              providerResultCount: p.providerResultCount,
+              analyzableTextCount: p.analyzableTextCount,
+              ratingOnlyCount: p.ratingOnlyCount,
+              uniqueSourceUrlCount: urls.size,
+              duplicateSourceUrlCount: p.reviews.length - urls.size,
+              actualCostUsd: p.actualCostUsd,
+              costStatus: p.costStatus,
+              artifactPath: path.relative(process.cwd(), artifactPath)
+            },
+            validation: {
+              schemaAndMarkers: 'passed',
+              providerProvenance: 'passed',
+              costReconciliation: 'passed',
+              normalizedRowBounds: 'passed',
+              scoringIsolation: 'passed',
+              propertyIdentityBasis: 'reviewed run id and exact Scott Expedia URL',
+              completeness: 'partial'
+            },
+            disposition: 'retain_as_validated_partial_context_not_scoring_corpus'
+          });
+          fs.writeFileSync(process.env.RECOVERY_LEDGER, JSON.stringify(recovery, null, 2) + '\n');
+
+          const manifest = JSON.parse(fs.readFileSync(process.env.EXECUTION_MANIFEST, 'utf8'));
+          manifest.expediaPartialRecovery = {
+            state: recovery.state,
+            completedAt: recovery.completedAt,
+            engineSha: recovery.engineSha,
+            runId: recovery.runId,
+            providerResultCount: p.providerResultCount,
+            analyzableTextCount: p.analyzableTextCount,
+            ratingOnlyCount: p.ratingOnlyCount,
+            actualCostUsd: p.actualCostUsd,
+            disposition: recovery.disposition,
+            recoveryLedger: process.env.RECOVERY_LEDGER
+          };
+          manifest.state = 'capture_completed_llm_blocked';
+          manifest.stage.paidLlmAllowed = false;
+          manifest.stage.exportAllowed = false;
+          manifest.stage.sendAllowed = false;
+          manifest.stage.productionPinChangeAllowed = false;
+          fs.writeFileSync(process.env.EXECUTION_MANIFEST, JSON.stringify(manifest, null, 2) + '\n');
+          NODE
+
+          git diff --quiet -- \
+            "data/clients/$WORKSPACE_SLUG/captures.json" \
+            "data/clients/$WORKSPACE_SLUG/captures-raw" \
+            "data/clients/$WORKSPACE_SLUG/audit.json" || {
+              echo "::error::recovery changed scoring or audit inputs"
+              exit 1
+            }
+
+      - name: Commit recovery evidence
+        run: |
+          set -euo pipefail
+          git add \
+            "$EXECUTION_MANIFEST" \
+            "$RECOVERY_LEDGER" \
+            "data/clients/$WORKSPACE_SLUG/capture-run-status.json" \
+            "data/clients/$WORKSPACE_SLUG/captures-partial"
+          git commit -m "trial: quarantine and validate existing Expedia partial dataset"
+          git push origin HEAD:"$EXECUTION_BRANCH"
+
+      - name: Post completion checkpoint
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          summary=$(node -e 'const r=require("./"+process.env.RECOVERY_LEDGER);process.stdout.write(r.result.providerResultCount+" provider items; "+r.result.analyzableTextCount+" analyzable text; "+r.result.ratingOnlyCount+" rating-only; $"+r.result.actualCostUsd+" previously spent")')
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            -f body="Expedia read-only recovery passed: ${summary}. The ABORTED dataset remains quarantined and excluded from scoring. Paid LLM, export, send, deployment, and production-pin gates remain closed. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
