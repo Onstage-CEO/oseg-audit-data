@@ -1,6 +1,6 @@
 {
   "reportVersion": "entertainment-discovery-v1",
-  "generatedAt": "2026-07-19T00:56:30.217Z",
+  "generatedAt": "2026-07-19T04:34:00.000Z",
   "target": {
     "propertyName": "The Scott Resort & Spa",
     "location": "Scottsdale, Arizona"
@@ -139,104 +139,91 @@
   "inCorpusNuggets": [
     {
       "role": "watch_item",
+      "platform": "booking",
+      "rating": 1,
+      "ratingRaw": 2,
+      "ratingMax": 10,
+      "author": "Jane",
+      "timestamp": "2026-03-05T13:13:32.000Z",
+      "text": "My meant to be relaxing vacation was anything but. I understand there are several lovely resorts in Scottsdale and my ad The property was clean and was well landscaped. Rooms were comfortable, although not worthy of their nightly fee. The lobby was pretty with a Cuban vibe. I will say, the spa was the highlight of the trip. My massage was excellent and th...",
+      "sourceUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-10sxi3t",
+      "matchedTerms": [
+        "music",
+        "vibe"
+      ]
+    },
+    {
+      "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 1,
-      "text": "AWFUL- run. NoT a 4 star hotel! It was so rundown, our room was filthy- paint coming off walls, black marks in bathroom, tikes coming up in shower / just to make a few! The gym had drinks sitting there for 2 days! Half the rooms have a view of the parking lot! Service was terrible, attitude awful- this was supposed to be a special trip and they managed to...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r881262780-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "ratingRaw": 1,
+      "ratingMax": 5,
+      "author": "Nick G",
+      "timestamp": "2024-10-20 00:00:00 +00:00",
+      "text": "Not a memorable stay Unfortunate stay. We did a staycation for our wedding anniversary and my wife who is expecting our first child. Zero extra accommodations were added for our special stay, the pool was closed for the 2nd day of our stay for a private event including a DJ playing club music (which we were not made aware of), slow service and unenthusias...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r974728954-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
       "matchedTerms": [
-        "show",
-        "vibe"
+        "dj",
+        "music"
       ]
     },
     {
       "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 2,
+      "ratingRaw": 2,
+      "ratingMax": 5,
+      "author": "Melissa S",
+      "timestamp": "2022-01-23 00:00:00 +00:00",
       "text": "Lipstick on a Pig This iconic Scottsdale Boutique hotel has outlived it prime! Let me start by saying what a lovely welcoming front entrance with the classic car and bicycles. The Lobby was beautiful with its Havana vibe. The front desk staff was welcoming, and check in was prompt. We went to room 116, and were please with the size, layout and decor, but...",
       "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r825716600-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
       "matchedTerms": [
         "live music",
-        "show",
+        "music",
         "vibe"
       ]
     },
     {
-      "role": "watch_item",
-      "platform": "tripadvisor",
-      "rating": 1,
-      "text": "Poor Service across the board From the lack of knowledge of front desk staff, to 20 mins to get coffee and 20 mins to get a glass of water, and one night we asked for plastic silverware, called twice they said it was coming, they never showed up, we gave up. Rooms were so hot and the thermostats are not completely adjustable. Just not what you’d expect of...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r784628162-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "role": "strength",
+      "platform": "google",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "Shelly F",
+      "timestamp": "2023-08-28T02:20:57.883Z",
+      "text": "The Scott rooms are great very comfortable beds , mini bar items, plush towels and bathrobes .. we had a courtyard room that could get us directly over to the pool area. Double doors open up to a cute little patio with wicker furniture ..only downfall that any of us found with the room is that it has a slotted shutter door on the bathroom so there’s no pr...",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDpw9mI-AE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB",
       "matchedTerms": [
+        "activity",
         "dj",
-        "show"
-      ]
-    },
-    {
-      "role": "watch_item",
-      "platform": "tripadvisor",
-      "rating": 1,
-      "text": "Dont waste your money Horrible horrible place to stay. The overpriced resort and pool is okay and has a relaxing vibe so points for that. Staying at the hotel is however really bad. The living areas are Dingy and1950’s vibe. Carpet dirty and dull. The room ot self leaves alot to be desired. No bathtub. Shower small without a door!! Really!!! Who has a sho...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r732704885-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
-      "matchedTerms": [
-        "show",
-        "vibe"
+        "live music",
+        "music"
       ]
     },
     {
       "role": "watch_item",
       "platform": "google",
-      "rating": 1,
-      "text": "Horrible experience. Nice looking hotel, but they put us in a room adjacent to a major wedding with the reception happening in front of our room on the grass without letting us know. House music pounded until 10:30pm and there was a party going on in the room next to us and the hotel staff did nothing to quiet them either. Not what my wife and I expected...",
-      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOm9vaFZzRXVBU0dCT0hoWjN4aTkzX0E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB",
+      "rating": 2,
+      "ratingRaw": 2,
+      "ratingMax": 5,
+      "author": "Leanne S",
+      "timestamp": "2023-03-09T22:30:12.819Z",
+      "text": "Let’s Start with the Good: -Hotel is beautifully decorated- loved the vibe, you can tell the designers looked at every angle when designing each space and rooms. - nice pool areas and lots of seating but it does get a little pool party ish - free parking - spa is nice and relaxing, be sure to book in advance Bad: ( I want to note we are experienced travel...",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDhvsiiTw%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE",
       "matchedTerms": [
         "dj",
-        "show"
-      ]
-    },
-    {
-      "role": "watch_item",
-      "platform": "booking",
-      "rating": 1,
-      "text": "My meant to be relaxing vacation was anything but. I understand there are several lovely resorts in Scottsdale and my ad The property was clean and was well landscaped. Rooms were comfortable, although not worthy of their nightly fee. The lobby was pretty with a Cuban vibe. I will say, the spa was the highlight of the trip. My massage was excellent and th...",
-      "sourceUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-10sxi3t",
-      "matchedTerms": [
+        "music",
         "vibe"
-      ]
-    },
-    {
-      "role": "watch_item",
-      "platform": "booking",
-      "rating": 5,
-      "text": "Wonderful Desert Getaway Loved the room, pool and location. Great casual vibes. Our cabana and pool experience was amazing; our attendant was so kind and gracious. Made it a great stay! / The food selection was disappointing; would have like a more food offerings, and lastly the staff at the restaurant were not friendly or welcoming.",
-      "sourceUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-1jcf3g8",
-      "matchedTerms": [
-        "vibe"
-      ]
-    },
-    {
-      "role": "watch_item",
-      "platform": "booking",
-      "rating": 1,
-      "text": "Very poor We paid for a courtyard view which translates to a path and a bush The shower was full of limescale The restaurant and bar only served Mexican inspired food, if you are not in the mood for that then you definitely have to go elsewhere on the “free shuttle” which is not so free as they lead you to believe The shuttle also doesn’t take you to the...",
-      "sourceUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-1ln9540",
-      "matchedTerms": [
-        "show"
       ]
     },
     {
       "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 1,
-      "text": "Not a memorable stay Unfortunate stay. We did a staycation for our wedding anniversary and my wife who is expecting our first child. Zero extra accommodations were added for our special stay, the pool was closed for the 2nd day of our stay for a private event including a DJ playing club music (which we were not made aware of), slow service and unenthusias...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r974728954-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
-      "matchedTerms": [
-        "dj"
-      ]
-    },
-    {
-      "role": "watch_item",
-      "platform": "tripadvisor",
-      "rating": 1,
+      "ratingRaw": 1,
+      "ratingMax": 5,
+      "author": "mariannecollins35",
+      "timestamp": "2024-06-02 00:00:00 +00:00",
       "text": "Shocking show Tonny scott comedean? I dont think so, not a bit funny, racist scumbag, told not to film him incase he's targeted if he's that brave why is he hiding, there's better and funnier in benidorm plus the drinks are a ripoff howe they get-away with that i dont know",
       "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r953492403-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
       "matchedTerms": [
@@ -247,20 +234,89 @@
       "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 1,
-      "text": "Health hazard Sad google wont allow me to leave 0 stars. This place was absolutely disgusting, and the 17 year old idiot behind the check in desk couldn’t write her own name down if you spelled it for her. Black mold and broken tiles in the shower, bugs on the floor. After asking the manager to come see the room and tell me she can’t leave the front desk...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r942643421-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "ratingRaw": 1,
+      "ratingMax": 5,
+      "author": "Joshua D",
+      "timestamp": "2023-03-06 00:00:00 +00:00",
+      "text": "AWFUL- run. NoT a 4 star hotel! It was so rundown, our room was filthy- paint coming off walls, black marks in bathroom, tikes coming up in shower / just to make a few! The gym had drinks sitting there for 2 days! Half the rooms have a view of the parking lot! Service was terrible, attitude awful- this was supposed to be a special trip and they managed to...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r881262780-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
       "matchedTerms": [
-        "show"
+        "vibe"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "tripadvisor",
+      "rating": 2,
+      "ratingRaw": 2,
+      "ratingMax": 5,
+      "author": "lynnef505",
+      "timestamp": "2022-09-01 00:00:00 +00:00",
+      "text": "Loud music, packed pool, poor service. This hotel clearly caters to weddings, bachelorette parties, girls weekends. If you’re in that group you may love this spot. Hotel rooms are pleasant, but mini fridge and shelves filled with booze and snacks to buy. No other space. Couldn’t get reservations in dining room because “kitchen was backed up” from a large...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r857905333-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "matchedTerms": [
+        "dj",
+        "music"
       ]
     },
     {
       "role": "watch_item",
       "platform": "tripadvisor",
       "rating": 1,
-      "text": "Nope Just checked in and wish I could leave. I feel like I’m staying in someone’s basement. There are fingernail cuttings on the floor and the shower looks gross. This particular room only has one set of French doors where others have more expansive windows so it’s dark. The furnishings are beat up so look college dorm rather than cool. Very unhappy but w...",
-      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r887452640-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "ratingRaw": 1,
+      "ratingMax": 5,
+      "author": "Connector534302",
+      "timestamp": "2019-12-14 00:00:00 +00:00",
+      "text": "Dont waste your money Horrible horrible place to stay. The overpriced resort and pool is okay and has a relaxing vibe so points for that. Staying at the hotel is however really bad. The living areas are Dingy and1950’s vibe. Carpet dirty and dull. The room ot self leaves alot to be desired. No bathtub. Shower small without a door!! Really!!! Who has a sho...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r732704885-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
       "matchedTerms": [
-        "show"
+        "vibe"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "tripadvisor",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "macelim",
+      "timestamp": "2019-07-07 00:00:00 +00:00",
+      "text": "Breezy, chill vibe, if it's not too busy Stayed for a week and it was fantastic! The weekends can get busy from day-passes, but other than that, I really enjoyed the chill, relaxed vibe. Upon entering, the lobby impresses, with it's high ceilings that streams in natural light. Makes you just want to lounge and have long chats on a couch with a bunch of fr...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r687634712-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "matchedTerms": [
+        "vibe"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "tripadvisor",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "Kate_lalaluna",
+      "timestamp": "2019-05-08 00:00:00 +00:00",
+      "text": "Anniversary Oasis in the Desert I knew from the pictures on Instagram and Trip Advisor I was going to love this resort. From the minute we stepped onto the property, we felt like we had stepped back in time to a 1950's movie set in Havana. Checking in was easy and even though our room wasn't ready, we enjoyed hand-crafted cocktails out in the cabanas whil...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r672660894-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "matchedTerms": [
+        "music",
+        "show",
+        "vibe"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "tripadvisor",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "Angela W",
+      "timestamp": "2019-04-22 00:00:00 +00:00",
+      "text": "Fun Spring Training Trip We planned a quick weekend jaunt to Scottsdale for spring training. Go Cubs!! The Scott was a perfect choice for our needs. The atmosphere has a warm, appealing vibe. The lobby, bar area is bustling with activity and music. The staff was friendly and helpful. The hotel offers a free Escalade shuttle within three miles. We used it...",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r668346534-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "matchedTerms": [
+        "activity",
+        "music",
+        "vibe"
       ]
     }
   ],
