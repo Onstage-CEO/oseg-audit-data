@@ -144,7 +144,7 @@
     "worklist-07-google-marisa-wilson",
     "worklist-10-booking-1s72c1i"
   ],
-  "verifierStatus": "pending_rerun; expected_not_ready",
+  "verifierStatus": "not_ready_confirmed",
   "blockerIds": [
     "audit_content"
   ],
@@ -163,5 +163,12 @@
   "sends": 0,
   "deployments": 0,
   "productionPinChanges": 0,
-  "startedAtStatus": "not_recorded"
+  "startedAtStatus": "not_recorded",
+  "verificationRun": {
+    "workflow": "Clean-room preflight — The Scott",
+    "runId": 29696586373,
+    "url": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29696586373",
+    "conclusion": "success",
+    "confirmedBehavior": "Free preflight completed successfully, including the expected honest NOT READY doctor gate. With zero promoted guest-review evidence, audit_content remains blocked."
+  }
 }
