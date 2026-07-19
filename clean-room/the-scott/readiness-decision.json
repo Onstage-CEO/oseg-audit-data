@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "V1",
+  "trialId": "clean-room-the-scott-v1",
+  "decidedAt": "2026-07-19T01:01:00Z",
+  "decision": "hold_paid_llm",
+  "decisionBasis": "captured corpus is not audit-ready and provider billing is not reconciled",
+  "capture": {
+    "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711",
+    "jobConclusion": "success",
+    "acceptedPrimaryRecords": 3088,
+    "acceptedByPlatform": {
+      "google": 1664,
+      "booking": 122,
+      "youtube": 87,
+      "tripadvisor": 1215
+    },
+    "pendingTasks": 0,
+    "additionalPublicWebFindings": 24,
+    "outletTripadvisorRecords": 73
+  },
+  "readiness": {
+    "verifierStatus": "not_ready",
+    "machineBlockers": [
+      "Required research source coverage",
+      "Source lane coverage (registry)"
+    ],
+    "structuralFindings": [
+      "Captured records were not translated into audit.json platforms, evidence, or skippedSources; audit.json remained an empty scaffold.",
+      "Expedia provider task ended ABORTED.",
+      "Yelp had no configured property or venue URL and no explicit attempt.",
+      "Instagram, TikTok, and Facebook returned zero; the adapter classified Apify as degraded.",
+      "The Canal Club Google capture failed with auth_error.",
+      "The official Reddit API honestly remained needs_credentials; bounded public-web discovery returned nine Reddit findings.",
+      "Aerial/satellite visual context was not attempted.",
+      "No taxonomy keyword group was recorded as searched."
+    ]
+  },
+  "spend": {
+    "captureHardCapUsd": 23,
+    "providerArtifactCostSignals": [],
+    "billingVerifiedUsd": null,
+    "status": "provider billing reconciliation required before any further paid stage"
+  },
+  "authority": {
+    "paidLlmAllowed": false,
+    "exportAllowed": false,
+    "sendAllowed": false,
+    "deploymentAllowed": false,
+    "productionPinChangeAllowed": false,
+    "paidRetryAllowed": false
+  },
+  "nextActions": [
+    "Fix the engine path that converts the captured corpus and explicit attempt ledger into audit source/lane coverage and evidence.",
+    "Fix or honestly gate the degraded social/Yelp, Expedia, outlet Google, and aerial/satellite paths.",
+    "Reconcile actual provider billing against the authorized capture cap.",
+    "Propose a bounded recovery plan and obtain a new explicit execution decision before any paid retry or LLM call."
+  ]
+}
