@@ -1,0 +1,140 @@
+name: The Scott capture-to-audit reconciliation
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: clean-room-the-scott-audit-reconciliation
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    if: >-
+      github.event.issue.number == 35 &&
+      github.event.issue.pull_request != null &&
+      github.event.comment.user.login == 'Onstage-CEO' &&
+      github.event.comment.author_association == 'OWNER' &&
+      github.event.comment.body == '/reconcile-the-scott-audit SCOTT-AUDIT-RECONCILE-20260719-1D568C5'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      EXECUTION_BRANCH: trial/the-scott-execution-v1
+      ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+      ENGINE_REF: 1d568c5cb30b0eda736f8a97434383dd66948cb4
+      WORKSPACE_SLUG: the-scott-resort-spa
+      RESULT_FILE: clean-room/the-scott/audit-reconciliation.json
+      PR_NUMBER: '35'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.EXECUTION_BRANCH }}
+          fetch-depth: 0
+
+      - name: Refuse reuse and verify paid gates remain closed
+        run: |
+          set -euo pipefail
+          test ! -e "$RESULT_FILE" || { echo "::error::one-shot already used"; exit 1; }
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync('clean-room/the-scott/execution-manifest.json', 'utf8'));
+          if (m.state !== 'capture_completed_llm_blocked' ||
+              m.stage.paidLlmAllowed || m.stage.exportAllowed ||
+              m.stage.sendAllowed || m.stage.productionPinChangeAllowed) {
+            throw new Error('closed-gate precondition failed');
+          }
+          NODE
+
+      - name: Checkout reconciler engine
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Install engine
+        working-directory: engine
+        run: npm ci
+
+      - name: Apply deterministic reconciliation
+        working-directory: engine
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          before_evidence=$(node -e 'const a=require(process.env.WS+"/audit.json");process.stdout.write(String(a.evidence.length))')
+          npm run dev --silent -- reconcile-capture-audit "$WS" --apply --json > "$GITHUB_WORKSPACE/$RESULT_FILE"
+          after_evidence=$(node -e 'const a=require(process.env.WS+"/audit.json");process.stdout.write(String(a.evidence.length))')
+          [ "$before_evidence" = "$after_evidence" ] || {
+            echo "::error::reconciliation changed evidence"
+            exit 1
+          }
+
+      - name: Verify exact reconciliation and remaining blockers
+        working-directory: engine
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- verify "$WS/audit.json" --json --summary \
+            --capture-archive "$WS/captures.json" > "$WS/verify-report.json" || true
+          node <<'NODE'
+          const fs = require('fs');
+          const result = JSON.parse(fs.readFileSync(process.env.GITHUB_WORKSPACE + '/' + process.env.RESULT_FILE, 'utf8'));
+          const audit = JSON.parse(fs.readFileSync(process.env.WS + '/audit.json', 'utf8'));
+          const verify = JSON.parse(fs.readFileSync(process.env.WS + '/verify-report.json', 'utf8'));
+          const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+          if (!same(result.addedPlatforms, ['google','tripadvisor','booking','youtube'])) {
+            throw new Error('unexpected platform reconciliation: ' + JSON.stringify(result.addedPlatforms));
+          }
+          if (!same(result.addedSkips, ['reddit','expedia'])) {
+            throw new Error('unexpected skip reconciliation: ' + JSON.stringify(result.addedSkips));
+          }
+          if (result.evidenceCreated !== 0 || result.partialCorpusRead !== false || audit.evidence.length !== 0) {
+            throw new Error('evidence/partial isolation failed');
+          }
+          if (verify.status !== 'not_ready') throw new Error('trial became ready without closing remaining lanes');
+          result.completedAt = new Date().toISOString();
+          result.engineSha = process.env.ENGINE_REF;
+          result.verifyStatus = verify.status;
+          result.remainingMissingRequired = verify.sourceCoverage?.missingRequired ?? [];
+          result.remainingBlockers = verify.readinessSummary?.blockers ?? [];
+          result.authority = {
+            paidLlm: false, paidRetry: false, export: false,
+            send: false, deploy: false, productionPinChange: false
+          };
+          fs.writeFileSync(process.env.GITHUB_WORKSPACE + '/' + process.env.RESULT_FILE,
+            JSON.stringify(result, null, 2) + '\n');
+          NODE
+
+      - name: Commit reconciliation evidence
+        run: |
+          set -euo pipefail
+          git config user.name "oseg-clean-room-bot"
+          git config user.email "actions@onstage.biz"
+          git add \
+            "$RESULT_FILE" \
+            "data/clients/$WORKSPACE_SLUG/audit.json" \
+            "data/clients/$WORKSPACE_SLUG/verify-report.json"
+          git commit -m "trial: reconcile The Scott captured sources into audit coverage"
+          git push origin HEAD:"$EXECUTION_BRANCH"
+
+      - name: Post checkpoint
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            -f body="The Scott capture-to-audit reconciliation passed in ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. Added Google, TripAdvisor, Booking, and YouTube coverage; explicitly blocked quarantined Expedia and credential-blocked Reddit; created zero evidence; verifier remains NOT READY for the unresolved lanes. Paid and delivery gates remain closed."
