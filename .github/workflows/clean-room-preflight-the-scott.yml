@@ -1,0 +1,199 @@
+name: Clean-room preflight — The Scott
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/clean-room-preflight-the-scott.yml'
+      - 'clean-room/the-scott/**'
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    name: Free preflight (no provider calls)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CANDIDATE_ENGINE_SHA: 79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6
+      MANIFEST: clean-room/the-scott/preflight-manifest.json
+
+    steps:
+      - name: Checkout trial data branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout candidate engine separately
+        uses: actions/checkout@v4
+        with:
+          repository: Onstage-CEO/oseg-resort-audit
+          ref: ${{ env.CANDIDATE_ENGINE_SHA }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: candidate-engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: candidate-engine/package-lock.json
+
+      - name: Validate immutable trial manifest
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync(process.env.MANIFEST, 'utf8'));
+          if (m.schemaVersion !== 'V1') throw new Error('unexpected manifest schema');
+          if (m.trialId !== 'clean-room-the-scott-v1') throw new Error('wrong trial');
+          if (m.authorization.option !== 'A' || m.authorization.absoluteCapUsd !== 35) {
+            throw new Error('Option A authorization/cap missing');
+          }
+          if (m.candidate.engineSha !== process.env.CANDIDATE_ENGINE_SHA) {
+            throw new Error('candidate SHA drift');
+          }
+          if (m.candidate.productionPinsChanged !== false) throw new Error('production pin mutation');
+          if (m.preflight.paidCallsAllowed || m.preflight.providerTasksAllowed || m.preflight.llmCallsAllowed) {
+            throw new Error('preflight must be free');
+          }
+          const names = m.sourceIdentities.map((x) => x.source);
+          if (names.length !== 15 || new Set(names).size !== 15) throw new Error('15 unique source states required');
+          const unsupported = Object.fromEntries(m.sourceIdentities.map((x) => [x.source, x.status]));
+          if (unsupported.local_media !== 'not_supported' || unsupported.quora !== 'not_supported') {
+            throw new Error('unsupported lanes must remain explicit');
+          }
+          if (!m.property.publicSourceOnly) throw new Error('public-source boundary missing');
+          NODE
+
+      - name: Install candidate dependencies
+        working-directory: candidate-engine
+        run: npm ci
+
+      - name: Typecheck
+        working-directory: candidate-engine
+        run: npm run typecheck
+
+      - name: Full tests
+        working-directory: candidate-engine
+        run: npm test
+
+      - name: Build
+        working-directory: candidate-engine
+        run: npm run build
+
+      - name: Generated truth drift check
+        working-directory: candidate-engine
+        run: npm run docs:check
+
+      - name: CLI help
+        working-directory: candidate-engine
+        run: npm run dev --silent -- --help > "$RUNNER_TEMP/cli-help.txt"
+
+      - name: Record credential names and presence only
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const names = [
+            'ANTHROPIC_API_KEY', 'APIFY_TOKEN', 'DATAFORSEO_LOGIN',
+            'DATAFORSEO_PASSWORD', 'YOUTUBE_API_KEY',
+            'REDDIT_CLIENT_ID', 'REDDIT_CLIENT_SECRET'
+          ];
+          const presence = Object.fromEntries(names.map((name) => [name, Boolean(process.env[name])]));
+          fs.writeFileSync(process.env.RUNNER_TEMP + '/credential-presence.json', JSON.stringify(presence, null, 2) + '\n');
+          NODE
+
+      - name: Temporary public-source scaffold
+        working-directory: candidate-engine
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/clients"
+          npm run dev --silent -- new-property --yes \
+            --client-name "Clean Room Trial — Public Sources Only" \
+            --property "The Scott Resort & Spa" \
+            --location "Scottsdale, Arizona" \
+            --website "https://www.thescottresort.com/" \
+            --root "$RUNNER_TEMP/clients" \
+            --registry "$GITHUB_WORKSPACE/candidate-engine/config/source-registry.json"
+          audit_path=$(find "$RUNNER_TEMP/clients" -mindepth 2 -maxdepth 2 -name audit.json -print -quit)
+          test -n "$audit_path"
+          slug=$(basename "$(dirname "$audit_path")")
+          printf '%s' "$slug" > "$RUNNER_TEMP/slug.txt"
+
+      - name: Doctor must be honestly not ready
+        working-directory: candidate-engine
+        run: |
+          set -euo pipefail
+          slug=$(cat "$RUNNER_TEMP/slug.txt")
+          set +e
+          npm run dev --silent -- doctor "$slug" \
+            --clients-dir "$RUNNER_TEMP/clients" --json > "$RUNNER_TEMP/doctor.json"
+          code=$?
+          set -e
+          if [ "$code" -ne 1 ]; then
+            echo "::error::fresh scaffold doctor must exit 1 (NOT READY), got $code"
+            exit 1
+          fi
+          node -e '
+            const fs=require("fs");
+            const d=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+"/doctor.json","utf8"));
+            if(d.ready!==false || d.overall!=="not_ready" || !d.nextAction?.id) {
+              throw new Error("doctor did not provide an honest blocker and next action");
+            }
+          '
+
+      - name: Write preflight result
+        run: |
+          set -euo pipefail
+          ENGINE_ACTUAL=$(git -C candidate-engine rev-parse HEAD)
+          DATA_CHECKOUT=$(git rev-parse HEAD)
+          export ENGINE_ACTUAL DATA_CHECKOUT
+          node <<'NODE'
+          const fs = require('fs');
+          const result = {
+            schemaVersion: 'V1',
+            trialId: 'clean-room-the-scott-v1',
+            status: 'passed',
+            completedAt: new Date().toISOString(),
+            engineShaExpected: process.env.CANDIDATE_ENGINE_SHA,
+            engineShaActual: process.env.ENGINE_ACTUAL,
+            dataCheckoutSha: process.env.DATA_CHECKOUT,
+            node: process.version,
+            npm: process.env.npm_config_user_agent || 'recorded in workflow log',
+            workspaceSlug: fs.readFileSync(process.env.RUNNER_TEMP + '/slug.txt', 'utf8'),
+            credentialPresence: JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/credential-presence.json', 'utf8')),
+            doctor: JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/doctor.json', 'utf8')),
+            providerCallsMade: false,
+            llmCallsMade: false,
+            productionPinsChanged: false
+          };
+          if (result.engineShaActual !== result.engineShaExpected) throw new Error('engine checkout drift');
+          fs.writeFileSync(process.env.RUNNER_TEMP + '/preflight-result.json', JSON.stringify(result, null, 2) + '\n');
+          NODE
+          echo "### The Scott clean-room free preflight: PASS" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Candidate engine: `$ENGINE_ACTUAL`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Provider calls: none" >> "$GITHUB_STEP_SUMMARY"
+          echo "- LLM calls: none" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Production pin changes: none" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload preflight evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: the-scott-clean-room-preflight
+          path: |
+            ${{ runner.temp }}/preflight-result.json
+            ${{ runner.temp }}/credential-presence.json
+            ${{ runner.temp }}/doctor.json
+            ${{ runner.temp }}/cli-help.txt
+          if-no-files-found: error
+          retention-days: 30
