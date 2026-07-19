@@ -42,7 +42,7 @@ function envDeclarations(text) {
 
 function resolveCheckoutValue(value, declarations) {
   if (value == null) return null;
-  const match = value.match(/^$\{\{\s*env\.([A-Z][A-Z0-9_]*)\s*\}\}$/);
+  const match = value.match(/^\$\{\{\s*env\.([A-Z][A-Z0-9_]*)\s*\}\}$/);
   return match ? (declarations.get(match[1]) ?? null) : value;
 }
 
