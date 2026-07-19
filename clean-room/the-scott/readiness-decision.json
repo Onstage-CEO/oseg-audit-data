@@ -1,9 +1,9 @@
 {
   "schemaVersion": "V1",
   "trialId": "clean-room-the-scott-v1",
-  "decidedAt": "2026-07-19T03:51:37.813Z",
+  "decidedAt": "2026-07-19T04:20:24.274Z",
   "decision": "hold_paid_llm",
-  "decisionBasis": "The public corpus is captured and the existing Expedia partial is safely recovered, but audit reconciliation, the aerial/context lane, evidence construction, second-operator reproduction, and historical DataForSEO cost reconstruction remain incomplete.",
+  "decisionBasis": "Required source and registry lanes are closed and official/editorial evidence supports a bounded provisional thesis. The audit remains NOT READY because no guest-review evidence has been independently adjudicated and promoted; second-operator reproduction is still pending; historical DataForSEO spend is unavailable.",
   "capture": {
     "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711",
     "jobConclusion": "success",
@@ -21,8 +21,7 @@
   "readiness": {
     "verifierStatus": "not_ready",
     "machineBlockers": [
-      "Required research source coverage",
-      "Source lane coverage (registry)"
+      "Analytical substance"
     ],
     "structuralFindings": [
       "Captured records were not translated into audit.json platforms, evidence, or skippedSources; audit.json remained an empty scaffold.",
@@ -37,8 +36,21 @@
       "The Google actor returned 2,653 provider results despite the reviewed maxReviewDepthPerPropertySource of 2,000; the static depth-based spend guard did not bound provider output count.",
       "The aborted Expedia run exposed 876 provider results, but the adapter persisted zero records; aborted partial datasets require explicit salvage/quarantine handling with provenance.",
       "The Expedia run had a provider-enforced USD 2.198842 ceiling derived from remaining account headroom, but engine source did not send maxTotalChargeUsd; the run was protected accidentally by exhausted account capacity rather than the reviewed workflow budget.",
-      "Confirmed code defect: capture-round resolved OSEG_CAPTURE_DEPTH=2000 into ctx.maxResults, but apify-adapter did not pass ctx.maxResults as runActorReviewsAsync.maxItems; Expedia therefore started from its 5,000 platform default before Apify account headroom reduced it to 876."
-    ]
+      "Confirmed code defect: capture-round resolved OSEG_CAPTURE_DEPTH=2000 into ctx.maxResults, but apify-adapter did not pass ctx.maxResults as runActorReviewsAsync.maxItems; Expedia therefore started from its 5,000 platform default before Apify account headroom reduced it to 876.",
+      "The original entertainment discovery used substring matching: dj matched adjacent and show matched shower/showed; engine PR #343 corrected the boundary defect and added standalone music.",
+      "The original entertainment worklist discarded raw rating scale, author, and timestamp; engine PR #344 preserves those fields for reproducible adjudication.",
+      "Current official pages advertise recurring games, live local artists, classic-film screenings, DJs, Sunday patio performance, and tastings at The Canal Club.",
+      "Text-source spatial context was reviewed, but no satellite or aerial imagery was inspected and no acoustic/capacity/feasibility claim is allowed."
+    ],
+    "strengthenedVerifier": {
+      "engineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
+      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29673152660",
+      "requiredSourceCoverageClosed": true,
+      "registryLaneCoverageClosed": true,
+      "evidenceTotal": 3,
+      "guestReviewLiveVerified": 0
+    },
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json"
   },
   "spend": {
     "captureHardCapUsd": 23,
