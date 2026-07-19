@@ -98,11 +98,11 @@
       "nextMonthlyCycleStarts": "2026-07-21",
       "incrementalTrialSpendUsd": null,
       "verifiedPerRunUsd": {
-        "expedia": 2.197,
-        "google": null,
-        "booking": null
+        "google": 1.194,
+        "booking": 0.232,
+        "expedia": 2.197
       },
-      "verifiedSubtotalUsd": 2.197,
+      "verifiedSubtotalUsd": 3.623,
       "expediaRun": {
         "runId": "4DWzkgi0DL7QUb4G8",
         "actualCostUsd": 2.197,
@@ -110,6 +110,19 @@
         "actorMaxTotalChargeUsd": 2.198842,
         "maximumAffordableReviewItems": 876,
         "datasetResultCount": 876
+      },
+      "verifiedApifySubtotalUsd": 3.623,
+      "googleRun": {
+        "runId": "Twl870efdmcVzPVQS",
+        "actualCostUsd": 1.194,
+        "maxCostPerRunUsd": 3.39,
+        "datasetResultCount": 2653
+      },
+      "bookingRun": {
+        "runId": "IlIvRs8uGISkaIVvD",
+        "actualCostUsd": 0.232,
+        "maxCostPerRunUsd": 2.28,
+        "datasetResultCount": 122
       }
     }
   }
