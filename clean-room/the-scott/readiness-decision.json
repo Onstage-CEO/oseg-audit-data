@@ -36,7 +36,7 @@
       "Apify's account-wide USD 70 monthly platform usage limit was exceeded during the run; all running actors were aborted. Preflight validated credential presence but did not validate remaining billing headroom.",
       "The Google actor returned 2,653 provider results despite the reviewed maxReviewDepthPerPropertySource of 2,000; the static depth-based spend guard did not bound provider output count.",
       "The aborted Expedia run exposed 876 provider results, but the adapter persisted zero records; aborted partial datasets require explicit salvage/quarantine handling with provenance.",
-      "The Expedia Actor console displayed Maximum cost per run = Unlimited; the workflow's static estimate was not backed by a provider-enforced per-run charge ceiling."
+      "The Expedia run had a provider-enforced USD 2.198842 ceiling derived from remaining account headroom, but engine source did not send maxTotalChargeUsd; the run was protected accidentally by exhausted account capacity rather than the reviewed workflow budget."
     ]
   },
   "spend": {
@@ -56,8 +56,8 @@
       "interpretation": "The USD 70 value is cumulative account-month usage, not verified incremental spend attributable to this trial.",
       "consoleUsageDisplay": "$70 / $70",
       "expediaActorAdvertisedPricing": "from $2.50 per 1,000 results",
-      "expediaActorConsoleMaxCostPerRun": "Unlimited",
-      "caveat": "Actor landing-page input and pricing are not the specific run's immutable input or actual charged USD."
+      "expediaActorConsoleMaxCostPerRun": "General Actor page displayed Unlimited; specific run displayed $2.2.",
+      "caveat": "Specific run evidence supersedes the Actor landing page for immutable run cost/cap facts."
     },
     "providerRunEvidence": [
       {
@@ -94,7 +94,27 @@
         "reconciliation": "partial provider dataset exists but the adapter discarded it because terminal run status was ABORTED",
         "runId": "4DWzkgi0DL7QUb4G8"
       }
-    ]
+    ],
+    "verifiedPerRunUsd": {
+      "expedia": 2.197,
+      "google": null,
+      "booking": null
+    },
+    "verifiedSubtotalUsd": 2.197,
+    "incrementalTrialSpendUsd": null,
+    "expediaRunCharging": {
+      "runId": "4DWzkgi0DL7QUb4G8",
+      "actualCostUsd": 2.197,
+      "displayedMaxCostPerRunUsd": 2.2,
+      "actorMaxTotalChargeUsd": 2.198842,
+      "actorMaxPaidDatasetItems": 879,
+      "maximumAffordableReviewItems": 876,
+      "inputUrl": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
+      "includeCategoryRatings": true,
+      "terminalStatus": "ABORTED",
+      "datasetResultCount": 876,
+      "interpretation": "Apify derived the effective charge ceiling from available account headroom; engine source did not send maxTotalChargeUsd."
+    }
   },
   "authority": {
     "paidLlmAllowed": false,
