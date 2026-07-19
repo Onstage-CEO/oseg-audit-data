@@ -1,9 +1,9 @@
 {
   "schemaVersion": "V1",
   "trialId": "clean-room-the-scott-v1",
-  "decidedAt": "2026-07-19T01:01:00Z",
+  "decidedAt": "2026-07-19T03:51:37.813Z",
   "decision": "hold_paid_llm",
-  "decisionBasis": "captured corpus is not audit-ready and provider billing is not reconciled",
+  "decisionBasis": "The public corpus is captured and the existing Expedia partial is safely recovered, but audit reconciliation, the aerial/context lane, evidence construction, second-operator reproduction, and historical DataForSEO cost reconstruction remain incomplete.",
   "capture": {
     "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711",
     "jobConclusion": "success",
@@ -44,7 +44,7 @@
     "captureHardCapUsd": 23,
     "providerArtifactCostSignals": [],
     "billingVerifiedUsd": null,
-    "status": "Apify subtotal verified at USD 3.623; DataForSEO and any other provider charges still require artifact/account reconciliation.",
+    "status": "Apify is fully reconciled at USD 3.623 from run pages, with Expedia API cost USD 2.1965 agreeing after display rounding. Historical DataForSEO actual task cost is irrecoverable from retained pre-fix artifacts, so total trial spend remains unknown and additional paid stages stay blocked.",
     "accountBillingEvidence": {
       "source": "user_provided_apify_limit_notification",
       "receivedAt": "2026-07-19T01:03:00Z",
@@ -133,17 +133,11 @@
     "paidRetryAllowed": false
   },
   "nextActions": [
-    "Implement an adaptive recency policy with a 12-month current-score window and evidence-triggered expansion to 36 months for sparse themes/seasonal context.",
-    "Patch apify-adapter to pass ctx.maxResults through as runActorReviewsAsync.maxItems and add an integration test proving OSEG_CAPTURE_DEPTH reaches the immutable Actor input.",
-    "Require a provider-enforced maxTotalChargeUsd (or equivalent immutable per-run maximum) on every paid Actor launch; refuse providers/Actors that cannot enforce it.",
-    "Use read-only Apify run metadata for run 4DWzkgi0DL7QUb4G8 to resolve its default dataset and inspect the existing 876 results; do not restart the Actor.",
-    "Salvage or quarantine partial datasets from ABORTED/TIMED-OUT runs instead of silently discarding existing results; never call them complete.",
-    "Add provider-run result and cost reconciliation that distinguishes requested depth, provider output count, accepted text records, rating-only records, and actual charged USD.",
-    "Add a mandatory provider headroom preflight that verifies remaining account capacity against the reviewed run ceiling before any actor starts.",
-    "Fix the engine path that converts the captured corpus and explicit attempt ledger into audit source/lane coverage and evidence.",
-    "Fix or honestly gate the degraded social/Yelp, Expedia, outlet Google, and aerial/satellite paths.",
-    "Reconcile actual provider billing against the authorized capture cap.",
-    "Propose a bounded recovery plan and obtain a new explicit execution decision before any paid retry or LLM call."
+    "Merge and run the deterministic reconcile-capture-audit command so successful captured sources enter platforms[] without fabricated scores and blocked/partial sources are explicitly accounted for.",
+    "Complete or explicitly block the aerial/maps context lane with real attempt provenance; do not clear readiness by rationale-only paperwork.",
+    "Build deterministic entertainment evidence candidates from the captured corpus, retaining the 12-month current-score window and documented sparse-signal expansion.",
+    "Run the clean-room packet with a second operator and compare commands, artifacts, timing, costs, and decisions.",
+    "Do not authorize paid LLM, provider retry, export, send, deploy, or production pin changes until the updated verifier is ready and the remaining spend authority is explicitly reviewed."
   ],
   "remediation": {
     "apifyDepthHandoff": {
@@ -152,6 +146,19 @@
       "mergeSha": "e34a349a10cf7e07d71a746163c1abda7686e405",
       "ci": "passed",
       "productionPinsChanged": false
+    },
+    "expediaReadOnlyRecovery": {
+      "status": "completed_valid_partial_quarantined",
+      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29672392207",
+      "engineSha": "6d07fec737cf9ef374e588486f1ae1127f02007e",
+      "scoringPromotion": false
+    },
+    "enginePinVisibility": {
+      "status": "fixed",
+      "dataPullRequest": "https://github.com/Onstage-CEO/oseg-audit-data/pull/37",
+      "mergeSha": "d79e652aafea56ac5bd0d90d34896339fedc24e4",
+      "productionWorkflowCount": 15,
+      "isolatedCleanRoomWorkflowCount": 3
     }
   },
   "recencyAnalysis": {
@@ -205,5 +212,23 @@
       "Current official programming pages and operational facts are always evaluated at their current state, independent of review windows.",
       "Evidence before a material renovation, concept change, ownership/management change, or operating-model change is historical context only."
     ]
+  },
+  "expediaRecovery": {
+    "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29672392207",
+    "state": "recovered_valid_partial",
+    "providerResultCount": 876,
+    "analyzableTextCount": 480,
+    "ratingOnlyCount": 396,
+    "ratingScaleCounts": {
+      "10": 480
+    },
+    "uniqueSourceUrlCount": 480,
+    "duplicateSourceUrlCount": 0,
+    "providerApiActualCostUsd": 2.1965,
+    "reviewedRunPageActualCostUsd": 2.197,
+    "completeness": "partial",
+    "quarantined": true,
+    "scoringRecordsAdded": 0,
+    "disposition": "retain_as_validated_partial_context_not_scoring_corpus"
   }
 }
