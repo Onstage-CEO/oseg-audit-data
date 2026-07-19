@@ -1,0 +1,313 @@
+{
+  "reportVersion": "web-discovery-v1",
+  "generatedAt": "2026-07-19T00:58:29.413Z",
+  "target": {
+    "propertyName": "The Scott Resort & Spa",
+    "location": "Scottsdale, Arizona"
+  },
+  "findings": [
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"The Scott Resort & Spa\" entertainment",
+      "url": "https://www.facebook.com/groups/147984589183851/posts/906596003322702/",
+      "domain": "www.facebook.com",
+      "title": "Has anyone put a group at The Scott Resort & Spa?",
+      "snippet": "We are staying at The Scott Resort & Spa and yes, you can go with us! ... entertainment, just planning my week Thanks · Cheryl Aw and Sarah ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"The Scott Resort & Spa\" entertainment",
+      "url": "https://www.facebook.com/groups/134975426525093/posts/27900767542852508/",
+      "domain": "www.facebook.com",
+      "title": "Book discounted rooms at The Scott Resort & Spa for ...",
+      "snippet": "... The Scott Resort & Spa! More than 40 hours of workshops 4 ... Amenities include daily fun activities, movie room, spa, bar, 3 ... Read more",
+      "matchedTerms": [
+        "disco",
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"The Scott Resort & Spa\" entertainment",
+      "url": "https://www.facebook.com/groups/1747894109015214/posts/2028620347609254/",
+      "domain": "www.facebook.com",
+      "title": "Other posts",
+      "snippet": "Checked in: The Scott Resort & Spa We chose The Scott for our time in ... They had some fun activities throughout the week like cookie decorating and a hot ... Read more",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"The Scott Resort & Spa\" entertainment",
+      "url": "https://www.facebook.com/groups/styledbysamtunador/posts/5165351000211302/",
+      "domain": "www.facebook.com",
+      "title": "Scottsdale hot tips and must-visit places",
+      "snippet": "We are staying at The Scott Resort & Spa and yes, you can go with us! ... We enjoy outdoor/indoor activities hikes, entertainment! Hit me ... Read more",
+      "matchedTerms": [
+        "entertain",
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"The Scott Resort & Spa\" activities",
+      "url": "https://www.facebook.com/groups/ScottsdalePage/posts/25652430831090638/",
+      "domain": "www.facebook.com",
+      "title": "How did travel agents work? | Scottsdale, AZ",
+      "snippet": "Boy in the early seventies , and through the seventies in scottsdale , all around the kacina Theater. There was a lot of travel agents. Gulliver's, hallabill, ...",
+      "matchedTerms": [
+        "theater"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"The Scott Resort & Spa\" activities",
+      "url": "https://www.facebook.com/groups/exploreaz/posts/1471963663726198/",
+      "domain": "www.facebook.com",
+      "title": "What are the best spa resorts in Scottsdale for a relaxing ...",
+      "snippet": "Planning a 5 year wedding anniversary trip to Scottsdale the first week in November. Which spa resort with a beautiful pool to lounge by and a nice ...",
+      "matchedTerms": [
+        "lounge"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Scottsdale, Arizona\" \"The Scott Resort & Spa\"",
+      "url": "https://www.facebook.com/groups/598159909324064/posts/1002059425600775/",
+      "domain": "www.facebook.com",
+      "title": "Luxury girls' trip to Scottsdale, Arizona",
+      "snippet": "OCR: ☬ SCOTTSDALE, ARIZONA ☬ Luxury Desent Escape 4 Nights at The Scott Resort & Spa Poolside Vibes + Spa Days Old Town Shopping & Dining STARTING AT ...",
+      "matchedTerms": [
+        "vibe"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Scott Resort & Spa\" entertainment",
+      "url": "https://www.reddit.com/user/hotelsdotcom/comments/1qhjeai/searching_for_toprated_luxury_resorts_discover/",
+      "domain": "www.reddit.com",
+      "title": "Searching for top-rated luxury resorts? Discover the perfect stay ...",
+      "snippet": "The Scott Resort & Spa. Ratings: 4.5-star | 8.8/10 guest rating. Luxurious amenities: Free onsite valet parking, wheelchair-accessible parking, full breakfast ...",
+      "matchedTerms": [
+        "disco"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Scott Resort & Spa\" nightlife",
+      "url": "https://www.reddit.com/r/phoenix/comments/mdqpn1/best_staycation_spot/",
+      "domain": "www.reddit.com",
+      "title": "Best Staycation Spot : r/phoenix",
+      "snippet": "The Scott Resort & Spa (formerly FireSky Resort). Recently revamped into a Cuban all-inclusive meets bougie tiki bar vibe. The food and ... Read more",
+      "matchedTerms": [
+        "vibe"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"The Scott Resort & Spa\" \"honest review\" entertainment",
+      "url": "https://www.tiktok.com/discover/omni-scottsdale-resort-room-reviews",
+      "domain": "www.tiktok.com",
+      "title": "Omni Scottsdale Resort Room Reviews",
+      "snippet": "Exploring The Scott Resort & Spa in Scottsdale. Discover The Scott Resort ... Honest Review in Vanessa Mesinas Resort · Amada Colossos Resort Reviews ... Read more",
+      "matchedTerms": [
+        "disco"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"The Scott Resort & Spa\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.ca/Hotel_Feature-g150795-d287612-zft6216-Aura_del_Mar_Hotel.html",
+      "domain": "www.tripadvisor.ca",
+      "title": "Aura del Mar Hotel Family Amenities: Pictures & Reviews",
+      "snippet": "Family review highlights ... (around $15). The hotel is funky and charming. Our family suite was large, with two ... Kids Club. See all hotel amenities ... Read more",
+      "matchedTerms": [
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"The Scott Resort & Spa\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.com/Hotel_Feature-g659630-d288788-zft6216-Atlantica_Mikri_Poli_Kos.html",
+      "domain": "www.tripadvisor.com",
+      "title": "Are there family amenities at Atlantica Mikri Poli Kos? ...",
+      "snippet": "We didn't try the kids club so can't really comment on that other than there seemed plenty of options there. Evening entertainment was pretty good and ... Read more",
+      "matchedTerms": [
+        "entertain",
+        "kids club",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"The Scott Resort & Spa\" \"travel blog\" nightlife",
+      "url": "https://www.carolineinthecityblog.com/2024/02/20/bachelorette-party-in-scottsdale-arizona/",
+      "domain": "www.carolineinthecityblog.com",
+      "title": "How to Throw a Bachelorette Party in Scottsdale, Arizona",
+      "snippet": "Feb 20, 2024 — Caroline in the City Travel Blog. Responsible travel for ... The Scott Resort & Spa– The Mission-inspired boutique hotel in Old ... Read more",
+      "matchedTerms": [
+        "party"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" vs resort entertainment",
+      "url": "https://www.tripadvisor.com/Hotel_Feature-g31350-d115494-zft1-The_Scott_Resort_Spa.html",
+      "domain": "www.tripadvisor.com",
+      "title": "The Scott Resort & Spa Rooms: Pictures & Reviews",
+      "snippet": "They have complimentary transportation that will take you to dinner, or activities within range - when available. ... The Scott Resort & Spa Evening Entertainment ... Read more",
+      "matchedTerms": [
+        "entertain",
+        "activities",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" vs resort entertainment",
+      "url": "https://www.tiktok.com/@kionaparis/video/7510271888069791006",
+      "domain": "www.tiktok.com",
+      "title": "Discover The Scott Resort & Spa in Scottsdale, AZ",
+      "snippet": "The Scott Resort & Spa offers unbeatable vibes and location for your next trip. Find out why it's perfect for solo travelers! # ...",
+      "matchedTerms": [
+        "disco",
+        "vibe"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" vs resort entertainment",
+      "url": "https://www.hotelscombined.com/Hotel/The_Scott_Resort_Spa.htm",
+      "domain": "www.hotelscombined.com",
+      "title": "The Scott Resort & Spa, Scottsdale",
+      "snippet": "Evening entertainment; Fitness center. Services. Shuttle service (free) ... Is there a gym or fitness center at The Scott Resort & Spa? The Scott Resort ... Read more",
+      "matchedTerms": [
+        "entertain",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" vs resort entertainment",
+      "url": "https://helloskip.com/b/party-echelon-llc/blog/best-live-band-for-events-at-the-scott-resort-scottsdale-party-echelons-high-energy-entertainment-for-stylish-celebrations",
+      "domain": "helloskip.com",
+      "title": "Best Live Band for Events at The Scott Resort Scottsdale: Party ...",
+      "snippet": "The Scott Resort & Spa is celebrated for its chic ... Discover how we deliver this experience. Live Band vs. DJ: Why Scottsdale Events are Choosing Party Echelon.",
+      "matchedTerms": [
+        "disco",
+        "dj",
+        "party"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" vs resort entertainment",
+      "url": "https://scottsdale.com/blog/post/the-top-hotels-resorts-in-scottsdale/",
+      "domain": "scottsdale.com",
+      "title": "The Best Hotels & Resorts in Scottsdale, AZ",
+      "snippet": "Mar 20, 2025 — ... or take advantage of guided outdoor activities such as mountain biking. ... The Canal Club Lounge patio at The Scott Resort & Spa. Read more",
+      "matchedTerms": [
+        "activities",
+        "lounge"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" compared to entertainment",
+      "url": "https://www.tripadvisor.com/Hotel_Feature-g31350-d115494-zft18953-The_Scott_Resort_Spa.html",
+      "domain": "www.tripadvisor.com",
+      "title": "Is there evening entertainment at The Scott Resort & Spa ...",
+      "snippet": "See photos and read reviews for the The Scott Resort & Spa evening entertainment in Scottsdale, AZ. Everything you need to know about the The Scott Resort ...",
+      "matchedTerms": [
+        "entertain",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" compared to entertainment",
+      "url": "https://www.yelp.com/biz/the-scott-resort-and-spa-scottsdale-4",
+      "domain": "www.yelp.com",
+      "title": "THE SCOTT RESORT & SPA - Updated July 2026",
+      "snippet": "Review Highlights - The Scott Resort & Spa. “With a Cuban touch on it be sure ... entertainment than to the refined luxury experience that once set it ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" compared to entertainment",
+      "url": "https://www.booking.com/hotel/us/firesky-resort-spa.html",
+      "domain": "www.booking.com",
+      "title": "The Scott Resort & Spa, Scottsdale (updated prices 2026)",
+      "snippet": "The onsite La Vidorra Spa offers luxury body treatments at The Scott Resort & Spa. ... Evening entertainment; Bicycle rental; Happy hour; Fitness; Spa ... Read more",
+      "matchedTerms": [
+        "entertain",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" compared to entertainment",
+      "url": "https://www.experiencescottsdale.com/listing/the-scott-resort-%26-spa/2116/",
+      "domain": "www.experiencescottsdale.com",
+      "title": "The Scott Resort & Spa",
+      "snippet": "The Scott Resort & Spa. The Scott is a vibrant, Mission-style boutique resort ... Live Entertainment: Room Service: Number of Restaurants: 1; Number of ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" compared to entertainment",
+      "url": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
+      "domain": "www.expedia.com",
+      "title": "The Scott Resort & Spa Scottsdale - Book Your Stay",
+      "snippet": "Explore the lush garden and outdoor entertainment area with yoga classes or connect via in-room WiFi. ... In the city center, The Scott Resort & Spa is in an area ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"The Scott Resort & Spa\" compared to entertainment",
+      "url": "https://www.kayak.com/Scottsdale-Hotels-The-Scott-Resort-Spa.33610.ksp",
+      "domain": "www.kayak.com",
+      "title": "The Scott Resort & Spa from $165. Scottsdale Hotel Deals ...",
+      "snippet": "Amenities at The Scott Resort & Spa · Outdoor pool · Fitness center · Restaurant · Bar/Lounge · Room service · Bicycle rental · Outdoor fireplace · Free Wi-Fi ... Read more",
+      "matchedTerms": [
+        "lounge"
+      ]
+    }
+  ],
+  "queriesRun": 18,
+  "packsRun": 6
+}

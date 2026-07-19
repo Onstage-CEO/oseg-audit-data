@@ -2,7 +2,7 @@
   "schemaVersion": "V1",
   "executionId": "the-scott-option-a-2026-07-19",
   "trialId": "clean-room-the-scott-v1",
-  "state": "capture_running",
+  "state": "capture_completed_pending_readiness_review",
   "authorization": {
     "option": "A",
     "issue": "https://github.com/Onstage-CEO/oseg-resort-audit/issues/323",
@@ -73,6 +73,9 @@
   "execution": {
     "startedAt": "2026-07-19T00:45:55.408Z",
     "workflowRunId": "29667477711",
-    "triggerUrl": "https://github.com/Onstage-CEO/oseg-audit-data/pull/35#issuecomment-5013560739"
+    "triggerUrl": "https://github.com/Onstage-CEO/oseg-audit-data/pull/35#issuecomment-5013560739",
+    "completedAt": "2026-07-19T00:58:53.133Z",
+    "jobStatus": "success",
+    "runUrl": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
   }
 }

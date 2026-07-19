@@ -1,0 +1,15 @@
+{
+  "reportVersion": "venue-capture-v1",
+  "generatedAt": "2026-07-19T00:58:36.393Z",
+  "venues": [
+    {
+      "venue": "The Canal Club",
+      "slug": "the-canal-club",
+      "yelp": 0,
+      "google": 0,
+      "tripadvisor": 73,
+      "opentable": 0,
+      "note": "google: 0 reviews (auth_error)"
+    }
+  ]
+}
