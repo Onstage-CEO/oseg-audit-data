@@ -96,7 +96,21 @@
       "limitExceeded": true,
       "runningActorsAborted": true,
       "nextMonthlyCycleStarts": "2026-07-21",
-      "incrementalTrialSpendUsd": null
+      "incrementalTrialSpendUsd": null,
+      "verifiedPerRunUsd": {
+        "expedia": 2.197,
+        "google": null,
+        "booking": null
+      },
+      "verifiedSubtotalUsd": 2.197,
+      "expediaRun": {
+        "runId": "4DWzkgi0DL7QUb4G8",
+        "actualCostUsd": 2.197,
+        "maxCostPerRunUsd": 2.2,
+        "actorMaxTotalChargeUsd": 2.198842,
+        "maximumAffordableReviewItems": 876,
+        "datasetResultCount": 876
+      }
     }
   }
 }
