@@ -1,0 +1,137 @@
+name: The Scott analytical readiness gate verification
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: clean-room-the-scott-analytical-gate-verification
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: >-
+      github.event.issue.number == 35 &&
+      github.event.issue.pull_request != null &&
+      github.event.comment.user.login == 'Onstage-CEO' &&
+      github.event.comment.author_association == 'OWNER' &&
+      github.event.comment.body == '/verify-the-scott-analytical-gate SCOTT-VERIFY-20260719-D0D290A'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      EXECUTION_BRANCH: trial/the-scott-execution-v1
+      ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+      ENGINE_REF: d0d290ae802f83b70dcb798343c902e716e63594
+      WORKSPACE_SLUG: the-scott-resort-spa
+      RESULT_FILE: clean-room/the-scott/analytical-gate-verification.json
+      PR_NUMBER: '35'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.EXECUTION_BRANCH }}
+          fetch-depth: 0
+
+      - name: Refuse reuse and verify closed authority
+        run: |
+          set -euo pipefail
+          test ! -e "$RESULT_FILE" || { echo "::error::one-shot already used"; exit 1; }
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync('clean-room/the-scott/execution-manifest.json', 'utf8'));
+          if (m.stage.paidLlmAllowed || m.stage.exportAllowed ||
+              m.stage.sendAllowed || m.stage.productionPinChangeAllowed) {
+            throw new Error('closed-gate precondition failed');
+          }
+          NODE
+
+      - name: Checkout verifier engine
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: verification-engine
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: verification-engine/package-lock.json
+
+      - name: Install engine
+        working-directory: verification-engine
+        run: npm ci
+
+      - name: Verify strengthened readiness truth
+        working-directory: verification-engine
+        env:
+          WS: ${{ github.workspace }}/data/clients/the-scott-resort-spa
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- verify "$WS/audit.json" --json --summary             --capture-archive "$WS/captures.json" > "$WS/verify-report.json" || true
+          node <<'NODE'
+          const fs = require('fs');
+          const verify = JSON.parse(fs.readFileSync(process.env.WS + '/verify-report.json', 'utf8'));
+          const audit = JSON.parse(fs.readFileSync(process.env.WS + '/audit.json', 'utf8'));
+          const content = verify.checks.find((c) => c.id === 'audit_content');
+          const lanes = verify.checks.find((c) => c.id === 'lane_coverage');
+          if (verify.status !== 'not_ready') throw new Error('audit incorrectly became ready');
+          if ((verify.sourceCoverage?.missingRequired ?? []).length !== 0) {
+            throw new Error('required sources remain unresolved');
+          }
+          if (!lanes || lanes.status !== 'ok') throw new Error('lane coverage not closed');
+          if (!content || content.status !== 'fail') throw new Error('analytical substance gate did not fail');
+          if (!content.messages.join(' ').includes('guest-review')) {
+            throw new Error('guest-review evidence blocker not reported');
+          }
+          if (audit.evidence.length !== 3 || audit.evidence.some((e) => e.platformId !== 'blogs')) {
+            throw new Error('unexpected evidence state');
+          }
+          const result = {
+            schemaVersion: 'V1',
+            verifiedAt: new Date().toISOString(),
+            engineSha: process.env.ENGINE_REF,
+            status: verify.status,
+            requiredSourceCoverageClosed: true,
+            registryLaneCoverageClosed: true,
+            analyticalSubstanceStatus: content.status,
+            blockerIds: verify.readinessSummary?.blockerIds ?? [],
+            blockerDetails: content.messages,
+            evidence: {
+              total: audit.evidence.length,
+              liveVerified: audit.evidence.filter((e) => e.verification === 'live_verified').length,
+              guestReviewLiveVerified: audit.evidence.filter((e) =>
+                e.verification === 'live_verified' &&
+                ['google','tripadvisor','booking','expedia','travelocity'].includes(e.platformId)
+              ).length
+            },
+            interpretation: 'Official/editorial evidence and source-lane closure are valuable but cannot substitute for live-verified guest-review evidence.',
+            authority: {
+              newPaidApi: false, paidLlm: false, export: false,
+              send: false, deploy: false, productionPinChange: false
+            }
+          };
+          fs.writeFileSync(process.env.GITHUB_WORKSPACE + '/' + process.env.RESULT_FILE,
+            JSON.stringify(result, null, 2) + '\n');
+          NODE
+
+      - name: Commit verification evidence
+        run: |
+          set -euo pipefail
+          git config user.name "oseg-clean-room-bot"
+          git config user.email "actions@onstage.biz"
+          git add "$RESULT_FILE" "data/clients/$WORKSPACE_SLUG/verify-report.json"
+          git commit -m "trial: verify The Scott analytical substance gate"
+          git push origin HEAD:"$EXECUTION_BRANCH"
+
+      - name: Post checkpoint
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments"             -f body="The Scott strengthened verifier ran at engine \`$ENGINE_REF\`. Required source and registry lanes are closed, but the audit remains NOT READY because official/editorial evidence cannot substitute for live-verified guest-review evidence. No paid or delivery action ran. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
