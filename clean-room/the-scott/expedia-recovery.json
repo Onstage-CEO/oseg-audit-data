@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "operation": "read_existing_apify_dataset_only",
-  "state": "recovery_running",
+  "state": "recovered_valid_partial",
   "startedAt": "2026-07-19T03:45:54.992Z",
   "workflowRunId": "29672392207",
   "triggerUrl": "https://github.com/Onstage-CEO/oseg-audit-data/pull/35#issuecomment-5014112979",
@@ -17,5 +17,33 @@
   "exportAllowed": false,
   "sendAllowed": false,
   "resumeAttempts": 2,
-  "lastResumedAt": "2026-07-19T03:51:21.468Z"
+  "lastResumedAt": "2026-07-19T03:51:21.468Z",
+  "completedAt": "2026-07-19T03:51:37.813Z",
+  "result": {
+    "status": "quarantined",
+    "runStatus": "ABORTED",
+    "providerResultCount": 876,
+    "analyzableTextCount": 480,
+    "ratingOnlyCount": 396,
+    "uniqueSourceUrlCount": 480,
+    "duplicateSourceUrlCount": 0,
+    "ratingScaleCounts": {
+      "10": 480
+    },
+    "providerApiActualCostUsd": 2.1965,
+    "reviewedRunPageActualCostUsd": 2.197,
+    "reviewedRunPageMaximumUsd": 2.2,
+    "costStatus": "verified",
+    "artifactPath": "data/clients/the-scott-resort-spa/captures-partial/expedia-2026-07-19T03-51-36-729Z-4DWzkgi0DL7QUb4G8.json"
+  },
+  "validation": {
+    "schemaAndMarkers": "passed",
+    "providerProvenance": "passed",
+    "costReconciliation": "authenticated_api_cost_within_reviewed_run_page_maximum",
+    "normalizedRowBounds": "passed",
+    "scoringIsolation": "passed",
+    "propertyIdentityBasis": "reviewed run id and exact Scott Expedia URL",
+    "completeness": "partial"
+  },
+  "disposition": "retain_as_validated_partial_context_not_scoring_corpus"
 }

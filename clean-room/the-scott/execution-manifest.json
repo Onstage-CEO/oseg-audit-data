@@ -125,5 +125,18 @@
         "datasetResultCount": 122
       }
     }
+  },
+  "expediaPartialRecovery": {
+    "state": "recovered_valid_partial",
+    "completedAt": "2026-07-19T03:51:37.813Z",
+    "engineSha": "6d07fec737cf9ef374e588486f1ae1127f02007e",
+    "runId": "4DWzkgi0DL7QUb4G8",
+    "providerResultCount": 876,
+    "analyzableTextCount": 480,
+    "ratingOnlyCount": 396,
+    "providerApiActualCostUsd": 2.1965,
+    "reviewedRunPageActualCostUsd": 2.197,
+    "disposition": "retain_as_validated_partial_context_not_scoring_corpus",
+    "recoveryLedger": "clean-room/the-scott/expedia-recovery.json"
   }
 }
