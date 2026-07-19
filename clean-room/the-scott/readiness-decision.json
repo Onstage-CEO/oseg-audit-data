@@ -36,7 +36,8 @@
       "Apify's account-wide USD 70 monthly platform usage limit was exceeded during the run; all running actors were aborted. Preflight validated credential presence but did not validate remaining billing headroom.",
       "The Google actor returned 2,653 provider results despite the reviewed maxReviewDepthPerPropertySource of 2,000; the static depth-based spend guard did not bound provider output count.",
       "The aborted Expedia run exposed 876 provider results, but the adapter persisted zero records; aborted partial datasets require explicit salvage/quarantine handling with provenance.",
-      "The Expedia run had a provider-enforced USD 2.198842 ceiling derived from remaining account headroom, but engine source did not send maxTotalChargeUsd; the run was protected accidentally by exhausted account capacity rather than the reviewed workflow budget."
+      "The Expedia run had a provider-enforced USD 2.198842 ceiling derived from remaining account headroom, but engine source did not send maxTotalChargeUsd; the run was protected accidentally by exhausted account capacity rather than the reviewed workflow budget.",
+      "Confirmed code defect: capture-round resolved OSEG_CAPTURE_DEPTH=2000 into ctx.maxResults, but apify-adapter did not pass ctx.maxResults as runActorReviewsAsync.maxItems; Expedia therefore started from its 5,000 platform default before Apify account headroom reduced it to 876."
     ]
   },
   "spend": {
@@ -125,6 +126,7 @@
     "paidRetryAllowed": false
   },
   "nextActions": [
+    "Patch apify-adapter to pass ctx.maxResults through as runActorReviewsAsync.maxItems and add an integration test proving OSEG_CAPTURE_DEPTH reaches the immutable Actor input.",
     "Require a provider-enforced maxTotalChargeUsd (or equivalent immutable per-run maximum) on every paid Actor launch; refuse providers/Actors that cannot enforce it.",
     "Use read-only Apify run metadata for run 4DWzkgi0DL7QUb4G8 to resolve its default dataset and inspect the existing 876 results; do not restart the Actor.",
     "Salvage or quarantine partial datasets from ABORTED/TIMED-OUT runs instead of silently discarding existing results; never call them complete.",
