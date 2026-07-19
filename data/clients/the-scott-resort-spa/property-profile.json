@@ -1,0 +1,41 @@
+{
+  "propertyName": "The Scott Resort & Spa",
+  "profileStatus": "researched",
+  "sources": [
+    {
+      "url": "https://www.thescottresort.com/",
+      "note": "official property page"
+    },
+    {
+      "url": "https://www.thescottresort.com/whats-on/",
+      "note": "official recurring program"
+    },
+    {
+      "url": "https://www.thescottresort.com/dining/",
+      "note": "official dining and outlet identity"
+    }
+  ],
+  "venues": [
+    {
+      "name": "The Canal Club",
+      "category": "restaurant",
+      "entertainment": [
+        "Juego Wednesday game night",
+        "Thursday live local artists",
+        "Friday Havana Nights movies",
+        "Friday and Saturday DJs",
+        "Sunday live brunch"
+      ],
+      "notes": "Primary recurring entertainment outlet; public-source identity only.",
+      "entertainmentSource": "https://www.thescottresort.com/whats-on/"
+    }
+  ],
+  "venueCategoriesPresent": [
+    "restaurant",
+    "bar_lounge",
+    "pool_common"
+  ],
+  "nightclubExists": false,
+  "entertainmentProgram": "Recurring entertainment centers on The Canal Club and poolside resort programming.",
+  "dayNightFlow": "Pool and spa by day; Canal Club live artists, DJs, movies, games, and brunch programming."
+}

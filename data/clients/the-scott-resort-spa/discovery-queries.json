@@ -1,0 +1,144 @@
+{
+  "target": {
+    "propertyName": "The Scott Resort & Spa",
+    "location": "Scottsdale, Arizona",
+    "website": "https://www.thescottresort.com/"
+  },
+  "perSource": [
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "The Scott Resort & Spa Scottsdale, Arizona reviews",
+        "The Scott Resort & Spa entertainment reviews",
+        "The Scott Resort & Spa nightlife"
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com The Scott Resort & Spa Hotel_Review",
+        "The Scott Resort & Spa Scottsdale, Arizona TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com The Scott Resort & Spa",
+        "The Scott Resort & Spa Scottsdale, Arizona booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com The Scott Resort & Spa",
+        "The Scott Resort & Spa Scottsdale, Arizona Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com The Scott Resort & Spa"
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "The Scott Resort & Spa review",
+        "The Scott Resort & Spa nightlife",
+        "The Scott Resort & Spa entertainment",
+        "The Scott Resort & Spa Scottsdale, Arizona"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "The Scott Resort & Spa walkthrough",
+        "The Scott Resort & Spa resort tour",
+        "The Scott Resort & Spa review vlog"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"The Scott Resort & Spa\" review blog",
+        "\"The Scott Resort & Spa\" honest review",
+        "The Scott Resort & Spa Scottsdale, Arizona travel article"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "https://www.thescottresort.com/",
+        "The Scott Resort & Spa official site"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "The Scott Resort & Spa instagram",
+        "The Scott Resort & Spa tiktok",
+        "site:instagram.com The Scott Resort & Spa"
+      ]
+    },
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "The Scott Resort & Spa Scottsdale, Arizona satellite view"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    }
+  ],
+  "angleQueries": [
+    "The Scott Resort & Spa reviews",
+    "The Scott Resort & Spa entertainment reviews",
+    "The Scott Resort & Spa nightlife",
+    "site:reddit.com The Scott Resort & Spa",
+    "The Scott Resort & Spa YouTube review",
+    "The Scott Resort & Spa travel blog review",
+    "The Scott Resort & Spa family review",
+    "The Scott Resort & Spa couples review",
+    "The Scott Resort & Spa business traveler review",
+    "The Scott Resort & Spa rooftop review",
+    "The Scott Resort & Spa bar review",
+    "The Scott Resort & Spa dining review"
+  ]
+}
