@@ -382,7 +382,10 @@ jobs:
           };
           fs.writeFileSync(p, JSON.stringify(m, null, 2) + '\n');
           NODE
-          git add "$EXECUTION_MANIFEST" clean-room/the-scott "data/clients/$WORKSPACE_SLUG" 2>/dev/null || true
+          git add "$EXECUTION_MANIFEST" clean-room/the-scott
+          if [ -d "data/clients/$WORKSPACE_SLUG" ]; then
+            git add "data/clients/$WORKSPACE_SLUG"
+          fi
           if ! git diff --cached --quiet; then
             git commit -m "trial: record The Scott capture evidence (${JOB_STATUS})"
             git push origin HEAD:"$EXECUTION_BRANCH"
