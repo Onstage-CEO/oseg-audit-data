@@ -133,6 +133,7 @@
     "paidRetryAllowed": false
   },
   "nextActions": [
+    "Implement an adaptive recency policy with a 12-month current-score window and evidence-triggered expansion to 36 months for sparse themes/seasonal context.",
     "Patch apify-adapter to pass ctx.maxResults through as runActorReviewsAsync.maxItems and add an integration test proving OSEG_CAPTURE_DEPTH reaches the immutable Actor input.",
     "Require a provider-enforced maxTotalChargeUsd (or equivalent immutable per-run maximum) on every paid Actor launch; refuse providers/Actors that cannot enforce it.",
     "Use read-only Apify run metadata for run 4DWzkgi0DL7QUb4G8 to resolve its default dataset and inspect the existing 876 results; do not restart the Actor.",
@@ -152,5 +153,57 @@
       "ci": "passed",
       "productionPinsChanged": false
     }
+  },
+  "recencyAnalysis": {
+    "asOf": "2026-07-19",
+    "platforms": [
+      "google",
+      "booking",
+      "tripadvisor"
+    ],
+    "windows": {
+      "12_months": {
+        "reviews": 234,
+        "strictEntertainmentMentions": 1,
+        "byPlatform": {
+          "google": 171,
+          "booking": 41,
+          "tripadvisor": 22
+        }
+      },
+      "18_months": {
+        "reviews": 421,
+        "strictEntertainmentMentions": 1,
+        "byPlatform": {
+          "google": 304,
+          "booking": 78,
+          "tripadvisor": 39
+        }
+      },
+      "24_months": {
+        "reviews": 509,
+        "strictEntertainmentMentions": 2,
+        "byPlatform": {
+          "google": 370,
+          "booking": 88,
+          "tripadvisor": 51
+        }
+      },
+      "36_months": {
+        "reviews": 789,
+        "strictEntertainmentMentions": 9,
+        "byPlatform": {
+          "google": 569,
+          "booking": 122,
+          "tripadvisor": 98
+        }
+      }
+    },
+    "decision": "Use trailing 12 months for current-performance scoring; expand selectively through 36 months for sparse entertainment themes, seasonality, and historical context. Never blend older context into the current score.",
+    "caveats": [
+      "A date filter reduces spend only when enforced provider-side; filtering an already-paid corpus locally does not save money.",
+      "Current official programming pages and operational facts are always evaluated at their current state, independent of review windows.",
+      "Evidence before a material renovation, concept change, ownership/management change, or operating-model change is historical context only."
+    ]
   }
 }
