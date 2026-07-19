@@ -136,5 +136,14 @@
     "Fix or honestly gate the degraded social/Yelp, Expedia, outlet Google, and aerial/satellite paths.",
     "Reconcile actual provider billing against the authorized capture cap.",
     "Propose a bounded recovery plan and obtain a new explicit execution decision before any paid retry or LLM call."
-  ]
+  ],
+  "remediation": {
+    "apifyDepthHandoff": {
+      "status": "fixed_on_engine_main_not_production_pinned",
+      "pullRequest": "https://github.com/Onstage-CEO/oseg-resort-audit/pull/328",
+      "mergeSha": "e34a349a10cf7e07d71a746163c1abda7686e405",
+      "ci": "passed",
+      "productionPinsChanged": false
+    }
+  }
 }
