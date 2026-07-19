@@ -7,28 +7,91 @@
     "presentedBy": [],
     "version": "V0.1 — Working Draft",
     "status": "draft",
-    "website": "https://www.thescottresort.com/",
-    "googleUrl": "https://www.google.com/maps/search/The%20Scott%20Resort%20%26%20Spa%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d115494-Reviews-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
     "bookingUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html",
     "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
-    "instagramUrl": "https://www.instagram.com/thescottresort/",
-    "facebookUrl": "https://www.facebook.com/TheScottResort/",
-    "youtubeUrl": "https://www.youtube.com/playlist?list=PLWuUiyV9tZ-SZblaK4xQ4o3i_GcDU3Cas"
+    "googleUrl": "https://www.google.com/maps/search/The%20Scott%20Resort%20%26%20Spa%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d115494-Reviews-The_Scott_Resort_Spa-Scottsdale_Arizona.html"
   },
   "oneLineThesis": "",
   "coreFinding": "",
-  "platforms": [],
-  "skippedSources": [],
+  "platforms": [
+    {
+      "platformId": "google",
+      "scoreLabel": null,
+      "volume": 1664,
+      "categoryScores": {},
+      "topicChips": {
+        "present": [],
+        "absent": []
+      },
+      "sortStrategiesRun": [],
+      "keywordsSearched": [],
+      "independentSource": true,
+      "notes": "Capture reconciliation admitted this source because the provider status was ok with 1664 captured/provider record(s). Score is intentionally null: capture alone does not prove a representative public-platform average."
+    },
+    {
+      "platformId": "tripadvisor",
+      "scoreLabel": null,
+      "volume": 1215,
+      "categoryScores": {},
+      "topicChips": {
+        "present": [],
+        "absent": []
+      },
+      "sortStrategiesRun": [],
+      "keywordsSearched": [],
+      "independentSource": true,
+      "notes": "Capture reconciliation admitted this source because the provider status was ok with 1215 captured/provider record(s). Score is intentionally null: capture alone does not prove a representative public-platform average."
+    },
+    {
+      "platformId": "booking",
+      "scoreLabel": null,
+      "volume": 122,
+      "categoryScores": {},
+      "topicChips": {
+        "present": [],
+        "absent": []
+      },
+      "sortStrategiesRun": [],
+      "keywordsSearched": [],
+      "independentSource": true,
+      "notes": "Capture reconciliation admitted this source because the provider status was ok with 122 captured/provider record(s). Score is intentionally null: capture alone does not prove a representative public-platform average."
+    },
+    {
+      "platformId": "youtube",
+      "scoreLabel": null,
+      "volume": 87,
+      "categoryScores": {},
+      "topicChips": {
+        "present": [],
+        "absent": []
+      },
+      "sortStrategiesRun": [],
+      "keywordsSearched": [],
+      "independentSource": true,
+      "notes": "Capture reconciliation admitted this source because the provider status was ok with 87 captured/provider record(s). Score is intentionally null: capture alone does not prove a representative public-platform average."
+    }
+  ],
+  "skippedSources": [
+    {
+      "platformId": "reddit",
+      "kind": "blocked",
+      "reason": "Source could not be executed with the configured credentials. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
+    },
+    {
+      "platformId": "expedia",
+      "kind": "blocked",
+      "reason": "Provider output is explicitly partial/quarantined and excluded from scoring. import-apify-run expedia: quarantined 876 provider item(s) from ABORTED; not admitted to analysis."
+    }
+  ],
   "evidence": [],
   "venues": [
     {
       "name": "The Canal Club",
       "type": "Restaurant / bar / recurring entertainment venue",
       "slug": "the-canal-club",
-      "googleUrl": "https://www.google.com/maps/search/The%20Canal%20Club%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
       "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d12989592-Reviews-The_Canal_Club-Scottsdale_Arizona.html",
-      "website": "https://thecanalclubaz.com/"
+      "googleUrl": "https://www.google.com/maps/search/The%20Canal%20Club%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251"
     }
   ],
   "segments": [],
