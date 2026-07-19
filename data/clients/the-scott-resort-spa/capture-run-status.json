@@ -110,11 +110,25 @@
   ],
   "spend": {
     "knownActualCostUsd": 2.1965,
-    "costStatus": "verified",
+    "externallyVerifiedApifySubtotalUsd": 3.623,
+    "costStatus": "unavailable",
+    "machineVerifiedSources": [
+      "expedia"
+    ],
+    "externallyVerifiedSources": [
+      "google",
+      "booking",
+      "expedia"
+    ],
     "sourcesTracked": [
       "expedia"
     ],
-    "sourcesUnavailable": [],
-    "additionalPaidStageBlocked": false
+    "sourcesUnavailable": [
+      "dataforseo-tripadvisor",
+      "dataforseo-web-discovery",
+      "dataforseo-venue-tripadvisor"
+    ],
+    "additionalPaidStageBlocked": true,
+    "reason": "This historical trial predates DataForSEO task-cost persistence. Expedia API cost is machine-verified and all Apify run-page costs are externally reconciled, but DataForSEO actual spend cannot be reconstructed from the retained artifacts. Additional paid stages stay blocked."
   }
 }
