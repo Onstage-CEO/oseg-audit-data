@@ -64,7 +64,8 @@
         "providerResultCount": 2653,
         "auditAcceptedTextRecords": 1664,
         "auditRatingOnlyRecords": 989,
-        "reconciliation": "2653 provider results = 1664 accepted text records + 989 rating-only records"
+        "reconciliation": "2653 provider results = 1664 accepted text records + 989 rating-only records",
+        "runId": "Twl870efdmcVzPVQS"
       },
       {
         "provider": "Apify",
@@ -74,7 +75,8 @@
         "duration": "PT39S",
         "providerResultCount": 122,
         "auditAcceptedRecords": 122,
-        "reconciliation": "provider and audit counts match"
+        "reconciliation": "provider and audit counts match",
+        "runId": "IlIvRs8uGISkaIVvD"
       },
       {
         "provider": "Apify",
@@ -84,7 +86,8 @@
         "duration": "PT2M15S",
         "providerResultCount": 876,
         "auditAcceptedRecords": 0,
-        "reconciliation": "partial provider dataset exists but the adapter discarded it because terminal run status was ABORTED"
+        "reconciliation": "partial provider dataset exists but the adapter discarded it because terminal run status was ABORTED",
+        "runId": "4DWzkgi0DL7QUb4G8"
       }
     ]
   },
@@ -97,6 +100,7 @@
     "paidRetryAllowed": false
   },
   "nextActions": [
+    "Use read-only Apify run metadata for run 4DWzkgi0DL7QUb4G8 to resolve its default dataset and inspect the existing 876 results; do not restart the Actor.",
     "Salvage or quarantine partial datasets from ABORTED/TIMED-OUT runs instead of silently discarding existing results; never call them complete.",
     "Add provider-run result and cost reconciliation that distinguishes requested depth, provider output count, accepted text records, rating-only records, and actual charged USD.",
     "Add a mandatory provider headroom preflight that verifies remaining account capacity against the reviewed run ceiling before any actor starts.",
