@@ -25,7 +25,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 67daf35c887e3509434978ffe7937df6b6385980
+  ENGINE_REF: 751b657191b2d4bb183b195aaa3084d6ec033e35  # branch-local bump for the Scott trial: engine main incl. cost governance (#331-#341 ceilings + Apify headroom preflight); prior pin 67daf35 predates those guards
 
 permissions:
   contents: write
