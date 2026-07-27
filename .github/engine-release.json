@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V2",
   "engineRepository": "Onstage-CEO/oseg-resort-audit",
-  "approvedEngineRef": "751b657191b2d4bb183b195aaa3084d6ec033e35",
+  "approvedEngineRef": "e3894f4c6eeef55c12699375599e60cd947fb87a",
   "enginePackageVersion": "0.1.0",
   "sourceCapabilitySchemaVersion": "V2",
   "propertySourceAttemptSchemaVersion": "V1",
@@ -14,5 +14,5 @@
   "cleanRoomValidated": false,
   "commercialRepeatabilityStatus": "not_approved",
   "approvalPolicy": "Bump deliberately through one reviewed pull request; never follow main automatically.",
-  "note": "Branch-local approval for the Scott trial (PR #45, Joe-reviewed): engine main 751b657 carries the #331-#341 cost governance (dollar ceilings, Apify headroom preflight, depth-cap propagation), the versioned attempt/coverage/verification contracts, and the Prospect Risk Brief renderer. Main branch pins are unchanged until their own reviewed bump."
+  "note": "Branch-local approval for the Scott trial (PR #45, Joe-reviewed): engine main e3894f4 adds runner-declared attempt truth (#354) on top of the tolerant ledger reader (#353), the #331-#341 cost governance, and the Prospect Risk Brief renderer. Main branch pins unchanged."
 }
