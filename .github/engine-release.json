@@ -1,12 +1,12 @@
 {
   "schemaVersion": "V2",
   "engineRepository": "Onstage-CEO/oseg-resort-audit",
-  "approvedEngineRef": "67daf35c887e3509434978ffe7937df6b6385980",
+  "approvedEngineRef": "751b657191b2d4bb183b195aaa3084d6ec033e35",
   "enginePackageVersion": "0.1.0",
-  "sourceCapabilitySchemaVersion": null,
-  "propertySourceAttemptSchemaVersion": null,
-  "coverageMatrixSchemaVersion": null,
-  "paidCapturedCorpusVerificationVersion": null,
+  "sourceCapabilitySchemaVersion": "V2",
+  "propertySourceAttemptSchemaVersion": "V1",
+  "coverageMatrixSchemaVersion": "V2",
+  "paidCapturedCorpusVerificationVersion": "V1",
   "engineWorkflowCount": 15,
   "declaredPinsValidated": true,
   "executedCheckoutTargetsValidated": true,
@@ -14,5 +14,5 @@
   "cleanRoomValidated": false,
   "commercialRepeatabilityStatus": "not_approved",
   "approvalPolicy": "Bump deliberately through one reviewed pull request; never follow main automatically.",
-  "note": "The approved hosted engine predates the versioned property-attempt and paid captured-corpus verification contracts now present on engine main. Null schema fields mean absent or unversioned in this deployed SHA, not unknown success."
+  "note": "Branch-local approval for the Scott trial (PR #45, Joe-reviewed): engine main 751b657 carries the #331-#341 cost governance (dollar ceilings, Apify headroom preflight, depth-cap propagation), the versioned attempt/coverage/verification contracts, and the Prospect Risk Brief renderer. Main branch pins are unchanged until their own reviewed bump."
 }
