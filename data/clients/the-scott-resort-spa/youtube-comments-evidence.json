@@ -1,6 +1,6 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-07-19T00:58:30.333Z",
+  "generatedAt": "2026-07-27T21:31:48.235Z",
   "findings": [
     {
       "sourceId": "youtube-comments",
@@ -31,12 +31,12 @@
       "sourceId": "youtube-comments",
       "lane": "community",
       "query": "youtube comments",
-      "url": "https://www.youtube.com/watch?v=Dl4pY0PStbQ&lc=UgwMkBBQ8guehFj88Sh4AaABAg",
+      "url": "https://www.youtube.com/watch?v=Dl4pY0PStbQ&lc=UgydwDouwERPPKqktP14AaABAg",
       "domain": "youtube.com",
-      "title": "@k.vcorbin6129",
-      "snippet": "This hotel was a vibe. Brandy!!! You have such a lovely shape. ⌛️ anyone? Va Va Voom",
+      "title": "@enchantedseasons",
+      "snippet": "Great vlog brandy, I love how real you both are, I get fed up of people doing the same videos as other people and don’t show who they truly are, the beauty of us humans is that we are all different and interesting in our own ways. So I appreciate your true selves xx looking forward to seeing what you do with your bathroom xx",
       "matchedTerms": [
-        "vibe"
+        "show"
       ]
     },
     {
@@ -55,24 +55,24 @@
       "sourceId": "youtube-comments",
       "lane": "community",
       "query": "youtube comments",
-      "url": "https://www.youtube.com/watch?v=Dl4pY0PStbQ&lc=UgydwDouwERPPKqktP14AaABAg",
-      "domain": "youtube.com",
-      "title": "@enchantedseasons",
-      "snippet": "Great vlog brandy, I love how real you both are, I get fed up of people doing the same videos as other people and don’t show who they truly are, the beauty of us humans is that we are all different and interesting in our own ways. So I appreciate your true selves xx looking forward to seeing what you do with your bathroom xx",
-      "matchedTerms": [
-        "show"
-      ]
-    },
-    {
-      "sourceId": "youtube-comments",
-      "lane": "community",
-      "query": "youtube comments",
       "url": "https://www.youtube.com/watch?v=Dl4pY0PStbQ&lc=UgyDV2p6wUf0bzWuL7h4AaABAg",
       "domain": "youtube.com",
       "title": "@caitmoffett8261",
       "snippet": "This is so fun! Trips like this make couples quality time SO nice!",
       "matchedTerms": [
         "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Dl4pY0PStbQ&lc=UgwMkBBQ8guehFj88Sh4AaABAg",
+      "domain": "youtube.com",
+      "title": "@k.vcorbin6129",
+      "snippet": "This hotel was a vibe. Brandy!!! You have such a lovely shape. ⌛️ anyone? Va Va Voom",
+      "matchedTerms": [
+        "vibe"
       ]
     },
     {
