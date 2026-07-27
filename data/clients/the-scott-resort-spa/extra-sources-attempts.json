@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "V1",
+  "generatedAt": "2026-07-27T21:52:35.499Z",
+  "property": "The Scott Resort & Spa",
+  "attempts": {
+    "yelp": {
+      "result": "captured_partial",
+      "mechanism": "apify-memo23",
+      "message": "Captured 436 Yelp reviews via apify-memo23.",
+      "recordsReturned": 436,
+      "recordsAccepted": 436,
+      "attemptedAt": "2026-07-27T21:52:35.499Z"
+    },
+    "instagram": {
+      "result": "captured_partial",
+      "mechanism": "apify social (pageUrl)",
+      "message": "Captured 30 public instagram post(s).",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
+      "attemptedAt": "2026-07-27T21:52:35.499Z"
+    },
+    "tiktok": {
+      "result": "captured_partial",
+      "mechanism": "apify social (keyword)",
+      "message": "Captured 30 public tiktok post(s).",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
+      "attemptedAt": "2026-07-27T21:52:35.499Z"
+    },
+    "facebook": {
+      "result": "captured_partial",
+      "mechanism": "apify social (pageUrl)",
+      "message": "Captured 30 public facebook post(s).",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
+      "attemptedAt": "2026-07-27T21:52:35.499Z"
+    }
+  }
+}
