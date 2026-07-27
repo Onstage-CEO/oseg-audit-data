@@ -11,7 +11,9 @@
     "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
     "googleUrl": "https://www.google.com/maps/search/The%20Scott%20Resort%20%26%20Spa%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
     "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d115494-Reviews-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
-    "yelpUrl": "https://www.yelp.com/biz/the-scott-resort-and-spa-scottsdale-4"
+    "yelpUrl": "https://www.yelp.com/biz/the-scott-resort-and-spa-scottsdale-4",
+    "facebookUrl": "https://www.facebook.com/TheScottResort",
+    "instagramUrl": "https://www.instagram.com/thescottresort/"
   },
   "oneLineThesis": "The Scott currently advertises a recurring, venue-centered entertainment calendar, but the captured guest corpus does not yet establish how strongly that programming affects guest perception, demand, or commercial performance.",
   "coreFinding": "Public sources confirm recurring live music, DJs, movies, games, tastings, and brunch performance at The Canal Club; strict entertainment mentions are sparse in the dated review sample, so the audit must separate verified programming supply from still-unproven guest impact.",

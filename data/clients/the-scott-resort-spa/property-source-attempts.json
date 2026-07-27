@@ -1,14 +1,14 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-19T04:13:00.000Z",
+  "generatedAt": "2026-07-27T21:40:00.000Z",
   "property": "The Scott Resort & Spa",
   "attempts": [
     {
       "source": "google",
       "mechanism": "aggregator",
       "provider": "aggregator",
-      "attemptedAt": "2026-07-19T00:56:27.774Z",
+      "attemptedAt": "2026-07-19T03:51:36.729Z",
       "result": "captured_partial",
       "recordsReturned": 1664,
       "recordsAccepted": 1664,
@@ -21,7 +21,7 @@
       "source": "tripadvisor",
       "mechanism": "aggregator",
       "provider": "aggregator",
-      "attemptedAt": "2026-07-19T00:56:27.774Z",
+      "attemptedAt": "2026-07-19T03:51:36.729Z",
       "result": "captured_complete",
       "recordsReturned": 1215,
       "recordsAccepted": 1215,
@@ -33,20 +33,21 @@
     },
     {
       "source": "yelp",
-      "mechanism": "Apify Yelp reviews (yelpUrl, property or per-venue)",
-      "result": "not_checked",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
+      "recordsReturned": 436,
+      "recordsAccepted": 436,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "booking",
       "mechanism": "aggregator",
       "provider": "aggregator",
-      "attemptedAt": "2026-07-19T00:56:27.774Z",
+      "attemptedAt": "2026-07-19T03:51:36.729Z",
       "result": "captured_complete",
       "recordsReturned": 122,
       "recordsAccepted": 122,
@@ -60,14 +61,14 @@
       "source": "expedia",
       "mechanism": "aggregator",
       "provider": "aggregator",
-      "attemptedAt": "2026-07-19T00:56:27.774Z",
+      "attemptedAt": "2026-07-19T03:51:36.729Z",
       "result": "provider_error",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "Apify expedia: actor run ended ABORTED."
+      "message": "import-apify-run expedia: quarantined 876 provider item(s) from ABORTED; not admitted to analysis."
     },
     {
       "source": "opentable",
@@ -83,47 +84,42 @@
     {
       "source": "facebook",
       "mechanism": "Apify social capture (property public page URL)",
-      "result": "provider_error",
+      "result": "not_checked",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "Correction 2026-07-27 grounded in clean-room-extra-sources.log + extra-sources-status.json: the capture RAN and returned 0 posts while Apify was degraded by the account-wide $70 monthly cap (APIFY DEGRADED flag). Previously mis-recorded as not_checked because the runner wrote no per-source attempt rows.",
-      "attemptedAt": "2026-07-19T00:58:30.333Z",
-      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
+      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
     },
     {
       "source": "instagram",
       "mechanism": "Apify social capture (property profile/hashtag/keyword)",
-      "result": "provider_error",
+      "result": "not_checked",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "Correction 2026-07-27 grounded in clean-room-extra-sources.log + extra-sources-status.json: the capture RAN and returned 0 posts while Apify was degraded by the account-wide $70 monthly cap (APIFY DEGRADED flag). Previously mis-recorded as not_checked because the runner wrote no per-source attempt rows.",
-      "attemptedAt": "2026-07-19T00:58:30.333Z",
-      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
+      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
     },
     {
       "source": "tiktok",
-      "mechanism": "Apify social capture (property hashtag/keyword)",
-      "result": "provider_error",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "Correction 2026-07-27 grounded in clean-room-extra-sources.log + extra-sources-status.json: the capture RAN and returned 0 posts while Apify was degraded by the account-wide $70 monthly cap (APIFY DEGRADED flag). Previously mis-recorded as not_checked because the runner wrote no per-source attempt rows.",
-      "attemptedAt": "2026-07-19T00:58:30.333Z",
-      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "youtube",
       "mechanism": "official_api",
       "provider": "official_api",
-      "attemptedAt": "2026-07-19T00:56:27.774Z",
+      "attemptedAt": "2026-07-19T03:51:36.729Z",
       "result": "captured_partial",
       "recordsReturned": 87,
       "recordsAccepted": 87,
@@ -136,7 +132,7 @@
       "source": "reddit",
       "mechanism": "official_api",
       "provider": "official_api",
-      "attemptedAt": "2026-07-19T00:56:27.774Z",
+      "attemptedAt": "2026-07-19T03:51:36.729Z",
       "result": "needs_credentials",
       "recordsReturned": 9,
       "recordsAccepted": 9,
@@ -147,16 +143,15 @@
     },
     {
       "source": "blogs",
-      "mechanism": "public-web targeted review",
-      "provider": "public_web",
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
       "result": "captured_partial",
-      "recordsReturned": 6,
-      "recordsAccepted": 6,
+      "recordsReturned": 15,
+      "recordsAccepted": 15,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "Explicitly reviewed three current official property/program pages and three independent editorial pages. Findings and caveats are recorded in clean-room/the-scott/spatial-editorial-evidence.json.",
-      "attemptedAt": "2026-07-19T04:13:00.000Z"
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "resort_pages",
@@ -190,19 +185,6 @@
       "truncated": false,
       "retryable": false,
       "message": "SUPPLEMENTAL traveler-intent/public-perception signal only and never rating math. It remains in the canonical accounting set so the unsupported gap is visible."
-    },
-    {
-      "source": "aerial_satellite",
-      "mechanism": "public-web maps/spatial context review",
-      "provider": "public_web",
-      "attemptedAt": "2026-07-19T04:13:00.000Z",
-      "result": "captured_partial",
-      "recordsReturned": 4,
-      "recordsAccepted": 4,
-      "completeness": "unknown",
-      "truncated": false,
-      "retryable": true,
-      "message": "Closed the registry's aerial/maps-context lane with four text sources describing property layout and venue/amenity adjacency. No satellite or aerial imagery was inspected; no acoustic, capacity, line-of-sight, or feasibility claim is permitted."
     }
   ]
 }
