@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "V2",
+  "trialId": "clean-room-the-scott-v1",
+  "round": 2,
+  "status": "second_operator_round2_complete",
+  "recordedAt": "2026-07-27T21:00:00.000Z",
+  "operator": {
+    "name": "Joe Costello",
+    "role": "Onstage CEO / independent human reviewer",
+    "submissionChannel": "interactive Claude Code session 2026-07-27, decisions typed verbatim by Joe"
+  },
+  "packet": "clean-room/the-scott/second-operator-review-packet-v2.json",
+  "worklistCandidateCount": 12,
+  "worklistDecisionsCompleted": 12,
+  "decisionSummary": {
+    "promote": 11,
+    "reject": 0,
+    "defer": 1
+  },
+  "candidateDecisions": [
+    {
+      "candidateNumber": 1,
+      "candidateId": "worklist-v2-01-google-this pla",
+      "platform": "google",
+      "author": "Karen Harlan",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 2,
+      "candidateId": "worklist-v2-02-google-i enjoye",
+      "platform": "google",
+      "author": "Pecan T",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 3,
+      "candidateId": "worklist-v2-03-tripadvisor-wonderfu",
+      "platform": "tripadvisor",
+      "author": "Marina M",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 4,
+      "candidateId": "worklist-v2-04-tripadvisor-great fo",
+      "platform": "tripadvisor",
+      "author": "KET",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 5,
+      "candidateId": "worklist-v2-05-tripadvisor-lipstick",
+      "platform": "tripadvisor",
+      "author": "Melissa S",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 6,
+      "candidateId": "worklist-v2-06-tripadvisor-not for ",
+      "platform": "tripadvisor",
+      "author": "Busiest358w",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 7,
+      "candidateId": "worklist-v2-07-google-the scot",
+      "platform": "google",
+      "author": "Shelly F",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 8,
+      "candidateId": "worklist-v2-08-tripadvisor-3 night ",
+      "platform": "tripadvisor",
+      "author": "MenifeeHelen",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 9,
+      "candidateId": "worklist-v2-09-tripadvisor-amazing ",
+      "platform": "tripadvisor",
+      "author": "Darryl",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 10,
+      "candidateId": "worklist-v2-10-tripadvisor-great is",
+      "platform": "tripadvisor",
+      "author": "Jack H",
+      "decision": "promote"
+    },
+    {
+      "candidateNumber": 11,
+      "candidateId": "worklist-v2-11-tripadvisor-a little",
+      "platform": "tripadvisor",
+      "author": "Saarfari",
+      "decision": "defer",
+      "rationale": "can't find mention of entertainment"
+    },
+    {
+      "candidateNumber": 12,
+      "candidateId": "worklist-v2-12-tripadvisor-havana o",
+      "platform": "tripadvisor",
+      "author": "Souxie q",
+      "decision": "promote"
+    }
+  ],
+  "promotionsApplied": {
+    "count": 11,
+    "target": "data/clients/the-scott-resort-spa/audit.json evidence[]",
+    "method": "flag",
+    "promotedAt": "2026-07-27T21:00:00.000Z"
+  },
+  "paidCalls": 0,
+  "exports": 0,
+  "sends": 0,
+  "deployments": 0,
+  "productionPinChanges": 0
+}
