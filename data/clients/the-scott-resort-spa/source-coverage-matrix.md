@@ -5,8 +5,8 @@ _Generated 2026-07-27 · matrix V2 · capability V2 · attempts V1._
 - The Scott Resort & Spa: Google / Google Maps reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via aggregator.
 - The Scott Resort & Spa: Yelp reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
 - The Scott Resort & Spa: Expedia reviews is provider error; The source attempt failed at the provider/adapter layer. import-apify-run expedia: quarantined 876 provider item(s) from ABORTED; not admitted to analysis.
-- The Scott Resort & Spa: Facebook mentions is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.
-- The Scott Resort & Spa: Instagram mentions is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.
+- The Scott Resort & Spa: Facebook mentions is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
+- The Scott Resort & Spa: Instagram mentions is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
 - The Scott Resort & Spa: TikTok mentions is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
 - The Scott Resort & Spa: YouTube videos + comments is captured partial; Captured, but source completeness is partial or unproven. Captured via official_api.
 - The Scott Resort & Spa: Reddit / forums is captured partial; Captured, but source completeness is partial or unproven. Captured via official_api.
@@ -15,7 +15,7 @@ _Generated 2026-07-27 · matrix V2 · capability V2 · attempts V1._
 Outlet-level Google capture implemented: **yes**
 
 ### PROPERTY — The Scott Resort & Spa
-_8/11 engine-supported sources captured_
+_10/11 engine-supported sources captured_
 
 | Source | Status | Attempt | Complete | Checked | Engine | Captured | Found | Got | In report | Conf | Reason |
 |---|---|---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|---|
@@ -25,8 +25,8 @@ _8/11 engine-supported sources captured_
 | Booking.com reviews | ✅ captured complete | captured_complete | complete | yes | yes | yes | 122 | 122 | yes | high | Captured with completeness proven for the recorded attempt. Captured via aggregator. |
 | Expedia reviews | ❌ provider error | provider_error | unknown | no | yes | no | ? | 0 | yes | low | The source attempt failed at the provider/adapter layer. import-apify-run expedia: quarantined 876 provider item(s) from ABORTED; not admitted to analysis. |
 | OpenTable / reservation-platform reviews | — n/a | not_applicable | not_applicable | no | no | no | ? | 0 | no | low | Not applicable at this level. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance. |
-| Facebook mentions | ⬜ not checked | not_checked | unknown | no | yes | no | ? | 0 | yes | low | Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record. |
-| Instagram mentions | ⬜ not checked | not_checked | unknown | no | yes | no | ? | 0 | yes | low | Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record. |
+| Facebook mentions | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 30 | 30 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
+| Instagram mentions | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 30 | 30 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
 | TikTok mentions | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 30 | 30 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
 | YouTube videos + comments | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 13 | 13 | yes | medium | Captured, but source completeness is partial or unproven. Captured via official_api. |
 | Reddit / forums | 🟠 captured partial/unproven | needs_credentials | unknown | yes | yes | yes | 9 | 9 | yes | low | Captured, but source completeness is partial or unproven. Captured via official_api. |

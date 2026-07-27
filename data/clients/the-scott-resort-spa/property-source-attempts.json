@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-27T21:40:00.000Z",
+  "generatedAt": "2026-07-27T22:00:00.000Z",
   "property": "The Scott Resort & Spa",
   "attempts": [
     {
@@ -83,25 +83,27 @@
     },
     {
       "source": "facebook",
-      "mechanism": "Apify social capture (property public page URL)",
-      "result": "not_checked",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "instagram",
-      "mechanism": "Apify social capture (property profile/hashtag/keyword)",
-      "result": "not_checked",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "tiktok",
