@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "V1",
+  "round": 2,
+  "regeneratedAt": "2026-07-27T18:00:00.000Z",
+  "engineSha": "14118eb57b80db33ed404cbfff44846dc1071c87",
+  "engineRef": "main (post #343 boundary fix, #345 recency ranking, #346 scope classification/learning)",
+  "executionMechanism": "local deterministic run of dist/cli entertainment-discovery over retained raw blobs; no provider calls, no paid API, no LLM",
+  "command": "oseg-audit entertainment-discovery <workspace> --now 2026-07-27T18:00:00.000Z",
+  "providerCalls": 0,
+  "paidCalls": 0,
+  "reviewCount": 3001,
+  "candidateCount": 12,
+  "allCandidatesScope": "programmed_entertainment",
+  "currentWindowCandidates": 1,
+  "outputs": [
+    "data/clients/the-scott-resort-spa/entertainment-discovery.json",
+    "data/clients/the-scott-resort-spa/entertainment-discovery.md",
+    "clean-room/the-scott/second-operator-review-packet-v2.json",
+    "clean-room/the-scott/second-operator-review-packet-v2.md"
+  ],
+  "operator": "Claude (interactive session), App-authored PR; adjudication remains Joe Costello's independent human decision"
+}
