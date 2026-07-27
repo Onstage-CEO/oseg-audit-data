@@ -1,7 +1,307 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-07-27T21:31:48.235Z",
+  "generatedAt": "2026-07-27T21:43:47.900Z",
   "findings": [
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZv4GLND5iM/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Thoughtfully designed and ready to welcome you to @thecanalclubaz. \n\n📸 @seeminglyordinary.cs",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/Dax-v7Sjz1Y/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "A nod to another era.\n\n@emmamorem",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZ_Vx9EDuGD/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "How do we like to start our mornings at The Scott? With coffee in hand and sun on our skin. ☀️\n\n📸 @chefkostasmagoulas",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/Daj0Je_gBUB/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "“Inspiration finds me when the night is still and the stars appear in the desert sky.”\n― Nancy B. Urbach",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DbRIcCGIHHR/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Tucked within The Scott's desert oasis, La Vidorra Spa offers a tranquil escape complete with massages, facials, body treatments, and wellness experiences designed to leave you feeling restored from the inside out.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DaQ_4zVDfPJ/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Poolside cocktails, warm Scottsdale sunshine, and nowhere to be. 🍹\n\n📸 @citruscoaststudios",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DaIhfg_j7Lv/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Take a peek at what we have planned at @thecanalclubaz. 👆🏽Poolside happenings, cocktail tastings, Independence Day celebrations, vinyl DJ's and more. 🍸🌴",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZpwY2Sl3Lq/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "GIVEAWAY CLOSED! Spend the holiday weekend poolside at Scottsdale's favorite desert oasis, complete with live music, Corrido Tequila tastings, signature cocktails, daily yoga, brunch, and plenty of sunshine. 🌴\n\nOne lucky winner will receive:\n☀️ 2-Night stay at The Scott Resort & Spa (valid only July 2 - 5, 2026)\n☀️ 2-Complimentary tickets to Angel’s Share Social Club tasting event featuring @tequilacorrido on July 2nd\n☀️ $100 food & beverage credit for The Canal Club\n☀️ Curated Corrido Poolside Essentials Kit\n\nTo enter:\n- Follow @thescottresort and @tequilacorrido\n- Like this post\n- Tag the person you'd bring with you\n- Must be 21+ to enter\n\nEach tag counts as an additional entry.\n\nGiveaway closes Monday, June 22n. Winner will be announced Tuesday, June 23rd.\n\nWhether you're planning a staycation or traveling in for the holiday, The Scott is the perfect place to celebrate summer in Scottsdale.\n\nSweepstakes ends at 11:59pm (MST) on Monday, June 22nd. The winner will be selected randomly. Must be 21+ to enter. The winner will receive a two-night stay gift certificate (redeemable July 2nd - 5th, 2026), 2-complimentary tickets to Angel’s Share Social Club tasting event on July 2, 2026, $100 food & beverage credit for The Canal Club, Curated Corrido Poolside Essentials Kit. This giveaway is not sponsored, endorsed, administered by, or associated with Instagram.⁠\n⁠\nPlease be aware of increased bot and scam activity on Instagram related to sweepstakes. The Scott will never ask for payment information or create a separate “sweepstakes” account. The giveaway winner will be contacted via direct message from @thescottresort only and announced in the caption of our sweepstakes post.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DaKEMyxkco9/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Parked in another era.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DabTowHnF-4/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "From the moment you arrive, The Scott invites you to slow down. Check in, grab a drink, and settle into a stay inspired by the romance of Old Havana and the beauty of the Sonoran Desert.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DbH3SV-jF7t/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Some things never go out of style. Palm-lined pools, warm desert air, and afternoons spent doing absolutely nothing.\n\n@adamcgil",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DYTnogjljbx/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Tucked between palms and pathways, the sound of flowing fountains brings a sense of calm to our desert oasis.\n\n📸 @heatherbabayan",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DYbWBDtFNW7/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Even the smallest details nod to a different era.\n\n 📸 @gabriellewisdom",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DYqXF1NH5Pz/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "A chilled cocktail, palms overhead, and nowhere to be.\n\n@malibuwest",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZol3_AjGMb/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Meet us at the lagoon.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DXwlu5ejrdN/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Settle into shaded comfort with a private cabana by the pool. Order a drink, stretch out, and let the desert day unfold at its own pace.⁠\n⁠\n⁠\n⁠\n📸 @brennabowen_",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZSq0ZfiX5a/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZJsU89DQ6W/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Sculptural, sun-soaked, and unmistakably Arizona.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DYjEZwjGKYX/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Drift a little longer.\n\n📸 @brennabowen_",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DXX8vgmk9ez/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Light and quiet moments.⁠\n⁠\n⁠\n📸 @arielraee",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DXPHZx5CZy5/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "The Scott offers the perfect backdrop for moments worth remembering, from engagements to wedding weekends and everything in between.⁠\n⁠\n⁠\n@sightsphotofilm",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZbRvGCDgZM/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Between clean lines and open sky, even a simple glance upward feels intentional\n\n📸 @seeminglyordinary.cs",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/Da6MmzeoGGE/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Current chapter: relaxation.\n\n📸 @citruscoaststudios",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZgcBEtjAmG/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "One tap and you’re in—into a stay defined by warm design, quiet luxury, and Scottsdale ease. 🌴\n\n@malibu.west",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DXb4gmwFbrc/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Your Scottsdale oasis awaits.⁠\n⁠\n⁠\n📸 @clarkdmiller",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DZB98c3n3oA/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "A 'just married' stroll through our favorite desert oasis. 💍\n\n📸 @clarkdmiller",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DYDAPzliYHR/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Hop on and head for Old Town. Our complimentary bikes make it easy to explore galleries, cafes, and hidden corners just minutes from The Scott.\n\n📸 @heatherbabayan",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DYyGZRNmLpl/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Swing into slow mode.\n\n📸 @kyle.garay",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DY5zDyyAB2U/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "Meet us at The Canal Club where you'll find bold flavors and Havana-inspired design in the heart of The Scott.\n📍 @thecanalclubaz\n\n📸 @adamcgil",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.instagram.com/p/DXr15YXEznt/",
+      "domain": "instagram.com",
+      "title": "thescottresort",
+      "snippet": "\"Oh sunshine, the most precious gift to be found on earth.\" - Roman Payne",
+      "matchedTerms": []
+    },
     {
       "sourceId": "tiktok",
       "lane": "social",
@@ -26,6 +326,36 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@dirty.couch.vibes/video/7619792365737250062",
+      "domain": "tiktok.com",
+      "title": "dirty.couch.vibes",
+      "snippet": "If you’re planning on visiting Scottsdale, you HAVE to stay at this 📍 The Scott Resort & Spa (formerly FireSky Resort). The Scott in Scottsdale is so iconic, with the most beautiful interiors and decor alongside a gorgeous Cuban style bar and restaurant.\nThe average price for this hotel is about $150 to $300, depending on the time of year and room type!\nWe stayed here for 3 nights and it was the perfect amount of time to relax and take advantage of all of the amenities! Our favorite was the private cabanas and pool, which offered such a refreshing dip while being in the desert. The hotel also has movie nights in the patio, as well a ton of fun seating from fire pits, to boho swings, to hammocks and couches. We just loved lounging around.\nThe Canal Club & Bar, which is their restaurant, is partially located inside the lobby and off in its private dining space. We ate here for breakfast and for dinner. Both times were so delicious!! You can always just swing by the Canal Club for a cocktail as well.\n\nTap bottom left to see rates & etc \n\n#hotelrecommendation #thescottresort #hotelreview  #fyp #creatorsearchinsights",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@valleymoms/video/7654353264061811998",
+      "domain": "tiktok.com",
+      "title": "valleymoms",
+      "snippet": "Nestled in the heart of Old Town Scottsdale, The Scott Resort & Spa is one of those places that instantly makes you feel like you’re on vacation.\n\nThe resort is surrounded by lush landscaping, beautiful courtyards, cozy fire pits, and two stunning resort pools that create a tropical oasis in the middle of the Arizona desert. Whether you’re relaxing poolside, enjoying the spa, or simply taking in the atmosphere, every detail is designed to help you unwind.\n\nOne of my favorite amenities is the complimentary bicycles available for guests. They’re a fun and easy way to explore Old Town Scottsdale, the nearby greenbelt, local shops, art galleries, and some of the area’s best restaurants without ever needing to move your car.\n\nThe Canal Club is another highlight and easily one of the hottest spots in the Valley for a relaxing happy hour. Inspired by the flavors and culture of Havana, this stylish gathering place serves handcrafted cocktails, delicious food, and creates the perfect atmosphere for meeting friends, enjoying date night, or simply unwinding after a day of exploring Scottsdale. The indoor-outdoor setting, lively energy, and beautiful design make it a destination all on its own.\n\nLocation is another reason guests love The Scott. You’re just minutes from Scottsdale Fashion Square, Old Town Scottsdale, spring training baseball, championship golf courses, hiking trails, museums, and some of Arizona’s best dining and entertainment.\n\nWhether you’re planning a romantic getaway, a girls’ weekend, a family vacation, or a Scottsdale staycation, The Scott Resort & Spa combines luxury, comfort, and one of the best locations in the Valley.\n\nBook your stay and experience why this Old Town Scottsdale gem continues to be a favorite destination for visitors and locals alike.\n\n#tiktokgosummerstays#TheScottResort #OldTownScottsdale #fypシ゚viral #CanalClub",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@youllthankmaelater/video/7588818051102018846",
+      "domain": "tiktok.com",
+      "title": "youllthankmaelater",
+      "snippet": "The Scottsdale Resort & Spa just might be my favorite stay from all my travels in 2025. It’s where luxury and the dessert meet. @The Scottsdale Resort & Spa #tiktokgo",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
       "url": "https://www.tiktok.com/@dannydaviz/video/7664772929095290125",
       "domain": "tiktok.com",
       "title": "dannydaviz",
@@ -36,10 +366,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@dirty.couch.vibes/video/7619792365737250062",
+      "url": "https://www.tiktok.com/@local_living_unbound/video/7619438036983614733",
       "domain": "tiktok.com",
-      "title": "dirty.couch.vibes",
-      "snippet": "If you’re planning on visiting Scottsdale, you HAVE to stay at this 📍 The Scott Resort & Spa (formerly FireSky Resort). The Scott in Scottsdale is so iconic, with the most beautiful interiors and decor alongside a gorgeous Cuban style bar and restaurant.\nThe average price for this hotel is about $150 to $300, depending on the time of year and room type!\nWe stayed here for 3 nights and it was the perfect amount of time to relax and take advantage of all of the amenities! Our favorite was the private cabanas and pool, which offered such a refreshing dip while being in the desert. The hotel also has movie nights in the patio, as well a ton of fun seating from fire pits, to boho swings, to hammocks and couches. We just loved lounging around.\nThe Canal Club & Bar, which is their restaurant, is partially located inside the lobby and off in its private dining space. We ate here for breakfast and for dinner. Both times were so delicious!! You can always just swing by the Canal Club for a cocktail as well.\n\nTap bottom left to see rates & etc \n\n#hotelrecommendation #thescottresort #hotelreview  #fyp #creatorsearchinsights",
+      "title": "local_living_unbound",
+      "snippet": "If you’re planning a Scottsdale trip and want a hotel that feels stylish, social, and intentionally designed, The Scott Resort & Spa is one of the best boutique options in Scottsdale, Arizona. Located just minutes from Old Town Scottsdale, this hotel blends mid-century design with a tropical desert aesthetic, offering a more elevated alternative to larger resorts. With two palm-lined pools, a full-service spa, and the popular Canal Club restaurant, it’s ideal for couples, girls trips, and anyone prioritizing atmosphere over size. If you’re deciding where to stay in Scottsdale and want something that actually feels like a getaway, this is a top choice to consider.\n#ScottsdaleHotels #ScottsdaleArizona #BoutiqueResort #GirlsTripScottsdale #ArizonaTravel",
       "matchedTerms": []
     },
     {
@@ -66,10 +396,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@shyennei/video/7635707423776378126",
+      "url": "https://www.tiktok.com/@valleymoms/video/7641286923197222175",
       "domain": "tiktok.com",
-      "title": "shyennei",
-      "snippet": "Wedding venue tour in scottsdale #thescottresortandspa #phoenixwedding #weddingvenue #engaged #arizonaweddingvenue",
+      "title": "valleymoms",
+      "snippet": "The Scott Resort & Spa is that Scottsdale stay that feels like a hidden tropical escape right in the middle of the desert. 🌴✨\n\nPalm-lined walkways, soft sandy tones, and a lagoon-style pool set the tone the moment you walk in—it doesn’t feel like Arizona, but somehow still fits perfectly.\n\nMornings are slow and peaceful here: coffee by the water, quiet pool reflections, and warm desert light filtering through the palms. By afternoon, it shifts into full resort energy—cabanas, cocktails, music, and that easy luxury vibe that makes you lose track of time.\n\nAnd at night, it glows. The water lights up, the atmosphere softens, and everything feels calm, romantic, and a little cinematic.\n\nIt’s not just a hotel stay—it’s a full reset in the heart of Scottsdale. ✨#tiktokgosummerstays#travelinspo#bucketlistadventures #fypシ゚viral #oldtownscottsdaleaz",
       "matchedTerms": []
     },
     {
@@ -86,50 +416,20 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@local_living_unbound/video/7619438036983614733",
+      "url": "https://www.tiktok.com/@shyennei/video/7635707423776378126",
       "domain": "tiktok.com",
-      "title": "local_living_unbound",
-      "snippet": "If you’re planning a Scottsdale trip and want a hotel that feels stylish, social, and intentionally designed, The Scott Resort & Spa is one of the best boutique options in Scottsdale, Arizona. Located just minutes from Old Town Scottsdale, this hotel blends mid-century design with a tropical desert aesthetic, offering a more elevated alternative to larger resorts. With two palm-lined pools, a full-service spa, and the popular Canal Club restaurant, it’s ideal for couples, girls trips, and anyone prioritizing atmosphere over size. If you’re deciding where to stay in Scottsdale and want something that actually feels like a getaway, this is a top choice to consider.\n#ScottsdaleHotels #ScottsdaleArizona #BoutiqueResort #GirlsTripScottsdale #ArizonaTravel",
+      "title": "shyennei",
+      "snippet": "Wedding venue tour in scottsdale #thescottresortandspa #phoenixwedding #weddingvenue #engaged #arizonaweddingvenue",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@youllthankmaelater/video/7588818051102018846",
+      "url": "https://www.tiktok.com/@ms.janettherealtor/video/7665876378788678919",
       "domain": "tiktok.com",
-      "title": "youllthankmaelater",
-      "snippet": "The Scottsdale Resort & Spa just might be my favorite stay from all my travels in 2025. It’s where luxury and the dessert meet. @The Scottsdale Resort & Spa #tiktokgo",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@bytravelbelle/video/7477723105750781192",
-      "domain": "tiktok.com",
-      "title": "bytravelbelle",
-      "snippet": "Recently just wrapped up at unforgettable stay at The Scott Resort & Spa in Scottsdale, AZ 🌴 \n\nThis vibrant, Mission-inspired boutique hotel is a true oasis in the desert. From lush, tropical vibes to the chic, Havana-inspired decor, every corner of this resort is Insta-worthy 📸 \n\nThe Canal Club’s Caribbean twist on American food is a must try, and the sand-bottom pool is perfect! Don’t miss out on the full-service spa, La Vidorra, for some well deserved pampering. \n\nWhether you’re lounging by the lagoon pool with a cocktail in hand or exploring the nearby Scottsdale Fashion Square, this place has it all 🌟 \n\n📌 SAVE for later & SEND to a friend you should visit here with!\n\n🫶 FOLLOW for more travel gems 🏝️🍹 \n\n#travelugc #ugctravel #travelcontentcreator #travelcontent #hotelcollab #travelcreatives #travelcreator #scottsdale #scottsdalehotels #luxurytravel #luxuryhotels #thescottresort #thescott #fyp #traveltok #traveltiktok #foryoupage",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@valleymoms/video/7654353264061811998",
-      "domain": "tiktok.com",
-      "title": "valleymoms",
-      "snippet": "Nestled in the heart of Old Town Scottsdale, The Scott Resort & Spa is one of those places that instantly makes you feel like you’re on vacation.\n\nThe resort is surrounded by lush landscaping, beautiful courtyards, cozy fire pits, and two stunning resort pools that create a tropical oasis in the middle of the Arizona desert. Whether you’re relaxing poolside, enjoying the spa, or simply taking in the atmosphere, every detail is designed to help you unwind.\n\nOne of my favorite amenities is the complimentary bicycles available for guests. They’re a fun and easy way to explore Old Town Scottsdale, the nearby greenbelt, local shops, art galleries, and some of the area’s best restaurants without ever needing to move your car.\n\nThe Canal Club is another highlight and easily one of the hottest spots in the Valley for a relaxing happy hour. Inspired by the flavors and culture of Havana, this stylish gathering place serves handcrafted cocktails, delicious food, and creates the perfect atmosphere for meeting friends, enjoying date night, or simply unwinding after a day of exploring Scottsdale. The indoor-outdoor setting, lively energy, and beautiful design make it a destination all on its own.\n\nLocation is another reason guests love The Scott. You’re just minutes from Scottsdale Fashion Square, Old Town Scottsdale, spring training baseball, championship golf courses, hiking trails, museums, and some of Arizona’s best dining and entertainment.\n\nWhether you’re planning a romantic getaway, a girls’ weekend, a family vacation, or a Scottsdale staycation, The Scott Resort & Spa combines luxury, comfort, and one of the best locations in the Valley.\n\nBook your stay and experience why this Old Town Scottsdale gem continues to be a favorite destination for visitors and locals alike.\n\n#tiktokgosummerstays#TheScottResort #OldTownScottsdale #fypシ゚viral #CanalClub",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@itsmoodylove/video/7524864125046934798",
-      "domain": "tiktok.com",
-      "title": "itsmoodylove",
-      "snippet": "The Scott Resort in Scottsdale AZ 📍 20 mins from Phoenix. perfect hotel with FREE Parking! #thescott #thescottresort #thescottresortaz #ScottsdaleAZ #scottsdale #visitscottsdale\n#VisitArizona #visitscottsdaleaz #arizonatravelguide #arizonaguide #scottsdaletravelguide\n#wheretostayinarizona  #wheretostayinscottsdale  #whattodoinscottsdale #thecanalclubaz",
+      "title": "ms.janettherealtor",
+      "snippet": "Thursday’s Local Spot \n\nDid somebody say staycation? 🌴\n\nIf you’re looking for a quick escape without leaving the Valley, The Scott Resort & Spa in Scottsdale is worth adding to your list. With its Cuban-inspired design, lush tropical grounds, relaxing pools, and on-site spa, it feels like a vacation the moment you arrive.\n\nWhether you’re planning a weekend getaway, a spa day, or just want to unwind, this is one of my favorite local spots to recharge.\n\nJanet Calderon Realtor | eXp Realty\n📲 (928)503-2700\n📧 janet.calderon@exprealty.com",
       "matchedTerms": []
     },
     {
@@ -146,6 +446,76 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@kennedy.ocean/video/7626627533089361183",
+      "domain": "tiktok.com",
+      "title": "kennedy.ocean",
+      "snippet": "Checked into the Scott Resort which has such a airy corridor and beautiful sun drenched views. #scottsdalearizona #scottsdale #hotel",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@itsbriagain__/video/7666905574424038669",
+      "domain": "tiktok.com",
+      "title": "itsbriagain__",
+      "snippet": "The PERFECT mix of Tropical, Retro, Luxury ✨😍 I’m obsessed with every single detail! Wait till you see my room!  #luxuryhotels #scottsdale #arizona #travel #traveltok @thescottresort",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@sea.dub.travels/video/7577255523620228382",
+      "domain": "tiktok.com",
+      "title": "sea.dub.travels",
+      "snippet": "My favorite oasis in #scottsdale 🏜️🌵🐪 #thescottresortandspa #hoteltour @thescottresort",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@ednygonzalez/video/7645923272294518047",
+      "domain": "tiktok.com",
+      "title": "ednygonzalez",
+      "snippet": "I was not expecting this Scottsdale hotel pool to feel like such a little escape 🏝️✨ Between the beach-style pool, palm trees, and relaxing resort vibes, The Scott honestly felt like a mini vacation without leaving Arizona.\n\nTap the location tag above my name to check availability and exclusive deals ❤️ #tiktokgovacationstays #ScottsdaleAZ #TheScottResort #ArizonaStaycation #scottsdalehotels",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@itsmoodylove/video/7524864125046934798",
+      "domain": "tiktok.com",
+      "title": "itsmoodylove",
+      "snippet": "The Scott Resort in Scottsdale AZ 📍 20 mins from Phoenix. perfect hotel with FREE Parking! #thescott #thescottresort #thescottresortaz #ScottsdaleAZ #scottsdale #visitscottsdale\n#VisitArizona #visitscottsdaleaz #arizonatravelguide #arizonaguide #scottsdaletravelguide\n#wheretostayinarizona  #wheretostayinscottsdale  #whattodoinscottsdale #thecanalclubaz",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@valleymoms/video/7639982468602400030",
+      "domain": "tiktok.com",
+      "title": "valleymoms",
+      "snippet": "The Scott Resort & Spa in Scottsdale feels like a tucked-away desert escape right in the middle of the city. Just minutes from Old Town, it has this laid-back, tropical-meets-desert vibe that instantly slows everything down the moment you walk in.\n\nPalm trees, soft music, and a lagoon-style pool make it feel more like a getaway than a hotel stay. The Canal Club is perfect for a casual cocktail or dinner with Cuban-inspired flavors, and the whole property has that relaxed, boutique feel that makes it easy to just stay and unwind.\n\nIt’s one of those places where you don’t really need a packed itinerary—just pool time, good food, and a slow morning coffee before heading out to explore Scottsdale.#tiktokgosummerstays #oldtownscottsdale #traveltok#vacationmode #fypシ゚viral",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@valleymoms/video/7640164026093210910",
+      "domain": "tiktok.com",
+      "title": "valleymoms",
+      "snippet": "Escaped to The Canal Club at The Scott Resort & Spa and it honestly feels like a tropical getaway hidden in the middle of Scottsdale 🌴✨ From the Havana-inspired atmosphere to the palm-lined courtyard, every detail makes this place feel relaxed, stylish, and full of character.\n\nThe cocktails, music, and warm desert evenings create the perfect vibe whether you’re here for brunch, dinner, or a night out with friends. One of my favorite spots in Old Town to slow down, enjoy the atmosphere, and soak in a little luxury.\n\nIf you’re visiting Scottsdale, The Canal Club is definitely worth adding to your list. 🍹☀️\n#tiktokgosummerstays #fypシ #oldtownscottsdale #arizonavacation#traveltok",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
       "url": "https://www.tiktok.com/@lasaidso/video/7647021577246215438",
       "domain": "tiktok.com",
       "title": "lasaidso",
@@ -156,60 +526,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@valleymoms/video/7641281557763853598",
+      "url": "https://www.tiktok.com/@activateconlosfsamosos/video/7660492918913879326",
       "domain": "tiktok.com",
-      "title": "valleymoms",
-      "snippet": "The Scott Resort & Spa is that rare Scottsdale stay that feels like a tropical escape dropped right into the desert. 🌴✨\n\nPalm trees, lagoon-style water, soft sand tones, and that effortless “vacation without leaving town” energy make it one of the most aesthetic spots in Arizona.\n\nMornings are calm and golden—coffee by the pool, quiet water, and slow desert light filtering through the palms. By afternoon, it shifts into full resort mode: cabanas, cocktails, music, and that laid-back luxury vibe that makes time feel slower.\n\nAnd at night, everything glows. The water reflects the lights, the air cools down, and it turns into one of those places you don’t really want to leave, even when you’re just steps from Old Town.\n\nThe Scott isn’t just a hotel stay… it’s a full reset in the middle of Scottsdale. ✨#tiktokgosummerstays #bucketlisttravel #fypシ゚viral #oldtownscottsdalearizonaplacestostay#girlsweekend",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@liliannagrijalva/video/7631127484469218574",
-      "domain": "tiktok.com",
-      "title": "liliannagrijalva",
-      "snippet": "The Scott Resort & Spa in Scottsdale, AZ has the beachy vibes you are looking for 🌴👙🍹✨ tap the location tag to see more details and book your stay 👀 \n\n#tiktokgorisingstarsl1 #arizona #az #scottsdale #thescottresortandspa",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@kasey828/video/7628798916724591903",
-      "domain": "tiktok.com",
-      "title": "kasey828",
-      "snippet": "Had the best long weekend getaway ✨ \n#scottsdale #scottsdalearizona #thescottresortandspa #travel #summer",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@local_living_unbound/video/7577173337021943054",
-      "domain": "tiktok.com",
-      "title": "local_living_unbound",
-      "snippet": "If you’re dreaming of a warm, design-forward winter getaway, The Scott Resort & Spa in Scottsdale needs to be on your list. ☀️🌴 This boutique desert-chic retreat blends Havana-inspired style with Arizona sunshine - making it one of the most aesthetic and cozy resorts to escape to from November through February. From poolside cabanas and fire pits to the iconic Canal Club (one of Scottsdale’s most photographed restaurants), every corner of The Scott feels curated and calming. Plus, you’re minutes from Old Town Scottsdale, Camelback Mountain, spas, restaurants, and all the best winter activities in the Sonoran Desert. Whether you're planning a couples’ trip, a solo wellness escape, or a girls’ weekend, this is the kind of resort that makes winter feel like a warm-weather reset. Save this for your travel list + share with someone who loves a boutique, design-forward stay! Want winter pricing, availability, and VIP booking perks at The Scott? Comment “SCOTT” and I’ll send everything straight to your DMs - or head to the link in my bio. #scottsdalearizona #thescottresort #scottsdalewintergetaway #warmwinterescape #boutiquehoteltravel LinkDM *141*",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@gazlovez/video/7562275001798282551",
-      "domain": "tiktok.com",
-      "title": "gazlovez",
-      "snippet": "couldn’t get classier & cozier than this 🤎 one of my absolute favourite hangout places!! 10/10 recommend\n\n📍The Canal Club, The Scott Resort & Spa, Scottsdale, Arizona\n\n@Scene Select #thingstodoinaz #thescott #aestheticvibes #boutiquehotel #oldtownscottsdale",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@peacefv1/video/7521617479328632119",
-      "domain": "tiktok.com",
-      "title": "peacefv1",
-      "snippet": "the scott resort and spa. scottsdale, az.\n#fyp #resort #spa #resortandspa #scottsdale #staycation",
+      "title": "activateconlosfsamosos",
+      "snippet": "#tiktokgogrow #tiktokgogrow #unitedstates #The Scott Resort & Spa",
       "matchedTerms": []
     },
     {
@@ -226,6 +546,16 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
+      "url": "https://www.tiktok.com/@deanna.hostetler0/video/7582630580748094751",
+      "domain": "tiktok.com",
+      "title": "deanna.hostetler0",
+      "snippet": "Again, The Scott Resort + Spa is a stunner. 😍 @thescottresort #vacationing #girlstrip #scottsdalearizona #Scottsdale",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
       "url": "https://www.tiktok.com/@roam365/video/7506433516247239942",
       "domain": "tiktok.com",
       "title": "roam365",
@@ -236,20 +566,10 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@mommspiration/video/7334188207367671086",
+      "url": "https://www.tiktok.com/@local_living_unbound/video/7577173337021943054",
       "domain": "tiktok.com",
-      "title": "mommspiration",
-      "snippet": "and you don’t have to break the bank. When you book through @hopper and use my code: MOMMSPIRATION, you’ll get a discount on your hotel booking. Hands down one of my favorite hotels in Scottsdale #scottsdale #scottsdale #scottsdaleaz #scottsdaleboutique #scottsdalehotels #thescottresortandspa",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@recreating.angela/video/7604561976563453197",
-      "domain": "tiktok.com",
-      "title": "recreating.angela",
-      "snippet": "#phoenix #fyp #canalclub #thescottresortandspa",
+      "title": "local_living_unbound",
+      "snippet": "If you’re dreaming of a warm, design-forward winter getaway, The Scott Resort & Spa in Scottsdale needs to be on your list. ☀️🌴 This boutique desert-chic retreat blends Havana-inspired style with Arizona sunshine - making it one of the most aesthetic and cozy resorts to escape to from November through February. From poolside cabanas and fire pits to the iconic Canal Club (one of Scottsdale’s most photographed restaurants), every corner of The Scott feels curated and calming. Plus, you’re minutes from Old Town Scottsdale, Camelback Mountain, spas, restaurants, and all the best winter activities in the Sonoran Desert. Whether you're planning a couples’ trip, a solo wellness escape, or a girls’ weekend, this is the kind of resort that makes winter feel like a warm-weather reset. Save this for your travel list + share with someone who loves a boutique, design-forward stay! Want winter pricing, availability, and VIP booking perks at The Scott? Comment “SCOTT” and I’ll send everything straight to your DMs - or head to the link in my bio. #scottsdalearizona #thescottresort #scottsdalewintergetaway #warmwinterescape #boutiquehoteltravel LinkDM *141*",
       "matchedTerms": []
     },
     {
@@ -266,43 +586,323 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@deanna.hostetler0/video/7582630580748094751",
+      "url": "https://www.tiktok.com/@marykay_w/video/7624996947102911758",
       "domain": "tiktok.com",
-      "title": "deanna.hostetler0",
-      "snippet": "Again, The Scott Resort + Spa is a stunner. 😍 @thescottresort #vacationing #girlstrip #scottsdalearizona #Scottsdale",
+      "title": "marykay_w",
+      "snippet": "one of my favorite hidden gems in Scottsdale! so beautiful & located right in the heart of town 🌵 love to stop by for a quick lunch with my friends 🤍 #scottsdale #traveltips #instagraminspo",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@roam365/video/7473685327039712518",
+      "url": "https://www.tiktok.com/@mommspiration/video/7334188207367671086",
       "domain": "tiktok.com",
-      "title": "roam365",
-      "snippet": "we cannot get enough of this place 🫶🏻☀️ we absolutely love The Scott. We recommend checking it out before it gets extra hot this summer",
+      "title": "mommspiration",
+      "snippet": "and you don’t have to break the bank. When you book through @hopper and use my code: MOMMSPIRATION, you’ll get a discount on your hotel booking. Hands down one of my favorite hotels in Scottsdale #scottsdale #scottsdale #scottsdaleaz #scottsdaleboutique #scottsdalehotels #thescottresortandspa",
       "matchedTerms": []
     },
     {
-      "sourceId": "tiktok",
+      "sourceId": "facebook",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@_healthyhoney/video/7453677637056220459",
-      "domain": "tiktok.com",
-      "title": "_healthyhoney",
-      "snippet": "#pregnancytiktok #pregnancy #secondtrimester #pregnancyafterloss #pregnancyjourney #rainbowbaby #babymoon",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02PBeYm6YAbNEqUWnvNRqMrGHRoegF9XGrqWU6njbLqH45CyMbeaBzra7JwjiK5ottl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Tucked within The Scott's desert oasis, La Vidorra Spa offers a tranquil escape complete with massages, facials, body treatments, and wellness experiences designed to leave you feeling restored from the inside out.",
       "matchedTerms": []
     },
     {
-      "sourceId": "tiktok",
+      "sourceId": "facebook",
       "lane": "social",
       "query": "The Scott Resort & Spa",
-      "url": "https://www.tiktok.com/@join_jules/video/7350418788011101483",
-      "domain": "tiktok.com",
-      "title": "join_jules",
-      "snippet": "Perfect desert getaway in Scottsdale, Arizona #thescott #scottsdale #arizona",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02gAwaRZkrLoJxcepmwecrDWv6HF5rVbhyb87CeHfgWFVynwCMSufrDoZunokBY3ivl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Some things never go out of style. Palm-lined pools, warm desert air, and afternoons spent doing absolutely nothing.\n\n@adamcgil",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02DLNPshszT7ih3x1rhtSqzJbvNJL4eY3g4JvNy4RVwSDtuuFafCV3nKMdrGnffm6Kl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Current chapter: relaxation.\n\n📸 @citruscoaststudios",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02fDgTHnDnkGYqRQuRULPkJh3YLEEqZx4rseDtSfBsSHVhP3bXCWKAPm7tjFQx461Kl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "A nod to another era.\n\n@emmamorem",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02UjP34vM7jKXYwEEVhrQL8oq7d9sHefjR3UpW49DoEqrbM7Q4FtYX9yjWGrW4HmYRl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "“Inspiration finds me when the night is still and the stars appear in the desert sky.”\n― Nancy B. Urbach",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02354kCxpVuZPgHYyoGdXgsq62PR4acNAuRNubRYNCFQWTMSmPVzoWJ4DXVSpUJoA5l",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "From the moment you arrive, The Scott invites you to slow down. Check in, grab a drink, and settle into a stay inspired by the romance of Old Havana and the beauty of the Sonoran Desert.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02P1GmxcCUZKwkAnH9DGipq9e2GY2jZojo2Wn762RPnkZeSEGCPbRR6PpRwsL4GqUcl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Parked in another era.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02aFUZWB7ecyAqrbJKK56ccJDXMdqCcZmcaoDoYea2egZPLZ5Pc19MhjZFqPcQG37zl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Thoughtfully designed and ready to welcome you to @thecanalclubaz. \n\n📸 @seeminglyordinary.cs",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid0iB9DCRhDZN3RPME4EYTTpA3JrvPEqVbZTK6DwRdTicVY8pHFCofui3ueS9xqKaE5l",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Settle into shaded comfort with a private cabana by the pool. Order a drink, stretch out, and let the desert day unfold at its own pace.⁠\n⁠\n⁠\n⁠\n📸 @brennabowen_",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid0gr9atJy1DZK9dNpg9SUa9iKAoUEoBZyZUrFRfwcJQytmSpWA6vNbewwb5mzCFk7Yl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "\"Oh sunshine, the most precious gift to be found on earth.\" - Roman Payne",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02qn2G7NfDxHAZsoehYcLQBPtaWPU6SDYrKEt4BE8J4V51jSYy7b89b7rfWyp6BoQYl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Your Scottsdale oasis awaits.⁠\n⁠\n⁠\n📸 @clarkdmiller",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid0rWcesduVTCy69btAEVXwFC6Vg5tJkcCZfJqsLWwiPydLBQP3q2cuhMnYKXMUcHCnl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Light and quiet moments.⁠\n⁠\n⁠\n📸 @arielraee",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02zrCNTpyNqm4BkdHBWDgxPXt7X5Mk5KQKM7fWcbS8jum5YjdW3f78mNJA912pJEDyl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "The Scott offers the perfect backdrop for moments worth remembering, from engagements to wedding weekends and everything in between.⁠\n⁠\n⁠\n@sightsphotofilm",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02K85gchwCFuRBzRvoknPHuUTA1DRiCUbQ4xhYqCH2CigiuuBqEuu5E1MevfxbFmxSl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Here’s what’s happening at The Canal Club.🌴",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid0JenCPG9hbfTT9xDFfsguCUXSuhswBSJqPuWSBsT7pFHF9EnmBRWQR9XcYTTp4crVl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "As the sky shifts from pink to violet behind the palms, the desert reminds you why evenings here feel so unforgettable.⁠\n⁠\n⁠\n⁠\n@clarkdmiller",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid022C4gSKMkMirXhxx1FWtPUuJV27u4sJMHw8DGDPaHUzrraKAci2qReizf8YpBtknBl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "A thoughtful touch waiting in your room.⁠\n⁠\n⁠\n📸 @arielraee",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02XTxGuCDsip3VDY3QytZw51dKwJTUcvo22Cjh7qoEmC3f9XxeW3vy95FWJG9Cj5fLl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Pool days are better together. 🌊⁠\n⁠\n⁠\n📸 @brennabowen_",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid0FArK1mHWt4NCzSYXYUpAbdfcE3ZnD8Yo7Y9PYwAQRiXarrXY3cD85ZAwvFRtAHesl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Between pool dips and patio dinners, carve out time to slow down.⁠\n⁠\n⁠\n@adamcgil",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid024wjG6cnFdr64wUordNj646ee5KXCcDqtYX81N3qRkGQPuXaQYiR1esHFsdGAdWTpl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "“We travel for romance, we travel for architecture, and we travel to be lost.” – Ray Bradbury",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid05CamdQKmKxkaGmGMjANNKPsKuSu7xnA5aQBdbKzz1wNcUAsahf1XoExM5SjgzTk1l",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Spring break, upgraded.⁠\n⁠\n⁠\n⁠\n📸 @chefkostasmagoulas",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid0251SeYk5h3Kwrh9uEaSswdpMZ9r8wGbx6kTEV96fS3JrcShVm8oUm4pJ1h7oXvXqgl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Whether you're balancing out spring break indulgences or just keeping it light, fresh bottles from @pressedjuicery are available at The Canal Club—because wellness pairs well with sunshine.⁠\n⁠\n⁠\n⁠\n📸 @malibu.west",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02DFZh2nfubr3bsKfqgppbCZ8qntvW7KyTJZo8BGoSmKFYhJJZiGevi3YDykxhCTsBl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Weddings at The Scott blend romance, celebration, and the effortless beauty of a true Scottsdale oasis.⁠\n⁠\n⁠\n⁠\n📸 @clarkdmiller",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid036nRhdQFuDpAccw31CkZzBaMgRu6L2gCpdjAVKPTt4x12wNnaniE3m6UEqyJUda6ql",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Beneath towering palms and bright Scottsdale skies.⁠\n⁠\n⁠\n⁠\n@seeminglyordinary",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02xPTb8wXwTj9Dnu2xo1712RdBoRVJFewYXkJ5f9wCjE865XADoFWFH7dmCtMxvSoul",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Start your morning with a refreshing shower stocked with @lather bath essentials—an elevated detail that turns everyday routines into part of your desert oasis escape.⁠\n⁠\n⁠\n@seeminglyordinary",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid0CQrjCrbgpVP9U1xjUnbSjz1ZjwNPjJeVmFttnXD1SSJEn9GnsQ1wUNfUWqENY8Edl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "The tables are set, the palms are swaying, and Old Town Scottsdale is just steps away. Spend your evenings on the patio at The Canal Club, where Havana-inspired flavors meet warm desert evenings.⁠\n⁠\n⁠\n📸 @chefkostasmagoulas",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid024VC5Wc27t1D2eQKjdZ66hYim9eS5QzthseUQiS4PmisGVJ8GWedckbVitHcAsCq7l",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Wine in hand, desert air on your skin, and nowhere to rush off to.⁠\n⁠\n⁠\n📸 @adamgcil",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid032B5dxWJiQwij9WWPFMZc78zenFF9JrhyN3eko5QrreZ9oH7EwatdaPMaYtt38WjQl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "A chilled cocktail, a good book, and the desert sun overhead. ☀️⁠\n⁠\n⁠\n⁠\n⁠\n@seeminglyordinary.cs",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid024YMmcUuaobsXTPq9stmeVPi6Mhd9Z84AqcPhRYwotkUJ9syx9YeuDKh3rpPAkkGtl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "“Sometimes it takes a wrong turn to get you to the right place.” — Mandy Hale",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid02WHG6Yx8jcbk8ENP3wkjKzWA2vY2NTzaJd8DsGifmxE2a2hEgMXKEwCqg3VDJaKFnl",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "Sunset hits different on our shoreline.⁠\n⁠\n⁠\n@seeminglyordinary",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Scott Resort & Spa",
+      "url": "https://www.facebook.com/TheScottResort/posts/pfbid036GW8jsTer5BrSKETW468yX4PBiwqHQsYAPcvEsWAPuzVnZnS4eguP9DCtnRwrWeel",
+      "domain": "facebook.com",
+      "title": "TheScottResort",
+      "snippet": "\"Stuff your eyes with wonder.\" - Ray Bradbury",
       "matchedTerms": []
     }
   ],
-  "queriesRun": 30,
+  "queriesRun": 90,
   "packsRun": 1
 }
