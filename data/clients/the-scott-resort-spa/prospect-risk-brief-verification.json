@@ -2,7 +2,7 @@
   "schemaVersion": "V1",
   "productId": "prospect_risk_brief",
   "generatorVersion": "V1",
-  "generatedAt": "2026-07-27T23:15:00.000Z",
+  "generatedAt": "2026-07-27T23:35:00.000Z",
   "property": "The Scott Resort & Spa",
   "status": "ready",
   "reportSha256": "58f7c8c6605aae5ef97ad2843f0d9fce6e705fe97da22b06ec1973128d015832",
@@ -44,6 +44,16 @@
       "id": "full_source_coverage",
       "pass": true,
       "detail": "all 15 canonical sources carry an explicit attempt state"
+    },
+    {
+      "id": "property_surfaces_resolved",
+      "pass": true,
+      "detail": "all 18 property surfaces resolved to found or searched-absent"
+    },
+    {
+      "id": "found_surfaces_captured",
+      "pass": true,
+      "detail": "every discovered public-corpus surface has a real capture attempt"
     }
   ]
 }

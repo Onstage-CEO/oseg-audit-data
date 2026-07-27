@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "V1",
+  "property": "The Scott Resort & Spa",
+  "generatedAt": "2026-07-27T23:30:00.000Z",
+  "surfaces": [
+    {
+      "id": "google",
+      "label": "Google Maps listing",
+      "kind": "review_platform",
+      "status": "found",
+      "url": "https://www.google.com/maps/place/The+Scott+Resort+%26+Spa+(formerly+FireSky+Resort)/@33.5087674,-111.9257769,15z/data=!4m5!3m4!1s0x0:0x6997d003b0e8dcaf!8m2!3d33.5087674!4d-111.9257769",
+      "publicCorpus": true,
+      "evidence": "linked from https://www.thescottresort.com/",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "tripadvisor",
+      "label": "TripAdvisor listing",
+      "kind": "review_platform",
+      "status": "found",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g31350-d115494-Reviews-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "publicCorpus": true,
+      "evidence": "configured on audit.json client block",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "yelp",
+      "label": "Yelp listing",
+      "kind": "review_platform",
+      "status": "found",
+      "url": "https://www.yelp.com/biz/the-scott-resort-and-spa-scottsdale-4",
+      "publicCorpus": true,
+      "evidence": "configured on audit.json client block",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "booking",
+      "label": "Booking.com listing",
+      "kind": "review_platform",
+      "status": "found",
+      "url": "https://www.booking.com/hotel/us/firesky-resort-spa.html",
+      "publicCorpus": true,
+      "evidence": "configured on audit.json client block",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "expedia",
+      "label": "Expedia listing",
+      "kind": "review_platform",
+      "status": "found",
+      "url": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
+      "publicCorpus": true,
+      "evidence": "configured on audit.json client block",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook page",
+      "kind": "social_profile",
+      "status": "found",
+      "url": "https://www.facebook.com/TheScottResort",
+      "publicCorpus": true,
+      "evidence": "configured on audit.json client block",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram profile",
+      "kind": "social_profile",
+      "status": "found",
+      "url": "https://www.instagram.com/thescottresort/",
+      "publicCorpus": true,
+      "evidence": "configured on audit.json client block",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok profile",
+      "kind": "social_profile",
+      "status": "searched_absent",
+      "publicCorpus": true,
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube channel",
+      "kind": "social_profile",
+      "status": "searched_absent",
+      "publicCorpus": true,
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "x_twitter",
+      "label": "X / Twitter profile",
+      "kind": "social_profile",
+      "status": "found",
+      "url": "https://twitter.com/TheScottResort",
+      "publicCorpus": false,
+      "evidence": "linked from https://www.thescottresort.com/",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn page",
+      "kind": "social_profile",
+      "status": "found",
+      "url": "https://www.linkedin.com/company/the-scott-resort-&-spa",
+      "publicCorpus": false,
+      "evidence": "verified outside the property site (operator-supplied)",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "opentable",
+      "label": "OpenTable reservations",
+      "kind": "reservation_platform",
+      "status": "searched_absent",
+      "publicCorpus": true,
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "tock",
+      "label": "Tock reservations",
+      "kind": "reservation_platform",
+      "status": "found",
+      "url": "https://www.exploretock.com/canal-club-at-the-scott",
+      "publicCorpus": false,
+      "evidence": "linked from https://www.thescottresort.com/dining/",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "resy",
+      "label": "Resy reservations",
+      "kind": "reservation_platform",
+      "status": "searched_absent",
+      "publicCorpus": false,
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "sevenrooms",
+      "label": "SevenRooms reservations",
+      "kind": "reservation_platform",
+      "status": "searched_absent",
+      "publicCorpus": false,
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "toast_tables",
+      "label": "Toast Tables reservations",
+      "kind": "reservation_platform",
+      "status": "searched_absent",
+      "publicCorpus": false,
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "property_site",
+      "label": "Property website",
+      "kind": "property_owned",
+      "status": "found",
+      "url": "https://www.thescottresort.com/",
+      "publicCorpus": false,
+      "evidence": "configured on audit.json client block",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    },
+    {
+      "id": "events_page",
+      "label": "Property events / what-is-on page",
+      "kind": "property_owned",
+      "status": "found",
+      "url": "https://www.thescottresort.com/whats-on/",
+      "publicCorpus": false,
+      "evidence": "linked from https://www.thescottresort.com/",
+      "checkedAt": "2026-07-27T23:30:00.000Z"
+    }
+  ]
+}
