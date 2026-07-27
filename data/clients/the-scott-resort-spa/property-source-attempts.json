@@ -83,35 +83,41 @@
     {
       "source": "facebook",
       "mechanism": "Apify social capture (property public page URL)",
-      "result": "not_checked",
+      "result": "provider_error",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Correction 2026-07-27 grounded in clean-room-extra-sources.log + extra-sources-status.json: the capture RAN and returned 0 posts while Apify was degraded by the account-wide $70 monthly cap (APIFY DEGRADED flag). Previously mis-recorded as not_checked because the runner wrote no per-source attempt rows.",
+      "attemptedAt": "2026-07-19T00:58:30.333Z",
+      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
     },
     {
       "source": "instagram",
       "mechanism": "Apify social capture (property profile/hashtag/keyword)",
-      "result": "not_checked",
+      "result": "provider_error",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Correction 2026-07-27 grounded in clean-room-extra-sources.log + extra-sources-status.json: the capture RAN and returned 0 posts while Apify was degraded by the account-wide $70 monthly cap (APIFY DEGRADED flag). Previously mis-recorded as not_checked because the runner wrote no per-source attempt rows.",
+      "attemptedAt": "2026-07-19T00:58:30.333Z",
+      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
     },
     {
       "source": "tiktok",
       "mechanism": "Apify social capture (property hashtag/keyword)",
-      "result": "not_checked",
+      "result": "provider_error",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Correction 2026-07-27 grounded in clean-room-extra-sources.log + extra-sources-status.json: the capture RAN and returned 0 posts while Apify was degraded by the account-wide $70 monthly cap (APIFY DEGRADED flag). Previously mis-recorded as not_checked because the runner wrote no per-source attempt rows.",
+      "attemptedAt": "2026-07-19T00:58:30.333Z",
+      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
     },
     {
       "source": "youtube",
