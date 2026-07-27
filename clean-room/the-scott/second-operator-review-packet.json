@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "V1",
+  "trialId": "clean-room-the-scott-v1",
+  "createdAt": "2026-07-19T04:20:00.000Z",
+  "purpose": "Second-operator reproduction and guest-review evidence adjudication",
+  "executionBranch": "trial/the-scott-execution-v1",
+  "independenceRule": "The second operator must inspect the cited raw capture record and make an independent promote/reject/defer decision without relying on the proposed thesis.",
+  "noNewCollection": true,
+  "authority": {
+    "newPaidApi": false,
+    "paidLlm": false,
+    "export": false,
+    "send": false,
+    "deploy": false,
+    "productionPinChange": false
+  },
+  "inputs": {
+    "audit": "data/clients/the-scott-resort-spa/audit.json",
+    "discoveryWorklist": "data/clients/the-scott-resort-spa/entertainment-discovery.json",
+    "bookingRaw": "data/clients/the-scott-resort-spa/captures-raw/booking-2026-07-19T00-46-11-061Z.json",
+    "googleRaw": "data/clients/the-scott-resort-spa/captures-raw/google-apify-2026-07-19T00-46-11-061Z.json",
+    "tripadvisorRaw": "data/clients/the-scott-resort-spa/captures-raw/dataforseo-tripadvisor-2026-07-19T00-56-27-774Z.json"
+  },
+  "candidates": [
+    {
+      "candidateId": "cand-booking-10sxi3t",
+      "platformId": "booking",
+      "sourceUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-10sxi3t",
+      "rawSelector": {
+        "field": "sourceUrl",
+        "value": "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-10sxi3t"
+      },
+      "capturedRating": "2/10",
+      "capturedAtOrReviewTimestamp": "2026-03-05T13:13:32.000Z",
+      "excerpt": "the music VERY loud. My family and I had a difficult time having a conversation while dining.",
+      "proposedThemes": [
+        "noise_atmosphere"
+      ],
+      "currentWindowEligibleIfAccepted": true,
+      "reviewQuestions": [
+        "Does the raw record exactly match this property and URL?",
+        "Does the excerpt preserve meaning and distinguish restaurant music from resort-wide entertainment?",
+        "Should it be promoted, rejected, or deferred?"
+      ],
+      "ageBand": "current_12m",
+      "author": "Jane"
+    },
+    {
+      "candidateId": "cand-google-house-music",
+      "platformId": "google",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOm9vaFZzRXVBU0dCT0hoWjN4aTkzX0E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB",
+      "rawSelector": {
+        "containsText": "House music pounded until 10:30pm"
+      },
+      "capturedRating": "1/5",
+      "capturedAtOrReviewTimestamp": "2025-11-03T19:22:57.479Z",
+      "excerpt": "House music pounded until 10:30pm.",
+      "proposedThemes": [
+        "noise_atmosphere"
+      ],
+      "currentWindowEligibleIfAccepted": true,
+      "reviewQuestions": [
+        "Resolve the exact raw record and timestamp.",
+        "Confirm whether this describes a hotel-controlled wedding/event or an adjacent-room party, and do not generalize beyond the record.",
+        "Should it be promoted, rejected, or deferred?"
+      ],
+      "ageBand": "current_12m",
+      "author": "Eric Crane"
+    },
+    {
+      "candidateId": "cand-tripadvisor-r974728954",
+      "platformId": "tripadvisor",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r974728954-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "rawSelector": {
+        "field": "sourceUrl",
+        "value": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r974728954-The_Scott_Resort_Spa-Scottsdale_Arizona.html"
+      },
+      "capturedRating": "1/5",
+      "capturedAtOrReviewTimestamp": "2024-10-20 00:00:00 +00:00",
+      "excerpt": "private event including a DJ playing club music",
+      "proposedThemes": [
+        "noise_atmosphere",
+        "pool_beach_daytime"
+      ],
+      "currentWindowEligibleIfAccepted": false,
+      "reviewQuestions": [
+        "Resolve the raw rating and date.",
+        "Confirm the review is for The Scott and not provider keyword contamination.",
+        "Should it be promoted, rejected, or deferred?"
+      ],
+      "ageBand": "corroboration_12_to_24m",
+      "author": "Nick G"
+    },
+    {
+      "candidateId": "cand-google-pool-bar-music",
+      "platformId": "google",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOlphc2d5WUg0ZW1VXzNDUkR3Z0tuMkE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB",
+      "rawSelector": {
+        "field": "sourceUrl",
+        "value": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOlphc2d5WUg0ZW1VXzNDUkR3Z0tuMkE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB"
+      },
+      "author": "Jonathan Swann",
+      "capturedRating": "1/5",
+      "capturedAtOrReviewTimestamp": "2025-09-20T14:46:14.544Z",
+      "ageBand": "current_12m",
+      "excerpt": "paper thin walls with noise and loud music from the outside pool bar",
+      "proposedThemes": [
+        "noise_atmosphere"
+      ],
+      "currentWindowEligibleIfAccepted": true,
+      "reviewQuestions": [
+        "Confirm exact property identity and raw record.",
+        "Classify this as venue/house-audio noise, not evidence of entertainment demand or program quality.",
+        "Should it be promoted, rejected, or deferred?"
+      ]
+    }
+  ],
+  "knownNoiseControls": [
+    {
+      "pattern": "dj inside adjacent",
+      "requiredDisposition": "reject_match",
+      "reason": "substring false positive fixed by engine PR #343"
+    },
+    {
+      "pattern": "show inside shower or showed",
+      "requiredDisposition": "reject_match",
+      "reason": "substring false positive fixed by engine PR #343"
+    },
+    {
+      "pattern": "generic vibe with no entertainment/program context",
+      "requiredDisposition": "context_only_or_reject",
+      "reason": "atmosphere language is not automatically entertainment evidence"
+    },
+    {
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r953492403-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "requiredDisposition": "reject_or_escalate",
+      "reason": "text discusses a comedian named Tony Scott and appears contextually unrelated despite provider URL; possible capture contamination"
+    }
+  ],
+  "operatorProcedure": [
+    "Record operator identity, start time, clean checkout SHA, and engine SHA.",
+    "Run only read-only local inspection; do not call providers or rerun capture.",
+    "Adjudicate all 12 corrected-worklist candidates; locate each by raw selector and confirm exact property identity, URL, rating scale, timestamp, and OSEG scope.",
+    "Record promote, reject, or defer plus rationale for every candidate.",
+    "For promoted evidence, preserve a short exact excerpt, source URL, rating, date, theme, and consulting limitation.",
+    "Run the strengthened verifier and record the unchanged machine blocker set.",
+    "Commit only the completed reproduction result; do not export, send, deploy, or change production pins."
+  ],
+  "requiredOutput": {
+    "path": "clean-room/the-scott/second-operator-result.json",
+    "fields": [
+      "operator",
+      "independenceAttestation",
+      "startedAt",
+      "completedAt",
+      "executionBranchHeadSha",
+      "engineSha",
+      "candidateDecisions",
+      "promotedEvidenceIds",
+      "rejectedCandidateIds",
+      "deferredCandidateIds",
+      "verifierStatus",
+      "blockerIds",
+      "paidCalls",
+      "exports",
+      "sends",
+      "deployments",
+      "worklistCandidateCount",
+      "worklistDecisionsCompleted"
+    ],
+    "allowedDecisionValues": [
+      "promote",
+      "reject",
+      "defer"
+    ],
+    "minimumCompletedCandidateDecisions": 12
+  },
+  "completionRule": "Reproduction is complete only when a distinct human operator adjudicates all 12 corrected-worklist candidates, reruns verification, and commits the signed result. Packet creation and curated-candidate review alone are insufficient.",
+  "verifierEngineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
+  "discoveryEngineSha": "cec50dcf02da57cca333fc87e031b7128e34b340",
+  "correctedWorklist": {
+    "path": "data/clients/the-scott-resort-spa/entertainment-discovery.json",
+    "regenerationLedger": "clean-room/the-scott/discovery-regeneration.json",
+    "candidateCount": 12,
+    "ageBandCounts": {
+      "current_12m": 12,
+      "corroboration_12_to_24m": 0,
+      "historical_over_24m": 0,
+      "unknown": 0
+    },
+    "requiredDecisionForEveryCandidate": true,
+    "interpretation": "The queue is recency-first. Matching only makes a record a candidate; it does not establish property relevance, OSEG scope, or a client-facing claim."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "reportVersion": "V1",
+  "generatedAt": "2026-07-19T03:51:36.729Z",
+  "property": {
+    "propertyName": "The Scott Resort & Spa",
+    "location": "Scottsdale, Arizona"
+  },
+  "sources": [
+    {
+      "platformId": "google",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify google: captured 1664 new, skipped 0 dup(s).; 989 rating-only (no text)",
+      "recordsAdded": 1664,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 1664,
+        "requestedDepth": 2000,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "tripadvisor",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "collected 1215 review(s); 1215 available",
+      "recordsAdded": 1215,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 1215,
+        "availableReviews": 1215,
+        "requestedDepth": 2000,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "booking",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify booking: captured 122 new, skipped 0 dup(s).; 122 available",
+      "recordsAdded": 122,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 122,
+        "availableReviews": 122,
+        "requestedDepth": 2000,
+        "mode": "deep"
+      }
+    },
+    {
+      "platformId": "reddit",
+      "mechanism": "official_api",
+      "status": "needs_key",
+      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": []
+    },
+    {
+      "platformId": "youtube",
+      "mechanism": "official_api",
+      "status": "ok",
+      "message": "captured 87 new, skipped 0 duplicate(s); 1873 total in archive.",
+      "recordsAdded": 87,
+      "duplicatesSkipped": 0,
+      "queriesRun": 3,
+      "queriesFailed": 0,
+      "truncatedQueries": [
+        "The Scott Resort & Spa walkthrough",
+        "The Scott Resort & Spa resort tour",
+        "The Scott Resort & Spa review vlog"
+      ]
+    },
+    {
+      "platformId": "expedia",
+      "mechanism": "aggregator",
+      "status": "partial",
+      "message": "import-apify-run expedia: quarantined 876 provider item(s) from ABORTED; not admitted to analysis.",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 0,
+        "mode": "deep",
+        "actualCostUsd": 2.1965,
+        "costStatus": "verified",
+        "providerResultCount": 876,
+        "analyzableTextCount": 480,
+        "ratingOnlyCount": 396,
+        "completeness": "partial",
+        "quarantined": true,
+        "providerRunId": "4DWzkgi0DL7QUb4G8",
+        "providerDatasetId": "pXgadBfqqHZ0L8wDv",
+        "providerTerminalState": "ABORTED"
+      }
+    }
+  ],
+  "spend": {
+    "knownActualCostUsd": 2.1965,
+    "externallyVerifiedApifySubtotalUsd": 3.623,
+    "costStatus": "unavailable",
+    "machineVerifiedSources": [
+      "expedia"
+    ],
+    "externallyVerifiedSources": [
+      "google",
+      "booking",
+      "expedia"
+    ],
+    "sourcesTracked": [
+      "expedia"
+    ],
+    "sourcesUnavailable": [
+      "dataforseo-tripadvisor",
+      "dataforseo-web-discovery",
+      "dataforseo-venue-tripadvisor"
+    ],
+    "additionalPaidStageBlocked": true,
+    "reason": "This historical trial predates DataForSEO task-cost persistence. Expedia API cost is machine-verified and all Apify run-page costs are externally reconciled, but DataForSEO actual spend cannot be reconstructed from the retained artifacts. Additional paid stages stay blocked."
+  }
+}

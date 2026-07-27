@@ -1,0 +1,267 @@
+{
+  "auditName": "The Scott Resort & Spa",
+  "version": "V0.1 — Working Draft",
+  "auditPath": "/home/runner/work/oseg-audit-data/oseg-audit-data/data/clients/the-scott-resort-spa/audit.json",
+  "status": "not_ready",
+  "exitCode": 1,
+  "summary": {
+    "okCount": 10,
+    "warningCount": 1,
+    "failCount": 1
+  },
+  "checks": [
+    {
+      "id": "schema",
+      "label": "Schema validation",
+      "status": "ok",
+      "messages": [
+        "audit JSON parsed and conforms to AuditSchema"
+      ]
+    },
+    {
+      "id": "source_coverage",
+      "label": "Required research source coverage",
+      "status": "ok",
+      "messages": [
+        "6 covered, 2 skipped with reason",
+        "skipped: reddit (blocked) — Source could not be executed with the configured credentials. Reddit capture is not configured. S...",
+        "skipped: expedia (blocked) — Provider output is explicitly partial/quarantined and excluded from scoring. import-apify-run exp..."
+      ]
+    },
+    {
+      "id": "lane_coverage",
+      "label": "Source lane coverage (registry)",
+      "status": "ok",
+      "messages": [
+        "Review platforms: covered by google",
+        "OTA review platforms: covered by booking",
+        "Community / social discussion: explicitly skipped: reddit (blocked) — Source could not be executed with the configured credentials. Reddit capture is not confi…",
+        "Video / creator content: covered by youtube",
+        "Travel blogs / editorial media: covered by blogs",
+        "Aerial / maps context: covered by aerial_satellite"
+      ]
+    },
+    {
+      "id": "discovery_plan",
+      "label": "Discovery plan generated",
+      "status": "ok",
+      "messages": [
+        "research-plan.json present next to the audit"
+      ]
+    },
+    {
+      "id": "keyword_coverage",
+      "label": "Keyword group coverage",
+      "status": "warn",
+      "messages": [
+        "6 of 8 taxonomy groups have keywords searched",
+        "untouched groups: segment, seasonal"
+      ]
+    },
+    {
+      "id": "audit_content",
+      "label": "Analytical substance",
+      "status": "fail",
+      "messages": [
+        "missing ship-gating audit content: at least one live_verified guest-review evidence record",
+        "source coverage alone cannot make an audit READY; add supported analysis and provenance-bearing evidence"
+      ]
+    },
+    {
+      "id": "evidence_integrity",
+      "label": "Evidence integrity",
+      "status": "ok",
+      "messages": [
+        "3 live-verified, 0 inference, 0 unverified"
+      ]
+    },
+    {
+      "id": "provenance_url",
+      "label": "Provenance URL shape (offline)",
+      "status": "ok",
+      "messages": [
+        "all 3 live_verified sourceUrl(s) are well-formed, non-placeholder absolute http(s) URLs"
+      ]
+    },
+    {
+      "id": "capture_archive",
+      "label": "Capture-archive provenance cross-check",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence claims a capturePath (nothing to cross-check); archive has 0 capture localPath(s)"
+      ]
+    },
+    {
+      "id": "evidence_freshness",
+      "label": "Evidence freshness",
+      "status": "ok",
+      "messages": [
+        "no live-verified evidence could be dated against the capture archive (nothing to age)",
+        "3 live-verified record(s) could not be dated (age unknown — not failed)"
+      ]
+    },
+    {
+      "id": "teaser_generation",
+      "label": "Teaser generation",
+      "status": "ok",
+      "messages": [
+        "generated 8887 chars in memory (not written)"
+      ]
+    },
+    {
+      "id": "teaser_firewall",
+      "label": "Teaser Tier-A firewall lint (with per-client terms)",
+      "status": "ok",
+      "messages": [
+        "131 lines scanned, 0 forbidden-term hits",
+        "client-specific forbidden terms applied: 0"
+      ]
+    }
+  ],
+  "sourceCoverage": {
+    "coveredCount": 6,
+    "skippedCount": 2,
+    "missingRequired": [],
+    "coveredPlatforms": [
+      "google",
+      "tripadvisor",
+      "booking",
+      "youtube",
+      "blogs",
+      "aerial_satellite"
+    ],
+    "skipped": [
+      {
+        "platformId": "reddit",
+        "kind": "blocked",
+        "reason": "Source could not be executed with the configured credentials. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
+      },
+      {
+        "platformId": "expedia",
+        "kind": "blocked",
+        "reason": "Provider output is explicitly partial/quarantined and excluded from scoring. import-apify-run expedia: quarantined 876 provider item(s) from ABORTED; not admitted to analysis."
+      }
+    ]
+  },
+  "keywordCoverage": {
+    "totalGroups": 8,
+    "groupsWithKeywords": 6,
+    "untouchedGroups": [
+      "segment",
+      "seasonal"
+    ],
+    "keywordsSearched": 12,
+    "keywordsInTaxonomy": 45
+  },
+  "evidenceIntegrity": {
+    "total": 3,
+    "liveVerified": 3,
+    "inference": 0,
+    "unverified": 0
+  },
+  "provenanceUrl": {
+    "liveVerifiedChecked": 3,
+    "liveVerifiedInvalid": [],
+    "otherInvalid": []
+  },
+  "captureCrossCheck": {
+    "archiveLocalPaths": 0,
+    "liveVerifiedWithCapturePath": 0,
+    "matched": 0,
+    "unmatched": []
+  },
+  "evidenceFreshness": {
+    "windowMonths": 12,
+    "now": "2026-07-19T04:20:23.993Z",
+    "liveVerifiedTotal": 3,
+    "dated": 0,
+    "stale": 0,
+    "ageUnknown": 3,
+    "staleRecords": [],
+    "ageUnknownRecords": [
+      {
+        "evidenceId": "ev-scott-official-program-001",
+        "reason": "no capturePath to date against the capture archive"
+      },
+      {
+        "evidenceId": "ev-scott-editorial-spatial-001",
+        "reason": "no capturePath to date against the capture archive"
+      },
+      {
+        "evidenceId": "ev-scott-editorial-position-001",
+        "reason": "no capturePath to date against the capture archive"
+      }
+    ]
+  },
+  "teaserFirewall": {
+    "generated": true,
+    "charsGenerated": 8887,
+    "linesScanned": 131,
+    "forbiddenHitCount": 0,
+    "clientForbiddenTermsApplied": 0,
+    "hits": []
+  },
+  "readinessSummary": {
+    "overall": "not_ready",
+    "headline": "NOT READY — 1 blocker",
+    "nextAction": "Resolve 1 blocker before shipping: Analytical substance",
+    "checks": {
+      "ok": 10,
+      "warn": 1,
+      "fail": 1
+    },
+    "blockers": [
+      "Analytical substance"
+    ],
+    "warnings": [
+      "Keyword group coverage"
+    ],
+    "blockerIds": [
+      "audit_content"
+    ],
+    "warningIds": [
+      "keyword_coverage"
+    ],
+    "blockerDetails": [
+      {
+        "id": "audit_content",
+        "check": "Analytical substance",
+        "details": [
+          "missing ship-gating audit content: at least one live_verified guest-review evidence record",
+          "source coverage alone cannot make an audit READY; add supported analysis and provenance-bearing evidence"
+        ]
+      }
+    ],
+    "warningDetails": [
+      {
+        "id": "keyword_coverage",
+        "check": "Keyword group coverage",
+        "details": [
+          "6 of 8 taxonomy groups have keywords searched",
+          "untouched groups: segment, seasonal"
+        ]
+      }
+    ],
+    "sourceCoverage": {
+      "covered": 6,
+      "skipped": 2,
+      "missingRequired": 0
+    },
+    "keywordGroups": {
+      "withKeywords": 6,
+      "total": 8
+    },
+    "evidence": {
+      "total": 3,
+      "liveVerified": 3,
+      "inference": 0,
+      "unverified": 0
+    },
+    "captureProvenance": {
+      "claimed": 0,
+      "matched": 0,
+      "unmatched": 0
+    }
+  },
+  "timestamp": "2026-07-19T04:20:24.000Z"
+}

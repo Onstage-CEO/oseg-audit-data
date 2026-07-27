@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-07-19T00:46:07.673Z",
+  "maxReviewDepthPerPropertySource": 2000,
+  "fullSweep": false,
+  "conservativeCeilingUsd": 18.6,
+  "captureHardCapUsd": 23,
+  "estimates": {
+    "google": 0.6,
+    "booking": 4,
+    "expedia": 5,
+    "yelpAndSocial": 5,
+    "tripadvisorAndWeb": 4
+  },
+  "note": "Static worst-case guard; provider task cost signals are recorded after capture."
+}

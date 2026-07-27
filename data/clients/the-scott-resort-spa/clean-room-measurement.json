@@ -1,0 +1,575 @@
+{
+  "schemaVersion": "V1",
+  "trialId": "clean-room-the-scott-v1",
+  "measuredAt": "2026-07-19T00:58:53.085Z",
+  "engineSha": "79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6",
+  "totalAcceptedCaptures": 3088,
+  "acceptedByPlatform": {
+    "google": 1664,
+    "booking": 122,
+    "youtube": 87,
+    "tripadvisor": 1215
+  },
+  "pendingTaskCount": 0,
+  "captureRunStatus": {
+    "reportVersion": "V1",
+    "generatedAt": "2026-07-19T00:56:27.774Z",
+    "property": {
+      "propertyName": "The Scott Resort & Spa",
+      "location": "Scottsdale, Arizona"
+    },
+    "sources": [
+      {
+        "platformId": "google",
+        "mechanism": "aggregator",
+        "status": "ok",
+        "message": "Apify google: captured 1664 new, skipped 0 dup(s).; 989 rating-only (no text)",
+        "recordsAdded": 1664,
+        "duplicatesSkipped": 0,
+        "queriesRun": 1,
+        "queriesFailed": 0,
+        "truncatedQueries": [],
+        "coverage": {
+          "capturedReviews": 1664,
+          "requestedDepth": 2000,
+          "mode": "deep"
+        }
+      },
+      {
+        "platformId": "tripadvisor",
+        "mechanism": "aggregator",
+        "status": "ok",
+        "message": "collected 1215 review(s); 1215 available",
+        "recordsAdded": 1215,
+        "duplicatesSkipped": 0,
+        "queriesRun": 0,
+        "queriesFailed": 0,
+        "truncatedQueries": [],
+        "coverage": {
+          "capturedReviews": 1215,
+          "availableReviews": 1215,
+          "requestedDepth": 2000,
+          "mode": "deep"
+        }
+      },
+      {
+        "platformId": "booking",
+        "mechanism": "aggregator",
+        "status": "ok",
+        "message": "Apify booking: captured 122 new, skipped 0 dup(s).; 122 available",
+        "recordsAdded": 122,
+        "duplicatesSkipped": 0,
+        "queriesRun": 1,
+        "queriesFailed": 0,
+        "truncatedQueries": [],
+        "coverage": {
+          "capturedReviews": 122,
+          "availableReviews": 122,
+          "requestedDepth": 2000,
+          "mode": "deep"
+        }
+      },
+      {
+        "platformId": "expedia",
+        "mechanism": "aggregator",
+        "status": "error",
+        "message": "Apify expedia: actor run ended ABORTED.",
+        "recordsAdded": 0,
+        "duplicatesSkipped": 0,
+        "queriesRun": 1,
+        "queriesFailed": 1,
+        "truncatedQueries": []
+      },
+      {
+        "platformId": "reddit",
+        "mechanism": "official_api",
+        "status": "needs_key",
+        "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+        "recordsAdded": 0,
+        "duplicatesSkipped": 0,
+        "queriesRun": 0,
+        "queriesFailed": 0,
+        "truncatedQueries": []
+      },
+      {
+        "platformId": "youtube",
+        "mechanism": "official_api",
+        "status": "ok",
+        "message": "captured 87 new, skipped 0 duplicate(s); 1873 total in archive.",
+        "recordsAdded": 87,
+        "duplicatesSkipped": 0,
+        "queriesRun": 3,
+        "queriesFailed": 0,
+        "truncatedQueries": [
+          "The Scott Resort & Spa walkthrough",
+          "The Scott Resort & Spa resort tour",
+          "The Scott Resort & Spa review vlog"
+        ]
+      }
+    ]
+  },
+  "propertySourceAttempts": {
+    "schemaVersion": "V1",
+    "capabilitySchemaVersion": "V2",
+    "generatedAt": "2026-07-19T00:58:50.255Z",
+    "property": "The Scott Resort & Spa",
+    "attempts": [
+      {
+        "source": "google",
+        "mechanism": "aggregator",
+        "provider": "aggregator",
+        "attemptedAt": "2026-07-19T00:56:27.774Z",
+        "result": "captured_partial",
+        "recordsReturned": 1664,
+        "recordsAccepted": 1664,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "Apify google: captured 1664 new, skipped 0 dup(s).; 989 rating-only (no text)"
+      },
+      {
+        "source": "tripadvisor",
+        "mechanism": "aggregator",
+        "provider": "aggregator",
+        "attemptedAt": "2026-07-19T00:56:27.774Z",
+        "result": "captured_complete",
+        "recordsReturned": 1215,
+        "recordsAccepted": 1215,
+        "availableUniverse": 1215,
+        "completeness": "complete",
+        "truncated": false,
+        "retryable": false,
+        "message": "collected 1215 review(s); 1215 available"
+      },
+      {
+        "source": "yelp",
+        "mechanism": "Apify Yelp reviews (yelpUrl, property or per-venue)",
+        "result": "not_checked",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      },
+      {
+        "source": "booking",
+        "mechanism": "aggregator",
+        "provider": "aggregator",
+        "attemptedAt": "2026-07-19T00:56:27.774Z",
+        "result": "captured_complete",
+        "recordsReturned": 122,
+        "recordsAccepted": 122,
+        "availableUniverse": 122,
+        "completeness": "complete",
+        "truncated": false,
+        "retryable": false,
+        "message": "Apify booking: captured 122 new, skipped 0 dup(s).; 122 available"
+      },
+      {
+        "source": "expedia",
+        "mechanism": "aggregator",
+        "provider": "aggregator",
+        "attemptedAt": "2026-07-19T00:56:27.774Z",
+        "result": "provider_error",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "Apify expedia: actor run ended ABORTED."
+      },
+      {
+        "source": "opentable",
+        "mechanism": "Apify or supervised browser recovery at outlet level",
+        "result": "not_applicable",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "not_applicable",
+        "truncated": false,
+        "retryable": false,
+        "message": "OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance."
+      },
+      {
+        "source": "facebook",
+        "mechanism": "Apify social capture (property public page URL)",
+        "result": "not_checked",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      },
+      {
+        "source": "instagram",
+        "mechanism": "Apify social capture (property profile/hashtag/keyword)",
+        "result": "not_checked",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      },
+      {
+        "source": "tiktok",
+        "mechanism": "Apify social capture (property hashtag/keyword)",
+        "result": "not_checked",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      },
+      {
+        "source": "youtube",
+        "mechanism": "official_api",
+        "provider": "official_api",
+        "attemptedAt": "2026-07-19T00:56:27.774Z",
+        "result": "captured_partial",
+        "recordsReturned": 87,
+        "recordsAccepted": 87,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "captured 87 new, skipped 0 duplicate(s); 1873 total in archive."
+      },
+      {
+        "source": "reddit",
+        "mechanism": "official_api",
+        "provider": "official_api",
+        "attemptedAt": "2026-07-19T00:56:27.774Z",
+        "result": "needs_credentials",
+        "recordsReturned": 9,
+        "recordsAccepted": 9,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
+      },
+      {
+        "source": "blogs",
+        "mechanism": "workspace-corpus",
+        "provider": "workspace-corpus",
+        "result": "captured_partial",
+        "recordsReturned": 15,
+        "recordsAccepted": 15,
+        "completeness": "unknown",
+        "truncated": false,
+        "retryable": true,
+        "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
+      },
+      {
+        "source": "resort_pages",
+        "mechanism": "No explicit-attempt coverage path yet; program-discovery can optionally fetch property pages or read operator-supplied HTML",
+        "result": "not_supported",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "not_applicable",
+        "truncated": false,
+        "retryable": false,
+        "message": "Program-discovery is a useful operator-assisted programming input, but it is not automatically invoked by hosted capture and does not yet write a source-attempt record. It therefore cannot establish source coverage."
+      },
+      {
+        "source": "local_media",
+        "mechanism": "No dedicated location-aware query and classification path yet",
+        "result": "not_supported",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "not_applicable",
+        "truncated": false,
+        "retryable": false,
+        "message": "Generic web discovery may incidentally return local-media pages, but the current loader classifies non-community/non-resort findings as blogs. The matrix must not claim local media was distinctly checked."
+      },
+      {
+        "source": "quora",
+        "mechanism": "No Quora query pack, adapter, or classifier exists yet",
+        "result": "not_supported",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "not_applicable",
+        "truncated": false,
+        "retryable": false,
+        "message": "SUPPLEMENTAL traveler-intent/public-perception signal only and never rating math. It remains in the canonical accounting set so the unsupported gap is visible."
+      }
+    ]
+  },
+  "coverageSummary": {
+    "outletGoogleImplemented": true,
+    "blockers": [
+      "The Scott Resort & Spa: Google / Google Maps reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via aggregator.",
+      "The Scott Resort & Spa: Yelp reviews is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.",
+      "The Scott Resort & Spa: Expedia reviews is provider error; The source attempt failed at the provider/adapter layer. Apify expedia: actor run ended ABORTED.",
+      "The Scott Resort & Spa: Facebook mentions is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.",
+      "The Scott Resort & Spa: Instagram mentions is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.",
+      "The Scott Resort & Spa: TikTok mentions is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.",
+      "The Scott Resort & Spa: YouTube videos + comments is captured partial; Captured, but source completeness is partial or unproven. Captured via official_api.",
+      "The Scott Resort & Spa: Reddit / forums is captured partial; Captured, but source completeness is partial or unproven. Captured via official_api.",
+      "The Scott Resort & Spa: Blogs / travel articles is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
+    ]
+  },
+  "readiness": {
+    "auditName": "The Scott Resort & Spa",
+    "version": "V0.1 — Working Draft",
+    "auditPath": "/home/runner/work/oseg-audit-data/oseg-audit-data/data/clients/the-scott-resort-spa/audit.json",
+    "status": "not_ready",
+    "exitCode": 1,
+    "summary": {
+      "okCount": 8,
+      "warningCount": 1,
+      "failCount": 2
+    },
+    "checks": [
+      {
+        "id": "schema",
+        "label": "Schema validation",
+        "status": "ok",
+        "messages": [
+          "audit JSON parsed and conforms to AuditSchema"
+        ]
+      },
+      {
+        "id": "source_coverage",
+        "label": "Required research source coverage",
+        "status": "fail",
+        "messages": [
+          "missing required platforms: google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite",
+          "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
+        ]
+      },
+      {
+        "id": "lane_coverage",
+        "label": "Source lane coverage (registry)",
+        "status": "fail",
+        "messages": [
+          "6 gating lane(s) neither covered nor explicitly skipped:",
+          "Review platforms [required] — needs one of: google, tripadvisor — capture it, or add a skippedSources entry with kind + rationale",
+          "OTA review platforms [required] — needs one of: booking, expedia, travelocity — capture it, or add a skippedSources entry with kind + rationale",
+          "Community / social discussion [required] — needs one of: reddit — capture it, or add a skippedSources entry with kind + rationale",
+          "Video / creator content [required] — needs one of: youtube — capture it, or add a skippedSources entry with kind + rationale",
+          "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
+          "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+        ]
+      },
+      {
+        "id": "discovery_plan",
+        "label": "Discovery plan generated",
+        "status": "ok",
+        "messages": [
+          "research-plan.json present next to the audit"
+        ]
+      },
+      {
+        "id": "keyword_coverage",
+        "label": "Keyword group coverage",
+        "status": "warn",
+        "messages": [
+          "0 of 8 taxonomy groups have keywords searched",
+          "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+        ]
+      },
+      {
+        "id": "evidence_integrity",
+        "label": "Evidence integrity",
+        "status": "ok",
+        "messages": [
+          "0 live-verified, 0 inference, 0 unverified"
+        ]
+      },
+      {
+        "id": "provenance_url",
+        "label": "Provenance URL shape (offline)",
+        "status": "ok",
+        "messages": [
+          "no live_verified record carries a sourceUrl to shape-check (nothing to validate)"
+        ]
+      },
+      {
+        "id": "capture_archive",
+        "label": "Capture-archive provenance cross-check",
+        "status": "ok",
+        "messages": [
+          "no live-verified evidence claims a capturePath (nothing to cross-check); archive has 0 capture localPath(s)"
+        ]
+      },
+      {
+        "id": "evidence_freshness",
+        "label": "Evidence freshness",
+        "status": "ok",
+        "messages": [
+          "no live-verified evidence could be dated against the capture archive (nothing to age)"
+        ]
+      },
+      {
+        "id": "teaser_generation",
+        "label": "Teaser generation",
+        "status": "ok",
+        "messages": [
+          "generated 8806 chars in memory (not written)"
+        ]
+      },
+      {
+        "id": "teaser_firewall",
+        "label": "Teaser Tier-A firewall lint (with per-client terms)",
+        "status": "ok",
+        "messages": [
+          "130 lines scanned, 0 forbidden-term hits",
+          "client-specific forbidden terms applied: 0"
+        ]
+      }
+    ],
+    "sourceCoverage": {
+      "coveredCount": 0,
+      "skippedCount": 0,
+      "missingRequired": [
+        "google",
+        "tripadvisor",
+        "booking",
+        "expedia",
+        "reddit",
+        "youtube",
+        "aerial_satellite"
+      ],
+      "coveredPlatforms": [],
+      "skipped": []
+    },
+    "keywordCoverage": {
+      "totalGroups": 8,
+      "groupsWithKeywords": 0,
+      "untouchedGroups": [
+        "entertainment_general",
+        "activity",
+        "sentiment_negative",
+        "sentiment_positive",
+        "segment",
+        "time_of_day",
+        "location",
+        "seasonal"
+      ],
+      "keywordsSearched": 0,
+      "keywordsInTaxonomy": 45
+    },
+    "evidenceIntegrity": {
+      "total": 0,
+      "liveVerified": 0,
+      "inference": 0,
+      "unverified": 0
+    },
+    "provenanceUrl": {
+      "liveVerifiedChecked": 0,
+      "liveVerifiedInvalid": [],
+      "otherInvalid": []
+    },
+    "captureCrossCheck": {
+      "archiveLocalPaths": 0,
+      "liveVerifiedWithCapturePath": 0,
+      "matched": 0,
+      "unmatched": []
+    },
+    "evidenceFreshness": {
+      "windowMonths": 12,
+      "now": "2026-07-19T00:58:52.122Z",
+      "liveVerifiedTotal": 0,
+      "dated": 0,
+      "stale": 0,
+      "ageUnknown": 0,
+      "staleRecords": [],
+      "ageUnknownRecords": []
+    },
+    "teaserFirewall": {
+      "generated": true,
+      "charsGenerated": 8806,
+      "linesScanned": 130,
+      "forbiddenHitCount": 0,
+      "clientForbiddenTermsApplied": 0,
+      "hits": []
+    },
+    "readinessSummary": {
+      "overall": "not_ready",
+      "headline": "NOT READY — 2 blockers",
+      "nextAction": "Resolve 2 blockers before shipping: Required research source coverage; Source lane coverage (registry)",
+      "checks": {
+        "ok": 8,
+        "warn": 1,
+        "fail": 2
+      },
+      "blockers": [
+        "Required research source coverage",
+        "Source lane coverage (registry)"
+      ],
+      "warnings": [
+        "Keyword group coverage"
+      ],
+      "blockerIds": [
+        "source_coverage",
+        "lane_coverage"
+      ],
+      "warningIds": [
+        "keyword_coverage"
+      ],
+      "blockerDetails": [
+        {
+          "id": "source_coverage",
+          "check": "Required research source coverage",
+          "details": [
+            "missing required platforms: google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite",
+            "add them to platforms[] (with score/volume) OR to skippedSources[] (with kind + reason)"
+          ]
+        },
+        {
+          "id": "lane_coverage",
+          "check": "Source lane coverage (registry)",
+          "details": [
+            "6 gating lane(s) neither covered nor explicitly skipped:",
+            "Review platforms [required] — needs one of: google, tripadvisor — capture it, or add a skippedSources entry with kind + rationale",
+            "OTA review platforms [required] — needs one of: booking, expedia, travelocity — capture it, or add a skippedSources entry with kind + rationale",
+            "Community / social discussion [required] — needs one of: reddit — capture it, or add a skippedSources entry with kind + rationale",
+            "Video / creator content [required] — needs one of: youtube — capture it, or add a skippedSources entry with kind + rationale",
+            "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale",
+            "Aerial / maps context [required] — needs one of: aerial_satellite — capture it, or add a skippedSources entry with kind + rationale"
+          ]
+        }
+      ],
+      "warningDetails": [
+        {
+          "id": "keyword_coverage",
+          "check": "Keyword group coverage",
+          "details": [
+            "0 of 8 taxonomy groups have keywords searched",
+            "untouched groups: entertainment_general, activity, sentiment_negative, sentiment_positive, segment, time_of_day, location, seasonal"
+          ]
+        }
+      ],
+      "sourceCoverage": {
+        "covered": 0,
+        "skipped": 0,
+        "missingRequired": 7
+      },
+      "keywordGroups": {
+        "withKeywords": 0,
+        "total": 8
+      },
+      "evidence": {
+        "total": 0,
+        "liveVerified": 0,
+        "inference": 0,
+        "unverified": 0
+      },
+      "captureProvenance": {
+        "claimed": 0,
+        "matched": 0,
+        "unmatched": 0
+      }
+    },
+    "timestamp": "2026-07-19T00:58:52.129Z"
+  },
+  "providerCostSignals": [],
+  "billingVerifiedUsd": null,
+  "billingVerificationStatus": "adapter artifacts inspected; provider billing reconciliation required before LLM stage",
+  "redditApiExpectedState": "needs_key_or_blocked",
+  "paidLlmCalls": 0,
+  "exported": false,
+  "sent": false
+}

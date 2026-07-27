@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "V1",
+  "regeneratedAt": "2026-07-19T04:34:00.000Z",
+  "engineSha": "4beedb495c007a3c745db9dae0c52daf03d93994",
+  "executionMechanism": "deterministic connector-side execution of merged engine algorithm over retained raw blobs",
+  "inputFiles": [
+    {
+      "path": "data/clients/the-scott-resort-spa/captures-raw/booking-2026-07-19T00-46-11-061Z.json",
+      "blobSha": "b3d3fd0e264a66906d954fc0f6b35c4434957753"
+    },
+    {
+      "path": "data/clients/the-scott-resort-spa/captures-raw/dataforseo-tripadvisor-2026-07-19T00-56-27-774Z.json",
+      "blobSha": "ea86d477a8f11ce155cc50bfeac43bee840cb509"
+    },
+    {
+      "path": "data/clients/the-scott-resort-spa/captures-raw/google-apify-2026-07-19T00-46-11-061Z.json",
+      "blobSha": "61f900fdd206b1b5f7e51a6458657471da87e3f9"
+    }
+  ],
+  "reviewCount": 3001,
+  "providerCalls": 0,
+  "beforeCount": 12,
+  "afterCount": 12,
+  "addedSourceUrls": [
+    "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDpw9mI-AE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB",
+    "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDhvsiiTw%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE",
+    "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r857905333-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+    "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r687634712-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+    "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r672660894-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+    "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r668346534-The_Scott_Resort_Spa-Scottsdale_Arizona.html"
+  ],
+  "removedSourceUrls": [
+    "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r784628162-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+    "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOm9vaFZzRXVBU0dCT0hoWjN4aTkzX0E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB",
+    "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-1jcf3g8",
+    "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-1ln9540",
+    "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r942643421-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+    "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r887452640-The_Scott_Resort_Spa-Scottsdale_Arizona.html"
+  ],
+  "boundaryMatcher": "token_or_phrase_delimited_by_non_alphanumeric",
+  "boundaryViolationsByConstruction": 0,
+  "provenanceFieldsPresent": true,
+  "bookingKnownCandidate": {
+    "sourceUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-10sxi3t",
+    "normalizedRating": 1,
+    "rawRating": 2,
+    "ratingMax": 10,
+    "author": "Jane",
+    "timestamp": "2026-03-05T13:13:32.000Z",
+    "matchedTerms": [
+      "music",
+      "vibe"
+    ]
+  },
+  "limitations": [
+    "Exact word boundaries remove substring noise but do not prove property relevance.",
+    "Matched terms may occur beyond the 360-character display excerpt; the raw source selector remains authoritative.",
+    "Generic vibe/show matches and possible provider contamination still require second-operator adjudication.",
+    "No candidate was promoted into audit evidence by this execution."
+  ],
+  "authority": {
+    "newPaidApi": false,
+    "paidLlm": false,
+    "export": false,
+    "send": false,
+    "deploy": false,
+    "productionPinChange": false
+  },
+  "recencyPass": {
+    "regeneratedAt": "2026-07-19T04:38:00.000Z",
+    "engineSha": "cec50dcf02da57cca333fc87e031b7128e34b340",
+    "policy": "current_12m before corroboration_12_to_24m before historical_over_24m before unknown; signal score breaks ties within band",
+    "beforeCount": 12,
+    "afterCount": 12,
+    "addedSourceUrls": [
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREcHF1a1F3EAE!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDDpqukQw%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSUREcHF1a1F3EAE",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOm9vaFZzRXVBU0dCT0hoWjN4aTkzX0E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT205dmFGWnpSWFZCVTBkQ1QwaG9Xak40YVRrelgwRRAB",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOlphc2d5WUg0ZW1VXzNDUkR3Z0tuMkE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2xwaGMyZDVXVWcwWlcxVlh6TkRVa1IzWjB0dU1rRRAB",
+      "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-90bqpe",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r1054921996-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pRd1p5MXhRMGh2YUhSZmQyOVRlRGQzV2pkVlltYxAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOjQwZy1xQ0hvaHRfd29TeDd3WjdVYmc%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2pRd1p5MXhRMGh2YUhSZmQyOVRlRGQzV2pkVlltYxAB",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wa1lXRlZkbEJwU25FeGIyTjFXRXhaVjFsM2EzYxAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOnVkYWFVdlBpSnExb2N1WExZV1l3a3c%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT25Wa1lXRlZkbEJwU25FeGIyTjFXRXhaVjFsM2EzYxAB",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OTmREWmlSREZ5YTNGNllrNVZXbUpGVVZCS1MxRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CAIQACodChtycF9oOnNNdDZiRDFya3F6Yk5VWmJFUVBKS1E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT25OTmREWmlSREZ5YTNGNllrNVZXbUpGVVZCS1MxRRAB",
+      "https://www.booking.com/hotel/us/firesky-resort-spa.html#review-1s72c1i",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r1054107996-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r1028968290-The_Scott_Resort_Spa-Scottsdale_Arizona.html"
+    ],
+    "removedSourceUrls": [
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r974728954-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r825716600-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDpw9mI-AE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSURwdzltSS1BRRAB",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE!2m1!1s0x0:0x6997d003b0e8dcaf!3m1!1s2@1:CIHM0ogKEICAgIDhvsiiTw%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSURodnNpaVR3EAE",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r953492403-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r881262780-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r857905333-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r732704885-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r687634712-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r672660894-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g31350-d115494-r668346534-The_Scott_Resort_Spa-Scottsdale_Arizona.html"
+    ],
+    "ageBandCounts": {
+      "current_12m": 12,
+      "corroboration_12_to_24m": 0,
+      "historical_over_24m": 0,
+      "unknown": 0
+    },
+    "currentGoogleHouseMusicIncluded": true,
+    "currentBookingLoudMusicIncluded": true,
+    "providerCalls": 0,
+    "promotedEvidence": 0
+  },
+  "latestEngineSha": "cec50dcf02da57cca333fc87e031b7128e34b340",
+  "latestGeneratedAt": "2026-07-19T04:38:00.000Z"
+}

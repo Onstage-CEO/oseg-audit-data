@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "V1",
+  "trialId": "clean-room-the-scott-v1",
+  "decidedAt": "2026-07-19T04:20:24.274Z",
+  "decision": "hold_paid_llm",
+  "decisionBasis": "Required source and registry lanes are closed and official/editorial evidence supports a bounded provisional thesis. The audit remains NOT READY because no guest-review evidence has been independently adjudicated and promoted; second-operator reproduction is still pending; historical DataForSEO spend is unavailable.",
+  "capture": {
+    "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711",
+    "jobConclusion": "success",
+    "acceptedPrimaryRecords": 3088,
+    "acceptedByPlatform": {
+      "google": 1664,
+      "booking": 122,
+      "youtube": 87,
+      "tripadvisor": 1215
+    },
+    "pendingTasks": 0,
+    "additionalPublicWebFindings": 24,
+    "outletTripadvisorRecords": 73
+  },
+  "readiness": {
+    "verifierStatus": "not_ready",
+    "machineBlockers": [
+      "Analytical substance"
+    ],
+    "structuralFindings": [
+      "Captured records were not translated into audit.json platforms, evidence, or skippedSources; audit.json remained an empty scaffold.",
+      "Expedia provider task ended ABORTED.",
+      "Yelp had no configured property or venue URL and no explicit attempt.",
+      "Instagram, TikTok, and Facebook returned zero; the adapter classified Apify as degraded.",
+      "The Canal Club Google capture failed with auth_error.",
+      "The official Reddit API honestly remained needs_credentials; bounded public-web discovery returned nine Reddit findings.",
+      "Aerial/satellite visual context was not attempted.",
+      "No taxonomy keyword group was recorded as searched.",
+      "Apify's account-wide USD 70 monthly platform usage limit was exceeded during the run; all running actors were aborted. Preflight validated credential presence but did not validate remaining billing headroom.",
+      "The Google actor returned 2,653 provider results despite the reviewed maxReviewDepthPerPropertySource of 2,000; the static depth-based spend guard did not bound provider output count.",
+      "The aborted Expedia run exposed 876 provider results, but the adapter persisted zero records; aborted partial datasets require explicit salvage/quarantine handling with provenance.",
+      "The Expedia run had a provider-enforced USD 2.198842 ceiling derived from remaining account headroom, but engine source did not send maxTotalChargeUsd; the run was protected accidentally by exhausted account capacity rather than the reviewed workflow budget.",
+      "Confirmed code defect: capture-round resolved OSEG_CAPTURE_DEPTH=2000 into ctx.maxResults, but apify-adapter did not pass ctx.maxResults as runActorReviewsAsync.maxItems; Expedia therefore started from its 5,000 platform default before Apify account headroom reduced it to 876.",
+      "The original entertainment discovery used substring matching: dj matched adjacent and show matched shower/showed; engine PR #343 corrected the boundary defect and added standalone music.",
+      "The original entertainment worklist discarded raw rating scale, author, and timestamp; engine PR #344 preserves those fields for reproducible adjudication.",
+      "Current official pages advertise recurring games, live local artists, classic-film screenings, DJs, Sunday patio performance, and tastings at The Canal Club.",
+      "Text-source spatial context was reviewed, but no satellite or aerial imagery was inspected and no acoustic/capacity/feasibility claim is allowed.",
+      "The first corrected worklist still ranked by signal without recency, allowing 2019 generic-vibe records to displace a November 2025 direct music/noise record; engine PR #345 now ranks current 12-month candidates before corroboration and historical bands.",
+      "After recency-first regeneration, all 12 operator candidates are dated within the trailing 12 months; no candidate is automatically evidence, and all 12 require independent adjudication."
+    ],
+    "strengthenedVerifier": {
+      "engineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
+      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29673152660",
+      "requiredSourceCoverageClosed": true,
+      "registryLaneCoverageClosed": true,
+      "evidenceTotal": 3,
+      "guestReviewLiveVerified": 0
+    },
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json",
+    "discoveryCorrection": {
+      "engineSha": "cec50dcf02da57cca333fc87e031b7128e34b340",
+      "rawReviewRecordsProcessed": 3001,
+      "candidateCount": 12,
+      "ageBandCounts": {
+        "current_12m": 12,
+        "corroboration_12_to_24m": 0,
+        "historical_over_24m": 0,
+        "unknown": 0
+      },
+      "promotedEvidence": 0,
+      "ledger": "clean-room/the-scott/discovery-regeneration.json"
+    }
+  },
+  "spend": {
+    "captureHardCapUsd": 23,
+    "providerArtifactCostSignals": [],
+    "billingVerifiedUsd": null,
+    "status": "Apify is fully reconciled at USD 3.623 from run pages, with Expedia API cost USD 2.1965 agreeing after display rounding. Historical DataForSEO actual task cost is irrecoverable from retained pre-fix artifacts, so total trial spend remains unknown and additional paid stages stay blocked.",
+    "accountBillingEvidence": {
+      "source": "user_provided_apify_limit_notification",
+      "receivedAt": "2026-07-19T01:03:00Z",
+      "provider": "Apify",
+      "monthlyPlatformUsageLimitUsd": 70,
+      "limitExceeded": true,
+      "runningActorsAborted": true,
+      "nextMonthlyCycleStarts": "2026-07-21",
+      "incrementalTrialSpendUsd": null,
+      "interpretation": "The USD 70 value is cumulative account-month usage, not verified incremental spend attributable to this trial.",
+      "consoleUsageDisplay": "$70 / $70",
+      "expediaActorAdvertisedPricing": "from $2.50 per 1,000 results",
+      "expediaActorConsoleMaxCostPerRun": "General Actor page displayed Unlimited; specific run displayed $2.2.",
+      "caveat": "Specific run evidence supersedes the Actor landing page for immutable run cost/cap facts."
+    },
+    "providerRunEvidence": [
+      {
+        "provider": "Apify",
+        "actor": "compass/Google-Maps-Reviews-Scraper",
+        "status": "SUCCEEDED",
+        "startedLocal": "2026-07-18T17:46:11-07:00",
+        "duration": "PT6M5S",
+        "providerResultCount": 2653,
+        "auditAcceptedTextRecords": 1664,
+        "auditRatingOnlyRecords": 989,
+        "reconciliation": "2653 provider results = 1664 accepted text records + 989 rating-only records",
+        "runId": "Twl870efdmcVzPVQS",
+        "actualCostUsd": 1.194,
+        "displayedMaxCostPerRunUsd": 3.39
+      },
+      {
+        "provider": "Apify",
+        "actor": "voyager/booking-reviews-scraper",
+        "status": "SUCCEEDED",
+        "startedLocal": "2026-07-18T17:52:24-07:00",
+        "duration": "PT39S",
+        "providerResultCount": 122,
+        "auditAcceptedRecords": 122,
+        "reconciliation": "provider and audit counts match",
+        "runId": "IlIvRs8uGISkaIVvD",
+        "actualCostUsd": 0.232,
+        "displayedMaxCostPerRunUsd": 2.28
+      },
+      {
+        "provider": "Apify",
+        "actor": "memo23/expedia-scraper",
+        "status": "ABORTED",
+        "startedLocal": "2026-07-18T17:53:05-07:00",
+        "duration": "PT2M15S",
+        "providerResultCount": 876,
+        "auditAcceptedRecords": 0,
+        "reconciliation": "partial provider dataset exists but the adapter discarded it because terminal run status was ABORTED",
+        "runId": "4DWzkgi0DL7QUb4G8",
+        "actualCostUsd": 2.197,
+        "displayedMaxCostPerRunUsd": 2.2
+      }
+    ],
+    "verifiedPerRunUsd": {
+      "google": 1.194,
+      "booking": 0.232,
+      "expedia": 2.197
+    },
+    "verifiedSubtotalUsd": 3.623,
+    "incrementalTrialSpendUsd": null,
+    "expediaRunCharging": {
+      "runId": "4DWzkgi0DL7QUb4G8",
+      "actualCostUsd": 2.197,
+      "displayedMaxCostPerRunUsd": 2.2,
+      "actorMaxTotalChargeUsd": 2.198842,
+      "actorMaxPaidDatasetItems": 879,
+      "maximumAffordableReviewItems": 876,
+      "inputUrl": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
+      "includeCategoryRatings": true,
+      "terminalStatus": "ABORTED",
+      "datasetResultCount": 876,
+      "interpretation": "Apify derived the effective charge ceiling from available account headroom; engine source did not send maxTotalChargeUsd."
+    },
+    "verifiedApifySubtotalUsd": 3.623
+  },
+  "authority": {
+    "paidLlmAllowed": false,
+    "exportAllowed": false,
+    "sendAllowed": false,
+    "deploymentAllowed": false,
+    "productionPinChangeAllowed": false,
+    "paidRetryAllowed": false
+  },
+  "nextActions": [
+    "Merge and run the deterministic reconcile-capture-audit command so successful captured sources enter platforms[] without fabricated scores and blocked/partial sources are explicitly accounted for.",
+    "Complete or explicitly block the aerial/maps context lane with real attempt provenance; do not clear readiness by rationale-only paperwork.",
+    "Build deterministic entertainment evidence candidates from the captured corpus, retaining the 12-month current-score window and documented sparse-signal expansion.",
+    "Run the clean-room packet with a second operator and compare commands, artifacts, timing, costs, and decisions.",
+    "Do not authorize paid LLM, provider retry, export, send, deploy, or production pin changes until the updated verifier is ready and the remaining spend authority is explicitly reviewed."
+  ],
+  "remediation": {
+    "apifyDepthHandoff": {
+      "status": "fixed_on_engine_main_not_production_pinned",
+      "pullRequest": "https://github.com/Onstage-CEO/oseg-resort-audit/pull/328",
+      "mergeSha": "e34a349a10cf7e07d71a746163c1abda7686e405",
+      "ci": "passed",
+      "productionPinsChanged": false
+    },
+    "expediaReadOnlyRecovery": {
+      "status": "completed_valid_partial_quarantined",
+      "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29672392207",
+      "engineSha": "6d07fec737cf9ef374e588486f1ae1127f02007e",
+      "scoringPromotion": false
+    },
+    "enginePinVisibility": {
+      "status": "fixed",
+      "dataPullRequest": "https://github.com/Onstage-CEO/oseg-audit-data/pull/37",
+      "mergeSha": "d79e652aafea56ac5bd0d90d34896339fedc24e4",
+      "productionWorkflowCount": 15,
+      "isolatedCleanRoomWorkflowCount": 3
+    }
+  },
+  "recencyAnalysis": {
+    "asOf": "2026-07-19",
+    "platforms": [
+      "google",
+      "booking",
+      "tripadvisor"
+    ],
+    "windows": {
+      "12_months": {
+        "reviews": 234,
+        "strictEntertainmentMentions": 1,
+        "byPlatform": {
+          "google": 171,
+          "booking": 41,
+          "tripadvisor": 22
+        }
+      },
+      "18_months": {
+        "reviews": 421,
+        "strictEntertainmentMentions": 1,
+        "byPlatform": {
+          "google": 304,
+          "booking": 78,
+          "tripadvisor": 39
+        }
+      },
+      "24_months": {
+        "reviews": 509,
+        "strictEntertainmentMentions": 2,
+        "byPlatform": {
+          "google": 370,
+          "booking": 88,
+          "tripadvisor": 51
+        }
+      },
+      "36_months": {
+        "reviews": 789,
+        "strictEntertainmentMentions": 9,
+        "byPlatform": {
+          "google": 569,
+          "booking": 122,
+          "tripadvisor": 98
+        }
+      }
+    },
+    "decision": "Use trailing 12 months for current-performance scoring; expand selectively through 36 months for sparse entertainment themes, seasonality, and historical context. Never blend older context into the current score.",
+    "caveats": [
+      "A date filter reduces spend only when enforced provider-side; filtering an already-paid corpus locally does not save money.",
+      "Current official programming pages and operational facts are always evaluated at their current state, independent of review windows.",
+      "Evidence before a material renovation, concept change, ownership/management change, or operating-model change is historical context only."
+    ]
+  },
+  "expediaRecovery": {
+    "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29672392207",
+    "state": "recovered_valid_partial",
+    "providerResultCount": 876,
+    "analyzableTextCount": 480,
+    "ratingOnlyCount": 396,
+    "ratingScaleCounts": {
+      "10": 480
+    },
+    "uniqueSourceUrlCount": 480,
+    "duplicateSourceUrlCount": 0,
+    "providerApiActualCostUsd": 2.1965,
+    "reviewedRunPageActualCostUsd": 2.197,
+    "completeness": "partial",
+    "quarantined": true,
+    "scoringRecordsAdded": 0,
+    "disposition": "retain_as_validated_partial_context_not_scoring_corpus"
+  }
+}

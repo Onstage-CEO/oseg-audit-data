@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "V1",
+  "verifiedAt": "2026-07-19T04:20:24.274Z",
+  "engineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
+  "status": "not_ready",
+  "requiredSourceCoverageClosed": true,
+  "registryLaneCoverageClosed": true,
+  "analyticalSubstanceStatus": "fail",
+  "blockerIds": [
+    "audit_content"
+  ],
+  "blockerDetails": [
+    "missing ship-gating audit content: at least one live_verified guest-review evidence record",
+    "source coverage alone cannot make an audit READY; add supported analysis and provenance-bearing evidence"
+  ],
+  "evidence": {
+    "total": 3,
+    "liveVerified": 3,
+    "guestReviewLiveVerified": 0
+  },
+  "interpretation": "Official/editorial evidence and source-lane closure are valuable but cannot substitute for live-verified guest-review evidence.",
+  "authority": {
+    "newPaidApi": false,
+    "paidLlm": false,
+    "export": false,
+    "send": false,
+    "deploy": false,
+    "productionPinChange": false
+  }
+}

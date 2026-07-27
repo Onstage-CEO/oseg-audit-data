@@ -1,0 +1,7 @@
+[capture-extra-sources] yelp skipped (needs client.yelpUrl + DATAFORSEO or APIFY_TOKEN)
+[capture-extra-sources] youtube-comments: 13 from 87 videos
+[capture-extra-sources] instagram: 0 posts
+[capture-extra-sources] tiktok: 0 posts
+[capture-extra-sources] facebook: 0 posts
+[capture-extra-sources] APIFY DEGRADED: every Apify source (Yelp, TikTok, Instagram) returned 0 with a token present — likely an Apify balance/rate cap. Social + Yelp are INCOMPLETE for this run; re-capture once the account is restored.
+[capture-extra-sources] done.

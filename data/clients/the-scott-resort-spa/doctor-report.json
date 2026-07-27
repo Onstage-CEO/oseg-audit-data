@@ -1,0 +1,30 @@
+{
+  "slug": "the-scott-resort-spa",
+  "auditPath": "/home/runner/work/oseg-audit-data/oseg-audit-data/data/clients/the-scott-resort-spa/audit.json",
+  "overall": "not_ready",
+  "headline": "NOT READY — 2 blockers",
+  "ready": false,
+  "nextAction": {
+    "id": "source_coverage",
+    "severity": "blocker",
+    "action": "Cover the missing required research source(s): add each to platforms[] (with score + volume) OR document it in skippedSources[] (with a kind + reason).",
+    "command": "oseg-audit coverage /home/runner/work/oseg-audit-data/oseg-audit-data/data/clients/the-scott-resort-spa/audit.json",
+    "detail": "missing required platforms: google, tripadvisor, booking, expedia, reddit, youtube, aerial_satellite"
+  },
+  "remaining": [
+    {
+      "id": "lane_coverage",
+      "severity": "blocker",
+      "action": "Cover each missing registry lane (capture one of its sources) OR add a skippedSources[] entry with an honest kind (sparse / not_found / syndicated_duplicate / blocked / not_applicable) + rationale.",
+      "command": "oseg-audit source-coverage /home/runner/work/oseg-audit-data/oseg-audit-data/data/clients/the-scott-resort-spa/audit.json",
+      "detail": "6 gating lane(s) neither covered nor explicitly skipped:"
+    },
+    {
+      "id": "keyword_coverage",
+      "severity": "warning",
+      "action": "Search at least one keyword from each untouched taxonomy group and record it under the relevant platform’s keywordsSearched[]. Advisory — does not gate the ship.",
+      "command": "oseg-audit coverage /home/runner/work/oseg-audit-data/oseg-audit-data/data/clients/the-scott-resort-spa/audit.json",
+      "detail": "0 of 8 taxonomy groups have keywords searched"
+    }
+  ]
+}

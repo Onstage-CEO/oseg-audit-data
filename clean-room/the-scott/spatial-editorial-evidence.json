@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "V1",
+  "property": "The Scott Resort & Spa",
+  "reviewedAt": "2026-07-19T04:13:00.000Z",
+  "operation": "public_web_editorial_and_spatial_context_review",
+  "paidProviderCalls": 0,
+  "sources": [
+    {
+      "id": "official-whats-on",
+      "url": "https://www.thescottresort.com/whats-on/",
+      "sourceType": "official_current_programming",
+      "independent": false,
+      "findings": [
+        "Recurring games, live local artists, classic-film screenings, DJs, Sunday patio performance, and periodic tastings are advertised with current schedule details."
+      ]
+    },
+    {
+      "id": "official-dining",
+      "url": "https://www.thescottresort.com/dining/",
+      "sourceType": "official_current_property",
+      "independent": false,
+      "findings": [
+        "The Canal Club bar is advertised until midnight daily.",
+        "Poolside is described as a social area among pools and gardens with fire pits and cabanas."
+      ]
+    },
+    {
+      "id": "official-story",
+      "url": "https://www.thescottresort.com/story/",
+      "sourceType": "official_current_property",
+      "independent": false,
+      "findings": [
+        "Property states a $15 million reinvention completed in November 2018.",
+        "Property identifies two pools, a hot tub, sandy beach, and The Canal Club."
+      ]
+    },
+    {
+      "id": "planet-blue-2019",
+      "url": "https://www.planetblueadventure.com/the-scott-resort-and-spa/",
+      "sourceType": "independent_editorial_historical_disclosed_stay",
+      "independent": true,
+      "publishedAt": "2019-08-19",
+      "findings": [
+        "Describes an indoor/outdoor patio transition, fire pits, seating, palms, beach, two pools in gardens, and The Canal Club Bar beside the largest pool.",
+        "Describes The Canal Club Bar as an evening gathering place."
+      ],
+      "caveat": "Historical and based on a disclosed hosted stay; context only."
+    },
+    {
+      "id": "hotel-guru",
+      "url": "https://www.thehotelguru.com/en-us/hotel/the-scott-resort-spa-scottsdale",
+      "sourceType": "independent_editorial_current_page",
+      "independent": true,
+      "findings": [
+        "Positions the property as relaxation-oriented.",
+        "Lists sprawling grounds, two outdoor pools, bar, terrace, garden, and a map/location section."
+      ]
+    },
+    {
+      "id": "conde-nast-traveler",
+      "url": "https://www.cntraveler.com/hotels/united-states/scottsdale/firesky-resort-spa",
+      "sourceType": "independent_editorial_listing",
+      "independent": true,
+      "findings": [
+        "Confirms the current property identity in Scottsdale and 204 rooms."
+      ],
+      "caveat": "Thin listing; not used for entertainment-performance conclusions."
+    }
+  ],
+  "laneDecisions": {
+    "blogs": {
+      "status": "covered",
+      "reviewedSourceCount": 6,
+      "independentSourceCount": 3
+    },
+    "aerialMapsContext": {
+      "status": "covered_context_only",
+      "contextSourceCount": 4,
+      "satelliteImageryInspected": false,
+      "aerialImageryInspected": false,
+      "allowedClaims": [
+        "venue and amenity adjacency described by reviewed sources",
+        "general indoor/outdoor and pool/garden context"
+      ],
+      "forbiddenClaims": [
+        "satellite-observed geometry",
+        "acoustic propagation",
+        "line of sight",
+        "capacity",
+        "operational feasibility"
+      ]
+    }
+  },
+  "limitations": [
+    "No Google Maps satellite layer or other aerial image was successfully inspected.",
+    "Spatial statements are text-source context only and cannot support acoustic, capacity, or feasibility conclusions.",
+    "Current event schedules are time-sensitive and require recheck before client-facing release.",
+    "Official pages establish advertised supply, not guest demand, attendance, satisfaction, or revenue."
+  ],
+  "authority": {
+    "newPaidApi": false,
+    "paidLlm": false,
+    "export": false,
+    "send": false,
+    "deploy": false,
+    "productionPinChange": false
+  }
+}

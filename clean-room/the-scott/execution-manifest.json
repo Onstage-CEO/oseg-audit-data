@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "V1",
+  "executionId": "the-scott-option-a-2026-07-19",
+  "trialId": "clean-room-the-scott-v1",
+  "state": "capture_completed_llm_blocked",
+  "authorization": {
+    "option": "A",
+    "issue": "https://github.com/Onstage-CEO/oseg-resort-audit/issues/323",
+    "authorizationComment": "https://github.com/Onstage-CEO/oseg-resort-audit/issues/323#issuecomment-5013497699",
+    "absoluteCapUsd": 35,
+    "captureHardCapUsd": 23,
+    "llmHardCapUsd": 10,
+    "contingencyUsd": 2
+  },
+  "preflight": {
+    "status": "passed_with_known_credential_gap",
+    "engineSha": "79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6",
+    "workflowRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667058495",
+    "artifactSha256": "a6bda3d734697e474a9b5cf9742e7fb36ae5a3889757e7c08cee849dab245ced"
+  },
+  "stage": {
+    "name": "readiness_review",
+    "paidLlmAllowed": false,
+    "exportAllowed": false,
+    "sendAllowed": false,
+    "productionPinChangeAllowed": false
+  },
+  "controls": {
+    "oneShot": true,
+    "triggerNonce": "SCOTT-A-20260719-79DF0AD",
+    "workspaceBranch": "trial/the-scott-execution-v1",
+    "workspaceSlug": "the-scott-resort-spa",
+    "maxReviewDepthPerPropertySource": 2000,
+    "fullSweep": false,
+    "expectedCaptureSpendUsd": {
+      "min": 6,
+      "max": 15
+    },
+    "captureHardCapUsd": 23
+  },
+  "property": {
+    "clientName": "Clean Room Trial — Public Sources Only",
+    "propertyName": "The Scott Resort & Spa",
+    "location": "Scottsdale, Arizona",
+    "website": "https://www.thescottresort.com/",
+    "googleUrl": "https://www.google.com/maps/search/The%20Scott%20Resort%20%26%20Spa%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d115494-Reviews-The_Scott_Resort_Spa-Scottsdale_Arizona.html",
+    "bookingUrl": "https://www.booking.com/hotel/us/firesky-resort-spa.html",
+    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-The-Scott-Resort-Spa.h2557.Hotel-Information",
+    "instagramUrl": "https://www.instagram.com/thescottresort/",
+    "facebookUrl": "https://www.facebook.com/TheScottResort/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLWuUiyV9tZ-SZblaK4xQ4o3i_GcDU3Cas"
+  },
+  "venues": [
+    {
+      "name": "The Canal Club",
+      "type": "Restaurant / bar / recurring entertainment venue",
+      "slug": "the-canal-club",
+      "googleUrl": "https://www.google.com/maps/search/The%20Canal%20Club%2C%204925%20N%20Scottsdale%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d12989592-Reviews-The_Canal_Club-Scottsdale_Arizona.html",
+      "website": "https://thecanalclubaz.com/"
+    }
+  ],
+  "knownGaps": [
+    {
+      "id": "reddit_official_api_credentials_absent",
+      "requiredState": "needs_key_or_blocked",
+      "fallback": "bounded public-web Reddit discovery",
+      "forbiddenState": "checked_no_data_from_unexecuted_api"
+    }
+  ],
+  "publicSourceOnly": true,
+  "execution": {
+    "startedAt": "2026-07-19T00:45:55.408Z",
+    "workflowRunId": "29667477711",
+    "triggerUrl": "https://github.com/Onstage-CEO/oseg-audit-data/pull/35#issuecomment-5013560739",
+    "completedAt": "2026-07-19T00:58:53.133Z",
+    "jobStatus": "success",
+    "runUrl": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29667477711"
+  },
+  "readinessReview": {
+    "decidedAt": "2026-07-19T04:20:24.274Z",
+    "decision": "hold_paid_llm",
+    "decisionFile": "clean-room/the-scott/readiness-decision.json",
+    "verifierStatus": "not_ready",
+    "machineBlockers": [
+      "Analytical substance"
+    ],
+    "billingVerifiedUsd": null,
+    "paidRetryAllowed": false,
+    "billingEvidence": {
+      "provider": "Apify",
+      "source": "user_provided_limit_notification",
+      "monthlyPlatformUsageLimitUsd": 70,
+      "limitExceeded": true,
+      "runningActorsAborted": true,
+      "nextMonthlyCycleStarts": "2026-07-21",
+      "incrementalTrialSpendUsd": null,
+      "verifiedPerRunUsd": {
+        "google": 1.194,
+        "booking": 0.232,
+        "expedia": 2.197
+      },
+      "verifiedSubtotalUsd": 3.623,
+      "expediaRun": {
+        "runId": "4DWzkgi0DL7QUb4G8",
+        "actualCostUsd": 2.197,
+        "maxCostPerRunUsd": 2.2,
+        "actorMaxTotalChargeUsd": 2.198842,
+        "maximumAffordableReviewItems": 876,
+        "datasetResultCount": 876
+      },
+      "verifiedApifySubtotalUsd": 3.623,
+      "googleRun": {
+        "runId": "Twl870efdmcVzPVQS",
+        "actualCostUsd": 1.194,
+        "maxCostPerRunUsd": 3.39,
+        "datasetResultCount": 2653
+      },
+      "bookingRun": {
+        "runId": "IlIvRs8uGISkaIVvD",
+        "actualCostUsd": 0.232,
+        "maxCostPerRunUsd": 2.28,
+        "datasetResultCount": 122
+      }
+    },
+    "strengthenedVerifierRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29673152660",
+    "requiredSourceCoverageClosed": true,
+    "registryLaneCoverageClosed": true,
+    "guestReviewLiveVerified": 0,
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json"
+  },
+  "expediaPartialRecovery": {
+    "state": "recovered_valid_partial",
+    "completedAt": "2026-07-19T03:51:37.813Z",
+    "engineSha": "6d07fec737cf9ef374e588486f1ae1127f02007e",
+    "runId": "4DWzkgi0DL7QUb4G8",
+    "providerResultCount": 876,
+    "analyzableTextCount": 480,
+    "ratingOnlyCount": 396,
+    "providerApiActualCostUsd": 2.1965,
+    "reviewedRunPageActualCostUsd": 2.197,
+    "disposition": "retain_as_validated_partial_context_not_scoring_corpus",
+    "recoveryLedger": "clean-room/the-scott/expedia-recovery.json"
+  }
+}

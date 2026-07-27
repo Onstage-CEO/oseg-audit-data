@@ -1,0 +1,4 @@
+[capture-venues] The Canal Club: google=0 yelp=0 opentable=0 tripadvisor=submitted (google: 0 reviews (auth_error))
+[capture-venues] polling 1 TripAdvisor task(s)…
+[capture-venues] The Canal Club: tripadvisor=73 (google: 0 reviews (auth_error))
+[capture-venues] wrote venue captures for 1 venue(s), 73 review(s) total (separate layer).

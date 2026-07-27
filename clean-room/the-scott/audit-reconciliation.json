@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "V1",
+  "mode": "applied",
+  "addedPlatforms": [
+    "google",
+    "tripadvisor",
+    "booking",
+    "youtube"
+  ],
+  "addedSkips": [
+    "reddit",
+    "expedia"
+  ],
+  "unresolved": [],
+  "evidenceCreated": 0,
+  "partialCorpusRead": false,
+  "completedAt": "2026-07-19T04:02:56.962Z",
+  "engineSha": "1d568c5cb30b0eda736f8a97434383dd66948cb4",
+  "verifyStatus": "not_ready",
+  "remainingMissingRequired": [
+    "aerial_satellite"
+  ],
+  "remainingBlockers": [
+    "Required research source coverage",
+    "Source lane coverage (registry)"
+  ],
+  "authority": {
+    "paidLlm": false,
+    "paidRetry": false,
+    "export": false,
+    "send": false,
+    "deploy": false,
+    "productionPinChange": false
+  }
+}

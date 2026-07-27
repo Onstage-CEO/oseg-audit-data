@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "V1",
+  "trialId": "clean-room-the-scott-v1",
+  "measuredAt": "2026-07-19T04:38:00.000Z",
+  "property": "The Scott Resort & Spa",
+  "capture": {
+    "acceptedPrimaryTextRecords": 3088,
+    "acceptedByPlatform": {
+      "google": 1664,
+      "tripadvisor": 1215,
+      "booking": 122,
+      "youtube": 87
+    },
+    "providerResultCounts": {
+      "google": 2653,
+      "tripadvisor": 1215,
+      "booking": 122,
+      "expedia": 876
+    },
+    "expediaPartial": {
+      "analyzableText": 480,
+      "ratingOnly": 396,
+      "ratingScaleCounts": {
+        "10": 480
+      },
+      "quarantined": true,
+      "scoringRecords": 0
+    },
+    "additionalPublicWebFindings": 24,
+    "outletTripadvisorRecords": 73,
+    "publicWebEvidence": {
+      "officialAndEditorialRecords": 3,
+      "reviewedSourceDocuments": 6,
+      "spatialContextSources": 4,
+      "satelliteImageryInspected": false
+    }
+  },
+  "spend": {
+    "apifyRunPageVerifiedSubtotalUsd": 3.623,
+    "expediaProviderApiActualCostUsd": 2.1965,
+    "dataForSeoHistoricalActualCostUsd": null,
+    "totalTrialSpendUsd": null,
+    "additionalPaidStageBlocked": true
+  },
+  "researchWindow": {
+    "currentScoreMonths": 12,
+    "expansionMonths": [
+      24,
+      36
+    ],
+    "expansionOnlyFor": [
+      "sparse entertainment signal",
+      "seasonality",
+      "corroboration",
+      "trend"
+    ],
+    "olderEvidenceTreatment": "historical_context_not_current_score"
+  },
+  "readiness": {
+    "status": "not_ready",
+    "verifierEngineSha": "d0d290ae802f83b70dcb798343c902e716e63594",
+    "verifierRun": "https://github.com/Onstage-CEO/oseg-audit-data/actions/runs/29673152660",
+    "requiredSourceCoverageClosed": true,
+    "registryLaneCoverageClosed": true,
+    "machineBlockers": [
+      "Analytical substance"
+    ],
+    "warnings": [
+      "Keyword group coverage: segment and seasonal remain untouched"
+    ],
+    "evidence": {
+      "total": 3,
+      "liveVerified": 3,
+      "guestReviewLiveVerified": 0
+    },
+    "reasons": [
+      "guest-review candidates have not been independently adjudicated and promoted",
+      "second-operator reproduction has not occurred",
+      "historical DataForSEO actual cost is unavailable, so additional paid stages remain blocked"
+    ],
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json"
+  },
+  "authority": {
+    "paidLlm": false,
+    "paidRetry": false,
+    "export": false,
+    "send": false,
+    "deploy": false,
+    "productionPinChange": false
+  },
+  "discovery": {
+    "correctedEngineSha": "cec50dcf02da57cca333fc87e031b7128e34b340",
+    "rawReviewRecordsProcessed": 3001,
+    "candidateCount": 12,
+    "ageBandCounts": {
+      "current_12m": 12,
+      "corroboration_12_to_24m": 0,
+      "historical_over_24m": 0,
+      "unknown": 0
+    },
+    "boundaryMatcherCorrected": true,
+    "provenanceFieldsPreserved": true,
+    "evidencePromoted": 0,
+    "secondOperatorPacket": "clean-room/the-scott/second-operator-review-packet.json"
+  }
+}
