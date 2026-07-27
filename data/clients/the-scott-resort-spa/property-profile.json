@@ -13,6 +13,10 @@
     {
       "url": "https://www.thescottresort.com/dining/",
       "note": "official dining and outlet identity"
+    },
+    {
+      "url": "https://www.exploretock.com/canal-club-at-the-scott",
+      "note": "reservation platform (Tock), verified no public reviews"
     }
   ],
   "venues": [
@@ -37,5 +41,13 @@
   ],
   "nightclubExists": false,
   "entertainmentProgram": "Recurring entertainment centers on The Canal Club and poolside resort programming.",
-  "dayNightFlow": "Pool and spa by day; Canal Club live artists, DJs, movies, games, and brunch programming."
+  "dayNightFlow": "Pool and spa by day; Canal Club live artists, DJs, movies, games, and brunch programming.",
+  "reservationPlatform": {
+    "name": "Tock",
+    "url": "https://www.exploretock.com/canal-club-at-the-scott",
+    "venue": "The Canal Club",
+    "publishesPublicReviews": false,
+    "verifiedAt": "2026-07-27",
+    "note": "Reservations for The Canal Club are taken through Tock. Verified live 2026-07-27: the Tock venue page publishes no public guest reviews or ratings, so no reservation-platform guest corpus exists to capture. Post-dining feedback collected by Tock is operator-private and available only from the property."
+  }
 }
