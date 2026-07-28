@@ -56,11 +56,19 @@ jobs:
       - name: Validate actor email
         env:
           ACTOR_EMAIL: ${{ inputs.actorEmail }}
+          GH_ACTOR: ${{ github.actor }}
         run: |
           set -euo pipefail
           case "$ACTOR_EMAIL" in
-            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
+            joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actorEmail on allowlist" ;;
             *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+          # actorEmail is a self-attested dispatch INPUT: the case above proves
+          # only that the caller typed an allowlisted string. github.actor is
+          # the identity GitHub authenticates, so gate on that too.
+          case "$GH_ACTOR" in
+            Onstage-CEO|oseg-automation[bot]) echo "dispatching actor $GH_ACTOR permitted" ;;
+            *) echo "::error::actor $GH_ACTOR is not permitted to dispatch this workflow"; exit 1 ;;
           esac
 
       - name: Checkout data repo
@@ -231,6 +239,7 @@ jobs:
         env:
           IN_SLUG: ${{ inputs.slug }}
           ACTOR: ${{ inputs.actorEmail }}
+          GH_ACTOR: ${{ github.actor }}
         run: |
           set -euo pipefail
           # Stage the whole workspace dir — a per-file list aborts the entire
@@ -247,7 +256,7 @@ jobs:
           fi
           git config user.name "oseg-audit-bot"
           git config user.email "actions@onstage.biz"
-          git commit -m "capture: $IN_SLUG — requested by $ACTOR"
+          git commit -m "capture: $IN_SLUG — requested by $ACTOR (dispatched by $GH_ACTOR)"
           # Rebase-retry on a racing push (status.yml / a parallel slug), like
           # status.yml — but FAIL LOUDLY if every attempt loses the race (never
           # report success with nothing pushed).

