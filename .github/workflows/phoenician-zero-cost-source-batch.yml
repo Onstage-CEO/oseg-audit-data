@@ -55,8 +55,10 @@ jobs:
             label="$1"
             shift
             echo "### $label" >> "$GITHUB_STEP_SUMMARY"
+            set +e
             "$@" 2>&1 | tee "/tmp/$label.log"
             code="${PIPESTATUS[0]}"
+            set -e
             echo "exit: $code" >> "$GITHUB_STEP_SUMMARY"
             return 0
           }
