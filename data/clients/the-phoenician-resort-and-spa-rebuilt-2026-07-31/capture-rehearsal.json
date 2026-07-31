@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "V1",
+  "generatedAt": "2026-07-31T19:33:57.396Z",
+  "liveNetwork": false,
+  "clientData": false,
+  "paidCalls": false,
+  "auditReady": false,
+  "items": [
+    {
+      "sourceId": "booking",
+      "outcome": "failed",
+      "status": "error",
+      "reason": "Apify booking: paid launch blocked — set a reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING (or shared OSEG_APIFY_MAX_TOTAL_CHARGE_USD) ceiling."
+    },
+    {
+      "sourceId": "expedia",
+      "outcome": "failed",
+      "status": "error",
+      "reason": "Apify expedia: paid launch blocked — set a reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA (or shared OSEG_APIFY_MAX_TOTAL_CHARGE_USD) ceiling."
+    },
+    {
+      "sourceId": "google",
+      "outcome": "gated",
+      "status": "no_queries",
+      "reason": "Apify google: could not confidently auto-find the hotel page for \"The Phoenician Resort and Spa\" — set googleUrl in audit.json."
+    },
+    {
+      "sourceId": "reddit",
+      "outcome": "gated",
+      "status": "needs_key",
+      "reason": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
+    },
+    {
+      "sourceId": "tripadvisor",
+      "outcome": "failed",
+      "status": "error",
+      "reason": "tripadvisor: exact canonical tripadvisorUrl is required before paid capture; use a https://*.tripadvisor.com/.../Hotel_Review-... listing URL."
+    },
+    {
+      "sourceId": "youtube",
+      "outcome": "incomplete",
+      "status": "ok",
+      "reason": "Capture ran but failure, truncation, or partial-completeness lineage remains."
+    }
+  ],
+  "blockers": [
+    "booking",
+    "expedia",
+    "google",
+    "reddit",
+    "tripadvisor",
+    "youtube"
+  ],
+  "counts": {
+    "complete": 0,
+    "incomplete": 1,
+    "gated": 2,
+    "failed": 3,
+    "missing": 0
+  }
+}

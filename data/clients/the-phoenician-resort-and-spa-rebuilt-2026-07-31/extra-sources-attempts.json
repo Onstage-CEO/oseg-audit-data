@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "V1",
+  "generatedAt": "2026-07-31T19:36:08.190Z",
+  "property": "The Phoenician Resort and Spa",
+  "attempts": {
+    "yelp": {
+      "result": "needs_configuration",
+      "mechanism": "apify yelp",
+      "message": "No client.yelpUrl configured for this property, so no Yelp capture was attempted.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T19:36:08.190Z"
+    },
+    "facebook": {
+      "result": "needs_configuration",
+      "mechanism": "apify social (pageUrl)",
+      "message": "No client.facebookUrl configured for this property, so no Facebook capture was attempted.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T19:36:08.190Z"
+    },
+    "instagram": {
+      "result": "checked_no_data",
+      "mechanism": "apify social (keyword)",
+      "message": "Ran the instagram capture against a property keyword search; no public posts were returned.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T19:36:08.190Z"
+    },
+    "tiktok": {
+      "result": "captured_partial",
+      "mechanism": "apify social (keyword)",
+      "message": "Captured 30 public tiktok post(s).",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
+      "attemptedAt": "2026-07-31T19:36:08.190Z"
+    }
+  }
+}

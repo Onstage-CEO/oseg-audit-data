@@ -1,0 +1,146 @@
+{
+  "reportVersion": "entertainment-discovery-v1",
+  "generatedAt": "2026-07-31T19:34:10.201Z",
+  "target": {
+    "propertyName": "The Phoenician Resort and Spa",
+    "location": "Scottsdale, Arizona"
+  },
+  "posture": "This is the entertainment evidence hunt: start with the highest-yield visual, social, forum, blog, complaint, Spanish-language, and competitor searches, then preserve the strongest sourced findings for human review before anything becomes client-facing.",
+  "queryPacks": [
+    {
+      "sourceId": "tiktok",
+      "displayName": "TikTok guest videos",
+      "lane": "visual_social",
+      "priority": "must_check",
+      "why": "Most likely place to see current guest-shot shows, pool activities, nightlife energy, and dead-air moments.",
+      "queries": [
+        "The Phoenician Resort and Spa entertainment",
+        "The Phoenician Resort and Spa animation team",
+        "The Phoenician Resort and Spa night show",
+        "The Phoenician Resort and Spa kids club",
+        "The Phoenician Resort and Spa nightlife",
+        "The Phoenician Resort and Spa resort review"
+      ]
+    },
+    {
+      "sourceId": "instagram",
+      "displayName": "Instagram / Reels / tagged posts",
+      "lane": "visual_social",
+      "priority": "must_check",
+      "why": "Best visual cross-check for promoted entertainment versus what guests actually post and tag.",
+      "queries": [
+        "site:instagram.com \"The Phoenician Resort and Spa\" entertainment",
+        "site:instagram.com \"The Phoenician Resort and Spa\" show",
+        "site:instagram.com \"The Phoenician Resort and Spa\" live music",
+        "The Phoenician Resort and Spa instagram reels entertainment"
+      ]
+    },
+    {
+      "sourceId": "youtube_deep",
+      "displayName": "YouTube deep visual sweep",
+      "lane": "visual_social",
+      "priority": "must_check",
+      "why": "Long-form videos reveal real venue layout, crowd energy, show quality, and whether entertainment is memorable enough to film.",
+      "queries": [
+        "The Phoenician Resort and Spa resort tour entertainment",
+        "The Phoenician Resort and Spa review vlog entertainment",
+        "The Phoenician Resort and Spa night show",
+        "The Phoenician Resort and Spa live music",
+        "The Phoenician Resort and Spa kids club",
+        "The Phoenician Resort and Spa activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "displayName": "Facebook resort and destination groups",
+      "lane": "community",
+      "priority": "high_value",
+      "why": "Recent, highly specific traveler Q&A often surfaces exact show/activity complaints before they hit review platforms.",
+      "queries": [
+        "site:facebook.com/groups \"The Phoenician Resort and Spa\" entertainment",
+        "site:facebook.com/groups \"The Phoenician Resort and Spa\" activities",
+        "site:facebook.com/groups \"Scottsdale, Arizona\" \"The Phoenician Resort and Spa\"",
+        "The Phoenician Resort and Spa Facebook group review"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "displayName": "Reddit and traveler forums",
+      "lane": "community",
+      "priority": "high_value",
+      "why": "Unfiltered comparison language and “would I return?” discussions are ideal for finding the buried negative or rave.",
+      "queries": [
+        "site:reddit.com \"The Phoenician Resort and Spa\" entertainment",
+        "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
+        "site:reddit.com \"The Phoenician Resort and Spa\" nightlife",
+        "site:tripadvisor.com/ShowTopic \"The Phoenician Resort and Spa\" entertainment",
+        "\"The Phoenician Resort and Spa\" \"animation team\""
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "displayName": "Blogs and long-form reviews",
+      "lane": "longform",
+      "priority": "high_value",
+      "why": "Long-form reviews often include day-by-day descriptions that review boxes truncate.",
+      "queries": [
+        "\"The Phoenician Resort and Spa\" \"honest review\" entertainment",
+        "\"The Phoenician Resort and Spa\" \"family review\" \"kids club\"",
+        "\"The Phoenician Resort and Spa\" \"travel blog\" nightlife",
+        "\"The Phoenician Resort and Spa\" \"review\" \"nightly entertainment\"",
+        "site:oyster.com \"The Phoenician Resort and Spa\""
+      ]
+    },
+    {
+      "sourceId": "complaint_sites",
+      "displayName": "Complaint-heavy sources",
+      "lane": "complaints",
+      "priority": "opportunistic",
+      "why": "Low volume, high severity. Useful for recurring entertainment failures, misleading marketing, or kid-program safety complaints.",
+      "queries": [
+        "site:complaintsboard.com \"The Phoenician Resort and Spa\"",
+        "site:pissedconsumer.com \"The Phoenician Resort and Spa\"",
+        "site:trustpilot.com \"The Phoenician Resort and Spa\"",
+        "\"The Phoenician Resort and Spa\" \"worst entertainment\"",
+        "\"The Phoenician Resort and Spa\" \"boring\""
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "displayName": "Spanish-language traveler search",
+      "lane": "community",
+      "priority": "high_value",
+      "why": "Mexico/Caribbean resorts often have Spanish guest commentary that English-only review sweeps miss.",
+      "queries": [
+        "\"The Phoenician Resort and Spa\" animación",
+        "\"The Phoenician Resort and Spa\" equipo de animación",
+        "\"The Phoenician Resort and Spa\" entretenimiento",
+        "\"The Phoenician Resort and Spa\" show nocturno",
+        "\"The Phoenician Resort and Spa\" música en vivo",
+        "\"The Phoenician Resort and Spa\" club infantil",
+        "\"The Phoenician Resort and Spa\" actividades",
+        "\"The Phoenician Resort and Spa\" discoteca"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "displayName": "Competitor comparison sweep",
+      "lane": "competitors",
+      "priority": "opportunistic",
+      "why": "Finds guests comparing entertainment against nearby resorts, which is often more useful than isolated sentiment.",
+      "queries": [
+        "\"The Phoenician Resort and Spa\" vs resort entertainment",
+        "\"The Phoenician Resort and Spa\" compared to entertainment",
+        "\"The Phoenician Resort and Spa\" better entertainment than",
+        "\"The Phoenician Resort and Spa\" worse entertainment than"
+      ]
+    }
+  ],
+  "inCorpusNuggets": [],
+  "nextActions": [
+    "Open the must-check visual searches first: TikTok, Instagram/Reels, and YouTube deep sweep.",
+    "Save any strong videos/posts/screenshots as operator artifacts, then promote only sourced findings.",
+    "Use community/forum results to find buried complaints, competitor comparisons, and recent team/programming changes.",
+    "Keep client-facing claims limited to captured/sourced evidence; use this file as the internal gold-nugget worklist."
+  ]
+}

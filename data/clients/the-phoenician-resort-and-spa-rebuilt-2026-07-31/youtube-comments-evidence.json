@@ -1,0 +1,178 @@
+{
+  "reportVersion": "open-web-evidence-v1",
+  "generatedAt": "2026-07-31T19:36:08.190Z",
+  "findings": [
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=HwW5WGC-dqo&lc=Ugzq6xzt3KGLQOCOhg54AaABAg",
+      "domain": "youtube.com",
+      "title": "@ABMTravelGroup",
+      "snippet": "Would you stay at The Phoenician Resort & Spa in Scottsdale? 🌴☀\n\nThis place is truly one of Arizona’s most iconic luxury resorts! From the pools and spa to the incredible desert scenery, this property definitely delivers the Scottsdale luxury vibe.\n\n👇 What’s YOUR favorite luxury resort in Arizona?\n\nDon’t forget to LIKE 👍, SUBSCRIBE 🔔 and check out more luxury travel content from ABM Travel Group!",
+      "matchedTerms": [
+        "vibe"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=vmr41at6Crw&lc=Ugw22XoXcF5w0RsUKil4AaABAg",
+      "domain": "youtube.com",
+      "title": "@fozzybear9114",
+      "snippet": "Ya for sure dont call it CHRISTMAS DECOR. HAHA",
+      "matchedTerms": [
+        "christmas"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=vmr41at6Crw&lc=Ugw2lYLXwoTc2fFKCNF4AaABAg",
+      "domain": "youtube.com",
+      "title": "@AlonzoLivin",
+      "snippet": "12:25 so, do you give it 4 stars? Because yes, Forbes gives it 5 stars...and Google shows this hotel to be 5 Stars currently as well. Thanks for insights",
+      "matchedTerms": [
+        "shows"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=eCyy48WrSSE&lc=UgxbA7nkUeB8NyrMF8d4AaABAg",
+      "domain": "youtube.com",
+      "title": "@culvuil",
+      "snippet": "Amazing Tour 😃 Captured a lot of things. Wish you could show us the Ball room and the the conference area as well. \nHope you get many more views :)",
+      "matchedTerms": [
+        "show"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=eCyy48WrSSE&lc=Ugz4MACB1bB3FAd2QSt4AaABAg",
+      "domain": "youtube.com",
+      "title": "@ZiggyLu-og3zp",
+      "snippet": "Thank you. I’d like to say that there’s way too much parking lot and pavement in this video. I’d have love to seen more pool, restaurant and spa especially. Thanks again",
+      "matchedTerms": [
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=qAAnATIl-Lc&lc=UgzronR6G7gAiVfaPHV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@JIEWalk",
+      "snippet": "Real luxury place with super facilities in Phoenician Resort. The interior of the room is so elegant and the food served is very tempting to eat. Fun to watch your quality content, friend. 👍🤩",
+      "matchedTerms": [
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=qAAnATIl-Lc&lc=Ugws6_9qrU62fAkkSwt4AaABAg",
+      "domain": "youtube.com",
+      "title": "@NewHorizonsTravel",
+      "snippet": "This resort features a stunning location, architecture, amenities, and activities for a memorable holiday. Cheers❤👏",
+      "matchedTerms": [
+        "activities",
+        "holiday"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=FGvfFVw3Dtk&lc=Ugy8if3VsMggNy8CMeJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@TM.expeditions",
+      "snippet": "Pure desert calm. This Grand Deluxe Casita captures the art of intentional living and timeless design, offering a quiet space to slow down and savor the beauty of the Sonoran landscape.",
+      "matchedTerms": [
+        "quiet"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=FGvfFVw3Dtk&lc=Ugy1fUwl_LVoOf7_6fF4AaABAg",
+      "domain": "youtube.com",
+      "title": "@koreyb99",
+      "snippet": "Great resort. You have to check out the Canyon Suites though next time. A more quiet luxury hotel inside of a resort.",
+      "matchedTerms": [
+        "quiet"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Wcm3mr7REu8&lc=Ugw4upmlX_D7i-s6pCx4AaABAg",
+      "domain": "youtube.com",
+      "title": "@shanenaseem1509",
+      "snippet": "I think it was definly worth it and by the way is the home up camelback mountain really steep or is it a family friendly kind of climb up the mountain?",
+      "matchedTerms": [
+        "family"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Wcm3mr7REu8&lc=Ugx5hUH3MMf2JrqUBoJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@A66Millhouse",
+      "snippet": "Don't think it was worth 1k a night.  I would expect alot more luxury and personal butler services for 1k a night. However the resort does seem really nice",
+      "matchedTerms": [
+        "night"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=as6uIaLs3v4&lc=Ugwju6BG6ppD6vt5KqV4AaABAg",
+      "domain": "youtube.com",
+      "title": "@bwrecks",
+      "snippet": "Great music selection",
+      "matchedTerms": [
+        "music"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=SGzxGhifbu8&lc=UgxOIIIaqN0ai6AviCd4AaABAg",
+      "domain": "youtube.com",
+      "title": "@kiminohio3375",
+      "snippet": "beautiful place,love their pool perfect night swimming.foods are yummy and rooms are huge and clean",
+      "matchedTerms": [
+        "night",
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=Sx_iKQhjWQY&lc=Ugzz-AXncmYc1hM5ksJ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@OLOZANO",
+      "snippet": "Ok soooo, been living here in AZ for the past 15 years and, yeah, im kinda ashamed to say I've never once stepped foot into this place! However, I must that was a rather nice tour and big thumbs up on the Music choice! I think I need to book a Staycation in the near future and I've a hunch I know just where to do so. Thanks!",
+      "matchedTerms": [
+        "music"
+      ]
+    }
+  ],
+  "queriesRun": 14,
+  "packsRun": 1
+}
