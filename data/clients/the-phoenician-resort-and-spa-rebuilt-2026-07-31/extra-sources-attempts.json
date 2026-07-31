@@ -1,15 +1,15 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T23:42:00Z",
+  "generatedAt": "2026-07-31T23:48:00Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": {
     "yelp": {
-      "result": "needs_configuration",
-      "mechanism": "apify yelp",
-      "message": "No client.yelpUrl configured for this property, so no Yelp capture was attempted.",
-      "recordsReturned": 0,
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Two exact-property Yelp searches found no main-resort business listing. The Phoenician Spa listing (103 reviews) was found and excluded because it is a distinct outlet/service surface, not the property-level resort corpus.",
+      "recordsReturned": 1,
       "recordsAccepted": 0,
-      "attemptedAt": "2026-07-31T20:00:04.487Z"
+      "attemptedAt": "2026-07-31T23:48:00Z"
     },
     "facebook": {
       "result": "needs_configuration",

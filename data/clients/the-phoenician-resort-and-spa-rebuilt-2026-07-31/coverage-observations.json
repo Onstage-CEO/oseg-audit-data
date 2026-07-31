@@ -7,6 +7,14 @@
       "captureMethod": "bounded_official_domain_discovery",
       "usedInReport": true,
       "confidence": "high"
+    },
+    {
+      "source": "local_media",
+      "countCaptured": 6,
+      "countFound": 6,
+      "captureMethod": "bounded_public_web_discovery",
+      "usedInReport": true,
+      "confidence": "high"
     }
   ],
   "outlets": []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "requestedAt": "2026-07-31T23:42:00Z",
-  "reason": "Regenerate after zero-cost batch 3: resort pages, Agoda, aerial, webook, Quora",
+  "requestedAt": "2026-07-31T23:48:00Z",
+  "reason": "Regenerate after Yelp and local-media discovery batch 4",
   "engineCommit": "1527d8360f88e9c73d5e1e2fc79de7073385ecf6"
 }
