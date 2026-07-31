@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "V1",
+  "property": "The Phoenician Resort and Spa",
+  "retrievedAt": "2026-07-31T23:48:00Z",
+  "method": "bounded_public_web_discovery",
+  "records": [
+    {
+      "url": "https://www.arizonafoothillsmagazine.com/valleygirlblog/events/derby-day-returns-to-the-phoenician/",
+      "publisher": "Arizona Foothills Magazine",
+      "published": "2026-04-27",
+      "signal": "Derby Day interactive entertainment at Mowry & Cotton."
+    },
+    {
+      "url": "https://event.marriott.com/phxlc-the-phoenician-a-luxury-collection-resort-scottsdale/events/scottsdale/dueling-pianos-11636058",
+      "publisher": "Marriott Events",
+      "signal": "Dueling Pianos event schedule and property identity."
+    },
+    {
+      "url": "https://www.localwineevents.com/view/event/derby-day-porch-party-at-mowry-cotton-at-the-phoenician/1003812",
+      "publisher": "LocalWineEvents",
+      "signal": "2026 Derby Day with live DJ at Mowry & Cotton."
+    },
+    {
+      "url": "https://www.visitphoenix.com/event/4th-of-july-weekend-at-the-phoenician/158174/",
+      "publisher": "Visit Phoenix",
+      "signal": "2026 July 4 weekend live DJ and live band."
+    },
+    {
+      "url": "https://scottsdale.com/blog/post/15-of-the-best-locales-for-live-music-in-scottsdale/",
+      "publisher": "Scottsdale.com",
+      "signal": "Phoenician Tavern Dueling Pianos schedule."
+    },
+    {
+      "url": "https://fabulousarizona.com/event/2026-derby-day-porch-party/",
+      "publisher": "Fabulous Arizona",
+      "published": "2026",
+      "signal": "Derby Day live DJ and event description."
+    }
+  ],
+  "yelp": {
+    "queries": [
+      "site:yelp.com/biz \"The Phoenician\" Scottsdale resort",
+      "site:yelp.com/biz \"The Phoenician, a Luxury Collection Resort\" Scottsdale"
+    ],
+    "result": "checked_no_data_main_property",
+    "excluded": {
+      "url": "https://www.yelp.com/biz/the-phoenician-spa-scottsdale",
+      "reason": "Distinct spa surface; 103 reviews."
+    }
+  }
+}

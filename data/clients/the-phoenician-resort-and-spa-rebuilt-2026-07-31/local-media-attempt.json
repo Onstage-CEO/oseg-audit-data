@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "V1",
+  "source": "local_media",
+  "attemptedAt": "2026-07-31T23:48:00Z",
+  "method": "bounded_public_web_discovery",
+  "result": "captured_partial",
+  "message": "Captured 6 current independent local-media/event pages with Phoenician programming signals. Bounded public search was completed, but exhaustive local-media enumeration is not provable.",
+  "recordsReturned": 6,
+  "recordsAccepted": 6
+}
