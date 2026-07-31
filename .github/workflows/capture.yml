@@ -123,6 +123,10 @@ jobs:
           # Apify managed-scraper token (Booking.com + Expedia reviews). Absent →
           # those sources report needs_key and the round is still ok (no-op).
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING || '5' }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA || '5' }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE || '10' }}
+          OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD: ${{ vars.OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD || '0' }}
           # Per-source wall-clock budget (ms). Apify managed-scraper actors
           # (Booking/Expedia) far exceed the 20s default — a cold actor start
           # alone can. 180s keeps the round well under the job's 20-min cap.
