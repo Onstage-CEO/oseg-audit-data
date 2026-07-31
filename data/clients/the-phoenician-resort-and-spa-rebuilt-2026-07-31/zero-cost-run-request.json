@@ -1,0 +1,15 @@
+{
+  "requestedAt": "2026-07-31T22:47:00Z",
+  "requestedBy": "joe@onstage.biz",
+  "engineRef": "708f03ab38be0556d30839716d6ba07d4ee66dec",
+  "paidProviders": false,
+  "sources": [
+    "resortpass",
+    "traveloka",
+    "tiket",
+    "instagram",
+    "facebook",
+    "tiktok"
+  ],
+  "regenerateCoverageMatrix": true
+}
