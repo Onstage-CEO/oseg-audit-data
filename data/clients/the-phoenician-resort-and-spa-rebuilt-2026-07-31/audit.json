@@ -10,7 +10,11 @@
     "dateRange": {
       "from": "2025-07-31",
       "to": "2026-07-31"
-    }
+    },
+    "googleUrl": "https://www.google.com/maps/search/The%20Phoenician%2C%20Scottsdale%2C%20US?hl=en",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html",
+    "bookingUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html",
+    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-The-Phoenician.h10645.Hotel-Information"
   },
   "oneLineThesis": "",
   "coreFinding": "",
