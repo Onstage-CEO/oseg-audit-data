@@ -79,6 +79,8 @@ jobs:
         working-directory: engine
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA || '5' }}
+          OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD: ${{ vars.OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD || '0' }}
           OSEG_APIFY_MAX_WAIT_MS: ${{ vars.OSEG_APIFY_MAX_WAIT_MS || '3000000' }}
           OSEG_CAPTURE_DEPTH: ${{ vars.OSEG_CAPTURE_DEPTH || '4490' }}
           WS: ${{ steps.resolve.outputs.ws }}
