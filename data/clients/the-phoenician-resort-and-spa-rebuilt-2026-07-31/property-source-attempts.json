@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-31T23:39:19.184Z",
+  "generatedAt": "2026-07-31T23:41:42.404Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -32,16 +32,16 @@
     },
     {
       "source": "yelp",
-      "mechanism": "apify yelp",
-      "provider": "apify yelp",
-      "attemptedAt": "2026-07-31T20:00:04.487Z",
-      "result": "needs_configuration",
-      "recordsReturned": 0,
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:48:00Z",
+      "result": "checked_no_data",
+      "recordsReturned": 1,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
       "retryable": true,
-      "message": "No client.yelpUrl configured for this property, so no Yelp capture was attempted."
+      "message": "Two exact-property Yelp searches found no main-resort business listing. The Phoenician Spa listing (103 reviews) was found and excluded because it is a distinct outlet/service surface, not the property-level resort corpus."
     },
     {
       "source": "booking",
@@ -241,7 +241,7 @@
       "source": "property_social",
       "mechanism": "bounded property-social resolution (no post capture)",
       "provider": "bounded property-social resolution (no post capture)",
-      "attemptedAt": "2026-07-31T23:39:18.210Z",
+      "attemptedAt": "2026-07-31T23:41:41.756Z",
       "result": "pending",
       "recordsReturned": 1,
       "recordsAccepted": 0,
@@ -265,20 +265,21 @@
     },
     {
       "source": "local_media",
-      "mechanism": "Bounded property/location Google-organic queries through capture-local-media with candidate classification and local-media-attempt.json lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
+      "recordsReturned": 6,
+      "recordsAccepted": 6,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "resortpass",
       "mechanism": "direct_public_fetch",
       "provider": "direct_public_fetch",
-      "attemptedAt": "2026-07-31T23:39:14.682Z",
+      "attemptedAt": "2026-07-31T23:41:38.999Z",
       "result": "needs_configuration",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -337,7 +338,7 @@
       "source": "traveloka",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:39:16.190Z",
+      "attemptedAt": "2026-07-31T23:41:40.412Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -350,7 +351,7 @@
       "source": "tiket",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:39:17.206Z",
+      "attemptedAt": "2026-07-31T23:41:41.109Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,

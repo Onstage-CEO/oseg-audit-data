@@ -4,7 +4,6 @@ _Generated 2026-07-31 · matrix V2 · capability V2 · attempts V1._
 ## ⛔ Coverage blockers (report may not imply completeness while these stand)
 - The Phoenician Resort and Spa: Google / Google Maps reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via aggregator.
 - The Phoenician Resort and Spa: TripAdvisor reviews is pending; The source attempt is still pending and has not produced a terminal result. collected 0 review(s); provider-reported task cost $0.337; 1 in queue
-- The Phoenician Resort and Spa: Yelp reviews is needs configuration; Not checked successfully; the source needs a URL, query, supervised step, or other configuration. No client.yelpUrl configured for this property, so no Yelp capture was attempted.
 - The Phoenician Resort and Spa: Expedia reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via aggregator.
 - The Phoenician Resort and Spa: Facebook mentions is needs configuration; Not checked successfully; the source needs a URL, query, supervised step, or other configuration. No client.facebookUrl configured for this property, so no Facebook capture was attempted.
 - The Phoenician Resort and Spa: TikTok mentions is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
@@ -13,20 +12,20 @@ _Generated 2026-07-31 · matrix V2 · capability V2 · attempts V1._
 - The Phoenician Resort and Spa: Blogs / travel articles is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
 - The Phoenician Resort and Spa: Property social profile / hashtag resolution is pending; SUPPLEMENTAL (never rating math). The source attempt is still pending and has not produced a terminal result. Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured.
 - The Phoenician Resort and Spa: Resort-owned pages is captured partial; Captured, but source completeness is partial or unproven. Captured via bounded_official_domain_discovery.
-- The Phoenician Resort and Spa: Local media + event listings is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.
+- The Phoenician Resort and Spa: Local media + event listings is captured partial; Captured, but source completeness is partial or unproven. Captured via bounded_public_web_discovery.
 - The Phoenician Resort and Spa: ResortPass verified day-guest reviews is needs configuration; Not checked successfully; the source needs a URL, query, supervised step, or other configuration. The identity-matched page did not expose a supported review container; zero reviews cannot be claimed.
 - The Phoenician Resort and Spa: Quora / Q&A platforms is blocked; SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.
 
 Outlet-level Google capture implemented: **yes**
 
 ### PROPERTY — The Phoenician Resort and Spa
-_7/23 engine-supported sources captured_
+_8/23 engine-supported sources captured_
 
 | Source | Status | Attempt | Complete | Checked | Engine | Captured | Found | Got | In report | Conf | Reason |
 |---|---|---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|---|
 | Google / Google Maps reviews | 🟠 captured partial/unproven | captured_partial | partial | yes | yes | yes | 3,127 | 3,127 | yes | medium | Captured, but source completeness is partial or unproven. Captured via aggregator. |
 | TripAdvisor reviews | ⏳ pending | pending | unknown | no | yes | no | ? | 0 | yes | medium | The source attempt is still pending and has not produced a terminal result. collected 0 review(s); provider-reported task cost $0.337; 1 in queue |
-| Yelp reviews | 🛠️ needs configuration | needs_configuration | unknown | no | yes | no | ? | 0 | yes | low | Not checked successfully; the source needs a URL, query, supervised step, or other configuration. No client.yelpUrl configured for this property, so no Yelp capture was attempted. |
+| Yelp reviews | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | yes | high | Checked successfully; the source returned no usable data. Two exact-property Yelp searches found no main-resort business listing. The Phoenician Spa listing (103 reviews) was found and excluded because it is a distinct outlet/service surface, not the property-level resort corpus. |
 | Booking.com reviews | ✅ captured complete | captured_complete | complete | yes | yes | yes | 58 | 58 | yes | high | Captured with completeness proven for the recorded attempt. Captured via aggregator. |
 | Expedia reviews | 🟠 captured partial/unproven | captured_partial | partial | yes | yes | yes | 593 | 593 | yes | medium | Captured, but source completeness is partial or unproven. Captured via aggregator. |
 | OpenTable / reservation-platform reviews | — n/a | not_applicable | not_applicable | no | no | no | ? | 0 | no | low | Not applicable at this level. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance. |
@@ -45,7 +44,7 @@ _7/23 engine-supported sources captured_
 | Blogs / travel articles | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 10 | 10 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
 | Property social profile / hashtag resolution | ⏳ pending | pending | unknown | no | yes | no | ? | 0 | no | medium | SUPPLEMENTAL (never rating math). The source attempt is still pending and has not produced a terminal result. Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured. |
 | Resort-owned pages | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 7 | 7 | yes | high | Captured, but source completeness is partial or unproven. Captured via bounded_official_domain_discovery. |
-| Local media + event listings | ⬜ not checked | not_checked | unknown | no | yes | no | ? | 0 | no | low | Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record. |
+| Local media + event listings | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 6 | 6 | yes | high | Captured, but source completeness is partial or unproven. Captured via bounded_public_web_discovery. |
 | ResortPass verified day-guest reviews | 🛠️ needs configuration | needs_configuration | unknown | no | yes | no | ? | 0 | no | low | Not checked successfully; the source needs a URL, query, supervised step, or other configuration. The identity-matched page did not expose a supported review container; zero reviews cannot be claimed. |
 | Cluburlaub.de guest reviews | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | no | high | Checked successfully; the source returned no usable data. Two exact-property/domain searches returned no identity-matched Cluburlaub.de listing for The Phoenician in Scottsdale. |
 | HolidayCheck reviews | 🚫 not supported yet | not_supported | not_applicable | no | no | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). The engine has no coverage-qualified capture path for this source at this level yet. The zero-network resolver records an exact official HolidayCheck hotel surface after full property and locality checks. It does not fetch pages, acquire reviews or ratings, or use the Business Center. Current terms and documented Business Center capability do not establish a compliant commercial guest-review read/export path, so review coverage remains policy-blocked. |
