@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T23:34:00Z",
+  "generatedAt": "2026-07-31T23:42:00Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": {
     "yelp": {
@@ -66,6 +66,38 @@
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "attemptedAt": "2026-07-31T23:34:00Z"
+    },
+    "agoda": {
+      "result": "not_supported",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Exact main-resort Agoda listing resolved at /the-phoenician-a-luxury-collection-resort-scottsdale_3/hotel/phoenix-az-us.html. Public property identity was captured; licensed review aggregate was not acquired because no configured licensed acquisition path exists.",
+      "recordsReturned": 1,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:42:00Z"
+    },
+    "aerial_satellite": {
+      "result": "not_supported",
+      "mechanism": "openstreetmap_public_map_context",
+      "message": "Property map identity resolved at 6000 E Camelback Rd with approximate resort/golf-course coordinates 33.50666, -111.95121 (OSM way 182104348). Context is supplemental; no imagery was copied or used in rating math.",
+      "recordsReturned": 1,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:42:00Z"
+    },
+    "webook": {
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Two exact-property webook domain searches returned no property-linked event or experience listing for The Phoenician in Scottsdale.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:42:00Z"
+    },
+    "quora": {
+      "result": "blocked",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:42:00Z"
     }
   }
 }
