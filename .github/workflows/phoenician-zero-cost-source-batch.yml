@@ -1,0 +1,85 @@
+name: phoenician-zero-cost-source-batch
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/zero-cost-run-request.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phoenician-zero-cost-source-batch
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 708f03ab38be0556d30839716d6ba07d4ee66dec
+  SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout data
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+
+      - name: Checkout pinned engine
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine
+        working-directory: engine
+        run: npm ci
+
+      - name: Execute zero-cost sources
+        working-directory: engine
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+        run: |
+          set -uo pipefail
+          run_source() {
+            label="$1"
+            shift
+            echo "### $label" >> "$GITHUB_STEP_SUMMARY"
+            "$@" 2>&1 | tee "/tmp/$label.log"
+            code="${PIPESTATUS[0]}"
+            echo "exit: $code" >> "$GITHUB_STEP_SUMMARY"
+            return 0
+          }
+          run_source resortpass npm run dev --silent -- capture-resortpass "$WS"
+          run_source traveloka npm run dev --silent -- resolve-traveloka "$WS" --candidate-file "$WS/traveloka-candidates.json"
+          run_source tiket npm run dev --silent -- resolve-tiket "$WS" --candidate-file "$WS/tiket-candidates.json"
+          run_source property-social npm run dev --silent -- resolve-property-social "$WS" --candidate-file "$WS/property-social-candidates.json"
+          npm run dev --silent -- generate-coverage-matrix "$WS"
+
+      - name: Commit results
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          git add "data/clients/$SLUG"
+          if git diff --cached --quiet; then
+            echo "No source-state changes."
+            exit 0
+          fi
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "resolve zero-cost Phoenician sources"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          exit 1
