@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-31T22:59:01.612Z",
+  "generatedAt": "2026-07-31T23:30:16.066Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -237,14 +237,16 @@
     },
     {
       "source": "property_social",
-      "mechanism": "Operator-supplied public search-result metadata through resolve-property-social with explicit attempt lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
+      "mechanism": "bounded property-social resolution (no post capture)",
+      "provider": "bounded property-social resolution (no post capture)",
+      "attemptedAt": "2026-07-31T23:30:15.070Z",
+      "result": "pending",
+      "recordsReturned": 1,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured."
     },
     {
       "source": "resort_pages",
@@ -272,7 +274,7 @@
       "source": "resortpass",
       "mechanism": "direct_public_fetch",
       "provider": "direct_public_fetch",
-      "attemptedAt": "2026-07-31T22:58:56.742Z",
+      "attemptedAt": "2026-07-31T23:30:11.704Z",
       "result": "needs_configuration",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -329,7 +331,7 @@
       "source": "traveloka",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T22:58:58.778Z",
+      "attemptedAt": "2026-07-31T23:30:13.140Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -342,7 +344,7 @@
       "source": "tiket",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T22:58:59.779Z",
+      "attemptedAt": "2026-07-31T23:30:14.129Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,

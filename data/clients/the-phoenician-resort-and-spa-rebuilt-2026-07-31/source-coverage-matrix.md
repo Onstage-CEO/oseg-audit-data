@@ -10,9 +10,9 @@ _Generated 2026-07-31 · matrix V2 · capability V2 · attempts V1._
 - The Phoenician Resort and Spa: Facebook mentions is needs configuration; Not checked successfully; the source needs a URL, query, supervised step, or other configuration. No client.facebookUrl configured for this property, so no Facebook capture was attempted.
 - The Phoenician Resort and Spa: TikTok mentions is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
 - The Phoenician Resort and Spa: YouTube videos + comments is captured partial; Captured, but source completeness is partial or unproven. Captured via official_api.
-- The Phoenician Resort and Spa: Reddit / forums is captured partial; Captured, but source completeness is partial or unproven. Captured via official_api.
+- The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.
 - The Phoenician Resort and Spa: Blogs / travel articles is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
-- The Phoenician Resort and Spa: Property social profile / hashtag resolution is not checked; SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.
+- The Phoenician Resort and Spa: Property social profile / hashtag resolution is pending; SUPPLEMENTAL (never rating math). The source attempt is still pending and has not produced a terminal result. Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured.
 - The Phoenician Resort and Spa: Resort-owned pages is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.
 - The Phoenician Resort and Spa: Local media + event listings is not checked; Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record.
 - The Phoenician Resort and Spa: ResortPass verified day-guest reviews is needs configuration; Not checked successfully; the source needs a URL, query, supervised step, or other configuration. The identity-matched page did not expose a supported review container; zero reviews cannot be claimed.
@@ -27,7 +27,7 @@ _Generated 2026-07-31 · matrix V2 · capability V2 · attempts V1._
 Outlet-level Google capture implemented: **yes**
 
 ### PROPERTY — The Phoenician Resort and Spa
-_7/23 engine-supported sources captured_
+_6/23 engine-supported sources captured_
 
 | Source | Status | Attempt | Complete | Checked | Engine | Captured | Found | Got | In report | Conf | Reason |
 |---|---|---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|---|
@@ -48,9 +48,9 @@ _7/23 engine-supported sources captured_
 | Instagram mentions | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | yes | high | Checked successfully; the source returned no usable data. Ran the instagram capture against a property keyword search; no public posts were returned. |
 | TikTok mentions | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 30 | 30 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
 | YouTube videos + comments | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 14 | 14 | yes | medium | Captured, but source completeness is partial or unproven. Captured via official_api. |
-| Reddit / forums | 🟠 captured partial/unproven | needs_credentials | unknown | yes | yes | yes | 6 | 6 | yes | low | Captured, but source completeness is partial or unproven. Captured via official_api. |
+| Reddit / forums | 🔑 needs credentials | needs_credentials | unknown | no | yes | no | ? | 6 | yes | low | Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET. |
 | Blogs / travel articles | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 10 | 10 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
-| Property social profile / hashtag resolution | ⬜ not checked | not_checked | unknown | no | yes | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record. |
+| Property social profile / hashtag resolution | ⏳ pending | pending | unknown | no | yes | no | ? | 0 | no | medium | SUPPLEMENTAL (never rating math). The source attempt is still pending and has not produced a terminal result. Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured. |
 | Resort-owned pages | ⬜ not checked | not_checked | unknown | no | yes | no | ? | 0 | no | low | Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record. |
 | Local media + event listings | ⬜ not checked | not_checked | unknown | no | yes | no | ? | 0 | no | low | Not checked — no explicit source attempt is recorded for this workspace. The engine supports this source, but this workspace contains no explicit attempt record. |
 | ResortPass verified day-guest reviews | 🛠️ needs configuration | needs_configuration | unknown | no | yes | no | ? | 0 | no | low | Not checked successfully; the source needs a URL, query, supervised step, or other configuration. The identity-matched page did not expose a supported review container; zero reviews cannot be claimed. |
