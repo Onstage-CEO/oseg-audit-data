@@ -116,6 +116,8 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR: ${{ vars.OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR || '10' }}
+          OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR: ${{ vars.OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR || '10' }}
           # Reddit official-API creds (app-only OAuth). Absent → the engine
           # reports needs_key for reddit and the round is still ok (honest no-op).
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
