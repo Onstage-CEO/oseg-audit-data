@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "V1",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-07-31T22:52:54.333Z",
+  "method": "operator_supplied_search_results",
+  "result": "resolved_partial",
+  "message": "Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured.",
+  "captureStatus": "not_attempted",
+  "queries": [
+    {
+      "platform": "facebook",
+      "query": "site:facebook.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Resolution query returned 0 candidate(s)."
+    },
+    {
+      "platform": "facebook",
+      "query": "\"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" official facebook",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Resolution query returned 0 candidate(s)."
+    },
+    {
+      "platform": "instagram",
+      "query": "site:instagram.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "searched",
+      "recordsReturned": 1,
+      "message": "Resolution query returned 1 candidate(s)."
+    },
+    {
+      "platform": "instagram",
+      "query": "\"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" official instagram",
+      "status": "searched",
+      "recordsReturned": 1,
+      "message": "Resolution query returned 1 candidate(s)."
+    },
+    {
+      "platform": "tiktok",
+      "query": "site:tiktok.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Resolution query returned 0 candidate(s)."
+    },
+    {
+      "platform": "tiktok",
+      "query": "\"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" official tiktok",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Resolution query returned 0 candidate(s)."
+    }
+  ],
+  "platforms": [
+    {
+      "platform": "facebook",
+      "result": "needs_configuration",
+      "message": "No ownership-corroborated facebook profile was resolved; social capture did not run.",
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "platform": "instagram",
+      "result": "pending",
+      "message": "Resolved 1 instagram profile(s); social-post capture has not run.",
+      "recordsReturned": 2,
+      "recordsResolved": 1
+    },
+    {
+      "platform": "tiktok",
+      "result": "needs_configuration",
+      "message": "No ownership-corroborated tiktok profile or property-specific hashtag was resolved; social capture did not run.",
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://www.instagram.com/phoenicianscottsdale/",
+      "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
+      "snippet": "Official Instagram for The Phoenician in Scottsdale, Arizona.",
+      "ownershipEvidence": {
+        "type": "property_owned_backlink",
+        "sourceUrl": "https://www.thephoenician.com/"
+      },
+      "platform": "instagram",
+      "query": "site:instagram.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "retrievedAt": "2026-07-31T22:52:54.333Z",
+      "domain": "instagram.com",
+      "canonicalUrl": "https://instagram.com/phoenicianscottsdale",
+      "handle": "phoenicianscottsdale",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "classification": "resolved_profile",
+      "reason": "Platform, full property identity, discriminating locality, profile handle, and ownership evidence all matched."
+    },
+    {
+      "url": "https://www.instagram.com/phoenicianscottsdale/",
+      "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
+      "snippet": "Official Instagram for The Phoenician in Scottsdale, Arizona.",
+      "ownershipEvidence": {
+        "type": "property_owned_backlink",
+        "sourceUrl": "https://www.thephoenician.com/"
+      },
+      "platform": "instagram",
+      "query": "\"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" official instagram",
+      "retrievedAt": "2026-07-31T22:52:54.333Z",
+      "domain": "instagram.com",
+      "canonicalUrl": "https://instagram.com/phoenicianscottsdale",
+      "handle": "phoenicianscottsdale",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "classification": "duplicate",
+      "reason": "Duplicate of https://instagram.com/phoenicianscottsdale.",
+      "duplicateOfUrl": "https://instagram.com/phoenicianscottsdale"
+    }
+  ],
+  "resolvedProfiles": {
+    "instagram": [
+      "https://instagram.com/phoenicianscottsdale"
+    ]
+  },
+  "resolvedHashtags": [],
+  "recordsReturned": 2,
+  "recordsResolved": 1
+}

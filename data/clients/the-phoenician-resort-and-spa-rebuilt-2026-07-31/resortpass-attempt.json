@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "V1",
+  "source": "resortpass",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-07-31T22:52:51.013Z",
+  "method": "direct_public_fetch",
+  "requestedUrl": "https://www.resortpass.com/hotels/the-phoenician-a-luxury-collection-resort-scottsdale",
+  "finalUrl": "https://www.resortpass.com/hotels/the-phoenician-a-luxury-collection-resort-scottsdale",
+  "httpStatus": 200,
+  "contentType": "text/html; charset=utf-8",
+  "contentSha256": "2f692388c45d8f23dc255c715190a42e321f59ec14ca232dae466ab898ee048e",
+  "result": "unsupported",
+  "message": "The identity-matched page did not expose a supported review container; zero reviews cannot be claimed.",
+  "recordsReturned": 0,
+  "recordsAccepted": 0,
+  "identityMatched": true
+}
