@@ -1,0 +1,574 @@
+{
+  "platform": "booking",
+  "capturedAt": "2026-07-31T19:48:43.288Z",
+  "availableReviews": 58,
+  "reviewsAvailable": 58,
+  "provider": {
+    "runId": "XtCE4ybdYfUbuvfD0",
+    "datasetId": "KbdefxmvIsH1kdeyA",
+    "terminalState": "SUCCEEDED"
+  },
+  "actualCostUsd": 0.11030000000000001,
+  "costStatus": "verified",
+  "providerResultCount": 58,
+  "analyzableTextCount": 58,
+  "acceptedReviewCount": 58,
+  "ratingOnlyCount": 0,
+  "completeness": "complete",
+  "truncated": false,
+  "reviews": [
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Stav",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-qj3ek4",
+      "timestamp": "2026-07-21T21:16:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "It’s such a beautiful property. The bellman are top notch. The service provided. The spacious queen room",
+      "text": "Everything!! From the staff, pool, my room to the restaurants.",
+      "author": "Tempest",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-dffw72",
+      "timestamp": "2026-07-15T18:54:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Luxury at its finest",
+      "text": "This was an exceptional property. Everything we could possibly want in a luxury resort. Well worth the cost. / I really cannot think of anything major. The safe in our room did not work, but we really didn’t need it. I’m sure they would have been right up to fix it, but we did not bother with it.",
+      "author": "Larry",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1ijk13z",
+      "timestamp": "2026-07-13T14:00:58.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "author": "Alejandra",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-wc53ba",
+      "timestamp": "2026-07-10T16:26:01.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "J",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-3qq29y",
+      "timestamp": "2026-07-07T01:27:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "The exceptional staff and assortment of amenities makes it a nice play to visit. It might be time to for a small facelif",
+      "text": "Great amenities! Exceptional staff! They always did their best to accommodate their guests. The grounds are very pretty. / We stayed in the casitas and the cleaning crew rarely came to pick up dirty dishes and glasses. We always had to ask for a fresh set of towels. \n\nThe check-in process was unsatisfactory. After traveling all day, we were greeted by a woman that was quite firm about not letting us have our room until 4 pm sharp. We arrived at 2:50 and my husband had a broken leg with a cast up to his knee and needed to rest. So rather than making a suggestion as to a place to sit while we waited, she quickly dismissed us and our luggage. A member of the bar staff overheard the conversation and was quick to offer their lounge area and gave us a free round of drinks to at least make us feel comfortable for the next hour and ten minutes. First impressions are everything! \n\nThe hours of food service at various onsite restaurants need to overlap their hours. It was hard to get a light meal or a snack late in the day after swimming, unless you opted for fine dining or room service. Not a big deal but a bit inconvenient.",
+      "author": "Sanders",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1kbnvrp",
+      "timestamp": "2026-03-22T19:24:34.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Outstanding place to spend your special occasion",
+      "text": "Staff were excellent.  Room was quiet and clean.  Beautiful view.  Food was outstanding.  Spa services were top notch.",
+      "author": "Alan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-lkx7g1",
+      "timestamp": "2025-12-15T04:12:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Woodcock",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-cjshl9",
+      "timestamp": "2025-11-05T04:01:48.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Disappointed with accommodations mainly.",
+      "text": "Grand Deluxe not so grand, fire pit not working, patio had no lights, room furniture eclectic and way to close to neighbors.",
+      "author": "Robert",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-dxwcpc",
+      "timestamp": "2025-10-22T01:00:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "author": "Sunny",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1kz2nzd",
+      "timestamp": "2025-09-26T13:28:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Thank you for a wonderful stay!",
+      "text": "Everything",
+      "author": "Carolina",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-3p7q1b",
+      "timestamp": "2025-09-03T14:19:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "The Phoenician Scottsdale pas du tout à la hauteur d'un 5 étoiles",
+      "text": "•\tBel emplacement\r\n•\tSalle fitness correcte\r\n•\tSite et jardins agréables / •\tHôtel immense mais mal conçu : pour accéder à la salle fitness, il faut carrément traverser la route.\r\n•\tChambre très éloignée de la réception et de la piscine, ascenseurs parfois en panne, salle de bain vieillotte.\r\n•\tParking payant obligatoire avec des barrières défectueuses qui ne reconnaissaient pas la clé de l’hôtel durant tout le séjour.\r\n•\tPiscines peu entretenues, transats tachés et souillés de crottes d’oiseaux.\r\n•\tAccueil inexistant à la réception, personnel insuffisant et sans aucune attention particulière.\r\n•\tRestaurant steakhouse décevant : repas médiocre et, pour couronner le tout, un cheveu trouvé dans mon plat… signalé immédiatement mais sans changement d’assiette.\r\n\r\n\r\nConclusion :\r\nCet hôtel n’a rien d’un 5 étoiles luxe. Même un bon 4 étoiles serait généreux. C’est un établissement vieillissant, pas au goût du jour, avec des prestations très loin du standing annoncé. Je ne le recommande absolument pas à ceux qui recherchent un séjour haut de gamme. Il y a de bien meilleurs hôtels à Scottsdale.",
+      "author": "Alexis",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-ywnyab",
+      "timestamp": "2025-08-11T18:18:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Resort de lujo con precios altos, grandes albercas y buenos restaurantes",
+      "text": "La ubicacion, las instalaciones, restaurantes / Primer dia no se realizo limpieza del cuarto. Alberca requiere mas limpieza de hojas que caen, el tobogan de agua esraba cerrado, hubo fallas un dia en los elevadores.",
+      "author": "Lujan",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-18uysfl",
+      "timestamp": "2025-07-26T16:27:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Naeona",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1gbil1j",
+      "timestamp": "2025-07-14T10:40:26.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Our stay was relaxing and stress free from start to finish!",
+      "text": "Easy to move around the property, lots to do",
+      "author": "Lacey",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-ug6yuh",
+      "timestamp": "2025-06-17T22:06:22.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great hotel with excellent location, food, and service.",
+      "text": "The facility is beautiful and the entire staff was extremely helpful and friendly.  If you like to hike or walk, it’s very close to the Cholla trial and we walked into Old Town going through the neighborhoods (took about 50 minutes) but is great morning exercise.  If you are booking a room for a vacation, spend the extra money and get a reservation in the front building with a valley or pool view.  The view from your balcony makes for a great setting for morning coffee or afternoon cocktail especially from 3rd or 4th floor.  I think that the Valley view is nicer than the Mountain View unless you are in the back building— then take the Mountain view because the valley view has you first looking directly onto the hotel roof and front building.  The  food and service at the pool was excellent.  The golf course looked very nice.  I didn’t play but you can hit balls at the range with high quality rental clubs for $30 which was very reasonable.",
+      "author": "Louis",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1rbz4yh",
+      "timestamp": "2025-03-30T14:19:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Probably won’t stay there again. We visited the Westin, much nicer",
+      "text": "The pool area was great, The hotel was very clean / Very Expensive, a little dated, The steak House food was ok, The check in staff was not very helpful with amenities",
+      "author": "Ken",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-caep9o",
+      "timestamp": "2025-03-03T19:36:37.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Harvey",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-17ufnb9",
+      "timestamp": "2024-12-19T15:06:02.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Susan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1utq3wd",
+      "timestamp": "2024-12-12T04:27:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "24 hour pool!!!",
+      "text": "The locations, pools, very spacious rooms / Nothing to complain about!",
+      "author": "Emily",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-q21la9",
+      "timestamp": "2024-09-21T14:26:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Duane",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-w0gzha",
+      "timestamp": "2024-09-14T22:22:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Perfect",
+      "text": "It’s was close to home / The spa",
+      "author": "Steven",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-r7z4e9",
+      "timestamp": "2024-09-04T22:45:45.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "This is one of the best resorts I have stayed in! We loved everything about it!",
+      "text": "We had the best time at the Phoenician! The staff was very friendly, the food was amazing and the rooms were big and clean.",
+      "author": "Kristen",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-2lt8pk",
+      "timestamp": "2024-08-27T06:44:22.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "My stay exceeded my expectations.",
+      "text": "I enjoyed the beautiful property and the staff were exceptional. / There was nothing that I disliked.",
+      "author": "Delisa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-ipfov8",
+      "timestamp": "2024-08-20T13:22:13.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Best room service food I’ve ever had",
+      "author": "Duane",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1j8ki18",
+      "timestamp": "2024-08-18T17:31:21.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "The grounds were amazing.",
+      "author": "Marsalza",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1khnpaj",
+      "timestamp": "2024-08-18T08:44:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great stay good food pleasant staff",
+      "text": "Good / Signage",
+      "author": "Denise",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-org6i6",
+      "timestamp": "2024-08-15T14:55:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Rafae",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-15q1o5v",
+      "timestamp": "2024-08-12T05:34:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "it does look luxurious for the most part, but it doesn't feel luxurious",
+      "text": "We stayed at a Casita and we understand that it's in the dead of summer. here are the pros:\r\nAir conditioning is great\r\nkids play area is fun for kids\r\n24-Hour pools\r\nbeautiful grounds\r\ngreat Internet (kids didn't complain)\r\nhave cute things for couples or families to do multiple times everyday\r\nAbel, a front desk bad ass, gave us the perfect welcome and was a very great dude overall / our room has cockroaches, spiders and crickets. I'm not mad at this. it's really hot outside and it's a very wet place. bugs are going to want to go inside. but the thing that grinds my gears here is that there was a big gap under the front door. they make it a big deal to remind you to keep the patio door closed because of pests but the real vulnerability is the front door. We did our best to fill in the Gap but the damage was already done. when we first arrived there was a big cockroach crawling on our pillows. when we called the front desk we didn't want to go through the trouble with switching rooms and just asked for some blood bug spray and sticky traps. The woman on the phone was very nice and wasn't annoyed that I called another time to ask for new pillowcases because I forgot on the first call. The pillowcases arrived pretty fast and the guy informed me that engineering would be coming over to help with some bug spray. they never came. we went and bought some ourselves and got traps.\r\npool amenities: it's really really hot outside during the day. we swam at sunset to avoid 111° death rays. The bummer part about this is that the kids water slide is closed before sunset. and you're no longer able to order anything and have it delivered to the pool. there are currently only eight people swimming. it's not like there's a rush of business. it would have been nice to get a couple smoothies at 8pm. I don't understand how you can order room service 24 hours but you can't get it delivered to the pool (which is closer to the kitchen). I would understand if it's a cleanliness thing, but there are wet towels, beer cans and empty plastic cups swimming across the entire upper floor pool.\r\nnobody really apologized for the bugs or followed up with the request for spray or traps.",
+      "author": "Melissa",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-pnr7l5",
+      "timestamp": "2024-08-11T18:26:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Multiple staff failures and spoke to the hospitality manager who completely blew me off. I travel much of the time and I",
+      "text": "Beautiful property / The staff and the manager who refused to address our concerns.",
+      "author": "Daniel",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1oiu82z",
+      "timestamp": "2024-08-04T03:09:28.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Charity",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-bup68m",
+      "timestamp": "2024-07-17T04:58:25.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Fanta",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-bzlxfn",
+      "timestamp": "2024-07-15T12:53:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "It was a nice getaway with my wife. Enjoyed the pools, food and drinks.",
+      "text": "The food and drinks were great! / Found a used q-tip in my bathroom. Found a cockroach in one of the closets. The shower was small and cramped.",
+      "author": "Jason",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-wt8low",
+      "timestamp": "2024-07-13T05:02:55.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "My stay at the Phoenician was peaceful.",
+      "text": "Spectacular views! / Condo construction",
+      "author": "Teana",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-3jsy3a",
+      "timestamp": "2024-07-10T04:32:28.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Sarah",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-p97sdc",
+      "timestamp": "2024-07-08T12:14:28.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad billing practices",
+      "text": "The resort was great, as was the staff always!\r\n\r\nHowever, booking screwed up our reservation and then told us we’d have to fix it by calling the hotel. We did, but it didn’t stay fixed. First they billed my for the day we weren’t there then they pre-advised us 5 times for the same item! / Billing was horrible-see above.",
+      "author": "Angelo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-3iehp",
+      "timestamp": "2024-07-06T04:26:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Nice Place to Stay and unwind.",
+      "text": "The Room size is good. Good atmosphere. / The Restaurants close very early and the Room Service Menu is very limited.",
+      "author": "Zubair",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1htdtxd",
+      "timestamp": "2024-07-05T07:37:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great and will return",
+      "author": "Riccardo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-hz29ug",
+      "timestamp": "2024-06-24T22:11:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great experience!",
+      "text": "Beautiful properly with attentive staff. The location was central to everything.",
+      "author": "Deja",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-8l0td3",
+      "timestamp": "2024-06-10T05:45:56.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Will be returning",
+      "author": "Jonte",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1vz1pwb",
+      "timestamp": "2024-06-03T04:07:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Thomas",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1sz2n9a",
+      "timestamp": "2024-05-28T10:51:57.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Jeffrey",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-zx1gxg",
+      "timestamp": "2024-05-20T04:25:25.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Linjun",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1z0k61u",
+      "timestamp": "2024-02-22T02:34:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Relaxing time",
+      "text": "Friendly staff snd fully staffed / Liked everything",
+      "author": "David",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-91geai",
+      "timestamp": "2024-02-19T14:24:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Constance",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-9zb828",
+      "timestamp": "2023-12-04T10:33:55.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Smith",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1wwybca",
+      "timestamp": "2023-12-04T05:31:17.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Eden",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-5xm6zh",
+      "timestamp": "2023-11-30T10:35:40.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Scott",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-row2i",
+      "timestamp": "2023-10-23T14:56:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Dress nice if you want fast, friendly service and prepare to boil in the hot tub.",
+      "text": "Food was good as always and location is top notch for accessing Old Town Scottsdale.  J & G Steakhouse is one of the best Jean Georges locations we have experienced. / The staff in the lobby bar were very snooty; observation suggest they very much rate guests based on their appearance.   Also, the hot tubs shut off at 6pm!  Considering we were there in the summer months, one would only likely use the hot tub at night.",
+      "author": "Mark",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1xx0fp4",
+      "timestamp": "2023-10-04T19:10:13.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Le sport était au rendez-vous",
+      "text": "Grands espaces pour la famille, le service se tennis et salle de fitness est au top. \nLe restaurant gastronomique est génial. / Le personnel de réception est incompétent et le service du petit déjeuner est catastrophique dans le restaurant du rez-de-chaussée.",
+      "author": "Clementine",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-ilcs9s",
+      "timestamp": "2023-10-02T18:06:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Irene",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-tre7j7",
+      "timestamp": "2023-09-30T16:02:57.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Joseph",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-nyui9v",
+      "timestamp": "2023-09-28T13:06:12.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "Beautiful facilities, incredible food, very friendly staff / The food was amazing but was expensive",
+      "author": "Maren",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-122dl8v",
+      "timestamp": "2023-09-16T23:12:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "It was overall a great stay I enjoyed my birthday",
+      "text": "I didn’t eat breakfast there / I wish that our room was more plush",
+      "author": "Ronitta",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-7fskqk",
+      "timestamp": "2023-09-14T22:12:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Haleigh",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1bdgv9n",
+      "timestamp": "2023-09-10T14:34:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "text": "Astrid at the pool was terrific. / The restaurant Mowry and Cotton was closed due to renovations.  They have a terrific brunch.  We were never informed that it would be closed during our stay.",
+      "author": "Javier",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-qhgj4m",
+      "timestamp": "2023-08-29T08:59:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Kellie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-ecn19i",
+      "timestamp": "2023-08-14T13:20:12.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Maurilio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html#review-1qmjdq8",
+      "timestamp": "2023-08-01T05:49:54.000Z"
+    }
+  ]
+}

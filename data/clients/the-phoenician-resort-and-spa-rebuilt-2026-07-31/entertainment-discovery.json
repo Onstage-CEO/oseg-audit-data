@@ -1,6 +1,6 @@
 {
   "reportVersion": "entertainment-discovery-v1",
-  "generatedAt": "2026-07-31T19:34:10.201Z",
+  "generatedAt": "2026-07-31T19:57:50.735Z",
   "target": {
     "propertyName": "The Phoenician Resort and Spa",
     "location": "Scottsdale, Arizona"
@@ -136,7 +136,296 @@
       ]
     }
   ],
-  "inCorpusNuggets": [],
+  "inCorpusNuggets": [
+    {
+      "role": "watch_item",
+      "platform": "google",
+      "rating": null,
+      "ratingRaw": null,
+      "ratingMax": null,
+      "author": "gaylel604",
+      "timestamp": "2026-05-22T23:59:59.999Z",
+      "ageBand": "current_12m",
+      "text": "The staff was incredible, the food delicious, the room perfect. From a day at the spa with amazing staff, my massage with Tess was top level, the hot tubs, steam and saunas perfectly located and roof top pool for lunch (we chose chicken shawarma kabobs, taste and presentation was perfect) followed by swimming made it all an experience I want to book again...",
+      "sourceText": "The staff was incredible, the food delicious, the room perfect. From a day at the spa with amazing staff, my massage with Tess was top level, the hot tubs, steam and saunas perfectly located and roof top pool for lunch (we chose chicken shawarma kabobs, taste and presentation was perfect) followed by  swimming made it all an experience I want to book again. We went to the three course afternoon tea with large delicious flavor wrapped in small finger sandwiches, fresh scones with Devon Cream (I could have eaten THAT with a spoon!) and pastries we took back to the room because we were so full, and of course there was every kind of tea. I had Green Pomegranate! Yum!  The evening live music was someone we looked up so we could see him again! He was that good!  The hotel itself is exactly what we hoped for. Previous poor comments made us worry but we found no problems or concerns during our stay, quite the opposite. The restaurant staff, wait times and food were exactly the high quality we would expect. The hotel staff went over and above any request we had. The clean room with the incredible view is one we would book again.  I give this my highest recommendation and we travel quite a lot.",
+      "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g31350-d74199-r1061219347?m=68573&staydates=2026_08_09_2026_08_10&uguests=1_2_0&supdv=desktop&supuc=US&supul=en#review-ChdDSUhNMG9nS0VLckNuUHpLaU16ZS13RRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "live music"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "the staff was incredible the food delicious the room perfect from a day at the spa with amazing staff my massage with tess was top level the hot tubs steam and saunas perfectly located and roof top pool for lunch we chose chicken shawarma kabobs taste and presentation was perfect followed by swimming made it all an experience i want to book again we went to the three course afternoon tea with large delicious flavor wrapped in small finger sandwiches fresh scones with devon cream i could have eaten that with a spoon and pastries we took back to the room because we were so full and of course there was every kind of tea i had green pomegranate yum the evening live music was someone we looked up so we could see him again he was that good the hotel itself is exactly what we hoped for previous poor comments made us worry but we found no problems or concerns during our stay quite the opposite the restaurant staff wait times and food were exactly the high quality we would expect the hotel staff went over and above any request we had the clean room with the incredible view is one we would book again i give this my highest recommendation and we travel quite a lot",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "google",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "Richard Campagna",
+      "timestamp": "2026-05-14T22:15:58.923Z",
+      "ageBand": "current_12m",
+      "text": "We had the pleasure of staying at the The Phoenician last month and thoroughly enjoyed the experience. The resort itself is aesthetically beautiful, with an impressive range of activities and spaces for both families and adults. Multiple pools, several restaurants, recreational options, and quiet nooks throughout the property make it a destination where n...",
+      "sourceText": "We had the pleasure of staying at the The Phoenician last month and thoroughly enjoyed the experience.\n\nThe resort itself is aesthetically beautiful, with an impressive range of activities and spaces for both families and adults. Multiple pools, several restaurants, recreational options, and quiet nooks throughout the property make it a destination where nearly everyone can find a place to relax.\n\nWhat stood out most, however, was the service, particularly at check-in. Christian noticed that we shared a somewhat uncommon last name and took a few extra moments to genuinely get to know us. He made the arrival process effortless, but what happened later truly surprised us. When we returned to our room that evening, we found a heartfelt handwritten welcome note along with special snacks and a thoughtfully prepared margarita cocktail ensemble.\n\nThat level of personalization is increasingly rare today, especially in an era where staffing shortages often leave guests feeling rushed through transactional interactions. Experiences like this are a reminder that service is personal and meaningful, and that organizations capable of delivering it consistently likely invest well in their people and culture.\n\nThe rooms were well-appointed, the beds comfortable, and the bathrooms spacious and functional. As someone who admittedly notices details like water pressure, I can report that it was more than adequate. The on-site restaurants offered a nice variety of options, and the servers throughout the resort clearly understood what genuine hospitality looks like. The Tavern in particular was lively and enjoyable, with good live music and excellent service.\n\nA couple of practical notes for future guests: reservations are highly recommended for the restaurants. The seating process can feel a bit cumbersome, with multiple hand-offs even during slower periods. Additionally, poolside service could be more attentive at times, as we occasionally needed to flag staff down.\n\nThat said, those issues were minor compared to the overall experience. While five stars may feel slightly generous given the price point and a few operational inefficiencies, on a 1–10 scale this resort is a very solid 9/10 and absolutely worthy of consideration for anyone visiting Scottsdale.",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBdGVGRkZVazFVYUV0NUxVcDFaVVJ6UWtGaU4wRRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CAIQACodChtycF9oOjAteFFFUk1UaEt5LUp1ZURzQkFiN0E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2pBdGVGRkZVazFVYUV0NUxVcDFaVVJ6UWtGaU4wRRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "live music"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "we had the pleasure of staying at the the phoenician last month and thoroughly enjoyed the experience the resort itself is aesthetically beautiful with an impressive range of activities and spaces for both families and adults multiple pools several restaurants recreational options and quiet nooks throughout the property make it a destination where nearly everyone can find a place to relax what stood out most however was the service particularly at check in christian noticed that we shared a somewhat uncommon last name and took a few extra moments to genuinely get to know us he made the arrival process effortless but what happened later truly surprised us when we returned to our room that evening we found a heartfelt handwritten welcome note along with special snacks and a thoughtfully prepared margarita cocktail ensemble that level of personalization is increasingly rare today especially in an era where staffing shortages often leave guests feeling rushed through transactional interactions experiences like this are a reminder that service is personal and meaningful and that organizations capable of delivering it consistently likely invest well in their people and culture the rooms were well appointed the beds comfortable and the bathrooms spacious and functional as someone who admittedly notices details like water pressure i can report that it was more than adequate the on site restaurants offered a nice variety of options and the servers throughout the resort clearly understood what genuine hospitality looks like the tavern in particular was lively and enjoyable with good live music and excellent service a couple of practical notes for future guests reservations are highly recommended for the restaurants the seating process can feel a bit cumbersome with multiple hand offs even during slower periods additionally poolside service could be more attentive at times as we occasionally needed to flag staff down that said those issues were minor compared to the overall experience while five stars may feel slightly generous given the price point and a few operational inefficiencies on a 1 10 scale this resort is a very solid 9 10 and absolutely worthy of consideration for anyone visiting scottsdale",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "google",
+      "rating": 1,
+      "ratingRaw": 1,
+      "ratingMax": 5,
+      "author": "Sara Norman",
+      "timestamp": "2025-03-29T15:09:52.896Z",
+      "ageBand": "corroboration_12_to_24m",
+      "text": "Attention any families with young kids wanting to come here: The rooms are not luxury at all and disgusting. The carpet is from 30 years ago and the rooms haven’t been updated probably since. The outdoor patio furniture is old and stained and the floor is GROSS. The coffee machine in here is an old Kerig (most luxury marriot properties have Nespresso). Oh...",
+      "sourceText": "Attention any families with young kids wanting to come here:\nThe rooms are not luxury at all and disgusting. The carpet is from 30 years ago and the rooms haven’t been updated probably since. The outdoor patio furniture is old and stained and the floor is GROSS. The coffee machine in here is an old Kerig (most luxury marriot properties have Nespresso). Oh and there’s no complimentary coffee anywhere. You have to go all the way down to the breakfast restaurant to even find it on property. One morning my husband had to buy from their marketplace because the basement coffee wasn’t available and he spent $19 for two regular coffees. Two!\n\nThere is nothing to accommodate little kids. The four seasons gave us little stuffed animals and mini robes. Here, nothing. The kids club have a couple random activities for older kids at random times (mainly during nap time).\n\nThe customer service is abysmal. I asked a server for a glass so I can have some juice at the buffet I was paying for and he said I should go back to my table and get it myself…. The servers at the pool were rude too and don’t act like an even 3 star resort.\n\nThe food on property is also horrendous. All claiming to be high end and luxury but it is anything but. Room service, terrible. The pool food is decent but it takes an hour to receive it. There’s no fast casual place to pick up food for little kids. We had to drive off property most days.\n\nThe pool area was also atrocious. There barely were any attendants helping with towels, you have to hunt them down. No one cleans up, there’s trash everywhere and all of the chairs are gross and stained. There was also trash all over the resort.\n\nThey also don’t comp parking if you are staying at the resort, which just feels like another way they can squeeze every last dollar from you.\n\nFor the amount of money we are spending here it’s a huge disappointment. Next time I’ll stay at a four seasons or the ritz for these prices.\n\nOh and a sandwich at their “marketplace” was $20 for one! Highway robbery!\n\nAlso worth noting we are lifetime gold members and they didn’t do anything for us either.",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUR3clpyS3pBRRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CIHM0ogKEICAgMDwrZrKzAE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnTUR3clpyS3pBRRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "kids club"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "attention any families with young kids wanting to come here the rooms are not luxury at all and disgusting the carpet is from 30 years ago and the rooms haven t been updated probably since the outdoor patio furniture is old and stained and the floor is gross the coffee machine in here is an old kerig most luxury marriot properties have nespresso oh and there s no complimentary coffee anywhere you have to go all the way down to the breakfast restaurant to even find it on property one morning my husband had to buy from their marketplace because the basement coffee wasn t available and he spent 19 for two regular coffees two there is nothing to accommodate little kids the four seasons gave us little stuffed animals and mini robes here nothing the kids club have a couple random activities for older kids at random times mainly during nap time the customer service is abysmal i asked a server for a glass so i can have some juice at the buffet i was paying for and he said i should go back to my table and get it myself the servers at the pool were rude too and don t act like an even 3 star resort the food on property is also horrendous all claiming to be high end and luxury but it is anything but room service terrible the pool food is decent but it takes an hour to receive it there s no fast casual place to pick up food for little kids we had to drive off property most days the pool area was also atrocious there barely were any attendants helping with towels you have to hunt them down no one cleans up there s trash everywhere and all of the chairs are gross and stained there was also trash all over the resort they also don t comp parking if you are staying at the resort which just feels like another way they can squeeze every last dollar from you for the amount of money we are spending here it s a huge disappointment next time i ll stay at a four seasons or the ritz for these prices oh and a sandwich at their marketplace was 20 for one highway robbery also worth noting we are lifetime gold members and they didn t do anything for us either",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "google",
+      "rating": 4,
+      "ratingRaw": 4,
+      "ratingMax": 5,
+      "author": "Keristin Jones",
+      "timestamp": "2025-07-02T19:10:31.883Z",
+      "ageBand": "corroboration_12_to_24m",
+      "text": "A Beautiful Stay with Room for Improvement The Phoenician Resort is undeniably stunning, from the breathtaking mountain views near our hotel room to the beautifully landscaped grounds, multiple pool options, and towering palm trees that truly make the resort feel like a desert oasis. However, while the scenery impressed us, several aspects of our stay fel...",
+      "sourceText": "A Beautiful Stay with Room for Improvement\n\nThe Phoenician Resort is undeniably stunning, from the breathtaking mountain views near our hotel room to the beautifully landscaped grounds, multiple pool options, and towering palm trees that truly make the resort feel like a desert oasis. However, while the scenery impressed us, several aspects of our stay fell short, especially when compared to other top resorts in the Phoenix area.\n\nDining & Amenities:\nOne major concern was the limited dining hours. Most on-site restaurants closed by 5:00 PM, with The Tavern being the only option open until 8:00 PM. As out-of-town guests, this left us with little choice in the evenings aside from room service or ordering out. We expected more flexibility and variety in a luxury resort.\n\nShops & Pool Experience:\nAll shops on the property also closed early at 5:00 PM, and pool amenities, including the water slide, music, bar, and even the water fountains, were shut down around the same time. This was disappointing, as the pool is typically a hub of activity and relaxation, especially in the summer.\n\nChildren's Activities:\nWe were especially let down by the Funicians Kids Club, which was never open during our stay. This was a major reason we selected the Phoenician, and our children were incredibly disappointed by its unavailability.\n\nSummer Activities:\nWe appreciated the advertised “Legendary Summers” theme, but there were no events scheduled during the weekdays only on the weekends. Other Phoenix-area resorts we’ve visited provide daily family-friendly activities all summer long, so the lack of weekday activities was a letdown.\n\nOverall, while the resort is visually impressive and offers a serene setting, we felt the guest experience didn’t fully match the high rating and reputation. With a few key improvements especially around extended hours, family activities, and consistent activites the Phoenician could offer a truly legendary experience to match its branding.",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201YVNGZzBReTFHTm1odlkyMXFkMnRDYkd0TlQwRRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CAIQACodChtycF9oOm5aSFg0Qy1GNmhvY21qd2tCbGtNT0E%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT201YVNGZzBReTFHTm1odlkyMXFkMnRDYkd0TlQwRRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "kids club"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "a beautiful stay with room for improvement the phoenician resort is undeniably stunning from the breathtaking mountain views near our hotel room to the beautifully landscaped grounds multiple pool options and towering palm trees that truly make the resort feel like a desert oasis however while the scenery impressed us several aspects of our stay fell short especially when compared to other top resorts in the phoenix area dining amenities one major concern was the limited dining hours most on site restaurants closed by 5 00 pm with the tavern being the only option open until 8 00 pm as out of town guests this left us with little choice in the evenings aside from room service or ordering out we expected more flexibility and variety in a luxury resort shops pool experience all shops on the property also closed early at 5 00 pm and pool amenities including the water slide music bar and even the water fountains were shut down around the same time this was disappointing as the pool is typically a hub of activity and relaxation especially in the summer children s activities we were especially let down by the funicians kids club which was never open during our stay this was a major reason we selected the phoenician and our children were incredibly disappointed by its unavailability summer activities we appreciated the advertised legendary summers theme but there were no events scheduled during the weekdays only on the weekends other phoenix area resorts we ve visited provide daily family friendly activities all summer long so the lack of weekday activities was a letdown overall while the resort is visually impressive and offers a serene setting we felt the guest experience didn t fully match the high rating and reputation with a few key improvements especially around extended hours family activities and consistent activites the phoenician could offer a truly legendary experience to match its branding",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "google",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "Harpreet Badesha",
+      "timestamp": "2024-09-22T18:33:58.744Z",
+      "ageBand": "corroboration_12_to_24m",
+      "text": "Truly a magical experience. Stayed in quite a few resorts/hotels, this one is definitely on my top 5. From the customer service, to ambiance, food, and entertainment everything was spectacular. Will definitely be reminiscing my experince here. Looking forward to being back in the near future!",
+      "sourceText": "Truly a magical experience. Stayed in quite a few resorts/hotels, this one is definitely on my top 5. From the customer service, to ambiance, food, and entertainment everything was spectacular. Will definitely be reminiscing my experince here. Looking forward to being back in the near future!",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3el9qeWpRRRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CIHM0ogKEICAgID7z_jyjQE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSUQ3el9qeWpRRRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "entertainment"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "truly a magical experience stayed in quite a few resorts hotels this one is definitely on my top 5 from the customer service to ambiance food and entertainment everything was spectacular will definitely be reminiscing my experince here looking forward to being back in the near future",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "google",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "David Raine",
+      "timestamp": "2022-05-15T20:45:44.354Z",
+      "ageBand": "historical_over_24m",
+      "text": "Beautiful! Quite expensive but you get everything you would expect. Service is amazing! Food is perfect. Pools are large, clean, and lacking nothing you could need. Rooms are large missing only fridges to keep your beer cold when it's 105 outside. Resort bar has live music and plenty of room for all guests.",
+      "sourceText": "Beautiful! Quite expensive but you get everything you would expect.  Service is amazing!  Food is perfect. Pools are large, clean, and lacking nothing you could need. Rooms are large missing only fridges to keep your beer cold when it's 105 outside.  Resort bar has live music and plenty of room for all guests.",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyM3FLMnhRRRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CIHM0ogKEICAgID23qK2xQE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSUQyM3FLMnhRRRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "live music"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "beautiful quite expensive but you get everything you would expect service is amazing food is perfect pools are large clean and lacking nothing you could need rooms are large missing only fridges to keep your beer cold when it s 105 outside resort bar has live music and plenty of room for all guests",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "google",
+      "rating": 1,
+      "ratingRaw": 1,
+      "ratingMax": 5,
+      "author": "Natalie Calderon",
+      "timestamp": "2018-09-02T23:52:22.350Z",
+      "ageBand": "historical_over_24m",
+      "text": "Stayed at the Phoenician over the Labor Day weekend. Purchased 2 casitas for my family and my sisters family to celebrate the holiday weekend and our recent birthdays. Around 10 pm at night I noticed the water filling the sink and the bath tub were yellow tinted and dirty. Fortunately the front desk was able to move us to another room that was across a pa...",
+      "sourceText": "Stayed at the Phoenician over the Labor Day weekend. Purchased 2 casitas for my family and my sisters family to celebrate the holiday weekend and our recent birthdays. Around 10 pm at night I noticed the water filling the sink and the bath tub were yellow tinted and dirty. Fortunately the front desk was able to move us to another room that was across a parking lot. Needing to rebath my children and myself we packed up our room, and carried our sleeping children to the new room.\nWhen checking out the front desk manager was rude and since we had booked our rooms with Expedia, a third party, he was unable to make any consessions towards that rooms cost for the evening. I am not the type to complain about the few issues we encountered while staying at the property, but I was very surprised by the lack of courtesy the front desk manager had for our dirty water room, late night packing, moving rooms and my daughter becoming very upset that something was wrong with our room that could not be fixed. I am so disgusted by the fact that my family bathed, washed our face, brushed our teeth with dirty water at this resort. Our primary vacation due to my work, is staycation.... there is not a resort in Scottsdale/Phoenix/Tucson that we have not stayed at 5-3 stars.... skip this resort and go to the Hyatt at Gainey Ranch.... same family fun and entertainment.... clean water...",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBdXFDRjF3RRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CIHM0ogKEICAgIDAuqCF1wE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSURBdXFDRjF3RRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "entertainment"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "stayed at the phoenician over the labor day weekend purchased 2 casitas for my family and my sisters family to celebrate the holiday weekend and our recent birthdays around 10 pm at night i noticed the water filling the sink and the bath tub were yellow tinted and dirty fortunately the front desk was able to move us to another room that was across a parking lot needing to rebath my children and myself we packed up our room and carried our sleeping children to the new room when checking out the front desk manager was rude and since we had booked our rooms with expedia a third party he was unable to make any consessions towards that rooms cost for the evening i am not the type to complain about the few issues we encountered while staying at the property but i was very surprised by the lack of courtesy the front desk manager had for our dirty water room late night packing moving rooms and my daughter becoming very upset that something was wrong with our room that could not be fixed i am so disgusted by the fact that my family bathed washed our face brushed our teeth with dirty water at this resort our primary vacation due to my work is staycation there is not a resort in scottsdale phoenix tucson that we have not stayed at 5 3 stars skip this resort and go to the hyatt at gainey ranch same family fun and entertainment clean water",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "watch_item",
+      "platform": "expedia",
+      "rating": 4,
+      "ratingRaw": 8,
+      "ratingMax": 10,
+      "author": "Angela",
+      "timestamp": "2020-02-17T00:00:00.000Z",
+      "ageBand": "historical_over_24m",
+      "text": "Over priced but great location This is a great hotel, we just found it to be overpriced. Adult pool is REALLY small and there are very limited \"free\" chairs. There were a ton of empty chairs that require you to purchase a cabana. Food at the pool was good - service was NOT. Spa is beautiful but also overpriced in comparison to neighboring resorts. Main ba...",
+      "sourceText": "Over priced but great location This is a great hotel, we just found it to be overpriced. \n\nAdult pool is REALLY small and there are very limited \"free\" chairs. There were a ton of empty chairs that require you to purchase a cabana. Food at the pool was good - service was NOT. \n\nSpa is beautiful but also overpriced in comparison to neighboring resorts. \n\nMain bar in the lobby had a great vibe at night with live music.\n\nRoom was very standard but clean. Bed/bedding/pillows were very comfortable. \n\nThere are A LOT of stairs to go every where on property. Be prepared!",
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-The-Phoenician.h10645.Hotel-Information#review-iu1qps",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "live music"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "over priced but great location this is a great hotel we just found it to be overpriced adult pool is really small and there are very limited free chairs there were a ton of empty chairs that require you to purchase a cabana food at the pool was good service was not spa is beautiful but also overpriced in comparison to neighboring resorts main bar in the lobby had a great vibe at night with live music room was very standard but clean bed bedding pillows were very comfortable there are a lot of stairs to go every where on property be prepared",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "expedia"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "expedia",
+      "rating": 5,
+      "ratingRaw": 10,
+      "ratingMax": 10,
+      "author": "Andrea",
+      "timestamp": "2019-07-14T00:00:00.000Z",
+      "ageBand": "historical_over_24m",
+      "text": "Hated to leave Exceptional from start to finish. Beautiful resort, beautifully maintained. Everyone we encountered was professional and accommodating. Bed linens and bathrobes were Frette, which is a nice touch. We were upgraded to a casita with a wonderful view of camelback mountain and the pools. The pools, all 5 or 6 of them, were clean and at the perf...",
+      "sourceText": "Hated to leave Exceptional from start to finish. Beautiful resort, beautifully maintained. Everyone we encountered was professional and accommodating. Bed linens and bathrobes were Frette, which is a nice touch. We were upgraded to a casita with a wonderful view of camelback mountain and the pools. The pools, all 5 or 6 of them, were clean and at the perfect temperature. The restaurants were wonderful and the lobby bar was a great place to relax in. Will definitely stay here again on my next trip to Phoenix/Scottsdale. In addition, they had some nice perks like the pool DJ and the falconer. Wonderful athletic center and spa, if you’re so inclined.",
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-The-Phoenician.h10645.Hotel-Information#review-1dbvknw",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "dj"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "hated to leave exceptional from start to finish beautiful resort beautifully maintained everyone we encountered was professional and accommodating bed linens and bathrobes were frette which is a nice touch we were upgraded to a casita with a wonderful view of camelback mountain and the pools the pools all 5 or 6 of them were clean and at the perfect temperature the restaurants were wonderful and the lobby bar was a great place to relax in will definitely stay here again on my next trip to phoenix scottsdale in addition they had some nice perks like the pool dj and the falconer wonderful athletic center and spa if you re so inclined",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "expedia"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "expedia",
+      "rating": 5,
+      "ratingRaw": 10,
+      "ratingMax": 10,
+      "author": "Macy",
+      "timestamp": "2018-01-04T00:00:00.000Z",
+      "ageBand": "historical_over_24m",
+      "text": "Fabulous Large Resort The Phoenician is a fabulous large resort on the edge of Scottsdale. We are a family of 5 and there was plenty of choices for everyone including tennis, bilking, pool, hot tub, kids club and golf. The service was very good even though the hotel was at capacity. The dining options were also great from the J & G steak house to the buff...",
+      "sourceText": "Fabulous Large Resort The Phoenician is a fabulous large resort on the edge of Scottsdale. We are a family of 5 and there was plenty of choices for everyone including tennis, bilking, pool, hot tub, kids club and golf.  The service was very good even though the hotel was at capacity.  The dining options were also great from the J & G steak house to the buffet breakfast to the food at the pool.",
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-The-Phoenician.h10645.Hotel-Information#review-18uy42f",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "kids club"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "fabulous large resort the phoenician is a fabulous large resort on the edge of scottsdale we are a family of 5 and there was plenty of choices for everyone including tennis bilking pool hot tub kids club and golf the service was very good even though the hotel was at capacity the dining options were also great from the j g steak house to the buffet breakfast to the food at the pool",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "expedia"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "google",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "O'Zandra",
+      "timestamp": "2024-06-19T01:34:26.960Z",
+      "ageBand": "historical_over_24m",
+      "text": "Great facility. Conveniently located. We dine at some of the restaurants often. And we love the live entertainment. The facility is always clean, the staff are friendly, and the atmosphere is very inviting. Garage and valet parking available",
+      "sourceText": "Great facility. Conveniently located.\n\nWe dine at some of the restaurants often. And we love the live entertainment. The facility is always clean, the staff are friendly, and the atmosphere is very inviting.\n\nGarage and valet parking available",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMdHYyZTB3RRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CIHM0ogKEICAgICLtv2e0wE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSUNMdHYyZTB3RRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "entertainment"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "great facility conveniently located we dine at some of the restaurants often and we love the live entertainment the facility is always clean the staff are friendly and the atmosphere is very inviting garage and valet parking available",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "google",
+      "rating": 5,
+      "ratingRaw": 5,
+      "ratingMax": 5,
+      "author": "James LaSala",
+      "timestamp": "2024-01-10T23:15:56.475Z",
+      "ageBand": "historical_over_24m",
+      "text": "Presentation of Vivaldi 's Four Seasons, excellent concert.",
+      "sourceText": "Presentation of Vivaldi 's Four Seasons,  excellent concert.",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQxbl83MTl3RRAB!2m1!1s0x0:0x6ebba0cf194a1d67!3m1!1s2@1:CIHM0ogKEICAgID1n_719wE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSUQxbl83MTl3RRAB",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "concert"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "presentation of vivaldi s four seasons excellent concert",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "google"
+      ]
+    }
+  ],
   "nextActions": [
     "Open the must-check visual searches first: TikTok, Instagram/Reels, and YouTube deep sweep.",
     "Save any strong videos/posts/screenshots as operator artifacts, then promote only sourced findings.",

@@ -1,6 +1,6 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-07-31T19:36:08.190Z",
+  "generatedAt": "2026-07-31T20:00:04.487Z",
   "findings": [
     {
       "sourceId": "youtube-comments",
@@ -151,10 +151,10 @@
       "sourceId": "youtube-comments",
       "lane": "community",
       "query": "youtube comments",
-      "url": "https://www.youtube.com/watch?v=SGzxGhifbu8&lc=UgxOIIIaqN0ai6AviCd4AaABAg",
+      "url": "https://www.youtube.com/watch?v=SGzxGhifbu8&lc=UgxBioV-xJUKCmLyyEJ4AaABAg",
       "domain": "youtube.com",
-      "title": "@kiminohio3375",
-      "snippet": "beautiful place,love their pool perfect night swimming.foods are yummy and rooms are huge and clean",
+      "title": "@scandinavianthinking1251",
+      "snippet": "Glittering and shinny night in the lovely resort! Gorgeous pool. Have a beautiful vacation! Like 51 at 5:00",
       "matchedTerms": [
         "night",
         "pool"

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T19:36:08.190Z",
+  "generatedAt": "2026-07-31T20:00:04.487Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": {
     "yelp": {
@@ -9,7 +9,7 @@
       "message": "No client.yelpUrl configured for this property, so no Yelp capture was attempted.",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "attemptedAt": "2026-07-31T19:36:08.190Z"
+      "attemptedAt": "2026-07-31T20:00:04.487Z"
     },
     "facebook": {
       "result": "needs_configuration",
@@ -17,7 +17,7 @@
       "message": "No client.facebookUrl configured for this property, so no Facebook capture was attempted.",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "attemptedAt": "2026-07-31T19:36:08.190Z"
+      "attemptedAt": "2026-07-31T20:00:04.487Z"
     },
     "instagram": {
       "result": "checked_no_data",
@@ -25,7 +25,7 @@
       "message": "Ran the instagram capture against a property keyword search; no public posts were returned.",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "attemptedAt": "2026-07-31T19:36:08.190Z"
+      "attemptedAt": "2026-07-31T20:00:04.487Z"
     },
     "tiktok": {
       "result": "captured_partial",
@@ -33,7 +33,7 @@
       "message": "Captured 30 public tiktok post(s).",
       "recordsReturned": 30,
       "recordsAccepted": 30,
-      "attemptedAt": "2026-07-31T19:36:08.190Z"
+      "attemptedAt": "2026-07-31T20:00:04.487Z"
     }
   }
 }

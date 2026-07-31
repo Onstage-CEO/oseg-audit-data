@@ -1,6 +1,6 @@
 {
   "reportVersion": "web-discovery-v1",
-  "generatedAt": "2026-07-31T19:36:07.091Z",
+  "generatedAt": "2026-07-31T20:00:03.596Z",
   "target": {
     "propertyName": "The Phoenician Resort and Spa",
     "location": "Scottsdale, Arizona"
@@ -9,62 +9,28 @@
     {
       "sourceId": "reddit_forums",
       "lane": "community",
-      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
-      "url": "https://www.reddit.com/r/chubbytravel/comments/1tleup1/help_with_phoenix_or_scottsdale_resorts/",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" entertainment",
+      "url": "https://www.reddit.com/r/marriott/comments/ytuolr/best_hotel_in_scottsdale_for_bachelorette/",
       "domain": "www.reddit.com",
-      "title": "Help with Phoenix or Scottsdale resorts : r/chubbytravel",
-      "snippet": "Kids club nice but not required.. Phoenician feedback is dated rooms. Kids club and some fun activities throughout the day. Kids activities and ...",
+      "title": "Best hotel in Scottsdale for Bachelorette : r/marriott",
+      "snippet": "On the weekends, the DJ plays into the evening, so you hear the music in your room as well. I'd take a look at the Phoenician, has been a great ...",
       "matchedTerms": [
-        "kids club",
+        "music",
+        "dj",
+        "evening"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"The Phoenician Resort and Spa\" entertainment",
+      "url": "https://www.reddit.com/r/vegas/comments/1mk27fg/what_are_some_good_vegas_alternatives_for_a/",
+      "domain": "www.reddit.com",
+      "title": "What are some good \"Vegas Alternatives\", for a couple that ...",
+      "snippet": "All day long, very attractive staff performers called Playmakers keep the atmosphere hype and free, leading all those activities. It's got ... Read more",
+      "matchedTerms": [
+        "performer",
         "activities"
-      ]
-    },
-    {
-      "sourceId": "reddit_forums",
-      "lane": "community",
-      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
-      "url": "https://www.reddit.com/r/chubbytravel/comments/1uuv3n4/best_scottsdale_hotel_princess_or_phoenician/",
-      "domain": "www.reddit.com",
-      "title": "Best Scottsdale hotel Princess or Phoenician?",
-      "snippet": "Planning a trip for end of October with a 10 mo, 2 yo and a 6 yo. I want something luxury with great service and food but also something entertaining for ...",
-      "matchedTerms": [
-        "entertain"
-      ]
-    },
-    {
-      "sourceId": "reddit_forums",
-      "lane": "community",
-      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
-      "url": "https://www.reddit.com/r/Scottsdale/comments/1s02hhz/jw_camelback_vs_desert_ridge_vs_westin_vs/",
-      "domain": "www.reddit.com",
-      "title": "JW Camelback vs Desert Ridge vs Westin vs Phoenician or ...",
-      "snippet": "The Phoenician- especially if you can do the suites is good for families too- got a great kids club and has been recently renovated. Not a huge ... Read more",
-      "matchedTerms": [
-        "kids club"
-      ]
-    },
-    {
-      "sourceId": "reddit_forums",
-      "lane": "community",
-      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
-      "url": "https://www.reddit.com/r/chubbytravel/comments/1f44xb8/phoenix_area_with_kids_just_before_thanksgiving/",
-      "domain": "www.reddit.com",
-      "title": "Phoenix area with kids just before Thanksgiving",
-      "snippet": "Phoenician, Biltmore, Fairmont, all great pools w/ slides etc. Four seasons was great with kids. Free kids club. Both have great heated pools.",
-      "matchedTerms": [
-        "kids club"
-      ]
-    },
-    {
-      "sourceId": "reddit_forums",
-      "lane": "community",
-      "query": "site:reddit.com \"The Phoenician Resort and Spa\" kids club",
-      "url": "https://www.reddit.com/r/Scottsdale/comments/p7hscg/family_friendly_vacation/",
-      "domain": "www.reddit.com",
-      "title": "Family friendly vacation : r/Scottsdale",
-      "snippet": "kids club, amazing pool and location to restaurants/shops walking distance. Tons of hikes everywhere-",
-      "matchedTerms": [
-        "kids club"
       ]
     },
     {
@@ -115,20 +81,6 @@
       "snippet": "Nightlife or evening energy. The Phoenician, Nightlife in the area is a joke and non-existent. You aren't close to anything interesting, or the ...",
       "matchedTerms": [
         "nightlife",
-        "evening"
-      ]
-    },
-    {
-      "sourceId": "reddit_forums",
-      "lane": "community",
-      "query": "site:reddit.com \"The Phoenician Resort and Spa\" nightlife",
-      "url": "https://www.reddit.com/r/marriott/comments/ytuolr/best_hotel_in_scottsdale_for_bachelorette/",
-      "domain": "www.reddit.com",
-      "title": "Best hotel in Scottsdale for Bachelorette : r/marriott",
-      "snippet": "The crowd at W is young, somewhat rambunctious. On the weekends, the DJ plays into the evening, so you hear the music in your room as well. Read more",
-      "matchedTerms": [
-        "music",
-        "dj",
         "evening"
       ]
     },
@@ -184,10 +136,10 @@
       "sourceId": "blogs_editorial",
       "lane": "longform",
       "query": "\"The Phoenician Resort and Spa\" \"family review\" \"kids club\"",
-      "url": "https://managedmoms.com/2011/10/resort-review-for-families-the-phoenician/",
-      "domain": "managedmoms.com",
-      "title": "Resort Review for Families - The Phoenician",
-      "snippet": "Oct 11, 2011 — The Phoenician also offers a Funician Kids Club if parents need some adult/spa/business meeting time. My tween liked the room that contained ... Read more",
+      "url": "https://www.facebook.com/groups/1483889708707878/posts/2197048087392033/",
+      "domain": "www.facebook.com",
+      "title": "What are the reviews of the kids club?",
+      "snippet": "Looking for firsthand reviews of the kids club",
       "matchedTerms": [
         "kids club"
       ]

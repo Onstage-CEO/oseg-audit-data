@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T19:33:57.396Z",
+  "generatedAt": "2026-07-31T19:48:43.288Z",
   "liveNetwork": false,
   "clientData": false,
   "paidCalls": false,
@@ -8,21 +8,21 @@
   "items": [
     {
       "sourceId": "booking",
-      "outcome": "failed",
-      "status": "error",
-      "reason": "Apify booking: paid launch blocked — set a reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING (or shared OSEG_APIFY_MAX_TOTAL_CHARGE_USD) ceiling."
+      "outcome": "complete",
+      "status": "ok",
+      "reason": "Capture ran without reported failure, truncation, or partial completeness."
     },
     {
       "sourceId": "expedia",
-      "outcome": "failed",
-      "status": "error",
-      "reason": "Apify expedia: paid launch blocked — set a reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA (or shared OSEG_APIFY_MAX_TOTAL_CHARGE_USD) ceiling."
+      "outcome": "complete",
+      "status": "ok",
+      "reason": "Capture ran without reported failure, truncation, or partial completeness."
     },
     {
       "sourceId": "google",
-      "outcome": "gated",
-      "status": "no_queries",
-      "reason": "Apify google: could not confidently auto-find the hotel page for \"The Phoenician Resort and Spa\" — set googleUrl in audit.json."
+      "outcome": "complete",
+      "status": "ok",
+      "reason": "Capture ran without reported failure, truncation, or partial completeness."
     },
     {
       "sourceId": "reddit",
@@ -34,7 +34,7 @@
       "sourceId": "tripadvisor",
       "outcome": "failed",
       "status": "error",
-      "reason": "tripadvisor: exact canonical tripadvisorUrl is required before paid capture; use a https://*.tripadvisor.com/.../Hotel_Review-... listing URL."
+      "reason": "tripadvisor: paid launch blocked — set reviewed OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR and OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR ceilings (shared fallbacks are also accepted)."
     },
     {
       "sourceId": "youtube",
@@ -44,18 +44,15 @@
     }
   ],
   "blockers": [
-    "booking",
-    "expedia",
-    "google",
     "reddit",
     "tripadvisor",
     "youtube"
   ],
   "counts": {
-    "complete": 0,
+    "complete": 3,
     "incomplete": 1,
-    "gated": 2,
-    "failed": 3,
+    "gated": 1,
+    "failed": 1,
     "missing": 0
   }
 }
