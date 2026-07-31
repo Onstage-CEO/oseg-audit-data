@@ -1,7 +1,7 @@
 {
-  "requestedAt": "2026-07-31T22:52:00Z",
+  "requestedAt": "2026-07-31T22:58:00Z",
   "requestedBy": "joe@onstage.biz",
-  "engineRef": "708f03ab38be0556d30839716d6ba07d4ee66dec",
+  "engineRef": "a9b5c4fc78add1730710aee556a9b4e39e953fb4",
   "paidProviders": false,
   "sources": [
     "resortpass",
@@ -12,6 +12,6 @@
     "tiktok"
   ],
   "regenerateCoverageMatrix": true,
-  "attempt": 2,
-  "reason": "continue_after_terminal_source_miss"
+  "attempt": 3,
+  "reason": "rerun_after_regional_identity_fix"
 }
