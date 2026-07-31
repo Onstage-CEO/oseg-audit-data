@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-31T23:33:32.740Z",
+  "generatedAt": "2026-07-31T23:39:19.184Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -150,14 +150,16 @@
     },
     {
       "source": "webook",
-      "mechanism": "resolve-webook records exact public resort-linked event/experience identity and attempt lineage from operator-supplied search-result metadata",
-      "result": "not_checked",
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:42:00Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Two exact-property webook domain searches returned no property-linked event or experience listing for The Phoenician in Scottsdale."
     },
     {
       "source": "facebook",
@@ -239,7 +241,7 @@
       "source": "property_social",
       "mechanism": "bounded property-social resolution (no post capture)",
       "provider": "bounded property-social resolution (no post capture)",
-      "attemptedAt": "2026-07-31T23:33:31.803Z",
+      "attemptedAt": "2026-07-31T23:39:18.210Z",
       "result": "pending",
       "recordsReturned": 1,
       "recordsAccepted": 0,
@@ -250,14 +252,16 @@
     },
     {
       "source": "resort_pages",
-      "mechanism": "Direct public fetch through program-discovery using --url or client.website, with property-page-attempt.json lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
+      "mechanism": "direct_public_fetch",
+      "provider": "direct_public_fetch",
+      "attemptedAt": "2026-07-31T23:42:00Z",
+      "result": "captured_partial",
+      "recordsReturned": 7,
+      "recordsAccepted": 7,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Captured 7 identity-verified resort-owned pages with current programming signals through bounded official-domain discovery; full sitemap enumeration remains unproven."
     },
     {
       "source": "local_media",
@@ -274,7 +278,7 @@
       "source": "resortpass",
       "mechanism": "direct_public_fetch",
       "provider": "direct_public_fetch",
-      "attemptedAt": "2026-07-31T23:33:28.516Z",
+      "attemptedAt": "2026-07-31T23:39:14.682Z",
       "result": "needs_configuration",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -333,7 +337,7 @@
       "source": "traveloka",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:33:29.898Z",
+      "attemptedAt": "2026-07-31T23:39:16.190Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -346,7 +350,7 @@
       "source": "tiket",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:33:30.856Z",
+      "attemptedAt": "2026-07-31T23:39:17.206Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -357,14 +361,16 @@
     },
     {
       "source": "agoda",
-      "mechanism": "Official Agoda Demand Content API feed 19 from configured exact hotel ID",
-      "result": "not_checked",
-      "recordsReturned": 0,
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:42:00Z",
+      "result": "not_supported",
+      "recordsReturned": 1,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "Exact main-resort Agoda listing resolved at /the-phoenician-a-luxury-collection-resort-scottsdale_3/hotel/phoenix-az-us.html. Public property identity was captured; licensed review aggregate was not acquired because no configured licensed acquisition path exists."
     },
     {
       "source": "hoteltonight",
@@ -462,25 +468,29 @@
     },
     {
       "source": "quora",
-      "mechanism": "Bounded property/location site:quora.com discovery through capture-quora with explicit quora-attempt.json lineage",
-      "result": "not_checked",
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:42:00Z",
+      "result": "blocked",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made."
     },
     {
       "source": "aerial_satellite",
-      "mechanism": "Operator-supplied coordinates and public HTTPS map/source reference through capture-map-context with explicit attempt lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
+      "mechanism": "openstreetmap_public_map_context",
+      "provider": "openstreetmap_public_map_context",
+      "attemptedAt": "2026-07-31T23:42:00Z",
+      "result": "not_supported",
+      "recordsReturned": 1,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "Property map identity resolved at 6000 E Camelback Rd with approximate resort/golf-course coordinates 33.50666, -111.95121 (OSM way 182104348). Context is supplemental; no imagery was copied or used in rating math."
     }
   ]
 }
