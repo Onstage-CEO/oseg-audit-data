@@ -1,0 +1,622 @@
+{
+  "target": {
+    "propertyName": "The Phoenician Resort and Spa",
+    "location": "Scottsdale, Arizona",
+    "website": "https://www.thephoenician.com/"
+  },
+  "perSource": [
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona satellite view"
+      ]
+    },
+    {
+      "sourceId": "agoda",
+      "displayName": "Agoda",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Agoda"
+      ]
+    },
+    {
+      "sourceId": "almosafer",
+      "displayName": "Almosafer",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:almosafer.com The Phoenician Resort and Spa Scottsdale, Arizona تقييم",
+        "site:almosafer.com The Phoenician Resort and Spa Scottsdale, Arizona review"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"The Phoenician Resort and Spa\" review blog",
+        "\"The Phoenician Resort and Spa\" honest review",
+        "The Phoenician Resort and Spa Scottsdale, Arizona travel article"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com The Phoenician Resort and Spa",
+        "The Phoenician Resort and Spa Scottsdale, Arizona booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "cheaptickets",
+      "displayName": "CheapTickets",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona CheapTickets"
+      ]
+    },
+    {
+      "sourceId": "cluburlaub",
+      "displayName": "Cluburlaub.de",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:cluburlaub.de The Phoenician Resort and Spa Scottsdale, Arizona bewertung"
+      ]
+    },
+    {
+      "sourceId": "despegar",
+      "displayName": "Despegar / Decolar",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:despegar.com/hoteles/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:decolar.com/hoteis/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "eat-app",
+      "displayName": "Eat App",
+      "lane": "reservation_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:eatapp.co/reserve/ \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:eatapp.co/reserve/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "ebookers",
+      "displayName": "ebookers",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona ebookers"
+      ]
+    },
+    {
+      "sourceId": "europabooking",
+      "displayName": "EuropaBooking",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:europabooking.com The Phoenician Resort and Spa Scottsdale, Arizona review"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com The Phoenician Resort and Spa",
+        "The Phoenician Resort and Spa Scottsdale, Arizona Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "facebook",
+      "displayName": "Facebook (public guest mentions)",
+      "lane": "community_social",
+      "priority": "recommended",
+      "queries": [
+        "The Phoenician Resort and Spa facebook",
+        "site:facebook.com The Phoenician Resort and Spa"
+      ]
+    },
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona reviews",
+        "The Phoenician Resort and Spa entertainment reviews",
+        "The Phoenician Resort and Spa nightlife"
+      ]
+    },
+    {
+      "sourceId": "google_hotels",
+      "displayName": "Google Hotels",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Google Hotels"
+      ]
+    },
+    {
+      "sourceId": "guestreservations",
+      "displayName": "Guest Reservations",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:guestreservations.com The Phoenician Resort and Spa Scottsdale, Arizona \"Customer Reviews\""
+      ]
+    },
+    {
+      "sourceId": "holidaycheck",
+      "displayName": "HolidayCheck",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:holidaycheck.de/hi/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:holidaycheck.de \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"Bewertungen\""
+      ]
+    },
+    {
+      "sourceId": "hotel-reservation-network",
+      "displayName": "Hotel Reservation Network regional domains",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:allhotelscalifornia.com The Phoenician Resort and Spa Scottsdale, Arizona review",
+        "site:san-francisco-bay.com The Phoenician Resort and Spa Scottsdale, Arizona review"
+      ]
+    },
+    {
+      "sourceId": "hotels_com",
+      "displayName": "Hotels.com",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Hotels.com"
+      ]
+    },
+    {
+      "sourceId": "hotels-in-america",
+      "displayName": "Hotels in America",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:hotelsinamerica.com The Phoenician Resort and Spa Scottsdale, Arizona"
+      ]
+    },
+    {
+      "sourceId": "hotelsone",
+      "displayName": "HotelsOne",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:hotelsone.com The Phoenician Resort and Spa Scottsdale, Arizona \"Verified guest reviews\""
+      ]
+    },
+    {
+      "sourceId": "hoteltonight",
+      "displayName": "HotelTonight",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:hoteltonight.com The Phoenician Resort and Spa Scottsdale, Arizona reviews"
+      ]
+    },
+    {
+      "sourceId": "hrs",
+      "displayName": "HRS",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:hrs.com/en/hotel/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "instagram",
+      "displayName": "Instagram (public guest mentions)",
+      "lane": "community_social",
+      "priority": "recommended",
+      "queries": [
+        "The Phoenician Resort and Spa instagram guests",
+        "site:instagram.com The Phoenician Resort and Spa"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "jeeran",
+      "displayName": "Jeeran",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:jeeran.com The Phoenician Resort and Spa Scottsdale, Arizona تقييم"
+      ]
+    },
+    {
+      "sourceId": "kayak",
+      "displayName": "KAYAK",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona KAYAK"
+      ]
+    },
+    {
+      "sourceId": "local_media",
+      "displayName": "Local media + event listings",
+      "lane": "editorial_travel_media",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona local news entertainment",
+        "The Phoenician Resort and Spa event listing"
+      ]
+    },
+    {
+      "sourceId": "opentable",
+      "displayName": "OpenTable (reservation-platform outlet reviews)",
+      "lane": "review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:opentable.com {venue}",
+        "{venue} Scottsdale, Arizona opentable reviews"
+      ]
+    },
+    {
+      "sourceId": "orbitz",
+      "displayName": "Orbitz",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Orbitz"
+      ]
+    },
+    {
+      "sourceId": "otzyv-ru",
+      "displayName": "Otzyv.ru",
+      "lane": "regional_review",
+      "priority": "recommended",
+      "queries": [
+        "site:otzyv.ru/review/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:otzyv.ru \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" отзыв"
+      ]
+    },
+    {
+      "sourceId": "priceline",
+      "displayName": "Priceline",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Priceline"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa instagram",
+        "The Phoenician Resort and Spa tiktok",
+        "site:instagram.com The Phoenician Resort and Spa"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "https://www.thephoenician.com/",
+        "The Phoenician Resort and Spa official site"
+      ]
+    },
+    {
+      "sourceId": "qaym",
+      "displayName": "Qaym",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "quora",
+      "displayName": "Quora / Q&A platforms",
+      "lane": "community_social",
+      "priority": "optional",
+      "queries": [
+        "site:quora.com The Phoenician Resort and Spa",
+        "The Phoenician Resort and Spa quora"
+      ]
+    },
+    {
+      "sourceId": "realtime-reservation",
+      "displayName": "RealTime Reservation",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa review",
+        "The Phoenician Resort and Spa nightlife",
+        "The Phoenician Resort and Spa entertainment",
+        "The Phoenician Resort and Spa Scottsdale, Arizona"
+      ]
+    },
+    {
+      "sourceId": "rehlat",
+      "displayName": "Rehlat",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:rehlat.com/en/hotels/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "reserveout",
+      "displayName": "ReserveOut",
+      "lane": "reservation_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:reserveout.com/ \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:reserveout.com/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "resortpass",
+      "displayName": "ResortPass",
+      "lane": "reservation_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:resortpass.com/hotels The Phoenician Resort and Spa Scottsdale, Arizona reviews"
+      ]
+    },
+    {
+      "sourceId": "resy",
+      "displayName": "Resy",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:resy.com/cities/ \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:resy.com/cities/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "sevenrooms",
+      "displayName": "SevenRooms",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:sevenrooms.com/explore/ \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:sevenrooms.com/explore/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "skyscanner",
+      "displayName": "Skyscanner",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Skyscanner"
+      ]
+    },
+    {
+      "sourceId": "staah",
+      "displayName": "STAAH",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "tablet-hotels",
+      "displayName": "Tablet Hotels",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:tablethotels.com/en \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:tablethotels.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"verified stays\""
+      ]
+    },
+    {
+      "sourceId": "tiket",
+      "displayName": "tiket.com",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:tiket.com/en-us/hotel/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:tiket.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"hotel\""
+      ]
+    },
+    {
+      "sourceId": "tiktok",
+      "displayName": "TikTok (public guest mentions)",
+      "lane": "video_social",
+      "priority": "recommended",
+      "queries": [
+        "The Phoenician Resort and Spa tiktok",
+        "site:tiktok.com The Phoenician Resort and Spa"
+      ]
+    },
+    {
+      "sourceId": "toast_tables",
+      "displayName": "Toast Tables",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:toasttab.com/local/order/ \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:toasttab.com/local/ \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "tock",
+      "displayName": "Tock",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:exploretock.com/{venue_slug}/search \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:exploretock.com \"{venue}\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations"
+      ]
+    },
+    {
+      "sourceId": "tophotels",
+      "displayName": "Tophotels",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:tophotels.ru/hotel/al \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:tophotels.ru \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"отзывы\""
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com The Phoenician Resort and Spa"
+      ]
+    },
+    {
+      "sourceId": "traveloka",
+      "displayName": "Traveloka",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:traveloka.com/en-en/hotel/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:traveloka.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"hotel\""
+      ]
+    },
+    {
+      "sourceId": "trip_com",
+      "displayName": "Trip.com",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:trip.com/hotels/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:hotels.ctrip.com/hotels/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com The Phoenician Resort and Spa Hotel_Review",
+        "The Phoenician Resort and Spa Scottsdale, Arizona TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "trivago",
+      "displayName": "trivago",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona trivago"
+      ]
+    },
+    {
+      "sourceId": "urvenue",
+      "displayName": "UrVenue",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "webook",
+      "displayName": "webook",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:webook.com/en/events \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:webook.com/en/experiences \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "wego",
+      "displayName": "Wego",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Wego"
+      ]
+    },
+    {
+      "sourceId": "wotif",
+      "displayName": "Wotif",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "The Phoenician Resort and Spa Scottsdale, Arizona Wotif"
+      ]
+    },
+    {
+      "sourceId": "yelp",
+      "displayName": "Yelp",
+      "lane": "review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:yelp.com The Phoenician Resort and Spa",
+        "The Phoenician Resort and Spa Scottsdale, Arizona yelp reviews"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "The Phoenician Resort and Spa walkthrough",
+        "The Phoenician Resort and Spa resort tour",
+        "The Phoenician Resort and Spa review vlog",
+        "site:youtube.com The Phoenician Resort and Spa Scottsdale, Arizona entertainment",
+        "site:youtube.com The Phoenician Resort and Spa Scottsdale, Arizona live music shows"
+      ]
+    },
+    {
+      "sourceId": "zoover",
+      "displayName": "Zoover",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:zoover.nl/a \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+        "site:zoover.nl/a \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"reviews\""
+      ]
+    }
+  ],
+  "angleQueries": [
+    "The Phoenician Resort and Spa reviews",
+    "The Phoenician Resort and Spa entertainment reviews",
+    "The Phoenician Resort and Spa nightlife",
+    "site:reddit.com The Phoenician Resort and Spa",
+    "The Phoenician Resort and Spa YouTube review",
+    "The Phoenician Resort and Spa travel blog review",
+    "The Phoenician Resort and Spa family review",
+    "The Phoenician Resort and Spa couples review",
+    "The Phoenician Resort and Spa business traveler review",
+    "The Phoenician Resort and Spa rooftop review",
+    "The Phoenician Resort and Spa bar review",
+    "The Phoenician Resort and Spa dining review"
+  ]
+}

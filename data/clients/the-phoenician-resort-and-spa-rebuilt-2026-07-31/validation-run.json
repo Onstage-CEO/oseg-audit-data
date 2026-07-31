@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "V1",
+  "purpose": "fresh_rebuilt_source_validation",
+  "propertyName": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "workspaceSlug": "the-phoenician-resort-and-spa-rebuilt-2026-07-31",
+  "engineSha": "4055ec31532414ade9d1bb19ef01485b425e5acd",
+  "historicalWorkspaceImported": false,
+  "historicalConclusionsImported": false,
+  "analysisWindow": {
+    "from": "2025-07-31",
+    "to": "2026-07-31"
+  },
+  "createdAt": "2026-07-31T19:33:06.450Z"
+}

@@ -1,0 +1,29 @@
+{
+  "client": {
+    "name": "The Phoenician Resort and Spa",
+    "propertyName": "The Phoenician Resort and Spa",
+    "location": "Scottsdale, Arizona",
+    "audience": "Management",
+    "presentedBy": [],
+    "version": "V0.1 — Working Draft",
+    "status": "draft",
+    "dateRange": {
+      "from": "2025-07-31",
+      "to": "2026-07-31"
+    }
+  },
+  "oneLineThesis": "",
+  "coreFinding": "",
+  "platforms": [],
+  "skippedSources": [],
+  "evidence": [],
+  "venues": [],
+  "segments": [],
+  "hypotheses": [],
+  "recommendations": [],
+  "namedTalent": [],
+  "firewall": {
+    "forbiddenTerms": [],
+    "calibratedPhrasings": []
+  }
+}
