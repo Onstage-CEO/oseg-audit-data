@@ -1,0 +1,26 @@
+{
+  "queries": [
+    {
+      "query": "site:traveloka.com/en-en/hotel/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.traveloka.com/id-id/hotel/united-states-of-america/the-phoenician-a-luxury-collection-resort-scottsdale-1000000141169",
+          "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
+          "snippet": "The Phoenician at 6000 E Camelback Rd, Scottsdale, Arizona, United States 85251; Traveloka rating 8.8."
+        }
+      ]
+    },
+    {
+      "query": "site:traveloka.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"hotel\"",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.traveloka.com/id-id/hotel/united-states-of-america/the-phoenician-a-luxury-collection-resort-scottsdale-1000000141169",
+          "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
+          "snippet": "The Phoenician at 6000 E Camelback Rd, Scottsdale, Arizona, United States 85251; Traveloka rating 8.8."
+        }
+      ]
+    }
+  ]
+}
