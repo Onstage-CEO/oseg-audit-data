@@ -18,6 +18,11 @@ on:
         description: 'Property name as guests know it'
         required: true
         type: string
+      workspaceSlug:
+        description: 'Optional unique workspace slug for a fresh rerun of an existing property'
+        required: false
+        type: string
+        default: ''
       location:
         description: 'City/region, e.g. "Scottsdale, Arizona"'
         required: true
@@ -54,7 +59,7 @@ on:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 67daf35c887e3509434978ffe7937df6b6385980
+  ENGINE_REF: 4055ec31532414ade9d1bb19ef01485b425e5acd
 
 permissions:
   contents: write
@@ -113,6 +118,7 @@ jobs:
         env:
           IN_CLIENT: ${{ inputs.clientName }}
           IN_PROPERTY: ${{ inputs.propertyName }}
+          IN_SLUG: ${{ inputs.workspaceSlug }}
           IN_LOCATION: ${{ inputs.location }}
           IN_BRAND: ${{ inputs.brand }}
           IN_WEBSITE: ${{ inputs.website }}
@@ -127,12 +133,53 @@ jobs:
             --location "$IN_LOCATION"
             --root "$GITHUB_WORKSPACE/data-repo/data/clients"
             --registry config/source-registry.json)
+          [ -n "$IN_SLUG" ] && args+=(--slug "$IN_SLUG")
           [ -n "$IN_BRAND" ] && args+=(--brand "$IN_BRAND")
           [ -n "$IN_WEBSITE" ] && args+=(--website "$IN_WEBSITE")
           [ -n "$IN_RENOVATION" ] && args+=(--renovation-date "$IN_RENOVATION")
           [ -n "$IN_DATE_FROM" ] && args+=(--date-from "$IN_DATE_FROM")
           [ -n "$IN_DATE_TO" ] && args+=(--date-to "$IN_DATE_TO")
           npm run dev -- "${args[@]}"
+
+      - name: Record rebuilt-source preflight and fresh-run lineage
+        working-directory: engine
+        env:
+          IN_PROPERTY: ${{ inputs.propertyName }}
+          IN_SLUG: ${{ inputs.workspaceSlug }}
+          IN_LOCATION: ${{ inputs.location }}
+          IN_DATE_FROM: ${{ inputs.dateFrom }}
+          IN_DATE_TO: ${{ inputs.dateTo }}
+          ENGINE_SHA: ${{ env.ENGINE_REF }}
+        run: |
+          set -euo pipefail
+          slug="$IN_SLUG"
+          if [ -z "$slug" ]; then
+            slug=$(printf '%s' "$IN_PROPERTY" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g;s/^-+|-+$//g')
+          fi
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$slug"
+          test -f "$ws/audit.json"
+          npm run dev --silent -- source-preflight --output-dir "$ws/validation-preflight" --format markdown > /tmp/source-preflight.md
+          node - "$ws" <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const ws = process.argv[2];
+          const manifest = {
+            schemaVersion: 'V1',
+            purpose: 'fresh_rebuilt_source_validation',
+            propertyName: process.env.IN_PROPERTY,
+            location: process.env.IN_LOCATION,
+            workspaceSlug: path.basename(ws),
+            engineSha: process.env.ENGINE_SHA,
+            historicalWorkspaceImported: false,
+            historicalConclusionsImported: false,
+            analysisWindow: {
+              from: process.env.IN_DATE_FROM || null,
+              to: process.env.IN_DATE_TO || null,
+            },
+            createdAt: new Date().toISOString(),
+          };
+          fs.writeFileSync(path.join(ws, 'validation-run.json'), JSON.stringify(manifest, null, 2) + '\n');
+          NODE
 
       - name: Commit (attributed) and push
         id: commit
