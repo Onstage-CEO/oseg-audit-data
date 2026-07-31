@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-31T22:52:55.207Z",
+  "generatedAt": "2026-07-31T22:59:01.612Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -272,7 +272,7 @@
       "source": "resortpass",
       "mechanism": "direct_public_fetch",
       "provider": "direct_public_fetch",
-      "attemptedAt": "2026-07-31T22:52:51.013Z",
+      "attemptedAt": "2026-07-31T22:58:56.742Z",
       "result": "needs_configuration",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -329,27 +329,27 @@
       "source": "traveloka",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T22:52:52.515Z",
+      "attemptedAt": "2026-07-31T22:58:58.778Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": false,
-      "message": "All 2 bounded queries completed with no accepted Traveloka property surface. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved."
+      "message": "Resolved 1 exact Traveloka property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved."
     },
     {
       "source": "tiket",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T22:52:53.436Z",
+      "attemptedAt": "2026-07-31T22:58:59.779Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": false,
-      "message": "All 2 bounded queries completed with no accepted Tiket property surface. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved."
+      "message": "Resolved 1 exact Tiket property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved."
     },
     {
       "source": "agoda",

@@ -3,16 +3,16 @@
   "source": "tiket",
   "property": "The Phoenician Resort and Spa",
   "location": "Scottsdale, Arizona",
-  "attemptedAt": "2026-07-31T22:52:53.436Z",
+  "attemptedAt": "2026-07-31T22:58:59.779Z",
   "method": "operator_supplied_search_results",
-  "propertySurfaceStatus": "not_resolved",
+  "propertySurfaceStatus": "resolved",
   "guestReviewCaptureStatus": "not_attempted",
   "supplierReviewCaptureStatus": "not_attempted",
   "reviewProvenanceStatus": "unresolved",
   "partnerReviewReadStatus": "not_documented",
   "contributesToRatings": false,
-  "result": "checked_no_data",
-  "message": "All 2 bounded queries completed with no accepted Tiket property surface.",
+  "result": "resolved_partial",
+  "message": "Resolved 1 exact Tiket property surface(s); native and supplier reviews remain unacquired and provenance-unresolved.",
   "queries": [
     {
       "query": "site:tiket.com/en-us/hotel/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
@@ -33,25 +33,25 @@
       "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
       "snippet": "The Phoenician at 6000 E Camelback Rd, Scottsdale, Arizona 85251; exact Tiket property listing.",
       "query": "site:tiket.com/en-us/hotel/ \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
-      "retrievedAt": "2026-07-31T22:52:53.436Z",
+      "retrievedAt": "2026-07-31T22:58:59.779Z",
       "canonicalUrl": "https://tiket.com/id-id/hotel/united-states/the-phoenician-a-luxury-collection-resort-scottsdale-604001682743900732",
       "domain": "tiket.com",
       "propertyId": "604001682743900732",
-      "propertyIdentityMatched": false,
+      "propertyIdentityMatched": true,
       "locationIdentityMatched": true,
-      "classification": "wrong_property",
-      "reason": "Candidate does not prove both full property and locality identity."
+      "classification": "resolved_property_surface",
+      "reason": "Official Tiket hotel identity, stable property ID, full property name, and locality matched; reviews were not acquired."
     },
     {
       "url": "https://www.tiket.com/id-id/hotel/united-states/the-phoenician-a-luxury-collection-resort-scottsdale-604001682743900732",
       "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
       "snippet": "The Phoenician at 6000 E Camelback Rd, Scottsdale, Arizona 85251; exact Tiket property listing.",
       "query": "site:tiket.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" \"hotel\"",
-      "retrievedAt": "2026-07-31T22:52:53.436Z",
+      "retrievedAt": "2026-07-31T22:58:59.779Z",
       "canonicalUrl": "https://tiket.com/id-id/hotel/united-states/the-phoenician-a-luxury-collection-resort-scottsdale-604001682743900732",
       "domain": "tiket.com",
       "propertyId": "604001682743900732",
-      "propertyIdentityMatched": false,
+      "propertyIdentityMatched": true,
       "locationIdentityMatched": true,
       "classification": "duplicate",
       "reason": "Duplicate Tiket property identity 604001682743900732.",
@@ -59,5 +59,5 @@
     }
   ],
   "recordsReturned": 2,
-  "recordsResolved": 0
+  "recordsResolved": 1
 }
