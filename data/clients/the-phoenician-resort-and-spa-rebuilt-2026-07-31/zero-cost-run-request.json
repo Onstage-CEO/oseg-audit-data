@@ -1,17 +1,6 @@
 {
-  "requestedAt": "2026-07-31T22:58:00Z",
-  "requestedBy": "joe@onstage.biz",
-  "engineRef": "a9b5c4fc78add1730710aee556a9b4e39e953fb4",
-  "paidProviders": false,
-  "sources": [
-    "resortpass",
-    "traveloka",
-    "tiket",
-    "instagram",
-    "facebook",
-    "tiktok"
-  ],
-  "regenerateCoverageMatrix": true,
-  "attempt": 3,
-  "reason": "rerun_after_regional_identity_fix"
+  "schemaVersion": "V1",
+  "requestedAt": "2026-07-31T23:29:00Z",
+  "reason": "Regenerate Phoenician zero-cost source evidence and coverage matrix with reconciliation fixes",
+  "engineCommit": "1527d8360f88e9c73d5e1e2fc79de7073385ecf6"
 }
