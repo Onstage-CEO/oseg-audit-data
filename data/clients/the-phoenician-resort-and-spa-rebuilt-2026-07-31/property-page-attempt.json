@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "V1",
+  "source": "resort_pages",
+  "requestedUrl": "https://www.thephoenician.com/",
+  "finalUrl": "https://www.thephoenician.com/",
+  "attemptedAt": "2026-07-31T23:42:00Z",
+  "method": "direct_public_fetch",
+  "result": "captured_partial",
+  "message": "Captured 7 identity-verified resort-owned pages with current programming signals through bounded official-domain discovery; full sitemap enumeration remains unproven.",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "contentSha256": null,
+  "recordsReturned": 7,
+  "recordsAccepted": 7,
+  "propertyControlled": true,
+  "independentGuestCorpus": false
+}

@@ -1,0 +1,13 @@
+{
+  "property": [
+    {
+      "source": "resort_pages",
+      "countCaptured": 7,
+      "countFound": 7,
+      "captureMethod": "bounded_official_domain_discovery",
+      "usedInReport": true,
+      "confidence": "high"
+    }
+  ],
+  "outlets": []
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "V1",
+  "property": "The Phoenician Resort and Spa",
+  "retrievedAt": "2026-07-31T23:42:00Z",
+  "officialPages": [
+    {
+      "url": "https://www.thephoenician.com/dine/thirsty-camel/",
+      "signal": "Live entertainment Thursday-Saturday, soloist, 8-11 p.m."
+    },
+    {
+      "url": "https://www.thephoenician.com/events/dueling-pianos/",
+      "signal": "Dueling Pianos every Saturday, 8-10 p.m., Phoenician Tavern."
+    },
+    {
+      "url": "https://www.thephoenician.com/dine/the-phoenician-tavern/",
+      "signal": "Dueling Pianos Saturday, 8-10 p.m."
+    },
+    {
+      "url": "https://www.thephoenician.com/events/phoenician-fall-fest/",
+      "signal": "Live country music, live DJ, line dancing; 2026 dates pending."
+    },
+    {
+      "url": "https://www.thephoenician.com/downtime-activities/",
+      "signal": "Dueling Pianos and recurring resort activities."
+    },
+    {
+      "url": "https://www.thephoenician.com/events/tavern-tap-tasting/",
+      "signal": "Weekly Tavern experience every Saturday at 2 p.m."
+    },
+    {
+      "url": "https://www.thephoenician.com/events/mixology-experience/",
+      "signal": "Weekly Friday interactive experience at Mowry & Cotton."
+    }
+  ],
+  "externalDiscovery": {
+    "agoda": {
+      "url": "https://www.agoda.com/en-ca/the-phoenician-a-luxury-collection-resort-scottsdale_3/hotel/phoenix-az-us.html",
+      "classification": "exact_main_resort_listing"
+    },
+    "aerial_satellite": {
+      "sourceUrl": "https://mapcarta.com/W182104348",
+      "upstream": "OpenStreetMap way 182104348",
+      "address": "6000 East Camelback Road, Scottsdale, AZ 85251",
+      "latitude": 33.50666,
+      "longitude": -111.95121
+    },
+    "webook": {
+      "queries": [
+        "site:webook.com The Phoenician Scottsdale",
+        "site:webook.com \"The Phoenician\" Scottsdale"
+      ],
+      "result": "checked_no_data"
+    },
+    "quora": {
+      "query": "site:quora.com The Phoenician Scottsdale resort",
+      "result": "blocked",
+      "reason": "robots.txt"
+    }
+  }
+}
