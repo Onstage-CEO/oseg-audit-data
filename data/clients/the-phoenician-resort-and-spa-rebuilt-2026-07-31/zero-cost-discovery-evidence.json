@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "V1",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "retrievedAt": "2026-07-31T23:34:00Z",
+  "method": "bounded_public_web_discovery",
+  "sources": {
+    "almosafer": {
+      "result": "identity_resolved_no_corpus",
+      "queries": [
+        "site:almosafer.com The Phoenician Scottsdale",
+        "site:almosafer.com \"The Phoenician, a Luxury Collection Resort, Scottsdale\""
+      ],
+      "evidenceUrls": [
+        "https://bh.almosafer.com/en/travel/fp/five-star-hotels-near-westworld-of-scottsdale-in-scottsdale-us",
+        "https://bh.almosafer.com/en/travel/fp/five-star-hotels-near-odysea-aquarium-in-scottsdale-us",
+        "https://bh.almosafer.com/en/travel/fp/five-star-hotels-near-old-town-scottsdale-in-scottsdale-us"
+      ],
+      "observed": {
+        "address": "6000 E Camelback Rd",
+        "rating": 9,
+        "guestReviewCount": 1001
+      }
+    },
+    "hoteltonight": {
+      "result": "checked_no_data_main_property",
+      "queries": [
+        "site:hoteltonight.com The Phoenician Scottsdale",
+        "site:hoteltonight.com \"The Phoenician, a Luxury Collection Resort, Scottsdale\""
+      ],
+      "excludedRelatedUrl": "https://www.hoteltonight.com/hotel/the-canyon-suites-at-the-phoenician-luxury-collection-in-scottsdale-az",
+      "exclusionReason": "Distinct Canyon Suites property, 60 rooms; not the main resort."
+    },
+    "tablet_hotels": {
+      "result": "checked_no_data",
+      "queries": [
+        "site:tablethotels.com The Phoenician Scottsdale",
+        "site:tablethotels.com \"The Phoenician, a Luxury Collection Resort, Scottsdale\""
+      ],
+      "evidenceUrls": []
+    },
+    "cluburlaub": {
+      "result": "checked_no_data",
+      "queries": [
+        "site:cluburlaub.de The Phoenician Scottsdale",
+        "site:cluburlaub.de \"The Phoenician\" Scottsdale"
+      ],
+      "evidenceUrls": []
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T20:00:04.487Z",
+  "generatedAt": "2026-07-31T23:34:00Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": {
     "yelp": {
@@ -34,6 +34,38 @@
       "recordsReturned": 30,
       "recordsAccepted": 30,
       "attemptedAt": "2026-07-31T20:00:04.487Z"
+    },
+    "almosafer": {
+      "result": "not_supported",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Exact Phoenician identity resolved on Almosafer public Scottsdale category surfaces at 6000 E Camelback Rd, showing 9/10 and 1001 guest reviews. No canonical detail-page review corpus was exposed or acquired; identity evidence only.",
+      "recordsReturned": 3,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:34:00Z"
+    },
+    "hoteltonight": {
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Two exact-property HotelTonight searches found no main-resort listing. A separate Canyon Suites at The Phoenician listing was found and excluded as a distinct 60-room property.",
+      "recordsReturned": 1,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:34:00Z"
+    },
+    "tablet_hotels": {
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Two exact-property/domain searches returned no identity-matched Tablet Hotels listing for the main Phoenician resort.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:34:00Z"
+    },
+    "cluburlaub": {
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Two exact-property/domain searches returned no identity-matched Cluburlaub.de listing for The Phoenician in Scottsdale.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-07-31T23:34:00Z"
     }
   }
 }
