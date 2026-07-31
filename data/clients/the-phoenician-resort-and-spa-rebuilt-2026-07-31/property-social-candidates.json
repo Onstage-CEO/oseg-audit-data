@@ -1,0 +1,60 @@
+{
+  "queries": [
+    {
+      "platform": "facebook",
+      "query": "site:facebook.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "platform": "facebook",
+      "query": "\"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" official facebook",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "platform": "instagram",
+      "query": "site:instagram.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.instagram.com/phoenicianscottsdale/",
+          "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
+          "snippet": "Official Instagram for The Phoenician in Scottsdale, Arizona.",
+          "ownershipEvidence": {
+            "type": "property_owned_backlink",
+            "sourceUrl": "https://www.thephoenician.com/"
+          }
+        }
+      ]
+    },
+    {
+      "platform": "instagram",
+      "query": "\"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" official instagram",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.instagram.com/phoenicianscottsdale/",
+          "title": "The Phoenician, a Luxury Collection Resort, Scottsdale",
+          "snippet": "Official Instagram for The Phoenician in Scottsdale, Arizona.",
+          "ownershipEvidence": {
+            "type": "property_owned_backlink",
+            "sourceUrl": "https://www.thephoenician.com/"
+          }
+        }
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "query": "site:tiktok.com \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "platform": "tiktok",
+      "query": "\"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" official tiktok",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}
