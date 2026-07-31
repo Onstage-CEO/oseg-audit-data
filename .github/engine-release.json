@@ -15,9 +15,9 @@
   "propertySourceAttemptSchemaVersion": null,
   "coverageMatrixSchemaVersion": null,
   "paidCapturedCorpusVerificationVersion": null,
-  "productionEngineWorkflowCount": 15,
+  "productionEngineWorkflowCount": 16,
   "isolatedCleanRoomWorkflowCount": 6,
-  "engineWorkflowCount": 21,
+  "engineWorkflowCount": 22,
   "declaredPinsValidated": true,
   "executedCheckoutTargetsValidated": true,
   "detectsNonstandardCheckoutPaths": true,
@@ -25,5 +25,5 @@
   "cleanRoomValidated": false,
   "commercialRepeatabilityStatus": "not_approved",
   "approvalPolicy": "Production workflows use one approved SHA. Isolated clean-room exceptions must be filename-bound and SHA-bound in this manifest; they never change the production pin.",
-  "note": "The 15 production workflows remain on the approved hosted engine. Six isolated, one-shot clean-room workflows execute reviewed candidate SHAs and are filename/SHA bound by this manifest."
+  "note": "The 16 production workflows remain on the approved hosted engine. Six isolated, one-shot clean-room workflows execute reviewed candidate SHAs and are filename/SHA bound by this manifest."
 }
