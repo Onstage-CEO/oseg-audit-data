@@ -79,6 +79,8 @@ jobs:
         working-directory: engine
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE || '10' }}
+          OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD: ${{ vars.OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD || '0' }}
           OSEG_APIFY_MAX_WAIT_MS: ${{ vars.OSEG_APIFY_MAX_WAIT_MS || '4200000' }}
           WS: ${{ steps.resolve.outputs.ws }}
         run: |
