@@ -87,6 +87,8 @@ jobs:
         env:
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR: ${{ vars.OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR || '10' }}
+          OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR: ${{ vars.OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR || '10' }}
           OSEG_CAPTURE_DEPTH: ${{ vars.OSEG_CAPTURE_DEPTH || '4490' }}
           # Single deep pinned task — NOT the 30-task sweep. Cost-conscious.
           OSEG_CAPTURE_FULL_SWEEP: '0'
