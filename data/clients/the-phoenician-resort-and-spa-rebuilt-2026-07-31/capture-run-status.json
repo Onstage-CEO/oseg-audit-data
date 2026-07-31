@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-07-31T19:48:43.288Z",
+  "generatedAt": "2026-07-31T20:32:20.090Z",
   "property": {
     "propertyName": "The Phoenician Resort and Spa",
     "location": "Scottsdale, Arizona"
@@ -103,13 +103,20 @@
     {
       "platformId": "tripadvisor",
       "mechanism": "aggregator",
-      "status": "error",
-      "message": "tripadvisor: paid launch blocked — set reviewed OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR and OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR ceilings (shared fallbacks are also accepted).",
+      "status": "pending_async",
+      "message": "collected 0 review(s); provider-reported task cost $0.337; 1 in queue",
       "recordsAdded": 0,
       "duplicatesSkipped": 0,
-      "queriesRun": 24,
+      "queriesRun": 0,
       "queriesFailed": 0,
-      "truncatedQueries": []
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 0,
+        "requestedDepth": 4490,
+        "mode": "deep",
+        "actualCostUsd": 0.33675,
+        "costStatus": "verified"
+      }
     },
     {
       "platformId": "youtube",
@@ -130,13 +137,14 @@
     }
   ],
   "spend": {
-    "knownActualCostUsd": 4.647349999999999,
+    "knownActualCostUsd": 4.9841,
     "reviewedMaximumUsd": 20,
     "costStatus": "verified",
     "sourcesTracked": [
       "booking",
       "expedia",
-      "google"
+      "google",
+      "tripadvisor"
     ],
     "sourcesUnavailable": [],
     "additionalPaidStageBlocked": false

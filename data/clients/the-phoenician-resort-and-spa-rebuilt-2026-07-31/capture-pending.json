@@ -1,0 +1,14 @@
+{
+  "reportVersion": "V1",
+  "tasks": [
+    {
+      "platformId": "tripadvisor",
+      "vendor": "dataforseo",
+      "taskId": "07312011-1943-0353-0000-61558e7081af",
+      "submittedAt": "2026-07-31T20:11:41.206Z",
+      "note": "default",
+      "actualCostUsd": 0.33675,
+      "costStatus": "verified"
+    }
+  ]
+}
