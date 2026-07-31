@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-31T23:30:16.066Z",
+  "generatedAt": "2026-07-31T23:33:32.740Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -239,7 +239,7 @@
       "source": "property_social",
       "mechanism": "bounded property-social resolution (no post capture)",
       "provider": "bounded property-social resolution (no post capture)",
-      "attemptedAt": "2026-07-31T23:30:15.070Z",
+      "attemptedAt": "2026-07-31T23:33:31.803Z",
       "result": "pending",
       "recordsReturned": 1,
       "recordsAccepted": 0,
@@ -274,7 +274,7 @@
       "source": "resortpass",
       "mechanism": "direct_public_fetch",
       "provider": "direct_public_fetch",
-      "attemptedAt": "2026-07-31T23:30:11.704Z",
+      "attemptedAt": "2026-07-31T23:33:28.516Z",
       "result": "needs_configuration",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -285,14 +285,16 @@
     },
     {
       "source": "cluburlaub",
-      "mechanism": "Direct public fetch from configured cluburlaubUrl through capture-cluburlaub, with cluburlaub-attempt.json and response-hash lineage",
-      "result": "not_checked",
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:34:00Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Two exact-property/domain searches returned no identity-matched Cluburlaub.de listing for The Phoenician in Scottsdale."
     },
     {
       "source": "holidaycheck",
@@ -331,7 +333,7 @@
       "source": "traveloka",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:30:13.140Z",
+      "attemptedAt": "2026-07-31T23:33:29.898Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -344,7 +346,7 @@
       "source": "tiket",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:30:14.129Z",
+      "attemptedAt": "2026-07-31T23:33:30.856Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
@@ -366,14 +368,16 @@
     },
     {
       "source": "hoteltonight",
-      "mechanism": "Operator-supplied public search-result metadata through the bounded HotelTonight discovery path with explicit attempt lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:34:00Z",
+      "result": "checked_no_data",
+      "recordsReturned": 1,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Two exact-property HotelTonight searches found no main-resort listing. A separate Canyon Suites at The Phoenician listing was found and excluded as a distinct 60-room property."
     },
     {
       "source": "hrs",
@@ -399,25 +403,29 @@
     },
     {
       "source": "almosafer",
-      "mechanism": "Operator-supplied public search-result metadata through the bounded Almosafer discovery path with explicit attempt lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:34:00Z",
+      "result": "not_supported",
+      "recordsReturned": 3,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "Exact Phoenician identity resolved on Almosafer public Scottsdale category surfaces at 6000 E Camelback Rd, showing 9/10 and 1001 guest reviews. No canonical detail-page review corpus was exposed or acquired; identity evidence only."
     },
     {
       "source": "tablet_hotels",
-      "mechanism": "resolve-tablet-hotels CLI using operator-supplied public search-result metadata through the bounded Tablet Hotels discovery path with explicit attempt-file lineage",
-      "result": "not_checked",
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:34:00Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "Two exact-property/domain searches returned no identity-matched Tablet Hotels listing for the main Phoenician resort."
     },
     {
       "source": "otzyv_ru",
