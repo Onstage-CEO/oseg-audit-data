@@ -1,6 +1,14 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T23:41:38.999Z",
+  "generatedAt": "2026-08-01T16:47:06.605Z",
   "property": "The Phoenician Resort and Spa",
-  "reviews": []
+  "reviews": [],
+  "summary": {
+    "rating": 4.4,
+    "ratingMax": 5,
+    "reviewCount": 160,
+    "sourceUrl": "https://www.resortpass.com/hotels/the-phoenician-a-luxury-collection-resort-scottsdale",
+    "capturedAt": "2026-08-01T16:47:06.605Z",
+    "contributesToRatings": false
+  }
 }

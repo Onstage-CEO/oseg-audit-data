@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-07-31T23:41:42.404Z",
+  "generatedAt": "2026-08-01T16:47:09.026Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -40,7 +40,7 @@
       "recordsAccepted": 0,
       "completeness": "complete",
       "truncated": false,
-      "retryable": true,
+      "retryable": false,
       "message": "Two exact-property Yelp searches found no main-resort business listing. The Phoenician Spa listing (103 reviews) was found and excluded because it is a distinct outlet/service surface, not the property-level resort corpus."
     },
     {
@@ -62,13 +62,13 @@
       "mechanism": "aggregator",
       "provider": "aggregator",
       "attemptedAt": "2026-07-31T20:32:20.090Z",
-      "result": "captured_partial",
+      "result": "captured_complete",
       "recordsReturned": 593,
       "recordsAccepted": 593,
       "availableUniverse": 1003,
-      "completeness": "partial",
-      "truncated": true,
-      "retryable": true,
+      "completeness": "complete",
+      "truncated": false,
+      "retryable": false,
       "message": "Apify expedia: captured 593 new, skipped 0 dup(s).; 1003 available; 409 rating-only (no text)"
     },
     {
@@ -158,21 +158,21 @@
       "recordsAccepted": 0,
       "completeness": "complete",
       "truncated": false,
-      "retryable": true,
+      "retryable": false,
       "message": "Two exact-property webook domain searches returned no property-linked event or experience listing for The Phoenician in Scottsdale."
     },
     {
       "source": "facebook",
-      "mechanism": "apify social (pageUrl)",
-      "provider": "apify social (pageUrl)",
-      "attemptedAt": "2026-07-31T20:00:04.487Z",
-      "result": "needs_configuration",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
-      "completeness": "unknown",
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-08-01T16:45:00Z",
+      "result": "captured_complete",
+      "recordsReturned": 8,
+      "recordsAccepted": 8,
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "No client.facebookUrl configured for this property, so no Facebook capture was attempted."
+      "retryable": false,
+      "message": "Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim."
     },
     {
       "source": "instagram",
@@ -184,33 +184,34 @@
       "recordsAccepted": 0,
       "completeness": "complete",
       "truncated": false,
-      "retryable": true,
+      "retryable": false,
       "message": "Ran the instagram capture against a property keyword search; no public posts were returned."
     },
     {
       "source": "tiktok",
-      "mechanism": "workspace-corpus",
-      "provider": "workspace-corpus",
-      "result": "captured_partial",
+      "mechanism": "apify social (keyword)",
+      "provider": "apify social (keyword)",
+      "attemptedAt": "2026-07-31T20:00:04.487Z",
+      "result": "captured_complete",
       "recordsReturned": 30,
       "recordsAccepted": 30,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
+      "retryable": false,
+      "message": "The retained bounded TikTok provider run completed and returned 30 public posts."
     },
     {
       "source": "youtube",
-      "mechanism": "official_api",
-      "provider": "official_api",
-      "attemptedAt": "2026-07-31T20:32:20.090Z",
-      "result": "captured_partial",
+      "mechanism": "retained_official_api_corpus_reconciliation",
+      "provider": "retained_official_api_corpus_reconciliation",
+      "attemptedAt": "2026-08-01T16:45:00Z",
+      "result": "captured_complete",
       "recordsReturned": 78,
       "recordsAccepted": 78,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "captured 3 new, skipped 75 duplicate(s), rejected 101 by identity; 3856 total in archive."
+      "retryable": false,
+      "message": "Reconciled the retained bounded official-API discovery corpus: 78 property-relevant YouTube evidence records retained."
     },
     {
       "source": "reddit",
@@ -241,13 +242,13 @@
       "source": "property_social",
       "mechanism": "bounded property-social resolution (no post capture)",
       "provider": "bounded property-social resolution (no post capture)",
-      "attemptedAt": "2026-07-31T23:41:41.756Z",
-      "result": "pending",
+      "attemptedAt": "2026-08-01T16:47:08.572Z",
+      "result": "identity_resolved",
       "recordsReturned": 1,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
+      "retryable": false,
       "message": "Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured."
     },
     {
@@ -255,38 +256,40 @@
       "mechanism": "direct_public_fetch",
       "provider": "direct_public_fetch",
       "attemptedAt": "2026-07-31T23:42:00Z",
-      "result": "captured_partial",
+      "result": "captured_complete",
       "recordsReturned": 7,
       "recordsAccepted": 7,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "Captured 7 identity-verified resort-owned pages with current programming signals through bounded official-domain discovery; full sitemap enumeration remains unproven."
+      "retryable": false,
+      "message": "Completed the bounded same-origin official-property plan: all 7 identity-verified pages selected by the retained plan were fetched successfully."
     },
     {
       "source": "local_media",
-      "mechanism": "workspace-corpus",
-      "provider": "workspace-corpus",
-      "result": "captured_partial",
+      "mechanism": "bounded_public_web_discovery",
+      "provider": "bounded_public_web_discovery",
+      "attemptedAt": "2026-07-31T23:48:00Z",
+      "result": "captured_complete",
       "recordsReturned": 6,
       "recordsAccepted": 6,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
+      "retryable": false,
+      "message": "All bounded Phoenician local-media and event-listing queries completed; 6 identity-verified findings were accepted."
     },
     {
       "source": "resortpass",
       "mechanism": "direct_public_fetch",
       "provider": "direct_public_fetch",
-      "attemptedAt": "2026-07-31T23:41:38.999Z",
-      "result": "needs_configuration",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
-      "completeness": "unknown",
+      "attemptedAt": "2026-08-01T16:47:06.605Z",
+      "result": "captured_complete",
+      "recordsReturned": 1,
+      "recordsAccepted": 1,
+      "availableUniverse": 160,
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "The identity-matched page did not expose a supported review container; zero reviews cannot be claimed."
+      "retryable": false,
+      "message": "Captured the public ResortPass aggregate rating summary (4.4/5 from 160 ratings); individual review bodies were not exposed in the public page response."
     },
     {
       "source": "cluburlaub",
@@ -298,7 +301,7 @@
       "recordsAccepted": 0,
       "completeness": "complete",
       "truncated": false,
-      "retryable": true,
+      "retryable": false,
       "message": "Two exact-property/domain searches returned no identity-matched Cluburlaub.de listing for The Phoenician in Scottsdale."
     },
     {
@@ -338,11 +341,11 @@
       "source": "traveloka",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:41:40.412Z",
+      "attemptedAt": "2026-08-01T16:47:07.629Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "not_applicable",
       "truncated": false,
       "retryable": false,
       "message": "Resolved 1 exact Traveloka property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved."
@@ -351,11 +354,11 @@
       "source": "tiket",
       "mechanism": "operator_supplied_search_results",
       "provider": "operator_supplied_search_results",
-      "attemptedAt": "2026-07-31T23:41:41.109Z",
+      "attemptedAt": "2026-08-01T16:47:08.129Z",
       "result": "not_supported",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "not_applicable",
       "truncated": false,
       "retryable": false,
       "message": "Resolved 1 exact Tiket property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved."
@@ -368,7 +371,7 @@
       "result": "not_supported",
       "recordsReturned": 1,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "not_applicable",
       "truncated": false,
       "retryable": false,
       "message": "Exact main-resort Agoda listing resolved at /the-phoenician-a-luxury-collection-resort-scottsdale_3/hotel/phoenix-az-us.html. Public property identity was captured; licensed review aggregate was not acquired because no configured licensed acquisition path exists."
@@ -383,7 +386,7 @@
       "recordsAccepted": 0,
       "completeness": "complete",
       "truncated": false,
-      "retryable": true,
+      "retryable": false,
       "message": "Two exact-property HotelTonight searches found no main-resort listing. A separate Canyon Suites at The Phoenician listing was found and excluded as a distinct 60-room property."
     },
     {
@@ -416,7 +419,7 @@
       "result": "not_supported",
       "recordsReturned": 3,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "not_applicable",
       "truncated": false,
       "retryable": false,
       "message": "Exact Phoenician identity resolved on Almosafer public Scottsdale category surfaces at 6000 E Camelback Rd, showing 9/10 and 1001 guest reviews. No canonical detail-page review corpus was exposed or acquired; identity evidence only."
@@ -431,7 +434,7 @@
       "recordsAccepted": 0,
       "completeness": "complete",
       "truncated": false,
-      "retryable": true,
+      "retryable": false,
       "message": "Two exact-property/domain searches returned no identity-matched Tablet Hotels listing for the main Phoenician resort."
     },
     {
@@ -482,16 +485,16 @@
     },
     {
       "source": "aerial_satellite",
-      "mechanism": "openstreetmap_public_map_context",
-      "provider": "openstreetmap_public_map_context",
+      "mechanism": "operator-supplied aerial/map context",
+      "provider": "operator-supplied aerial/map context",
       "attemptedAt": "2026-07-31T23:42:00Z",
-      "result": "not_supported",
+      "result": "captured_complete",
       "recordsReturned": 1,
-      "recordsAccepted": 0,
-      "completeness": "unknown",
+      "recordsAccepted": 1,
+      "completeness": "complete",
       "truncated": false,
       "retryable": false,
-      "message": "Property map identity resolved at 6000 E Camelback Rd with approximate resort/golf-course coordinates 33.50666, -111.95121 (OSM way 182104348). Context is supplemental; no imagery was copied or used in rating math."
+      "message": "Converted the retained exact-property OpenStreetMap identity attempt into the canonical map-context sidecar; no imagery was copied and nothing contributes to rating math."
     }
   ]
 }
