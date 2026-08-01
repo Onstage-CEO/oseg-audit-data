@@ -11,12 +11,15 @@
       "from": "2025-07-31",
       "to": "2026-07-31"
     },
-    "googleUrl": "https://www.google.com/maps/search/The%20Phoenician%2C%20Scottsdale%2C%20US?hl=en",
+    "googleUrl": "https://www.google.com/maps?cid=7979147976159927655",
     "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d74199-Reviews-The_Phoenician_A_Luxury_Collection_Resort_Scottsdale-Scottsdale_Arizona.html",
     "bookingUrl": "https://www.booking.com/hotel/us/the-phoenician-resort.html",
     "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-The-Phoenician.h10645.Hotel-Information",
     "resortPassUrl": "https://www.resortpass.com/hotels/the-phoenician-a-luxury-collection-resort-scottsdale",
-    "website": "https://www.thephoenician.com/"
+    "website": "https://www.thephoenician.com/",
+    "yelpUrl": "https://www.yelp.com/biz/the-phoenician-a-luxury-collection-resort-scottsdale-scottsdale",
+    "instagramUrl": "https://www.instagram.com/phoenicianscottsdale/",
+    "facebookUrl": "https://www.facebook.com/PhoenicianScottsdale/"
   },
   "oneLineThesis": "",
   "coreFinding": "",
@@ -60,7 +63,55 @@
     }
   ],
   "evidence": [],
-  "venues": [],
+  "venues": [
+    {
+      "name": "The Phoenician Tavern",
+      "type": "Bar & Lounge (dueling pianos)",
+      "slug": "the-phoenician-tavern",
+      "yelpUrl": "https://www.yelp.com/biz/the-phoenician-tavern-scottsdale",
+      "googleUrl": "https://www.google.com/maps/search/The%20Phoenician%20Tavern%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "opentableUrl": "https://www.opentable.com/r/the-phoenician-tavern-the-phoenician-scottsdale-2"
+    },
+    {
+      "name": "J&G Steakhouse",
+      "type": "Restaurant",
+      "slug": "j-and-g-steakhouse",
+      "yelpUrl": "https://www.yelp.com/biz/j-and-g-steakhouse-scottsdale",
+      "googleUrl": "https://www.google.com/maps/search/J%26G%20Steakhouse%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d334373-Reviews-J_G_Steakhouse-Scottsdale_Arizona.html",
+      "opentableUrl": "https://www.opentable.com/j-and-g-steakhouse-scottsdale-at-the-phoenician"
+    },
+    {
+      "name": "Mowry & Cotton",
+      "type": "Restaurant",
+      "slug": "mowry-and-cotton",
+      "yelpUrl": "https://www.yelp.com/biz/mowry-and-cotton-scottsdale",
+      "googleUrl": "https://www.google.com/maps/search/Mowry%20%26%20Cotton%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d13009103-Reviews-Mowry_Cotton-Scottsdale_Arizona.html",
+      "opentableUrl": "https://www.opentable.com/r/mowry-and-cotton-scottsdale"
+    },
+    {
+      "name": "The Thirsty Camel",
+      "type": "Lounge (afternoon tea)",
+      "slug": "thirsty-camel",
+      "yelpUrl": "https://www.yelp.com/biz/thirsty-camel-at-the-phoenician-scottsdale",
+      "googleUrl": "https://www.google.com/maps/search/Thirsty%20Camel%20at%20The%20Phoenician%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+      "opentableUrl": "https://www.opentable.com/r/afternoon-tea-at-the-phoenician-scottsdale"
+    },
+    {
+      "name": "Kalio Kabobery",
+      "yelpUrl": "https://www.yelp.com/biz/kalio-kabobery-scottsdale",
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d19402659-Reviews-Kalio_Kebobery-Scottsdale_Arizona.html",
+      "type": "Restaurant (poolside Mediterranean)",
+      "slug": "kalio-kabobery"
+    },
+    {
+      "name": "The Marketplace",
+      "yelpUrl": "https://www.yelp.com/biz/the-marketplace-scottsdale",
+      "type": "Bakery / cafe",
+      "slug": "the-marketplace"
+    }
+  ],
   "segments": [],
   "hypotheses": [],
   "recommendations": [],
