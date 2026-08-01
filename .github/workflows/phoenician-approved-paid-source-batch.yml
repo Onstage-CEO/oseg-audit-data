@@ -1,0 +1,96 @@
+name: phoenician-approved-paid-source-batch
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/paid-run-request.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phoenician-approved-paid-source-batch
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: e81e33e193af77a697596e42b40cd01c4ef2a32d
+  SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout data
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+
+      - name: Checkout pinned engine
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine
+        working-directory: engine
+        run: npm ci
+
+      - name: Run approved bounded captures
+        working-directory: engine
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_GOOGLE_CAPTURE_SOURCE: apify
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE: '5'
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS: '5'
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP: '10'
+          OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD: '0'
+          OSEG_APIFY_MAX_WAIT_MS: '10800000'
+          OSEG_CAPTURE_TIMEOUT_MS: '10800000'
+        run: |
+          set -uo pipefail
+          run_source() {
+            label="$1"
+            shift
+            echo "### $label" >> "$GITHUB_STEP_SUMMARY"
+            set +e
+            "$@" 2>&1 | tee "/tmp/$label.log"
+            code="${PIPESTATUS[0]}"
+            set -e
+            cp "/tmp/$label.log" "$WS/${label}-run.log"
+            echo "exit: $code" >> "$GITHUB_STEP_SUMMARY"
+            return 0
+          }
+          run_source tripadvisor-collect npm run dev --silent -- capture-collect "$WS"
+          cp "$WS/discovery-queries.json" /tmp/phoenician-discovery-queries.json
+          node --input-type=module -e "import fs from 'node:fs'; const p=process.env.WS+'/discovery-queries.json'; const d=JSON.parse(fs.readFileSync(p,'utf8')); d.perSource=(d.perSource||[]).filter(x=>x.sourceId==='google'); fs.writeFileSync(p,JSON.stringify(d,null,2)+'\\n');"
+          run_source google-property npm run dev --silent -- capture-round "$WS"
+          cp /tmp/phoenician-discovery-queries.json "$WS/discovery-queries.json"
+          run_source outlet-google-yelp npm run dev --silent -- capture-venues "$WS"
+          run_source strict-coverage npm run dev --silent -- generate-coverage-matrix "$WS" --require-us-complete
+
+      - name: Commit capture results
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          git add "data/clients/$SLUG"
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "capture approved Phoenician paid sources"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          exit 1
