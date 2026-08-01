@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "V1",
+  "source": "youtube",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-08-01T16:45:00Z",
+  "method": "retained_official_api_corpus_reconciliation",
+  "result": "captured_complete",
+  "message": "Reconciled the retained bounded official-API discovery corpus: 78 property-relevant YouTube evidence records retained.",
+  "queries": [
+    {
+      "status": "searched",
+      "recordsReturned": 78,
+      "message": "The retained bounded exact-property YouTube discovery query completed."
+    }
+  ],
+  "recordsReturned": 78,
+  "recordsAccepted": 78,
+  "completeness": "complete",
+  "truncated": false,
+  "retryable": false
+}
