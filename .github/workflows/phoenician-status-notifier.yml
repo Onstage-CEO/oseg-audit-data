@@ -1,0 +1,121 @@
+name: Phoenician audit status notifier
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/source-coverage-matrix.json"
+      - ".github/workflows/phoenician-status-notifier.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: phoenician-status-notifier
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Post status only when readiness changes
+        uses: actions/github-script@v7
+        env:
+          MATRIX_PATH: data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/source-coverage-matrix.json
+          STATUS_ISSUE: "62"
+        with:
+          script: |
+            const fs = require("fs");
+            const crypto = require("crypto");
+
+            const matrixPath = process.env.MATRIX_PATH;
+            const matrix = JSON.parse(fs.readFileSync(matrixPath, "utf8"));
+            const rawBlockers = Array.isArray(matrix.summary?.blockers)
+              ? matrix.summary.blockers
+              : [];
+
+            const blockerText = (blocker) => {
+              if (typeof blocker === "string") return blocker;
+              const source =
+                blocker.source ||
+                blocker.sourceId ||
+                blocker.name ||
+                blocker.id ||
+                "unknown source";
+              const status =
+                blocker.status ||
+                blocker.state ||
+                blocker.reason ||
+                "blocked";
+              return `${source} — ${status}`;
+            };
+
+            const blockers = rawBlockers.map(blockerText).sort();
+            const ready = blockers.length === 0;
+            const fingerprint = crypto
+              .createHash("sha256")
+              .update(JSON.stringify({ ready, blockers }))
+              .digest("hex")
+              .slice(0, 16);
+            const marker = `<!-- phoenician-status:${fingerprint} -->`;
+            const issue_number = Number(process.env.STATUS_ISSUE);
+
+            const comments = await github.paginate(
+              github.rest.issues.listComments,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                per_page: 100
+              }
+            );
+
+            if (comments.some((comment) => comment.body?.includes(marker))) {
+              core.info("No readiness change; notification suppressed.");
+              return;
+            }
+
+            const state = ready
+              ? "READY — all required sources have passed the audit gate"
+              : `BLOCKED — ${blockers.length} source${blockers.length === 1 ? "" : "s"} remain`;
+            const blockerList = ready
+              ? "None."
+              : blockers.map((blocker, index) => `${index + 1}. ${blocker}`).join("\n");
+            const matrixUrl =
+              `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/${matrixPath}`;
+            const generatedAt =
+              matrix.generatedAt ||
+              matrix.generated_at ||
+              matrix.summary?.generatedAt ||
+              "not recorded";
+
+            const body = [
+              marker,
+              `## Phoenician audit status: ${state}`,
+              "",
+              `**Matrix generated:** ${generatedAt}`,
+              `**Required-source blockers:** ${blockers.length}`,
+              `**Audit may run:** ${ready ? "YES" : "NO — fail-closed gate remains active"}`,
+              "",
+              "### Current blockers",
+              "",
+              blockerList,
+              "",
+              `[Open the complete source-coverage matrix](${matrixUrl})`,
+              "",
+              "_This update was posted automatically because readiness changed._"
+            ].join("\n");
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number,
+              body
+            });
+
+            core.notice(`Posted Phoenician status to issue #${issue_number}: ${state}`);
