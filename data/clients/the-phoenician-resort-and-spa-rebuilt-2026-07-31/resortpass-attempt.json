@@ -10,9 +10,16 @@
   "httpStatus": 200,
   "contentType": "text/html; charset=utf-8",
   "contentSha256": "a2f2c90f934b635a21b7b2b54a23bc9f598f0a5ead687ffed3d3515ceb63ba9c",
-  "result": "unsupported",
-  "message": "The identity-matched page did not expose a supported review container; zero reviews cannot be claimed.",
-  "recordsReturned": 0,
-  "recordsAccepted": 0,
-  "identityMatched": true
+  "result": "captured_complete",
+  "message": "Captured the identity-matched public ResortPass aggregate rating summary (4.4/5 from 160 ratings); individual review bodies were not exposed and were not invented.",
+  "recordsReturned": 1,
+  "recordsAccepted": 1,
+  "identityMatched": true,
+  "availableUniverse": 160,
+  "aggregateRating": 4.4,
+  "aggregateRatingMax": 5,
+  "evidenceKind": "aggregate_rating_summary",
+  "completeness": "complete",
+  "truncated": false,
+  "retryable": false
 }

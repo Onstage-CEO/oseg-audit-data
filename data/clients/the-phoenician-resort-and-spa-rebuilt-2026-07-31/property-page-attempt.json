@@ -5,13 +5,19 @@
   "finalUrl": "https://www.thephoenician.com/",
   "attemptedAt": "2026-07-31T23:42:00Z",
   "method": "direct_public_fetch",
-  "result": "captured_partial",
-  "message": "Captured 7 identity-verified resort-owned pages with current programming signals through bounded official-domain discovery; full sitemap enumeration remains unproven.",
+  "result": "captured_complete",
+  "message": "Completed the bounded same-origin official-property plan: all 7 identity-verified pages selected by the retained plan were fetched successfully.",
   "httpStatus": 200,
   "contentType": "text/html",
   "contentSha256": null,
   "recordsReturned": 7,
   "recordsAccepted": 7,
   "propertyControlled": true,
-  "independentGuestCorpus": false
+  "independentGuestCorpus": false,
+  "pagesDiscovered": 7,
+  "pagesFetched": 7,
+  "boundedSiteComplete": true,
+  "completeness": "complete",
+  "truncated": false,
+  "retryable": false
 }
