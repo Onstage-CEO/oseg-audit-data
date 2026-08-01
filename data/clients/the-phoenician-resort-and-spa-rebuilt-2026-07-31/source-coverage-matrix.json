@@ -3,7 +3,7 @@
   "capabilitySchemaVersion": "V2",
   "propertyAttemptSchemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T16:52:10.479Z",
+  "generatedAt": "2026-08-01T16:55:04.299Z",
   "scopes": [
     {
       "scope": "property",
@@ -465,7 +465,7 @@
           "attemptResult": "identity_resolved",
           "attemptMechanism": "bounded property-social resolution (no post capture)",
           "attemptMessage": "Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured.",
-          "attemptedAt": "2026-08-01T16:51:33.478Z",
+          "attemptedAt": "2026-08-01T16:54:27.204Z",
           "completeness": "complete",
           "truncated": false,
           "retryable": false
@@ -537,7 +537,7 @@
           "attemptResult": "captured_complete",
           "attemptMechanism": "direct_public_fetch",
           "attemptMessage": "Captured the public ResortPass aggregate rating summary (4.4/5 from 160 ratings); individual review bodies were not exposed in the public page response.",
-          "attemptedAt": "2026-08-01T16:51:30.836Z",
+          "attemptedAt": "2026-08-01T16:54:24.569Z",
           "completeness": "complete",
           "availableUniverse": 160,
           "truncated": false,
@@ -650,7 +650,7 @@
           "attemptResult": "not_supported",
           "attemptMechanism": "operator_supplied_search_results",
           "attemptMessage": "Resolved 1 exact Traveloka property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved.",
-          "attemptedAt": "2026-08-01T16:51:31.946Z",
+          "attemptedAt": "2026-08-01T16:54:25.704Z",
           "completeness": "not_applicable",
           "truncated": false,
           "retryable": false
@@ -673,7 +673,7 @@
           "attemptResult": "not_supported",
           "attemptMechanism": "operator_supplied_search_results",
           "attemptMessage": "Resolved 1 exact Tiket property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved.",
-          "attemptedAt": "2026-08-01T16:51:32.705Z",
+          "attemptedAt": "2026-08-01T16:54:26.445Z",
           "completeness": "not_applicable",
           "truncated": false,
           "retryable": false
