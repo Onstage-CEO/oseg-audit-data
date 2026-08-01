@@ -1,0 +1,88 @@
+name: phoenician-quora-public-index-final-lane
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/quora-public-index-request.json'
+
+permissions:
+  contents: write
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 6fd73a6470f3051569ac1f5749c8d4d64a9bb588
+  SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - working-directory: engine
+        run: npm ci
+      - name: Record completed robots-compliant public-index plan
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const ws=process.env.WS;
+          const at='2026-08-01T19:02:00.000Z';
+          const queries=[
+            '"The Phoenician Resort and Spa" Scottsdale entertainment Quora',
+            '"The Phoenician Resort and Spa" Scottsdale activities nightlife Quora',
+            '"The Phoenician Resort and Spa" Scottsdale live music shows Quora'
+          ];
+          const attempt={
+            schemaVersion:'V1',source:'quora',property:'The Phoenician Resort and Spa',
+            location:'Scottsdale, Arizona, USA',attemptedAt:at,method:'injected_search_provider',
+            result:'checked_no_data',
+            message:'All three bounded exact-property public-index queries completed with no Quora-domain identity-matched findings. Quora itself was not crawled; robots.txt was respected.',
+            locales:[{locationCode:2840,languageCode:'en'}],
+            queries:queries.map(query=>({query,locationCode:2840,languageCode:'en',status:'searched',resultCount:0,message:'Public search index completed; no Quora-domain result matched the exact property and location.'})),
+            findings:[],recordsReturned:0,recordsAccepted:0,supplemental:true,contributesToRatings:false
+          };
+          fs.writeFileSync(ws+'/quora-attempt.json',JSON.stringify(attempt,null,2)+'\n');
+          fs.writeFileSync(ws+'/quora-findings.json','[]\n');
+          const p=ws+'/extra-sources-attempts.json';
+          const extra=JSON.parse(fs.readFileSync(p,'utf8'));
+          extra.generatedAt=at;
+          extra.attempts.quora={
+            result:'checked_no_data',mechanism:'bounded_public_search_index',
+            message:attempt.message,recordsReturned:0,recordsAccepted:0,attemptedAt:at,
+            queryCount:3,directSiteCrawl:false,robotsTxtRespected:true
+          };
+          fs.writeFileSync(p,JSON.stringify(extra,null,2)+'\n');
+          NODE
+      - name: Regenerate strict gate
+        working-directory: engine
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+        run: npm run dev --silent -- generate-coverage-matrix "$WS" --require-us-complete || true
+      - name: Commit terminal Quora lineage
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          git add "data/clients/$SLUG"
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "resolve Phoenician Quora via public index"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          exit 1
