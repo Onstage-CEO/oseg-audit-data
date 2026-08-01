@@ -2,26 +2,23 @@
 _Generated 2026-08-01 · matrix V2 · capability V2 · attempts V1._
 
 ## ⛔ Coverage blockers (report may not imply completeness while these stand)
-- The Phoenician Resort and Spa: TripAdvisor reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
-- The Phoenician Resort and Spa: Booking.com reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
-- The Phoenician Resort and Spa: Expedia reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
 - The Phoenician Resort and Spa: Facebook mentions is missing capture; An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.
-- The Phoenician Resort and Spa: Reddit / forums is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
+- The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.
 - The Phoenician Resort and Spa: Blogs / travel articles is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.
 - The Phoenician Resort and Spa: Quora / Q&A platforms is blocked; SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.
 
 Outlet-level Google capture implemented: **yes**
 
 ### PROPERTY — The Phoenician Resort and Spa
-_12/23 engine-supported sources captured_
+_11/23 engine-supported sources captured_
 
 | Source | Status | Attempt | Complete | Checked | Engine | Captured | Found | Got | In report | Conf | Reason |
 |---|---|---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|---|
 | Google / Google Maps reviews | ✅ captured complete | captured_complete | complete | yes | yes | yes | 7,139 | 7,139 | yes | high | Captured with completeness proven for the recorded attempt. Captured via aggregator. |
-| TripAdvisor reviews | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 3,189 | 3,189 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
+| TripAdvisor reviews | ✅ captured complete | captured_complete | complete | yes | yes | yes | 3,189 | 3,189 | yes | high | Captured with completeness proven for the recorded attempt. Captured via aggregator. |
 | Yelp reviews | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | yes | high | Checked successfully; the source returned no usable data. Two exact-property Yelp searches found no main-resort business listing. The Phoenician Spa listing (103 reviews) was found and excluded because it is a distinct outlet/service surface, not the property-level resort corpus. |
-| Booking.com reviews | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 58 | 58 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
-| Expedia reviews | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 593 | 593 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
+| Booking.com reviews | ✅ captured complete | captured_complete | complete | yes | yes | yes | 58 | 58 | yes | high | Captured with completeness proven for the recorded attempt. Captured via aggregator. |
+| Expedia reviews | ✅ captured complete | captured_complete | complete | yes | yes | yes | 593 | 593 | yes | high | Captured with completeness proven for the recorded attempt. Captured via aggregator. |
 | OpenTable / reservation-platform reviews | — n/a | not_applicable | not_applicable | no | no | no | ? | 0 | no | low | Not applicable at this level. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance. |
 | Eat App venue/widget discovery | — n/a | not_applicable | not_applicable | no | no | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). Not applicable at this level. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution. |
 | ReserveOut venue discovery | — n/a | not_applicable | not_applicable | no | no | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). Not applicable at this level. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution. |
@@ -34,7 +31,7 @@ _12/23 engine-supported sources captured_
 | Instagram mentions | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | yes | high | Checked successfully; the source returned no usable data. Ran the instagram capture against a property keyword search; no public posts were returned. |
 | TikTok mentions | ✅ captured complete | captured_complete | complete | yes | yes | yes | 30 | 30 | yes | high | Captured with completeness proven for the recorded attempt. Captured via apify social (keyword). |
 | YouTube videos + comments | ✅ captured complete | captured_complete | complete | yes | yes | yes | 78 | 78 | yes | high | Captured with completeness proven for the recorded attempt. Captured via retained_official_api_corpus_reconciliation. |
-| Reddit / forums | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 6 | 6 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
+| Reddit / forums | 🔑 needs credentials | needs_credentials | unknown | no | yes | no | ? | 6 | yes | low | Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET. |
 | Blogs / travel articles | 🟠 captured partial/unproven | captured_partial | unknown | yes | yes | yes | 10 | 10 | yes | medium | Captured, but source completeness is partial or unproven. Captured via workspace-corpus. |
 | Property social profile / hashtag resolution | 🔗 identity resolved (no review corpus) | identity_resolved | complete | yes | yes | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). Exact public source identity resolved; no guest-review corpus was captured. Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured. |
 | Resort-owned pages | ✅ captured complete | captured_complete | complete | yes | yes | yes | 7 | 7 | no | high | Captured with completeness proven for the recorded attempt. Captured via direct_public_fetch. |

@@ -3,7 +3,7 @@
   "capabilitySchemaVersion": "V2",
   "propertyAttemptSchemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T18:11:53.728Z",
+  "generatedAt": "2026-08-01T18:37:31.125Z",
   "scopes": [
     {
       "scope": "property",
@@ -28,7 +28,7 @@
           "attemptResult": "captured_complete",
           "attemptMechanism": "aggregator",
           "attemptMessage": "Apify google: captured 4012 new, skipped 0 dup(s).; 1446 rating-only (no text)",
-          "attemptedAt": "2026-08-01T17:32:19.499Z",
+          "attemptedAt": "2026-08-01T18:11:56.000Z",
           "completeness": "complete",
           "truncated": false,
           "retryable": false
@@ -44,17 +44,18 @@
           "countCaptured": 3189,
           "entertainmentSignal": "unknown",
           "usedInReport": true,
-          "status": "captured_partial",
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-          "captureMethod": "workspace-corpus",
-          "confidence": "medium",
+          "status": "captured",
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator.",
+          "captureMethod": "aggregator",
+          "confidence": "high",
           "supplemental": false,
-          "attemptResult": "captured_partial",
-          "attemptMechanism": "workspace-corpus",
-          "attemptMessage": "Captured records exist, but no explicit property-source attempt/completeness record was found.",
-          "completeness": "unknown",
+          "attemptResult": "captured_complete",
+          "attemptMechanism": "aggregator",
+          "attemptMessage": "Collected terminal DataForSEO task: 3,189 review records; queue empty.",
+          "attemptedAt": "2026-08-01T18:11:56.000Z",
+          "completeness": "complete",
           "truncated": false,
-          "retryable": true
+          "retryable": false
         },
         {
           "source": "yelp",
@@ -90,17 +91,19 @@
           "countCaptured": 58,
           "entertainmentSignal": "unknown",
           "usedInReport": true,
-          "status": "captured_partial",
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-          "captureMethod": "workspace-corpus",
-          "confidence": "medium",
+          "status": "captured",
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator.",
+          "captureMethod": "aggregator",
+          "confidence": "high",
           "supplemental": false,
-          "attemptResult": "captured_partial",
-          "attemptMechanism": "workspace-corpus",
-          "attemptMessage": "Captured records exist, but no explicit property-source attempt/completeness record was found.",
-          "completeness": "unknown",
+          "attemptResult": "captured_complete",
+          "attemptMechanism": "aggregator",
+          "attemptMessage": "Apify booking: captured 58 new, skipped 0 dup(s).; 58 available",
+          "attemptedAt": "2026-08-01T18:11:56.000Z",
+          "completeness": "complete",
+          "availableUniverse": 58,
           "truncated": false,
-          "retryable": true
+          "retryable": false
         },
         {
           "source": "expedia",
@@ -113,17 +116,19 @@
           "countCaptured": 593,
           "entertainmentSignal": "unknown",
           "usedInReport": true,
-          "status": "captured_partial",
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-          "captureMethod": "workspace-corpus",
-          "confidence": "medium",
+          "status": "captured",
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator.",
+          "captureMethod": "aggregator",
+          "confidence": "high",
           "supplemental": false,
-          "attemptResult": "captured_partial",
-          "attemptMechanism": "workspace-corpus",
-          "attemptMessage": "Captured records exist, but no explicit property-source attempt/completeness record was found.",
-          "completeness": "unknown",
+          "attemptResult": "captured_complete",
+          "attemptMechanism": "aggregator",
+          "attemptMessage": "Apify expedia: captured 593 new, skipped 0 dup(s).; 1003 available; 409 rating-only (no text)",
+          "attemptedAt": "2026-08-01T18:11:56.000Z",
+          "completeness": "complete",
+          "availableUniverse": 1003,
           "truncated": false,
-          "retryable": true
+          "retryable": false
         },
         {
           "source": "opentable",
@@ -400,21 +405,22 @@
           "source": "reddit",
           "label": "Reddit / forums",
           "identifier": "",
-          "checked": true,
+          "checked": false,
           "supportedByEngine": true,
-          "captured": true,
-          "countFound": 6,
+          "captured": false,
+          "countFound": "unknown",
           "countCaptured": 6,
           "entertainmentSignal": "unknown",
           "usedInReport": true,
-          "status": "captured_partial",
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-          "captureMethod": "workspace-corpus",
-          "confidence": "medium",
+          "status": "needs_credentials",
+          "reason": "Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+          "captureMethod": "official_api",
+          "confidence": "low",
           "supplemental": false,
-          "attemptResult": "captured_partial",
-          "attemptMechanism": "workspace-corpus",
-          "attemptMessage": "Captured records exist, but no explicit property-source attempt/completeness record was found.",
+          "attemptResult": "needs_credentials",
+          "attemptMechanism": "official_api",
+          "attemptMessage": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+          "attemptedAt": "2026-08-01T18:11:56.000Z",
           "completeness": "unknown",
           "truncated": false,
           "retryable": true
@@ -460,7 +466,7 @@
           "attemptResult": "identity_resolved",
           "attemptMechanism": "bounded property-social resolution (no post capture)",
           "attemptMessage": "Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured.",
-          "attemptedAt": "2026-08-01T17:01:51.292Z",
+          "attemptedAt": "2026-08-01T18:36:54.194Z",
           "completeness": "complete",
           "truncated": false,
           "retryable": false
@@ -532,7 +538,7 @@
           "attemptResult": "captured_complete",
           "attemptMechanism": "direct_public_fetch",
           "attemptMessage": "Captured the public ResortPass aggregate rating summary (4.4/5 from 160 ratings); individual review bodies were not exposed in the public page response.",
-          "attemptedAt": "2026-08-01T17:01:48.471Z",
+          "attemptedAt": "2026-08-01T18:36:51.401Z",
           "completeness": "complete",
           "availableUniverse": 160,
           "truncated": false,
@@ -645,7 +651,7 @@
           "attemptResult": "not_supported",
           "attemptMechanism": "operator_supplied_search_results",
           "attemptMessage": "Resolved 1 exact Traveloka property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved.",
-          "attemptedAt": "2026-08-01T17:01:49.785Z",
+          "attemptedAt": "2026-08-01T18:36:52.705Z",
           "completeness": "not_applicable",
           "truncated": false,
           "retryable": false
@@ -668,7 +674,7 @@
           "attemptResult": "not_supported",
           "attemptMechanism": "operator_supplied_search_results",
           "attemptMessage": "Resolved 1 exact Tiket property surface(s); native and supplier reviews remain unacquired and provenance-unresolved. Guest and supplier review acquisition remain policy-blocked and were not attempted; provenance remains unresolved.",
-          "attemptedAt": "2026-08-01T17:01:50.538Z",
+          "attemptedAt": "2026-08-01T18:36:53.471Z",
           "completeness": "not_applicable",
           "truncated": false,
           "retryable": false
@@ -923,7 +929,7 @@
           "retryable": false
         }
       ],
-      "capturedSources": 12,
+      "capturedSources": 11,
       "supportedSources": 23
     },
     {
@@ -1043,7 +1049,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:52.037Z",
+          "attemptedAt": "2026-08-01T18:36:54.904Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -1063,7 +1069,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:52.800Z",
+          "attemptedAt": "2026-08-01T18:36:55.641Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -1083,7 +1089,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:53.557Z",
+          "attemptedAt": "2026-08-01T18:36:56.395Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -1103,7 +1109,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:54.312Z",
+          "attemptedAt": "2026-08-01T18:36:57.130Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -1123,7 +1129,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:55.075Z",
+          "attemptedAt": "2026-08-01T18:36:57.869Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -1143,7 +1149,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:55.851Z",
+          "attemptedAt": "2026-08-01T18:36:58.639Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -1715,7 +1721,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:56.603Z",
+          "attemptedAt": "2026-08-01T18:36:59.379Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -1735,7 +1741,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:57.390Z",
+          "attemptedAt": "2026-08-01T18:37:00.144Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -1755,7 +1761,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:58.161Z",
+          "attemptedAt": "2026-08-01T18:37:00.907Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -1775,7 +1781,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:58.929Z",
+          "attemptedAt": "2026-08-01T18:37:01.660Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -1795,7 +1801,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:01:59.684Z",
+          "attemptedAt": "2026-08-01T18:37:02.393Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -1815,7 +1821,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:00.455Z",
+          "attemptedAt": "2026-08-01T18:37:03.141Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -2387,7 +2393,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:01.210Z",
+          "attemptedAt": "2026-08-01T18:37:03.866Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -2407,7 +2413,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:01.981Z",
+          "attemptedAt": "2026-08-01T18:37:04.615Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -2427,7 +2433,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:02.747Z",
+          "attemptedAt": "2026-08-01T18:37:05.351Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -2447,7 +2453,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:03.504Z",
+          "attemptedAt": "2026-08-01T18:37:06.084Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -2467,7 +2473,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:04.264Z",
+          "attemptedAt": "2026-08-01T18:37:06.828Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -2487,7 +2493,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:05.030Z",
+          "attemptedAt": "2026-08-01T18:37:07.587Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -3059,7 +3065,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:05.787Z",
+          "attemptedAt": "2026-08-01T18:37:08.331Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -3079,7 +3085,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:06.562Z",
+          "attemptedAt": "2026-08-01T18:37:09.055Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -3099,7 +3105,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:07.333Z",
+          "attemptedAt": "2026-08-01T18:37:09.801Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -3119,7 +3125,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:08.073Z",
+          "attemptedAt": "2026-08-01T18:37:10.538Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -3139,7 +3145,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:08.829Z",
+          "attemptedAt": "2026-08-01T18:37:11.299Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -3159,7 +3165,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:09.631Z",
+          "attemptedAt": "2026-08-01T18:37:12.050Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -3732,7 +3738,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:10.397Z",
+          "attemptedAt": "2026-08-01T18:37:12.811Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -3752,7 +3758,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:11.160Z",
+          "attemptedAt": "2026-08-01T18:37:13.547Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -3772,7 +3778,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:11.920Z",
+          "attemptedAt": "2026-08-01T18:37:14.269Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -3792,7 +3798,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:12.713Z",
+          "attemptedAt": "2026-08-01T18:37:15.031Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -3812,7 +3818,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:13.495Z",
+          "attemptedAt": "2026-08-01T18:37:15.783Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -3832,7 +3838,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:14.250Z",
+          "attemptedAt": "2026-08-01T18:37:16.522Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -4404,7 +4410,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:15.029Z",
+          "attemptedAt": "2026-08-01T18:37:17.282Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -4424,7 +4430,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:15.783Z",
+          "attemptedAt": "2026-08-01T18:37:18.021Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -4444,7 +4450,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:16.557Z",
+          "attemptedAt": "2026-08-01T18:37:18.754Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -4464,7 +4470,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:17.302Z",
+          "attemptedAt": "2026-08-01T18:37:19.519Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -4484,7 +4490,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:18.080Z",
+          "attemptedAt": "2026-08-01T18:37:20.280Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -4504,7 +4510,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:18.868Z",
+          "attemptedAt": "2026-08-01T18:37:21.018Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -5076,7 +5082,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:19.638Z",
+          "attemptedAt": "2026-08-01T18:37:21.758Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -5096,7 +5102,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:20.395Z",
+          "attemptedAt": "2026-08-01T18:37:22.510Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -5116,7 +5122,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:21.143Z",
+          "attemptedAt": "2026-08-01T18:37:23.264Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -5136,7 +5142,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:21.905Z",
+          "attemptedAt": "2026-08-01T18:37:24.016Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -5156,7 +5162,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:22.683Z",
+          "attemptedAt": "2026-08-01T18:37:24.776Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -5176,7 +5182,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:23.448Z",
+          "attemptedAt": "2026-08-01T18:37:25.532Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -5748,7 +5754,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:24.231Z",
+          "attemptedAt": "2026-08-01T18:37:26.373Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Eat App booking surface."
         },
@@ -5768,7 +5774,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:24.985Z",
+          "attemptedAt": "2026-08-01T18:37:27.196Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
@@ -5788,7 +5794,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:25.769Z",
+          "attemptedAt": "2026-08-01T18:37:28.042Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Resy booking surface."
         },
@@ -5808,7 +5814,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:26.527Z",
+          "attemptedAt": "2026-08-01T18:37:28.891Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
@@ -5828,7 +5834,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:27.297Z",
+          "attemptedAt": "2026-08-01T18:37:29.631Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
@@ -5848,7 +5854,7 @@
           "captureMethod": "operator_supplied_search_results",
           "confidence": "high",
           "supplemental": true,
-          "attemptedAt": "2026-08-01T17:02:28.060Z",
+          "attemptedAt": "2026-08-01T18:37:30.381Z",
           "outletAttemptResult": "checked_no_data",
           "outletAttemptMessage": "All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
@@ -6308,11 +6314,8 @@
   "summary": {
     "outletGoogleImplemented": true,
     "blockers": [
-      "The Phoenician Resort and Spa: TripAdvisor reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-      "The Phoenician Resort and Spa: Booking.com reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-      "The Phoenician Resort and Spa: Expedia reviews is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
       "The Phoenician Resort and Spa: Facebook mentions is missing capture; An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
-      "The Phoenician Resort and Spa: Reddit / forums is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
+      "The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
       "The Phoenician Resort and Spa: Blogs / travel articles is captured partial; Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
       "The Phoenician Resort and Spa: Quora / Q&A platforms is blocked; SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made."
     ]

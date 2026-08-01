@@ -2,13 +2,13 @@
   "schemaVersion": "V1",
   "market": "US",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T18:11:53.728Z",
+  "generatedAt": "2026-08-01T18:37:31.125Z",
   "ready": false,
   "totals": {
     "lanes": 26,
-    "passed": 17,
+    "passed": 20,
     "notApplicable": 0,
-    "blocked": 9
+    "blocked": 6
   },
   "lanes": [
     {
@@ -51,14 +51,14 @@
       "sourceKey": "booking",
       "kind": "evidence",
       "requiredScope": "property",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "captured_partial",
-          "terminal": false,
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator."
         }
       ]
     },
@@ -68,14 +68,14 @@
       "sourceKey": "expedia",
       "kind": "evidence",
       "requiredScope": "property",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "captured_partial",
-          "terminal": false,
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator."
         }
       ]
     },
@@ -314,9 +314,9 @@
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "captured_partial",
+          "status": "needs_credentials",
           "terminal": false,
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
+          "reason": "Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
         }
       ]
     },
@@ -360,14 +360,14 @@
       "sourceKey": "tripadvisor",
       "kind": "evidence",
       "requiredScope": "property",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "captured_partial",
-          "terminal": false,
-          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator."
         }
       ]
     },
@@ -911,8 +911,6 @@
   ],
   "blockers": [
     "#2 blogs [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-    "#3 booking [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-    "#4 expedia [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
     "#5 facebook [property:The Phoenician Resort and Spa] missing_capture: An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
     "#9 opentable [outlet:19th Hole] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#9 opentable [outlet:J&G Steakhouse] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
@@ -920,8 +918,7 @@
     "#9 opentable [outlet:The Marketplace] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#9 opentable [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#11 quora [property:The Phoenician Resort and Spa] blocked: SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
-    "#12 reddit [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
-    "#15 tripadvisor [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
+    "#12 reddit [property:The Phoenician Resort and Spa] needs_credentials: Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
     "#16 yelp [outlet:The Phoenician Tavern] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:Thirsty Camel] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:19th Hole] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
