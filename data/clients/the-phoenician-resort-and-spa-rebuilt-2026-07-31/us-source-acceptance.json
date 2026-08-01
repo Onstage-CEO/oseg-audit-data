@@ -2,13 +2,13 @@
   "schemaVersion": "V1",
   "market": "US",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T16:58:20.936Z",
+  "generatedAt": "2026-08-01T17:02:28.836Z",
   "ready": false,
   "totals": {
     "lanes": 26,
-    "passed": 17,
+    "passed": 18,
     "notApplicable": 0,
-    "blocked": 9
+    "blocked": 8
   },
   "lanes": [
     {
@@ -848,7 +848,7 @@
       "sourceKey": "tock",
       "kind": "identity",
       "requiredScope": "outlet",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "outlet",
@@ -874,9 +874,9 @@
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "provider_error",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). The source attempt failed at the provider/adapter layer. 1 of 2 bounded queries failed or were blocked; Tock venue identity remains unresolved."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
         {
           "scope": "outlet",
@@ -937,7 +937,6 @@
     "#16 yelp [outlet:Mowry & Cotton] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:Kalio Kabobery] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:The Marketplace] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
-    "#16 yelp [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
-    "#26 tock [outlet:J&G Steakhouse] provider_error: SUPPLEMENTAL (never rating math). The source attempt failed at the provider/adapter layer. 1 of 2 bounded queries failed or were blocked; Tock venue identity remains unresolved."
+    "#16 yelp [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
   ]
 }
