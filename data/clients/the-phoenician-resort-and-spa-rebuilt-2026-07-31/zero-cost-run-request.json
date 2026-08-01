@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "requestedAt": "2026-07-31T23:48:00Z",
-  "reason": "Regenerate after Yelp and local-media discovery batch 4",
-  "engineCommit": "1527d8360f88e9c73d5e1e2fc79de7073385ecf6"
+  "requestedAt": "2026-08-01T16:47:00Z",
+  "reason": "Run repaired strict 26-lane Phoenician Phase A gate after canonical identity and source-artifact restoration",
+  "engineCommit": "806dac6fe06fad3dbcd62c0351b1d47f6e2ee069"
 }
