@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "V1",
+  "searchedAt": "2026-08-01T16:49:00.000Z",
+  "method": "bounded_public_index_search",
+  "scope": "Eight Phoenician outlets; both engine-defined exact-identity queries per outlet.",
+  "queries": [
+    {
+      "query": "site:eatapp.co/reserve/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"The Phoenician Tavern\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Thirsty Camel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"19th Hole\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"J&G Steakhouse\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Mowry & Cotton\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Kalio Kabobery\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"The Marketplace\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:eatapp.co/reserve/ \"Mother of Pearl pool / pool decks\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}
