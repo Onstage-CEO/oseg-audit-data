@@ -14,7 +14,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 1527d8360f88e9c73d5e1e2fc79de7073385ecf6
+  ENGINE_REF: 806dac6fe06fad3dbcd62c0351b1d47f6e2ee069
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
 
 jobs:
@@ -66,7 +66,7 @@ jobs:
           run_source traveloka npm run dev --silent -- resolve-traveloka "$WS" --candidate-file "$WS/traveloka-candidates.json"
           run_source tiket npm run dev --silent -- resolve-tiket "$WS" --candidate-file "$WS/tiket-candidates.json"
           run_source property-social npm run dev --silent -- resolve-property-social "$WS" --candidate-file "$WS/property-social-candidates.json"
-          npm run dev --silent -- generate-coverage-matrix "$WS"
+          run_source us-coverage npm run dev --silent -- generate-coverage-matrix "$WS" --require-us-complete
 
       - name: Commit results
         working-directory: data-repo
