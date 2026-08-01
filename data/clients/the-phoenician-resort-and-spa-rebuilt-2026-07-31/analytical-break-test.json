@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "V1",
+  "generatedAt": "2026-08-01T23:45:29.154Z",
+  "frozenCorpus": true,
+  "checks": [
+    {
+      "id": "internal_watermark",
+      "pass": true
+    },
+    {
+      "id": "tavern_dueling_pianos",
+      "pass": true
+    },
+    {
+      "id": "afternoon_tea_pianist",
+      "pass": true
+    },
+    {
+      "id": "thirsty_camel_live_music",
+      "pass": true
+    },
+    {
+      "id": "jg_not_promoted_active",
+      "pass": true
+    },
+    {
+      "id": "mowry_dj_not_promoted_current",
+      "pass": true
+    },
+    {
+      "id": "no_client_ready_claim",
+      "pass": true
+    }
+  ],
+  "passed": 7,
+  "total": 7
+}

@@ -1,0 +1,1450 @@
+{
+  "schemaVersion": "V1",
+  "reportType": "resort_entertainment_performance_audit",
+  "inputModel": "captured_corpus",
+  "generatorVersion": "V1",
+  "generatedAt": "2026-08-01T18:11:56Z",
+  "property": "The Phoenician Resort and Spa",
+  "analysisWindow": {
+    "from": "2025-07-31",
+    "to": "2026-07-31"
+  },
+  "report": {
+    "file": "client-report.html",
+    "sha256": "a53e882c5783253a8bf8385c415b2049a514d97b97ffbcfbd6466156f3e25380"
+  },
+  "coverageContract": {
+    "matrixSchemaVersion": "V2",
+    "capabilitySchemaVersion": "V2",
+    "propertyAttemptSchemaVersion": "V1"
+  },
+  "evidence": {
+    "propertyCaptured": 7890,
+    "propertyScored": 299,
+    "outletCaptured": 9538,
+    "openWebFindings": 45,
+    "totalEvidenceRecords": 17473,
+    "sources": [
+      {
+        "scope": "property",
+        "source": "booking",
+        "captured": 58,
+        "scored": 12
+      },
+      {
+        "scope": "property",
+        "source": "expedia",
+        "captured": 593,
+        "scored": 69
+      },
+      {
+        "scope": "property",
+        "source": "google",
+        "captured": 4050,
+        "scored": 175
+      },
+      {
+        "scope": "property",
+        "source": "tripadvisor",
+        "captured": 3189,
+        "scored": 43
+      },
+      {
+        "scope": "outlet",
+        "source": "google",
+        "captured": 3898,
+        "scored": 0
+      },
+      {
+        "scope": "outlet",
+        "source": "opentable",
+        "captured": 4857,
+        "scored": 0
+      },
+      {
+        "scope": "outlet",
+        "source": "yelp",
+        "captured": 783,
+        "scored": 0
+      },
+      {
+        "scope": "open_web",
+        "source": "open_web",
+        "captured": 45,
+        "scored": 0
+      }
+    ]
+  },
+  "lineage": {
+    "quantitativeFigures": [
+      {
+        "id": "figure-c9c904283f60c468",
+        "path": "client-report.html#number-1",
+        "value": 2026,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e8dd3bbf4e216f22",
+        "path": "client-report.html#number-2",
+        "value": 3.94,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-428daad69984c8a8",
+        "path": "client-report.html#number-3",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-11630a50ee5bf468",
+        "path": "client-report.html#number-4",
+        "value": 3.83,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-01ecca4bdb5e9633",
+        "path": "client-report.html#number-5",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-22002497573a10c8",
+        "path": "client-report.html#number-6",
+        "value": 299,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-5e3bcc053cb95f93",
+        "path": "client-report.html#number-7",
+        "value": 7890,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-62c477fa56c2b667",
+        "path": "client-report.html#number-8",
+        "value": 1,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-4ca47b0b81021094",
+        "path": "client-report.html#number-9",
+        "value": 2,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-58171044aa8af010",
+        "path": "client-report.html#number-10",
+        "value": 19,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-8e540f2a58ccd70a",
+        "path": "client-report.html#number-11",
+        "value": 8209,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-6bb0a864b87b4b51",
+        "path": "client-report.html#number-12",
+        "value": 7890,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e9f60df0df6b41c7",
+        "path": "client-report.html#number-13",
+        "value": 2002,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-5a0b9ad04f77c5d7",
+        "path": "client-report.html#number-14",
+        "value": 2026,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-37b1dcd8dfd258b2",
+        "path": "client-report.html#number-15",
+        "value": 8627,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-a8bbaa6418bcb4fb",
+        "path": "client-report.html#number-16",
+        "value": 299,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-72047e55a2a0e9f6",
+        "path": "client-report.html#number-17",
+        "value": 8209,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-1664c2ce289d957b",
+        "path": "client-report.html#number-18",
+        "value": 4857,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-b6502b396d8ecb7e",
+        "path": "client-report.html#number-19",
+        "value": 2326,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-b59b6335b695f785",
+        "path": "client-report.html#number-20",
+        "value": 1685,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-05328a1c58755aee",
+        "path": "client-report.html#number-21",
+        "value": 846,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e0be66ae5e427579",
+        "path": "client-report.html#number-22",
+        "value": 12747,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-0041af085328a816",
+        "path": "client-report.html#number-23",
+        "value": 7890,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-6d4170355492d1ef",
+        "path": "client-report.html#number-24",
+        "value": 4857,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e9dd08d9dd470b34",
+        "path": "client-report.html#number-25",
+        "value": 299,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e69e00c2ec95a298",
+        "path": "client-report.html#number-26",
+        "value": 2025,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-84e0a5538c97e7ab",
+        "path": "client-report.html#number-27",
+        "value": 2026,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-8080a8ce32f67c4a",
+        "path": "client-report.html#number-28",
+        "value": 7890,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-455caca74e528feb",
+        "path": "client-report.html#number-29",
+        "value": 2002,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-56d5128e9652b6a0",
+        "path": "client-report.html#number-30",
+        "value": 2026,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-04ea1c236ae89a6e",
+        "path": "client-report.html#number-31",
+        "value": 4857,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-4088e5e6112b5b58",
+        "path": "client-report.html#number-32",
+        "value": 12,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-eda0953f879d8213",
+        "path": "client-report.html#number-33",
+        "value": 59,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-d2ea4685bd0f7c86",
+        "path": "client-report.html#number-34",
+        "value": 45,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-deaa01f8cf326631",
+        "path": "client-report.html#number-35",
+        "value": 40,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-7c94bc142d1be935",
+        "path": "client-report.html#number-36",
+        "value": 30,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-b5585be967056b44",
+        "path": "client-report.html#number-37",
+        "value": 21,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-643af716850c27fd",
+        "path": "client-report.html#number-38",
+        "value": 18,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-6a45be498a6f8a02",
+        "path": "client-report.html#number-39",
+        "value": 12,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-379a5666a030afe8",
+        "path": "client-report.html#number-40",
+        "value": 6,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-0aabd8dc46a51533",
+        "path": "client-report.html#number-41",
+        "value": 6,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e6fca5d656a071ff",
+        "path": "client-report.html#number-42",
+        "value": 3,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-00bb81b401579643",
+        "path": "client-report.html#number-43",
+        "value": 957,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-137cbecc0423d437",
+        "path": "client-report.html#number-44",
+        "value": 4.2,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-97fe431d749d8331",
+        "path": "client-report.html#number-45",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-10fad2e8b6d55dc6",
+        "path": "client-report.html#number-46",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-a31e3118619665fd",
+        "path": "client-report.html#number-47",
+        "value": 2025,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-fa5fbfa62fd02de8",
+        "path": "client-report.html#number-48",
+        "value": 1,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f5d7eb05c0bef8d6",
+        "path": "client-report.html#number-49",
+        "value": 26,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-bba480e289e1efd6",
+        "path": "client-report.html#number-50",
+        "value": 1759,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-fa56724f0d0419e5",
+        "path": "client-report.html#number-51",
+        "value": 4.7,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-45798f9399a9ea72",
+        "path": "client-report.html#number-52",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-50d9cdb8354d5a07",
+        "path": "client-report.html#number-53",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-a777f419a1c4bb06",
+        "path": "client-report.html#number-54",
+        "value": 2024,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-be8716421759de3b",
+        "path": "client-report.html#number-55",
+        "value": 6,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-99e05028110ab3b1",
+        "path": "client-report.html#number-56",
+        "value": 2,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-33a09c585a2ba022",
+        "path": "client-report.html#number-57",
+        "value": 1759,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e157dd19bb19d1bc",
+        "path": "client-report.html#number-58",
+        "value": 282,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-33b811c920947128",
+        "path": "client-report.html#number-59",
+        "value": 16,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-6dea63692f2cb659",
+        "path": "client-report.html#number-60",
+        "value": 4.75,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-2c408d279ec1026c",
+        "path": "client-report.html#number-61",
+        "value": 957,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-8779924bc78320db",
+        "path": "client-report.html#number-62",
+        "value": 176,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-ce84b2304a731300",
+        "path": "client-report.html#number-63",
+        "value": 18.4,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-92b70b20258ba6fc",
+        "path": "client-report.html#number-64",
+        "value": 4.38,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-693dd1358b3043be",
+        "path": "client-report.html#number-65",
+        "value": 16,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-2bbde33e7dfc30cc",
+        "path": "client-report.html#number-66",
+        "value": 3,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-3d9a549555a751e8",
+        "path": "client-report.html#number-67",
+        "value": 111,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-84a060b417178791",
+        "path": "client-report.html#number-68",
+        "value": 423,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-d474607a81e5d154",
+        "path": "client-report.html#number-69",
+        "value": 74,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-31dcff15aac670a4",
+        "path": "client-report.html#number-70",
+        "value": 1685,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c878d0782c22a402",
+        "path": "client-report.html#number-71",
+        "value": 914,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e9c53eabfc0b0495",
+        "path": "client-report.html#number-72",
+        "value": 479,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-507f97ae0f2dc9d8",
+        "path": "client-report.html#number-73",
+        "value": 499,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-5a6d9269bb8ea786",
+        "path": "client-report.html#number-74",
+        "value": 3436,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-58bccba26ab72bf4",
+        "path": "client-report.html#number-75",
+        "value": 243,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-3fd5bf3751d6cc38",
+        "path": "client-report.html#number-76",
+        "value": 256,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-d097f5996f8b84c4",
+        "path": "client-report.html#number-77",
+        "value": 1164,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-aaa662c35d7768e3",
+        "path": "client-report.html#number-78",
+        "value": 1159,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-4b94ab023f00f6c0",
+        "path": "client-report.html#number-79",
+        "value": 14,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-053f0e629e7f8b29",
+        "path": "client-report.html#number-80",
+        "value": 4,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-7e904cfbe7d94e9f",
+        "path": "client-report.html#number-81",
+        "value": 14,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-02fbce593d786b21",
+        "path": "client-report.html#number-82",
+        "value": 914,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-728186a8234a5c6b",
+        "path": "client-report.html#number-83",
+        "value": 46,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-cd10d973743dc4ad",
+        "path": "client-report.html#number-84",
+        "value": 63,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-924ededa91a1a86e",
+        "path": "client-report.html#number-85",
+        "value": 14,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-0693a26779357c1a",
+        "path": "client-report.html#number-86",
+        "value": 2018,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c1de8e6955dfb6bc",
+        "path": "client-report.html#number-87",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-9e5e47faf5278f3c",
+        "path": "client-report.html#number-88",
+        "value": 12,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-d26a84dd42728a76",
+        "path": "client-report.html#number-89",
+        "value": 7890,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-3b9493114b8b0da3",
+        "path": "client-report.html#number-90",
+        "value": 2002,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-cbb19250d7960674",
+        "path": "client-report.html#number-91",
+        "value": 2026,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f30714ed410e7dc7",
+        "path": "client-report.html#number-92",
+        "value": 299,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c26324dfd8ffca4e",
+        "path": "client-report.html#number-93",
+        "value": 2025,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-7187b12e5aac8e8e",
+        "path": "client-report.html#number-94",
+        "value": 2026,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-6e17f10337f4c364",
+        "path": "client-report.html#number-95",
+        "value": 4857,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-260449e0306f50ea",
+        "path": "client-report.html#number-96",
+        "value": 2326,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-5827b2aef662a418",
+        "path": "client-report.html#number-97",
+        "value": 1685,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-d72df086bb76f9e2",
+        "path": "client-report.html#number-98",
+        "value": 846,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-0033ad1afddd7f80",
+        "path": "client-report.html#number-99",
+        "value": 12747,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-4a76882eee1472b8",
+        "path": "client-report.html#number-100",
+        "value": 7890,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f4bd240c76b0fe30",
+        "path": "client-report.html#number-101",
+        "value": 4857,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-6d2b04f63f5f8354",
+        "path": "client-report.html#number-102",
+        "value": 58,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f4faf9bfc979065a",
+        "path": "client-report.html#number-103",
+        "value": 58,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f272f7088662ff2f",
+        "path": "client-report.html#number-104",
+        "value": 593,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-edbc8cfe3f72ab16",
+        "path": "client-report.html#number-105",
+        "value": 1003,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-1fe6a5c26f69d64e",
+        "path": "client-report.html#number-106",
+        "value": 4012,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-eefc3223a43376b4",
+        "path": "client-report.html#number-107",
+        "value": 3189,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-1806644e0584921b",
+        "path": "client-report.html#number-108",
+        "value": 3189,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-a6209c36348b7e8c",
+        "path": "client-report.html#number-109",
+        "value": 249,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-90831e2c79b0487e",
+        "path": "client-report.html#number-110",
+        "value": 83,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c8513f3f76aead05",
+        "path": "client-report.html#number-111",
+        "value": 42,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c4eab1cd55e58357",
+        "path": "client-report.html#number-112",
+        "value": 14,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-67c2cba29add475b",
+        "path": "client-report.html#number-113",
+        "value": 4,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-10789d80b7dc2c71",
+        "path": "client-report.html#number-114",
+        "value": 1,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-a7eff2dd03f285ab",
+        "path": "client-report.html#number-115",
+        "value": 3,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-ad1058d24046ec89",
+        "path": "client-report.html#number-116",
+        "value": 1,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c857f086c26ce613",
+        "path": "client-report.html#number-117",
+        "value": 1,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-b8025032b584f284",
+        "path": "client-report.html#number-118",
+        "value": 0,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-dff3578841852799",
+        "path": "client-report.html#number-119",
+        "value": 299,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      }
+    ],
+    "quotesAndExcerpts": [
+      {
+        "id": "quote-ee137e0643be6db4",
+        "path": "client-report.html#blockquote-1",
+        "kind": "guest_quote",
+        "textSha256": "506d934e3714bf895612aa4a0454323aed0fadfed0c9cd777050417cde36d121",
+        "source": "google",
+        "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfbzQ3Y2V3EAE!2m1!1s0x0:0x98690ac25162fbb5!3m1!1s2@1:CIHM0ogKEICAgID_o47cew%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSURfbzQ3Y2V3EAE",
+        "date": "2025-01-26",
+        "locator": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfbzQ3Y2V3EAE!2m1!1s0x0:0x98690ac25162fbb5!3m1!1s2@1:CIHM0ogKEICAgID_o47cew%7C%7C?hl=en#review-ChZDSUhNMG9nS0VJQ0FnSURfbzQ3Y2V3EAE"
+      },
+      {
+        "id": "quote-b8da882c3ea4f361",
+        "path": "client-report.html#blockquote-2",
+        "kind": "guest_quote",
+        "textSha256": "c096d2739dd34e4f36fda68b3057882f592d21c0769d316d2242b6dfcef70508",
+        "source": "google",
+        "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6bnJyZDFRRRAB!2m1!1s0x0:0x724fc1b4c2a0c264!3m1!1s2@1:CIHM0ogKEICAgICznrrd1QE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSUN6bnJyZDFRRRAB",
+        "date": "2024-06-02",
+        "locator": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6bnJyZDFRRRAB!2m1!1s0x0:0x724fc1b4c2a0c264!3m1!1s2@1:CIHM0ogKEICAgICznrrd1QE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSUN6bnJyZDFRRRAB"
+      },
+      {
+        "id": "quote-5ccc2e2c062ee0c2",
+        "path": "client-report.html#blockquote-3",
+        "kind": "open_web_excerpt",
+        "textSha256": "9dc3b197e0700e9b355763c20d6bcfb14a99e9561f3303a0a93c4f59d3120d09",
+        "source": "www.reddit.com",
+        "sourceUrl": "https://www.reddit.com/r/marriott/comments/ytuolr/best_hotel_in_scottsdale_for_bachelorette/",
+        "locator": "https://www.reddit.com/r/marriott/comments/ytuolr/best_hotel_in_scottsdale_for_bachelorette/"
+      },
+      {
+        "id": "quote-b40b419b6bae86c1",
+        "path": "client-report.html#blockquote-4",
+        "kind": "open_web_excerpt",
+        "textSha256": "c65b63007cef3b22a06954a84a5f7132e9c8768fab64aeeb27fe32aa3ab1bfc5",
+        "source": "www.tiktok.com",
+        "sourceUrl": "https://www.tiktok.com/@epic.stays/video/7571151859218484535",
+        "locator": "https://www.tiktok.com/@epic.stays/video/7571151859218484535"
+      },
+      {
+        "id": "quote-0deac7670778f584",
+        "path": "client-report.html#blockquote-5",
+        "kind": "open_web_excerpt",
+        "textSha256": "37c0a845803f1bd8ec032c47d089b25dc4d85349279f003ff6012a6d5458f295",
+        "source": "kidtripster.com",
+        "sourceUrl": "https://kidtripster.com/the-phoenician-scottsdale-arizona/",
+        "locator": "https://kidtripster.com/the-phoenician-scottsdale-arizona/"
+      },
+      {
+        "id": "quote-7ff195b73b147ad0",
+        "path": "client-report.html#blockquote-6",
+        "kind": "open_web_excerpt",
+        "textSha256": "40c88121824ae660a7d1502378ffb50f56d36187b65e4cc27e415069869c429c",
+        "source": "www.instagram.com",
+        "sourceUrl": "https://www.instagram.com/p/DYHemj4Ffdm/",
+        "locator": "https://www.instagram.com/p/DYHemj4Ffdm/"
+      }
+    ]
+  },
+  "payloadSha256": "0b213c8652f0daf6477899e3c8d09b30c6e75ce5caf2cee1bb68c08d346c41a2"
+}

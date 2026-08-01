@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "V1",
+  "reportType": "resort_entertainment_performance_audit",
+  "inputModel": "captured_corpus",
+  "generatorVersion": "V1",
+  "manifestVersion": "V1",
+  "verifiedAt": "2026-08-01T18:11:56Z",
+  "status": "not_ready",
+  "checks": [
+    {
+      "id": "contract_identity",
+      "pass": true,
+      "detail": "resort_entertainment_performance_audit / captured_corpus"
+    },
+    {
+      "id": "coverage_contract",
+      "pass": true,
+      "detail": "matrix V2, capability V2, attempts V1"
+    },
+    {
+      "id": "nonzero_evidence",
+      "pass": true,
+      "detail": "17473 total evidence record(s); 299 property review(s) scored"
+    },
+    {
+      "id": "quantitative_lineage",
+      "pass": true,
+      "detail": "119 rendered numeric token(s) recorded"
+    },
+    {
+      "id": "quote_lineage",
+      "pass": true,
+      "detail": "6/6 rendered quote(s) matched to captured review or open-web evidence"
+    },
+    {
+      "id": "captured_source_consistency",
+      "pass": true,
+      "detail": "8 source-count row(s) reconciled from loaded workspace records"
+    },
+    {
+      "id": "rendered_property_identity",
+      "pass": true,
+      "detail": "rendered report contains property name The Phoenician Resort and Spa"
+    },
+    {
+      "id": "rendered_scored_count",
+      "pass": true,
+      "detail": "fresh corpus computation expects 299 scored review(s)"
+    },
+    {
+      "id": "rendered_overall_rating",
+      "pass": true,
+      "detail": "fresh corpus computation expects overall rating 3.94"
+    },
+    {
+      "id": "rendered_low_star_share",
+      "pass": false,
+      "detail": "fresh corpus computation expects low-star share 19%"
+    }
+  ]
+}

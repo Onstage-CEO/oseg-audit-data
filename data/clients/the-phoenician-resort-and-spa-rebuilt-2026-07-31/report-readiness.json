@@ -1,0 +1,106 @@
+{
+  "status": "EXPORT_BLOCKED",
+  "gates": [
+    {
+      "gateId": "report_generated",
+      "label": "Client report generated",
+      "pass": true,
+      "material": true,
+      "blocks": "client_ready",
+      "detail": "client-report.html present",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "verify_ready",
+      "label": "Paid captured-corpus evidence verification",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "paid report verification = not_ready",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "source_coverage_matrix",
+      "label": "Source Coverage Matrix present",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "source-coverage-matrix present",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "property_source_attempts",
+      "label": "Property Source Attempts (supported does not mean checked)",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "1 unresolved property source attempt(s): reddit [needs_credentials]",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "regional_market_discovery",
+      "label": "Regional Market Source Resolution",
+      "pass": true,
+      "material": false,
+      "blocks": "nothing",
+      "detail": "no regional market profile selected; legacy/US readiness behavior preserved",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "outlet_matrix",
+      "label": "Outlet × Source Coverage (no casual gaps)",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "every outlet × source cell is captured or a documented miss",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "material_source_no_adapter",
+      "label": "No material source documented-away (known body, no adapter)",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "no material source has a known body left uncaptured",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "programming_inventory",
+      "label": "Programming Inventory Matrix",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "programming inventory present (12 program(s), all material programs carry program-specific guest-signal evidence)",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "program_readiness",
+      "label": "Program Readiness (per-program evidence verdict; no buried programs)",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "all 12 program(s) carry a complete evidence verdict; no meaningful program is buried",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "programming_verification",
+      "label": "Current Programming Verification (status vs guest response; source-level authority)",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "every material program carries a verified current-programming status (category + source level + on-site flag)",
+      "overriddenBy": null
+    },
+    {
+      "gateId": "forbidden_language",
+      "label": "No forbidden client-facing language",
+      "pass": true,
+      "material": true,
+      "blocks": "export",
+      "detail": "no forbidden terms in report",
+      "overriddenBy": null
+    }
+  ],
+  "overrides": [],
+  "computedAt": "2026-08-01T18:11:56Z"
+}
