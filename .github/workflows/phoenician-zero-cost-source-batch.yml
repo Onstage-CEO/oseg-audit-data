@@ -69,35 +69,14 @@ jobs:
           # Public-index checks completed 2026-08-01: no exact Phoenician outlet
           # identity surface was returned on these six reservation platforms.
           # Feed both bounded contract queries per outlet to the fail-closed resolvers.
-          prepare_reservation_candidates() {
-            node --input-type=module <<'NODE'
-          import { writeFileSync } from 'node:fs';
-          const property = 'The Phoenician Resort and Spa';
-          const location = 'Scottsdale, Arizona';
-          const venues = ['The Phoenician Tavern','Thirsty Camel','19th Hole','J&G Steakhouse','Mowry & Cotton','Kalio Kabobery','The Marketplace','Mother of Pearl pool / pool decks'];
-          const specs = {
-            'eat-app': v => [`site:eatapp.co/reserve/ "${v}" "${property}" "${location}"`, `site:eatapp.co/reserve/ "${v}" "${location}"`],
-            reserveout: v => [`site:reserveout.com/ "${v}" "${property}" "${location}"`, `site:reserveout.com/ "${v}" "${location}"`],
-            resy: v => [`site:resy.com/cities/ "${v}" "${property}" "${location}"`, `site:resy.com/cities/ "${v}" "${location}"`],
-            sevenrooms: v => [`site:sevenrooms.com/explore/ "${v}" "${property}" "${location}"`, `site:sevenrooms.com/explore/ "${v}" "${location}"`],
-            'toast-tables': v => [`site:toasttab.com/local/order/ "${v}" "${property}" "${location}"`, `site:toasttab.com/local/ "${v}" "${property}" "${location}"`],
-            tock: v => { const slug=v.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); return [`site:exploretock.com/${slug}/search "${v}" "${property}" "${location}"`, `site:exploretock.com "${v}" "${property}" "${location}" reservations`]; },
-          };
-          for (const [source, build] of Object.entries(specs)) {
-            const queries=venues.flatMap(v => build(v).map(query => ({query,status:'ok',items:[]})));
-            writeFileSync(`/tmp/${source}-candidates.json`, JSON.stringify({schemaVersion:'V1',searchedAt:'2026-08-01T00:00:00.000Z',method:'bounded_public_index_search',queries},null,2)+'\\n');
-          }
-          NODE
-          }
           resolve_reservation_identities() {
-            prepare_reservation_candidates
             while IFS= read -r venue; do
-              npm run dev --silent -- resolve-eat-app "$WS" --venue "$venue" --candidate-file /tmp/eat-app-candidates.json
-              npm run dev --silent -- resolve-reserveout "$WS" --venue "$venue" --candidate-file /tmp/reserveout-candidates.json
-              npm run dev --silent -- resolve-resy "$WS" --venue "$venue" --candidate-file /tmp/resy-candidates.json
-              npm run dev --silent -- resolve-sevenrooms "$WS" --venue "$venue" --candidate-file /tmp/sevenrooms-candidates.json
-              npm run dev --silent -- resolve-toast-tables "$WS" --venue "$venue" --candidate-file /tmp/toast-tables-candidates.json
-              npm run dev --silent -- resolve-tock "$WS" --venue "$venue" --candidate-file /tmp/tock-candidates.json
+              npm run dev --silent -- resolve-eat-app "$WS" --venue "$venue" --candidate-file "$WS/eat-app-candidates.json"
+              npm run dev --silent -- resolve-reserveout "$WS" --venue "$venue" --candidate-file "$WS/reserveout-candidates.json"
+              npm run dev --silent -- resolve-resy "$WS" --venue "$venue" --candidate-file "$WS/resy-candidates.json"
+              npm run dev --silent -- resolve-sevenrooms "$WS" --venue "$venue" --candidate-file "$WS/sevenrooms-candidates.json"
+              npm run dev --silent -- resolve-toast-tables "$WS" --venue "$venue" --candidate-file "$WS/toast-tables-candidates.json"
+              npm run dev --silent -- resolve-tock "$WS" --venue "$venue" --candidate-file "$WS/tock-candidates.json"
             done <<'VENUES'
           The Phoenician Tavern
           Thirsty Camel
