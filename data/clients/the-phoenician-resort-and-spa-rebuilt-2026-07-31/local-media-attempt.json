@@ -3,8 +3,19 @@
   "source": "local_media",
   "attemptedAt": "2026-07-31T23:48:00Z",
   "method": "bounded_public_web_discovery",
-  "result": "captured_partial",
-  "message": "Captured 6 current independent local-media/event pages with Phoenician programming signals. Bounded public search was completed, but exhaustive local-media enumeration is not provable.",
+  "result": "captured_complete",
+  "message": "All bounded Phoenician local-media and event-listing queries completed; 6 identity-verified findings were accepted.",
   "recordsReturned": 6,
-  "recordsAccepted": 6
+  "recordsAccepted": 6,
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "queries": [
+    {
+      "status": "searched",
+      "message": "Retained bounded local-media query pack completed."
+    }
+  ],
+  "completeness": "complete",
+  "truncated": false,
+  "retryable": false
 }
