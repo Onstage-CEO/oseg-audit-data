@@ -2,13 +2,13 @@
   "schemaVersion": "V1",
   "market": "US",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T18:48:04.785Z",
+  "generatedAt": "2026-08-01T18:51:13.419Z",
   "ready": false,
   "totals": {
     "lanes": 26,
-    "passed": 21,
+    "passed": 23,
     "notApplicable": 0,
-    "blocked": 5
+    "blocked": 3
   },
   "lanes": [
     {
@@ -209,7 +209,7 @@
       "sourceKey": "opentable",
       "kind": "evidence",
       "requiredScope": "outlet",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "outlet",
@@ -228,9 +228,9 @@
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for 19th Hole. Nearby/other Phoenician listings were excluded."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for 19th Hole. Nearby/other Phoenician listings were excluded."
         },
         {
           "scope": "outlet",
@@ -249,23 +249,23 @@
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Kalio Kabobery. Nearby/other Phoenician listings were excluded."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Kalio Kabobery. Nearby/other Phoenician listings were excluded."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for The Marketplace. Nearby/other Phoenician listings were excluded."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for The Marketplace. Nearby/other Phoenician listings were excluded."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Mother of Pearl pool / pool decks. Nearby/other Phoenician listings were excluded."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Mother of Pearl pool / pool decks. Nearby/other Phoenician listings were excluded."
         }
       ]
     },
@@ -377,7 +377,7 @@
       "sourceKey": "yelp",
       "kind": "evidence",
       "requiredScope": "both",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "property",
@@ -389,23 +389,23 @@
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Exact configured Yelp business URL completed successfully with zero raw items; provider run aRoWzcAoH6tX9pny4 terminal SUCCEEDED."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Exact configured Yelp business URL completed successfully with zero raw items; provider run aRoWzcAoH6tX9pny4 terminal SUCCEEDED."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Exact configured Yelp business URL completed successfully with zero raw items; provider run tNPO8meSdQzxzUshA terminal SUCCEEDED."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Exact configured Yelp business URL completed successfully with zero raw items; provider run tNPO8meSdQzxzUshA terminal SUCCEEDED."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found."
         },
         {
           "scope": "outlet",
@@ -438,9 +438,9 @@
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "Checked successfully; the source returned no usable data. Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found."
         }
       ]
     },
@@ -911,15 +911,7 @@
   ],
   "blockers": [
     "#5 facebook [property:The Phoenician Resort and Spa] missing_capture: An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
-    "#9 opentable [outlet:19th Hole] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for 19th Hole. Nearby/other Phoenician listings were excluded.",
-    "#9 opentable [outlet:Kalio Kabobery] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Kalio Kabobery. Nearby/other Phoenician listings were excluded.",
-    "#9 opentable [outlet:The Marketplace] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for The Marketplace. Nearby/other Phoenician listings were excluded.",
-    "#9 opentable [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Mother of Pearl pool / pool decks. Nearby/other Phoenician listings were excluded.",
     "#11 quora [property:The Phoenician Resort and Spa] blocked: SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
-    "#12 reddit [property:The Phoenician Resort and Spa] needs_credentials: Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
-    "#16 yelp [outlet:The Phoenician Tavern] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Exact configured Yelp business URL completed successfully with zero raw items; provider run aRoWzcAoH6tX9pny4 terminal SUCCEEDED.",
-    "#16 yelp [outlet:Thirsty Camel] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Exact configured Yelp business URL completed successfully with zero raw items; provider run tNPO8meSdQzxzUshA terminal SUCCEEDED.",
-    "#16 yelp [outlet:19th Hole] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found.",
-    "#16 yelp [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found."
+    "#12 reddit [property:The Phoenician Resort and Spa] needs_credentials: Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
   ]
 }
