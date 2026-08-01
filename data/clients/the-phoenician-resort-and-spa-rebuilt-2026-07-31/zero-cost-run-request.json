@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "requestedAt": "2026-08-01T16:53:56.718Z",
-  "reason": "Rerun corrected outlet reservation identity resolvers",
+  "requestedAt": "2026-08-01T16:57:12.379Z",
+  "reason": "Run persisted reservation search outcomes through strict gate",
   "engineCommit": "806dac6fe06fad3dbcd62c0351b1d47f6e2ee069"
 }
