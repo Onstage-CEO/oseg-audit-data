@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "V1",
+  "sourceId": "aerial_satellite",
+  "status": "captured",
+  "propertyIdentity": {
+    "propertyName": "The Phoenician Resort and Spa",
+    "location": "Scottsdale, Arizona"
+  },
+  "coordinates": {
+    "latitude": 33.50666,
+    "longitude": -111.95121
+  },
+  "sourceUrl": "https://www.openstreetmap.org/way/182104348",
+  "capturedAt": "2026-07-31T23:42:00Z",
+  "findings": [
+    {
+      "text": "The retained public map identity places the resort and golf-course complex at 6000 E Camelback Rd; this is supplemental spatial context only.",
+      "evidenceClass": "inference",
+      "contributesToGuestRating": false
+    }
+  ],
+  "acquisition": {
+    "liveNetworkCall": false,
+    "credentialsUsed": false,
+    "paidCall": false,
+    "operatorSupplied": true
+  },
+  "note": "Converted the retained exact-property OpenStreetMap identity attempt into the canonical map-context sidecar; no imagery was copied and nothing contributes to rating math."
+}
