@@ -1,0 +1,98 @@
+[apify google] run RIe5zzObN3HucP0mz started (status READY)
+[apify google] run RIe5zzObN3HucP0mz → RUNNING
+[apify google] run RIe5zzObN3HucP0mz → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run RIe5zzObN3HucP0mz SUCCEEDED — 162 raw item(s), 111 review(s)
+[apify yelp] run aRoWzcAoH6tX9pny4 started (status READY)
+[apify yelp] run aRoWzcAoH6tX9pny4 → RUNNING
+[apify yelp] run aRoWzcAoH6tX9pny4 → SUCCEEDED
+[apify yelp] run aRoWzcAoH6tX9pny4 SUCCEEDED — 0 raw item(s), 0 review(s)
+[apify opentable] run 8G4eebwALlJnOvWqr started (status READY)
+[apify opentable] run 8G4eebwALlJnOvWqr → RUNNING
+[apify opentable] run 8G4eebwALlJnOvWqr → SUCCEEDED
+[apify opentable] dataset item keys: reviewId, restaurantName, restaurantId, restaurantUrl, rating, text, author, date, visitDate, submittedDate, foodRating, serviceRating, ambienceRating, valueRating, noiseLevel, helpfulCount, helpfulUp, helpfulDown, reviewType, fromPreviousConcept, reviewerName, reviewerInitials, reviewerReviewCount, reviewerMetro, reviewerMetroId, reviewerIsVip, reviewerProfileColor, reviewerPhoto
+[apify opentable] run 8G4eebwALlJnOvWqr SUCCEEDED — 423 raw item(s), 423 review(s)
+[capture-venues] The Phoenician Tavern: google=111 yelp=0 opentable=423 (yelp: 0 reviews returned (empty))
+[apify google] run yrrMS7iH2pTYggCLO started (status READY)
+[apify google] run yrrMS7iH2pTYggCLO → RUNNING
+[apify google] run yrrMS7iH2pTYggCLO → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run yrrMS7iH2pTYggCLO SUCCEEDED — 122 raw item(s), 74 review(s)
+[apify yelp] run tNPO8meSdQzxzUshA started (status READY)
+[apify yelp] run tNPO8meSdQzxzUshA → RUNNING
+[apify yelp] run tNPO8meSdQzxzUshA → SUCCEEDED
+[apify yelp] run tNPO8meSdQzxzUshA SUCCEEDED — 0 raw item(s), 0 review(s)
+[apify opentable] run isMDMGac0RtajDejq started (status READY)
+[apify opentable] run isMDMGac0RtajDejq → RUNNING
+[apify opentable] run isMDMGac0RtajDejq → SUCCEEDED
+[apify opentable] dataset item keys: reviewId, restaurantName, restaurantId, restaurantUrl, rating, text, author, date, visitDate, submittedDate, foodRating, serviceRating, ambienceRating, valueRating, noiseLevel, helpfulCount, helpfulUp, helpfulDown, reviewType, fromPreviousConcept, reviewerName, reviewerInitials, reviewerReviewCount, reviewerMetro, reviewerMetroId, reviewerProfileColor
+[apify opentable] run isMDMGac0RtajDejq SUCCEEDED — 1685 raw item(s), 1685 review(s)
+[capture-venues] Thirsty Camel: google=74 yelp=0 opentable=1685 (yelp: 0 reviews returned (empty))
+[apify google] run dSJtD5WzoSl9zaqqB started (status READY)
+[apify google] run dSJtD5WzoSl9zaqqB → RUNNING
+[apify google] run dSJtD5WzoSl9zaqqB → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run dSJtD5WzoSl9zaqqB SUCCEEDED — 1388 raw item(s), 914 review(s)
+[capture-venues] 19th Hole: google=914 yelp=0 opentable=0
+[apify google] run TQnmuKak0auJJ0QeG started (status READY)
+[apify google] run TQnmuKak0auJJ0QeG → RUNNING
+[apify google] run TQnmuKak0auJJ0QeG → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run TQnmuKak0auJJ0QeG SUCCEEDED — 675 raw item(s), 479 review(s)
+[apify yelp] run G6GIktEbOOqgYZO9M started (status READY)
+[apify yelp] run G6GIktEbOOqgYZO9M → RUNNING
+[apify yelp] run G6GIktEbOOqgYZO9M → SUCCEEDED
+[apify yelp] dataset item keys: title, rating, reviewCount, isClaimed, priceLevel, categories, fullAddress, city, state, zipcode, phoneNumber, images, website, hours, businessOwnerName, about, reviewhighlights, businessServices, yelp_biz_id, timestamp, url, timezone, photoCount, is_page_not_found, status, type, reviews
+[apify yelp] nested review date fields: createdAt=null createdAtLocal=null scrapedAt="2026-08-01T17:52:30.725Z" -> undated
+[apify yelp] run G6GIktEbOOqgYZO9M SUCCEEDED — 1 raw item(s), 499 review(s)
+[apify opentable] run dvHFfgg6YuWTNytcn started (status READY)
+[apify opentable] run dvHFfgg6YuWTNytcn → RUNNING
+[apify opentable] run dvHFfgg6YuWTNytcn → TIMED-OUT
+[capture-venues] J&G Steakhouse: google=479 yelp=499 opentable=0 tripadvisor=blocked (opentable: 0 reviews (failed); tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented)
+[apify google] run HKEITTVuvsEQNvulE started (status READY)
+[apify google] run HKEITTVuvsEQNvulE → RUNNING
+[apify google] run HKEITTVuvsEQNvulE → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run HKEITTVuvsEQNvulE SUCCEEDED — 344 raw item(s), 243 review(s)
+[apify yelp] run uD41ZsadsuM82MmT8 started (status READY)
+[apify yelp] run uD41ZsadsuM82MmT8 → RUNNING
+[apify yelp] run uD41ZsadsuM82MmT8 → SUCCEEDED
+[apify yelp] dataset item keys: title, rating, reviewCount, isClaimed, priceLevel, categories, fullAddress, city, state, zipcode, phoneNumber, images, website, hours, businessOwnerName, about, reviewhighlights, businessServices, yelp_biz_id, timestamp, url, timezone, photoCount, is_page_not_found, status, type, reviews
+[apify yelp] nested review date fields: createdAt=null createdAtLocal=null scrapedAt="2026-08-01T18:00:58.197Z" -> undated
+[apify yelp] run uD41ZsadsuM82MmT8 SUCCEEDED — 1 raw item(s), 256 review(s)
+[apify opentable] run dG1sc2bqq4dUukMPp started (status READY)
+[apify opentable] run dG1sc2bqq4dUukMPp → RUNNING
+[apify opentable] run dG1sc2bqq4dUukMPp → SUCCEEDED
+[apify opentable] dataset item keys: reviewId, restaurantName, restaurantId, restaurantUrl, rating, text, author, date, visitDate, submittedDate, foodRating, serviceRating, ambienceRating, valueRating, noiseLevel, helpfulCount, helpfulUp, helpfulDown, reviewType, fromPreviousConcept, reviewerName, reviewerInitials, reviewerReviewCount, reviewerMetro, reviewerMetroId, reviewerProfileColor
+[apify opentable] run dG1sc2bqq4dUukMPp SUCCEEDED — 1164 raw item(s), 1164 review(s)
+[capture-venues] Mowry & Cotton: google=243 yelp=256 opentable=1164 tripadvisor=blocked (tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented)
+[apify google] run 1Ahn3Jc5EyoerRhbN started (status READY)
+[apify google] run 1Ahn3Jc5EyoerRhbN → RUNNING
+[apify google] run 1Ahn3Jc5EyoerRhbN → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run 1Ahn3Jc5EyoerRhbN SUCCEEDED — 1388 raw item(s), 1159 review(s)
+[apify yelp] run mv4PWEOfgo87fkSny started (status READY)
+[apify yelp] run mv4PWEOfgo87fkSny → RUNNING
+[apify yelp] run mv4PWEOfgo87fkSny → SUCCEEDED
+[apify yelp] dataset item keys: title, rating, reviewCount, isClaimed, priceLevel, categories, fullAddress, city, state, zipcode, phoneNumber, images, website, hours, businessOwnerName, about, reviewhighlights, businessServices, yelp_biz_id, timestamp, url, timezone, photoCount, is_page_not_found, status, type, reviews
+[apify yelp] nested review date fields: createdAt=null createdAtLocal=null scrapedAt="2026-08-01T18:07:49.247Z" -> undated
+[apify yelp] run mv4PWEOfgo87fkSny SUCCEEDED — 1 raw item(s), 14 review(s)
+[capture-venues] Kalio Kabobery: google=1159 yelp=14 opentable=0 tripadvisor=blocked (tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented)
+[apify google] run urCeUuz8Ex5kkJ8Yt started (status READY)
+[apify google] run urCeUuz8Ex5kkJ8Yt → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run urCeUuz8Ex5kkJ8Yt SUCCEEDED — 4 raw item(s), 4 review(s)
+[apify yelp] run DvOzNtTu0HhBttySk started (status READY)
+[apify yelp] run DvOzNtTu0HhBttySk → RUNNING
+[apify yelp] run DvOzNtTu0HhBttySk → SUCCEEDED
+[apify yelp] dataset item keys: title, rating, reviewCount, isClaimed, priceLevel, categories, fullAddress, city, state, zipcode, phoneNumber, images, website, hours, businessOwnerName, about, reviewhighlights, businessServices, yelp_biz_id, timestamp, url, timezone, photoCount, is_page_not_found, status, type, reviews
+[apify yelp] nested review date fields: createdAt=null createdAtLocal=null scrapedAt="2026-08-01T18:08:59.218Z" -> undated
+[apify yelp] run DvOzNtTu0HhBttySk SUCCEEDED — 1 raw item(s), 14 review(s)
+[capture-venues] The Marketplace: google=4 yelp=14 opentable=0
+[apify google] run 5JuZ6Xl12TEw3cQx1 started (status READY)
+[apify google] run 5JuZ6Xl12TEw3cQx1 → RUNNING
+[apify google] run 5JuZ6Xl12TEw3cQx1 → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run 5JuZ6Xl12TEw3cQx1 SUCCEEDED — 1388 raw item(s), 914 review(s)
+[capture-venues] Mother of Pearl pool / pool decks: google=914 yelp=0 opentable=0
+[capture-venues] wrote venue captures for 8 venue(s), 7953 review(s) total (separate layer).

@@ -2,13 +2,13 @@
   "schemaVersion": "V1",
   "market": "US",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T17:02:28.836Z",
+  "generatedAt": "2026-08-01T18:11:53.728Z",
   "ready": false,
   "totals": {
     "lanes": 26,
-    "passed": 18,
+    "passed": 17,
     "notApplicable": 0,
-    "blocked": 8
+    "blocked": 9
   },
   "lanes": [
     {
@@ -51,14 +51,14 @@
       "sourceKey": "booking",
       "kind": "evidence",
       "requiredScope": "property",
-      "state": "passed",
+      "state": "blocked",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "captured",
-          "terminal": true,
-          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator."
+          "status": "captured_partial",
+          "terminal": false,
+          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
         }
       ]
     },
@@ -68,14 +68,14 @@
       "sourceKey": "expedia",
       "kind": "evidence",
       "requiredScope": "property",
-      "state": "passed",
+      "state": "blocked",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "captured",
-          "terminal": true,
-          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator."
+          "status": "captured_partial",
+          "terminal": false,
+          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
         }
       ]
     },
@@ -102,70 +102,70 @@
       "sourceKey": "google",
       "kind": "evidence",
       "requiredScope": "both",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "captured_partial",
-          "terminal": false,
-          "reason": "Captured, but source completeness is partial or unproven. Captured via aggregator."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via aggregator."
         },
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         },
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[]."
         }
       ]
     },
@@ -221,9 +221,9 @@
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance."
         },
         {
           "scope": "outlet",
@@ -314,9 +314,9 @@
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "needs_credentials",
+          "status": "captured_partial",
           "terminal": false,
-          "reason": "Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
+          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
         }
       ]
     },
@@ -365,9 +365,9 @@
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "pending",
+          "status": "captured_partial",
           "terminal": false,
-          "reason": "The source attempt is still pending and has not produced a terminal result. collected 0 review(s); provider-reported task cost $0.337; 1 in queue"
+          "reason": "Captured, but source completeness is partial or unproven. Captured via workspace-corpus."
         }
       ]
     },
@@ -410,30 +410,30 @@
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
         },
         {
           "scope": "outlet",
@@ -911,32 +911,20 @@
   ],
   "blockers": [
     "#2 blogs [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
+    "#3 booking [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
+    "#4 expedia [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
     "#5 facebook [property:The Phoenician Resort and Spa] missing_capture: An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
-    "#6 google [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via aggregator.",
-    "#6 google [outlet:The Phoenician Tavern] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#6 google [outlet:Thirsty Camel] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#6 google [outlet:19th Hole] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#6 google [outlet:J&G Steakhouse] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#6 google [outlet:Mowry & Cotton] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#6 google [outlet:Kalio Kabobery] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#6 google [outlet:The Marketplace] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#6 google [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. The hosted data-repo capture workflow defaults OSEG_GOOGLE_CAPTURE_SOURCE to apify. A bare local CLI defaults to DataForSEO unless that variable selects Apify; selecting Apify without APIFY_TOKEN falls back to DataForSEO. Outlet-level Google capture always uses Apify when a venue carries a googleUrl in audit.json venues[].",
-    "#9 opentable [outlet:Thirsty Camel] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#9 opentable [outlet:19th Hole] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#9 opentable [outlet:J&G Steakhouse] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#9 opentable [outlet:Kalio Kabobery] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#9 opentable [outlet:The Marketplace] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#9 opentable [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. OpenTable lists restaurants, not whole resorts. Outlet capture may use Apify when reliable or the supervised visible-browser recovery operator with explicit provenance.",
     "#11 quora [property:The Phoenician Resort and Spa] blocked: SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
-    "#12 reddit [property:The Phoenician Resort and Spa] needs_credentials: Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
-    "#15 tripadvisor [property:The Phoenician Resort and Spa] pending: The source attempt is still pending and has not produced a terminal result. collected 0 review(s); provider-reported task cost $0.337; 1 in queue",
+    "#12 reddit [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
+    "#15 tripadvisor [property:The Phoenician Resort and Spa] captured_partial: Captured, but source completeness is partial or unproven. Captured via workspace-corpus.",
     "#16 yelp [outlet:The Phoenician Tavern] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:Thirsty Camel] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:19th Hole] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
-    "#16 yelp [outlet:J&G Steakhouse] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
-    "#16 yelp [outlet:Mowry & Cotton] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
-    "#16 yelp [outlet:Kalio Kabobery] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
-    "#16 yelp [outlet:The Marketplace] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred."
   ]
 }

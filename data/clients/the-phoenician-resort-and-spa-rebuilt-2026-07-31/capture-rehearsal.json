@@ -1,58 +1,24 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T19:48:43.288Z",
+  "generatedAt": "2026-08-01T17:32:19.499Z",
   "liveNetwork": false,
   "clientData": false,
   "paidCalls": false,
-  "auditReady": false,
+  "auditReady": true,
   "items": [
-    {
-      "sourceId": "booking",
-      "outcome": "complete",
-      "status": "ok",
-      "reason": "Capture ran without reported failure, truncation, or partial completeness."
-    },
-    {
-      "sourceId": "expedia",
-      "outcome": "complete",
-      "status": "ok",
-      "reason": "Capture ran without reported failure, truncation, or partial completeness."
-    },
     {
       "sourceId": "google",
       "outcome": "complete",
       "status": "ok",
       "reason": "Capture ran without reported failure, truncation, or partial completeness."
-    },
-    {
-      "sourceId": "reddit",
-      "outcome": "gated",
-      "status": "needs_key",
-      "reason": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
-    },
-    {
-      "sourceId": "tripadvisor",
-      "outcome": "failed",
-      "status": "error",
-      "reason": "tripadvisor: paid launch blocked — set reviewed OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR and OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR ceilings (shared fallbacks are also accepted)."
-    },
-    {
-      "sourceId": "youtube",
-      "outcome": "incomplete",
-      "status": "ok",
-      "reason": "Capture ran but failure, truncation, or partial-completeness lineage remains."
     }
   ],
-  "blockers": [
-    "reddit",
-    "tripadvisor",
-    "youtube"
-  ],
+  "blockers": [],
   "counts": {
-    "complete": 3,
-    "incomplete": 1,
-    "gated": 1,
-    "failed": 1,
+    "complete": 1,
+    "incomplete": 0,
+    "gated": 0,
+    "failed": 0,
     "missing": 0
   }
 }

@@ -1,150 +1,44 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-07-31T20:32:20.090Z",
+  "generatedAt": "2026-08-01T17:32:19.499Z",
   "property": {
     "propertyName": "The Phoenician Resort and Spa",
     "location": "Scottsdale, Arizona"
   },
   "sources": [
     {
-      "platformId": "booking",
-      "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify booking: captured 58 new, skipped 0 dup(s).; 58 available",
-      "recordsAdded": 58,
-      "duplicatesSkipped": 0,
-      "queriesRun": 1,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 58,
-        "availableReviews": 58,
-        "requestedDepth": 4490,
-        "mode": "deep",
-        "truncated": false,
-        "reviewedMaxChargeUsd": 5,
-        "actualCostUsd": 0.11030000000000001,
-        "costStatus": "verified",
-        "providerResultCount": 58,
-        "analyzableTextCount": 58,
-        "ratingOnlyCount": 0,
-        "completeness": "complete",
-        "providerRunId": "XtCE4ybdYfUbuvfD0",
-        "providerDatasetId": "KbdefxmvIsH1kdeyA",
-        "providerTerminalState": "SUCCEEDED"
-      }
-    },
-    {
-      "platformId": "expedia",
-      "mechanism": "aggregator",
-      "status": "ok",
-      "message": "Apify expedia: captured 593 new, skipped 0 dup(s).; 1003 available; 409 rating-only (no text)",
-      "recordsAdded": 593,
-      "duplicatesSkipped": 0,
-      "queriesRun": 1,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 593,
-        "availableReviews": 1003,
-        "requestedDepth": 4490,
-        "mode": "deep",
-        "truncated": false,
-        "reviewedMaxChargeUsd": 5,
-        "actualCostUsd": 2.5164999999999997,
-        "costStatus": "verified",
-        "providerResultCount": 1003,
-        "analyzableTextCount": 594,
-        "ratingOnlyCount": 409,
-        "completeness": "complete",
-        "providerRunId": "QWkxezlYRLZaz1XQW",
-        "providerDatasetId": "FXBHQh7nfMACrGorF",
-        "providerTerminalState": "SUCCEEDED"
-      }
-    },
-    {
       "platformId": "google",
       "mechanism": "aggregator",
       "status": "ok",
-      "message": "Apify google: captured 3127 new, skipped 0 dup(s).; 1363 rating-only (no text); TRUNCATED at cap — more may exist",
-      "recordsAdded": 3127,
+      "message": "Apify google: captured 4012 new, skipped 0 dup(s).; 1446 rating-only (no text)",
+      "recordsAdded": 4012,
       "duplicatesSkipped": 0,
       "queriesRun": 1,
       "queriesFailed": 0,
       "truncatedQueries": [],
       "coverage": {
-        "capturedReviews": 3127,
-        "requestedDepth": 4490,
+        "capturedReviews": 4012,
         "mode": "deep",
-        "truncated": true,
-        "reviewedMaxChargeUsd": 10,
-        "actualCostUsd": 2.0205499999999996,
+        "truncated": false,
+        "reviewedMaxChargeUsd": 5,
+        "actualCostUsd": 2.4561499999999996,
         "costStatus": "verified",
-        "providerResultCount": 4490,
-        "analyzableTextCount": 3127,
-        "ratingOnlyCount": 1363,
+        "providerResultCount": 5458,
+        "analyzableTextCount": 4012,
+        "ratingOnlyCount": 1446,
         "completeness": "complete",
-        "providerRunId": "oraZjuhEpOJrpevuG",
-        "providerDatasetId": "WX0ePMzR80XdH9xWg",
+        "providerRunId": "ZFWMzs0K362QdD0Oa",
+        "providerDatasetId": "rLmYrjwcPasEGwPf6",
         "providerTerminalState": "SUCCEEDED"
       }
-    },
-    {
-      "platformId": "reddit",
-      "mechanism": "official_api",
-      "status": "needs_key",
-      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 0,
-      "queriesRun": 0,
-      "queriesFailed": 0,
-      "truncatedQueries": []
-    },
-    {
-      "platformId": "tripadvisor",
-      "mechanism": "aggregator",
-      "status": "pending_async",
-      "message": "collected 0 review(s); provider-reported task cost $0.337; 1 in queue",
-      "recordsAdded": 0,
-      "duplicatesSkipped": 0,
-      "queriesRun": 0,
-      "queriesFailed": 0,
-      "truncatedQueries": [],
-      "coverage": {
-        "capturedReviews": 0,
-        "requestedDepth": 4490,
-        "mode": "deep",
-        "actualCostUsd": 0.33675,
-        "costStatus": "verified"
-      }
-    },
-    {
-      "platformId": "youtube",
-      "mechanism": "official_api",
-      "status": "ok",
-      "message": "captured 3 new, skipped 75 duplicate(s), rejected 101 by identity; 3856 total in archive.",
-      "recordsAdded": 3,
-      "duplicatesSkipped": 75,
-      "queriesRun": 5,
-      "queriesFailed": 0,
-      "truncatedQueries": [
-        "The Phoenician Resort and Spa walkthrough",
-        "The Phoenician Resort and Spa resort tour",
-        "The Phoenician Resort and Spa review vlog",
-        "site:youtube.com The Phoenician Resort and Spa Scottsdale, Arizona entertainment",
-        "site:youtube.com The Phoenician Resort and Spa Scottsdale, Arizona live music shows"
-      ]
     }
   ],
   "spend": {
-    "knownActualCostUsd": 4.9841,
-    "reviewedMaximumUsd": 20,
+    "knownActualCostUsd": 2.4561499999999996,
+    "reviewedMaximumUsd": 5,
     "costStatus": "verified",
     "sourcesTracked": [
-      "booking",
-      "expedia",
-      "google",
-      "tripadvisor"
+      "google"
     ],
     "sourcesUnavailable": [],
     "additionalPaidStageBlocked": false

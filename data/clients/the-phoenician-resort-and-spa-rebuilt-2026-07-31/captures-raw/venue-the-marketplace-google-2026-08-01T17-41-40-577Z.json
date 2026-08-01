@@ -1,0 +1,48 @@
+{
+  "platform": "google",
+  "venue": "The Marketplace",
+  "venueSlug": "the-marketplace",
+  "listingUrl": "https://www.google.com/maps/search/The%20Marketplace%20at%20The%20Phoenician%2C%206000%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251",
+  "reviews": [
+    {
+      "platform": "google",
+      "rating": 5,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Surprisingly good coffee, especially the Nitro Cold Brew. Also loved the All Day Energy smoothie! Located inside of The Phoenician",
+      "author": "Greg Bybee",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SclRFVnJSRTU2YURsTWVUa3RRVUk1VEMxck1YYxAB!2m1!1s0x0:0xb72d54a111b97a31!3m1!1s2@1:CAIQACodChtycF9oOmRrTEVrRE56aDlMeTktQUI5TC1rMXc%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT21SclRFVnJSRTU2YURsTWVUa3RRVUk1VEMxck1YYxAB",
+      "timestamp": "2026-05-25T18:17:15.921Z"
+    },
+    {
+      "platform": "google",
+      "rating": 5,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Five stars. The Marketplace Coffee Shop consistently delivers a great experience. The food is wonderful—fresh, flavorful, and clearly made with care. The service is exceptional; the staff are welcoming, attentive, and make every visit feel easy and enjoyable. Julie and Mona went above and beyond for my kids and me, making our visit extra special. A fantastic spot for coffee, a meal, or a quick stop. Highly recommend.",
+      "author": "Jyoti Sidhu",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOdFExUmtPSEl0Y1dOSFdFNVhTbFZpVUdNd2VrRRAB!2m1!1s0x0:0xb72d54a111b97a31!3m1!1s2@1:CAIQACodChtycF9oOkNtQ1RkOHItcWNHWE5XSlViUGMwekE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2tOdFExUmtPSEl0Y1dOSFdFNVhTbFZpVUdNd2VrRRAB",
+      "timestamp": "2026-03-04T17:53:03.683Z"
+    },
+    {
+      "platform": "google",
+      "rating": 5,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Nice atmosphere with ample outdoor seating, good coffee, and delicious food.",
+      "author": "David Thralls",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWak9HRnFXbXB3TVRGTloyeEdjMFpXWlRKQ2VrRRAB!2m1!1s0x0:0xb72d54a111b97a31!3m1!1s2@1:CAIQACodChtycF9oOlVjOGFqWmpwMTFNZ2xGc0ZWZTJCekE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2xWak9HRnFXbXB3TVRGTloyeEdjMFpXWlRKQ2VrRRAB",
+      "timestamp": "2026-01-30T18:03:36.757Z"
+    },
+    {
+      "platform": "google",
+      "rating": 5,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Had an iced mocha and it was delicious!",
+      "author": "Susan Esh",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfdWNlMTV3RRAB!2m1!1s0x0:0xb72d54a111b97a31!3m1!1s2@1:CIHM0ogKEICAgIC_uce15wE%7C%7C?hl=en#review-ChdDSUhNMG9nS0VJQ0FnSUNfdWNlMTV3RRAB",
+      "timestamp": "2025-01-17T13:59:40.969Z"
+    }
+  ]
+}

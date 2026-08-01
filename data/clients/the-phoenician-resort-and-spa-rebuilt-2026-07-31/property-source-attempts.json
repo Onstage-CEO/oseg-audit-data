@@ -1,34 +1,33 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-08-01T17:02:28.836Z",
+  "generatedAt": "2026-08-01T18:11:53.728Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
       "source": "google",
       "mechanism": "aggregator",
       "provider": "aggregator",
-      "attemptedAt": "2026-07-31T20:32:20.090Z",
-      "result": "captured_partial",
-      "recordsReturned": 3127,
-      "recordsAccepted": 3127,
-      "completeness": "partial",
-      "truncated": true,
-      "retryable": true,
-      "message": "Apify google: captured 3127 new, skipped 0 dup(s).; 1363 rating-only (no text); TRUNCATED at cap — more may exist"
+      "attemptedAt": "2026-08-01T17:32:19.499Z",
+      "result": "captured_complete",
+      "recordsReturned": 7139,
+      "recordsAccepted": 7139,
+      "completeness": "complete",
+      "truncated": false,
+      "retryable": false,
+      "message": "Apify google: captured 4012 new, skipped 0 dup(s).; 1446 rating-only (no text)"
     },
     {
       "source": "tripadvisor",
-      "mechanism": "aggregator",
-      "provider": "aggregator",
-      "attemptedAt": "2026-07-31T20:32:20.090Z",
-      "result": "pending",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
+      "recordsReturned": 3189,
+      "recordsAccepted": 3189,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "collected 0 review(s); provider-reported task cost $0.337; 1 in queue"
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "yelp",
@@ -45,31 +44,27 @@
     },
     {
       "source": "booking",
-      "mechanism": "aggregator",
-      "provider": "aggregator",
-      "attemptedAt": "2026-07-31T20:32:20.090Z",
-      "result": "captured_complete",
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
       "recordsReturned": 58,
       "recordsAccepted": 58,
-      "availableUniverse": 58,
-      "completeness": "complete",
+      "completeness": "unknown",
       "truncated": false,
-      "retryable": false,
-      "message": "Apify booking: captured 58 new, skipped 0 dup(s).; 58 available"
+      "retryable": true,
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "expedia",
-      "mechanism": "aggregator",
-      "provider": "aggregator",
-      "attemptedAt": "2026-07-31T20:32:20.090Z",
-      "result": "captured_complete",
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
       "recordsReturned": 593,
       "recordsAccepted": 593,
-      "availableUniverse": 1003,
-      "completeness": "complete",
+      "completeness": "unknown",
       "truncated": false,
-      "retryable": false,
-      "message": "Apify expedia: captured 593 new, skipped 0 dup(s).; 1003 available; 409 rating-only (no text)"
+      "retryable": true,
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "opentable",
@@ -215,16 +210,15 @@
     },
     {
       "source": "reddit",
-      "mechanism": "official_api",
-      "provider": "official_api",
-      "attemptedAt": "2026-07-31T20:32:20.090Z",
-      "result": "needs_credentials",
+      "mechanism": "workspace-corpus",
+      "provider": "workspace-corpus",
+      "result": "captured_partial",
       "recordsReturned": 6,
       "recordsAccepted": 6,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
+      "message": "Captured records exist, but no explicit property-source attempt/completeness record was found."
     },
     {
       "source": "blogs",

@@ -1,0 +1,78 @@
+{
+  "reportVersion": "venue-capture-v1",
+  "generatedAt": "2026-08-01T17:41:40.577Z",
+  "venues": [
+    {
+      "venue": "The Phoenician Tavern",
+      "slug": "the-phoenician-tavern",
+      "yelp": 0,
+      "google": 111,
+      "tripadvisor": 0,
+      "opentable": 423,
+      "note": "yelp: 0 reviews returned (empty)"
+    },
+    {
+      "venue": "Thirsty Camel",
+      "slug": "thirsty-camel",
+      "yelp": 0,
+      "google": 74,
+      "tripadvisor": 0,
+      "opentable": 1685,
+      "note": "yelp: 0 reviews returned (empty)"
+    },
+    {
+      "venue": "19th Hole",
+      "slug": "19th-hole",
+      "yelp": 0,
+      "google": 914,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": ""
+    },
+    {
+      "venue": "J&G Steakhouse",
+      "slug": "j-and-g-steakhouse",
+      "yelp": 499,
+      "google": 479,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": "opentable: 0 reviews (failed); tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented"
+    },
+    {
+      "venue": "Mowry & Cotton",
+      "slug": "mowry-and-cotton",
+      "yelp": 256,
+      "google": 243,
+      "tripadvisor": 0,
+      "opentable": 1164,
+      "note": "tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented"
+    },
+    {
+      "venue": "Kalio Kabobery",
+      "slug": "kalio-kabobery",
+      "yelp": 14,
+      "google": 1159,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": "tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented"
+    },
+    {
+      "venue": "The Marketplace",
+      "slug": "the-marketplace",
+      "yelp": 14,
+      "google": 4,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": ""
+    },
+    {
+      "venue": "Mother of Pearl pool / pool decks",
+      "slug": "mother-of-pearl-pool-pool-decks",
+      "yelp": 0,
+      "google": 914,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": ""
+    }
+  ]
+}

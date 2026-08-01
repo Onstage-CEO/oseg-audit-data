@@ -1,0 +1,7 @@
+[apify google] run ZFWMzs0K362QdD0Oa started (status READY)
+[apify google] run ZFWMzs0K362QdD0Oa → RUNNING
+[apify google] run ZFWMzs0K362QdD0Oa → SUCCEEDED
+[apify google] dataset item keys: searchString, reviewerId, reviewerUrl, name, reviewerNumberOfReviews, isLocalGuide, reviewerPhotoUrl, text, textTranslated, publishAt, publishedAtDate, likesCount, reviewId, reviewUrl, reviewOrigin, stars, rating, responseFromOwnerDate, responseFromOwnerText, reviewImageUrls, reviewContext, reviewDetailedRating, visitedIn, originalLanguage, translatedLanguage, isAdvertisement, placeId, location, address, neighborhood, street, city, postalCode, state, countryCode, categoryName, categories, title, totalScore, permanentlyClosed, temporarilyClosed, reviewsCount, url, price, cid, fid, hotelStars, imageUrl, scrapedAt, language, kgmid
+[apify google] run ZFWMzs0K362QdD0Oa SUCCEEDED — 5458 raw item(s), 4012 review(s)
+[capture-round] ok: captured 4012 record(s) across 1 auto source(s); 1 source(s) evaluated.
+[capture-round]   google            ok                 added:4012 dup:0 — Apify google: captured 4012 new, skipped 0 dup(s).; 1446 rating-only (no text)
