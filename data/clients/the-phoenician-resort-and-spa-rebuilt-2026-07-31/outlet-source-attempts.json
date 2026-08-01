@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "V1",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "generatedAt": "2026-08-01T18:45:00.000Z",
+  "attempts": [
+    {
+      "source": "opentable",
+      "venueName": "J&G Steakhouse",
+      "result": "captured_complete",
+      "mechanism": "retained_canonical_opentable_corpus",
+      "message": "Canonical fidelity-checked J&G OpenTable corpus retained: 3,436 reviews.",
+      "recordsReturned": 3436,
+      "recordsAccepted": 3436,
+      "attemptedAt": "2026-07-31T20:00:00.000Z"
+    },
+    {
+      "source": "opentable",
+      "venueName": "19th Hole",
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_index_search",
+      "message": "Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for 19th Hole. Nearby/other Phoenician listings were excluded.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T18:45:00.000Z"
+    },
+    {
+      "source": "opentable",
+      "venueName": "Kalio Kabobery",
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_index_search",
+      "message": "Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Kalio Kabobery. Nearby/other Phoenician listings were excluded.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T18:45:00.000Z"
+    },
+    {
+      "source": "opentable",
+      "venueName": "The Marketplace",
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_index_search",
+      "message": "Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for The Marketplace. Nearby/other Phoenician listings were excluded.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T18:45:00.000Z"
+    },
+    {
+      "source": "opentable",
+      "venueName": "Mother of Pearl pool / pool decks",
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_index_search",
+      "message": "Exact outlet/property/locality OpenTable searches completed; no identity-matched OpenTable restaurant surface was found for Mother of Pearl pool / pool decks. Nearby/other Phoenician listings were excluded.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T18:45:00.000Z"
+    },
+    {
+      "source": "yelp",
+      "venueName": "The Phoenician Tavern",
+      "result": "checked_no_data",
+      "mechanism": "apify_exact_listing_terminal_run",
+      "message": "Exact configured Yelp business URL completed successfully with zero raw items; provider run aRoWzcAoH6tX9pny4 terminal SUCCEEDED.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T17:41:40.577Z"
+    },
+    {
+      "source": "yelp",
+      "venueName": "Thirsty Camel",
+      "result": "checked_no_data",
+      "mechanism": "apify_exact_listing_terminal_run",
+      "message": "Exact configured Yelp business URL completed successfully with zero raw items; provider run tNPO8meSdQzxzUshA terminal SUCCEEDED.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T17:41:40.577Z"
+    },
+    {
+      "source": "yelp",
+      "venueName": "19th Hole",
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_index_search",
+      "message": "Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T16:49:00.000Z"
+    },
+    {
+      "source": "yelp",
+      "venueName": "Mother of Pearl pool / pool decks",
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_index_search",
+      "message": "Bounded exact outlet/property/locality Yelp searches completed; no identity-matched Yelp business listing was found.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-01T16:49:00.000Z"
+    }
+  ]
+}

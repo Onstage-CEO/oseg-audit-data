@@ -104,6 +104,17 @@
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "attemptedAt": "2026-07-31T23:42:00Z"
+    },
+    "blogs": {
+      "result": "captured_complete",
+      "mechanism": "bounded_public_web_discovery",
+      "message": "Completed the bounded exact-property independent editorial/blog discovery plan; ten accepted findings are retained in web-discovery-evidence.json.",
+      "recordsReturned": 10,
+      "recordsAccepted": 10,
+      "attemptedAt": "2026-08-01T18:45:00.000Z",
+      "completeness": "complete",
+      "truncated": false,
+      "retryable": false
     }
   }
 }
