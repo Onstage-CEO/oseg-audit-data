@@ -1,11 +1,67 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-08-01T17:32:19.499Z",
+  "generatedAt": "2026-08-01T18:11:56.000Z",
   "property": {
     "propertyName": "The Phoenician Resort and Spa",
     "location": "Scottsdale, Arizona"
   },
   "sources": [
+    {
+      "platformId": "booking",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify booking: captured 58 new, skipped 0 dup(s).; 58 available",
+      "recordsAdded": 58,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 58,
+        "availableReviews": 58,
+        "requestedDepth": 4490,
+        "mode": "deep",
+        "truncated": false,
+        "reviewedMaxChargeUsd": 5,
+        "actualCostUsd": 0.11030000000000001,
+        "costStatus": "verified",
+        "providerResultCount": 58,
+        "analyzableTextCount": 58,
+        "ratingOnlyCount": 0,
+        "completeness": "complete",
+        "providerRunId": "XtCE4ybdYfUbuvfD0",
+        "providerDatasetId": "KbdefxmvIsH1kdeyA",
+        "providerTerminalState": "SUCCEEDED"
+      }
+    },
+    {
+      "platformId": "expedia",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Apify expedia: captured 593 new, skipped 0 dup(s).; 1003 available; 409 rating-only (no text)",
+      "recordsAdded": 593,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 593,
+        "availableReviews": 1003,
+        "requestedDepth": 4490,
+        "mode": "deep",
+        "truncated": false,
+        "reviewedMaxChargeUsd": 5,
+        "actualCostUsd": 2.5164999999999997,
+        "costStatus": "verified",
+        "providerResultCount": 1003,
+        "analyzableTextCount": 594,
+        "ratingOnlyCount": 409,
+        "completeness": "complete",
+        "providerRunId": "QWkxezlYRLZaz1XQW",
+        "providerDatasetId": "FXBHQh7nfMACrGorF",
+        "providerTerminalState": "SUCCEEDED"
+      }
+    },
     {
       "platformId": "google",
       "mechanism": "aggregator",
@@ -31,14 +87,70 @@
         "providerDatasetId": "rLmYrjwcPasEGwPf6",
         "providerTerminalState": "SUCCEEDED"
       }
+    },
+    {
+      "platformId": "reddit",
+      "mechanism": "official_api",
+      "status": "needs_key",
+      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+      "recordsAdded": 0,
+      "duplicatesSkipped": 0,
+      "queriesRun": 0,
+      "queriesFailed": 0,
+      "truncatedQueries": []
+    },
+    {
+      "platformId": "tripadvisor",
+      "mechanism": "aggregator",
+      "status": "ok",
+      "message": "Collected terminal DataForSEO task: 3,189 review records; queue empty.",
+      "recordsAdded": 3189,
+      "duplicatesSkipped": 0,
+      "queriesRun": 1,
+      "queriesFailed": 0,
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 3189,
+        "providerResultCount": 3189,
+        "analyzableTextCount": 3189,
+        "ratingOnlyCount": 0,
+        "requestedDepth": 4490,
+        "mode": "deep",
+        "truncated": false,
+        "completeness": "complete",
+        "actualCostUsd": 0.33675,
+        "costStatus": "verified",
+        "providerRunId": "07312011-1943-0353-0000-61558e7081af",
+        "providerTerminalState": "SUCCEEDED"
+      }
+    },
+    {
+      "platformId": "youtube",
+      "mechanism": "official_api",
+      "status": "ok",
+      "message": "captured 3 new, skipped 75 duplicate(s), rejected 101 by identity; 3856 total in archive.",
+      "recordsAdded": 3,
+      "duplicatesSkipped": 75,
+      "queriesRun": 5,
+      "queriesFailed": 0,
+      "truncatedQueries": [
+        "The Phoenician Resort and Spa walkthrough",
+        "The Phoenician Resort and Spa resort tour",
+        "The Phoenician Resort and Spa review vlog",
+        "site:youtube.com The Phoenician Resort and Spa Scottsdale, Arizona entertainment",
+        "site:youtube.com The Phoenician Resort and Spa Scottsdale, Arizona live music shows"
+      ]
     }
   ],
   "spend": {
-    "knownActualCostUsd": 2.4561499999999996,
-    "reviewedMaximumUsd": 5,
+    "knownActualCostUsd": 5.4197,
+    "reviewedMaximumUsd": 15,
     "costStatus": "verified",
     "sourcesTracked": [
-      "google"
+      "booking",
+      "expedia",
+      "google",
+      "tripadvisor"
     ],
     "sourcesUnavailable": [],
     "additionalPaidStageBlocked": false
