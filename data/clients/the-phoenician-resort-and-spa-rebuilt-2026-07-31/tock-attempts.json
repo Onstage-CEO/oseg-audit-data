@@ -1,0 +1,346 @@
+{
+  "schemaVersion": "V1",
+  "source": "tock",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "updatedAt": "2026-08-01T16:58:20.167Z",
+  "method": "operator_supplied_search_results",
+  "attempts": [
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "19th Hole",
+      "venueKey": "19th-hole",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:57.239Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Tock venue identity surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/19th-hole/search \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:exploretock.com \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "J&G Steakhouse",
+      "venueKey": "j-and-g-steakhouse",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:01.828Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "provider_error",
+      "message": "1 of 2 bounded queries failed or were blocked; Tock venue identity remains unresolved.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/j-and-g-steakhouse/search \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "provider_error",
+          "recordsReturned": 0,
+          "message": "The candidate file omitted this bounded query; it cannot count as checked."
+        },
+        {
+          "query": "site:exploretock.com \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Kalio Kabobery",
+      "venueKey": "kalio-kabobery",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:11.025Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Tock venue identity surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/kalio-kabobery/search \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:exploretock.com \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mother of Pearl pool / pool decks",
+      "venueKey": "mother-of-pearl-pool-pool-decks",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:20.167Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Tock venue identity surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/mother-of-pearl-pool-pool-decks/search \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:exploretock.com \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mowry & Cotton",
+      "venueKey": "mowry-and-cotton",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:06.400Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Tock venue identity surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/mowry-and-cotton/search \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:exploretock.com \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Marketplace",
+      "venueKey": "the-marketplace",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:15.577Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Tock venue identity surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/the-marketplace/search \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:exploretock.com \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Phoenician Tavern",
+      "venueKey": "the-phoenician-tavern",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:47.608Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Tock venue identity surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/the-phoenician-tavern/search \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:exploretock.com \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "tock",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Thirsty Camel",
+      "venueKey": "thirsty-camel",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:52.463Z",
+      "method": "operator_supplied_search_results",
+      "venueOfferingStatus": "identity_only_not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "eventActionStatus": "not_attempted",
+      "ticketActionStatus": "not_attempted",
+      "experienceActionStatus": "not_attempted",
+      "takeoutActionStatus": "not_attempted",
+      "paymentActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Tock venue identity surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:exploretock.com/thirsty-camel/search \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:exploretock.com \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    }
+  ]
+}

@@ -2,13 +2,13 @@
   "schemaVersion": "V1",
   "market": "US",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T16:55:04.299Z",
+  "generatedAt": "2026-08-01T16:58:20.936Z",
   "ready": false,
   "totals": {
     "lanes": 26,
-    "passed": 12,
+    "passed": 17,
     "notApplicable": 0,
-    "blocked": 14
+    "blocked": 9
   },
   "lanes": [
     {
@@ -467,63 +467,63 @@
       "sourceKey": "eat_app",
       "kind": "identity",
       "requiredScope": "outlet",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         },
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Eat App booking surface."
         }
       ]
     },
@@ -567,63 +567,63 @@
       "sourceKey": "reserveout",
       "kind": "identity",
       "requiredScope": "outlet",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted ReserveOut booking surface."
         }
       ]
     },
@@ -633,63 +633,63 @@
       "sourceKey": "resy",
       "kind": "identity",
       "requiredScope": "outlet",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         },
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Resy booking surface."
         }
       ]
     },
@@ -699,63 +699,63 @@
       "sourceKey": "sevenrooms",
       "kind": "identity",
       "requiredScope": "outlet",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted SevenRooms booking surface."
         }
       ]
     },
@@ -782,63 +782,63 @@
       "sourceKey": "toast_tables",
       "kind": "identity",
       "requiredScope": "outlet",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Toast restaurant identity surface."
         }
       ]
     },
@@ -853,58 +853,58 @@
         {
           "scope": "outlet",
           "name": "The Phoenician Tavern",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
         {
           "scope": "outlet",
           "name": "Thirsty Camel",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
         {
           "scope": "outlet",
           "name": "19th Hole",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
         {
           "scope": "outlet",
           "name": "J&G Steakhouse",
-          "status": "not_checked",
+          "status": "provider_error",
           "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "reason": "SUPPLEMENTAL (never rating math). The source attempt failed at the provider/adapter layer. 1 of 2 bounded queries failed or were blocked; Tock venue identity remains unresolved."
         },
         {
           "scope": "outlet",
           "name": "Mowry & Cotton",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
         {
           "scope": "outlet",
           "name": "Kalio Kabobery",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
         {
           "scope": "outlet",
           "name": "The Marketplace",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         },
         {
           "scope": "outlet",
           "name": "Mother of Pearl pool / pool decks",
-          "status": "not_checked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All 2 bounded queries completed with no accepted Tock venue identity surface."
         }
       ]
     }
@@ -938,53 +938,6 @@
     "#16 yelp [outlet:Kalio Kabobery] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:The Marketplace] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
     "#16 yelp [outlet:Mother of Pearl pool / pool decks] not_checked: Not checked — no explicit source attempt is recorded for this workspace. Property and outlet capture require an exact https://*.yelp.com/biz/... URL, APIFY_TOKEN, and reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP. Capability does not imply that a property-specific paid run occurred.",
-    "#18 eat-app [outlet:The Phoenician Tavern] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#18 eat-app [outlet:Thirsty Camel] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#18 eat-app [outlet:19th Hole] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#18 eat-app [outlet:J&G Steakhouse] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#18 eat-app [outlet:Mowry & Cotton] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#18 eat-app [outlet:Kalio Kabobery] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#18 eat-app [outlet:The Marketplace] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#18 eat-app [outlet:Mother of Pearl pool / pool decks] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Eat App /reserve/ booking surface after venue, parent-property, and locality identity checks. Eat App guest reviews remain private operator-side data: this path performs no page fetch, private-review access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:The Phoenician Tavern] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:Thirsty Camel] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:19th Hole] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:J&G Steakhouse] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:Mowry & Cotton] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:Kalio Kabobery] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:The Marketplace] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#21 reserveout [outlet:Mother of Pearl pool / pool decks] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public ReserveOut venue surface after venue, parent-property, and locality identity checks. The URL shape is a fail-closed contract, not a claim of live availability. This path performs no page fetch, reservation/customer-data access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:The Phoenician Tavern] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:Thirsty Camel] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:19th Hole] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:J&G Steakhouse] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:Mowry & Cotton] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:Kalio Kabobery] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:The Marketplace] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#22 resy [outlet:Mother of Pearl pool / pool decks] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Resy /cities/<city>/venues/<venue> booking surface after venue, parent-property, and locality identity checks. This path performs no page fetch, reservation action, private guestbook/CRM/ratings/feedback access, review or rating capture, or rating-math contribution.",
-    "#23 sevenrooms [outlet:The Phoenician Tavern] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#23 sevenrooms [outlet:Thirsty Camel] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#23 sevenrooms [outlet:19th Hole] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#23 sevenrooms [outlet:J&G Steakhouse] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#23 sevenrooms [outlet:Mowry & Cotton] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#23 sevenrooms [outlet:Kalio Kabobery] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#23 sevenrooms [outlet:The Marketplace] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#23 sevenrooms [outlet:Mother of Pearl pool / pool decks] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public SevenRooms /explore/<venue>/reservations identity surface after venue, parent-property, and locality checks. The path normalizes /reservations/create/search to the identity root and performs no page fetch, booking-inventory acquisition, reservation action, private guest/CRM/visit/spend/preference/note/marketing/feedback/review/rating access, or rating-math contribution.",
-    "#25 toast_tables [outlet:The Phoenician Tavern] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#25 toast_tables [outlet:Thirsty Camel] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#25 toast_tables [outlet:19th Hole] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#25 toast_tables [outlet:J&G Steakhouse] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#25 toast_tables [outlet:Mowry & Cotton] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#25 toast_tables [outlet:Kalio Kabobery] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#25 toast_tables [outlet:The Marketplace] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#25 toast_tables [outlet:Mother of Pearl pool / pool decks] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution.",
-    "#26 tock [outlet:The Phoenician Tavern] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution.",
-    "#26 tock [outlet:Thirsty Camel] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution.",
-    "#26 tock [outlet:19th Hole] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution.",
-    "#26 tock [outlet:J&G Steakhouse] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution.",
-    "#26 tock [outlet:Mowry & Cotton] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution.",
-    "#26 tock [outlet:Kalio Kabobery] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution.",
-    "#26 tock [outlet:The Marketplace] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution.",
-    "#26 tock [outlet:Mother of Pearl pool / pool decks] not_checked: SUPPLEMENTAL (never rating math). Not checked — no explicit source attempt is recorded for this workspace. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution."
+    "#26 tock [outlet:J&G Steakhouse] provider_error: SUPPLEMENTAL (never rating math). The source attempt failed at the provider/adapter layer. 1 of 2 bounded queries failed or were blocked; Tock venue identity remains unresolved."
   ]
 }

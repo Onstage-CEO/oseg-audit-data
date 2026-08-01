@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "V1",
+  "source": "reserveout",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "updatedAt": "2026-08-01T16:58:17.122Z",
+  "method": "operator_supplied_search_results",
+  "attempts": [
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "19th Hole",
+      "venueKey": "19th-hole",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:54.172Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"19th Hole\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "J&G Steakhouse",
+      "venueKey": "j-and-g-steakhouse",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:58.748Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"J&G Steakhouse\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Kalio Kabobery",
+      "venueKey": "kalio-kabobery",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:07.941Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"Kalio Kabobery\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mother of Pearl pool / pool decks",
+      "venueKey": "mother-of-pearl-pool-pool-decks",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:17.122Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"Mother of Pearl pool / pool decks\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mowry & Cotton",
+      "venueKey": "mowry-and-cotton",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:03.368Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"Mowry & Cotton\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Marketplace",
+      "venueKey": "the-marketplace",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:12.531Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"The Marketplace\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Phoenician Tavern",
+      "venueKey": "the-phoenician-tavern",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:44.530Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"The Phoenician Tavern\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "reserveout",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Thirsty Camel",
+      "venueKey": "thirsty-camel",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:49.102Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "not_documented",
+      "reservationDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted ReserveOut booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:reserveout.com/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:reserveout.com/ \"Thirsty Camel\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    }
+  ]
+}

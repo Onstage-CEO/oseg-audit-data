@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "V1",
+  "source": "toast_tables",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "updatedAt": "2026-08-01T16:58:19.416Z",
+  "method": "operator_supplied_search_results",
+  "attempts": [
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "19th Hole",
+      "venueKey": "19th-hole",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:56.472Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "J&G Steakhouse",
+      "venueKey": "j-and-g-steakhouse",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:01.056Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Kalio Kabobery",
+      "venueKey": "kalio-kabobery",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:10.253Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mother of Pearl pool / pool decks",
+      "venueKey": "mother-of-pearl-pool-pool-decks",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:19.416Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mowry & Cotton",
+      "venueKey": "mowry-and-cotton",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:05.656Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Marketplace",
+      "venueKey": "the-marketplace",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:14.826Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Phoenician Tavern",
+      "venueKey": "the-phoenician-tavern",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:46.838Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "toast_tables",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Thirsty Camel",
+      "venueKey": "thirsty-camel",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:51.590Z",
+      "method": "operator_supplied_search_results",
+      "toastTablesEnablementStatus": "not_verified",
+      "bookingInventoryAccess": "identity_only_not_acquired",
+      "reservationActionStatus": "not_attempted",
+      "waitlistActionStatus": "not_attempted",
+      "privateGuestDataAccess": "not_attempted",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Toast restaurant identity surface.",
+      "publicRestaurantSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:toasttab.com/local/order/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:toasttab.com/local/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    }
+  ]
+}

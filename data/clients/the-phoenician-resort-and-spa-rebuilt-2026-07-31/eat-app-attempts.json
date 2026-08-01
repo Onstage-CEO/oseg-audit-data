@@ -1,0 +1,274 @@
+{
+  "schemaVersion": "V1",
+  "source": "eat_app",
+  "property": "The Phoenician Resort and Spa",
+  "location": "Scottsdale, Arizona",
+  "updatedAt": "2026-08-01T16:58:16.357Z",
+  "method": "operator_supplied_search_results",
+  "attempts": [
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "19th Hole",
+      "venueKey": "19th-hole",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:53.299Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"19th Hole\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "J&G Steakhouse",
+      "venueKey": "j-and-g-steakhouse",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:57.979Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"J&G Steakhouse\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Kalio Kabobery",
+      "venueKey": "kalio-kabobery",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:07.160Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"Kalio Kabobery\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mother of Pearl pool / pool decks",
+      "venueKey": "mother-of-pearl-pool-pool-decks",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:16.357Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"Mother of Pearl pool / pool decks\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Mowry & Cotton",
+      "venueKey": "mowry-and-cotton",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:02.580Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"Mowry & Cotton\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Marketplace",
+      "venueKey": "the-marketplace",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:58:11.773Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"The Marketplace\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "The Phoenician Tavern",
+      "venueKey": "the-phoenician-tavern",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:43.786Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"The Phoenician Tavern\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    },
+    {
+      "schemaVersion": "V1",
+      "source": "eat_app",
+      "property": "The Phoenician Resort and Spa",
+      "venue": "Thirsty Camel",
+      "venueKey": "thirsty-camel",
+      "location": "Scottsdale, Arizona",
+      "attemptedAt": "2026-08-01T16:57:48.364Z",
+      "method": "operator_supplied_search_results",
+      "guestReviewAccess": "private_operator_only",
+      "guestReviewCaptureStatus": "not_attempted",
+      "contributesToRatings": false,
+      "result": "checked_no_data",
+      "message": "All 2 bounded queries completed with no accepted Eat App booking surface.",
+      "publicVenueSurfaceStatus": "not_resolved",
+      "queries": [
+        {
+          "query": "site:eatapp.co/reserve/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        },
+        {
+          "query": "site:eatapp.co/reserve/ \"Thirsty Camel\" \"Scottsdale, Arizona\"",
+          "status": "searched",
+          "recordsReturned": 0,
+          "message": "Discovery query returned 0 candidate(s)."
+        }
+      ],
+      "candidates": [],
+      "recordsReturned": 0,
+      "recordsResolved": 0
+    }
+  ]
+}
