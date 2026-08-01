@@ -1,0 +1,103 @@
+name: phoenician-frozen-analytical-preview
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/analytical-preview-request.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phoenician-frozen-analytical-preview
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 2dfadcabcf12656ce1ee38fc6b0b762cbe112077
+  SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - working-directory: engine
+        run: npm ci
+      - name: Hash frozen evidence inputs
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+        run: |
+          set -euo pipefail
+          find "$WS" -type f \( -path '*/captures-raw/*' -o -name 'captures.json' -o -name '*-evidence.json' -o -name '*-attempt.json' -o -name 'extra-sources-attempts.json' -o -name 'programming-inventory.json' -o -name 'property-profile.json' \) -print0 |
+            sort -z | xargs -0 sha256sum > /tmp/frozen-before.sha256
+      - name: Run full analysis and internal report preview
+        working-directory: engine
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "${ANTHROPIC_API_KEY:-}"
+          NOW=$(git -C "${{ github.workspace }}/data-repo" log -1 --format=%cI -- "data/clients/$SLUG/captures-raw")
+          npm run dev --silent -- generate-brief "$WS" --now "$NOW"
+          npm run dev --silent -- generate-client-report "$WS" --now "$NOW" --internal-preview
+      - name: Prove corpus remained frozen
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+        run: |
+          set -euo pipefail
+          find "$WS" -type f \( -path '*/captures-raw/*' -o -name 'captures.json' -o -name '*-evidence.json' -o -name '*-attempt.json' -o -name 'extra-sources-attempts.json' -o -name 'programming-inventory.json' -o -name 'property-profile.json' \) -print0 |
+            sort -z | xargs -0 sha256sum > /tmp/frozen-after.sha256
+          diff -u /tmp/frozen-before.sha256 /tmp/frozen-after.sha256
+      - name: Record automated break-test observations
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const ws=process.env.WS;
+          const brief=fs.readFileSync(ws+'/audit-brief.md','utf8');
+          const html=fs.readFileSync(ws+'/client-report.html','utf8');
+          const text=(brief+'\n'+html).toLowerCase();
+          const checks=[
+            ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
+            ['tavern_dueling_pianos',text.includes('dueling piano')],
+            ['afternoon_tea_pianist',text.includes('afternoon tea')&&text.includes('pian')],
+            ['thirsty_camel_live_music',text.includes('thirsty camel')&&text.includes('live music')],
+            ['jg_not_promoted_active',!/(j&g|j&amp;g)[^.]{0,160}(active|nightly|weekly|regular) live (music|entertainment)/i.test(html)],
+            ['mowry_dj_not_promoted_current',!/mowry[^.]{0,160}(current|active|weekly|regular)[^.]{0,80}dj/i.test(html)],
+            ['no_client_ready_claim',!text.includes('approved for client delivery')]
+          ];
+          fs.writeFileSync(ws+'/analytical-break-test.json',JSON.stringify({
+            schemaVersion:'V1',generatedAt:new Date().toISOString(),frozenCorpus:true,
+            checks:checks.map(([id,pass])=>({id,pass})),passed:checks.filter(([,pass])=>pass).length,total:checks.length
+          },null,2)+'\n');
+          NODE
+      - name: Commit internal analytical artifacts
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          git add "data/clients/$SLUG"
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "analyze frozen Phoenician corpus and build internal preview"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          exit 1
