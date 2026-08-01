@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "requestedAt": "2026-08-01T16:47:00Z",
-  "reason": "Run repaired strict 26-lane Phoenician Phase A gate after canonical identity and source-artifact restoration",
+  "requestedAt": "2026-08-01T16:51:03.653Z",
+  "reason": "Run outlet reservation identity resolvers and strict 26-lane gate",
   "engineCommit": "806dac6fe06fad3dbcd62c0351b1d47f6e2ee069"
 }
