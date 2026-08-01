@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "V1",
+  "searchedAt": "2026-08-01T16:49:00.000Z",
+  "method": "bounded_public_index_search",
+  "scope": "Eight Phoenician outlets; both engine-defined exact-identity queries per outlet.",
+  "queries": [
+    {
+      "query": "site:toasttab.com/local/order/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/order/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/order/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/order/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/order/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/order/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/order/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/order/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:toasttab.com/local/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}
