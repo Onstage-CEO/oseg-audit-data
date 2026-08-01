@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "V1",
+  "searchedAt": "2026-08-01T16:49:00.000Z",
+  "method": "bounded_public_index_search",
+  "scope": "Eight Phoenician outlets; both engine-defined exact-identity queries per outlet.",
+  "queries": [
+    {
+      "query": "site:exploretock.com/the-phoenician-tavern/search \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com/thirsty-camel/search \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com/19th-hole/search \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com/jandg-steakhouse/search \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com/mowry-and-cotton/search \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com/kalio-kabobery/search \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com/the-marketplace/search \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com/mother-of-pearl-pool-pool-decks/search \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:exploretock.com \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\" reservations",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}
