@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "V1",
+  "searchedAt": "2026-08-01T16:49:00.000Z",
+  "method": "bounded_public_index_search",
+  "scope": "Eight Phoenician outlets; both engine-defined exact-identity queries per outlet.",
+  "queries": [
+    {
+      "query": "site:reserveout.com/ \"The Phoenician Tavern\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"The Phoenician Tavern\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Thirsty Camel\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Thirsty Camel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"19th Hole\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"19th Hole\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"J&G Steakhouse\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"J&G Steakhouse\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Mowry & Cotton\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Mowry & Cotton\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Kalio Kabobery\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Kalio Kabobery\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"The Marketplace\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"The Marketplace\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Mother of Pearl pool / pool decks\" \"The Phoenician Resort and Spa\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:reserveout.com/ \"Mother of Pearl pool / pool decks\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}
