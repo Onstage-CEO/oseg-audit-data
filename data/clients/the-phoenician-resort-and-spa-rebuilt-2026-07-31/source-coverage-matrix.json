@@ -3,7 +3,7 @@
   "capabilitySchemaVersion": "V2",
   "propertyAttemptSchemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T18:51:13.419Z",
+  "generatedAt": "2026-08-01T18:58:16.543Z",
   "scopes": [
     {
       "scope": "property",
@@ -311,21 +311,22 @@
           "source": "facebook",
           "label": "Facebook mentions",
           "identifier": "",
-          "checked": false,
+          "checked": true,
           "supportedByEngine": true,
-          "captured": false,
-          "countFound": "unknown",
-          "countCaptured": 0,
+          "captured": true,
+          "countFound": 1,
+          "countCaptured": 1,
           "entertainmentSignal": "unknown",
           "usedInReport": true,
-          "status": "missing_capture",
-          "reason": "An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
+          "status": "captured",
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via apify facebook page actor (provider-capped).",
+          "captureMethod": "apify facebook page actor (provider-capped)",
           "confidence": "high",
           "supplemental": false,
           "attemptResult": "captured_complete",
-          "attemptMechanism": "bounded_public_web_discovery",
-          "attemptMessage": "Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
-          "attemptedAt": "2026-08-01T16:45:00Z",
+          "attemptMechanism": "apify facebook page actor (provider-capped)",
+          "attemptMessage": "Captured 1 public Facebook post(s) from the exact configured page.",
+          "attemptedAt": "2026-08-01T18:58:05.019Z",
           "completeness": "complete",
           "truncated": false,
           "retryable": false
@@ -930,7 +931,7 @@
           "retryable": false
         }
       ],
-      "capturedSources": 11,
+      "capturedSources": 12,
       "supportedSources": 23
     },
     {
@@ -6342,7 +6343,6 @@
   "summary": {
     "outletGoogleImplemented": true,
     "blockers": [
-      "The Phoenician Resort and Spa: Facebook mentions is missing capture; An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
       "The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
       "The Phoenician Resort and Spa: Quora / Q&A platforms is blocked; SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made."
     ]

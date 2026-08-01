@@ -1,6 +1,6 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-07-31T20:00:04.487Z",
+  "generatedAt": "2026-08-01T18:58:05.019Z",
   "findings": [
     {
       "sourceId": "tiktok",
@@ -301,8 +301,18 @@
       "title": "briferreri",
       "snippet": "Location: Scottsdale, AZ\nStay: The Phoenician Resort \nEat: Mowry & Cotton, J&G Steakhouse \nDrinks: Thirsty Camel\nDo: Lay out by the pool, day at the spa\n#scottsdale #arizona #motherdaughtertrip #thephoenician #thephoenicianresort",
       "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "The Phoenician Resort and Spa",
+      "url": "https://www.facebook.com/PhoenicianScottsdale/",
+      "domain": "facebook.com",
+      "title": "",
+      "snippet": "",
+      "matchedTerms": []
     }
   ],
-  "queriesRun": 30,
+  "queriesRun": 31,
   "packsRun": 1
 }

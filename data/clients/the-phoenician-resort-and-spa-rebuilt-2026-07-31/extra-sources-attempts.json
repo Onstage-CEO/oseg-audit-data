@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-07-31T23:48:00Z",
+  "generatedAt": "2026-08-01T18:58:05.019Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": {
     "yelp": {
@@ -13,14 +13,14 @@
     },
     "facebook": {
       "result": "captured_complete",
-      "mechanism": "bounded_public_web_discovery",
-      "message": "Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
-      "recordsReturned": 8,
-      "recordsAccepted": 8,
-      "attemptedAt": "2026-08-01T16:45:00Z",
-      "completeness": "complete",
-      "truncated": false,
-      "retryable": false
+      "mechanism": "apify facebook page actor (provider-capped)",
+      "message": "Captured 1 public Facebook post(s) from the exact configured page.",
+      "recordsReturned": 1,
+      "recordsAccepted": 1,
+      "attemptedAt": "2026-08-01T18:58:05.019Z",
+      "approvedCostUsd": 5,
+      "maxTotalChargeUsd": 5,
+      "approvalReference": "User approved Phoenician total cap 30 USD; Facebook allocation capped at 5 USD"
     },
     "instagram": {
       "result": "checked_no_data",

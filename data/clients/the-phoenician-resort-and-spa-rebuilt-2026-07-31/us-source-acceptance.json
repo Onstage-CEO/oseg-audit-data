@@ -2,13 +2,13 @@
   "schemaVersion": "V1",
   "market": "US",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T18:51:13.419Z",
+  "generatedAt": "2026-08-01T18:58:16.543Z",
   "ready": false,
   "totals": {
     "lanes": 26,
-    "passed": 23,
+    "passed": 24,
     "notApplicable": 0,
-    "blocked": 3
+    "blocked": 2
   },
   "lanes": [
     {
@@ -85,14 +85,14 @@
       "sourceKey": "facebook",
       "kind": "evidence",
       "requiredScope": "property",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "missing_capture",
-          "terminal": false,
-          "reason": "An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim."
+          "status": "captured",
+          "terminal": true,
+          "reason": "Captured with completeness proven for the recorded attempt. Captured via apify facebook page actor (provider-capped)."
         }
       ]
     },
@@ -910,7 +910,6 @@
     }
   ],
   "blockers": [
-    "#5 facebook [property:The Phoenician Resort and Spa] missing_capture: An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.",
     "#11 quora [property:The Phoenician Resort and Spa] blocked: SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
     "#12 reddit [property:The Phoenician Resort and Spa] needs_credentials: Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
   ]

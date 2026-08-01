@@ -2,14 +2,13 @@
 _Generated 2026-08-01 · matrix V2 · capability V2 · attempts V1._
 
 ## ⛔ Coverage blockers (report may not imply completeness while these stand)
-- The Phoenician Resort and Spa: Facebook mentions is missing capture; An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim.
 - The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.
 - The Phoenician Resort and Spa: Quora / Q&A platforms is blocked; SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.
 
 Outlet-level Google capture implemented: **yes**
 
 ### PROPERTY — The Phoenician Resort and Spa
-_11/23 engine-supported sources captured_
+_12/23 engine-supported sources captured_
 
 | Source | Status | Attempt | Complete | Checked | Engine | Captured | Found | Got | In report | Conf | Reason |
 |---|---|---|---|:-:|:-:|:-:|--:|--:|:-:|:-:|---|
@@ -26,7 +25,7 @@ _11/23 engine-supported sources captured_
 | Toast Tables restaurant discovery | — n/a | not_applicable | not_applicable | no | no | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). Not applicable at this level. Resolves only an exact public Toast /local[/order]/<restaurant> identity surface after venue, parent-property, and full locality checks. Toast Tables enablement remains explicitly unverified. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/order/payment action, private Guestbook/POS/guest/visit/spend/preference/note/marketing/feedback/review/rating/health/geolocation access, or rating-math contribution. |
 | Tock venue discovery | — n/a | not_applicable | not_applicable | no | no | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). Not applicable at this level. Resolves only an exact public Tock /<venue-slug>/search identity surface after venue, parent-property, and full locality checks. The path performs no page fetch, booking-inventory acquisition, reservation/waitlist/event/ticket/experience/takeout/payment action, private guest/profile/preference/note/tag/membership/contact/CRM/analytics/feedback/review/rating access, paid call, or rating-math contribution. |
 | webook property-linked event and experience listings | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | no | high | SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. Two exact-property webook domain searches returned no property-linked event or experience listing for The Phoenician in Scottsdale. |
-| Facebook mentions | ⚠️ missing capture | captured_complete | complete | no | yes | no | ? | 0 | yes | high | An attempt or known listing indicates records should exist, but the workspace has no captured corpus. Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim. |
+| Facebook mentions | ✅ captured complete | captured_complete | complete | yes | yes | yes | 1 | 1 | yes | high | Captured with completeness proven for the recorded attempt. Captured via apify facebook page actor (provider-capped). |
 | Instagram mentions | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | yes | high | Checked successfully; the source returned no usable data. Ran the instagram capture against a property keyword search; no public posts were returned. |
 | TikTok mentions | ✅ captured complete | captured_complete | complete | yes | yes | yes | 30 | 30 | yes | high | Captured with completeness proven for the recorded attempt. Captured via apify social (keyword). |
 | YouTube videos + comments | ✅ captured complete | captured_complete | complete | yes | yes | yes | 78 | 78 | yes | high | Captured with completeness proven for the recorded attempt. Captured via retained_official_api_corpus_reconciliation. |

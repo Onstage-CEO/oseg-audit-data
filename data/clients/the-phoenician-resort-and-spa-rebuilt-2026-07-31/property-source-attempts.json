@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-08-01T18:51:13.419Z",
+  "generatedAt": "2026-08-01T18:58:16.543Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -163,16 +163,16 @@
     },
     {
       "source": "facebook",
-      "mechanism": "bounded_public_web_discovery",
-      "provider": "bounded_public_web_discovery",
-      "attemptedAt": "2026-08-01T16:45:00Z",
+      "mechanism": "apify facebook page actor (provider-capped)",
+      "provider": "apify facebook page actor (provider-capped)",
+      "attemptedAt": "2026-08-01T18:58:05.019Z",
       "result": "captured_complete",
-      "recordsReturned": 8,
-      "recordsAccepted": 8,
+      "recordsReturned": 1,
+      "recordsAccepted": 1,
       "completeness": "complete",
       "truncated": false,
       "retryable": false,
-      "message": "Completed the bounded exact-property Facebook discovery plan; retained public results include property/outlet live-music and dueling-piano evidence. This is public search evidence, not a Facebook-native corpus or absence claim."
+      "message": "Captured 1 public Facebook post(s) from the exact configured page."
     },
     {
       "source": "instagram",
