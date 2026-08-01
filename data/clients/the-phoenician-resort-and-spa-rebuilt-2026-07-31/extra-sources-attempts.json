@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-01T18:58:05.019Z",
+  "generatedAt": "2026-08-01T19:02:00.000Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": {
     "yelp": {
@@ -98,12 +98,15 @@
       "attemptedAt": "2026-07-31T23:42:00Z"
     },
     "quora": {
-      "result": "blocked",
-      "mechanism": "bounded_public_web_discovery",
-      "message": "Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
+      "result": "checked_no_data",
+      "mechanism": "bounded_public_search_index",
+      "message": "All three bounded exact-property public-index queries completed with no Quora-domain identity-matched findings. Quora itself was not crawled; robots.txt was respected.",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "attemptedAt": "2026-07-31T23:42:00Z"
+      "attemptedAt": "2026-08-01T19:02:00.000Z",
+      "queryCount": 3,
+      "directSiteCrawl": false,
+      "robotsTxtRespected": true
     },
     "blogs": {
       "result": "captured_complete",

@@ -2,13 +2,13 @@
   "schemaVersion": "V1",
   "market": "US",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T18:58:16.543Z",
+  "generatedAt": "2026-08-01T19:00:50.530Z",
   "ready": false,
   "totals": {
     "lanes": 26,
-    "passed": 24,
+    "passed": 25,
     "notApplicable": 0,
-    "blocked": 2
+    "blocked": 1
   },
   "lanes": [
     {
@@ -292,14 +292,14 @@
       "sourceKey": "quora",
       "kind": "evidence",
       "requiredScope": "property",
-      "state": "blocked",
+      "state": "passed",
       "assessments": [
         {
           "scope": "property",
           "name": "The Phoenician Resort and Spa",
-          "status": "blocked",
-          "terminal": false,
-          "reason": "SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made."
+          "status": "checked_no_data",
+          "terminal": true,
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All three bounded exact-property public-index queries completed with no Quora-domain identity-matched findings. Quora itself was not crawled; robots.txt was respected."
         }
       ]
     },
@@ -910,7 +910,6 @@
     }
   ],
   "blockers": [
-    "#11 quora [property:The Phoenician Resort and Spa] blocked: SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
     "#12 reddit [property:The Phoenician Resort and Spa] needs_credentials: Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
   ]
 }

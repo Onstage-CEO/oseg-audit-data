@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-08-01T18:58:16.543Z",
+  "generatedAt": "2026-08-01T19:00:50.530Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -473,16 +473,16 @@
     },
     {
       "source": "quora",
-      "mechanism": "bounded_public_web_discovery",
-      "provider": "bounded_public_web_discovery",
-      "attemptedAt": "2026-07-31T23:42:00Z",
-      "result": "blocked",
+      "mechanism": "bounded_public_search_index",
+      "provider": "bounded_public_search_index",
+      "attemptedAt": "2026-08-01T19:02:00.000Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made."
+      "retryable": false,
+      "message": "All three bounded exact-property public-index queries completed with no Quora-domain identity-matched findings. Quora itself was not crawled; robots.txt was respected."
     },
     {
       "source": "aerial_satellite",

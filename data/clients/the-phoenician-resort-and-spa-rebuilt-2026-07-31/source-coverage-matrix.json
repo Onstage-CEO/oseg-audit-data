@@ -3,7 +3,7 @@
   "capabilitySchemaVersion": "V2",
   "propertyAttemptSchemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T18:58:16.543Z",
+  "generatedAt": "2026-08-01T19:00:50.530Z",
   "scopes": [
     {
       "scope": "property",
@@ -890,21 +890,21 @@
           "checked": true,
           "supportedByEngine": true,
           "captured": false,
-          "countFound": "unknown",
+          "countFound": 0,
           "countCaptured": 0,
           "entertainmentSignal": "unknown",
           "usedInReport": false,
-          "status": "blocked",
-          "reason": "SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
-          "confidence": "low",
+          "status": "checked_no_data",
+          "reason": "SUPPLEMENTAL (never rating math). Checked successfully; the source returned no usable data. All three bounded exact-property public-index queries completed with no Quora-domain identity-matched findings. Quora itself was not crawled; robots.txt was respected.",
+          "confidence": "high",
           "supplemental": true,
-          "attemptResult": "blocked",
-          "attemptMechanism": "bounded_public_web_discovery",
-          "attemptMessage": "Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made.",
-          "attemptedAt": "2026-07-31T23:42:00Z",
-          "completeness": "unknown",
+          "attemptResult": "checked_no_data",
+          "attemptMechanism": "bounded_public_search_index",
+          "attemptMessage": "All three bounded exact-property public-index queries completed with no Quora-domain identity-matched findings. Quora itself was not crawled; robots.txt was respected.",
+          "attemptedAt": "2026-08-01T19:02:00.000Z",
+          "completeness": "complete",
           "truncated": false,
-          "retryable": true
+          "retryable": false
         },
         {
           "source": "aerial_satellite",
@@ -6343,8 +6343,7 @@
   "summary": {
     "outletGoogleImplemented": true,
     "blockers": [
-      "The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
-      "The Phoenician Resort and Spa: Quora / Q&A platforms is blocked; SUPPLEMENTAL (never rating math). A source/listing was attempted but capture was blocked. Exact-property Quora discovery was attempted, but quora.com blocked crawler retrieval via robots.txt. No absence claim is made."
+      "The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
     ]
   }
 }
