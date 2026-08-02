@@ -11,7 +11,7 @@
   },
   "report": {
     "file": "client-report.html",
-    "sha256": "a9ac75fb534aef69ba07175a4dfe5de92ea17795c59798b3dcb58403f29691f4"
+    "sha256": "3b3181b600a97ff8d436bfb71a409b0cf7670d693eb5fa768956b10eaa92a76b"
   },
   "coverageContract": {
     "matrixSchemaVersion": "V2",
@@ -111,9 +111,9 @@
         ]
       },
       {
-        "id": "figure-d0fe5562f902be20",
+        "id": "figure-6072a5780f1a8da4",
         "path": "client-report.html#number-4",
-        "value": 3.75,
+        "value": 3.33,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -518,9 +518,9 @@
         ]
       },
       {
-        "id": "figure-17ddcdca08145261",
+        "id": "figure-0555047e238cf277",
         "path": "client-report.html#number-41",
-        "value": 2,
+        "value": 1,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -1457,5 +1457,5 @@
       }
     ]
   },
-  "payloadSha256": "8cceb591cd2ff472e8d27b693b136f00644ad015d10ea5435cb4c01fef935414"
+  "payloadSha256": "5ef8082a859820a7b2f37926fb0b8a491474e05c20c33d9d7e53665ef5c5b3b7"
 }
