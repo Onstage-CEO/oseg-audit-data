@@ -1,8 +1,100 @@
 {
-  "schemaVersion": "V1",
-  "generatedAt": "2026-08-02T01:14:18.691Z",
+  "schemaVersion": "V2",
+  "generatedAt": "2026-08-02T17:34:48.388Z",
   "frozenCorpus": true,
+  "analysisWindow": {
+    "from": "2025-07-31",
+    "to": "2026-07-31"
+  },
+  "reconciliation": {
+    "inventorySources": 63,
+    "matrixSources": 40,
+    "matchedMatrixSources": 40,
+    "registryOnlySources": 23,
+    "registryOnlyIds": [
+      "cheaptickets",
+      "ebookers",
+      "europabooking",
+      "google_hotels",
+      "guestreservations",
+      "hotel_reservation_network",
+      "hotels_com",
+      "hotels_in_america",
+      "hotelsone",
+      "internal_inputs",
+      "jeeran",
+      "kayak",
+      "orbitz",
+      "priceline",
+      "qaym",
+      "realtime_reservation",
+      "skyscanner",
+      "staah",
+      "travelocity",
+      "trivago",
+      "urvenue",
+      "wego",
+      "wotif"
+    ]
+  },
+  "evidenceFunnel": {
+    "captured": 7890,
+    "dateEligible": 299,
+    "broadTheme": 37,
+    "entertainmentCandidates": 15,
+    "inScope": 4,
+    "excluded": 11,
+    "ambiguous": 0
+  },
   "checks": [
+    {
+      "id": "runtime_date_window",
+      "pass": true
+    },
+    {
+      "id": "inventory_exactly_63",
+      "pass": true
+    },
+    {
+      "id": "coverage_matrix_exactly_40",
+      "pass": true
+    },
+    {
+      "id": "matrix_reconciles_to_inventory",
+      "pass": true
+    },
+    {
+      "id": "report_renders_all_63_sources",
+      "pass": true
+    },
+    {
+      "id": "every_source_has_client_reason",
+      "pass": true
+    },
+    {
+      "id": "funnel_captured_7890",
+      "pass": true
+    },
+    {
+      "id": "funnel_date_eligible_299",
+      "pass": true
+    },
+    {
+      "id": "funnel_broad_theme_37",
+      "pass": true
+    },
+    {
+      "id": "funnel_candidates_15",
+      "pass": true
+    },
+    {
+      "id": "funnel_partitions_reconcile",
+      "pass": true
+    },
+    {
+      "id": "no_misleading_combined_figure",
+      "pass": true
+    },
     {
       "id": "internal_watermark",
       "pass": true
@@ -88,7 +180,7 @@
       "pass": true
     },
     {
-      "id": "entertainment_atmosphere_share_precise",
+      "id": "entertainment_atmosphere_scope_labeled",
       "pass": true
     },
     {
@@ -108,6 +200,6 @@
       "pass": true
     }
   ],
-  "passed": 26,
-  "total": 26
+  "passed": 38,
+  "total": 38
 }
