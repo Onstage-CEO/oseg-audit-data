@@ -14,7 +14,9 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: e7d0e220f152469772c38667d9e8407ca9ba542d
+  ENGINE_REF: b41de66d934af4f8f1ee8e39c92d69c333920b2e
+  WINDOW_FROM: '2025-07-31'
+  WINDOW_TO: '2026-07-31'
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
 
 jobs:
@@ -53,8 +55,8 @@ jobs:
           set -euo pipefail
           test -n "${ANTHROPIC_API_KEY:-}"
           NOW=$(git -C "${{ github.workspace }}/data-repo" log -1 --format=%cI -- "data/clients/$SLUG/captures-raw")
-          npm run dev --silent -- generate-brief "$WS" --now "$NOW"
-          npm run dev --silent -- generate-client-report "$WS" --now "$NOW" --internal-preview
+          npm run dev --silent -- generate-brief "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO"
+          npm run dev --silent -- generate-client-report "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO" --internal-preview
       - name: Prove corpus remained frozen
         env:
           WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
@@ -75,6 +77,24 @@ jobs:
           const html=fs.readFileSync(ws+'/client-report.html','utf8');
           const text=(brief+'\n'+html).toLowerCase();
           const verification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
+          const inventory=JSON.parse(fs.readFileSync(ws+'/source-inventory.json','utf8'));
+          const matrix=JSON.parse(fs.readFileSync(ws+'/source-coverage-matrix.json','utf8'));
+          const propertyMatrixRows=matrix.scopes.find(s=>s.scope==='property')?.rows||[];
+          const inventoryIds=new Set(inventory.sources.map(s=>s.id));
+          const matrixIds=[...new Set(propertyMatrixRows.map(r=>r.source))];
+          const registryOnlyIds=inventory.sources.map(s=>s.id).filter(id=>!matrixIds.includes(id));
+          const sourceRows=[...html.matchAll(/<tr data-source-id="([^"]+)">([\s\S]*?)<\/tr>/g)].map(m=>({
+            id:m[1],
+            cells:[...m[2].matchAll(/<td(?: [^>]*)?>([\s\S]*?)<\/td>/g)].map(x=>x[1].replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').replace(/\s+/g,' ').trim())
+          }));
+          const sourceRowIds=sourceRows.map(r=>r.id);
+          const reasonsComplete=sourceRows.every(r=>r.cells.length===5&&r.cells[4].length>0);
+          const funnelValue=(label)=>{
+            const escaped=label.replace(/[.*+?^${}()|[\]\\]/g,'\\          const verification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
+');
+            const match=html.match(new RegExp('<tr><td>'+escaped+'</td><td class="num">([0-9,]+)</td>','i'));
+            return match?Number(match[1].replace(/,/g,'')):null;
+          };
           const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
           const leadDates=[...leadSection.matchAll(/\\b(20\\d{2}-\\d{2}-\\d{2})\\b/g)].map(m=>m[1]);
           const excludedSection=(brief.split('## Excluded')[1]||'').split('---')[0]||'';
@@ -82,6 +102,20 @@ jobs:
           const excludedQuotes=excludedSection.split('\n> ').slice(1);
           const reportWithoutBanner=html.replace(/INTERNAL PREVIEW ONLY[^<]*/i,'');
           const checks=[
+            ['runtime_date_window',html.includes('2025-07-31 to 2026-07-31')],
+            ['inventory_exactly_63',inventory.sources.length===63],
+            ['coverage_matrix_exactly_40',matrixIds.length===40],
+            ['matrix_reconciles_to_inventory',matrixIds.every(id=>inventoryIds.has(id))&&registryOnlyIds.length===23],
+            ['report_renders_all_63_sources',sourceRows.length===63&&new Set(sourceRowIds).size===63&&inventory.sources.every(s=>sourceRowIds.includes(s.id))],
+            ['every_source_has_client_reason',reasonsComplete],
+            ['funnel_captured_7890',funnelValue('Property reviews captured across all available dates')===7890],
+            ['funnel_date_eligible_299',funnelValue('Reviews inside the selected start/end dates')===299],
+            ['funnel_broad_theme_37',funnelValue('Broad Entertainment / atmosphere theme')===37],
+            ['funnel_candidates_15',funnelValue('Reviews mentioning entertainment in some form')===15],
+            ['funnel_in_scope_4',funnelValue('Verified resort-operated entertainment')===4],
+            ['funnel_excluded_11',funnelValue('Excluded private-event or unrelated noise')===11],
+            ['funnel_ambiguous_0',funnelValue('Ambiguous and held for human review')===0],
+            ['no_misleading_combined_figure',!text.includes('14,598')&&!text.includes('14598')&&!text.includes('property + opentable outlet, combined')],
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
             ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
             ['current_window_count',brief.includes('**Corpus:** 299 captured reviews')&&html.includes('Reviews scored')&&html.includes('>299<')],
@@ -110,9 +144,14 @@ jobs:
             ['no_client_ready_claim',!text.includes('approved for client delivery')]
           ];
           fs.writeFileSync(ws+'/analytical-break-test.json',JSON.stringify({
-            schemaVersion:'V1',generatedAt:new Date().toISOString(),frozenCorpus:true,
+            schemaVersion:'V2',generatedAt:new Date().toISOString(),frozenCorpus:true,
+            analysisWindow:{from:process.env.WINDOW_FROM,to:process.env.WINDOW_TO},
+            reconciliation:{inventorySources:inventory.sources.length,matrixSources:matrixIds.length,matchedMatrixSources:matrixIds.filter(id=>inventoryIds.has(id)).length,registryOnlySources:registryOnlyIds.length,registryOnlyIds},
+            evidenceFunnel:{captured:funnelValue('Property reviews captured across all available dates'),dateEligible:funnelValue('Reviews inside the selected start/end dates'),broadTheme:funnelValue('Broad Entertainment / atmosphere theme'),entertainmentCandidates:funnelValue('Reviews mentioning entertainment in some form'),inScope:funnelValue('Verified resort-operated entertainment'),excluded:funnelValue('Excluded private-event or unrelated noise'),ambiguous:funnelValue('Ambiguous and held for human review')},
             checks:checks.map(([id,pass])=>({id,pass})),passed:checks.filter(([,pass])=>pass).length,total:checks.length
           },null,2)+'\n');
+          const failed=checks.filter(([,pass])=>!pass).map(([id])=>id);
+          if(failed.length) throw new Error('Phoenician analytical break test failed: '+failed.join(', '));
           NODE
       - name: Commit internal analytical artifacts
         working-directory: data-repo
