@@ -1,13 +1,13 @@
 {
   "schemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "requestedAt": "2026-08-02T00:40:00Z",
+  "requestedAt": "2026-08-02T00:50:00Z",
   "mode": "frozen-corpus-full-analysis-internal-preview",
   "sourceRecapture": false,
   "paidSourceProviders": false,
   "pdfExport": false,
   "clientDelivery": false,
   "reddit": "deferred-needs-credentials",
-  "rerunReason": "final grounded QA: historical-program guard and hosted OpenTable listing identity",
-  "engineRef": "56d3bb9c4a1acf3a711b61262dc28194e5f663b9"
+  "rerunReason": "final thin-sample narrative guard and live-element visibility wording",
+  "engineRef": "641a73fcebee8fb02565f5055f75eacada41ae10"
 }

@@ -14,7 +14,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 56d3bb9c4a1acf3a711b61262dc28194e5f663b9
+  ENGINE_REF: 641a73fcebee8fb02565f5055f75eacada41ae10
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
 
 jobs:
@@ -102,6 +102,8 @@ jobs:
             ['jg_not_promoted_active',!/(j&g|j&amp;g)[^.]{0,160}(active|nightly|weekly|regular) live (music|entertainment)/i.test(html)],
             ['mowry_dj_not_promoted_current',!/mowry[^.]{0,220}(run on schedule|currently running|current program|active program|paid-for entertainment)/i.test(html)],
             ['mowry_marked_historical',/mowry[^.]{0,220}(previously offered|not currently active|historical)/i.test(html)],
+            ['thin_sample_not_overstated',!/measurable (property-wide )?gap|pattern (is |that )?concentrates|wider guest base/i.test(html)],
+            ['program_not_called_invisible',!/Afternoon Tea[^.]{0,100}(is|remains) (essentially )?invisible/i.test(html)],
             ['no_client_ready_claim',!text.includes('approved for client delivery')]
           ];
           fs.writeFileSync(ws+'/analytical-break-test.json',JSON.stringify({
