@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-02T00:39:52.924Z",
+  "generatedAt": "2026-08-02T00:48:17.985Z",
   "frozenCorpus": true,
   "checks": [
     {
@@ -84,10 +84,18 @@
       "pass": true
     },
     {
+      "id": "thin_sample_not_overstated",
+      "pass": true
+    },
+    {
+      "id": "program_not_called_invisible",
+      "pass": false
+    },
+    {
       "id": "no_client_ready_claim",
       "pass": true
     }
   ],
-  "passed": 21,
-  "total": 21
+  "passed": 22,
+  "total": 23
 }
