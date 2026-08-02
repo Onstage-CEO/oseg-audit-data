@@ -17,7 +17,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 1f32474bbec4fa8ca78ecf684e8af9a34178083f
+  ENGINE_REF: a120ffbb7de3f2a9688b0e9aef81c58ab15b4eb8
   WINDOW_FROM: '2025-07-31'
   WINDOW_TO: '2026-07-31'
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
@@ -59,8 +59,7 @@ jobs:
           set -euo pipefail
           test -n "${ANTHROPIC_API_KEY:-}"
           NOW=$(git -C "${{ github.workspace }}/data-repo" log -1 --format=%cI -- "data/clients/$SLUG/captures-raw")
-          npm run dev --silent -- generate-brief "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO" 2>&1 | tee "$WS/frozen-generation.log"
-          npm run dev --silent -- generate-client-report "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO" --internal-preview 2>&1 | tee -a "$WS/frozen-generation.log"
+          npm run dev --silent -- generate-client-report "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO" --internal-preview 2>&1 | tee "$WS/frozen-generation.log"
       - name: Prove corpus remained frozen
         env:
           WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
@@ -346,9 +345,13 @@ jobs:
           set -euo pipefail
           WS="data/clients/$SLUG"
           printf 'workflow_run=%s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > "$WS/frozen-generation-failure.txt"
+          test ! -f "$WS/audit-brief.md" || cp "$WS/audit-brief.md" "$WS/failed-audit-brief.md"
+          test ! -f "$WS/client-report.html" || cp "$WS/client-report.html" "$WS/failed-client-report.html"
+          test ! -f "$WS/analytical-break-test.json" || cp "$WS/analytical-break-test.json" "$WS/failed-analytical-break-test.json"
           for file in frozen-generation.log analytical-break-test.log frozen-generation-failure.txt; do
             test ! -f "$WS/$file" || git add "$WS/$file"
           done
+          git add "$WS"/failed-* 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git config user.name "oseg-audit-bot"
           git config user.email "actions@onstage.biz"
