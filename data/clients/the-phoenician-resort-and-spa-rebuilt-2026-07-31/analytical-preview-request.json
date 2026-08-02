@@ -1,13 +1,13 @@
 {
   "schemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "requestedAt": "2026-08-02T00:50:00Z",
+  "requestedAt": "2026-08-02T00:53:00Z",
   "mode": "frozen-corpus-full-analysis-internal-preview",
   "sourceRecapture": false,
   "paidSourceProviders": false,
   "pdfExport": false,
   "clientDelivery": false,
   "reddit": "deferred-needs-credentials",
-  "rerunReason": "final thin-sample narrative guard and live-element visibility wording",
-  "engineRef": "641a73fcebee8fb02565f5055f75eacada41ae10"
+  "rerunReason": "public-schedule, seasonal-currentness, thin-sample, and live-element precision guards",
+  "engineRef": "1c028ed8ae0ff54410b984b3617fc6861895ebba"
 }
