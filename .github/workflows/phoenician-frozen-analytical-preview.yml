@@ -14,7 +14,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 9df9c1b16f503d532f2b9bbd5fbdbe30684e60f6
+  ENGINE_REF: 909ce5f947bf2a2c00d845f7a17a189e4b332c63
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
 
 jobs:
@@ -74,15 +74,31 @@ jobs:
           const brief=fs.readFileSync(ws+'/audit-brief.md','utf8');
           const html=fs.readFileSync(ws+'/client-report.html','utf8');
           const text=(brief+'\n'+html).toLowerCase();
+          const verification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
+          const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
+          const leadDates=[...leadSection.matchAll(/\\b(20\\d{2}-\\d{2}-\\d{2})\\b/g)].map(m=>m[1]);
+          const reportWithoutBanner=html.replace(/<div[^>]*>INTERNAL PREVIEW ONLY[^<]*<\\/div>/i,'');
           const checks=[
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
-            ['tavern_dueling_pianos',text.includes('dueling piano')],
+            ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
+            ['current_window_count',/\\*\\*Corpus:\\*\\* 299 captured reviews/i.test(brief)&&/Reviews scored<\\/span>\\s*<span[^>]*>299/i.test(html)],
+            ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>='2025-08-01')],
+            ['no_house_audio_lead',!/(background music|house music|piped music|blasting music everywhere)/i.test(leadSection)],
+            ['opentable_total',text.includes('6,708')||text.includes('6708')],
+            ['opentable_tavern',text.includes('the phoenician tavern')&&text.includes('423')],
+            ['opentable_jg',/(j&g|j&amp;g) steakhouse/i.test(text)&&text.includes('3,436')],
+            ['opentable_mowry',text.includes('mowry & cotton')&&text.includes('1,164')],
+            ['opentable_tea_listing',text.includes('thirsty camel')&&text.includes('1,685')],
+            ['deferred_reddit_suppressed',!/reddit\\.com|forums, reddit|reddit and youtube/i.test(reportWithoutBanner)],
+            ['rendered_consistency',Array.isArray(verification.checks)&&verification.checks.every(c=>c.pass===true)],
+            ['tavern_dueling_pianos',text.includes('dueling piano')&&text.includes('saturday evening')],
             ['afternoon_tea_pianist',text.includes('afternoon tea')&&text.includes('pian')],
             ['thirsty_camel_live_music',text.includes('thirsty camel')&&text.includes('live music')],
             ['jg_not_promoted_active',!/(j&g|j&amp;g)[^.]{0,160}(active|nightly|weekly|regular) live (music|entertainment)/i.test(html)],
             ['mowry_dj_not_promoted_current',!/mowry[^.]{0,160}(current|active|weekly|regular)[^.]{0,80}dj/i.test(html)],
             ['no_client_ready_claim',!text.includes('approved for client delivery')]
           ];
+          if(checks.some(([,pass])=>!pass)) process.exitCode=1;
           fs.writeFileSync(ws+'/analytical-break-test.json',JSON.stringify({
             schemaVersion:'V1',generatedAt:new Date().toISOString(),frozenCorpus:true,
             checks:checks.map(([id,pass])=>({id,pass})),passed:checks.filter(([,pass])=>pass).length,total:checks.length
