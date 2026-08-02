@@ -356,4 +356,8 @@ jobs:
           git config user.name "oseg-audit-bot"
           git config user.email "actions@onstage.biz"
           git commit -m "record failed Phoenician frozen-generation diagnostics"
-          git push
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          exit 1
