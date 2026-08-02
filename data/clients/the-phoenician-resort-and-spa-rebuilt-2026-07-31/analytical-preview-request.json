@@ -1,13 +1,17 @@
 {
   "schemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "requestedAt": "2026-08-02T01:13:00Z",
+  "requestedAt": "2026-08-02T17:25:00Z",
   "mode": "frozen-corpus-full-analysis-internal-preview",
   "sourceRecapture": false,
   "paidSourceProviders": false,
   "pdfExport": false,
   "clientDelivery": false,
   "reddit": "deferred-needs-credentials",
-  "rerunReason": "preserve broad entertainment-atmosphere taxonomy label and verified in-scope count distinction",
-  "engineRef": "e7d0e220f152469772c38667d9e8407ca9ba542d"
+  "rerunReason": "prove runtime dates, complete evidence funnel, 63-source reconciliation, explained source outcomes, separated evidence layers, and CI drift enforcement",
+  "engineRef": "b41de66d934af4f8f1ee8e39c92d69c333920b2e",
+  "analysisWindow": {
+    "from": "2025-07-31",
+    "to": "2026-07-31"
+  }
 }
