@@ -58,8 +58,8 @@ jobs:
           set -euo pipefail
           test -n "${ANTHROPIC_API_KEY:-}"
           NOW=$(git -C "${{ github.workspace }}/data-repo" log -1 --format=%cI -- "data/clients/$SLUG/captures-raw")
-          npm run dev --silent -- generate-brief "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO"
-          npm run dev --silent -- generate-client-report "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO" --internal-preview
+          npm run dev --silent -- generate-brief "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO" 2>&1 | tee "$WS/frozen-generation.log"
+          npm run dev --silent -- generate-client-report "$WS" --now "$NOW" --from "$WINDOW_FROM" --to "$WINDOW_TO" --internal-preview 2>&1 | tee -a "$WS/frozen-generation.log"
       - name: Prove corpus remained frozen
         env:
           WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
@@ -74,7 +74,7 @@ jobs:
           WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
         run: |
           set -euo pipefail
-          node --input-type=module <<'NODE'
+          node --input-type=module <<'NODE' 2>&1 | tee "$WS/analytical-break-test.log"
           import fs from 'node:fs';
           import path from 'node:path';
           import crypto from 'node:crypto';
@@ -338,3 +338,18 @@ jobs:
             git pull --rebase --autostash
           done
           exit 1
+      - name: Commit frozen-generation diagnostics on failure
+        if: failure()
+        working-directory: data-repo
+        run: |
+          set -euo pipefail
+          WS="data/clients/$SLUG"
+          printf 'workflow_run=%s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > "$WS/frozen-generation-failure.txt"
+          for file in frozen-generation.log analytical-break-test.log frozen-generation-failure.txt; do
+            test ! -f "$WS/$file" || git add "$WS/$file"
+          done
+          git diff --cached --quiet && exit 0
+          git config user.name "oseg-audit-bot"
+          git config user.email "actions@onstage.biz"
+          git commit -m "record failed Phoenician frozen-generation diagnostics"
+          git push
