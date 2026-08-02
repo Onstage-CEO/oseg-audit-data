@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-02T00:29:44.057Z",
+  "generatedAt": "2026-08-02T00:39:52.924Z",
   "frozenCorpus": true,
   "checks": [
     {
@@ -80,10 +80,14 @@
       "pass": true
     },
     {
+      "id": "mowry_marked_historical",
+      "pass": true
+    },
+    {
       "id": "no_client_ready_claim",
       "pass": true
     }
   ],
-  "passed": 20,
-  "total": 20
+  "passed": 21,
+  "total": 21
 }

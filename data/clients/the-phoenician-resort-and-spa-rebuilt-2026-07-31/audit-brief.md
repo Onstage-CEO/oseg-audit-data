@@ -18,13 +18,13 @@
 
 ## Entertainment signal — by OSEG scope
 _Scope decided by the LLM precision layer (semantic), with every lead backed by a validated verbatim quote._
-Of 15 entertainment-mention reviews: **3 in OSEG scope** (resort-operated venues), 12 excluded (private/event-space noise — not OSEG-addressable), 0 ambiguous (flagged for human review).
-In-scope avg rating: **3.33 / 5**.
+Of 15 entertainment-mention reviews: **4 in OSEG scope** (resort-operated venues), 11 excluded (private/event-space noise — not OSEG-addressable), 0 ambiguous (flagged for human review).
+In-scope avg rating: **3.75 / 5**.
 
 | Resort venue (in scope) | Mentions |
 |---|---|
+| Pool decks & common areas | 2 |
 | Bars & lounges | 2 |
-| Pool decks & common areas | 1 |
 
 ## OSEG leads — in-scope venue entertainment (critical first)
 _No in-scope venue entertainment mentions surfaced in this corpus._

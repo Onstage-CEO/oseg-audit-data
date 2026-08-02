@@ -2,32 +2,6 @@
   "source": "programming-inventory.json vs recovered venue reviews (#285)",
   "changes": [
     {
-      "program": "Afternoon Tea",
-      "direction": "upgrade",
-      "from": "strong/invisible",
-      "to": "strong/noticed",
-      "signal": {
-        "total": 1759,
-        "hits": 282,
-        "rate": 16,
-        "avg": 4.75,
-        "negFrac": 0.07
-      }
-    },
-    {
-      "program": "Thirsty Camel Live Music",
-      "direction": "downgrade",
-      "from": "strong/praised",
-      "to": "weak/invisible",
-      "signal": {
-        "total": 1759,
-        "hits": 8,
-        "rate": 0.5,
-        "avg": 4.38,
-        "negFrac": 0.25
-      }
-    },
-    {
       "program": "Dueling Pianos at The Phoenician Tavern",
       "direction": "refresh",
       "from": "strong/praised",
