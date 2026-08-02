@@ -15,7 +15,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: b41de66d934af4f8f1ee8e39c92d69c333920b2e
+  ENGINE_REF: 52735023c79870e490802b51acc4e4113c3e159b
   WINDOW_FROM: '2025-07-31'
   WINDOW_TO: '2026-07-31'
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
@@ -245,6 +245,7 @@ jobs:
           const leadDates=[...leadSection.matchAll(/\\b(20\\d{2}-\\d{2}-\\d{2})\\b/g)].map(m=>m[1]);
           const excludedSection=(brief.split('## Excluded')[1]||'').split('---')[0]||'';
           const leadQuotes=leadSection.split('\n> ').slice(1);
+          const renderedLeadCount=leadQuotes.length;
           const excludedQuotes=excludedSection.split('\n> ').slice(1);
           const reportWithoutBanner=html.replace(/INTERNAL PREVIEW ONLY[^<]*/i,'');
           const opportunitySection=(html.split('<h2>The opportunity</h2>')[1]||'').split('<h2>')[0]||'';
@@ -287,7 +288,8 @@ jobs:
             ['current_window_count',brief.includes('**Corpus:** 299 captured reviews')&&html.includes('Reviews scored')&&html.includes('>299<')],
             ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>='2025-08-01')],
             ['no_house_audio_lead',!/(background music|house music|piped music|blasting music everywhere)/i.test(leadSection)],
-            ['every_lead_names_live_act',leadQuotes.every(q=>/(live music|live entertainment|dueling piano|pianist|dj\\b|band\\b|singer|performer|show\\b)/i.test(q))],
+            ['rendered_leads_equal_in_scope',inScopeCount===4&&renderedLeadCount===inScopeCount],
+            ['every_lead_names_live_act',renderedLeadCount>0&&renderedLeadCount===inScopeCount&&leadQuotes.every(q=>/(live music|live entertainment|dueling piano|pianist|dj\\b|band\\b|singer|performer|show\\b)/i.test(q))],
             ['excluded_examples_name_event',excludedQuotes.every(q=>/(wedding|conference|convention|ballroom|banquet|gala|corporate event|private event|event lawn|reception)/i.test(q))],
             ['opentable_total',text.includes('6,708')||text.includes('6708')],
             ['opentable_tavern',text.includes('the phoenician tavern')&&text.includes('423')],

@@ -10,12 +10,14 @@ export function checkoutBlocks(text) {
   const lines = text.split(/\r?\n/);
   const blocks = [];
   for (let index = 0; index < lines.length; index += 1) {
-    if (!/^\s*uses:\s*actions\/checkout@[^\s#]+\s*$/.test(lines[index])) continue;
+    if (!/^\s*(?:-\s+)?uses:\s*actions\/checkout@[^\s#]+\s*$/.test(lines[index])) continue;
     const usesIndent = indentation(lines[index]);
+    const directListItem = /^\s*-\s+uses:/.test(lines[index]);
+    const stepIndent = directListItem ? usesIndent : Math.max(0, usesIndent - 2);
     const blockLines = [lines[index]];
     for (let cursor = index + 1; cursor < lines.length; cursor += 1) {
       const line = lines[cursor];
-      if (/^\s*-\s+/.test(line) && indentation(line) < usesIndent) break;
+      if (/^\s*-\s+/.test(line) && indentation(line) <= stepIndent) break;
       blockLines.push(line);
     }
     const block = blockLines.join('\n');

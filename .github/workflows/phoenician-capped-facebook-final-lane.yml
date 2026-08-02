@@ -14,7 +14,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 6fd73a6470f3051569ac1f5749c8d4d64a9bb588
+  ENGINE_REF: 52735023c79870e490802b51acc4e4113c3e159b
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
 
 jobs:

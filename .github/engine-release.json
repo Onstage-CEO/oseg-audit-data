@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V3",
   "engineRepository": "Onstage-CEO/oseg-resort-audit",
-  "approvedEngineRef": "a9b5c4fc78add1730710aee556a9b4e39e953fb4",
+  "approvedEngineRef": "52735023c79870e490802b51acc4e4113c3e159b",
   "isolatedCleanRoomEngineRefs": {
     "clean-room-capture-the-scott.yml": "79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6",
     "clean-room-recover-the-scott-expedia.yml": "6d07fec737cf9ef374e588486f1ae1127f02007e",
@@ -15,9 +15,9 @@
   "propertySourceAttemptSchemaVersion": null,
   "coverageMatrixSchemaVersion": null,
   "paidCapturedCorpusVerificationVersion": null,
-  "productionEngineWorkflowCount": 16,
+  "productionEngineWorkflowCount": 20,
   "isolatedCleanRoomWorkflowCount": 6,
-  "engineWorkflowCount": 22,
+  "engineWorkflowCount": 26,
   "declaredPinsValidated": true,
   "executedCheckoutTargetsValidated": true,
   "detectsNonstandardCheckoutPaths": true,
@@ -25,5 +25,5 @@
   "cleanRoomValidated": false,
   "commercialRepeatabilityStatus": "not_approved",
   "approvalPolicy": "Production workflows use one approved SHA. Isolated clean-room exceptions must be filename-bound and SHA-bound in this manifest; they never change the production pin.",
-  "note": "The 16 production workflows remain on the approved hosted engine. Six isolated, one-shot clean-room workflows execute reviewed candidate SHAs and are filename/SHA bound by this manifest."
+  "note": "The 20 production workflows use the approved hosted engine. Six isolated, one-shot clean-room workflows execute reviewed candidate SHAs and are filename/SHA bound by this manifest."
 }
