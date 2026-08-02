@@ -5,7 +5,7 @@
   "generatorVersion": "V1",
   "manifestVersion": "V1",
   "verifiedAt": "2026-08-01T18:11:56Z",
-  "status": "not_ready",
+  "status": "ready",
   "checks": [
     {
       "id": "contract_identity",
@@ -25,7 +25,7 @@
     {
       "id": "quantitative_lineage",
       "pass": true,
-      "detail": "119 rendered numeric token(s) recorded"
+      "detail": "120 rendered numeric token(s) recorded"
     },
     {
       "id": "quote_lineage",
@@ -54,7 +54,7 @@
     },
     {
       "id": "rendered_low_star_share",
-      "pass": false,
+      "pass": true,
       "detail": "fresh corpus computation expects low-star share 19%"
     }
   ]

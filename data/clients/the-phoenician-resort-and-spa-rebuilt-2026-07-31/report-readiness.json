@@ -13,10 +13,10 @@
     {
       "gateId": "verify_ready",
       "label": "Paid captured-corpus evidence verification",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "paid report verification = not_ready",
+      "detail": "paid report verification = ready",
       "overriddenBy": null
     },
     {

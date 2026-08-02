@@ -1,10 +1,54 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-01T23:45:29.154Z",
+  "generatedAt": "2026-08-02T00:13:20.385Z",
   "frozenCorpus": true,
   "checks": [
     {
       "id": "internal_watermark",
+      "pass": true
+    },
+    {
+      "id": "semantic_classifier",
+      "pass": true
+    },
+    {
+      "id": "current_window_count",
+      "pass": true
+    },
+    {
+      "id": "lead_dates_current",
+      "pass": true
+    },
+    {
+      "id": "no_house_audio_lead",
+      "pass": true
+    },
+    {
+      "id": "opentable_total",
+      "pass": true
+    },
+    {
+      "id": "opentable_tavern",
+      "pass": true
+    },
+    {
+      "id": "opentable_jg",
+      "pass": true
+    },
+    {
+      "id": "opentable_mowry",
+      "pass": false
+    },
+    {
+      "id": "opentable_tea_listing",
+      "pass": true
+    },
+    {
+      "id": "deferred_reddit_suppressed",
+      "pass": true
+    },
+    {
+      "id": "rendered_consistency",
       "pass": true
     },
     {
@@ -32,6 +76,6 @@
       "pass": true
     }
   ],
-  "passed": 7,
-  "total": 7
+  "passed": 17,
+  "total": 18
 }
