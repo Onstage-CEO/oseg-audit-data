@@ -77,7 +77,7 @@ jobs:
           const verification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
           const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
           const leadDates=[...leadSection.matchAll(/\\b(20\\d{2}-\\d{2}-\\d{2})\\b/g)].map(m=>m[1]);
-          const reportWithoutBanner=html.replace(/<div[^>]*>INTERNAL PREVIEW ONLY[^<]*<\\/div>/i,'');
+          const reportWithoutBanner=html.replace(/INTERNAL PREVIEW ONLY[^<]*/i,'');
           const checks=[
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
             ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
