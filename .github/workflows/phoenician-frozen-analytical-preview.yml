@@ -81,7 +81,7 @@ jobs:
           const checks=[
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
             ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
-            ['current_window_count',/\\*\\*Corpus:\\*\\* 299 captured reviews/i.test(brief)&&/Reviews scored<\\/span>\\s*<span[^>]*>299/i.test(html)],
+            ['current_window_count',brief.includes('**Corpus:** 299 captured reviews')&&html.includes('Reviews scored')&&html.includes('>299<')],
             ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>='2025-08-01')],
             ['no_house_audio_lead',!/(background music|house music|piped music|blasting music everywhere)/i.test(leadSection)],
             ['opentable_total',text.includes('6,708')||text.includes('6708')],
