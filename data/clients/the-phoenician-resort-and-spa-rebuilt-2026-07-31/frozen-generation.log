@@ -1,6 +1,3 @@
-[generate-brief] LLM precision layer classified 15/15 entertainment reviews
-[generate-brief] wrote /home/runner/work/oseg-audit-data/oseg-audit-data/data-repo/data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/audit-brief.md
-[generate-brief] 299 reviews · avg 3.94/5 · classifier llm · entertainment in-scope 3, excluded 12, ambiguous 0
 [generate-client-report] INTERNAL PREVIEW: Reddit alone is deferred for missing credentials; export remains blocked.
 [client-report] programming reconcile refresh: "Dueling Pianos at The Phoenician Tavern" strong/praised -> strong/grounded (176/957 @ 4.38★)
 [client-report] programming reconcile downgrade: "Mowry & Cotton Weekend Brunch" medium/noticed -> weak/invisible (15/2825 @ 3.6★)
