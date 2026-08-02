@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-02T00:48:17.985Z",
+  "generatedAt": "2026-08-02T00:56:45.441Z",
   "frozenCorpus": true,
   "checks": [
     {
@@ -88,14 +88,22 @@
       "pass": true
     },
     {
-      "id": "program_not_called_invisible",
-      "pass": false
+      "id": "live_element_visibility_precise",
+      "pass": true
+    },
+    {
+      "id": "public_schedule_is_saturday_only",
+      "pass": true
+    },
+    {
+      "id": "seasonal_programming_not_called_current",
+      "pass": true
     },
     {
       "id": "no_client_ready_claim",
       "pass": true
     }
   ],
-  "passed": 22,
-  "total": 23
+  "passed": 25,
+  "total": 25
 }
