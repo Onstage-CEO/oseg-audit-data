@@ -17,7 +17,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: a120ffbb7de3f2a9688b0e9aef81c58ab15b4eb8
+  ENGINE_REF: 9b1c6762d9214455b14adc108fd919889e7e47b9
   WINDOW_FROM: '2025-07-31'
   WINDOW_TO: '2026-07-31'
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
@@ -290,7 +290,7 @@ jobs:
             ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>='2025-08-01')],
             ['no_house_audio_lead',!/(background music|house music|piped music|blasting music everywhere)/i.test(leadSection)],
             ['rendered_leads_equal_in_scope',inScopeCount===4&&renderedLeadCount===inScopeCount],
-            ['every_lead_names_live_act',renderedLeadCount>0&&renderedLeadCount===inScopeCount&&leadQuotes.every(q=>/(live music|live entertainment|dueling piano|pianist|dj\\b|band\\b|singer|performer|show\\b)/i.test(q))],
+            ['every_lead_contains_rendered_entertainment_evidence',renderedLeadCount>0&&renderedLeadCount===inScopeCount&&leadQuotes.every(q=>/(music|movie night|foam party|dancer|activity|live entertainment|dueling piano|pianist|dj\\b|band\\b|singer|performer|show\\b)/i.test(q))],
             ['excluded_examples_name_event',excludedQuotes.every(q=>/(wedding|conference|convention|ballroom|banquet|gala|corporate event|private event|event lawn|reception)/i.test(q))],
             ['opentable_total',text.includes('6,708')||text.includes('6708')],
             ['opentable_tavern',text.includes('the phoenician tavern')&&text.includes('423')],
@@ -310,7 +310,7 @@ jobs:
             ['operator_claims_sealed_from_guest_narrative',operatorSection.includes('Sealed evidence layer.')&&operatorNames.every(name=>!guestDeepDive.includes(name)&&!guestVoice.includes(name))&&!/(operator-stated|booking-record schedule|currently running|currently offered|active now)/i.test(guestDeepDive+' '+guestVoice)],
             ['operator_only_and_historical_not_current',restrictedProgramRows.length>0&&restrictedProgramRows.every(row=>!currentProgramClaim.test(row.text))],
             ['entertainment_atmosphere_scope_labeled',html.includes('Broad Entertainment / atmosphere theme')],
-            ['live_element_visibility_precise',/Afternoon Tea[^.]{0,140}live element[^.]{0,140}(essentially )?invisible/i.test(html)&&!/Afternoon Tea (is|remains) (essentially )?invisible/i.test(html)],
+            ['guest_evidence_verdicts_rendered',html.includes('data-evidence-layer="guest-review"')&&/(widely noticed by guests|guests notice and praise it|scheduled, but invisible in guest reviews|only lightly visible in guest reviews)/i.test(html)],
             ['historical_schedule_not_presented_as_current',!/friday and saturday (residency|evenings|nights)/i.test(html)&&!/dueling pianos[^.]{0,180}(currently running|currently offered|confirmed active|remains active)/i.test(html)],
             ['seasonal_programming_not_called_current',!/seasonal and holiday[^.]{0,220}(confirmed and )?(currently running|active now|current program)/i.test(html)],
             ['no_client_ready_claim',!text.includes('approved for client delivery')]
