@@ -11,7 +11,7 @@
   },
   "report": {
     "file": "client-report.html",
-    "sha256": "3b3181b600a97ff8d436bfb71a409b0cf7670d693eb5fa768956b10eaa92a76b"
+    "sha256": "8130c3f3ddab8791bfd45849931f6e7a483b3adfef4088c00cbbe1861621dd55"
   },
   "coverageContract": {
     "matrixSchemaVersion": "V2",
@@ -111,9 +111,9 @@
         ]
       },
       {
-        "id": "figure-6072a5780f1a8da4",
+        "id": "figure-d0fe5562f902be20",
         "path": "client-report.html#number-4",
-        "value": 3.33,
+        "value": 3.75,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -430,74 +430,8 @@
         ]
       },
       {
-        "id": "figure-eda0953f879d8213",
+        "id": "figure-ce1279987c507437",
         "path": "client-report.html#number-33",
-        "value": 59,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-d2ea4685bd0f7c86",
-        "path": "client-report.html#number-34",
-        "value": 45,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-deaa01f8cf326631",
-        "path": "client-report.html#number-35",
-        "value": 40,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-7c94bc142d1be935",
-        "path": "client-report.html#number-36",
-        "value": 30,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-b5585be967056b44",
-        "path": "client-report.html#number-37",
-        "value": 21,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-643af716850c27fd",
-        "path": "client-report.html#number-38",
-        "value": 18,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-6a45be498a6f8a02",
-        "path": "client-report.html#number-39",
         "value": 12,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -507,8 +441,96 @@
         ]
       },
       {
-        "id": "figure-5a8ba1803cd1a113",
+        "id": "figure-2e39e2d434a6121e",
+        "path": "client-report.html#number-34",
+        "value": 12,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-0484f2f4eff5bda8",
+        "path": "client-report.html#number-35",
+        "value": 59,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-664a6cbcafbb99b0",
+        "path": "client-report.html#number-36",
+        "value": 45,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-952e2e3435bc2129",
+        "path": "client-report.html#number-37",
+        "value": 40,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-b742a7ddd634ab38",
+        "path": "client-report.html#number-38",
+        "value": 30,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-fbcda5adb0692bf7",
+        "path": "client-report.html#number-39",
+        "value": 21,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c4b36156b07dd47a",
         "path": "client-report.html#number-40",
+        "value": 18,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-309e9cedb56dbc3c",
+        "path": "client-report.html#number-41",
+        "value": 12,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-96d535a89f50deeb",
+        "path": "client-report.html#number-42",
         "value": 2,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -518,9 +540,9 @@
         ]
       },
       {
-        "id": "figure-0555047e238cf277",
-        "path": "client-report.html#number-41",
-        "value": 1,
+        "id": "figure-553be3330773f584",
+        "path": "client-report.html#number-43",
+        "value": 2,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -529,8 +551,8 @@
         ]
       },
       {
-        "id": "figure-fb44884f65c0ee29",
-        "path": "client-report.html#number-42",
+        "id": "figure-743120d26de2582e",
+        "path": "client-report.html#number-44",
         "value": 957,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -540,8 +562,8 @@
         ]
       },
       {
-        "id": "figure-235d18c0598b2f81",
-        "path": "client-report.html#number-43",
+        "id": "figure-a22d3abe84d47311",
+        "path": "client-report.html#number-45",
         "value": 4.2,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -551,30 +573,30 @@
         ]
       },
       {
-        "id": "figure-41c92b1200a5d9a5",
-        "path": "client-report.html#number-44",
-        "value": 5,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-97fe431d749d8331",
-        "path": "client-report.html#number-45",
-        "value": 5,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-fdc1eb2be3a8f190",
+        "id": "figure-10fad2e8b6d55dc6",
         "path": "client-report.html#number-46",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-4a1debffded6e7fa",
+        "path": "client-report.html#number-47",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-0b2c4e34c9ffed88",
+        "path": "client-report.html#number-48",
         "value": 2025,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -584,8 +606,8 @@
         ]
       },
       {
-        "id": "figure-9a1f62ec987b3f89",
-        "path": "client-report.html#number-47",
+        "id": "figure-f422c1e5282dd7c9",
+        "path": "client-report.html#number-49",
         "value": 1,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -595,8 +617,8 @@
         ]
       },
       {
-        "id": "figure-813d3a90a9e526e8",
-        "path": "client-report.html#number-48",
+        "id": "figure-ae4e1d3eddfe4453",
+        "path": "client-report.html#number-50",
         "value": 26,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -606,8 +628,8 @@
         ]
       },
       {
-        "id": "figure-5a49723fc5d9d250",
-        "path": "client-report.html#number-49",
+        "id": "figure-087cad672cee478c",
+        "path": "client-report.html#number-51",
         "value": 74,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -617,8 +639,8 @@
         ]
       },
       {
-        "id": "figure-0cbc48597bc150d6",
-        "path": "client-report.html#number-50",
+        "id": "figure-094204105e49823d",
+        "path": "client-report.html#number-52",
         "value": 4.4,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -628,30 +650,30 @@
         ]
       },
       {
-        "id": "figure-6cdba875353872ce",
-        "path": "client-report.html#number-51",
-        "value": 5,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-45798f9399a9ea72",
-        "path": "client-report.html#number-52",
-        "value": 5,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-84f0aaa04daa968a",
+        "id": "figure-50d9cdb8354d5a07",
         "path": "client-report.html#number-53",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-fc8b8ac84ae146c2",
+        "path": "client-report.html#number-54",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f3d9c059c5ea484f",
+        "path": "client-report.html#number-55",
         "value": 2024,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -661,8 +683,8 @@
         ]
       },
       {
-        "id": "figure-b98aa877a3431f95",
-        "path": "client-report.html#number-54",
+        "id": "figure-448e7822df2e342f",
+        "path": "client-report.html#number-56",
         "value": 6,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -672,8 +694,8 @@
         ]
       },
       {
-        "id": "figure-ed54154191e79210",
-        "path": "client-report.html#number-55",
+        "id": "figure-ba9915669d628f45",
+        "path": "client-report.html#number-57",
         "value": 2,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -683,8 +705,8 @@
         ]
       },
       {
-        "id": "figure-a7ceaab841a62e14",
-        "path": "client-report.html#number-56",
+        "id": "figure-cb8d90ed40f72d1f",
+        "path": "client-report.html#number-58",
         "value": 38,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -694,8 +716,8 @@
         ]
       },
       {
-        "id": "figure-eb0db717f83a62ec",
-        "path": "client-report.html#number-57",
+        "id": "figure-ea527cb365dac3ee",
+        "path": "client-report.html#number-59",
         "value": 4.7,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -705,8 +727,8 @@
         ]
       },
       {
-        "id": "figure-de4b8a1548cb3114",
-        "path": "client-report.html#number-58",
+        "id": "figure-02a70ed4d68d1924",
+        "path": "client-report.html#number-60",
         "value": 5,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -716,8 +738,8 @@
         ]
       },
       {
-        "id": "figure-8b7b5be59dc6ab23",
-        "path": "client-report.html#number-59",
+        "id": "figure-4e404ec71bd11076",
+        "path": "client-report.html#number-61",
         "value": 37,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -727,8 +749,8 @@
         ]
       },
       {
-        "id": "figure-11283afc77a6d7d3",
-        "path": "client-report.html#number-60",
+        "id": "figure-e9c79aa0e86d7597",
+        "path": "client-report.html#number-62",
         "value": 4.5,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -738,8 +760,8 @@
         ]
       },
       {
-        "id": "figure-2c408d279ec1026c",
-        "path": "client-report.html#number-61",
+        "id": "figure-7eb7e5e762379c1e",
+        "path": "client-report.html#number-63",
         "value": 957,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -749,8 +771,8 @@
         ]
       },
       {
-        "id": "figure-8779924bc78320db",
-        "path": "client-report.html#number-62",
+        "id": "figure-570f598f60c2cec0",
+        "path": "client-report.html#number-64",
         "value": 176,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -760,8 +782,8 @@
         ]
       },
       {
-        "id": "figure-ce84b2304a731300",
-        "path": "client-report.html#number-63",
+        "id": "figure-8a357eb4d16305ef",
+        "path": "client-report.html#number-65",
         "value": 18.4,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -771,8 +793,8 @@
         ]
       },
       {
-        "id": "figure-92b70b20258ba6fc",
-        "path": "client-report.html#number-64",
+        "id": "figure-197b5cfb524832b5",
+        "path": "client-report.html#number-66",
         "value": 4.38,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -782,8 +804,8 @@
         ]
       },
       {
-        "id": "figure-693dd1358b3043be",
-        "path": "client-report.html#number-65",
+        "id": "figure-3b40114082c355ba",
+        "path": "client-report.html#number-67",
         "value": 16,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -793,8 +815,8 @@
         ]
       },
       {
-        "id": "figure-2bbde33e7dfc30cc",
-        "path": "client-report.html#number-66",
+        "id": "figure-03554b2be1f47da9",
+        "path": "client-report.html#number-68",
         "value": 3,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -804,8 +826,8 @@
         ]
       },
       {
-        "id": "figure-3d9a549555a751e8",
-        "path": "client-report.html#number-67",
+        "id": "figure-b847bf401a206af3",
+        "path": "client-report.html#number-69",
         "value": 111,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -815,8 +837,8 @@
         ]
       },
       {
-        "id": "figure-84a060b417178791",
-        "path": "client-report.html#number-68",
+        "id": "figure-7a9f19ad672f65b8",
+        "path": "client-report.html#number-70",
         "value": 423,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -826,8 +848,8 @@
         ]
       },
       {
-        "id": "figure-d474607a81e5d154",
-        "path": "client-report.html#number-69",
+        "id": "figure-925102f1c177996e",
+        "path": "client-report.html#number-71",
         "value": 74,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -837,8 +859,8 @@
         ]
       },
       {
-        "id": "figure-31dcff15aac670a4",
-        "path": "client-report.html#number-70",
+        "id": "figure-8339de1e912d4331",
+        "path": "client-report.html#number-72",
         "value": 1685,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -848,8 +870,8 @@
         ]
       },
       {
-        "id": "figure-c878d0782c22a402",
-        "path": "client-report.html#number-71",
+        "id": "figure-705e513df81377de",
+        "path": "client-report.html#number-73",
         "value": 914,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -859,8 +881,8 @@
         ]
       },
       {
-        "id": "figure-e9c53eabfc0b0495",
-        "path": "client-report.html#number-72",
+        "id": "figure-faae715b7e834472",
+        "path": "client-report.html#number-74",
         "value": 479,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -870,8 +892,8 @@
         ]
       },
       {
-        "id": "figure-507f97ae0f2dc9d8",
-        "path": "client-report.html#number-73",
+        "id": "figure-f7a6b642c2864f55",
+        "path": "client-report.html#number-75",
         "value": 499,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -881,8 +903,8 @@
         ]
       },
       {
-        "id": "figure-5a6d9269bb8ea786",
-        "path": "client-report.html#number-74",
+        "id": "figure-a57732ddbc1e4659",
+        "path": "client-report.html#number-76",
         "value": 3436,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -892,8 +914,8 @@
         ]
       },
       {
-        "id": "figure-58bccba26ab72bf4",
-        "path": "client-report.html#number-75",
+        "id": "figure-318fdf7deb312dce",
+        "path": "client-report.html#number-77",
         "value": 243,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -903,8 +925,8 @@
         ]
       },
       {
-        "id": "figure-3fd5bf3751d6cc38",
-        "path": "client-report.html#number-76",
+        "id": "figure-d5958b5999f815b8",
+        "path": "client-report.html#number-78",
         "value": 256,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -914,8 +936,8 @@
         ]
       },
       {
-        "id": "figure-d097f5996f8b84c4",
-        "path": "client-report.html#number-77",
+        "id": "figure-81c43f2c855e117a",
+        "path": "client-report.html#number-79",
         "value": 1164,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -925,31 +947,9 @@
         ]
       },
       {
-        "id": "figure-aaa662c35d7768e3",
-        "path": "client-report.html#number-78",
-        "value": 1159,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-4b94ab023f00f6c0",
-        "path": "client-report.html#number-79",
-        "value": 14,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-053f0e629e7f8b29",
+        "id": "figure-95e0eb2d74c2886a",
         "path": "client-report.html#number-80",
-        "value": 4,
+        "value": 1159,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -969,9 +969,9 @@
         ]
       },
       {
-        "id": "figure-02fbce593d786b21",
+        "id": "figure-6cc42f1b2dab1fa2",
         "path": "client-report.html#number-82",
-        "value": 914,
+        "value": 4,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -980,30 +980,8 @@
         ]
       },
       {
-        "id": "figure-b6570f6fe9eced76",
+        "id": "figure-fffe972fc2628bd5",
         "path": "client-report.html#number-83",
-        "value": 42,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-cd10d973743dc4ad",
-        "path": "client-report.html#number-84",
-        "value": 63,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-924ededa91a1a86e",
-        "path": "client-report.html#number-85",
         "value": 14,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1013,9 +991,9 @@
         ]
       },
       {
-        "id": "figure-0693a26779357c1a",
-        "path": "client-report.html#number-86",
-        "value": 2018,
+        "id": "figure-ba916f86f6fda215",
+        "path": "client-report.html#number-84",
+        "value": 914,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -1024,19 +1002,8 @@
         ]
       },
       {
-        "id": "figure-c1de8e6955dfb6bc",
-        "path": "client-report.html#number-87",
-        "value": 5,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-9e5e47faf5278f3c",
-        "path": "client-report.html#number-88",
+        "id": "figure-42586e005fd33cf8",
+        "path": "client-report.html#number-85",
         "value": 12,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1046,8 +1013,74 @@
         ]
       },
       {
-        "id": "figure-d26a84dd42728a76",
+        "id": "figure-1b2c41c83489dd64",
+        "path": "client-report.html#number-86",
+        "value": 42,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f78fc3ab1a6f9b21",
+        "path": "client-report.html#number-87",
+        "value": 63,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-713c98856bfe350a",
+        "path": "client-report.html#number-88",
+        "value": 14,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-8b217b5b6b0eb973",
         "path": "client-report.html#number-89",
+        "value": 2018,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-ef9408cfbcc7d23f",
+        "path": "client-report.html#number-90",
+        "value": 5,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-c7b61e8bc5575bb5",
+        "path": "client-report.html#number-91",
+        "value": 12,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-d530c38dfdda0237",
+        "path": "client-report.html#number-92",
         "value": 7890,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1057,42 +1090,9 @@
         ]
       },
       {
-        "id": "figure-3b9493114b8b0da3",
-        "path": "client-report.html#number-90",
-        "value": 2002,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-cbb19250d7960674",
-        "path": "client-report.html#number-91",
-        "value": 2026,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-f30714ed410e7dc7",
-        "path": "client-report.html#number-92",
-        "value": 299,
-        "evidenceScope": "mixed",
-        "sourceRefs": [
-          "client-report.html",
-          "captures-raw/",
-          "source-coverage-matrix.json"
-        ]
-      },
-      {
-        "id": "figure-c26324dfd8ffca4e",
+        "id": "figure-d64a6de302fde8f9",
         "path": "client-report.html#number-93",
-        "value": 2025,
+        "value": 2002,
         "evidenceScope": "mixed",
         "sourceRefs": [
           "client-report.html",
@@ -1112,8 +1112,41 @@
         ]
       },
       {
-        "id": "figure-ffcb6778a098f011",
+        "id": "figure-03c1740423576f03",
         "path": "client-report.html#number-95",
+        "value": 299,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-7bf8263a588c11ad",
+        "path": "client-report.html#number-96",
+        "value": 2025,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-cc7f4c37b69cda43",
+        "path": "client-report.html#number-97",
+        "value": 2026,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-e835edc6844537b6",
+        "path": "client-report.html#number-98",
         "value": 6708,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1123,8 +1156,8 @@
         ]
       },
       {
-        "id": "figure-2a6be3ce277b249c",
-        "path": "client-report.html#number-96",
+        "id": "figure-fef58c82621e51bb",
+        "path": "client-report.html#number-99",
         "value": 3436,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1134,8 +1167,8 @@
         ]
       },
       {
-        "id": "figure-5827b2aef662a418",
-        "path": "client-report.html#number-97",
+        "id": "figure-ac9f7f3bb4e43e04",
+        "path": "client-report.html#number-100",
         "value": 1685,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1145,8 +1178,8 @@
         ]
       },
       {
-        "id": "figure-3ea4c02fbfd84387",
-        "path": "client-report.html#number-98",
+        "id": "figure-2badf16576efa95a",
+        "path": "client-report.html#number-101",
         "value": 1164,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1156,8 +1189,8 @@
         ]
       },
       {
-        "id": "figure-8739685484bf7e0a",
-        "path": "client-report.html#number-99",
+        "id": "figure-932f0942003ebe4e",
+        "path": "client-report.html#number-102",
         "value": 423,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1167,8 +1200,8 @@
         ]
       },
       {
-        "id": "figure-55c591c5a874fc3b",
-        "path": "client-report.html#number-100",
+        "id": "figure-af7c92f4d43ba742",
+        "path": "client-report.html#number-103",
         "value": 14598,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1178,8 +1211,8 @@
         ]
       },
       {
-        "id": "figure-2f82232731e5796e",
-        "path": "client-report.html#number-101",
+        "id": "figure-9f95c7aceaefdb9a",
+        "path": "client-report.html#number-104",
         "value": 7890,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1189,8 +1222,8 @@
         ]
       },
       {
-        "id": "figure-e1e8459ff16bdbd6",
-        "path": "client-report.html#number-102",
+        "id": "figure-0be890dd6381328e",
+        "path": "client-report.html#number-105",
         "value": 6708,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1200,8 +1233,19 @@
         ]
       },
       {
-        "id": "figure-f4faf9bfc979065a",
-        "path": "client-report.html#number-103",
+        "id": "figure-1186c95ab3336f9b",
+        "path": "client-report.html#number-106",
+        "value": 299,
+        "evidenceScope": "mixed",
+        "sourceRefs": [
+          "client-report.html",
+          "captures-raw/",
+          "source-coverage-matrix.json"
+        ]
+      },
+      {
+        "id": "figure-f177c7e74ae218b8",
+        "path": "client-report.html#number-107",
         "value": 58,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1211,8 +1255,8 @@
         ]
       },
       {
-        "id": "figure-54c0368467aefbcf",
-        "path": "client-report.html#number-104",
+        "id": "figure-5c56b859072d68a5",
+        "path": "client-report.html#number-108",
         "value": 58,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1222,8 +1266,8 @@
         ]
       },
       {
-        "id": "figure-7d894cf41d3870ca",
-        "path": "client-report.html#number-105",
+        "id": "figure-066ccd171e58cf2e",
+        "path": "client-report.html#number-109",
         "value": 593,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1233,8 +1277,8 @@
         ]
       },
       {
-        "id": "figure-3d8899edca15d739",
-        "path": "client-report.html#number-106",
+        "id": "figure-bbc41d71aacb0154",
+        "path": "client-report.html#number-110",
         "value": 1003,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1244,8 +1288,8 @@
         ]
       },
       {
-        "id": "figure-67f1ebf0786c7006",
-        "path": "client-report.html#number-107",
+        "id": "figure-1f5cf9a6bb9838f1",
+        "path": "client-report.html#number-111",
         "value": 4012,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1255,8 +1299,8 @@
         ]
       },
       {
-        "id": "figure-1806644e0584921b",
-        "path": "client-report.html#number-108",
+        "id": "figure-bc7c06fae16ff4b6",
+        "path": "client-report.html#number-112",
         "value": 3189,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1266,8 +1310,8 @@
         ]
       },
       {
-        "id": "figure-9e531852fcbac0c5",
-        "path": "client-report.html#number-109",
+        "id": "figure-1b4c53769fd867cc",
+        "path": "client-report.html#number-113",
         "value": 3189,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1277,8 +1321,8 @@
         ]
       },
       {
-        "id": "figure-0e2879e739504186",
-        "path": "client-report.html#number-110",
+        "id": "figure-21bc2216c5301cd5",
+        "path": "client-report.html#number-114",
         "value": 249,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1288,8 +1332,8 @@
         ]
       },
       {
-        "id": "figure-8591ac5e393ad5ba",
-        "path": "client-report.html#number-111",
+        "id": "figure-2c01d49039a8d769",
+        "path": "client-report.html#number-115",
         "value": 83,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1299,8 +1343,8 @@
         ]
       },
       {
-        "id": "figure-43a3c3505f7055fe",
-        "path": "client-report.html#number-112",
+        "id": "figure-b8924fe77b224eac",
+        "path": "client-report.html#number-116",
         "value": 42,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1310,8 +1354,8 @@
         ]
       },
       {
-        "id": "figure-69d01351bfc6f800",
-        "path": "client-report.html#number-113",
+        "id": "figure-deee20203455fc71",
+        "path": "client-report.html#number-117",
         "value": 14,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1321,8 +1365,8 @@
         ]
       },
       {
-        "id": "figure-f71c3012d2976175",
-        "path": "client-report.html#number-114",
+        "id": "figure-2f59e584439d1c46",
+        "path": "client-report.html#number-118",
         "value": 4,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1332,8 +1376,8 @@
         ]
       },
       {
-        "id": "figure-eebb97977add14b9",
-        "path": "client-report.html#number-115",
+        "id": "figure-b51c37af392cd805",
+        "path": "client-report.html#number-119",
         "value": 1,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1343,8 +1387,8 @@
         ]
       },
       {
-        "id": "figure-d27c250534dadb16",
-        "path": "client-report.html#number-116",
+        "id": "figure-530ac13179418064",
+        "path": "client-report.html#number-120",
         "value": 3,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1354,8 +1398,8 @@
         ]
       },
       {
-        "id": "figure-c857f086c26ce613",
-        "path": "client-report.html#number-117",
+        "id": "figure-b730eb1df3e8badf",
+        "path": "client-report.html#number-121",
         "value": 1,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1365,8 +1409,8 @@
         ]
       },
       {
-        "id": "figure-ff71fb03c3d3123b",
-        "path": "client-report.html#number-118",
+        "id": "figure-22bb263ef65f4d16",
+        "path": "client-report.html#number-122",
         "value": 1,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1376,8 +1420,8 @@
         ]
       },
       {
-        "id": "figure-03dc639ad1c41b90",
-        "path": "client-report.html#number-119",
+        "id": "figure-594cffb4056b1ede",
+        "path": "client-report.html#number-123",
         "value": 0,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1387,8 +1431,8 @@
         ]
       },
       {
-        "id": "figure-8911a5091a19e11a",
-        "path": "client-report.html#number-120",
+        "id": "figure-e6d48e4de46a9934",
+        "path": "client-report.html#number-124",
         "value": 299,
         "evidenceScope": "mixed",
         "sourceRefs": [
@@ -1457,5 +1501,5 @@
       }
     ]
   },
-  "payloadSha256": "5ef8082a859820a7b2f37926fb0b8a491474e05c20c33d9d7e53665ef5c5b3b7"
+  "payloadSha256": "e9d05ad3fef9b6746a2687938a18ee032385628b957a1f56141e8931b667ec93"
 }

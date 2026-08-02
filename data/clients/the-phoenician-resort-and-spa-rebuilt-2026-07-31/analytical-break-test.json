@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-02T01:02:13.055Z",
+  "generatedAt": "2026-08-02T01:07:36.565Z",
   "frozenCorpus": true,
   "checks": [
     {
@@ -85,7 +85,7 @@
     },
     {
       "id": "thin_sample_not_overstated",
-      "pass": true
+      "pass": false
     },
     {
       "id": "live_element_visibility_precise",
@@ -97,7 +97,7 @@
     },
     {
       "id": "seasonal_programming_not_called_current",
-      "pass": false
+      "pass": true
     },
     {
       "id": "no_client_ready_claim",
