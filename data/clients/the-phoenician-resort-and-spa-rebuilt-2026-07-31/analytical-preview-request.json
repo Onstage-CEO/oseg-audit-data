@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V2",
   "property": "The Phoenician Resort and Spa",
-  "requestedAt": "2026-08-02T20:42:00Z",
+  "requestedAt": "2026-08-02T20:48:00Z",
   "mode": "frozen-corpus-full-analysis-internal-preview",
   "runMode": "frozen",
   "sourceRecapture": false,
@@ -10,7 +10,7 @@
   "clientDelivery": false,
   "reddit": "deferred-needs-credentials",
   "rerunReason": "regenerate durable frozen preview with one rendered lead per in-scope record, thin-sample rating suppression, sealed operator evidence, and aligned engine pin",
-  "engineRef": "9b1c6762d9214455b14adc108fd919889e7e47b9",
+  "engineRef": "393c97c1840fff4fce496f1e2bb26c0f364dfb62",
   "analysisWindow": {
     "from": "2025-07-31",
     "to": "2026-07-31"
