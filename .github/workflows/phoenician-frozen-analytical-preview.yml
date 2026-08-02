@@ -90,9 +90,7 @@ jobs:
           const sourceRowIds=sourceRows.map(r=>r.id);
           const reasonsComplete=sourceRows.every(r=>r.cells.length===5&&r.cells[4].length>0);
           const funnelValue=(label)=>{
-            const escaped=label.replace(/[.*+?^${}()|[\]\\]/g,'\\          const verification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
-');
-            const match=html.match(new RegExp('<tr><td>'+escaped+'</td><td class="num">([0-9,]+)</td>','i'));
+            const match=html.match(new RegExp('<tr><td>'+label+'</td><td class="num">([0-9,]+)</td>','i'));
             return match?Number(match[1].replace(/,/g,'')):null;
           };
           const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
