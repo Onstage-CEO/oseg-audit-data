@@ -1,13 +1,13 @@
 {
   "schemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "requestedAt": "2026-08-02T00:12:00Z",
+  "requestedAt": "2026-08-02T00:22:00Z",
   "mode": "frozen-corpus-full-analysis-internal-preview",
   "sourceRecapture": false,
   "paidSourceProviders": false,
   "pdfExport": false,
   "clientDelivery": false,
   "reddit": "deferred-needs-credentials",
-  "rerunReason": "deep QA fixes: current window, semantic classifier resilience, source lineage, Reddit suppression, rendered consistency; persist diagnostic failures for iterative repair; fix diagnostic regex; remove slash-bearing regex from diagnostics",
-  "engineRef": "909ce5f947bf2a2c00d845f7a17a189e4b332c63"
+  "rerunReason": "deep QA evidence guards: explicit live-act leads, explicit private-event examples, soft-atmosphere exclusion",
+  "engineRef": "7f3a4656f7c82818f5fe97eb2f3baebc045037ec"
 }
