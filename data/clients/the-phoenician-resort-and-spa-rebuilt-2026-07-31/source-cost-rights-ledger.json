@@ -1,0 +1,979 @@
+{
+  "schemaVersion": "V1",
+  "registryVersion": "v2",
+  "currency": "USD",
+  "generatedAt": "2026-08-02T00:00:00Z",
+  "definition": {
+    "estimatedTypicalRunUsd": "Estimated provider spend for one normal property audit run; null means not yet established.",
+    "mayContributeToRatingMath": "True only when the current contract explicitly permits compatible property-level review evidence; false when the contract excludes the lane; null means unresolved."
+  },
+  "sources": [
+    {
+      "sourceId": "aerial_satellite",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "agoda",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "almosafer",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": true,
+      "ratingMathBasis": "Current contract permits compatible property-level review evidence from this source in resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "cheaptickets",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "cluburlaub",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "despegar",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "eat-app",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "ebookers",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "europabooking",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": true,
+      "ratingMathBasis": "Current contract permits compatible property-level review evidence from this source in resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "facebook",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "google",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": true,
+      "ratingMathBasis": "Current contract permits compatible property-level review evidence from this source in resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "google_hotels",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "guestreservations",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "holidaycheck",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "hotel-reservation-network",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "hotels_com",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "hotels-in-america",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "hotelsone",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "hoteltonight",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "hrs",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "instagram",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "jeeran",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "kayak",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "local_media",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "opentable",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Outlet-level OpenTable evidence is kept separate from resort-wide property rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "orbitz",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "otzyv-ru",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "priceline",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "qaym",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "quora",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "realtime-reservation",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "reddit",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "rehlat",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "reserveout",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "resortpass",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "resy",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "sevenrooms",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "skyscanner",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "staah",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "tablet-hotels",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "tiket",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "tiktok",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "toast_tables",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "tock",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "tophotels",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "traveloka",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "trip_com",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": true,
+      "ratingMathBasis": "Current contract permits compatible property-level review evidence from this source in resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "trivago",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "urvenue",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "webook",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "wego",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "wotif",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Registry marks this lane duplicate, syndicated, or not applicable; it cannot contribute independent rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "yelp",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": false,
+      "ratingMathBasis": "Current evidence-layer contract excludes this source family from resort-wide rating math.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date."
+      ]
+    },
+    {
+      "sourceId": "zoover",
+      "provider": null,
+      "estimatedTypicalRunUsd": null,
+      "licenseReuseStatus": null,
+      "lastRightsReviewDate": null,
+      "mayContributeToRatingMath": null,
+      "ratingMathBasis": "TODO: determine rating-math eligibility after rights and analytical-compatibility review.",
+      "todos": [
+        "Identify and verify the sustainable provider or access path.",
+        "Establish typical-run cost from observed run history; do not extrapolate from a single run.",
+        "Complete license and reuse-rights review.",
+        "Record the rights-review completion date.",
+        "Resolve whether this source may contribute to rating math."
+      ]
+    }
+  ]
+}
