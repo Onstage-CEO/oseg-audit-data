@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-02T00:13:20.385Z",
+  "generatedAt": "2026-08-02T00:29:44.057Z",
   "frozenCorpus": true,
   "checks": [
     {
@@ -24,6 +24,14 @@
       "pass": true
     },
     {
+      "id": "every_lead_names_live_act",
+      "pass": true
+    },
+    {
+      "id": "excluded_examples_name_event",
+      "pass": true
+    },
+    {
       "id": "opentable_total",
       "pass": true
     },
@@ -37,7 +45,7 @@
     },
     {
       "id": "opentable_mowry",
-      "pass": false
+      "pass": true
     },
     {
       "id": "opentable_tea_listing",
@@ -76,6 +84,6 @@
       "pass": true
     }
   ],
-  "passed": 17,
-  "total": 18
+  "passed": 20,
+  "total": 20
 }
