@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/phoenician-frozen-analytical-preview.yml'
       - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/analytical-preview-request.json'
       - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/analytical-preview-request.schema.json'
 
