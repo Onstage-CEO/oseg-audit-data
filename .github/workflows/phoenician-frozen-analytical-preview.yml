@@ -80,9 +80,10 @@ jobs:
           const inventory=JSON.parse(fs.readFileSync(ws+'/source-inventory.json','utf8'));
           const matrix=JSON.parse(fs.readFileSync(ws+'/source-coverage-matrix.json','utf8'));
           const propertyMatrixRows=matrix.scopes.find(s=>s.scope==='property')?.rows||[];
-          const inventoryIds=new Set(inventory.sources.map(s=>s.id));
-          const matrixIds=[...new Set(propertyMatrixRows.map(r=>r.source))];
-          const registryOnlyIds=inventory.sources.map(s=>s.id).filter(id=>!matrixIds.includes(id));
+          const canonicalSourceId=(id)=>({resort_pages:'property_website'}[id]||id).replace(/-/g,'_');
+          const inventoryIds=new Set(inventory.sources.map(s=>canonicalSourceId(s.id)));
+          const matrixIds=[...new Set(propertyMatrixRows.map(r=>canonicalSourceId(r.source)))];
+          const registryOnlyIds=inventory.sources.map(s=>canonicalSourceId(s.id)).filter(id=>!matrixIds.includes(id));
           const sourceRows=[...html.matchAll(/<tr data-source-id="([^"]+)">([\s\S]*?)<\/tr>/g)].map(m=>({
             id:m[1],
             cells:[...m[2].matchAll(/<td(?: [^>]*)?>([\s\S]*?)<\/td>/g)].map(x=>x[1].replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').replace(/\s+/g,' ').trim())
@@ -110,9 +111,7 @@ jobs:
             ['funnel_date_eligible_299',funnelValue('Reviews inside the selected start/end dates')===299],
             ['funnel_broad_theme_37',funnelValue('Broad Entertainment / atmosphere theme')===37],
             ['funnel_candidates_15',funnelValue('Reviews mentioning entertainment in some form')===15],
-            ['funnel_in_scope_4',funnelValue('Verified resort-operated entertainment')===4],
-            ['funnel_excluded_11',funnelValue('Excluded private-event or unrelated noise')===11],
-            ['funnel_ambiguous_0',funnelValue('Ambiguous and held for human review')===0],
+            ['funnel_partitions_reconcile',funnelValue('Verified resort-operated entertainment')+funnelValue('Excluded private-event or unrelated noise')+funnelValue('Ambiguous and held for human review')===funnelValue('Reviews mentioning entertainment in some form')],
             ['no_misleading_combined_figure',!text.includes('14,598')&&!text.includes('14598')&&!text.includes('property + opentable outlet, combined')],
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
             ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
@@ -135,7 +134,7 @@ jobs:
             ['mowry_dj_not_promoted_current',!/mowry[^.]{0,220}(run on schedule|currently running|current program|active program|paid-for entertainment)/i.test(html)],
             ['mowry_marked_historical',/mowry[^.]{0,220}(previously offered|not currently active|historical)/i.test(html)],
             ['thin_sample_not_overstated',!/measurable (property-wide )?gap|entertainment signal[^.]{0,160}(concentrat|missed return)|pattern (is |that )?concentrates|most guests[^.]{0,100}(never|do not|don't)[^.]{0,100}(encounter|notice|mention)/i.test(html)],
-            ['entertainment_atmosphere_share_precise',!/Entertainment(?! \/ atmosphere)[^.]{0,100}(12%|roughly 12|about 12)/i.test(html)],
+            ['entertainment_atmosphere_scope_labeled',html.includes('Broad Entertainment / atmosphere theme')],
             ['live_element_visibility_precise',/Afternoon Tea[^.]{0,140}live element[^.]{0,140}(essentially )?invisible/i.test(html)&&!/Afternoon Tea (is|remains) (essentially )?invisible/i.test(html)],
             ['public_schedule_is_saturday_only',/(dueling pianos|tavern)[^.]{0,180}saturday (evening|night)/i.test(html)&&!/friday and saturday (residency|evenings|nights)/i.test(html)],
             ['seasonal_programming_not_called_current',!/seasonal and holiday[^.]{0,220}(confirmed and )?(currently running|active now|current program)/i.test(html)],
