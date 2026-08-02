@@ -38,6 +38,16 @@ describe('engine checkout pin alignment', () => {
     assert.equal(engineCheckoutBlocks(workflow('candidate-engine')).length, 1);
   });
 
+  it('detects an unnamed direct-list checkout step', () => {
+    const direct = workflow('engine').replace(
+      '      - name: Checkout engine\n        uses: actions/checkout@v4',
+      '      - uses: actions/checkout@v4'
+    );
+    const result = checkWorkflowText('direct.yml', direct, repo, productionRef, {});
+    assert.deepEqual(result.failures, []);
+    assert.equal(result.engineWorkflow, true);
+  });
+
   it('accepts an explicitly declared isolated clean-room SHA', () => {
     const filename = 'clean-room.yml';
     const result = checkWorkflowText(
