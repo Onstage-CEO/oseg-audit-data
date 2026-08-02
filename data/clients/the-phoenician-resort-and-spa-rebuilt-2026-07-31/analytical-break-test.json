@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V3",
-  "generatedAt": "2026-08-02T19:44:08.239Z",
+  "generatedAt": "2026-08-02T20:44:49.123Z",
   "runMode": "frozen",
   "frozenCorpus": true,
   "analysisWindow": {
@@ -164,7 +164,11 @@
       "pass": true
     },
     {
-      "id": "every_lead_names_live_act",
+      "id": "rendered_leads_equal_in_scope",
+      "pass": true
+    },
+    {
+      "id": "every_lead_contains_rendered_entertainment_evidence",
       "pass": true
     },
     {
@@ -244,11 +248,11 @@
       "pass": true
     },
     {
-      "id": "live_element_visibility_precise",
+      "id": "guest_evidence_verdicts_rendered",
       "pass": true
     },
     {
-      "id": "public_schedule_is_saturday_only",
+      "id": "historical_schedule_not_presented_as_current",
       "pass": true
     },
     {
@@ -260,6 +264,6 @@
       "pass": true
     }
   ],
-  "passed": 52,
-  "total": 52
+  "passed": 53,
+  "total": 53
 }
