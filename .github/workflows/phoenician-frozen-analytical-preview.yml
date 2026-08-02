@@ -15,7 +15,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 52735023c79870e490802b51acc4e4113c3e159b
+  ENGINE_REF: 1f32474bbec4fa8ca78ecf684e8af9a34178083f
   WINDOW_FROM: '2025-07-31'
   WINDOW_TO: '2026-07-31'
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
@@ -298,7 +298,7 @@ jobs:
             ['opentable_tea_listing',text.includes('thirsty camel')&&text.includes('1,685')],
             ['deferred_reddit_suppressed',!/reddit\\.com|forums, reddit|reddit and youtube/i.test(reportWithoutBanner)],
             ['rendered_consistency',Array.isArray(verification.checks)&&verification.checks.every(c=>c.pass===true)],
-            ['tavern_dueling_pianos',text.includes('dueling piano')&&text.includes('saturday evening')],
+            ['tavern_dueling_pianos',text.includes('the phoenician tavern')&&text.includes('dueling piano')],
             ['afternoon_tea_pianist',text.includes('afternoon tea')&&text.includes('pian')],
             ['thirsty_camel_live_music',text.includes('thirsty camel')&&text.includes('live music')],
             ['jg_not_promoted_active',!/(j&g|j&amp;g)[^.]{0,160}(active|nightly|weekly|regular) live (music|entertainment)/i.test(html)],
@@ -310,7 +310,7 @@ jobs:
             ['operator_only_and_historical_not_current',restrictedProgramRows.length>0&&restrictedProgramRows.every(row=>!currentProgramClaim.test(row.text))],
             ['entertainment_atmosphere_scope_labeled',html.includes('Broad Entertainment / atmosphere theme')],
             ['live_element_visibility_precise',/Afternoon Tea[^.]{0,140}live element[^.]{0,140}(essentially )?invisible/i.test(html)&&!/Afternoon Tea (is|remains) (essentially )?invisible/i.test(html)],
-            ['public_schedule_is_saturday_only',/(dueling pianos|tavern)[^.]{0,180}saturday (evening|night)/i.test(html)&&!/friday and saturday (residency|evenings|nights)/i.test(html)],
+            ['historical_schedule_not_presented_as_current',!/friday and saturday (residency|evenings|nights)/i.test(html)&&!/dueling pianos[^.]{0,180}(currently running|currently offered|confirmed active|remains active)/i.test(html)],
             ['seasonal_programming_not_called_current',!/seasonal and holiday[^.]{0,220}(confirmed and )?(currently running|active now|current program)/i.test(html)],
             ['no_client_ready_claim',!text.includes('approved for client delivery')]
           ];
