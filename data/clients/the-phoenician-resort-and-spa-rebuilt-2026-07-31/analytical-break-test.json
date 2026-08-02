@@ -1,16 +1,20 @@
 {
-  "schemaVersion": "V2",
-  "generatedAt": "2026-08-02T17:34:48.388Z",
+  "schemaVersion": "V3",
+  "generatedAt": "2026-08-02T19:44:08.239Z",
+  "runMode": "frozen",
   "frozenCorpus": true,
   "analysisWindow": {
     "from": "2025-07-31",
     "to": "2026-07-31"
   },
   "reconciliation": {
-    "inventorySources": 63,
-    "matrixSources": 40,
+    "versionedResearchUniverseEvaluated": 63,
+    "operationalCoverage": 40,
+    "producedEvidence": 12,
+    "noUsableEvidence": 15,
+    "blockedEvidence": 13,
     "matchedMatrixSources": 40,
-    "registryOnlySources": 23,
+    "registryEvaluatedNonOperationalLanes": 23,
     "registryOnlyIds": [
       "cheaptickets",
       "ebookers",
@@ -48,19 +52,55 @@
   },
   "checks": [
     {
+      "id": "preview_request_schema_v2",
+      "pass": true
+    },
+    {
+      "id": "live_run_artifacts_present",
+      "pass": true
+    },
+    {
+      "id": "live_run_attempt_logs_complete",
+      "pass": true
+    },
+    {
+      "id": "live_run_provider_ids_complete",
+      "pass": true
+    },
+    {
+      "id": "live_run_exact_spend_reconciles",
+      "pass": true
+    },
+    {
+      "id": "live_run_truncation_flags_complete",
+      "pass": true
+    },
+    {
+      "id": "live_run_evidence_funnel_sha256",
+      "pass": true
+    },
+    {
       "id": "runtime_date_window",
       "pass": true
     },
     {
-      "id": "inventory_exactly_63",
+      "id": "versioned_research_universe_63_not_collection_claim",
       "pass": true
     },
     {
-      "id": "coverage_matrix_exactly_40",
+      "id": "cost_rights_ledger_reconciles_registry",
       "pass": true
     },
     {
-      "id": "matrix_reconciles_to_inventory",
+      "id": "operational_coverage_is_matrix_40",
+      "pass": true
+    },
+    {
+      "id": "coverage_metrics_reconcile",
+      "pass": true
+    },
+    {
+      "id": "applicable_sources_have_terminal_attempt",
       "pass": true
     },
     {
@@ -101,6 +141,14 @@
     },
     {
       "id": "semantic_classifier",
+      "pass": true
+    },
+    {
+      "id": "classifier_rules_file_exists_and_versioned",
+      "pass": true
+    },
+    {
+      "id": "classifier_rules_referenced_by_contract_and_report",
       "pass": true
     },
     {
@@ -176,7 +224,19 @@
       "pass": true
     },
     {
+      "id": "thin_entertainment_rating_suppressed",
+      "pass": true
+    },
+    {
       "id": "thin_sample_not_overstated",
+      "pass": true
+    },
+    {
+      "id": "operator_claims_sealed_from_guest_narrative",
+      "pass": true
+    },
+    {
+      "id": "operator_only_and_historical_not_current",
       "pass": true
     },
     {
@@ -200,6 +260,6 @@
       "pass": true
     }
   ],
-  "passed": 38,
-  "total": 38
+  "passed": 52,
+  "total": 52
 }

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://onstage.biz/schemas/analytical-preview-request-v2.json",
+  "title": "Resort analytical preview request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "property", "requestedAt", "mode", "runMode",
+    "sourceRecapture", "paidSourceProviders", "pdfExport", "clientDelivery",
+    "reddit", "rerunReason", "engineRef", "analysisWindow", "liveRunArtifacts"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "V2" },
+    "property": { "type": "string", "minLength": 1 },
+    "requestedAt": { "type": "string", "format": "date-time" },
+    "mode": { "type": "string", "minLength": 1 },
+    "runMode": { "enum": ["frozen", "live"] },
+    "sourceRecapture": { "type": "boolean" },
+    "paidSourceProviders": { "type": "boolean" },
+    "pdfExport": { "type": "boolean" },
+    "clientDelivery": { "type": "boolean" },
+    "reddit": { "type": "string", "minLength": 1 },
+    "rerunReason": { "type": "string", "minLength": 1 },
+    "engineRef": { "type": "string", "minLength": 7 },
+    "analysisWindow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to"],
+      "properties": {
+        "from": { "type": "string", "format": "date" },
+        "to": { "type": "string", "format": "date" }
+      }
+    },
+    "liveRunArtifacts": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["attemptLog", "providerLineage", "exactSpend", "evidenceFunnel"],
+      "properties": {
+        "attemptLog": { "const": "live-run-attempt-log.json" },
+        "providerLineage": { "const": "live-run-provider-lineage.json" },
+        "exactSpend": { "const": "live-run-spend.json" },
+        "evidenceFunnel": { "const": "live-run-evidence-funnel.json" }
+      }
+    }
+  },
+  "allOf": [{
+    "if": { "properties": { "runMode": { "const": "live" } }, "required": ["runMode"] },
+    "then": {
+      "properties": {
+        "sourceRecapture": { "const": true },
+        "liveRunArtifacts": { "type": "object" }
+      }
+    },
+    "else": { "properties": { "liveRunArtifacts": { "type": "null" } } }
+  }]
+}

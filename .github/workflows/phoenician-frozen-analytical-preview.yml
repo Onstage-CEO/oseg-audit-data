@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/analytical-preview-request.json'
+      - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/analytical-preview-request.schema.json'
 
 permissions:
   contents: write
@@ -44,6 +45,7 @@ jobs:
           WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
         run: |
           set -euo pipefail
+          test "$(jq -r .runMode "$WS/analytical-preview-request.json")" = frozen || exit 0
           find "$WS" -type f \( -path '*/captures-raw/*' -o -name 'captures.json' -o -name '*-evidence.json' -o -name '*-attempt.json' -o -name 'extra-sources-attempts.json' -o -name 'programming-inventory.json' -o -name 'property-profile.json' \) -print0 |
             sort -z | xargs -0 sha256sum > /tmp/frozen-before.sha256
       - name: Run full analysis and internal report preview
@@ -62,9 +64,88 @@ jobs:
           WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
         run: |
           set -euo pipefail
+          test "$(jq -r .runMode "$WS/analytical-preview-request.json")" = frozen || exit 0
           find "$WS" -type f \( -path '*/captures-raw/*' -o -name 'captures.json' -o -name '*-evidence.json' -o -name '*-attempt.json' -o -name 'extra-sources-attempts.json' -o -name 'programming-inventory.json' -o -name 'property-profile.json' \) -print0 |
             sort -z | xargs -0 sha256sum > /tmp/frozen-after.sha256
           diff -u /tmp/frozen-before.sha256 /tmp/frozen-after.sha256
+      - name: Write mandatory live-run provenance artifacts
+        env:
+          WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import crypto from 'node:crypto';
+          const ws=process.env.WS;
+          const request=JSON.parse(fs.readFileSync(path.join(ws,'analytical-preview-request.json'),'utf8'));
+          if(request.runMode!=='live') process.exit(0);
+          const sha256=(value)=>crypto.createHash('sha256').update(value).digest('hex');
+          const statusPath=path.join(ws,'capture-run-status.json');
+          if(!fs.existsSync(statusPath)) throw new Error('Live run is missing capture-run-status.json');
+          const status=JSON.parse(fs.readFileSync(statusPath,'utf8'));
+          if(!status.generatedAt||new Date(status.generatedAt)<new Date(request.requestedAt)) throw new Error('capture-run-status.json does not belong to this live request');
+          const rawLogNames=fs.readdirSync(ws).filter(name=>
+            (/(?:attempt|capture).*(?:\.json|\.log)$/i.test(name)||/\.log$/i.test(name))&&
+            !/^live-run-/i.test(name)
+          ).sort();
+          if(rawLogNames.length===0) throw new Error('Live run produced no full attempt-log files');
+          const rawLogs=rawLogNames.map(name=>{
+            const content=fs.readFileSync(path.join(ws,name),'utf8');
+            if(!content.trim()) throw new Error(`Attempt log is empty: ${name}`);
+            return {path:name,sha256:sha256(content),content};
+          });
+          const sourceAttempts=(status.sources||[]).map(source=>({
+            sourceId:source.platformId,
+            mechanism:source.mechanism,
+            status:source.status,
+            message:source.message,
+            truncated:source.coverage?.truncated??false,
+            exactSpendUsd:source.coverage?.actualCostUsd??0,
+            costStatus:source.coverage?.costStatus??'verified-no-charge'
+          }));
+          fs.writeFileSync(path.join(ws,request.liveRunArtifacts.attemptLog),JSON.stringify({
+            schemaVersion:'V1',runMode:'live',requestRequestedAt:request.requestedAt,generatedAt:new Date().toISOString(),
+            captureRunGeneratedAt:status.generatedAt,sourceAttempts,rawLogs
+          },null,2)+'\n');
+          const providerSources=(status.sources||[]).filter(source=>source.mechanism==='aggregator');
+          const providerLineage=providerSources.map(source=>({
+            sourceId:source.platformId,provider:source.provider??source.mechanism,
+            providerRunId:source.coverage?.providerRunId??null,
+            providerDatasetId:source.coverage?.providerDatasetId??null,
+            datasetIdNotIssuedReason:source.coverage?.providerDatasetId?null:'Provider did not issue or record a dataset ID.'
+          }));
+          fs.writeFileSync(path.join(ws,request.liveRunArtifacts.providerLineage),JSON.stringify({
+            schemaVersion:'V1',runMode:'live',requestRequestedAt:request.requestedAt,generatedAt:new Date().toISOString(),sources:providerLineage
+          },null,2)+'\n');
+          const perSource=(status.sources||[]).filter(source=>typeof source.coverage?.actualCostUsd==='number').map(source=>({
+            sourceId:source.platformId,exactSpendUsd:source.coverage.actualCostUsd,costStatus:source.coverage.costStatus
+          }));
+          fs.writeFileSync(path.join(ws,request.liveRunArtifacts.exactSpend),JSON.stringify({
+            schemaVersion:'V1',runMode:'live',requestRequestedAt:request.requestedAt,currency:'USD',generatedAt:new Date().toISOString(),
+            exactSpendUsd:status.spend?.knownActualCostUsd,costStatus:status.spend?.costStatus,perSource
+          },null,2)+'\n');
+          const html=fs.readFileSync(path.join(ws,'client-report.html'),'utf8');
+          const funnelValue=(label)=>{
+            const match=html.match(new RegExp('<tr><td>'+label+'</td><td class="num">([0-9,]+)</td>','i'));
+            if(!match) throw new Error(`Final evidence funnel is missing: ${label}`);
+            return Number(match[1].replace(/,/g,''));
+          };
+          const finalEvidenceFunnel={
+            captured:funnelValue('Property reviews captured across all available dates'),
+            dateEligible:funnelValue('Reviews inside the selected start/end dates'),
+            broadTheme:funnelValue('Broad Entertainment / atmosphere theme'),
+            entertainmentCandidates:funnelValue('Reviews mentioning entertainment in some form'),
+            inScope:funnelValue('Verified resort-operated entertainment'),
+            excluded:funnelValue('Excluded private-event or unrelated noise'),
+            ambiguous:funnelValue('Ambiguous and held for human review')
+          };
+          fs.writeFileSync(path.join(ws,request.liveRunArtifacts.evidenceFunnel),JSON.stringify({
+            schemaVersion:'V1',runMode:'live',requestRequestedAt:request.requestedAt,hashAlgorithm:'SHA-256',
+            canonicalization:'JSON.stringify(finalEvidenceFunnel) with V1 key order',
+            finalEvidenceFunnel,sha256:sha256(JSON.stringify(finalEvidenceFunnel))
+          },null,2)+'\n');
+          NODE
       - name: Record automated break-test observations
         env:
           WS: ${{ github.workspace }}/data-repo/data/clients/${{ env.SLUG }}
@@ -72,18 +153,84 @@ jobs:
           set -euo pipefail
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
+          import crypto from 'node:crypto';
           const ws=process.env.WS;
+          const repoRoot=ws.split('/data/clients/')[0];
+          const request=JSON.parse(fs.readFileSync(ws+'/analytical-preview-request.json','utf8'));
+          const requestSchema=JSON.parse(fs.readFileSync(ws+'/analytical-preview-request.schema.json','utf8'));
+          const isFrozenRun=request.runMode==='frozen';
+          const liveArtifactNames=request.liveRunArtifacts||{};
+          const readLiveArtifact=(key)=>{
+            const name=liveArtifactNames[key];
+            if(typeof name!=='string'||!fs.existsSync(ws+'/'+name)) return null;
+            try{return JSON.parse(fs.readFileSync(ws+'/'+name,'utf8'));}catch{return null;}
+          };
+          const liveAttemptLog=readLiveArtifact('attemptLog');
+          const liveProviderLineage=readLiveArtifact('providerLineage');
+          const liveSpend=readLiveArtifact('exactSpend');
+          const liveFunnel=readLiveArtifact('evidenceFunnel');
+          const sha256=(value)=>crypto.createHash('sha256').update(value).digest('hex');
+          const liveArtifactFilesPresent=isFrozenRun||['attemptLog','providerLineage','exactSpend','evidenceFunnel'].every(key=>typeof liveArtifactNames[key]==='string'&&fs.existsSync(ws+'/'+liveArtifactNames[key]));
+          const belongsToLiveRequest=(artifact)=>artifact?.requestRequestedAt===request.requestedAt;
+          const liveAttemptLogsComplete=isFrozenRun||(belongsToLiveRequest(liveAttemptLog)&&liveAttemptLog?.runMode==='live'&&new Date(liveAttemptLog.captureRunGeneratedAt)>=new Date(request.requestedAt)&&Array.isArray(liveAttemptLog.sourceAttempts)&&liveAttemptLog.sourceAttempts.length>0&&liveAttemptLog.sourceAttempts.every(a=>typeof a.sourceId==='string'&&typeof a.status==='string'&&typeof a.message==='string'&&typeof a.truncated==='boolean'&&typeof a.exactSpendUsd==='number'&&typeof a.costStatus==='string')&&Array.isArray(liveAttemptLog.rawLogs)&&liveAttemptLog.rawLogs.length>0&&liveAttemptLog.rawLogs.every(log=>typeof log.path==='string'&&typeof log.content==='string'&&log.content.trim().length>0&&log.sha256===sha256(log.content)));
+          const liveProviderLineageComplete=isFrozenRun||(belongsToLiveRequest(liveProviderLineage)&&liveProviderLineage?.runMode==='live'&&Array.isArray(liveProviderLineage.sources)&&liveProviderLineage.sources.length>0&&liveProviderLineage.sources.every(s=>typeof s.sourceId==='string'&&typeof s.provider==='string'&&typeof s.providerRunId==='string'&&s.providerRunId.length>0&&((typeof s.providerDatasetId==='string'&&s.providerDatasetId.length>0)||(s.providerDatasetId===null&&typeof s.datasetIdNotIssuedReason==='string'&&s.datasetIdNotIssuedReason.length>0))));
+          const liveSpendReconciles=isFrozenRun||(belongsToLiveRequest(liveSpend)&&liveSpend?.runMode==='live'&&liveSpend.currency==='USD'&&liveSpend.costStatus==='verified'&&typeof liveSpend.exactSpendUsd==='number'&&Array.isArray(liveSpend.perSource)&&liveSpend.perSource.length>0&&liveSpend.perSource.every(s=>typeof s.sourceId==='string'&&typeof s.exactSpendUsd==='number'&&s.costStatus==='verified')&&Math.abs(liveSpend.perSource.reduce((sum,s)=>sum+s.exactSpendUsd,0)-liveSpend.exactSpendUsd)<1e-9);
+          const liveFunnelHashValid=isFrozenRun||(belongsToLiveRequest(liveFunnel)&&liveFunnel?.runMode==='live'&&liveFunnel.hashAlgorithm==='SHA-256'&&liveFunnel.canonicalization==='JSON.stringify(finalEvidenceFunnel) with V1 key order'&&liveFunnel.finalEvidenceFunnel&&/^[a-f0-9]{64}$/.test(liveFunnel.sha256||'')&&liveFunnel.sha256===sha256(JSON.stringify(liveFunnel.finalEvidenceFunnel)));
           const brief=fs.readFileSync(ws+'/audit-brief.md','utf8');
           const html=fs.readFileSync(ws+'/client-report.html','utf8');
+          const classifierRulesPath=ws+'/classifier-rules-v1.md';
+          const classifierRulesExists=fs.existsSync(classifierRulesPath);
+          const classifierRules=classifierRulesExists?fs.readFileSync(classifierRulesPath,'utf8'):'';
+          const sourceUniverseContract=fs.readFileSync(repoRoot+'/RESORT_AUDIT_SOURCE_UNIVERSE_CONTRACT.md','utf8');
           const text=(brief+'\n'+html).toLowerCase();
           const verification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
           const inventory=JSON.parse(fs.readFileSync(ws+'/source-inventory.json','utf8'));
+          const costRightsLedger=JSON.parse(fs.readFileSync(ws+'/source-cost-rights-ledger.json','utf8'));
           const matrix=JSON.parse(fs.readFileSync(ws+'/source-coverage-matrix.json','utf8'));
           const propertyMatrixRows=matrix.scopes.find(s=>s.scope==='property')?.rows||[];
+          const terminalAttemptResults=new Set(['captured_complete','checked_no_data','identity_resolved','needs_credentials','not_supported','blocked_credentials','blocked_technical','blocked_rights','duplicate_or_syndicated','outlet_level_only']);
+          const applicablePropertyRows=propertyMatrixRows.filter(row=>row.status!=='na'&&!/^not_applicable(?:_|$)/i.test(row.status||''));
+          const forbiddenAttemptText=/No property-specific runtime attempt recorded in rebuilt workspace/i;
+          const applicableAttemptsTerminal=applicablePropertyRows.every(row=>
+            terminalAttemptResults.has(row.attemptResult)&&
+            !/^not[_ ]attempted$/i.test(row.attemptResult)&&
+            typeof row.attemptMechanism==='string'&&row.attemptMechanism.trim().length>0&&
+            typeof row.attemptMessage==='string'&&row.attemptMessage.trim().length>0&&
+            !forbiddenAttemptText.test(`${row.attemptResult} ${row.attemptMechanism} ${row.attemptMessage} ${row.reason||''}`)
+          );
           const canonicalSourceId=(id)=>({resort_pages:'property_website'}[id]||id).replace(/-/g,'_');
           const inventoryIds=new Set(inventory.sources.map(s=>canonicalSourceId(s.id)));
           const matrixIds=[...new Set(propertyMatrixRows.map(r=>canonicalSourceId(r.source)))];
           const registryOnlyIds=inventory.sources.map(s=>canonicalSourceId(s.id)).filter(id=>!matrixIds.includes(id));
+          const costRightsRows=Array.isArray(costRightsLedger.sources)?costRightsLedger.sources:[];
+          const costRightsIds=costRightsRows.map(row=>row.sourceId);
+          const todoText=(row)=>(Array.isArray(row.todos)?row.todos:[]).join(' ');
+          const costRightsFieldsComplete=costRightsRows.every(row=>
+            typeof row.sourceId==='string'&&
+            Object.hasOwn(row,'provider')&&(row.provider===null||typeof row.provider==='string')&&
+            Object.hasOwn(row,'estimatedTypicalRunUsd')&&(row.estimatedTypicalRunUsd===null||(typeof row.estimatedTypicalRunUsd==='number'&&row.estimatedTypicalRunUsd>=0))&&
+            Object.hasOwn(row,'licenseReuseStatus')&&(row.licenseReuseStatus===null||typeof row.licenseReuseStatus==='string')&&
+            Object.hasOwn(row,'lastRightsReviewDate')&&(row.lastRightsReviewDate===null||/^\d{4}-\d{2}-\d{2}$/.test(row.lastRightsReviewDate))&&
+            Object.hasOwn(row,'mayContributeToRatingMath')&&(row.mayContributeToRatingMath===null||typeof row.mayContributeToRatingMath==='boolean')&&
+            typeof row.ratingMathBasis==='string'&&row.ratingMathBasis.trim().length>0&&
+            Array.isArray(row.todos)&&
+            (row.provider!==null||/provider|access path/i.test(todoText(row)))&&
+            (row.estimatedTypicalRunUsd!==null||/cost|typical-run/i.test(todoText(row)))&&
+            (row.licenseReuseStatus!==null||/license|reuse/i.test(todoText(row)))&&
+            (row.lastRightsReviewDate!==null||/rights-review.*date/i.test(todoText(row)))&&
+            (row.mayContributeToRatingMath!==null||/rating math/i.test(todoText(row)))
+          );
+          const producedStatuses=new Set(['captured']);
+          const noUsableStatuses=new Set(['checked_no_data','identity_resolved','na']);
+          const producedEvidence=propertyMatrixRows.filter(r=>producedStatuses.has(r.status)).length;
+          const noUsableEvidence=propertyMatrixRows.filter(r=>noUsableStatuses.has(r.status)).length;
+          const blockedEvidence=propertyMatrixRows.length-producedEvidence-noUsableEvidence;
+          const metricValue=(label)=>{
+            const escaped=label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+            const match=html.match(new RegExp('<span class="ml">'+escaped+'</span><span class="mv">([0-9,]+)</span>','i'));
+            return match?Number(match[1].replace(/,/g,'')):null;
+          };
+          const operationalCoverageMentions=[...html.matchAll(/operational coverage(?:[^0-9]{0,80})([0-9,]+)/gi)].map(m=>Number(m[1].replace(/,/g,'')));
           const sourceRows=[...html.matchAll(/<tr data-source-id="([^"]+)">([\s\S]*?)<\/tr>/g)].map(m=>({
             id:m[1],
             cells:[...m[2].matchAll(/<td(?: [^>]*)?>([\s\S]*?)<\/td>/g)].map(x=>x[1].replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').replace(/\s+/g,' ').trim())
@@ -100,11 +247,31 @@ jobs:
           const leadQuotes=leadSection.split('\n> ').slice(1);
           const excludedQuotes=excludedSection.split('\n> ').slice(1);
           const reportWithoutBanner=html.replace(/INTERNAL PREVIEW ONLY[^<]*/i,'');
+          const opportunitySection=(html.split('<h2>The opportunity</h2>')[1]||'').split('<h2>')[0]||'';
+          const inScopeCount=funnelValue('Verified resort-operated entertainment');
+          const entertainmentMetric=(html.match(/<span class="ml">Entertainment<\/span><span class="mv">([\s\S]*?)<\/span>/i)||[])[1]||'';
+          const thinSampleRatingText='directional only &ndash; sample too small for rating';
+          const propertyWideGapLanguage=/\b(measurable|quantified?|statistically significant|demonstrated|proven|concrete|clear)\b[^.]{0,120}\b(gap|shortfall|deficit|under[- ]?performance|missed (?:credit|opportunity))\b|\b(gap|shortfall|deficit|under[- ]?performance)\b[^.]{0,120}\b(property[- ]wide|resort[- ]wide|aggregate (?:property|review)|measurable|quantified?|demonstrated|proven|concrete)\b|\b(under[- ]?represented|barely reflect|does not get|isn.t getting|without getting)\b[^.]{0,120}\b(aggregate|property[- ]wide|resort[- ]wide|credit)\b/i;
+          const guestDeepDive=(html.split('<h2>Entertainment deep-dive</h2>')[1]||'').split('<h2>Signature entertainment')[0]||'';
+          const guestVoice=(html.split('<h2>The guest voice</h2>')[1]||'').split('<h2>The opportunity</h2>')[0]||'';
+          const operatorSection=(html.split('<section class="operator-only"')[1]||'').split('</section>')[0]||'';
+          const restrictedProgramRows=[...operatorSection.matchAll(/<tr data-program-status="(historical|operator-only)">([\s\S]*?)<\/tr>/g)].map(m=>({status:m[1],html:m[2],text:m[2].replace(/<[^>]+>/g,' ').replace(/&[^;]+;/g,' ').replace(/\s+/g,' ').trim(),name:((m[2].match(/<td>([\s\S]*?)<\/td>/)||[])[1]||'').replace(/<[^>]+>/g,' ').trim()}));
+          const currentProgramClaim=/\b(currently running|currently offered|active now|current program|confirmed active|remains active|runs? (?:daily|weekly|nightly|every|on (?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)))\b/i;
+          const operatorNames=restrictedProgramRows.map(r=>r.name).filter(Boolean);
           const checks=[
+            ['preview_request_schema_v2',request.schemaVersion==='V2'&&requestSchema.title==='Resort analytical preview request'&&['frozen','live'].includes(request.runMode)&&request.analysisWindow?.from&&request.analysisWindow?.to&&((isFrozenRun&&request.liveRunArtifacts===null)||(!isFrozenRun&&request.sourceRecapture===true&&request.liveRunArtifacts&&Object.keys(request.liveRunArtifacts).sort().join(',')==='attemptLog,evidenceFunnel,exactSpend,providerLineage'))],
+            ['live_run_artifacts_present',liveArtifactFilesPresent],
+            ['live_run_attempt_logs_complete',liveAttemptLogsComplete],
+            ['live_run_provider_ids_complete',liveProviderLineageComplete],
+            ['live_run_exact_spend_reconciles',liveSpendReconciles],
+            ['live_run_truncation_flags_complete',isFrozenRun||(Array.isArray(liveAttemptLog?.sourceAttempts)&&liveAttemptLog.sourceAttempts.every(attempt=>typeof attempt.truncated==='boolean'))],
+            ['live_run_evidence_funnel_sha256',liveFunnelHashValid],
             ['runtime_date_window',html.includes('2025-07-31 to 2026-07-31')],
-            ['inventory_exactly_63',inventory.sources.length===63],
-            ['coverage_matrix_exactly_40',matrixIds.length===40],
-            ['matrix_reconciles_to_inventory',matrixIds.every(id=>inventoryIds.has(id))&&registryOnlyIds.length===23],
+            ['versioned_research_universe_63_not_collection_claim',inventory.sources.length===63&&metricValue('Versioned research universe evaluated')===63&&/63 (?:global |versioned )?(?:source )?lanes/i.test(html)&&!/collected from 63|captured from 63|63 sources collected|63 sources captured/i.test(html)],
+            ['cost_rights_ledger_reconciles_registry',costRightsLedger.schemaVersion==='V1'&&costRightsLedger.registryVersion===inventory.registryVersion&&costRightsRows.length===63&&new Set(costRightsIds).size===63&&inventory.sources.every(source=>costRightsIds.includes(source.id))&&costRightsIds.every(id=>inventory.sources.some(source=>source.id===id))&&costRightsFieldsComplete],
+            ['operational_coverage_is_matrix_40',matrixIds.length===40&&metricValue('Operational coverage')===40&&operationalCoverageMentions.length>0&&operationalCoverageMentions.every(n=>n===40)],
+            ['coverage_metrics_reconcile',matrixIds.every(id=>inventoryIds.has(id))&&registryOnlyIds.length===23&&inventory.sources.length===matrixIds.length+registryOnlyIds.length&&matrixIds.length===producedEvidence+noUsableEvidence+blockedEvidence&&producedEvidence===12&&noUsableEvidence===15&&blockedEvidence===13&&metricValue('Produced evidence')===producedEvidence&&metricValue('No usable result')===noUsableEvidence&&metricValue('Blocked/unavailable')===blockedEvidence&&html.includes('63 versioned research-universe lanes = 40 operational-matrix sources + 23 registry-evaluated non-operational lanes')&&html.includes('40 = 12 produced evidence + 15 no usable result + 13 blocked/unavailable')],
+            ['applicable_sources_have_terminal_attempt',applicablePropertyRows.length>0&&applicableAttemptsTerminal],
             ['report_renders_all_63_sources',sourceRows.length===63&&new Set(sourceRowIds).size===63&&inventory.sources.every(s=>sourceRowIds.includes(s.id))],
             ['every_source_has_client_reason',reasonsComplete],
             ['funnel_captured_7890',funnelValue('Property reviews captured across all available dates')===7890],
@@ -115,6 +282,8 @@ jobs:
             ['no_misleading_combined_figure',!text.includes('14,598')&&!text.includes('14598')&&!text.includes('property + opentable outlet, combined')],
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
             ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
+            ['classifier_rules_file_exists_and_versioned',classifierRulesExists&&/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&/CR-V1-01[\s\S]*weddings and private events/i.test(classifierRules)&&/CR-V1-03[\s\S]*ambient, house, piped, or background music/i.test(classifierRules)&&/CR-V1-04[\s\S]*duplicates/i.test(classifierRules)&&/CR-V1-05[\s\S]*unclear entertainment mentions/i.test(classifierRules)&&/LLM precision-layer evidence criteria/i.test(classifierRules)],
+            ['classifier_rules_referenced_by_contract_and_report',sourceUniverseContract.includes('classifier-rules-v1.md')&&sourceUniverseContract.includes('entertainment-classifier-rules-v1')&&html.includes('href="classifier-rules-v1.md"')&&html.includes('data-classifier-rules-id="entertainment-classifier-rules-v1"')],
             ['current_window_count',brief.includes('**Corpus:** 299 captured reviews')&&html.includes('Reviews scored')&&html.includes('>299<')],
             ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>='2025-08-01')],
             ['no_house_audio_lead',!/(background music|house music|piped music|blasting music everywhere)/i.test(leadSection)],
@@ -133,7 +302,10 @@ jobs:
             ['jg_not_promoted_active',!/(j&g|j&amp;g)[^.]{0,160}(active|nightly|weekly|regular) live (music|entertainment)/i.test(html)],
             ['mowry_dj_not_promoted_current',!/mowry[^.]{0,220}(run on schedule|currently running|current program|active program|paid-for entertainment)/i.test(html)],
             ['mowry_marked_historical',/mowry[^.]{0,220}(previously offered|not currently active|historical)/i.test(html)],
-            ['thin_sample_not_overstated',!/measurable (property-wide )?gap|entertainment signal[^.]{0,160}(concentrat|missed return)|pattern (is |that )?concentrates|most guests[^.]{0,100}(never|do not|don't)[^.]{0,100}(encounter|notice|mention)/i.test(html)],
+            ['thin_entertainment_rating_suppressed',inScopeCount<10&&entertainmentMetric===thinSampleRatingText&&!/<span class="ml">Entertainment<\/span><span class="mv">\s*3\.75\s*<\/span>/i.test(html)&&!/(entertainment rating|entertainment score)[^<.]{0,50}3\.75|3\.75[^<.]{0,50}(entertainment rating|entertainment score)/i.test(html)],
+            ['thin_sample_not_overstated',inScopeCount<10&&!propertyWideGapLanguage.test(opportunitySection)&&/cannot measure the size|insufficient to quantify/i.test(opportunitySection)&&!/measurable (property-wide )?gap|entertainment signal[^.]{0,160}(concentrat|missed return)|pattern (is |that )?concentrates|most guests[^.]{0,100}(never|do not|don't)[^.]{0,100}(encounter|notice|mention)/i.test(html)],
+            ['operator_claims_sealed_from_guest_narrative',operatorSection.includes('Sealed evidence layer.')&&operatorNames.every(name=>!guestDeepDive.includes(name)&&!guestVoice.includes(name))&&!/(operator-stated|booking-record schedule|currently running|currently offered|active now)/i.test(guestDeepDive+' '+guestVoice)],
+            ['operator_only_and_historical_not_current',restrictedProgramRows.length>0&&restrictedProgramRows.every(row=>!currentProgramClaim.test(row.text))],
             ['entertainment_atmosphere_scope_labeled',html.includes('Broad Entertainment / atmosphere theme')],
             ['live_element_visibility_precise',/Afternoon Tea[^.]{0,140}live element[^.]{0,140}(essentially )?invisible/i.test(html)&&!/Afternoon Tea (is|remains) (essentially )?invisible/i.test(html)],
             ['public_schedule_is_saturday_only',/(dueling pianos|tavern)[^.]{0,180}saturday (evening|night)/i.test(html)&&!/friday and saturday (residency|evenings|nights)/i.test(html)],
@@ -141,9 +313,9 @@ jobs:
             ['no_client_ready_claim',!text.includes('approved for client delivery')]
           ];
           fs.writeFileSync(ws+'/analytical-break-test.json',JSON.stringify({
-            schemaVersion:'V2',generatedAt:new Date().toISOString(),frozenCorpus:true,
+            schemaVersion:'V3',generatedAt:new Date().toISOString(),runMode:request.runMode,frozenCorpus:isFrozenRun,
             analysisWindow:{from:process.env.WINDOW_FROM,to:process.env.WINDOW_TO},
-            reconciliation:{inventorySources:inventory.sources.length,matrixSources:matrixIds.length,matchedMatrixSources:matrixIds.filter(id=>inventoryIds.has(id)).length,registryOnlySources:registryOnlyIds.length,registryOnlyIds},
+            reconciliation:{versionedResearchUniverseEvaluated:inventory.sources.length,operationalCoverage:matrixIds.length,producedEvidence,noUsableEvidence,blockedEvidence,matchedMatrixSources:matrixIds.filter(id=>inventoryIds.has(id)).length,registryEvaluatedNonOperationalLanes:registryOnlyIds.length,registryOnlyIds},
             evidenceFunnel:{captured:funnelValue('Property reviews captured across all available dates'),dateEligible:funnelValue('Reviews inside the selected start/end dates'),broadTheme:funnelValue('Broad Entertainment / atmosphere theme'),entertainmentCandidates:funnelValue('Reviews mentioning entertainment in some form'),inScope:funnelValue('Verified resort-operated entertainment'),excluded:funnelValue('Excluded private-event or unrelated noise'),ambiguous:funnelValue('Ambiguous and held for human review')},
             checks:checks.map(([id,pass])=>({id,pass})),passed:checks.filter(([,pass])=>pass).length,total:checks.length
           },null,2)+'\n');
