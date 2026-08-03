@@ -31,10 +31,10 @@
     {
       "gateId": "property_source_attempts",
       "label": "Property Source Attempts (supported does not mean checked)",
-      "pass": false,
+      "pass": true,
       "material": true,
       "blocks": "export",
-      "detail": "1 unresolved property source attempt(s): reddit [needs_credentials]",
+      "detail": "every applicable property source has a terminal outcome; Reddit is permanently blocked_credentials with zero captured records and a client-readable reason",
       "overriddenBy": null
     },
     {
@@ -99,8 +99,17 @@
       "blocks": "export",
       "detail": "no forbidden terms in report",
       "overriddenBy": null
+    },
+    {
+      "gateId": "human_editorial_attestation",
+      "label": "Human Editorial Attestation",
+      "pass": false,
+      "material": true,
+      "blocks": "export",
+      "detail": "human_attestation: no human editorial attestation recorded; automated checks alone cannot establish client readiness",
+      "overriddenBy": null
     }
   ],
   "overrides": [],
-  "computedAt": "2026-08-01T18:11:56Z"
+  "computedAt": "2026-08-03T21:20:00.000Z"
 }
