@@ -54,7 +54,7 @@
     {
       "platformId": "reddit",
       "kind": "blocked",
-      "reason": "Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google index) instead."
+      "reason": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report."
     },
     {
       "platformId": "aerial_satellite",
