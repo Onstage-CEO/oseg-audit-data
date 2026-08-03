@@ -2,7 +2,7 @@
 
 > ⚠ **TIER B — INTERNAL, FULL DISCLOSURE. Never send to a client.** A client-facing teaser/deck is a separate, gated step.
 
-**Corpus:** 275 captured reviews (12 booking + 43 tripadvisor + 69 expedia + 151 google) · generated 2026-08-01T18:11:56Z
+**Analysis window:** 275 date-eligible reviews (12 booking + 43 tripadvisor + 69 expedia + 151 google) · generated 2026-08-01T18:11:56Z
 **Overall rating:** 3.94 / 5 · **20%** are ≤2★ (polarization signal)
 
 ## What guests talk about
