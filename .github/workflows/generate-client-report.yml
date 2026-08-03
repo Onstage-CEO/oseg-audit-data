@@ -28,6 +28,12 @@ on:
         description: 'Access-verified email of the requesting user'
         required: true
         type: string
+      publishMode:
+        description: 'artifact_only = downloadable preview, NOTHING committed (use for editorial review). commit = write the canonical package.'
+        required: false
+        type: choice
+        default: artifact_only
+        options: [artifact_only, commit]
       splitDate:
         description: 'Renovation/reopening date YYYY-MM-DD (optional): report shows a pre/post split'
         required: false
@@ -45,6 +51,11 @@ on:
         default: ''
   workflow_call:
     inputs:
+      publishMode:
+        description: 'commit (default for internal callers, preserves existing behavior) or artifact_only'
+        required: false
+        type: string
+        default: commit
       slug:
         required: true
         type: string
@@ -209,7 +220,45 @@ jobs:
             echo "::warning::Report for ${{ inputs.slug }} is a DRAFT ($STATUS) — NOT client-ready and not eligible for export until the blocking gates pass or an explicit logged override is recorded."
           fi
 
+      # PREVIEW-SAFE PATH. A regenerated package must be reviewable BEFORE it can
+      # replace the canonical one. artifact_only uploads the generated files as a
+      # downloadable workflow artifact and commits nothing, so an editorial gate
+      # can run against the real output without overwriting a client deliverable.
+      - name: Upload preview artifact (no commit)
+        if: ${{ inputs.publishMode != 'commit' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-report-preview-${{ inputs.slug }}
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            data-repo/data/clients/${{ inputs.slug }}/client-report.html
+            data-repo/data/clients/${{ inputs.slug }}/audit-brief.md
+            data-repo/data/clients/${{ inputs.slug }}/analytical-break-test.json
+            data-repo/data/clients/${{ inputs.slug }}/client-report-evidence-manifest.json
+            data-repo/data/clients/${{ inputs.slug }}/client-report-verification.json
+            data-repo/data/clients/${{ inputs.slug }}/report-readiness.json
+
+      - name: Record preview provenance
+        if: ${{ inputs.publishMode != 'commit' }}
+        working-directory: data-repo
+        env:
+          IN_SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          echo "### PREVIEW ONLY — nothing committed" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| artifact | sha256 |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          for f in client-report.html audit-brief.md analytical-break-test.json; do
+            t="data/clients/$IN_SLUG/$f"
+            [ -f "$t" ] && echo "| $f | $(sha256sum "$t" | cut -d' ' -f1) |" >> "$GITHUB_STEP_SUMMARY"
+          done
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Canonical package untouched. Human editorial review required before publishMode=commit." >> "$GITHUB_STEP_SUMMARY"
+
       - name: Commit (attributed) and push
+        if: ${{ inputs.publishMode == 'commit' }}
         working-directory: data-repo
         env:
           IN_SLUG: ${{ inputs.slug }}
