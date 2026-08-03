@@ -28,7 +28,7 @@
         "skipped: tripadvisor (not_found) — Not present in the captured corpus.",
         "skipped: booking (not_found) — Not present in the captured corpus.",
         "skipped: expedia (not_found) — Not present in the captured corpus.",
-        "skipped: reddit (blocked) — Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google...",
+        "skipped: reddit (blocked) — Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence ...",
         "skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captured-revie..."
       ]
     },
@@ -148,7 +148,7 @@
       {
         "platformId": "reddit",
         "kind": "blocked",
-        "reason": "Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google index) instead."
+        "reason": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report."
       },
       {
         "platformId": "aerial_satellite",
@@ -192,7 +192,7 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-08-03T18:27:09.252Z",
+    "now": "2026-08-03T21:29:48.593Z",
     "liveVerifiedTotal": 0,
     "dated": 0,
     "stale": 0,
@@ -280,5 +280,5 @@
       "unmatched": 0
     }
   },
-  "timestamp": "2026-08-03T18:27:09.266Z"
+  "timestamp": "2026-08-03T21:29:48.607Z"
 }
