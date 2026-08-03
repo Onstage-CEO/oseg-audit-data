@@ -2,7 +2,6 @@
 _Generated 2026-08-01 · matrix V2 · capability V2 · attempts V1._
 
 ## ⛔ Coverage blockers (report may not imply completeness while these stand)
-- The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.
 
 Outlet-level Google capture implemented: **yes**
 
@@ -28,7 +27,7 @@ _12/23 engine-supported sources captured_
 | Instagram mentions | ☑️ checked, no data | checked_no_data | complete | yes | yes | no | 0 | 0 | yes | high | Checked successfully; the source returned no usable data. Ran the instagram capture against a property keyword search; no public posts were returned. |
 | TikTok mentions | ✅ captured complete | captured_complete | complete | yes | yes | yes | 30 | 30 | yes | high | Captured with completeness proven for the recorded attempt. Captured via apify social (keyword). |
 | YouTube videos + comments | ✅ captured complete | captured_complete | complete | yes | yes | yes | 78 | 78 | yes | high | Captured with completeness proven for the recorded attempt. Captured via retained_official_api_corpus_reconciliation. |
-| Reddit / forums | 🔑 needs credentials | needs_credentials | unknown | no | yes | no | ? | 6 | yes | low | Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET. |
+| Reddit / forums | 🔒 permanently blocked: credentials | blocked_credentials | unknown | yes | yes | no | ? | 0 | no | high | Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report. |
 | Blogs / travel articles | ✅ captured complete | captured_complete | complete | yes | yes | yes | 10 | 10 | yes | high | Captured with completeness proven for the recorded attempt. Captured via bounded_public_web_discovery. |
 | Property social profile / hashtag resolution | 🔗 identity resolved (no review corpus) | identity_resolved | complete | yes | yes | no | ? | 0 | no | low | SUPPLEMENTAL (never rating math). Exact public source identity resolved; no guest-review corpus was captured. Resolved 1 profile(s) and 0 property-specific hashtag(s); no social posts or comments were captured. |
 | Resort-owned pages | ✅ captured complete | captured_complete | complete | yes | yes | yes | 7 | 7 | no | high | Captured with completeness proven for the recorded attempt. Captured via direct_public_fetch. |
