@@ -1,15 +1,9 @@
 name: phoenician-frozen-analytical-preview
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/phoenician-frozen-analytical-preview.yml'
-      - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/analytical-preview-request.json'
-      - 'data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31/analytical-preview-request.schema.json'
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: phoenician-frozen-analytical-preview
@@ -17,7 +11,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: ae9c5e43a221a682a319ca5b45596cf6d16ddf56
+  ENGINE_REF: 0a77d2b6a4ddfa43f3a48469ae8297585ebced94
   WINDOW_FROM: '2025-07-31'
   WINDOW_TO: '2026-07-31'
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
@@ -179,6 +173,7 @@ jobs:
           const liveFunnelHashValid=isFrozenRun||(belongsToLiveRequest(liveFunnel)&&liveFunnel?.runMode==='live'&&liveFunnel.hashAlgorithm==='SHA-256'&&liveFunnel.canonicalization==='JSON.stringify(finalEvidenceFunnel) with V1 key order'&&liveFunnel.finalEvidenceFunnel&&/^[a-f0-9]{64}$/.test(liveFunnel.sha256||'')&&liveFunnel.sha256===sha256(JSON.stringify(liveFunnel.finalEvidenceFunnel)));
           const brief=fs.readFileSync(ws+'/audit-brief.md','utf8');
           const html=fs.readFileSync(ws+'/client-report.html','utf8');
+          const evidenceManifest=JSON.parse(fs.readFileSync(ws+'/client-report-evidence-manifest.json','utf8'));
           const classifierRulesPath=ws+'/classifier-rules-v1.md';
           const classifierRulesExists=fs.existsSync(classifierRulesPath);
           const classifierRules=classifierRulesExists?fs.readFileSync(classifierRulesPath,'utf8'):'';
@@ -242,6 +237,15 @@ jobs:
             const match=html.match(new RegExp('<tr><td>'+label+'</td><td class="num">([0-9,]+)</td>','i'));
             return match?Number(match[1].replace(/,/g,'')):null;
           };
+          const headlineDistinct=Number(((html.match(/<span class="ml">Reviews scored<\/span><span class="mv">[0-9,]+<\/span><span class="ms">[\s\S]*?of ([0-9,]+) distinct reviews<\/span>/i)||[])[1]||'').replace(/,/g,''))||null;
+          const selectedWindow=evidenceManifest.analysisWindow||{};
+          const outletQuotes=[...html.matchAll(/<blockquote class="strength" data-evidence-layer="outlet" data-review-date="([^"]+)">([\s\S]*?)<\/blockquote>/g)].map(match=>({date:match[1],html:match[2]}));
+          const outletQuoteDatesInsideWindow=typeof selectedWindow.from==='string'&&typeof selectedWindow.to==='string'&&outletQuotes.every(quote=>/^\d{4}-\d{2}-\d{2}$/.test(quote.date)&&quote.date>=selectedWindow.from&&quote.date<=selectedWindow.to);
+          const outletQuoteLinksValid=outletQuotes.every(quote=>/<a href="https?:\/\/[^"\s]+"[^>]*>view source<\/a>/i.test(quote.html));
+          const sourceStatuses=new Map(sourceRows.map(row=>[row.id,(row.cells[1]||'').toLowerCase().replace(/\s+/g,'_')]));
+          const openWebEvidence=[...html.matchAll(/<blockquote class="watch-item" data-evidence-layer="open-web"(?: data-source-id="([^"]+)")?>([\s\S]*?)<\/blockquote>/g)].map(match=>({sourceId:match[1]||null,html:match[2]}));
+          const blockedSourceEvidenceAbsent=openWebEvidence.every(item=>!item.sourceId||sourceStatuses.get(item.sourceId)==='captured');
+          const redditExcerptAbsent=openWebEvidence.every(item=>item.sourceId!=='reddit'&&!/reddit\.com/i.test(item.html));
           const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
           const leadDates=[...leadSection.matchAll(/\\b(20\\d{2}-\\d{2}-\\d{2})\\b/g)].map(m=>m[1]);
           const excludedSection=(brief.split('## Excluded')[1]||'').split('---')[0]||'';
@@ -276,20 +280,27 @@ jobs:
             ['applicable_sources_have_terminal_attempt',applicablePropertyRows.length>0&&applicableAttemptsTerminal],
             ['report_renders_all_63_sources',sourceRows.length===63&&new Set(sourceRowIds).size===63&&inventory.sources.every(s=>sourceRowIds.includes(s.id))],
             ['every_source_has_client_reason',reasonsComplete],
-            ['funnel_captured_7890',funnelValue('Property reviews captured across all available dates')===7890],
-            ['funnel_date_eligible_299',funnelValue('Reviews inside the selected start/end dates')===299],
-            ['funnel_broad_theme_37',funnelValue('Broad Entertainment / atmosphere theme')===37],
-            ['funnel_candidates_15',funnelValue('Reviews mentioning entertainment in some form')===15],
-            ['funnel_partitions_reconcile',funnelValue('Verified resort-operated entertainment')+funnelValue('Excluded private-event or unrelated noise')+funnelValue('Ambiguous and held for human review')===funnelValue('Reviews mentioning entertainment in some form')],
+            ['funnel_captured_7890',funnelValue('Raw review records captured across all available dates')===7890],
+            ['funnel_duplicates_96',funnelValue('Duplicate captured copies consolidated')===96],
+            ['funnel_normalized_distinct_7794',funnelValue('Normalized distinct reviews')===7794],
+            ['funnel_date_eligible_275',funnelValue('Reviews inside the selected start/end dates')===275],
+            ['funnel_broad_theme_31',funnelValue('Broad Entertainment / atmosphere theme')===31],
+            ['funnel_candidates_13',funnelValue('Reviews mentioning entertainment in some form')===13],
+            ['funnel_partition_2_10_1',funnelValue('Verified resort-operated entertainment')===2&&funnelValue('Excluded private-event or unrelated noise')===10&&funnelValue('Ambiguous and held for human review')===1&&funnelValue('Verified resort-operated entertainment')+funnelValue('Excluded private-event or unrelated noise')+funnelValue('Ambiguous and held for human review')===funnelValue('Reviews mentioning entertainment in some form')],
+            ['headline_denominator_equals_normalized_distinct',headlineDistinct===funnelValue('Normalized distinct reviews')],
+            ['outlet_quote_dates_inside_selected_window',outletQuoteDatesInsideWindow],
+            ['outlet_quote_source_urls_valid',outletQuoteLinksValid],
+            ['blocked_or_credential_source_evidence_absent',blockedSourceEvidenceAbsent],
+            ['reddit_excerpt_absent_when_lane_not_captured',redditExcerptAbsent&&sourceStatuses.get('reddit')!=='captured'],
             ['no_misleading_combined_figure',!text.includes('14,598')&&!text.includes('14598')&&!text.includes('property + opentable outlet, combined')],
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
             ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
             ['classifier_rules_file_exists_and_versioned',classifierRulesExists&&/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&/CR-V1-01[\s\S]*weddings and private events/i.test(classifierRules)&&/CR-V1-03[\s\S]*ambient, house, piped, or background music/i.test(classifierRules)&&/CR-V1-04[\s\S]*duplicates/i.test(classifierRules)&&/CR-V1-05[\s\S]*unclear entertainment mentions/i.test(classifierRules)&&/LLM precision-layer evidence criteria/i.test(classifierRules)],
             ['classifier_rules_referenced_by_contract_and_report',sourceUniverseContract.includes('classifier-rules-v1.md')&&sourceUniverseContract.includes('entertainment-classifier-rules-v1')&&html.includes('href="classifier-rules-v1.md"')&&html.includes('data-classifier-rules-id="entertainment-classifier-rules-v1"')],
-            ['current_window_count',brief.includes('**Corpus:** 299 captured reviews')&&html.includes('Reviews scored')&&html.includes('>299<')],
-            ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>='2025-08-01')],
+            ['current_window_count',brief.includes('**Corpus:** 275 captured reviews')&&html.includes('Reviews scored')&&html.includes('>275<')],
+            ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>=selectedWindow.from&&d<=selectedWindow.to)],
             ['no_house_audio_lead',!/(background music|house music|piped music|blasting music everywhere)/i.test(leadSection)],
-            ['rendered_leads_equal_in_scope',inScopeCount===4&&renderedLeadCount===inScopeCount],
+            ['rendered_leads_equal_in_scope',inScopeCount===2&&renderedLeadCount===inScopeCount],
             ['every_lead_contains_rendered_entertainment_evidence',renderedLeadCount>0&&renderedLeadCount===inScopeCount&&leadQuotes.every(q=>/(music|movie night|foam party|dancer|activity|live entertainment|dueling piano|pianist|dj\\b|band\\b|singer|performer|show\\b)/i.test(q))],
             ['excluded_examples_name_event',excludedQuotes.every(q=>/(wedding|conference|convention|ballroom|banquet|gala|corporate event|private event|event lawn|reception)/i.test(q))],
             ['opentable_total',text.includes('6,708')||text.includes('6708')],
@@ -319,25 +330,26 @@ jobs:
             schemaVersion:'V3',generatedAt:new Date().toISOString(),runMode:request.runMode,frozenCorpus:isFrozenRun,
             analysisWindow:{from:process.env.WINDOW_FROM,to:process.env.WINDOW_TO},
             reconciliation:{versionedResearchUniverseEvaluated:inventory.sources.length,operationalCoverage:matrixIds.length,producedEvidence,noUsableEvidence,blockedEvidence,matchedMatrixSources:matrixIds.filter(id=>inventoryIds.has(id)).length,registryEvaluatedNonOperationalLanes:registryOnlyIds.length,registryOnlyIds},
-            evidenceFunnel:{captured:funnelValue('Property reviews captured across all available dates'),dateEligible:funnelValue('Reviews inside the selected start/end dates'),broadTheme:funnelValue('Broad Entertainment / atmosphere theme'),entertainmentCandidates:funnelValue('Reviews mentioning entertainment in some form'),inScope:funnelValue('Verified resort-operated entertainment'),excluded:funnelValue('Excluded private-event or unrelated noise'),ambiguous:funnelValue('Ambiguous and held for human review')},
+            evidenceFunnel:{captured:funnelValue('Raw review records captured across all available dates'),duplicateCopies:funnelValue('Duplicate captured copies consolidated'),normalizedDistinct:funnelValue('Normalized distinct reviews'),dateEligible:funnelValue('Reviews inside the selected start/end dates'),broadTheme:funnelValue('Broad Entertainment / atmosphere theme'),entertainmentCandidates:funnelValue('Reviews mentioning entertainment in some form'),inScope:funnelValue('Verified resort-operated entertainment'),excluded:funnelValue('Excluded private-event or unrelated noise'),ambiguous:funnelValue('Ambiguous and held for human review')},
             checks:checks.map(([id,pass])=>({id,pass})),passed:checks.filter(([,pass])=>pass).length,total:checks.length
           },null,2)+'\n');
           const failed=checks.filter(([,pass])=>!pass).map(([id])=>id);
           if(failed.length) throw new Error('Phoenician analytical break test failed: '+failed.join(', '));
           NODE
-      - name: Commit internal analytical artifacts
-        working-directory: data-repo
-        run: |
-          set -euo pipefail
-          git add "data/clients/$SLUG"
-          git config user.name "oseg-audit-bot"
-          git config user.email "actions@onstage.biz"
-          git commit -m "analyze frozen Phoenician corpus and build internal preview"
-          for attempt in 1 2 3; do
-            git push && exit 0
-            git pull --rebase --autostash
-          done
-          exit 1
+      - name: Upload internal analytical preview (no commit)
+        uses: actions/upload-artifact@v4
+        with:
+          name: phoenician-frozen-analytical-preview
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            data-repo/data/clients/${{ env.SLUG }}/client-report.html
+            data-repo/data/clients/${{ env.SLUG }}/audit-brief.md
+            data-repo/data/clients/${{ env.SLUG }}/analytical-break-test.json
+            data-repo/data/clients/${{ env.SLUG }}/client-report-evidence-manifest.json
+            data-repo/data/clients/${{ env.SLUG }}/client-report-verification.json
+            data-repo/data/clients/${{ env.SLUG }}/report-readiness.json
+            data-repo/data/clients/${{ env.SLUG }}/classifier-rules-v1.md
       - name: Commit frozen-generation diagnostics on failure
         if: failure()
         working-directory: data-repo
