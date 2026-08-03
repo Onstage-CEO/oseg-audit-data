@@ -81,7 +81,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: ae9c5e43a221a682a319ca5b45596cf6d16ddf56
+  ENGINE_REF: 0a77d2b6a4ddfa43f3a48469ae8297585ebced94
 
 permissions:
   contents: write
@@ -211,6 +211,7 @@ jobs:
           const ws=process.env.WS;
           const html=fs.readFileSync(ws+'/client-report.html','utf8');
           const brief=fs.readFileSync(ws+'/audit-brief.md','utf8');
+          const evidenceManifest=JSON.parse(fs.readFileSync(ws+'/client-report-evidence-manifest.json','utf8'));
           const path=ws+'/analytical-break-test.json';
           const prior=fs.existsSync(path)?JSON.parse(fs.readFileSync(path,'utf8')):{schemaVersion:'V3',checks:[]};
           const value=(label)=>{
@@ -230,6 +231,18 @@ jobs:
           const inScope=value('Verified resort-operated entertainment');
           const excluded=value('Excluded private-event or unrelated noise');
           const ambiguous=value('Ambiguous and held for human review');
+          const headlineDistinct=Number(((html.match(/<span class="ml">Reviews scored<\/span><span class="mv">[0-9,]+<\/span><span class="ms">[\s\S]*?of ([0-9,]+) distinct reviews<\/span>/i)||[])[1]||'').replace(/,/g,''))||null;
+          const selectedWindow=evidenceManifest.analysisWindow||{};
+          const outletQuotes=[...html.matchAll(/<blockquote class="strength" data-evidence-layer="outlet" data-review-date="([^"]+)">([\s\S]*?)<\/blockquote>/g)].map(match=>({date:match[1],html:match[2]}));
+          const outletQuoteDatesInsideWindow=typeof selectedWindow.from==='string'&&typeof selectedWindow.to==='string'&&outletQuotes.every(quote=>/^\d{4}-\d{2}-\d{2}$/.test(quote.date)&&quote.date>=selectedWindow.from&&quote.date<=selectedWindow.to);
+          const outletQuoteLinksValid=outletQuotes.every(quote=>/<a href="https?:\/\/[^"\s]+"[^>]*>view source<\/a>/i.test(quote.html));
+          const sourceStatuses=new Map([...html.matchAll(/<tr data-source-id="([^"]+)">([\s\S]*?)<\/tr>/g)].map(match=>{
+            const cells=[...match[2].matchAll(/<td(?: [^>]*)?>([\s\S]*?)<\/td>/g)].map(cell=>cell[1].replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().toLowerCase().replace(/\s+/g,'_'));
+            return [match[1],cells[1]||''];
+          }));
+          const openWebEvidence=[...html.matchAll(/<blockquote class="watch-item" data-evidence-layer="open-web"(?: data-source-id="([^"]+)")?>([\s\S]*?)<\/blockquote>/g)].map(match=>({sourceId:match[1]||null,html:match[2]}));
+          const blockedSourceEvidenceAbsent=openWebEvidence.every(item=>!item.sourceId||sourceStatuses.get(item.sourceId)==='captured');
+          const redditExcerptAbsent=openWebEvidence.every(item=>item.sourceId!=='reddit'&&!/reddit\.com/i.test(item.html));
           const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
           const renderedLeads=leadSection.split('\n> ').slice(1).length;
           const current=[
@@ -240,6 +253,11 @@ jobs:
             ['funnel_broad_theme_31',broad===31],
             ['funnel_candidates_13',candidates===13],
             ['funnel_partition_2_10_1',inScope===2&&excluded===10&&ambiguous===1&&inScope+excluded+ambiguous===candidates],
+            ['headline_denominator_equals_normalized_distinct',headlineDistinct===distinct],
+            ['outlet_quote_dates_inside_selected_window',outletQuoteDatesInsideWindow],
+            ['outlet_quote_source_urls_valid',outletQuoteLinksValid],
+            ['blocked_or_credential_source_evidence_absent',blockedSourceEvidenceAbsent],
+            ['reddit_excerpt_absent_when_lane_not_captured',redditExcerptAbsent&&sourceStatuses.get('reddit')!=='captured'],
             ['brief_matches_generated_funnel',new RegExp('Of 13 entertainment-mention reviews: \\*\\*2 in OSEG scope\\*\\*[^\\n]+10 excluded[^\\n]+1 ambiguous','i').test(brief)],
             ['rendered_leads_equal_verified_count',renderedLeads===inScope&&renderedLeads===2],
             ['tavern_live_music_recovered',/The Tavern in particular was lively and enjoyable, with good live music and excellent service\./i.test(leadSection)],
@@ -305,6 +323,7 @@ jobs:
             data-repo/data/clients/${{ inputs.slug }}/client-report-evidence-manifest.json
             data-repo/data/clients/${{ inputs.slug }}/client-report-verification.json
             data-repo/data/clients/${{ inputs.slug }}/report-readiness.json
+            data-repo/data/clients/${{ inputs.slug }}/classifier-rules-v1.md
 
       - name: Record preview provenance
         if: ${{ inputs.publishMode != 'commit' }}
