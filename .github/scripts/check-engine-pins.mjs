@@ -34,11 +34,19 @@ export function engineCheckoutBlocks(text) {
   return checkoutBlocks(text).filter((block) => block.repository != null);
 }
 
+// The checker resolves ${{ env.X }} by scanning declarations; GitHub resolves it
+// by SCOPE. A second declaration in a later step's env: would silently win here
+// while GitHub used a different one. Rather than re-implement scope resolution
+// with regexes, record every declaration and fail closed on ambiguity.
 function envDeclarations(text) {
   const values = new Map();
+  const duplicates = new Set();
   for (const match of text.matchAll(/^\s*([A-Z][A-Z0-9_]*):\s*([^\s#]+)\s*$/gm)) {
-    values.set(match[1], match[2]);
+    const [, name, value] = match;
+    if (values.has(name) && values.get(name) !== value) duplicates.add(name);
+    values.set(name, value);
   }
+  values.__duplicates = duplicates;
   return values;
 }
 
@@ -58,6 +66,21 @@ export function checkWorkflowText(filename, text, approvedRepo, approvedRef, iso
   const expectedRef = isolatedRefs[filename] ?? approvedRef;
   const isolated = Object.hasOwn(isolatedRefs, filename);
   const failures = [];
+
+  // Fail closed when a variable this check depends on is declared more than once
+  // with conflicting values: we cannot prove which one GitHub will use.
+  for (const name of declarations.__duplicates ?? []) {
+    if (name === 'ENGINE_REF' || name === 'ENGINE_REPO') {
+      failures.push(filename + ': ' + name + ' is declared more than once with different values; scope is ambiguous, refusing to guess');
+    }
+  }
+
+  // actions/checkout is not the only way to fetch code. A run: block that clones
+  // an external repository bypasses this check entirely.
+  for (const match of text.matchAll(/^\s*[^#\n]*\b(?:git\s+clone|gh\s+repo\s+clone|degit)\b[^\n]*/gm)) {
+    failures.push(filename + ': fetches code outside actions/checkout (' + match[0].trim().slice(0, 80) + '); the engine pin cannot be verified for it');
+  }
+
   if (allExternalCheckouts.length !== 1) {
     failures.push(filename + ': expected exactly one external repository checkout, found ' + allExternalCheckouts.length);
   }

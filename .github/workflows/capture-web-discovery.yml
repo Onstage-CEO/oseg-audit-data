@@ -38,11 +38,19 @@ jobs:
       - name: Validate actor email
         env:
           ACTOR_EMAIL: ${{ inputs.actorEmail }}
+          GH_ACTOR: ${{ github.actor }}
         run: |
           set -euo pipefail
           case "$ACTOR_EMAIL" in
             joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
             *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+          # actorEmail is a self-attested dispatch INPUT: the case above proves only
+          # that the caller typed an allowlisted string. github.actor is the identity
+          # GitHub authenticates, so gate on that too.
+          case "$GH_ACTOR" in
+            Onstage-CEO|oseg-automation[bot]) echo "dispatching actor $GH_ACTOR permitted" ;;
+            *) echo "::error::actor $GH_ACTOR is not permitted to dispatch this workflow"; exit 1 ;;
           esac
 
       - name: Checkout data repo
