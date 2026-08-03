@@ -249,7 +249,18 @@ jobs:
           const obsolete=/^funnel_|^current_window_count$|^semantic_classifier$|^rendered_leads_equal_in_scope$/;
           const checks=[...(prior.checks||[]).filter(c=>!obsolete.test(c.id)&&!replaced.has(c.id)),...current];
           const failed=checks.filter(c=>!c.pass);
-          fs.writeFileSync(path,JSON.stringify({...prior,generatedAt:new Date().toISOString(),checks,total:checks.length,passed:checks.length-failed.length,allPass:failed.length===0},null,2)+'\n');
+          const evidenceFunnel={
+            captured,
+            duplicateCopies:duplicates,
+            normalizedDistinct:distinct,
+            dateEligible,
+            broadTheme:broad,
+            entertainmentCandidates:candidates,
+            inScope,
+            excluded,
+            ambiguous
+          };
+          fs.writeFileSync(path,JSON.stringify({...prior,evidenceFunnel,generatedAt:new Date().toISOString(),checks,total:checks.length,passed:checks.length-failed.length,allPass:failed.length===0},null,2)+'\n');
           if(failed.length) {
             console.error('Generated preview break-test failed:',failed.map(c=>c.id).join(', '));
             process.exit(1);
