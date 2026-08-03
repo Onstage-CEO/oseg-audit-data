@@ -201,6 +201,60 @@ jobs:
           cat /tmp/cr.err >&2
           grep -E 'wrote client-report' /tmp/cr.err | tail -1 | sed 's/^\[generate-client-report\] /client report: /' >> "$GITHUB_STEP_SUMMARY" || true
 
+      - name: Recompute preview funnel break-test from generated artifacts
+        env:
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const ws=process.env.WS;
+          const html=fs.readFileSync(ws+'/client-report.html','utf8');
+          const brief=fs.readFileSync(ws+'/audit-brief.md','utf8');
+          const path=ws+'/analytical-break-test.json';
+          const prior=fs.existsSync(path)?JSON.parse(fs.readFileSync(path,'utf8')):{schemaVersion:'V3',checks:[]};
+          const value=(label)=>{
+            const escaped=label.replace(/[.*+?^${}()|[\]\\]/g,'\\      - name: Surface report readiness (does NOT block the draft)
+');
+            const m=html.match(new RegExp('<tr><td>'+escaped+'</td><td class="num">([0-9,]+)</td>','i'));
+            return m?Number(m[1].replace(/,/g,'')):null;
+          };
+          const captured=value('Raw review records captured across all available dates');
+          const duplicates=value('Duplicate captured copies consolidated');
+          const distinct=value('Normalized distinct reviews');
+          const dateEligible=value('Reviews inside the selected start/end dates');
+          const broad=value('Broad Entertainment / atmosphere theme');
+          const candidates=value('Reviews mentioning entertainment in some form');
+          const inScope=value('Verified resort-operated entertainment');
+          const excluded=value('Excluded private-event or unrelated noise');
+          const ambiguous=value('Ambiguous and held for human review');
+          const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
+          const renderedLeads=leadSection.split('\n> ').slice(1).length;
+          const current=[
+            ['funnel_captured_7890',captured===7890],
+            ['funnel_duplicates_96',duplicates===96],
+            ['funnel_normalized_distinct_7794',distinct===7794],
+            ['funnel_date_eligible_275',dateEligible===275],
+            ['funnel_broad_theme_31',broad===31],
+            ['funnel_candidates_13',candidates===13],
+            ['funnel_partition_2_10_1',inScope===2&&excluded===10&&ambiguous===1&&inScope+excluded+ambiguous===candidates],
+            ['brief_matches_generated_funnel',new RegExp('Of 13 entertainment-mention reviews: \\*\\*2 in OSEG scope\\*\\*[^\\n]+10 excluded[^\\n]+1 ambiguous','i').test(brief)],
+            ['rendered_leads_equal_verified_count',renderedLeads===inScope&&renderedLeads===2],
+            ['tavern_live_music_recovered',/The Tavern in particular was lively and enjoyable, with good live music and excellent service\./i.test(leadSection)],
+            ['ambient_and_amenity_false_positives_absent',!/multiple sources of music creating a cacophony|they had a slide, and a activity list/i.test(leadSection)]
+          ].map(([id,pass])=>({id,pass}));
+          const replaced=new Set(current.map(c=>c.id));
+          const obsolete=/^funnel_|^current_window_count$|^semantic_classifier$|^rendered_leads_equal_in_scope$/;
+          const checks=[...(prior.checks||[]).filter(c=>!obsolete.test(c.id)&&!replaced.has(c.id)),...current];
+          const failed=checks.filter(c=>!c.pass);
+          fs.writeFileSync(path,JSON.stringify({...prior,generatedAt:new Date().toISOString(),checks,total:checks.length,passed:checks.length-failed.length,allPass:failed.length===0},null,2)+'\n');
+          if(failed.length) {
+            console.error('Generated preview break-test failed:',failed.map(c=>c.id).join(', '));
+            process.exit(1);
+          }
+          console.log('Generated preview funnel break-test passed:',current.length+'/'+current.length);
+          NODE
+
       - name: Surface report readiness (does NOT block the draft)
         working-directory: engine
         env:
