@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-01T19:02:00.000Z",
+  "generatedAt": "2026-08-03T21:20:00.000Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": {
     "yelp": {
@@ -116,6 +116,17 @@
       "recordsAccepted": 10,
       "attemptedAt": "2026-08-01T18:45:00.000Z",
       "completeness": "complete",
+      "truncated": false,
+      "retryable": false
+    },
+    "reddit": {
+      "result": "blocked_credentials",
+      "mechanism": "official_api",
+      "message": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report.",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "attemptedAt": "2026-08-03T21:20:00.000Z",
+      "completeness": "unknown",
       "truncated": false,
       "retryable": false
     }
