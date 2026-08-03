@@ -10,12 +10,13 @@
       "provider": "aggregator",
       "attemptedAt": "2026-08-01T18:11:56.000Z",
       "result": "captured_complete",
-      "recordsReturned": 7139,
-      "recordsAccepted": 7139,
+      "recordsReturned": 4012,
+      "recordsAccepted": 4012,
       "completeness": "complete",
       "truncated": false,
       "retryable": false,
-      "message": "Apify google: captured 4012 new, skipped 0 dup(s).; 1446 rating-only (no text)"
+      "message": "Apify google: captured 4012 new, skipped 0 dup(s).; 1446 rating-only (no text)",
+      "availableUniverse": 7139
     },
     {
       "source": "tripadvisor",
