@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V3",
   "engineRepository": "Onstage-CEO/oseg-resort-audit",
-  "approvedEngineRef": "8533b889ca833c6c3038a56587501aa8b9950d65",
+  "approvedEngineRef": "eb1bbb0af3274b120c8e3328f0958866f0df098e",
   "isolatedCleanRoomEngineRefs": {
     "clean-room-capture-the-scott.yml": "79df0ad7a9928590bcc2e1ea3771ae52bbeb85a6",
     "clean-room-recover-the-scott-expedia.yml": "6d07fec737cf9ef374e588486f1ae1127f02007e",
