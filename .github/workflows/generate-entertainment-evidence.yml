@@ -48,7 +48,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 393c97c1840fff4fce496f1e2bb26c0f364dfb62
+  ENGINE_REF: ab97013b3bf20b8fe4d5b120a4fecac1a93852f5
 
 permissions:
   contents: write
@@ -61,11 +61,19 @@ jobs:
       - name: Validate actor email
         env:
           ACTOR_EMAIL: ${{ inputs.actorEmail }}
+          GH_ACTOR: ${{ github.actor }}
         run: |
           set -euo pipefail
           case "$ACTOR_EMAIL" in
             joe@onstage.biz|michele@onstage.biz|ashley@onstage.biz) echo "actor ok" ;;
             *) echo "::error::actorEmail is not on the Access allowlist"; exit 1 ;;
+          esac
+          # actorEmail is a self-attested dispatch INPUT: the case above proves only
+          # that the caller typed an allowlisted string. github.actor is the identity
+          # GitHub authenticates, so gate on that too.
+          case "$GH_ACTOR" in
+            Onstage-CEO|oseg-automation[bot]) echo "dispatching actor $GH_ACTOR permitted" ;;
+            *) echo "::error::actor $GH_ACTOR is not permitted to dispatch this workflow"; exit 1 ;;
           esac
 
       - name: Checkout data repo
