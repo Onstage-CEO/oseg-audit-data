@@ -5,8 +5,8 @@
 [client-report] open-web finding dropped (also names another lodging brand (luxury collection), so the sentiment cannot be attributed to this property): https://www.tiktok.com/@luxestaydeals/video/7656916188668120334
 [client-report] open-web finding dropped (also names another lodging brand (marriott, luxury collection), so the sentiment cannot be attributed to this property): https://www.tiktok.com/@teri_bowen/video/7618240995649522974
 [client-report] open-web finding dropped (empty text): https://www.facebook.com/PhoenicianScottsdale/
-[client-report] programming reconcile refresh: "Dueling Pianos at The Phoenician Tavern" strong/praised -> strong/grounded (176/957 @ 4.38★)
-[client-report] programming reconcile downgrade: "Mowry & Cotton Weekend Brunch" medium/noticed -> weak/invisible (15/2825 @ 3.6★)
+[client-report] programming reconcile refresh: "Dueling Pianos at The Phoenician Tavern" strong/praised -> strong/grounded (92/534 @ 4.36★)
+[client-report] programming reconcile downgrade: "Mowry & Cotton Weekend Brunch" medium/noticed -> weak/invisible (9/2081 @ 3.56★)
 [generate-client-report] wrote client-report.html for "The Phoenician Resort and Spa" (275 reviews, overall 3.94/5, entertainment 5/5)
 Report readiness: EXPORT_BLOCKED (computed 2026-08-01T18:11:56Z)
   [PASS] report_generated (material, blocks client_ready) — client-report.html present
