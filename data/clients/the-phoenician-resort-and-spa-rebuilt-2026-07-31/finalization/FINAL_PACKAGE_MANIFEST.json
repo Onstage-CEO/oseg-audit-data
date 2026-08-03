@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "V1",
+  "state": "awaiting_human_editorial_attestation",
+  "property": "The Phoenician Resort and Spa",
+  "analysisWindow": {
+    "from": "2025-07-31",
+    "to": "2026-07-31"
+  },
+  "sourceArtifact": {
+    "workflowRun": 30841189797,
+    "artifactId": 8866854383,
+    "zipSha256": "3e1c9c2d67c8b13d9d8732fd26bc4de07cd4d694e5f637b8937ab53880ed4dd1"
+  },
+  "engineSha": "45362e75b7ebed7dcc264c8dca0f1591ceef026a",
+  "dataBaselineSha": "e5900688fbe0d2bfbeee29466da8dc39f492c9b9",
+  "canonicalPackageReplaced": false,
+  "package": {
+    "filename": "phoenician-attested-final-review-package-2026-08-03.zip",
+    "sha256": "f3643bd33045ce4b20bc4da30ab257f4dd67bad0043f4b1f625bc37023fc81c3",
+    "files": [
+      {
+        "path": "DOWNSTREAM_READINESS.md",
+        "sha256": "f02a5dad3461c03007900d476b63df61fe44e8c81740fcbf0feccc49f749cd22"
+      },
+      {
+        "path": "HUMAN_EDITORIAL_ATTESTATION_CHECKLIST.md",
+        "sha256": "2db82afa9dfde731ef47082edc2fd5f240c60a5a963aeb217d1517f1b87ac7fc"
+      },
+      {
+        "path": "REDDIT_RESOLUTION_PLAN.md",
+        "sha256": "49dce6ee28cff8f4b06ea22217cc409b266adef2849989d57a2c1500310dc436"
+      },
+      {
+        "path": "analytical-break-test.json",
+        "sha256": "c622e2b87fbbeb4986ed8bb25261c82e292dceca086217a0ac9f4997810bf434"
+      },
+      {
+        "path": "audit-brief.md",
+        "sha256": "b2f0cee78a7c858fec81a1e06e1348c55fa8d0beb4df0dc36f9276c29cddd26d"
+      },
+      {
+        "path": "classifier-rules-v1.md",
+        "sha256": "7a54d864d2d013ae610f4819ef0793f516f77a88c580701d540c89095ab09b31"
+      },
+      {
+        "path": "client-report-evidence-manifest.json",
+        "sha256": "3ff87162221ae8c0cfcfe2352a71d0b557be6c54f11e958ea9603952887800b2"
+      },
+      {
+        "path": "client-report-verification.json",
+        "sha256": "7a255711b7cbf9d34c2302f1f7ceb84913d95f6dc4ec9a48c81da59e47cccd26"
+      },
+      {
+        "path": "client-report.html",
+        "sha256": "5f8eb0ca021bf39a148e17e57bd67c7327f15e2480cc49836153753bbad34c91"
+      },
+      {
+        "path": "phoenician-three-year-comparison.html",
+        "sha256": "e0cef77f87d827daa8bb7a9b705b5bcd8d1066b29a3830615cede85e38000390",
+        "decisionGrade": false,
+        "verifiedSample": 4,
+        "minimumRatingSample": 10
+      },
+      {
+        "path": "report-readiness.json",
+        "sha256": "4e5f2f23637677510f4efefc525425508f2234b699ce827827c68218f1118598"
+      }
+    ]
+  },
+  "verification": {
+    "analyticalBreakTest": "62/62 PASS",
+    "quoteLineage": "4/4",
+    "onlyNonPassReadinessGate": "human_editorial_attestation"
+  }
+}
