@@ -1,7 +1,8 @@
 # Source Coverage Matrix — The Phoenician Resort and Spa
-_Generated 2026-08-01 · matrix V2 · capability V2 · attempts V1._
+_Generated 2026-08-03 · matrix V2 · capability V2 · attempts V1._
 
-## ⛔ Coverage blockers (report may not imply completeness while these stand)
+## Coverage blockers
+- none
 
 Outlet-level Google capture implemented: **yes**
 
