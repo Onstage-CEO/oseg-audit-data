@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V3",
-  "generatedAt": "2026-08-02T20:40:09.701Z",
+  "generatedAt": "2026-08-02T20:50:49.701Z",
   "runMode": "frozen",
   "frozenCorpus": true,
   "analysisWindow": {
@@ -85,7 +85,7 @@
     },
     {
       "id": "versioned_research_universe_63_not_collection_claim",
-      "pass": false
+      "pass": true
     },
     {
       "id": "cost_rights_ledger_reconciles_registry",
@@ -168,8 +168,8 @@
       "pass": true
     },
     {
-      "id": "every_lead_names_live_act",
-      "pass": false
+      "id": "every_lead_contains_rendered_entertainment_evidence",
+      "pass": true
     },
     {
       "id": "excluded_examples_name_event",
@@ -248,8 +248,8 @@
       "pass": true
     },
     {
-      "id": "live_element_visibility_precise",
-      "pass": false
+      "id": "guest_evidence_verdicts_rendered",
+      "pass": true
     },
     {
       "id": "historical_schedule_not_presented_as_current",
@@ -264,6 +264,6 @@
       "pass": true
     }
   ],
-  "passed": 50,
+  "passed": 53,
   "total": 53
 }
