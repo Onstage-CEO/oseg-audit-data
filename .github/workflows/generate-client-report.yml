@@ -81,7 +81,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 0a77d2b6a4ddfa43f3a48469ae8297585ebced94
+  ENGINE_REF: 4f412c621e0cdfa654e2ea4700f9c1dc89a94f8b
 
 permissions:
   contents: write
@@ -212,6 +212,7 @@ jobs:
           const html=fs.readFileSync(ws+'/client-report.html','utf8');
           const brief=fs.readFileSync(ws+'/audit-brief.md','utf8');
           const evidenceManifest=JSON.parse(fs.readFileSync(ws+'/client-report-evidence-manifest.json','utf8'));
+          const freshVerification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
           const path=ws+'/analytical-break-test.json';
           const prior=fs.existsSync(path)?JSON.parse(fs.readFileSync(path,'utf8')):{schemaVersion:'V3',checks:[]};
           const value=(label)=>{
@@ -258,6 +259,7 @@ jobs:
             ['outlet_quote_source_urls_valid',outletQuoteLinksValid],
             ['blocked_or_credential_source_evidence_absent',blockedSourceEvidenceAbsent],
             ['reddit_excerpt_absent_when_lane_not_captured',redditExcerptAbsent&&sourceStatuses.get('reddit')!=='captured'],
+            ['fresh_client_report_verification_ready',freshVerification.status==='ready'&&Array.isArray(freshVerification.checks)&&freshVerification.checks.every(check=>check.pass===true)],
             ['brief_matches_generated_funnel',new RegExp('Of 13 entertainment-mention reviews: \\*\\*2 in OSEG scope\\*\\*[^\\n]+10 excluded[^\\n]+1 ambiguous','i').test(brief)],
             ['rendered_leads_equal_verified_count',renderedLeads===inScope&&renderedLeads===2],
             ['tavern_live_music_recovered',/The Tavern in particular was lively and enjoyable, with good live music and excellent service\./i.test(leadSection)],
