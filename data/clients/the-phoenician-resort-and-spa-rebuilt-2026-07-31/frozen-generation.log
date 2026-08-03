@@ -7,6 +7,17 @@
 [client-report] open-web finding dropped (empty text): https://www.facebook.com/PhoenicianScottsdale/
 [client-report] programming reconcile refresh: "Dueling Pianos at The Phoenician Tavern" strong/praised -> strong/grounded (176/957 @ 4.38★)
 [client-report] programming reconcile downgrade: "Mowry & Cotton Weekend Brunch" medium/noticed -> weak/invisible (15/2825 @ 3.6★)
-client-report figures contradict each other across sections:
-  Google: methodology says 4,012, source appendix says 11,037
-The same quantity cannot appear twice with different values. Reconcile the loaders, or label the two measures distinctly if they are genuinely different quantities.
+[generate-client-report] wrote client-report.html for "The Phoenician Resort and Spa" (299 reviews, overall 3.94/5, entertainment 3.75/5)
+Report readiness: EXPORT_BLOCKED (computed 2026-08-01T18:11:56Z)
+  [PASS] report_generated (material, blocks client_ready) — client-report.html present
+  [PASS] verify_ready (material, blocks export) — paid report verification = ready
+  [PASS] source_coverage_matrix (material, blocks export) — source-coverage-matrix present
+  [FAIL] property_source_attempts (material, blocks export) — 1 unresolved property source attempt(s): reddit [needs_credentials]
+  [PASS] regional_market_discovery (non-material, blocks nothing) — no regional market profile selected; legacy/US readiness behavior preserved
+  [PASS] outlet_matrix (material, blocks export) — every outlet × source cell is captured or a documented miss
+  [PASS] material_source_no_adapter (material, blocks export) — no material source has a known body left uncaptured
+  [PASS] programming_inventory (material, blocks export) — programming inventory present (12 program(s), all material programs carry program-specific guest-signal evidence)
+  [PASS] program_readiness (material, blocks export) — all 12 program(s) carry a complete evidence verdict; no meaningful program is buried
+  [PASS] programming_verification (material, blocks export) — every material program carries a verified current-programming status (category + source level + on-site flag)
+  [PASS] forbidden_language (material, blocks export) — no forbidden terms in report
+[generate-client-report] NOTE: report is a DRAFT (EXPORT_BLOCKED); it is NOT client-ready and is not eligible for export until the blocking gates pass or an explicit logged override is recorded in client.readinessOverrides.

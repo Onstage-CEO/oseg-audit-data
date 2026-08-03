@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V3",
-  "generatedAt": "2026-08-02T20:50:49.701Z",
+  "generatedAt": "2026-08-03T01:33:04.063Z",
   "runMode": "frozen",
   "frozenCorpus": true,
   "analysisWindow": {
@@ -42,7 +42,7 @@
     ]
   },
   "evidenceFunnel": {
-    "captured": 7890,
+    "captured": null,
     "dateEligible": 299,
     "broadTheme": 37,
     "entertainmentCandidates": 15,
@@ -113,7 +113,7 @@
     },
     {
       "id": "funnel_captured_7890",
-      "pass": true
+      "pass": false
     },
     {
       "id": "funnel_date_eligible_299",
@@ -264,6 +264,6 @@
       "pass": true
     }
   ],
-  "passed": 53,
+  "passed": 52,
   "total": 53
 }
