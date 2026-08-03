@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V3",
-  "generatedAt": "2026-08-03T01:33:04.063Z",
+  "generatedAt": "2026-08-03T02:04:59.065Z",
   "runMode": "frozen",
   "frozenCorpus": true,
   "analysisWindow": {
@@ -43,12 +43,12 @@
   },
   "evidenceFunnel": {
     "captured": null,
-    "dateEligible": 299,
-    "broadTheme": 37,
-    "entertainmentCandidates": 15,
-    "inScope": 4,
-    "excluded": 11,
-    "ambiguous": 0
+    "dateEligible": 274,
+    "broadTheme": 31,
+    "entertainmentCandidates": 13,
+    "inScope": 2,
+    "excluded": 10,
+    "ambiguous": 1
   },
   "checks": [
     {
@@ -117,15 +117,15 @@
     },
     {
       "id": "funnel_date_eligible_299",
-      "pass": true
+      "pass": false
     },
     {
       "id": "funnel_broad_theme_37",
-      "pass": true
+      "pass": false
     },
     {
       "id": "funnel_candidates_15",
-      "pass": true
+      "pass": false
     },
     {
       "id": "funnel_partitions_reconcile",
@@ -141,7 +141,7 @@
     },
     {
       "id": "semantic_classifier",
-      "pass": true
+      "pass": false
     },
     {
       "id": "classifier_rules_file_exists_and_versioned",
@@ -153,7 +153,7 @@
     },
     {
       "id": "current_window_count",
-      "pass": true
+      "pass": false
     },
     {
       "id": "lead_dates_current",
@@ -165,7 +165,7 @@
     },
     {
       "id": "rendered_leads_equal_in_scope",
-      "pass": true
+      "pass": false
     },
     {
       "id": "every_lead_contains_rendered_entertainment_evidence",
@@ -264,6 +264,6 @@
       "pass": true
     }
   ],
-  "passed": 52,
+  "passed": 46,
   "total": 53
 }
