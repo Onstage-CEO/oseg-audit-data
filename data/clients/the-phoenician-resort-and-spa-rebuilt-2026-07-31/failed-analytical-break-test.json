@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V3",
-  "generatedAt": "2026-08-03T02:04:59.065Z",
+  "generatedAt": "2026-08-03T02:13:14.619Z",
   "runMode": "frozen",
   "frozenCorpus": true,
   "analysisWindow": {
@@ -43,7 +43,7 @@
   },
   "evidenceFunnel": {
     "captured": null,
-    "dateEligible": 274,
+    "dateEligible": 275,
     "broadTheme": 31,
     "entertainmentCandidates": 13,
     "inScope": 2,

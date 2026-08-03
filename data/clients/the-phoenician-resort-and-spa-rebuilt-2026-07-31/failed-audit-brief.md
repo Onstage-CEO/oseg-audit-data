@@ -2,15 +2,15 @@
 
 > ⚠ **TIER B — INTERNAL, FULL DISCLOSURE. Never send to a client.** A client-facing teaser/deck is a separate, gated step.
 
-**Corpus:** 274 captured reviews (12 booking + 43 tripadvisor + 69 expedia + 150 google) · generated 2026-08-01T18:11:56Z
+**Corpus:** 275 captured reviews (12 booking + 43 tripadvisor + 69 expedia + 151 google) · generated 2026-08-01T18:11:56Z
 **Overall rating:** 3.94 / 5 · **20%** are ≤2★ (polarization signal)
 
 ## What guests talk about
 | Theme | Reviews | Share |
 |---|---|---|
-| Service / staff | 154 | 56% |
+| Service / staff | 155 | 56% |
 | Pool / amenities | 118 | 43% |
-| Food & beverage | 101 | 37% |
+| Food & beverage | 102 | 37% |
 | Cleanliness / room | 74 | 27% |
 | Value / price | 58 | 21% |
 | Check-in / wait | 43 | 16% |
