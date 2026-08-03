@@ -421,7 +421,7 @@
           "attemptResult": "blocked_credentials",
           "attemptMechanism": "official_api",
           "attemptMessage": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report.",
-          "attemptedAt": "2026-08-01T18:11:56.000Z",
+          "attemptedAt": "2026-08-03T21:20:00.000Z",
           "completeness": "unknown",
           "truncated": false,
           "retryable": false
