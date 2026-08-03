@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-08-01T19:00:50.530Z",
+  "generatedAt": "2026-08-03T21:20:00.000Z",
   "property": "The Phoenician Resort and Spa",
   "attempts": [
     {
@@ -218,14 +218,14 @@
       "source": "reddit",
       "mechanism": "official_api",
       "provider": "official_api",
-      "attemptedAt": "2026-08-01T18:11:56.000Z",
-      "result": "needs_credentials",
-      "recordsReturned": 6,
-      "recordsAccepted": 6,
+      "attemptedAt": "2026-08-03T21:20:00.000Z",
+      "result": "blocked_credentials",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
-      "retryable": true,
-      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
+      "retryable": false,
+      "message": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report."
     },
     {
       "source": "blogs",

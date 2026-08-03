@@ -3,7 +3,7 @@
   "capabilitySchemaVersion": "V2",
   "propertyAttemptSchemaVersion": "V1",
   "property": "The Phoenician Resort and Spa",
-  "generatedAt": "2026-08-01T19:00:50.530Z",
+  "generatedAt": "2026-08-03T21:20:00.000Z",
   "scopes": [
     {
       "scope": "property",
@@ -406,25 +406,25 @@
           "source": "reddit",
           "label": "Reddit / forums",
           "identifier": "",
-          "checked": false,
+          "checked": true,
           "supportedByEngine": true,
           "captured": false,
           "countFound": "unknown",
-          "countCaptured": 6,
+          "countCaptured": 0,
           "entertainmentSignal": "unknown",
-          "usedInReport": true,
-          "status": "needs_credentials",
-          "reason": "Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
+          "usedInReport": false,
+          "status": "blocked_credentials",
+          "reason": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report.",
           "captureMethod": "official_api",
-          "confidence": "low",
+          "confidence": "high",
           "supplemental": false,
-          "attemptResult": "needs_credentials",
+          "attemptResult": "blocked_credentials",
           "attemptMechanism": "official_api",
-          "attemptMessage": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.",
-          "attemptedAt": "2026-08-01T18:11:56.000Z",
+          "attemptMessage": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report.",
+          "attemptedAt": "2026-08-03T21:20:00.000Z",
           "completeness": "unknown",
           "truncated": false,
-          "retryable": true
+          "retryable": false
         },
         {
           "source": "blogs",
@@ -6342,8 +6342,6 @@
   ],
   "summary": {
     "outletGoogleImplemented": true,
-    "blockers": [
-      "The Phoenician Resort and Spa: Reddit / forums is needs credentials; Not checked successfully; required credentials or provider access were unavailable. Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
-    ]
+    "blockers": []
   }
 }

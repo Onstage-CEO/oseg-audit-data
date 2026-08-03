@@ -81,7 +81,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: f9a50ff6bc32939f3c024c4d36096d444b11c813
+  ENGINE_REF: 45362e75b7ebed7dcc264c8dca0f1591ceef026a
 
 permissions:
   contents: write
@@ -132,6 +132,32 @@ jobs:
             echo "::error::workspace not found: $IN_SLUG"; exit 1
           fi
           echo "ws=$ws" >> "$GITHUB_OUTPUT"
+
+      - name: Gate downstream regeneration on Phoenician attestation
+        if: ${{ inputs.slug != 'the-phoenician-resort-and-spa-rebuilt-2026-07-31' }}
+        env:
+          PHOENICIAN_WS: ${{ github.workspace }}/data-repo/data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31
+        run: |
+          set -euo pipefail
+          readiness="$PHOENICIAN_WS/report-readiness.json"
+          attestation="$PHOENICIAN_WS/human-editorial-attestation.json"
+          report="$PHOENICIAN_WS/client-report.html"
+          for file in "$readiness" "$attestation" "$report"; do
+            if [ ! -f "$file" ]; then
+              echo "::error::downstream regeneration is locked until The Phoenician is human-attested"; exit 1
+            fi
+          done
+          if [ "$(jq -r '.status' "$readiness")" != "CLIENT_READY" ]; then
+            echo "::error::downstream regeneration is locked: Phoenician readiness is not CLIENT_READY"; exit 1
+          fi
+          if [ "$(jq -r '.decision' "$attestation")" != "pass" ]; then
+            echo "::error::downstream regeneration is locked: Phoenician attestation is not PASS"; exit 1
+          fi
+          report_sha="$(sha256sum "$report" | awk '{print $1}')"
+          attested_sha="$(jq -r '.artifactSha256' "$attestation")"
+          if [ "$report_sha" != "$attested_sha" ]; then
+            echo "::error::downstream regeneration is locked: Phoenician attestation does not match client-report.html"; exit 1
+          fi
 
       - name: Apply date controls to audit.json (optional, persisted)
         if: ${{ inputs.splitDate != '' || inputs.dateFrom != '' || inputs.dateTo != '' }}
