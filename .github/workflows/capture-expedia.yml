@@ -18,13 +18,20 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 45362e75b7ebed7dcc264c8dca0f1591ceef026a
+  ENGINE_REF: 9a32c3bacd076937576499acaafc81c5153ff092
 
 permissions:
   contents: write
 
 jobs:
+  attestation-gate:
+    uses: ./.github/workflows/phoenician-attestation-freeze-gate.yml
+    with:
+      targetSlug: ${{ inputs.slug }}
+      operationMode: mutation
+
   capture-expedia:
+    needs: attestation-gate
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:

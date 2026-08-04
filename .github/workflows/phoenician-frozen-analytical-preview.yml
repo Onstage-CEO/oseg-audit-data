@@ -11,7 +11,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: 45362e75b7ebed7dcc264c8dca0f1591ceef026a
+  ENGINE_REF: 9a32c3bacd076937576499acaafc81c5153ff092
   WINDOW_FROM: '2025-07-31'
   WINDOW_TO: '2026-07-31'
   SLUG: the-phoenician-resort-and-spa-rebuilt-2026-07-31
@@ -255,8 +255,8 @@ jobs:
           const reportWithoutBanner=html.replace(/INTERNAL PREVIEW ONLY[^<]*/i,'');
           const opportunitySection=(html.split('<h2>The opportunity</h2>')[1]||'').split('<h2>')[0]||'';
           const inScopeCount=funnelValue('Verified resort-operated entertainment');
-          const entertainmentMetric=(html.match(/<span class="ml">Entertainment<\/span><span class="mv">([\s\S]*?)<\/span>/i)||[])[1]||'';
-          const thinSampleRatingText='directional only &ndash; sample too small for rating';
+          const entertainmentMetric=(html.match(/<span class="ml">Entertainment<\/span><span class="mv(?: [^"]*)?">([\s\S]*?)<\/span>/i)||[])[1]||'';
+          const thinSampleRatingText='Rating suppressed';
           const propertyWideGapLanguage=/\b(measurable|quantified?|statistically significant|demonstrated|proven|concrete|clear)\b[^.]{0,120}\b(gap|shortfall|deficit|under[- ]?performance|missed (?:credit|opportunity))\b|\b(gap|shortfall|deficit|under[- ]?performance)\b[^.]{0,120}\b(property[- ]wide|resort[- ]wide|aggregate (?:property|review)|measurable|quantified?|demonstrated|proven|concrete)\b|\b(under[- ]?represented|barely reflect|does not get|isn.t getting|without getting)\b[^.]{0,120}\b(aggregate|property[- ]wide|resort[- ]wide|credit)\b/i;
           const guestDeepDive=(html.split('<h2>Entertainment deep-dive</h2>')[1]||'').split('<h2>Signature entertainment')[0]||'';
           const guestVoice=(html.split('<h2>The guest voice</h2>')[1]||'').split('<h2>The opportunity</h2>')[0]||'';
@@ -295,7 +295,7 @@ jobs:
             ['no_misleading_combined_figure',!text.includes('14,598')&&!text.includes('14598')&&!text.includes('property + opentable outlet, combined')],
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
             ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
-            ['classifier_rules_file_exists_and_versioned',classifierRulesExists&&/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&/CR-V1-01[\s\S]*weddings and private events/i.test(classifierRules)&&/CR-V1-03[\s\S]*ambient, house, piped, or background music/i.test(classifierRules)&&/CR-V1-04[\s\S]*duplicates/i.test(classifierRules)&&/CR-V1-05[\s\S]*unclear entertainment mentions/i.test(classifierRules)&&/LLM precision-layer evidence criteria/i.test(classifierRules)],
+            ['classifier_rules_file_exists_and_versioned',classifierRulesExists&&/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&classifierRules.includes(`**Report-generation engine reference reviewed:** \`${process.env.ENGINE_REF}\``)&&/Funnel governed here:\*\* `13 candidates → 2 in scope \/ 10 excluded \/ 1 ambiguous`/i.test(classifierRules)&&/Entertainment candidates \| 13/i.test(classifierRules)&&/Verified resort-operated entertainment \| 2/i.test(classifierRules)&&/Excluded private-event, ambient-audio, amenity, or unrelated noise \| 10/i.test(classifierRules)&&/Ambiguous and held for human review \| 1/i.test(classifierRules)&&/2 \+ 10 \+ 1 = 13/i.test(classifierRules)&&/V1 answers a narrow question/i.test(classifierRules)&&/CR-V1-01[\s\S]*weddings and private events/i.test(classifierRules)&&/CR-V1-03[\s\S]*ambient, house, piped, or background music/i.test(classifierRules)&&/CR-V1-04[\s\S]*duplicates/i.test(classifierRules)&&/CR-V1-05[\s\S]*unclear entertainment mentions/i.test(classifierRules)&&/LLM precision-layer evidence criteria/i.test(classifierRules)],
             ['classifier_rules_referenced_by_contract_and_report',sourceUniverseContract.includes('classifier-rules-v1.md')&&sourceUniverseContract.includes('entertainment-classifier-rules-v1')&&html.includes('href="classifier-rules-v1.md"')&&html.includes('data-classifier-rules-id="entertainment-classifier-rules-v1"')],
             ['current_window_count',brief.includes('**Corpus:** 275 captured reviews')&&html.includes('Reviews scored')&&html.includes('>275<')],
             ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>=selectedWindow.from&&d<=selectedWindow.to)],
@@ -316,7 +316,7 @@ jobs:
             ['jg_not_promoted_active',!/(j&g|j&amp;g)[^.]{0,160}(active|nightly|weekly|regular) live (music|entertainment)/i.test(html)],
             ['mowry_dj_not_promoted_current',!/mowry[^.]{0,220}(run on schedule|currently running|current program|active program|paid-for entertainment)/i.test(html)],
             ['mowry_marked_historical',/mowry[^.]{0,220}(previously offered|not currently active|historical)/i.test(html)],
-            ['thin_entertainment_rating_suppressed',inScopeCount<10&&entertainmentMetric===thinSampleRatingText&&!/<span class="ml">Entertainment<\/span><span class="mv">\s*3\.75\s*<\/span>/i.test(html)&&!/(entertainment rating|entertainment score)[^<.]{0,50}3\.75|3\.75[^<.]{0,50}(entertainment rating|entertainment score)/i.test(html)],
+            ['thin_entertainment_rating_suppressed',inScopeCount<10&&entertainmentMetric===thinSampleRatingText&&html.includes(`${inScopeCount} verified in-scope reviews &middot; minimum n=10`)&&!/sample too small for rating/i.test(html)&&!/<span class="ml">Entertainment<\/span><span class="mv(?: [^"]*)?">\s*3\.75\s*<\/span>/i.test(html)&&!/(entertainment rating|entertainment score)[^<.]{0,50}3\.75|3\.75[^<.]{0,50}(entertainment rating|entertainment score)/i.test(html)],
             ['thin_sample_not_overstated',inScopeCount<10&&!propertyWideGapLanguage.test(opportunitySection)&&/cannot measure the size|insufficient to quantify/i.test(opportunitySection)&&!/measurable (property-wide )?gap|entertainment signal[^.]{0,160}(concentrat|missed return)|pattern (is |that )?concentrates|most guests[^.]{0,100}(never|do not|don't)[^.]{0,100}(encounter|notice|mention)/i.test(html)],
             ['operator_claims_sealed_from_guest_narrative',operatorSection.includes('Sealed evidence layer.')&&operatorNames.every(name=>!guestDeepDive.includes(name)&&!guestVoice.includes(name))&&!/(operator-stated|booking-record schedule|currently running|currently offered|active now)/i.test(guestDeepDive+' '+guestVoice)],
             ['operator_only_and_historical_not_current',restrictedProgramRows.length>0&&restrictedProgramRows.every(row=>!currentProgramClaim.test(row.text))],

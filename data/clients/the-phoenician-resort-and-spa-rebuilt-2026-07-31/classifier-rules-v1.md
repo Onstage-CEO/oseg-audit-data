@@ -3,11 +3,17 @@
 - **Rule-set ID:** `entertainment-classifier-rules-v1`
 - **Version:** `V1`
 - **Classifier prompt version:** `V1`
-- **Pinned engine reference reviewed:** `1c028ed8ae0ff54410b984b3617fc6861895ebba`
+- **Report-generation engine reference reviewed:** `9a32c3bacd076937576499acaafc81c5153ff092`
 - **Applies to:** the entertainment-candidate partition shown in this frozen Phoenician report
-- **Funnel governed here:** `15 candidates → 4 in scope / 11 excluded / 0 ambiguous`
+- **Funnel governed here:** `13 candidates → 2 in scope / 10 excluded / 1 ambiguous`
 
 This file documents the classification behavior already reflected in the current engine, audit brief, client report, and break-test. It does not introduce new exclusions or retroactively classify individual reviews.
+
+## Scope boundary
+
+V1 answers a narrow question: whether a property review contains verified resort-operated live entertainment in a public guest venue. Examples include live music, performers, DJs, dancing, produced shows, movie nights, and similar programmed entertainment.
+
+V1 does not claim comprehensive retrieval of the broader universe of wellness classes, recreation, amenities, private events, kids programming, educational demonstrations, or every possible guest activity. Four broader programming references found by the independent 275-review human recall audit are logged for a future retrieval-taxonomy evaluation. They are not retroactively added to this frozen partition.
 
 ## Inputs and permitted outputs
 
@@ -83,9 +89,9 @@ For the frozen selected-date corpus, the report presents:
 
 | Stage | Count |
 |---|---:|
-| Entertainment candidates | 15 |
-| Verified resort-operated entertainment | 4 |
-| Excluded private-event or unrelated noise | 11 |
-| Ambiguous and held for human review | 0 |
+| Entertainment candidates | 13 |
+| Verified resort-operated entertainment | 2 |
+| Excluded private-event, ambient-audio, amenity, or unrelated noise | 10 |
+| Ambiguous and held for human review | 1 |
 
-The arithmetic contract is `4 + 11 + 0 = 15`. This file documents the rules governing that partition; the evidence artifacts remain the source of the counts and review-level records.
+The arithmetic contract is `2 + 10 + 1 = 13`. This file documents the rules governing that partition; the evidence artifacts remain the source of the counts and review-level records.

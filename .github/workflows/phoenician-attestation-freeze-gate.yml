@@ -1,0 +1,27 @@
+name: Phoenician attestation freeze gate
+
+on:
+  workflow_call:
+    inputs:
+      targetSlug:
+        required: false
+        type: string
+        default: ''
+      operationMode:
+        required: false
+        type: string
+        default: mutation
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enforce Phoenician attestation freeze
+        env:
+          TARGET_SLUG: ${{ inputs.targetSlug }}
+          OPERATION_MODE: ${{ inputs.operationMode }}
+        run: node .github/scripts/check-phoenician-attestation-freeze.mjs
