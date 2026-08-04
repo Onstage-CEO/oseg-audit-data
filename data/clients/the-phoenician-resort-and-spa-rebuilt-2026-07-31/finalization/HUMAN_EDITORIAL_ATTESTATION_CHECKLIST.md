@@ -1,8 +1,9 @@
 # The Phoenician — Human Editorial Attestation
 
-Artifact reviewed: `client-report.html`  
-SHA-256: `5f8eb0ca021bf39a148e17e57bd67c7327f15e2480cc49836153753bbad34c91`  
-Analysis window: 2025-07-31 through 2026-07-31  
+Artifact reviewed: `client-report.html`
+SHA-256: `e40d94e398ac32fc6bd4f368befe9c70e8f38ccc7fd20be98b93f396c123a759`
+Workflow run / artifact: `30866493708` / `8876302305`
+Analysis window: 2025-07-31 through 2026-07-31
 Release mode: artifact-only until this checklist is signed
 
 ## Required review
