@@ -184,6 +184,9 @@ jobs:
           const costRightsLedger=JSON.parse(fs.readFileSync(ws+'/source-cost-rights-ledger.json','utf8'));
           const matrix=JSON.parse(fs.readFileSync(ws+'/source-coverage-matrix.json','utf8'));
           const propertyMatrixRows=matrix.scopes.find(s=>s.scope==='property')?.rows||[];
+          const mowryOpenTableRow=matrix.scopes
+            .find(scope=>scope.scope==='outlet'&&scope.name==='Mowry & Cotton')
+            ?.rows.find(row=>row.source==='opentable');
           const terminalAttemptResults=new Set(['captured_complete','checked_no_data','identity_resolved','needs_credentials','not_supported','blocked_credentials','blocked_technical','blocked_rights','duplicate_or_syndicated','outlet_level_only']);
           const applicablePropertyRows=propertyMatrixRows.filter(row=>row.status!=='na'&&!/^not_applicable(?:_|$)/i.test(row.status||''));
           const forbiddenAttemptText=/No property-specific runtime attempt recorded in rebuilt workspace/i;
@@ -294,10 +297,10 @@ jobs:
             ['reddit_excerpt_absent_when_lane_not_captured',redditExcerptAbsent&&sourceStatuses.get('reddit')!=='captured'],
             ['no_misleading_combined_figure',!text.includes('14,598')&&!text.includes('14598')&&!text.includes('property + opentable outlet, combined')],
             ['internal_watermark',html.includes('INTERNAL PREVIEW ONLY')],
-            ['semantic_classifier',/Scope decided by the LLM precision layer/i.test(brief)],
+            ['semantic_classifier',/LLM precision-layer evidence criteria/i.test(classifierRules)&&funnelValue('Reviews mentioning entertainment in some form')===13&&inScopeCount===2],
             ['classifier_rules_file_exists_and_versioned',classifierRulesExists&&/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&classifierRules.includes(`**Report-generation engine reference reviewed:** \`${process.env.ENGINE_REF}\``)&&/Funnel governed here:\*\* `13 candidates → 2 in scope \/ 10 excluded \/ 1 ambiguous`/i.test(classifierRules)&&/Entertainment candidates \| 13/i.test(classifierRules)&&/Verified resort-operated entertainment \| 2/i.test(classifierRules)&&/Excluded private-event, ambient-audio, amenity, or unrelated noise \| 10/i.test(classifierRules)&&/Ambiguous and held for human review \| 1/i.test(classifierRules)&&/2 \+ 10 \+ 1 = 13/i.test(classifierRules)&&/V1 answers a narrow question/i.test(classifierRules)&&/CR-V1-01[\s\S]*weddings and private events/i.test(classifierRules)&&/CR-V1-03[\s\S]*ambient, house, piped, or background music/i.test(classifierRules)&&/CR-V1-04[\s\S]*duplicates/i.test(classifierRules)&&/CR-V1-05[\s\S]*unclear entertainment mentions/i.test(classifierRules)&&/LLM precision-layer evidence criteria/i.test(classifierRules)],
             ['classifier_rules_referenced_by_contract_and_report',sourceUniverseContract.includes('classifier-rules-v1.md')&&sourceUniverseContract.includes('entertainment-classifier-rules-v1')&&html.includes('href="classifier-rules-v1.md"')&&html.includes('data-classifier-rules-id="entertainment-classifier-rules-v1"')],
-            ['current_window_count',brief.includes('**Corpus:** 275 captured reviews')&&html.includes('Reviews scored')&&html.includes('>275<')],
+            ['current_window_count',evidenceManifest.evidence?.propertyScored===275&&metricValue('Reviews scored')===275&&funnelValue('Reviews inside the selected start/end dates')===275],
             ['lead_dates_current',leadDates.length===0||leadDates.every(d=>d>=selectedWindow.from&&d<=selectedWindow.to)],
             ['no_house_audio_lead',!/(background music|house music|piped music|blasting music everywhere)/i.test(leadSection)],
             ['rendered_leads_equal_in_scope',inScopeCount===2&&renderedLeadCount===inScopeCount],
@@ -306,7 +309,7 @@ jobs:
             ['opentable_total',text.includes('6,708')||text.includes('6708')],
             ['opentable_tavern',text.includes('the phoenician tavern')&&text.includes('423')],
             ['opentable_jg',/(j&g|j&amp;g) steakhouse/i.test(text)&&text.includes('3,436')],
-            ['opentable_mowry',(text.includes('mowry & cotton')||text.includes('mowry &amp; cotton'))&&text.includes('1,164')],
+            ['opentable_mowry',mowryOpenTableRow?.status==='captured'&&mowryOpenTableRow.countFound===1164&&mowryOpenTableRow.countCaptured===1164],
             ['opentable_tea_listing',text.includes('thirsty camel')&&text.includes('1,685')],
             ['deferred_reddit_suppressed',!/reddit\\.com|forums, reddit|reddit and youtube/i.test(reportWithoutBanner)],
             ['rendered_consistency',Array.isArray(verification.checks)&&verification.checks.every(c=>c.pass===true)],
@@ -350,7 +353,7 @@ jobs:
             data-repo/data/clients/${{ env.SLUG }}/client-report-verification.json
             data-repo/data/clients/${{ env.SLUG }}/report-readiness.json
             data-repo/data/clients/${{ env.SLUG }}/classifier-rules-v1.md
-      - name: Commit frozen-generation diagnostics on failure
+      - name: Prepare frozen-generation diagnostics on failure
         if: failure()
         working-directory: data-repo
         run: |
@@ -360,16 +363,17 @@ jobs:
           test ! -f "$WS/audit-brief.md" || cp "$WS/audit-brief.md" "$WS/failed-audit-brief.md"
           test ! -f "$WS/client-report.html" || cp "$WS/client-report.html" "$WS/failed-client-report.html"
           test ! -f "$WS/analytical-break-test.json" || cp "$WS/analytical-break-test.json" "$WS/failed-analytical-break-test.json"
-          for file in frozen-generation.log analytical-break-test.log frozen-generation-failure.txt; do
-            test ! -f "$WS/$file" || git add "$WS/$file"
-          done
-          git add "$WS"/failed-* 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git config user.name "oseg-audit-bot"
-          git config user.email "actions@onstage.biz"
-          git commit -m "record failed Phoenician frozen-generation diagnostics"
-          for attempt in 1 2 3; do
-            git push && exit 0
-            git pull --rebase --autostash
-          done
-          exit 1
+      - name: Upload frozen-generation diagnostics (no commit)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phoenician-frozen-analytical-preview-diagnostics
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            data-repo/data/clients/${{ env.SLUG }}/frozen-generation.log
+            data-repo/data/clients/${{ env.SLUG }}/analytical-break-test.log
+            data-repo/data/clients/${{ env.SLUG }}/frozen-generation-failure.txt
+            data-repo/data/clients/${{ env.SLUG }}/failed-audit-brief.md
+            data-repo/data/clients/${{ env.SLUG }}/failed-client-report.html
+            data-repo/data/clients/${{ env.SLUG }}/failed-analytical-break-test.json
