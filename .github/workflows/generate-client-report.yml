@@ -298,9 +298,9 @@ jobs:
             ['brief_matches_generated_funnel',new RegExp('Of 13 entertainment-mention reviews: \\*\\*2 in OSEG scope\\*\\*[^\\n]+10 excluded[^\\n]+1 ambiguous','i').test(brief)],
             ['rendered_leads_equal_verified_count',renderedLeads===inScope&&renderedLeads===2],
             ['tavern_live_music_recovered',/The Tavern in particular was lively and enjoyable, with good live music and excellent service\./i.test(leadSection)],
-            ['ambient_and_amenity_false_positives_absent',!/multiple sources of music creating a cacophony|they had a slide, and a activity list/i.test(leadSection)]
-            ,['classifier_rules_file_exists_and_versioned',/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&classifierRules.includes(`**Report-generation engine reference reviewed:** \`${process.env.ENGINE_REF}\``)&&/Funnel governed here:\*\* `13 candidates → 2 in scope \/ 10 excluded \/ 1 ambiguous`/i.test(classifierRules)&&/2 \+ 10 \+ 1 = 13/i.test(classifierRules)&&/V1 answers a narrow question/i.test(classifierRules)]
-            ,['thin_entertainment_rating_suppressed',inScope<10&&entertainmentMetric==='Rating suppressed'&&html.includes(`${inScope} verified in-scope reviews &middot; minimum n=10`)&&!/sample too small for rating/i.test(html)]
+            ['ambient_and_amenity_false_positives_absent',!/multiple sources of music creating a cacophony|they had a slide, and a activity list/i.test(leadSection)],
+            ['classifier_rules_file_exists_and_versioned',/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&classifierRules.includes(`**Report-generation engine reference reviewed:** \`${process.env.ENGINE_REF}\``)&&/Funnel governed here:\*\* `13 candidates → 2 in scope \/ 10 excluded \/ 1 ambiguous`/i.test(classifierRules)&&/2 \+ 10 \+ 1 = 13/i.test(classifierRules)&&/V1 answers a narrow question/i.test(classifierRules)],
+            ['thin_entertainment_rating_suppressed',inScope<10&&entertainmentMetric==='Rating suppressed'&&html.includes(`${inScope} verified in-scope reviews &middot; minimum n=10`)&&!/sample too small for rating/i.test(html)],
           ].map(([id,pass])=>({id,pass}));
           const replaced=new Set(current.map(c=>c.id));
           const obsolete=/^funnel_|^current_window_count$|^semantic_classifier$|^rendered_leads_equal_in_scope$/;
