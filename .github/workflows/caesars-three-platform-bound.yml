@@ -201,6 +201,12 @@ jobs:
           import fs from 'node:fs';
           const attemptsPath=`${process.env.ws}/property-source-attempts.json`;
           const out=process.env.package_dir;
+          for(const name of ['source-coverage-matrix.json','source-coverage-matrix.md']){
+            const matrixPath=`${process.env.ws}/${name}`;
+            if(!fs.existsSync(matrixPath)) throw new Error(`required superseded matrix is missing: ${name}`);
+            fs.copyFileSync(matrixPath,`${out}/superseded-${name}`);
+            fs.unlinkSync(matrixPath);
+          }
           const ledger=JSON.parse(fs.readFileSync(attemptsPath,'utf8'));
           const targets=new Set(['google','booking','expedia']);
           const superseded=(ledger.attempts??[]).filter(row=>targets.has(row.source));
