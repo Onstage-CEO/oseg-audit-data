@@ -2,11 +2,6 @@ name: Caesars three-platform bound synchronization
 run-name: "Caesars Google-Booking-Expedia bound sync — requested by ${{ inputs.actorEmail }}"
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/caesars-three-platform-bound.yml
   workflow_dispatch:
     inputs:
       actorEmail:
@@ -41,7 +36,7 @@ jobs:
     steps:
       - name: Validate authenticated operator
         env:
-          ACTOR_EMAIL: ${{ inputs.actorEmail || 'joe@onstage.biz' }}
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
           GH_ACTOR: ${{ github.actor }}
         run: |
           set -euo pipefail
