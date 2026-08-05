@@ -10,7 +10,17 @@
     "dateRange": {
       "from": "2025-08-04",
       "to": "2026-08-04"
-    }
+    },
+    "googleUrl": "https://www.google.com/maps?cid=8634166382887278373",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d27432953-Reviews-Caesars_Republic_Scottsdale_A_Hilton_Hotel-Scottsdale_Arizona.html",
+    "bookingUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html",
+    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-Scottsdale-Republic.h101140606.Hotel-Information",
+    "resortPassUrl": "https://www.resortpass.com/hotels/caesars-republic-scottsdale",
+    "website": "https://www.caesarsrepublicscottsdale.com/",
+    "yelpUrl": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale",
+    "instagramUrl": "https://www.instagram.com/caesarsrepublicaz/",
+    "facebookUrl": "https://www.facebook.com/caesarsrepublicscottsdale/",
+    "youtubeUrl": "https://www.youtube.com/@caesarsrepublicscottsdale"
   },
   "oneLineThesis": "",
   "coreFinding": "",
@@ -25,27 +35,32 @@
     {
       "platformId": "google",
       "kind": "not_found",
-      "reason": "Not present in the captured corpus."
+      "reason": "Exact listing pin added; paid capture pending."
     },
     {
       "platformId": "tripadvisor",
       "kind": "not_found",
-      "reason": "Not present in the captured corpus."
+      "reason": "Exact listing pin added; paid capture pending."
     },
     {
       "platformId": "booking",
       "kind": "not_found",
-      "reason": "Not present in the captured corpus."
+      "reason": "Exact listing pin added; paid capture pending."
     },
     {
       "platformId": "expedia",
       "kind": "not_found",
-      "reason": "Not present in the captured corpus."
+      "reason": "Exact listing pin added; paid capture pending."
+    },
+    {
+      "platformId": "blogs",
+      "kind": "not_found",
+      "reason": "Open-web discovery was evaluated separately; no blog or editorial result is treated as captured guest-review evidence."
     },
     {
       "platformId": "reddit",
       "kind": "blocked",
-      "reason": "Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google index) instead."
+      "reason": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report."
     },
     {
       "platformId": "aerial_satellite",
@@ -54,7 +69,55 @@
     }
   ],
   "evidence": [],
-  "venues": [],
+  "venues": [
+    {
+      "name": "WOLF by Vanderpump",
+      "type": "Rooftop restaurant, bar, and lounge",
+      "slug": "wolf-by-vanderpump",
+      "yelpUrl": "https://www.yelp.com/biz/wolf-by-vanderpump-scottsdale",
+      "googleUrl": "https://www.google.com/maps/search/WOLF%20by%20Vanderpump%2C%204747%20N%20Goldwater%20Blvd%2C%20Scottsdale%2C%20AZ%2085251",
+      "opentableUrl": "https://www.opentable.com/r/wolf-scottsdale",
+      "website": "https://www.wolfbyvanderpumpscottsdale.com/"
+    },
+    {
+      "name": "Luna by Giada",
+      "type": "Signature restaurant and bar",
+      "slug": "luna-by-giada",
+      "yelpUrl": "https://www.yelp.com/biz/luna-by-giada-scottsdale",
+      "googleUrl": "https://www.google.com/maps/search/Luna%20by%20Giada%2C%204747%20N%20Goldwater%20Blvd%2C%20Scottsdale%2C%20AZ%2085251",
+      "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g31350-d27496806-Reviews-Luna_By_Giada-Scottsdale_Arizona.html",
+      "opentableUrl": "https://www.opentable.com/restaurant/profile/1341931",
+      "website": "https://www.lunabygiadascottsdale.com/"
+    },
+    {
+      "name": "Pronto by Giada",
+      "type": "Cafe and casual dining",
+      "slug": "pronto-by-giada",
+      "googleUrl": "https://www.google.com/maps/search/Pronto%20by%20Giada%2C%204747%20N%20Goldwater%20Blvd%2C%20Scottsdale%2C%20AZ%2085251",
+      "website": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants-old/pronto-by-giada"
+    },
+    {
+      "name": "WOLF Pool",
+      "type": "Adults-only rooftop pool, bar, and programmed social venue",
+      "slug": "wolf-pool",
+      "googleUrl": "https://www.google.com/maps/search/WOLF%20Pool%2C%204747%20N%20Goldwater%20Blvd%2C%20Scottsdale%2C%20AZ%2085251",
+      "website": "https://www.caesarsrepublicscottsdale.com/wolf-pool"
+    },
+    {
+      "name": "Cleopatra’s Pool & Bar",
+      "type": "Ground-level pool, bar, and programmed social venue",
+      "slug": "cleopatras-pool-and-bar",
+      "googleUrl": "https://www.google.com/maps/search/Cleopatra%27s%20Pool%20%26%20Bar%2C%204747%20N%20Goldwater%20Blvd%2C%20Scottsdale%2C%20AZ%2085251",
+      "website": "https://www.caesarsrepublicscottsdale.com/cleopatra-pool-bar"
+    },
+    {
+      "name": "Camelback Veranda",
+      "type": "Seasonal outdoor lounge and live-music venue",
+      "slug": "camelback-veranda",
+      "googleUrl": "https://www.google.com/maps/search/Camelback%20Veranda%2C%204747%20N%20Goldwater%20Blvd%2C%20Scottsdale%2C%20AZ%2085251",
+      "website": "https://www.caesarsrepublicscottsdale.com/camelback-veranda"
+    }
+  ],
   "segments": [],
   "hypotheses": [],
   "recommendations": [],
