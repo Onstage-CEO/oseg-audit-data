@@ -41,17 +41,17 @@
       "volume": 117
     },
     {
+      "platformId": "expedia",
+      "scoreLabel": null,
+      "volume": 241
+    },
+    {
       "platformId": "youtube",
       "scoreLabel": null,
       "volume": 38
     }
   ],
   "skippedSources": [
-    {
-      "platformId": "expedia",
-      "kind": "not_found",
-      "reason": "Identity-safe canonical listing pin added; paid capture pending."
-    },
     {
       "platformId": "blogs",
       "kind": "not_found",

@@ -18,6 +18,11 @@ on:
         description: 'Access-verified email of the requesting user'
         required: true
         type: string
+      googleMaxTotalChargeUsd:
+        description: 'Reviewed maximum total Apify charge for Google outlet capture (0 leaves that lane blocked)'
+        required: false
+        default: '0'
+        type: string
 
 concurrency:
   group: capture-venues-${{ inputs.slug }}
@@ -104,6 +109,7 @@ jobs:
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP || '10' }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS: ${{ inputs.googleMaxTotalChargeUsd }}
           # Outlet-level TripAdvisor capture goes through DataForSEO (url_path) —
           # same creds the property-level TripAdvisor capture uses.
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}

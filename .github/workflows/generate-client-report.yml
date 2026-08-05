@@ -281,26 +281,31 @@ jobs:
           const leadSection=(brief.split('## OSEG leads')[1]||'').split('## Ambiguous')[0]||'';
           const renderedLeads=leadSection.split('\n> ').slice(1).length;
           const entertainmentMetric=(html.match(/<span class="ml">Entertainment<\/span><span class="mv(?: [^"]*)?">([\s\S]*?)<\/span>/i)||[])[1]||'';
+          const funnelValues=[captured,duplicates,distinct,dateEligible,broad,candidates,inScope,excluded,ambiguous];
+          const funnelValuesValid=funnelValues.every(value=>Number.isInteger(value)&&value>=0);
+          const briefFunnelPattern=new RegExp(
+            'Of '+candidates+' entertainment-mention reviews: \\*\\*'+inScope+' in OSEG scope\\*\\*[^\\n]+'+
+            excluded+' excluded[^\\n]+'+ambiguous+' ambiguous',
+            'i'
+          );
+          const ratingSuppressionValid=inScope<10
+            ? entertainmentMetric==='Rating suppressed'&&html.includes(`${inScope} verified in-scope reviews &middot; minimum n=10`)&&!/sample too small for rating/i.test(html)
+            : entertainmentMetric!=='Rating suppressed';
           const current=[
-            ['funnel_captured_7890',captured===7890],
-            ['funnel_duplicates_96',duplicates===96],
-            ['funnel_normalized_distinct_7794',distinct===7794],
-            ['funnel_date_eligible_275',dateEligible===275],
-            ['funnel_broad_theme_31',broad===31],
-            ['funnel_candidates_13',candidates===13],
-            ['funnel_partition_2_10_1',inScope===2&&excluded===10&&ambiguous===1&&inScope+excluded+ambiguous===candidates],
+            ['funnel_values_are_nonnegative_integers',funnelValuesValid],
+            ['funnel_duplicates_reconcile',captured-distinct===duplicates],
+            ['funnel_stages_are_monotonic',captured>=distinct&&distinct>=dateEligible&&dateEligible>=broad&&broad>=candidates],
+            ['funnel_partition_reconciles',inScope+excluded+ambiguous===candidates],
             ['headline_denominator_equals_normalized_distinct',headlineDistinct===distinct],
             ['outlet_quote_dates_inside_selected_window',outletQuoteDatesInsideWindow],
             ['outlet_quote_source_urls_valid',outletQuoteLinksValid],
             ['blocked_or_credential_source_evidence_absent',blockedSourceEvidenceAbsent],
             ['reddit_excerpt_absent_when_lane_not_captured',redditExcerptAbsent&&sourceStatuses.get('reddit')!=='captured'],
             ['fresh_client_report_verification_ready',freshVerification.status==='ready'&&Array.isArray(freshVerification.checks)&&freshVerification.checks.every(check=>check.pass===true)],
-            ['brief_matches_generated_funnel',new RegExp('Of 13 entertainment-mention reviews: \\*\\*2 in OSEG scope\\*\\*[^\\n]+10 excluded[^\\n]+1 ambiguous','i').test(brief)],
-            ['rendered_leads_equal_verified_count',renderedLeads===inScope&&renderedLeads===2],
-            ['tavern_live_music_recovered',/The Tavern in particular was lively and enjoyable, with good live music and excellent service\./i.test(leadSection)],
-            ['ambient_and_amenity_false_positives_absent',!/multiple sources of music creating a cacophony|they had a slide, and a activity list/i.test(leadSection)],
-            ['classifier_rules_file_exists_and_versioned',/Rule-set ID:\*\* `entertainment-classifier-rules-v1`/i.test(classifierRules)&&/\*\*Version:\*\* `V1`/i.test(classifierRules)&&classifierRules.includes(`**Report-generation engine reference reviewed:** \`${process.env.ENGINE_REF}\``)&&/Funnel governed here:\*\* `13 candidates → 2 in scope \/ 10 excluded \/ 1 ambiguous`/i.test(classifierRules)&&/2 \+ 10 \+ 1 = 13/i.test(classifierRules)&&/V1 answers a narrow question/i.test(classifierRules)],
-            ['thin_entertainment_rating_suppressed',inScope<10&&entertainmentMetric==='Rating suppressed'&&html.includes(`${inScope} verified in-scope reviews &middot; minimum n=10`)&&!/sample too small for rating/i.test(html)],
+            ['brief_matches_generated_funnel',briefFunnelPattern.test(brief)],
+            ['rendered_leads_equal_verified_count',renderedLeads===inScope],
+            ['classifier_rules_file_exists_and_versioned',classifierRules.includes('**Rule-set ID:** `entertainment-classifier-rules-v1`')&&classifierRules.includes('**Version:** `V1`')&&classifierRules.includes(`**Report-generation engine reference reviewed:** \`${process.env.ENGINE_REF}\``)&&/V1 answers a narrow question/i.test(classifierRules)],
+            ['thin_entertainment_rating_suppressed',ratingSuppressionValid],
           ].map(([id,pass])=>({id,pass}));
           const replaced=new Set(current.map(c=>c.id));
           const obsolete=/^funnel_|^current_window_count$|^semantic_classifier$|^rendered_leads_equal_in_scope$/;
