@@ -1,0 +1,28 @@
+{
+  "platform": "google",
+  "venue": "Cleopatra’s Pool & Bar",
+  "venueSlug": "cleopatras-pool-and-bar",
+  "listingUrl": "https://www.google.com/maps/search/Cleopatra%27s%20Pool%20%26%20Bar%2C%204747%20N%20Goldwater%20Blvd%2C%20Scottsdale%2C%20AZ%2085251",
+  "reviews": [
+    {
+      "platform": "google",
+      "rating": 5,
+      "ratingMax": 5,
+      "title": null,
+      "text": "We had so much fun this weekend! Great pool and vibes!  Service was excellent! ✌️🌴🍹",
+      "author": "Shawnae Craig",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sd1FtVlZTRFZ6VEVWT2QwNXphRlpCZW01UFIyYxAB!2m1!1s0x0:0x96bd19f5592f13b3!3m1!1s2@1:CAIQACodChtycF9oOmlwQmVVSDVzTEVOd05zaFZBem5PR2c%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT21sd1FtVlZTRFZ6VEVWT2QwNXphRlpCZW01UFIyYxAB",
+      "timestamp": "2026-05-24T23:21:59.295Z"
+    },
+    {
+      "platform": "google",
+      "rating": 5,
+      "ratingMax": 5,
+      "title": null,
+      "text": "Great 4th of July experience. Bar and pool were popping.",
+      "author": "Daniel Richter",
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGMldGRkZjRVF6VkZsSmFYTTRhMUZqUnpFd2QyYxAB!2m1!1s0x0:0x96bd19f5592f13b3!3m1!1s2@1:CAIQACodChtycF9oOjF2WFFFcEQzVFlJaXM4a1FjRzEwd2c%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2pGMldGRkZjRVF6VkZsSmFYTTRhMUZqUnpFd2QyYxAB",
+      "timestamp": "2025-07-05T00:42:50.979Z"
+    }
+  ]
+}

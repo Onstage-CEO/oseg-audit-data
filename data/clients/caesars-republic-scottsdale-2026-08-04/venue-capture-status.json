@@ -1,60 +1,60 @@
 {
   "reportVersion": "venue-capture-v1",
-  "generatedAt": "2026-08-05T00:40:05.954Z",
+  "generatedAt": "2026-08-05T00:55:36.231Z",
   "venues": [
     {
       "venue": "WOLF by Vanderpump",
       "slug": "wolf-by-vanderpump",
-      "yelp": 1,
-      "google": 0,
+      "yelp": 279,
+      "google": 476,
       "tripadvisor": 0,
       "opentable": 803,
-      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+      "note": ""
     },
     {
       "venue": "Luna by Giada",
       "slug": "luna-by-giada",
       "yelp": 609,
-      "google": 0,
+      "google": 759,
       "tripadvisor": 0,
       "opentable": 1726,
-      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling; tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented"
+      "note": "tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented"
     },
     {
       "venue": "Pronto by Giada",
       "slug": "pronto-by-giada",
       "yelp": 0,
-      "google": 0,
+      "google": 15,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+      "note": ""
     },
     {
       "venue": "WOLF Pool",
       "slug": "wolf-pool",
       "yelp": 0,
-      "google": 0,
+      "google": 120,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+      "note": ""
     },
     {
       "venue": "Cleopatra’s Pool & Bar",
       "slug": "cleopatras-pool-and-bar",
       "yelp": 0,
-      "google": 0,
+      "google": 2,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+      "note": ""
     },
     {
       "venue": "Camelback Veranda",
       "slug": "camelback-veranda",
       "yelp": 0,
-      "google": 0,
+      "google": 286,
       "tripadvisor": 0,
       "opentable": 0,
-      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+      "note": ""
     }
   ]
 }
