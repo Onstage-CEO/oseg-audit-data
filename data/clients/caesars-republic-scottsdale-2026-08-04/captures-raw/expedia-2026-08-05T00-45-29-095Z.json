@@ -1,0 +1,2204 @@
+{
+  "platform": "expedia",
+  "capturedAt": "2026-08-05T00:45:29.095Z",
+  "availableReviews": 500,
+  "reviewsAvailable": 500,
+  "provider": {
+    "runId": "b1JbzcvP8dxbNG4x6",
+    "datasetId": "1pRJe2ZEWhzse15Os",
+    "terminalState": "SUCCEEDED"
+  },
+  "actualCostUsd": 1.259,
+  "costStatus": "verified",
+  "providerResultCount": 500,
+  "analyzableTextCount": 241,
+  "acceptedReviewCount": 241,
+  "ratingOnlyCount": 259,
+  "completeness": "complete",
+  "truncated": false,
+  "reviews": [
+    {
+      "platform": "expedia",
+      "text": "Not what they said it would be",
+      "author": "Stacia",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-7pm5g3",
+      "timestamp": "2026-07-25T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Excellent service great location",
+      "author": "Celia",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1gb28y4",
+      "timestamp": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful hotel and suite in a good location of Scottsdale.  Staff are amazing and very accommodating to every need. The mall is very close for shopping and restaurants. Hotel restaurants are great as well. The views from the hotel are beautiful!",
+      "author": "Teresa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1makf3t",
+      "timestamp": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Hotel de primer nivel con buen gimnasio y albercas",
+      "author": "Carlos",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-vkzqx",
+      "timestamp": "2026-07-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Everything was amazing. The egg smell from the faucet was a concern. The courtesy Escalade or golf cart were awesome. Would definitely stay here again",
+      "author": "Tiffany",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1e6xyf0",
+      "timestamp": "2026-07-20T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful hotel, beautiful room, beautiful decor. Great location. Downside, the housekeeping team did a terrible job of serviceing our room, the floors were not swept and and shower and surface tops were not cleaned. Seems like only the bed was made, towels replaced and toilet cleaned.",
+      "author": "Zorik",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-gtv6vx",
+      "timestamp": "2026-07-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The Studio Suites with the view of the Camelback Mountains is impeccable!!! The downside is it near the pool and veranda bar which can be a bit noisy.  The captivating view cause you to disregard. By 10p or 11p, it is quiet. The hotel is adjacent to Fashion Square to shop. The staff is friendly and accommodating. Cleanliness of the facility 10/10.",
+      "author": "NICOLE",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-18bcunj",
+      "timestamp": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel to stay at whether you are planning to eat and go to the pool at the hotel. And there are plenty of restaurants walkable and the Fashion Square Mall is right across the street. Great location and the views are so pretty form the hotel. \nStaff was very helpful and kind the rooms are very clean and spacious.",
+      "author": "Cora",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ib64u2",
+      "timestamp": "2026-07-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Maybe inform guest of the parking costs.",
+      "author": "Thomas",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-282h20",
+      "timestamp": "2026-07-07T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The stay was absolutely fantastic and I had a great time while staying here",
+      "author": "Charles",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ydsjq",
+      "timestamp": "2026-07-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Everything was excellent!",
+      "author": "Claudia",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-dy8epf",
+      "timestamp": "2026-07-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": ".",
+      "author": "Francisco J.",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-10ui6ry",
+      "timestamp": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "5 Star!",
+      "author": "Mary",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1b2ueu0",
+      "timestamp": "2026-06-26T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Loved it. Definitely the place to be while in Scottsdale. Even if you’re older lol \nWe ate at the wolf and absolutely loved it. Both pools are fabulous too. Great vibes. Gorgeous floor to ceiling windows with spacious rooms.  And all day shopping at fashion square mall next door.  We will definitely be back",
+      "author": "Aaron",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-19o3r3t",
+      "timestamp": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very friendly staff. The standard room was beautiful!",
+      "author": "Jessica",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-cf7wge",
+      "timestamp": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "My stay here was top tier from start to finish. The staff was incredibly helpful and welcoming, which made the experience even better. Everything I needed was conveniently close, and my room was spotless, comfortable, and relaxing. Definitely one of the best stays I’ve had in a while.",
+      "author": "Ellease",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-m075i6",
+      "timestamp": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "This was our second stay at Caesar Republic and it never disappoints! Even from the moment you step in, it smells like fresh linen, the staff is always so helpful and accommodating! We stayed in a studio suite and it was amazing, the shower was to die for! We dined at Wolf and Luna, and they to were both incredible! The staff at both were top notch! We love staying here, it one of our favorite places to stay!!! Love your hotel!",
+      "author": "Kay",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1a6kp6u",
+      "timestamp": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful and convenient to shopping.",
+      "author": "Brett",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1r7cb3k",
+      "timestamp": "2026-06-20T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Everything up to standard. Great water in the lobby",
+      "author": "Justin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-uqtqbf",
+      "timestamp": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice and clean hotel. Every staff member are friendly and helpful. Great location.",
+      "author": "attilio franco",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-15nmqxm",
+      "timestamp": "2026-06-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful hotel and friendly staff",
+      "author": "ALISSA",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-q1jyef",
+      "timestamp": "2026-05-30T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "My room was very clean. I had an issue with my refrigerator and the head of maintenance was so nice and very professional and took care of it right away. The staff at the front desk were very friendly and accommodating, all of the restaurants were wonderful and the staff was friendly and helpful. I thoroughly enjoyed my stay.",
+      "author": "Debby",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1irtvwg",
+      "timestamp": "2026-05-25T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "This hotel has a great vibe, excellent restaurants, clean, room are well appointed and within walking distance to great shopping and lots of good restaurants.",
+      "author": "Laura",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-10xyn02",
+      "timestamp": "2026-05-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The water from the sink in our bathroom had a bd smell.",
+      "author": "Dayna",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-u0fnx",
+      "timestamp": "2026-05-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great stay",
+      "author": "Connor Joseph",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1l2np5h",
+      "timestamp": "2026-05-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "My only complaint was our room had a very off putting smell that is hard to describe. Room #302. And the fans did not cool down the room very well, there were times it felt stuffy. But other than that, the staff was great and food was amazing!",
+      "author": "Shanah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1en2abb",
+      "timestamp": "2026-05-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Love this hotel!",
+      "author": "Ralph",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1fpec6j",
+      "timestamp": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Love getting back to this hotel!",
+      "author": "Magdalena",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-rex64a",
+      "timestamp": "2026-05-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Loved the stay",
+      "author": "Emily",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-7kmn0n",
+      "timestamp": "2026-05-05T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Absolutely, hands down, the worst hotel stay we’ve ever had. We were in an upgraded room, but felt as though we were sleeping in a tent on the side of the street. A fight in which the cops were called but the hotel allowed them both to continue staying, (????) partying, any person accessing Wolf can access your hotel rooms- and the actual room doors had a gap so big they looked like they had been kicked in at some point- you could easily see into the room from the hallway by simply looking through the gap at the deadbolt. Terrible staff- literally had my drivers license thrown back at me when asking for a replacement key card. Clogged toilet as soon as we checked in on the first day, a hole in the drywall in our room, just all around a poor experience of a long weekend. The only redeemer was Blake, one of the sweetest valet we’ve met.",
+      "author": "Danica",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1vu1z99",
+      "timestamp": "2026-05-05T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The hotel receptionist Jasmine made sure our stay was comfortable and pleasant. She did an outstanding job with providing great hospitality to me and my son. Our experience was amazing!! We will definitely come back to this hotel!!",
+      "author": "Krystal",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-sdv4yu",
+      "timestamp": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "We did early check in and the room was upgraded! Best decision!! We loved the adult pool area",
+      "author": "Wyatt M",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1wpvhb2",
+      "timestamp": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "EVERYTHING!!!",
+      "author": "Eric",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ysxevt",
+      "timestamp": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Everything was better than expected. Super recommended.",
+      "author": "Jose",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1hqq38e",
+      "timestamp": "2026-04-25T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Upon arriving the hotel looks nice , it is sandwich between parking car garages … we got in the room and the sliding g glass bathroom door was broken …— open the window blinds and we were looking at a parking car garage …. I had order a room with a Mountain View on the site ….. never happened . I called the front desk , they said “ oh. Yes we see you reserved that … set we don’t have any available ! “. “ we made that available tomorrow “ —- never heard from the staff again …. Until late Saturday …. We arrived Thursday !!!!     I would Never stay at this hotel …. It’s clean …. But that’s it.   Also ate at Giadia restaurant … 300$  dinner - food was terrible … I give this Arizona ceasar republic  experience Zero stars …. Looking forward to going home to Mailbu",
+      "author": "james",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-uxeiy0",
+      "timestamp": "2026-04-20T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great",
+      "author": "Diana",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1itwvw7",
+      "timestamp": "2026-04-20T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Na",
+      "author": "Kirstin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-kvvvr0",
+      "timestamp": "2026-04-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Property was great. More shade and umbrellas in the outdoor areas would be optimal.",
+      "author": "Sarah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1cqt1k0",
+      "timestamp": "2026-04-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice place for the $.",
+      "author": "Christopher",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1yiiz6k",
+      "timestamp": "2026-04-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Super clean, great amenities, fabulous food",
+      "author": "Jessica",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-4byqb3",
+      "timestamp": "2026-04-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The only issue was there was construction outside that woke me up at 5 AM on both mornings, but the staff was very accommodating and the dining options were amazing. I loved it and I will stay there again!",
+      "author": "Genevieve",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1t90xmb",
+      "timestamp": "2026-04-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The bar was well stocked!. And staff was super friendly. Our room didn't have a microwave but they made sure to bring us one when we asked!. Gorgeous view. Can't wait to go back",
+      "author": "Michael",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-h0v9m7",
+      "timestamp": "2026-03-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Yes",
+      "author": "Joyce",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1mes2be",
+      "timestamp": "2026-03-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "They closed a pool without notifying us ahead of time. That should be disclosed. We would have chosen a different hotel.",
+      "author": "Daniel",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1i7pi8p",
+      "timestamp": "2026-03-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "M",
+      "author": "Jennifer",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1mr8pgm",
+      "timestamp": "2026-03-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The size of the room was great.  The balcony was great.  The view was amazing.  Loved everything about the place.",
+      "author": "Michael",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-oakab9",
+      "timestamp": "2026-03-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Excelente ubicación, el hotel es muy bonito",
+      "author": "Hugo Valdez",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-oofqyu",
+      "timestamp": "2026-03-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "We really enjoyed our stay at this hotel for a girl’s weekend trip. The location is great. The pool and terrace have amazing views. The room was very clean and spacious.",
+      "author": "Karin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-ck6mgz",
+      "timestamp": "2026-03-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The room didn’t have any body soap",
+      "author": "Noel",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1sjlv4d",
+      "timestamp": "2026-03-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful property",
+      "author": "Amy",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-10wsb15",
+      "timestamp": "2026-03-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The pools were clean and beautiful! Everything about the hotel was fabulous!",
+      "author": "Paige",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1iob0b9",
+      "timestamp": "2026-03-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location, great vibe, and a really cool pool and deck that looks over the entire desert.",
+      "author": "Ed",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-agnvn5",
+      "timestamp": "2026-03-07T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Amazing. Beautifull hotel, clean and the location is amazing. Right next to Fashion Square and some of the best restaurants in town.",
+      "author": "alex",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1bjt2rs",
+      "timestamp": "2026-03-04T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Pools were amazing!  Would have loved for there to be bar service on the first floor.",
+      "author": "Virginia",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1c5d2id",
+      "timestamp": "2026-03-02T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great staff great rooms and",
+      "author": "TIFFANY",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-vv7ek3",
+      "timestamp": "2026-03-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Problem with TV connection was addressed quickly. We only lost first night of TV watching. Also, didn’t realize there was a switch to lower the drapes to black out lights during the night but same engineer showed us the control. Text check in with us was helpful.",
+      "author": "Max",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-pj90kq",
+      "timestamp": "2026-02-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location and a nice hotel and staff.",
+      "author": "Peter",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1pvo5nc",
+      "timestamp": "2026-02-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Spotless",
+      "author": "Jesse",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1gb6hjw",
+      "timestamp": "2026-02-20T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The check in process was a nightmare, cutting into our quality time, and left a bad taste in our mouths on Valentine's day.\nNot sure what went wrong with preparations and timing but this stay did not meet our expectations and what we were hoping would be a redeeming Hilton experience turned out to be the opposite.\n1 star each for friendly staff by the pool/housekeeping and the nice rooms. Misses out on 3.",
+      "author": "Christopher",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-x92487",
+      "timestamp": "2026-02-15T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Room was clean and spacious. Property was amazing.",
+      "author": "Jeremy",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1fn3zcd",
+      "timestamp": "2026-02-15T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Room great, Staff Ok? Front desk person what the local news channels were. Had to get maintenance guy to come up to show us. Great guy!! Hotel location is terrible! Sounds like we're in the infield of the Indy 500. Loud mufflers heard\nuntill 11 PM at night. For $600. per night one shouldn't have to have breakfast in a cafeteria!",
+      "author": "Robert",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-vs0l9j",
+      "timestamp": "2026-02-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Yes",
+      "author": "Terri",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-12t5osh",
+      "timestamp": "2026-02-07T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "great staffs, clean rooms",
+      "author": "Nichola",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1x2fdgd",
+      "timestamp": "2026-02-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful hotel… The rooms were nice and roomy and cut out appropriately. The parking is easy and it’s great because it’s right next to the mall if you need to shop.  The restaurants in the hotel are also delicious!",
+      "author": "Madeline",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-sqp5vh",
+      "timestamp": "2026-02-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "good location, staff was great, luna was a nice restaurant choice",
+      "author": "Shane",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-skp9yo",
+      "timestamp": "2026-02-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Staff was amazing and so helpful. Room was clean and comfortable. Walkable to Old Towne and Fashion Center. Wolf by Vanderpump was delicious!",
+      "author": "Vickie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-wivgq2",
+      "timestamp": "2026-02-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The room was clean and the staff was very nice, however the musician downstairs was so loud we couldn't hear ourselves talk.  Also, it took FOREVER to get hot water to the bathroom sink without turning on the faucet AND the shower to wash up at 10:00 at night.  Kinda not a good thing in a place that has a water shortage.",
+      "author": "Chris",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-akbgmo",
+      "timestamp": "2026-01-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "new gorgeous property beautiful public spaces and rooms\ngreat restaurants on site",
+      "author": "thomas",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-vpbvb2",
+      "timestamp": "2026-01-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Fantastic service and restaurant choices.",
+      "author": "Garret",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1wr6fyf",
+      "timestamp": "2026-01-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel even better value",
+      "author": "Dionisios",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-y9p6l8",
+      "timestamp": "2026-01-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Staff was not inviting I was coming from California for a job walk in the morning at fashion square. I was wearing my work cloths but I wasn't dusty or dirty. I asked for a room and was told sorry they are completely sold out. I would have to get a penthouse suite if I got a room. Probably because they thought I couldn't afford it. I didn't want that sense I was just going there to sleep and wake up at 5am to head to an upcoming construction project. I was told the hotel down the road would be the next place to check, I walked out then figured I should check because I got the feeling they were fibbing the room availability to me. And what do you know I checked on Expedia and booked a room I also went on the hotels website and saw they had 8 rooms available. We stayed here last week and I will be coming back in February to start the job but will probably look at other options as I was not thrilled about my experience. Last week when we stayed it was different yet I was wearing nice cloths that time.",
+      "author": "Jesse",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-y6haeb",
+      "timestamp": "2026-01-14T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Q",
+      "author": "Joseph",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1p6abtr",
+      "timestamp": "2026-01-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Wonderful stay! Gorgeous hotel, everyone was so kind, amazing restaurants and bars. Perfect location, we will definitely be back!",
+      "author": "Mackenzie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-14e4z0u",
+      "timestamp": "2026-01-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel. Very comfortable beds, great pool area, lounge bar and excellent restaurants. Also the location is amazing for access to downtown Scottsdale. Highly recommend. Always a good vibe in the lobby and outdoor areas.",
+      "author": "Wayne",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-tjl1b6",
+      "timestamp": "2026-01-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The staff was awesome. The bed was extremely comfortable. The location was perfect.",
+      "author": "David",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-i6eihp",
+      "timestamp": "2026-01-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Hotel was awesome. Clean room. Good customer service.",
+      "author": "Sean",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1j2jcd9",
+      "timestamp": "2026-01-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Lovely hotel and conveniently close to many restaurants and shopping options.",
+      "author": "Margarita",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1fntcys",
+      "timestamp": "2026-01-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location, friendly staff and professional. Beautiful hotel!!",
+      "author": "Mirit",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ejspxm",
+      "timestamp": "2025-12-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Had the crib ready before check-in",
+      "author": "Zhengrong",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1cazfld",
+      "timestamp": "2025-12-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Our room was dusty but the main issue was that the air conditioning intake was so loud we couldn’t sleep",
+      "author": "Jeremy Lewis",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1a2icz0",
+      "timestamp": "2025-12-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Ok",
+      "author": "Eulalio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-2ar1kh",
+      "timestamp": "2025-12-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Horrible experience. Shower and sink ran out iof water. Never fixed the issues and never apologized  for the issue.",
+      "author": "Michael",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1i1w3i1",
+      "timestamp": "2025-12-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Hotel and staff were perfect",
+      "author": "Christopher",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ugvb76",
+      "timestamp": "2025-12-05T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Room had dustballs under the night stands and dust on furniture.  Bellhop was not offered upon arrival. Cleaning staff knocked on door despite placard saying shhhhh at 9 AM. OVERALL the staff did not seem very inviting or friendly(like they were just doing a job)",
+      "author": "CHRISTIAN",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-5wqf63",
+      "timestamp": "2025-12-05T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Ok, not very clean",
+      "author": "Maria dolores",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1pyjco7",
+      "timestamp": "2025-12-02T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location, beautiful mall, fantastic restaurants.  Scottsdale is the best!",
+      "author": "Sean",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1efjjhb",
+      "timestamp": "2025-12-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The quality and comfort of the bed was exceptional. Our room was clean and spaciousness. This stay exceeded our expectations and I would highly recommend staying at Cesar’s Republic!",
+      "author": "Craig",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-eiza59",
+      "timestamp": "2025-12-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Ok",
+      "author": "Eulalio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-svp0mp",
+      "timestamp": "2025-11-28T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The hotel was gorgeous but they need to tone down the Hilton air freshener in the lobby.  It was so strong, we couldn't hang out without getting congested and sneezing.  The music was also blaring before 6AM, so those few adjustments would make it much more enjoyable.  Unfortunately, when we mentioned it to the front desk gal, she told us she had nothing to do with it. Also, not much for food options on-site (might be better once the new Wolf opens) so good thing Old Town is walkable.",
+      "author": "Jennifer",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-m5rj20",
+      "timestamp": "2025-11-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": ".",
+      "author": "ignacio",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1p7paku",
+      "timestamp": "2025-11-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful Property. Lovely rooms! Overall the operations are terrible! Pronto was out of menu items 3/6 days. Housekeeping was always late, missed a day and had to be called several times to get service. Billing is incorrect and I've been waiting way too much time trying to get it resolved as no one answers the phone!",
+      "author": "Bruce",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1vt41a4",
+      "timestamp": "2025-11-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "This property was an absolute dream.  The staff support was excellent, knowledgeable, extremely friendly and professional.  The hotel was atmosphere was very festive and decorated for Christmas with Holliday music piping through the lobby.   The fragrance of the hotel was delightful.  The guest rooms are inviting and modern.  I have already recommended this hotel to friends and family members on their next visit to Scottsdale.",
+      "author": "Tamika",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-7tflp1",
+      "timestamp": "2025-11-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Awesome hotel with lots of nearby amenities….",
+      "author": "Eric",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-dcmmf5",
+      "timestamp": "2025-11-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Ideal for shopping. \n20 min walk to old town restaurants /bars. \nComplimentary hotel shuttle around town. \nNice well equipped gym. \nLuna restaurant and breakfast bar both great.",
+      "author": "Susan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-2atzys",
+      "timestamp": "2025-11-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Everything was great.",
+      "author": "Tanesha",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-9xrri6",
+      "timestamp": "2025-11-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Bien",
+      "author": "Jorge",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-ejry4",
+      "timestamp": "2025-11-14T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Only one person was at the front desk doing everything at once, even if she was pro efficient it was impossible to do it fast",
+      "author": "Ricardo Robinson",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-5uk0qd",
+      "timestamp": "2025-11-14T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Nice",
+      "author": "Shanterria",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-29hddi",
+      "timestamp": "2025-11-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The hotel was very nice and clean. Updated. Luna by giada was also very delicious",
+      "author": "Kaitlin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-lfvdqw",
+      "timestamp": "2025-11-11T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great spot in old town Scottsdale!\nLoved the rooms and prime location.",
+      "author": "Emily",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-skgh25",
+      "timestamp": "2025-11-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "resturaunt was closed.  room service came to clean our room at 4:30.  too late.  we were already in there, and had to send them back.  no coffee, towels. etc.  I expect more from this place",
+      "author": "Mark",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-17czyvw",
+      "timestamp": "2025-11-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Watch out for the destination fee!",
+      "author": "Mark",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-5s3p4q",
+      "timestamp": "2025-10-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Sadly,the gentleman that checked us in yawned and seemed totally disinterested.  The room I booked thru hotels.com’was not available’, a Mountainview….we were given a room overlooking a parking garage roof.upon calling the front desk, going back down to the lobby to wait, amid a lot of sidestepping and odd excuses, the correct room was presented, after we had tow it while it was inspected.not sure what the inspection was all about as there were wads of hair and dust bunnies under the nightstand, toothpaste on the bathroom floor, and other debris so clearly it had not been vacuumed or mopped.  Yuk!",
+      "author": "Carol Clay",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-ykpde2",
+      "timestamp": "2025-10-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "We loved everything except no access to the pool for our two day stay! We were very dis-appointed as we booked knowing there was 2 pools. We would of not chose this hotel. Otherwise it was a very lovely hotel . We had great service from Kaitlyn in the bar and Ned the manager . Thanks.",
+      "author": "Lisa",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1uh85jk",
+      "timestamp": "2025-10-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "I recently stayed here on a solo trip, and it truly exceeded all my expectations. The suite was huge, spotless, beautifully designed, and so cozy — everything felt fresh, modern, and relaxing. It had that “just right” balance of comfort and style that makes you feel at home away from home.\n\nThe customer service was outstanding! Everyone I interacted with was warm, friendly, and genuinely helpful — from the front desk to housekeeping. You can tell the staff takes real pride in making sure guests have a great experience.\n\nThe local restaurant was another highlight. The food was delicious, fresh, and full of flavor. My host and waitress were both so sweet and attentive, making dining solo feel comfortable and enjoyable.I put in my notes that I wanted a nice sunset view and they definitely made it happen!\n\nAnother huge plus — the location! The hotel is in walking distance to the Fashion Square Mall, Ocean 44, and Toca Madera, which made exploring and grabbing dinner super convenient.\n\nWhether you’re traveling solo or just need a peaceful reset, this hotel is a total gem. I left feeling relaxed and recharged.",
+      "author": "Diana",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-i2ydss",
+      "timestamp": "2025-10-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Lovely hotel, friendly staff, good amenities, good location",
+      "author": "Dominic Myles",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1cbym5j",
+      "timestamp": "2025-10-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great place",
+      "author": "Mikki",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-x6r4k0",
+      "timestamp": "2025-10-11T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Not one to write reviews but this felt deserving.\n1) Showed up to see my room as a mess. Hair all over the floor/carpets, dirty eyelashes in the bathroom, stains / globs of snot on the curtains, stains on the pillowcases. Had to wait THREE hours for my room to get properly cleaned\n2) Construction at 7AM with no prior warning on Expedia or the Hotel's website.\n3) pools closed for 3 days of my stay also with no warning on Expedia or the website.\n4) Water pressure in the shower is atrocious. & There wasn’t even water bottles in the room when i arrived.\n5) Windows are completely see through, so keep that in mind.\n\nOnly compensation they offered me for the dirty room was waiving destination fees and snacks.\n\nI will say after that initial conflict the last few days at the hotel were enjoyable.",
+      "author": "Princeton",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1l9mrt7",
+      "timestamp": "2025-10-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Clean, smells great, food great, staff amazing!",
+      "author": "Sarah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1mvi1kj",
+      "timestamp": "2025-10-02T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The roof top pool area was very nice.  The gym is well equipped, and the staff are all very professional and helpful.  The bar was convenient but way overpriced for drinks, not a reasonable place to unwind for the premium charged.",
+      "author": "David A",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-ox5opy",
+      "timestamp": "2025-10-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Excellent",
+      "author": "Antonella",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-nbjpw1",
+      "timestamp": "2025-09-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great stay, hotel was very clean and everything walking distance",
+      "author": "Tenesha Beverly",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-x6l0h9",
+      "timestamp": "2025-09-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The staff was friendly and professional and the room was very nice with an amazing view",
+      "author": "Aaron",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-559bk",
+      "timestamp": "2025-09-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Great place with great food",
+      "text": "The hotel is neat and well kept! My fiancé and I ate at Luna (attached restaurant) our server Kaitlyn was our favorite and knowledgeable and honest about everything on the menu! The pools and service were pretty good (do have to mention the prices for drinks at the pool are more then at Luna or when going out in Scottsdale or Tempe)",
+      "author": "Gage",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-6k369d",
+      "timestamp": "2025-09-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Celebrated a birthday at spent the day at the pool, dinner at Luna, and an evening on the rooftop to close out the night.  Great service all around.",
+      "author": "Garret",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-h2i3b6",
+      "timestamp": "2025-09-14T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "First time in Scottsdale & I must say the hotel was fantastic! Pronto was delicious! I will definitely return once it cools down.",
+      "author": "Latisha",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1rzqcab",
+      "timestamp": "2025-09-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "It was so convenient to shops, restaurants, etc",
+      "author": "Susan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-193ggvu",
+      "timestamp": "2025-09-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very clean and modern property. Would highly recommend this location.",
+      "author": "Jessica",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1dvdy5q",
+      "timestamp": "2025-09-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Close distance to restaurants and lounges",
+      "author": "Vanessa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1idyl4c",
+      "timestamp": "2025-09-02T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Excelente hotel",
+      "author": "Joel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-xb8vil",
+      "timestamp": "2025-09-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Hotel doing some construction so a bit of inconvenience, bsswillstilnice.",
+      "author": "Christopher",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-9udum2",
+      "timestamp": "2025-08-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great gym and nice pools.  Room was clean and modern.  Hotel was in a great location.",
+      "author": "Chad",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1qc14ey",
+      "timestamp": "2025-08-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The suite was nice, I think it was the most expensive room at the property but had very very few amenities in the main  bathroom and the guest restroom only had a towel and a soap bar.\nWhat is incredibly bad is the room service, no one answers the phone and from 12-5 pm you don’t have any choice to eat in your room.\nIf they bring you a coke they didn’t even bring the can, just a glass of soda with little ice \nVery few towels and only one bathrobe and a pair of sleepers",
+      "author": "Ricardo Robinson",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1vwkvk3",
+      "timestamp": "2025-08-26T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "N/A",
+      "author": "Myron",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1l019i8",
+      "timestamp": "2025-08-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "I would have loved to have given this an amazing review but unfortunately when I checked out, I left a dress in a garment bag in the closet and never saw it again. This was not a small item, nor something that could easily be missed by staff. I checked out on Sunday morning and realized I forgot it on Monday. I called explained the situation and gave them my room number and they just transferred me to security. Security didn't answer so I left a voicemail. I waited 24 hours and security never called back (we are in Tuesday now) so I called back and spoke to the front desk again. This time they contacted security on a walkie talkie to see if housekeeping logged it and took it to security. They replied that the do not have anything. They also contacted the housekeeping staff and they said they do not have it either. I was patched over to the manager where I left a message but have not received a call back. I am at a loss for words and do not trust this hotel. I mean I lost a dress but what if I had forgotten something ALOT more expensive. I do not think I trust the staff enough to stay at that hotel again. There is suppose to be protocol in place when guests leave something and it is logged and turned into security. It appears that this procedure was not followed\n\nAlso rated on Google someone said they would reach out to me… it’s been a few days no one has reached out nor has anyone called me back",
+      "author": "courtni",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-oftr98",
+      "timestamp": "2025-08-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful hotel, great views, close to shopping, helpful professional staff",
+      "author": "Lumi",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-157nqed",
+      "timestamp": "2025-08-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Perfect location for shopping",
+      "text": "The hotel is very nice and at the perfect location if you plan on going shopping at the Fashion Square Mall.  It's literally directly across the street from the Macy's entrance.  My husband stayed at the hotel with our two younger kids and hung out at the pool while I went shopping with our oldest daughter.  We were not able to try the restaurant, unfortunately, but it looks great!",
+      "author": "Konstantina",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1w09cj2",
+      "timestamp": "2025-08-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel!",
+      "author": "Kristin",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-pp137p",
+      "timestamp": "2025-08-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Great choice in Scottsdale!",
+      "text": "Clean, comfortable hotel next to fashion square mall.  Hotel restaurants where good options coffee and cocktails.",
+      "author": "Kimberly",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-v43pni",
+      "timestamp": "2025-08-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Convenient to shopping, restaurants and other places in the Scottsdale area.  Loved the hotel.  The staff was very accommodating.",
+      "author": "Robin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1krprc7",
+      "timestamp": "2025-08-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Overall good\n Only annoying part",
+      "author": "James",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-5nb66b",
+      "timestamp": "2025-08-07T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Excellent Service! The rooms were clean, comfortable, modern, and cozy. The staff was friendly and attentive. The hotel itself is beautiful and has a pleasant atmosphere. \nHighly recommended!!!",
+      "author": "Natalia",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1x0ig3w",
+      "timestamp": "2025-08-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful view of Camelback Mtn",
+      "author": "Bryan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-m5ve1s",
+      "timestamp": "2025-07-28T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful property with amazing restaurant, Luna. We wanted to stay in for a night and watch Netflix, but our internet connection on TV wouldn't work. They sent a tech and when all else failed, put us in a new room. Er very much appreciated the quick service and resolution.",
+      "author": "Sheila",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-cy78d4",
+      "timestamp": "2025-07-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Loved everythin",
+      "author": "Lalla",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-5a06uk",
+      "timestamp": "2025-07-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "I had a wonderful stay at Caesars Republic from start to finish! The property is beautiful and has great amenities. I enjoyed the rooftop pool and lounge and was there almost daily. Additionally, the on-site restaurant Luna is excellent and Amanda gave me great service. All around I had a great day and I am excited to return in a few months.",
+      "author": "Nicole",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1tdjehj",
+      "timestamp": "2025-07-15T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice hotel.",
+      "author": "Willie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1jowetc",
+      "timestamp": "2025-07-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Property is nice and modern. However the bed was not comfortable and the a/c is so loud I could barely fall alseep.",
+      "author": "Ludmila",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-bzsatu",
+      "timestamp": "2025-07-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Nice location for aweekend get away",
+      "author": "Christopher",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1p0k31l",
+      "timestamp": "2025-06-30T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful property! Stunning views of the mountains and the staff was amazing all around! Will definitely be doing more staycations here!",
+      "author": "Rafael",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-f4u080",
+      "timestamp": "2025-06-30T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Almost perfect",
+      "text": "Great overall experience.  Clean, friendly and helpful staff, up-scale boutique feel, hip vibe without being too “clubby”, lots of close parking, great location in Scottsdale. Only negative is the scent pumped through the HVAC into the lobby and main indoor common areas. It could be a nice enhancement to the ambiance if it were subtle; instead, it’s overpowering like a 25 year old bro doused in cologne heading to the clubs.  Bummer we couldn’t enjoy more of the hotel, because within five minutes of being in the main lobby and areas by the bar and restaurant, the scent was giving me a migraine.",
+      "author": "Jennifer",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-42ggme",
+      "timestamp": "2025-06-30T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Best spot for location,",
+      "author": "Isaiah",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ay8key",
+      "timestamp": "2025-06-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "truely beautiful. truely awesome place to stay . quiet and peaceful and great hospitality",
+      "author": "myron",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1nhdrgj",
+      "timestamp": "2025-06-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice, clean hotel with reasonable prices.",
+      "author": "Angela",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-qzo0x7",
+      "timestamp": "2025-06-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "great place to stay",
+      "author": "melissa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1dz1is9",
+      "timestamp": "2025-06-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The worst check in and front desk customer service EVER!!!! A week prior, I called the property and I was told I can call the day of arrival for an early check in since we were landing early. We arrive in PHX (coming from Seattle) at 1030am, called the Property and no answer. I tried to call multiple times until 2pm and still no answer. We started to think, this is awful service!! We finally decided to go there to see if we’re able to check in. A white male checked us is (i did not get his name but it was about 2pm on 5/25/25!) He told us that our room is still not ready — but he still gave us our room keys anyway— which was also odd. He did not even introduce us to the property, directions, etc. I was trying to tell him that we had been calling us all morning and no answer and he cuts me off saying they were busy. Mind you, I called the property while my husband was finishing the check in and phone does not ring at all. Everyday we were there, we would call concierge and housekeeping from our room and NO ANSWER. I call the Property from my cellphone and still no answer! And absolutely absurd!! until we checked out on 5/29/25, a differently lady was at check in she was a white female very friendly (unlike the previous ones) and I realized she had picked up the propertys phone. I thought, wow thats weird, now the phone is on. So i decided to call the Property from my cellphone and what do you know… she picks up. Phone not being on for 5 days is pretty damn wild.",
+      "author": "Rizza May",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1li7uum",
+      "timestamp": "2025-06-02T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "It was a nice hotel. Room was good. Nice pool. Luna and Pronto restaurants had no allergy books, no knowledge of vegan, etc.",
+      "author": "RANNITA",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-w73mww",
+      "timestamp": "2025-06-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The staff was amazing",
+      "author": "Jesse",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-zjfr2g",
+      "timestamp": "2025-06-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Overall, the hotel was great—clean rooms, good location, and a nice atmosphere. However, the service at the poolside definitely needs improvement. The staff seemed inattentive, and we had to return our drinks twice due to poor quality.",
+      "author": "Mariah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1u2smyf",
+      "timestamp": "2025-05-26T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Roosevelt lake as is bangin on a boat",
+      "text": "Amazing",
+      "author": "Martin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1wd6tq7",
+      "timestamp": "2025-05-26T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "During  our four days we continually had to ask for towels, coffee, and cream for the coffee maker. Their breakfast restaurant was marginal offered premade breakfast only. The restaurant on the seventh floor of the service was marginal, but the food was good. Not sure I’d recommend anyone to stay at this place until they cleared up there. Customer service skills as it relates to the food and the condition of the rooms.",
+      "author": "Mark",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-oj7vr0",
+      "timestamp": "2025-05-26T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location and beautifully decorated! Excellent service!",
+      "author": "Jeffrey",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-16iuujj",
+      "timestamp": "2025-05-26T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Amazing Stay!",
+      "author": "Akeem",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-vtme63",
+      "timestamp": "2025-05-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "This experience was one of the worst hotel experiences I have had. The room we had on the sixth floor was dirty and dusty. My family and I stayed here for 2 days and spent $1200 for a terrible experience. I have kids under 21 and the hotel advertises 2 pools. Once we got to the hotel, we realized the rooftop pool was adults only and we were not informed. The room only gave us one waterbottle for the 4 people in the room and only two towels. The room looked like it was used and barely cleaned before we received it. For the amount of money I paid for this experience my expectations were not met.",
+      "author": "Eman",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-13kp6gf",
+      "timestamp": "2025-05-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Property was beautiful, only issue was with housekeeping and the suites do not have locks on the door so a bit of a safety issue as well.",
+      "author": "Martina",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-79ypt3",
+      "timestamp": "2025-05-11T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "It was clean and new",
+      "author": "Raquel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1pbojdr",
+      "timestamp": "2025-05-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location--beautiful hotel and view.",
+      "author": "Lisa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-4ajhxv",
+      "timestamp": "2025-05-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Beautifully decorated and great location",
+      "text": "The room and hotel decor are amazing. The service at the valet and front desk was ok. View from our room was horrible. Pool was nice.",
+      "author": "Melissa",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-inqv6f",
+      "timestamp": "2025-05-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Amazing 5-star",
+      "text": "Room and pricing was amazing.  5 star hotel",
+      "author": "Stephen",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1hj9mi3",
+      "timestamp": "2025-04-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The parking garage was hard to get to ,dark and in the basement. It did not feel like a luxurious hotel parking garage. As a guest of the hotel, I should be allowed to park in the parking lot directly in front of the hotel.",
+      "author": "Crystal",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-japq5d",
+      "timestamp": "2025-04-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice place great vibes",
+      "author": "Avraj",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-17zfh0w",
+      "timestamp": "2025-04-20T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Had to change rooms 2 different times minimum due to rooms being dirty. One with food and dirt crumbs all over the floor, bed and room couch also and fresh white stains unknown origin. The second room was filled with cigarette smoke. Security came to look and verified my claim. House keeping didn’t come until, day 3 of a 4 night 5 day stay. Made the bed but did not change linen either time they cleaned room.  Manager did adjust room cost because I did have to move from the king suit with balcony and Mountain View  that I booked to just a king room city view. The manager was very pleasant and helpful.  Would not book this hotel again. Definitely not worth the cost.",
+      "author": "Lizchataue",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-c07kgt",
+      "timestamp": "2025-04-20T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "A very nice hotel and very welcoming (water and champagne at check in was so nice!)\n\nWould stay here again!",
+      "author": "Scott",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-3fgw69",
+      "timestamp": "2025-04-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Beautiful",
+      "text": "This hotel was beautiful, we stayed for our 17 year wedding anniversary and we would love to come back again!",
+      "author": "Sabrina",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1tikc97",
+      "timestamp": "2025-04-11T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great property and perfect location",
+      "author": "Kris",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-6uax8r",
+      "timestamp": "2025-04-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great",
+      "author": "Francis",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1x6q6zr",
+      "timestamp": "2025-03-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The room was spacious and comfortable.",
+      "author": "kimberly",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1tow4ug",
+      "timestamp": "2025-03-25T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Loved our room! The front desk attendant at check in was not welcoming or friendly at all. She gave no information about the property and only spoke to ask for my credit card and ID.",
+      "author": "shirlanda",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-83uqrr",
+      "timestamp": "2025-03-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel",
+      "author": "Karyn",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-tjmehp",
+      "timestamp": "2025-03-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Great stay atvery comfortable, new, stylish hotel.",
+      "text": "Great new hotel - very stylish and comfortable with great rooftop bar/pool/restaurant area as well.  Excellent location in Scottsdale and service was great.  I would definitely stay again.",
+      "author": "Richard",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-zctvfe",
+      "timestamp": "2025-03-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel, location, staff.",
+      "author": "Branislav",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1lbtfu9",
+      "timestamp": "2025-03-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Happy with our stay. The room and amenities at this resort are top tier. The staff at the restaurants, front desk and bars were friendly and inviting. We will stay here again",
+      "author": "LATOYA RENA",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-18bcigw",
+      "timestamp": "2025-03-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "I wasn't happy that check in time was 4PM and had to wait until 4:45 for a room to be ready. One bartender by the pool and it took 25 minutes to actually get 2 drinks. We have had better experiences at other properties in Scottsdale!",
+      "author": "Antonio",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-12ucatr",
+      "timestamp": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Great hotel next to fashion square",
+      "text": "Nice hotel in great location. Walkable to old town bars and restaurants.  Enjoyed our stay.",
+      "author": "Reginald",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-rxq4lc",
+      "timestamp": "2025-03-15T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Terrible experience. Check in was at 4:00 and we didn't get our room until after 5:00 pm. I reserved a premium suite with Mountain View and was given a different room as an \"upgrade\" which was right at the pool/bar area, where the music was super loud at night and my kids couldn't sleep. When I called the front desk to ask to turned down the music they said they couldn't do that and that the music would stop at 2:00 am when the bar closes. Also, the room was not very clean. There was dust on all surfaces and the bathrooms smelled bad. We won't be back.",
+      "author": "Luis",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-davuzy",
+      "timestamp": "2025-03-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel, great location but customer service not the greatest for such a upscale hotel",
+      "author": "Cesar",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-fo4a2s",
+      "timestamp": "2025-03-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Nice property, but overpriced for the offerings. Late checkout is $100/hour.  Bottled tequila in the rooms are $450 to give you an idea. In my room, things looked messed with like the toiletries. Wall mounted dispensers were broken and on the floor.  Would NOT stay again.",
+      "author": "Pedro",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-11eq0xr",
+      "timestamp": "2025-03-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location for shopping and dining! Very cool, modern hotel. My only complaint is that I felt like my room had not been vacuumed in months! There was a cracker on the floor by the bed that was was there when I checked in and still there 4 days later!",
+      "author": "Margarita",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1dmyhg0",
+      "timestamp": "2025-03-07T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Nice stay",
+      "text": "Overall, nice/new hotel. The service was ok - it seems like many of the people working there seem rather inexperienced (lots of training going on, so that's good). It was almost impossible to get a bottled water - in a GLASS. Maybe consider replacing all the plastic...\nThe golf carts are key! The location is somewhat awkward so the golf carts really make a difference. \nI would def stay again.",
+      "author": "Sharon",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-ruufmm",
+      "timestamp": "2025-03-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Wheather was amazing",
+      "author": "Verified traveler",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1bbi6qs",
+      "timestamp": "2025-02-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great hotel",
+      "author": "Jason",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-y97aac",
+      "timestamp": "2025-02-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice 👍 we will definitely come back .",
+      "author": "Nunziata",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-g695fp",
+      "timestamp": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Loved it!",
+      "author": "Tony",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1op858l",
+      "timestamp": "2025-02-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Hilton has recently taken over this property and they have some work to do to get it into top operating condition. I booked the location because it was in a convenient location. It was priced at the upper range and so my expectations are high. I did note at the time that \"service\" had been dinged by other travelers and unfortunately, this is the case. The biggest problem is their breakfast cafe downstairs where 4 out of 5 days they goofed my breakfast order.  Housekeeping is also a bit sloppy and there was a Q-Tip sitting in the hallway for 2 days that the cleaning team just left behind. Strange: very easy to spot. So, while the location and facilities are great, Hilton has some work to do to tighten up the service on site. In the meantime, the room rates are high for the level of service provided. Knowing Hilton, they will get this fixed. It's just very disappointing to stay at a property that fails to deliver service.",
+      "author": "Robert",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1n98uf5",
+      "timestamp": "2025-01-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "It was nice seeing the same people that were working there the last time we stayed there. The familiar face is nice to see.",
+      "author": "Denise",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-8uvglb",
+      "timestamp": "2025-01-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful place to stay. \nRooms and lobby are spacious and practical, with very nice amenities in the Bath area .. \nSuper Treats in room were over the top. \nLived it !!",
+      "author": "DONNA",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-119995o",
+      "timestamp": "2025-01-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location",
+      "author": "Samir",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1owqjbi",
+      "timestamp": "2024-12-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Great Stay",
+      "text": "Scottsdale location was everything that a 5 star hotel should be. I’ll definitely return.",
+      "author": "Lanard",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1kurtho",
+      "timestamp": "2024-12-30T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "We had such a great time! Beautiful hotel and excellent service!!",
+      "author": "Melissa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-7fu73w",
+      "timestamp": "2024-12-23T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great as always",
+      "author": "David",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-dzgoei",
+      "timestamp": "2024-12-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Nice new property",
+      "author": "Johnny",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-tbdooa",
+      "timestamp": "2024-12-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "It's one of the best properties I've stayed at. The staff was friendly and welcoming. Great location with many dining options nearby.",
+      "author": "John",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-14sw9ro",
+      "timestamp": "2024-12-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Hubo un pequeño inconveniente, yo había reservado habitación con 2 camas y nos entregaron con 1 cama; les comunique el error y me Atendieron con la habitación de 2 camas.  Todo Muy bien.  Excelente hotel. Gracias",
+      "author": "Gabriela",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1pnzmt4",
+      "timestamp": "2024-12-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Everything worked out perfectly.",
+      "author": "Christopher",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1tyfb3s",
+      "timestamp": "2024-12-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Overall good the shower gel was out and the clock was way off",
+      "author": "Kenneth",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-15tz7y1",
+      "timestamp": "2024-12-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Friendly check-in staff",
+      "author": "Kingston",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-6oz5tv",
+      "timestamp": "2024-12-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "nice place",
+      "author": "Joseph",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1o4mw9c",
+      "timestamp": "2024-12-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great place friendly staff",
+      "author": "michel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-8rzx6v",
+      "timestamp": "2024-11-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Good",
+      "author": "Claudia Myriam",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-12a5ss7",
+      "timestamp": "2024-11-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "My husband and I traveled to Scottsdale, Arizona for our Minimoon. We had the BEST time and absolutely loved Scottsdale. The Caesar Republic Hotel is absolutely breath-taking. Stunning! Everyone was extremely friendly and there was a lot to do in the hotel as well as nearby. Ubers and Lyft was inexpensive, which we loved. Upon arriving to the hotel we were greeted with a glass of champagne. Room Service was also great! We would highly recommend this hotel. A 10 out of 10 experience. We will be back!",
+      "author": "Caroline",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1tuh5a4",
+      "timestamp": "2024-11-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Among the worst hotel experience in recent times. Super un-clean room with massive hair left in the shower from the previous guests, no shower gel in the shower, the bottle of shampoo not working, the bathroom sink clogged and a snobby front desk attitude. I thought coming to this brand new hotel would have a different experience, but turns out this place did not provide that experience at all for me.",
+      "author": "Michael",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-14sm24a",
+      "timestamp": "2024-11-13T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Love to stay here for staycations. Super close to shopping centers and great restaurants",
+      "author": "Janette",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-hjjubc",
+      "timestamp": "2024-11-10T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "Frustrating",
+      "text": "Every day we had an issue with housekeeping. First day our room was not cleaned, and we had to ask why, and I was asked did you call? I had service please on the door and we were gone from 9-3 and my husband had a zoom call, and the room was still not cleaned. When it was cleaned, they did not replace the toiletries and once again we had to call and request them. They took the bathrobe, and we called for one and it was never delivered. \nI'm not quite sure why a small coffee maker is not in the room, went down to get coffee and brought it to the room and the expensive cup was cold! again not sure why no coffee accommodations.I feel the hotel is lacking in hospitality.",
+      "author": "Sherry",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1jhlr1b",
+      "timestamp": "2024-11-08T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Room was very awkward layout for the price we paid for a corner room. TV set up was fair at best. \nWe wont be back.\nBryan",
+      "author": "Bryan",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-48hsid",
+      "timestamp": "2024-11-05T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Top class service and accommodations!",
+      "author": "Christine",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-605ljh",
+      "timestamp": "2024-11-04T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Placed in room with broken air conditioner.  Had engineer work on system and waited three hours.   Second call to front desk without resolution.  Moved late to an upgraded room with air off and temperature at 82 degrees which took three hours to cool down in a city with a high temp of 108 degrees.  Room finally cooled down at 12:30 am comfortable enough to sleep.  Did not get to enjoy properly.  Discussed with manager who did not feel the experience was there fault and wouldn’t compensate or give another night.  Very disappointed and will not return to property and will tell friends and family about the very poor customer service and attitude.",
+      "author": "Lynn",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1w0ilm8",
+      "timestamp": "2024-10-11T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Loved the area but the main issue I had was paying $100 amenity fee when I had to edit the dirty windows in my pool pictures. I was also told upon checkin that the ENTIRE deposit and fees up front would be returned then upon checkout another lady told me the amenities fee isn’t refundable.",
+      "author": "Verified traveler",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-15erkys",
+      "timestamp": "2024-09-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location and service!",
+      "author": "Ekaterina",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-hpe4dx",
+      "timestamp": "2024-09-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "everything was exceptional! other than my room not being ready during check in time, it was well worth the wait! i have already recommended this hotel to several of my colleagues and a few friends! i will definitely be back.",
+      "author": "Amber",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-17apl7x",
+      "timestamp": "2024-09-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Enjoyed the pool area, and the front desk staff and wait service was outstanding throughout my stay; I’ll definitely be back for future stays!\nAlso cleanliness is a must for me, and the room and hotel were in pristine condition, so that gave me the peace of mind regarding the high standards being upheld. Thank you!",
+      "author": "David",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1li8v7g",
+      "timestamp": "2024-09-09T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Everything was great!",
+      "author": "Dawn J",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-i8okg4",
+      "timestamp": "2024-09-04T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "my room was not clean, very dusty, had a few dirty towels, did not have enough towels, room service missed 1 day.  And the pool party music all weekend long was too loud and lasted way to long.  Loved the location, love the gym, but not sure if I would stay there again.",
+      "author": "Kenneth L",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1tkru3z",
+      "timestamp": "2024-09-02T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Easily one of the best hotels in Scottsdale!",
+      "author": "Jordan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-hbkqs1",
+      "timestamp": "2024-09-01T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "N/A",
+      "author": "Emily",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-180d9m1",
+      "timestamp": "2024-08-31T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "I booked a stay for my Parents, and they absolutely loved their experience at the hotel!!!  It’s beautiful and clean with great customer service!!!  Hi, recommend them to anyone. Wanted to stay in Scottsdale.",
+      "author": "Stanley",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1m7haev",
+      "timestamp": "2024-08-30T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Its awesome",
+      "author": "Bruno",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-12p0kc9",
+      "timestamp": "2024-08-29T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Amazing. Such a beautiful hotel in great area.",
+      "author": "Adrien",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-extxei",
+      "timestamp": "2024-08-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Doble cobro",
+      "author": "Jesus",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-7gi9mc",
+      "timestamp": "2024-08-26T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Planned a little stay-cation for the weekend & couldn’t have been happier with the short stay. From the front desk staff to the pool deck staff all the way to the valet. This place is amazing! Looking forward to planning my next stay.",
+      "author": "Stephanie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-dhizqi",
+      "timestamp": "2024-08-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Property was easily accessible from the airport. Was locked out of my room twice due  to a faulty lock. Couldn’t locate security to let me in the 2nd time. Gave me a new room that had me checking out the next day though I was staying longer. Complimentary coffee was not readily accessible. The young staff tried to help the best they could.",
+      "author": "Amy",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-wn6qn0",
+      "timestamp": "2024-08-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "There was no coffee available for early risers. There was no information ahead of time about a $51 a day amenity fee.  No coffee in rooms. Showers had nowhere to put products guest brought.  Monday-wed which was most of our stay the cafe was closed and again you couldn’t get coffee up front.  Coffee Machine broken never fixed.  Our room was only “cleaned once” that consisted of making the bed!!!!!  We will not ever go to another Caesars Republic location.",
+      "author": "Bradley",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1x9t0au",
+      "timestamp": "2024-08-22T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The property itself is very nice I stayed on the 6th floor which is just under the 7th floor where the restaurant night life is quite loud.  I would just make sure I picked a different floor next time.  I was very disappointed in room service..  I was hoping for a pot of coffee and breakfast on a plate instead of to go cups and to go cardboard",
+      "author": "Lori",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-a5rfh7",
+      "timestamp": "2024-08-12T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful newer property. So much attention paid to details. Great, friendly staff and clean rooms and common areas. The Scottsdale Fashion Square is right outside the lobby. So convenient to shopping, dining, and nightlife.",
+      "author": "Margaret",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-bh6xaw",
+      "timestamp": "2024-08-11T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "title": "SHAMEFUL!!",
+      "text": "While the atmosphere was pleasant, my stay was not. The WiFi and AC did not work. Upon arrival, the room reserved was unavailable and we had to wait for another. We, then, were moved a second time due to AC and electrical problems. Though the manager was pleasant, the service beyond that point was terrible. She removed the amenity fees as a courtesy, at least we were told. The AC went out in the new room, and I was over it. The room was not cleaned all three nights and four days we were there. Just when I thought it couldn’t get worse, they attempted to finally come clean the room and kick us out prior to checkout time. After informing the front desk that the stay was terrible at checkout, they mentioned amenity fees, which I will be monitoring my card for. Will never be staying at this resort again.",
+      "author": "Brenda",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1btjucw",
+      "timestamp": "2024-08-06T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "This property exceeded my expectations. The staff was friendly . Definitely will rank #2",
+      "author": "Kisha",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-nrim30",
+      "timestamp": "2024-08-05T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "The shampoo and conditioner bottles were empty in the shower, had to use body soap to wash hair. Also, no q-tips or facial pads to remove makeup, however, there were 2 shower caps instead.",
+      "author": "Howard",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-5wqh6s",
+      "timestamp": "2024-08-04T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Had blackout curtains. Essential for the AZ sun!",
+      "author": "Seandee",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ouisze",
+      "timestamp": "2024-08-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Amazing place will stay in future vacations",
+      "author": "Jonathan",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-ues670",
+      "timestamp": "2024-08-03T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Thank you",
+      "author": "Henry",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-m8wtlu",
+      "timestamp": "2024-07-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great location. Fun friendly staff.",
+      "author": "Gurprit",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1lttrnj",
+      "timestamp": "2024-07-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Very nice hotel. Good restaurant.",
+      "author": "CANDY",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1ydqucm",
+      "timestamp": "2024-06-30T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Pretty",
+      "author": "Ciara",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1pcv6dv",
+      "timestamp": "2024-06-24T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "I had a absolutely great experience! Dsh was super nice and very helpful! My sister and I will be back again.",
+      "author": "Veronica",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-uv0s36",
+      "timestamp": "2024-06-21T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "That’s really beautiful, I’m just I don’t like too much about whit deposit amount",
+      "author": "Jesus",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1rovan2",
+      "timestamp": "2024-06-18T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Great place to stay.",
+      "author": "david",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-ff02sg",
+      "timestamp": "2024-05-19T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Property is beautiful, rooms and amenities great.\nStaff is always unbelievable, I can’t express this enough. Even if the hotel was horrible (which it was far from horrible!), I would still go back there because of the staff.",
+      "author": "Lindsay",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-6r89f5",
+      "timestamp": "2024-05-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "They pretend to be a luxury hotel but the way they resolve a lot of things (black outs, the bathroom, enormous space por 3 spirit bottles, tiny closet, the way that they install the tv, etc, etc) reflect improvisation.",
+      "author": "Abraham",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-psrgzl",
+      "timestamp": "2024-05-02T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Brand new property!  Nice and. Lose to everything",
+      "author": "Jean",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1jzzdz0",
+      "timestamp": "2024-04-27T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Beautiful hotel room.\nNew Property \nExpensive Parking\n1.5 hours to order room service, food was cold and wrong order \nNo Spa\nThe front staff does not answer the phone at T just rings and rings and rings.",
+      "author": "Carrie",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-dspw0f",
+      "timestamp": "2024-04-17T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Excelente ubicación un hotel nuevo con muchos restaurantes y tiendas a pocos metros del hotel",
+      "author": "Ricardo",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-1n98kh5",
+      "timestamp": "2024-04-16T00:00:00.000Z"
+    },
+    {
+      "platform": "expedia",
+      "text": "Awesome",
+      "author": "Mark",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-8ke6ue",
+      "timestamp": "2024-04-07T00:00:00.000Z"
+    }
+  ]
+}

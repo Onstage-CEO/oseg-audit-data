@@ -1,6 +1,6 @@
 {
   "reportVersion": "V1",
-  "generatedAt": "2026-08-05T00:26:21.722Z",
+  "generatedAt": "2026-08-05T00:45:29.095Z",
   "property": {
     "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
     "location": "Scottsdale, Arizona"
@@ -37,13 +37,30 @@
     {
       "platformId": "expedia",
       "mechanism": "aggregator",
-      "status": "no_queries",
-      "message": "Apify expedia: exact canonical URL must match the requested property: https://*.expedia.com/<property>.h<hotel-id>.Hotel-Information.",
-      "recordsAdded": 0,
+      "status": "ok",
+      "message": "Apify expedia: captured 241 new, skipped 0 dup(s).; 500 available; 259 rating-only (no text)",
+      "recordsAdded": 241,
       "duplicatesSkipped": 0,
       "queriesRun": 1,
       "queriesFailed": 0,
-      "truncatedQueries": []
+      "truncatedQueries": [],
+      "coverage": {
+        "capturedReviews": 241,
+        "availableReviews": 500,
+        "requestedDepth": 4490,
+        "mode": "deep",
+        "truncated": false,
+        "reviewedMaxChargeUsd": 5,
+        "actualCostUsd": 1.259,
+        "costStatus": "verified",
+        "providerResultCount": 500,
+        "analyzableTextCount": 241,
+        "ratingOnlyCount": 259,
+        "completeness": "complete",
+        "providerRunId": "b1JbzcvP8dxbNG4x6",
+        "providerDatasetId": "1pRJe2ZEWhzse15Os",
+        "providerTerminalState": "SUCCEEDED"
+      }
     },
     {
       "platformId": "google",
@@ -119,11 +136,12 @@
     }
   ],
   "spend": {
-    "knownActualCostUsd": 0.7239,
-    "reviewedMaximumUsd": 15,
+    "knownActualCostUsd": 1.9828999999999999,
+    "reviewedMaximumUsd": 20,
     "costStatus": "verified",
     "sourcesTracked": [
       "booking",
+      "expedia",
       "google",
       "tripadvisor"
     ],
