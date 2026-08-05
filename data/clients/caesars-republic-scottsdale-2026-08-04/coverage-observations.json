@@ -69,6 +69,23 @@
         "retryable": false,
         "message": "Official location context was reviewed, but no map-derived inference was needed or used in the guest-evidence analysis."
       }
+    },
+    {
+      "source": "cluburlaub",
+      "usedInReport": false,
+      "confidence": "high",
+      "propertyAttempt": {
+        "source": "cluburlaub",
+        "mechanism": "bounded public-index identity check",
+        "attemptedAt": "2026-08-05T02:25:00.000Z",
+        "result": "checked_no_data",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "complete",
+        "truncated": false,
+        "retryable": false,
+        "message": "Two bounded exact-property Cluburlaub.de searches returned no identity-matched listing for Caesars Republic Scottsdale. No Cluburlaub review corpus was acquired or used."
+      }
     }
   ],
   "outlets": []
