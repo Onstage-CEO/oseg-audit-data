@@ -3,11 +3,11 @@
 - **Rule-set ID:** `entertainment-classifier-rules-v1`
 - **Version:** `V1`
 - **Classifier prompt version:** `V1`
-- **Report-generation engine reference reviewed:** `c7985fd9248e3cfa0c682ef15db4a32e62019849`
+- **Report-generation engine reference reviewed:** `7aefa3ebecf309494dddacba5e5479beb204c530`
 - **Applies to:** the entertainment-candidate partition shown in the Caesars Republic Scottsdale artifact-only report
 - **Funnel governed here:** `4 candidates → 3 in scope / 1 excluded / 0 ambiguous`
 
-This file documents the classification behavior already reflected in the current engine, audit brief, and human recall audit. It does not introduce new exclusions or retroactively classify individual reviews.
+This file documents the deterministic candidate retrieval rules and the complete source-linked human adjudication ledger that governs the terminal partition. The engine must consume `entertainment-adjudication.json` when it exists and fail closed if that ledger is incomplete, stale, duplicated, or invalid.
 
 ## Scope boundary
 
@@ -52,7 +52,7 @@ Duplicate handling occurs in the canonical captured corpus before semantic scope
 
 ### CR-V1-05 — Unclear entertainment mentions
 
-Classify `ambiguous` when a review mentions entertainment or music but names no venue and the text could describe either a resort-operated public venue or a private event. Ambiguous reviews are held for human review and are not promoted into client-facing conclusions. When unsure between `in_scope` and `ambiguous`, choose `ambiguous`.
+The deterministic classifier returns `ambiguous` when a review mentions entertainment or music but names no venue and the text could describe either a resort-operated public venue or a private event. A completed human review may resolve that hold only when the full property-review text establishes the property-operated relationship strongly enough to assign one permitted venue category and the reviewer records a source-linked rationale. The adjudication ledger must cover every current candidate; a partial override is invalid. When no complete ledger exists, uncertainty remains `ambiguous`.
 
 ### CR-V1-06 — Passing praise is not automatically a lead
 
@@ -94,4 +94,4 @@ For the selected-date corpus, the report presents:
 | Excluded private-event or unrelated noise | 1 |
 | Ambiguous and held for human review | 0 |
 
-The arithmetic contract is `3 + 1 + 0 = 4`. This file documents the rules governing that partition; the evidence artifacts remain the source of the counts and review-level records.
+The arithmetic contract is `3 + 1 + 0 = 4`. The terminal review-level decisions are recorded in `entertainment-adjudication.json`, and generation must reproduce that ledger exactly before the package can pass its analytical gate.

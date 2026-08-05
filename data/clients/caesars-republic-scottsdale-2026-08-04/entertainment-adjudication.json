@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "V1",
+  "reviewedAt": "2026-08-05",
+  "reviewedBy": "Joe-directed full human recall audit",
+  "decisions": [
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toRWMydHpSbEZ2ZERWaFYwdzRUV3RQUkROWk5VRRAB!2m1!1s0x0:0x77d2b894579d9725!3m1!1s2@1:CAIQACodChtycF9oOkhEc2tzRlFvdDVhV0w4TWtPRDNZNUE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2toRWMydHpSbEZ2ZERWaFYwdzRUV3RQUkROWk5VRRAB",
+      "scope": "in_scope",
+      "venue": "bar_lounge",
+      "isLead": true,
+      "rationale": "The property review places live music or a DJ at the hotel and describes the program as audible from the guest room; the completed human review accepted it as resort-operated public-venue entertainment."
+    },
+    {
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-akbgmo",
+      "scope": "in_scope",
+      "venue": "bar_lounge",
+      "isLead": true,
+      "rationale": "The property review explicitly reports a musician performing downstairs; the completed human review accepted the downstairs public venue as the resort-operated entertainment source."
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB!2m1!1s0x0:0x77d2b894579d9725!3m1!1s2@1:CAIQACodChtycF9oOkxJQlVGSXlzSHZIY0otYmZXOUx0MHc%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB",
+      "scope": "in_scope",
+      "venue": "bar_lounge",
+      "isLead": true,
+      "rationale": "The guest explicitly describes enjoyable live music in the hotel lobby as the highlight of the evening."
+    },
+    {
+      "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twNkxXZHRWR1pvU25saVprWjRaWHBZVmpaaVdVRRAB!2m1!1s0x0:0x77d2b894579d9725!3m1!1s2@1:CAIQACodChtycF9oOkp6LWdtVGZoSnliZkZ4ZXpYVjZiWUE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2twNkxXZHRWR1pvU25saVprWjRaWHBZVmpaaVdVRRAB",
+      "scope": "out_of_scope",
+      "rationale": "Conference/private-event context plus unrelated music from another guest room; not a verified resort-operated public entertainment program."
+    }
+  ]
+}
