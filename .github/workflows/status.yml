@@ -135,7 +135,11 @@ jobs:
             # 2. Auto-populate the source registry from the archive (no-op if already
             #    declared) so verify's source/lane-coverage gate reflects real coverage.
             npm run dev --silent -- sync-source-registry "$ws/audit.json" 2>&1 || true
-            # 3. Verify (now reads the populated registry). NOT_READY exits 1 by design.
+            # 3. Persist the fail-closed source attempt ledger and coverage matrix.
+            #    A matrix with blockers is still valuable diagnostic state, so status
+            #    records it before verify instead of waiting for report generation.
+            npm run dev --silent -- generate-coverage-matrix "$ws" 2>&1 || true
+            # 4. Verify (now reads the populated registry). NOT_READY exits 1 by design.
             args=(verify "$ws/audit.json" --json --summary)
             [ -f "$ws/captures.json" ] && args+=(--capture-archive "$ws/captures.json")
             npm run dev --silent -- "${args[@]}" > "$ws/verify-report.json" || true
@@ -164,6 +168,9 @@ jobs:
             fi
           done
           git add data/clients/*/verify-report.json data/clients/*/capture-archive-summary.json data/clients/*/audit.json
+          find data/clients -mindepth 2 -maxdepth 2 -type f \
+            \( -name property-source-attempts.json -o -name source-coverage-matrix.json -o -name source-coverage-matrix.md \) \
+            -print0 | xargs -0 -r git add --
           if git diff --cached --quiet; then
             echo "Reports unchanged — nothing to commit."
             exit 0
