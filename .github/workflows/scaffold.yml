@@ -68,6 +68,7 @@ jobs:
   attestation-gate:
     uses: ./.github/workflows/phoenician-attestation-freeze-gate.yml
     with:
+      targetSlug: ${{ inputs.workspaceSlug }}
       operationMode: mutation
 
   scaffold:
@@ -261,6 +262,7 @@ jobs:
     with:
       slug: ${{ needs.scaffold.outputs.slug }}
       actorEmail: ${{ inputs.actorEmail }}
+      publishMode: ${{ inputs.workspaceSlug == 'caesars-republic-scottsdale-2026-08-04' && 'artifact_only' || 'commit' }}
       # Renovation date drives the report's pre/post split + the post-reno case
       # examples; the analysis window (if any) is carried through too.
       splitDate: ${{ inputs.renovationDate }}
