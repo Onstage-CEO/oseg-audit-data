@@ -222,6 +222,45 @@ jobs:
           fs.writeFileSync(attemptsPath,JSON.stringify(ledger,null,2)+'\n');
           NODE
           npm run dev --silent -- generate-coverage-matrix "$ws"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const ws=process.env.ws,out=process.env.package_dir;
+          const attemptsPath=`${ws}/property-source-attempts.json`;
+          const matrixPath=`${ws}/source-coverage-matrix.json`;
+          const markdownPath=`${ws}/source-coverage-matrix.md`;
+          for(const [src,dst] of [[attemptsPath,`${out}/generator-raw-property-source-attempts.json`],[matrixPath,`${out}/generator-raw-source-coverage-matrix.json`],[markdownPath,`${out}/generator-raw-source-coverage-matrix.md`]]) fs.copyFileSync(src,dst);
+          const attempts=JSON.parse(fs.readFileSync(attemptsPath,'utf8'));
+          const matrix=JSON.parse(fs.readFileSync(matrixPath,'utf8'));
+          const captures=JSON.parse(fs.readFileSync(`${ws}/captures.json`,'utf8')).captures??[];
+          const targeted=JSON.parse(fs.readFileSync(`${out}/targeted-capture-results.json`,'utf8')).results??[];
+          const labels={google:'Google / Google Maps reviews',booking:'Booking.com reviews',expedia:'Expedia reviews'};
+          const reconciliation=[];
+          for(const source of Object.keys(labels)){
+            const archiveCount=captures.filter(row=>row.platformId===source).length;
+            const raw=targeted.find(row=>row.platformId===source);
+            if(!raw||raw.status==='error'||archiveCount<1) throw new Error(`${source} cannot be reconciled: raw terminal capture or sealed archive missing`);
+            const result=raw.coverage?.truncated?'truncated':raw.coverage?.completeness==='complete'?'captured_complete':'captured_partial';
+            const attempt=(attempts.attempts??[]).find(row=>row.source===source);
+            const scope=(matrix.scopes??[]).find(item=>item.scope==='property');
+            const row=(scope?.rows??[]).find(item=>item.source===source);
+            if(!attempt||!row) throw new Error(`${source} generated attempt or matrix row missing`);
+            reconciliation.push({source,generatorRecordsReturned:attempt.recordsReturned,generatorRecordsAccepted:attempt.recordsAccepted,generatorCountFound:row.countFound,generatorCountCaptured:row.countCaptured,sealedArchiveCount:archiveCount,rawProviderResultCount:raw.coverage?.providerResultCount??null,rawAnalyzableTextCount:raw.coverage?.analyzableTextCount??null});
+            Object.assign(attempt,{attemptedAt:process.env.bound_ts,result,recordsReturned:archiveCount,recordsAccepted:archiveCount,completeness:raw.coverage?.completeness??'partial',truncated:Boolean(raw.coverage?.truncated),retryable:false,message:`${raw.message}; post-generation bound reconciliation uses captures.json sealed archive count ${archiveCount}`});
+            Object.assign(row,{checked:true,captured:true,countFound:archiveCount,countCaptured:archiveCount,usedInReport:true,status:result==='captured_complete'?'captured':'captured_partial',attemptResult:result,attemptMessage:attempt.message,attemptedAt:process.env.bound_ts,completeness:attempt.completeness,truncated:attempt.truncated,retryable:false});
+          }
+          fs.writeFileSync(attemptsPath,JSON.stringify(attempts,null,2)+'\n');
+          fs.writeFileSync(matrixPath,JSON.stringify(matrix,null,2)+'\n');
+          const markdown=fs.readFileSync(markdownPath,'utf8').split('\n').map(line=>{
+            const source=Object.keys(labels).find(key=>line.startsWith(`| ${labels[key]} |`));
+            if(!source) return line;
+            const cells=line.split('|').map(cell=>cell.trim());
+            const archiveCount=reconciliation.find(item=>item.source===source).sealedArchiveCount;
+            cells[8]=String(archiveCount); cells[9]=String(archiveCount);
+            return `| ${cells.slice(1,-1).join(' | ')} |`;
+          }).join('\n');
+          fs.writeFileSync(markdownPath,markdown);
+          fs.writeFileSync(`${out}/post-generation-count-reconciliation.json`,JSON.stringify({schemaVersion:'post-generation-count-reconciliation-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:process.env.bound_ts,countAuthority:'captures.json sealed analytical archive',reconciliation},null,2)+'\n');
+          NODE
 
       - name: Enforce targeted terminal states and corpus-attempt synchronization
         run: |
