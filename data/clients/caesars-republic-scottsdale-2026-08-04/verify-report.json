@@ -5,9 +5,9 @@
   "status": "not_ready",
   "exitCode": 1,
   "summary": {
-    "okCount": 9,
+    "okCount": 10,
     "warningCount": 1,
-    "failCount": 2
+    "failCount": 1
   },
   "checks": [
     {
@@ -23,22 +23,27 @@
       "label": "Required research source coverage",
       "status": "ok",
       "messages": [
-        "1 covered, 6 skipped with reason",
-        "skipped: google (not_found) — Not present in the captured corpus.",
-        "skipped: tripadvisor (not_found) — Not present in the captured corpus.",
-        "skipped: booking (not_found) — Not present in the captured corpus.",
-        "skipped: expedia (not_found) — Not present in the captured corpus.",
-        "skipped: reddit (blocked) — Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google...",
+        "1 covered, 7 skipped with reason",
+        "skipped: google (not_found) — Exact listing pin added; paid capture pending.",
+        "skipped: tripadvisor (not_found) — Exact listing pin added; paid capture pending.",
+        "skipped: booking (not_found) — Exact listing pin added; paid capture pending.",
+        "skipped: expedia (not_found) — Exact listing pin added; paid capture pending.",
+        "skipped: blogs (not_found) — Open-web discovery was evaluated separately; no blog or editorial result is treated as captured g...",
+        "skipped: reddit (blocked) — Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence ...",
         "skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captured-revie..."
       ]
     },
     {
       "id": "lane_coverage",
       "label": "Source lane coverage (registry)",
-      "status": "fail",
+      "status": "ok",
       "messages": [
-        "1 gating lane(s) neither covered nor explicitly skipped:",
-        "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale"
+        "Review platforms: explicitly skipped: google (not_found) — Exact listing pin added; paid capture pending.",
+        "OTA review platforms: explicitly skipped: booking (not_found) — Exact listing pin added; paid capture pending.",
+        "Community / social discussion: explicitly skipped: reddit (blocked) — Reddit was not captured because approved credentials are unavailable. No Reddit-derived e…",
+        "Video / creator content: covered by youtube",
+        "Travel blogs / editorial media: explicitly skipped: blogs (not_found) — Open-web discovery was evaluated separately; no blog or editorial result is treated as ca…",
+        "Aerial / maps context: explicitly skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captur…"
       ]
     },
     {
@@ -119,7 +124,7 @@
   ],
   "sourceCoverage": {
     "coveredCount": 1,
-    "skippedCount": 6,
+    "skippedCount": 7,
     "missingRequired": [],
     "coveredPlatforms": [
       "youtube"
@@ -128,27 +133,32 @@
       {
         "platformId": "google",
         "kind": "not_found",
-        "reason": "Not present in the captured corpus."
+        "reason": "Exact listing pin added; paid capture pending."
       },
       {
         "platformId": "tripadvisor",
         "kind": "not_found",
-        "reason": "Not present in the captured corpus."
+        "reason": "Exact listing pin added; paid capture pending."
       },
       {
         "platformId": "booking",
         "kind": "not_found",
-        "reason": "Not present in the captured corpus."
+        "reason": "Exact listing pin added; paid capture pending."
       },
       {
         "platformId": "expedia",
         "kind": "not_found",
-        "reason": "Not present in the captured corpus."
+        "reason": "Exact listing pin added; paid capture pending."
+      },
+      {
+        "platformId": "blogs",
+        "kind": "not_found",
+        "reason": "Open-web discovery was evaluated separately; no blog or editorial result is treated as captured guest-review evidence."
       },
       {
         "platformId": "reddit",
         "kind": "blocked",
-        "reason": "Reddit native API is CAPTCHA-blocked; Reddit mentions are captured via open-web discovery (Google index) instead."
+        "reason": "Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence is used in this report."
       },
       {
         "platformId": "aerial_satellite",
@@ -192,7 +202,7 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-08-05T00:16:47.690Z",
+    "now": "2026-08-05T00:19:38.014Z",
     "liveVerifiedTotal": 0,
     "dated": 0,
     "stale": 0,
@@ -210,36 +220,26 @@
   },
   "readinessSummary": {
     "overall": "not_ready",
-    "headline": "NOT READY — 2 blockers",
-    "nextAction": "Resolve 2 blockers before shipping: Source lane coverage (registry); Analytical substance",
+    "headline": "NOT READY — 1 blocker",
+    "nextAction": "Resolve 1 blocker before shipping: Analytical substance",
     "checks": {
-      "ok": 9,
+      "ok": 10,
       "warn": 1,
-      "fail": 2
+      "fail": 1
     },
     "blockers": [
-      "Source lane coverage (registry)",
       "Analytical substance"
     ],
     "warnings": [
       "Keyword group coverage"
     ],
     "blockerIds": [
-      "lane_coverage",
       "audit_content"
     ],
     "warningIds": [
       "keyword_coverage"
     ],
     "blockerDetails": [
-      {
-        "id": "lane_coverage",
-        "check": "Source lane coverage (registry)",
-        "details": [
-          "1 gating lane(s) neither covered nor explicitly skipped:",
-          "Travel blogs / editorial media [recommended] — needs one of: blogs — capture it, or add a skippedSources entry with kind + rationale"
-        ]
-      },
       {
         "id": "audit_content",
         "check": "Analytical substance",
@@ -261,7 +261,7 @@
     ],
     "sourceCoverage": {
       "covered": 1,
-      "skipped": 6,
+      "skipped": 7,
       "missingRequired": 0
     },
     "keywordGroups": {
@@ -280,5 +280,5 @@
       "unmatched": 0
     }
   },
-  "timestamp": "2026-08-05T00:16:47.704Z"
+  "timestamp": "2026-08-05T00:19:38.029Z"
 }
