@@ -236,6 +236,7 @@ jobs:
         # caught inside the command, so this step never fails the capture.
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP || '10' }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
