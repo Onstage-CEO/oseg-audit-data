@@ -237,7 +237,8 @@ jobs:
           # Deterministic label stamp from the corpus commit time (the prose still
           # varies run-to-run since it's model-authored — a re-run is real
           # re-generation, expected to commit).
-          NOW=$(git -C "$DATA_REPO" log -1 --format=%cI -- "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true)
+          RAW_NOW=$(git -C "$DATA_REPO" log -1 --format=%cI -- "data/clients/$IN_SLUG/captures-raw" 2>/dev/null || true)
+          NOW=$([ -n "$RAW_NOW" ] && date -u -d "$RAW_NOW" +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || true)
           preview_args=()
           if [ "$IN_PUBLISH_MODE" != "commit" ]; then
             preview_args+=(--internal-preview)
