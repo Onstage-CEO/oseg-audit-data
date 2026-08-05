@@ -1,0 +1,14 @@
+{
+  "queries": [
+    {
+      "query": "site:hoteltonight.com/hotel \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:hoteltonight.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"Ratings\"",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}
