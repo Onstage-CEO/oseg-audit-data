@@ -1,0 +1,343 @@
+name: Caesars three-platform bound synchronization
+run-name: "Caesars Google-Booking-Expedia bound sync — requested by ${{ inputs.actorEmail }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      actorEmail:
+        description: Access-verified email of the requesting user
+        required: true
+        default: joe@onstage.biz
+        type: string
+
+concurrency:
+  group: caesars-three-platform-bound-sync
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 7aefa3ebecf309494dddacba5e5479beb204c530
+  SLUG: caesars-republic-scottsdale-2026-08-04
+  REGISTRY_VERSION: v2
+  OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD: '0'
+  OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE: '10'
+  OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING: '5'
+  OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA: '5'
+  OSEG_CAPTURE_DEPTH: '4490'
+  OSEG_APIFY_MAX_WAIT_MS: '3000000'
+
+permissions:
+  contents: read
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - name: Validate authenticated operator
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
+          GH_ACTOR: ${{ github.actor }}
+        run: |
+          set -euo pipefail
+          test "$ACTOR_EMAIL" = "joe@onstage.biz"
+          case "$GH_ACTOR" in
+            Onstage-CEO|oseg-automation[bot]) ;;
+            *) echo "::error::unauthorized dispatch actor: $GH_ACTOR"; exit 1 ;;
+          esac
+
+      - name: Checkout data repository at bound SHA
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+
+      - name: Checkout pinned production engine
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Verify pins and initialize atomic binding
+        env:
+          DATA_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          test "$(git -C engine rev-parse HEAD)" = "$ENGINE_REF"
+          test "$(jq -r .approvedEngineRef data-repo/.github/engine-release.json)" = "$ENGINE_REF"
+          test "$(git -C data-repo rev-parse HEAD)" = "$DATA_SHA"
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$SLUG"
+          test -f "$ws/audit.json"
+          bound_ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          package_dir="$RUNNER_TEMP/caesars-three-platform-bound-package"
+          mkdir -p "$package_dir"
+          jq -n \
+            --arg runId "$RUN_ID" \
+            --arg runAttempt "$RUN_ATTEMPT" \
+            --arg runTimestamp "$bound_ts" \
+            --arg engineSha "$ENGINE_REF" \
+            --arg dataSha "$DATA_SHA" \
+            --arg workspaceId "$SLUG" \
+            --arg registryVersion "$REGISTRY_VERSION" \
+            --argjson apifyMinAccountHeadroomUsd "$OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD" \
+            '{schemaVersion:"three-platform-bound-run-v1",runId:$runId,runAttempt:$runAttempt,runTimestamp:$runTimestamp,engineSha:$engineSha,dataSha:$dataSha,workspaceId:$workspaceId,sourceUniverseVersion:$registryVersion,apifyMinAccountHeadroomUsd:$apifyMinAccountHeadroomUsd}' \
+            > "$package_dir/bound-run.json"
+          echo "ws=$ws" >> "$GITHUB_ENV"
+          echo "bound_ts=$bound_ts" >> "$GITHUB_ENV"
+          echo "package_dir=$package_dir" >> "$GITHUB_ENV"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine dependencies
+        working-directory: engine
+        run: npm ci
+
+      - name: Apify numeric account-headroom preflight
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const out=process.env.package_dir;
+          const token=process.env.APIFY_TOKEN;
+          const reserve=Number(process.env.OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD);
+          const ceilings={google:Number(process.env.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE),booking:Number(process.env.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING),expedia:Number(process.env.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA)};
+          const preflight={schemaVersion:'apify-headroom-preflight-v1',checkedAt:new Date().toISOString(),reserveUsd:reserve,reviewedCeilingsUsd:ceilings,requiredInitialHeadroomUsd:Math.max(...Object.values(ceilings))+reserve,status:'blocked'};
+          try {
+            if(!token) throw new Error('APIFY_TOKEN is unavailable');
+            if(!Number.isFinite(reserve)||reserve<0) throw new Error('OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD must be a reviewed nonnegative number');
+            if(Object.values(ceilings).some(v=>!Number.isFinite(v)||v<=0)) throw new Error('all three reviewed per-platform ceilings must be positive numbers');
+            const response=await fetch('https://api.apify.com/v2/users/me/limits',{headers:{authorization:`Bearer ${token}`}});
+            if(!response.ok) throw new Error(`Apify account limits returned HTTP ${response.status}`);
+            const raw=await response.json();
+            const maximum=Number(raw?.data?.limits?.maxMonthlyUsageUsd);
+            const used=Number(raw?.data?.current?.monthlyUsageUsd);
+            if(!Number.isFinite(maximum)||!Number.isFinite(used)) throw new Error('Apify account limits response was malformed');
+            const headroom=Math.max(0,maximum-used);
+            Object.assign(preflight,{maxMonthlyUsageUsd:maximum,monthlyUsageUsd:used,headroomUsd:headroom});
+            if(headroom+Number.EPSILON<preflight.requiredInitialHeadroomUsd) throw new Error(`Apify headroom $${headroom.toFixed(3)} (used $${used.toFixed(3)} of $${maximum.toFixed(3)}) is below the largest reviewed run ceiling $${Math.max(...Object.values(ceilings)).toFixed(3)} + reserve $${reserve.toFixed(3)}`);
+            preflight.status='satisfied';
+            preflight.blocker=null;
+          } catch(err) {
+            preflight.blocker=err instanceof Error?err.message:String(err);
+          }
+          fs.writeFileSync(`${out}/apify-account-preflight.json`,JSON.stringify(preflight,null,2)+'\n');
+          if(preflight.status!=='satisfied') throw new Error(preflight.blocker);
+          NODE
+
+      - name: Capture Google Booking and Expedia only
+        working-directory: engine
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          set -euo pipefail
+          cat > .tmp-caesars-three-platform.ts <<'TS'
+          import { readFile, writeFile } from 'node:fs/promises';
+          import { bookingApifyAdapter, expediaApifyAdapter, googleApifyAdapter } from './src/capture/apify-adapter.js';
+          import { buildCaptureRunStatus, loadCaptureRunStatusIfPresent, persistCaptureRunStatus } from './src/capture/run-status.js';
+
+          const ws=process.env.ws;
+          const out=process.env.package_dir;
+          const now=process.env.bound_ts;
+          if(!ws||!out||!now) throw new Error('bound workflow environment is incomplete');
+          const audit=JSON.parse(await readFile(`${ws}/audit.json`,'utf8'));
+          const target={
+            propertyName:String(audit.client?.propertyName??''),
+            location:String(audit.client?.location??''),
+            googleUrl:audit.client?.googleUrl,
+            bookingUrl:audit.client?.bookingUrl,
+            expediaUrl:audit.client?.expediaUrl,
+          };
+          for(const key of ['propertyName','location','googleUrl','bookingUrl','expediaUrl']) if(typeof target[key as keyof typeof target]!=='string'||!target[key as keyof typeof target]) throw new Error(`audit.client.${key} is required`);
+          const tasks=[
+            {platform:'google',adapter:googleApifyAdapter,maxResults:Number(process.env.OSEG_CAPTURE_DEPTH)},
+            {platform:'booking',adapter:bookingApifyAdapter,maxResults:Number(process.env.OSEG_CAPTURE_DEPTH)},
+            {platform:'expedia',adapter:expediaApifyAdapter,maxResults:Number(process.env.OSEG_CAPTURE_DEPTH)},
+          ] as const;
+          const results:any[]=[];
+          for(const task of tasks){
+            try {
+              const result=await task.adapter.capture({workspaceDir:ws,target,queries:[],env:process.env,now,maxResults:task.maxResults});
+              results.push(result);
+            } catch(err) {
+              results.push({platformId:task.platform,status:'error',message:`uncaught adapter failure: ${err instanceof Error?err.message:String(err)}`,recordsAdded:0,duplicatesSkipped:0,queriesRun:1,queriesFailed:1,truncatedQueries:[]});
+            }
+          }
+          const previous=await loadCaptureRunStatusIfPresent(ws);
+          const byPlatform=new Map((previous?.sources??[]).map((source:any)=>[source.platformId,source]));
+          for(const result of results) byPlatform.set(result.platformId,result);
+          await persistCaptureRunStatus(ws,buildCaptureRunStatus({generatedAt:now,property:target,sources:[...byPlatform.values()] as any}));
+          await writeFile(`${out}/targeted-capture-results.json`,JSON.stringify({schemaVersion:'targeted-capture-results-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:now,platforms:['google','booking','expedia'],results},null,2)+'\n');
+          TS
+          npx tsx .tmp-caesars-three-platform.ts
+          rm .tmp-caesars-three-platform.ts
+
+      - name: Refresh all 23 attempts and source matrix
+        working-directory: engine
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- generate-coverage-matrix "$ws"
+
+      - name: Enforce targeted terminal states and corpus-attempt synchronization
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const ws=process.env.ws,out=process.env.package_dir;
+          const read=name=>JSON.parse(fs.readFileSync(`${ws}/${name}`,'utf8'));
+          const matrix=read('source-coverage-matrix.json');
+          const attempts=read('property-source-attempts.json');
+          const captures=read('captures.json').captures??[];
+          const rows=matrix.scopes.flatMap(s=>s.scope==='property'?s.rows:[]).filter(r=>r.supportedByEngine===true);
+          const targetNames=['google','booking','expedia'];
+          const targetRows=targetNames.map(source=>rows.find(r=>r.source===source));
+          const attemptRows=targetNames.map(source=>(attempts.attempts??[]).find(r=>r.source===source));
+          const captureCounts=Object.fromEntries(targetNames.map(source=>[source,captures.filter(r=>r.platformId===source).length]));
+          const failures=[];
+          if(rows.length!==23) failures.push(`expected 23 supported lanes, found ${rows.length}`);
+          const nonterminal=new Set(['not_checked','not_attempted','pending','queued','in_progress']);
+          for(const row of rows) if(nonterminal.has(row.status)||nonterminal.has(row.attemptResult)) failures.push(`${row.source} remained nonterminal (${row.status}/${row.attemptResult})`);
+          for(let i=0;i<targetNames.length;i++){
+            const source=targetNames[i],row=targetRows[i],attempt=attemptRows[i];
+            if(!row) { failures.push(`${source} matrix row missing`); continue; }
+            if(!['captured','captured_partial'].includes(row.status)) failures.push(`${source} ${row.status}: ${row.attemptMessage??row.reason??'no reason'}`);
+            if(!attempt) { failures.push(`${source} attempt row missing`); continue; }
+            if(!['captured_complete','captured_partial','truncated'].includes(attempt.result)) failures.push(`${source} ${attempt.result}: ${attempt.message??'no reason'}`);
+            if(Number(attempt.recordsAccepted)!==Number(row.countCaptured)) failures.push(`${source} attempt accepted ${attempt.recordsAccepted} != matrix captured ${row.countCaptured}`);
+            if(Number(attempt.recordsAccepted)!==captureCounts[source]) failures.push(`${source} attempt accepted ${attempt.recordsAccepted} != analytical capture archive ${captureCounts[source]}`);
+          }
+          const reddit=rows.find(r=>r.source==='reddit');
+          if(!reddit||reddit.captured||reddit.status!=='blocked_credentials'||reddit.attemptResult!=='blocked_credentials') failures.push('Reddit native lane is not blocked_credentials with zero native capture');
+          const synchronization={schemaVersion:'corpus-attempt-synchronization-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:process.env.bound_ts,synchronized:failures.length===0,platforms:Object.fromEntries(targetNames.map((source,i)=>[source,{attemptResult:attemptRows[i]?.result??null,attemptRecordsAccepted:attemptRows[i]?.recordsAccepted??null,matrixStatus:targetRows[i]?.status??null,matrixCountCaptured:targetRows[i]?.countCaptured??null,captureArchiveCount:captureCounts[source]}])),failures};
+          fs.writeFileSync(`${out}/corpus-attempt-synchronization.json`,JSON.stringify(synchronization,null,2)+'\n');
+          const summary={schemaVersion:'matrix-summary-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:process.env.bound_ts,supportedLaneCount:rows.length,capturedComplete:rows.filter(r=>r.status==='captured').length,capturedPartial:rows.filter(r=>r.status==='captured_partial').length,terminalNoDataOrIdentity:rows.filter(r=>['checked_no_data','identity_resolved'].includes(r.status)).length,blockedOrUnavailable:rows.filter(r=>['blocked_credentials','provider_error','needs_configuration','not_supported_yet'].includes(r.status)).length,nativeRedditCaptured:false};
+          fs.writeFileSync(`${out}/matrix-summary.json`,JSON.stringify(summary,null,2)+'\n');
+          for(const name of ['property-source-attempts.json','source-coverage-matrix.json','source-coverage-matrix.md']) fs.copyFileSync(`${ws}/${name}`,`${out}/${name}`);
+          if(failures.length) throw new Error(failures.join('; '));
+          NODE
+
+      - name: Rebuild and re-classify the full analytical evidence set
+        working-directory: engine
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "${ANTHROPIC_API_KEY:-}"
+          npm run dev --silent -- entertainment-discovery "$ws"
+          npm run dev --silent -- generate-brief "$ws" --now "$bound_ts"
+          npm run dev --silent -- entertainment-evidence "$ws" --max-reviews 1000 --now "$bound_ts"
+          args=(verify "$ws/audit.json" --json --summary)
+          [ -f "$ws/captures.json" ] && args+=(--capture-archive "$ws/captures.json")
+          npm run dev --silent -- "${args[@]}" > "$ws/verify-report.json" || true
+          npm run dev --silent -- readiness "$ws" --now "$bound_ts" --json > /tmp/readiness.json || true
+
+      - name: Validate analytical controls and seal fresh funnel
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const ws=process.env.ws,out=process.env.package_dir;
+          const brief=fs.readFileSync(`${ws}/audit-brief.md`,'utf8');
+          const recall=JSON.parse(fs.readFileSync(`${ws}/caesars-human-recall-review.json`,'utf8'));
+          const captures=JSON.parse(fs.readFileSync(`${ws}/captures.json`,'utf8')).captures??[];
+          const ratedPlatforms=new Set(['google','booking','expedia','tripadvisor']);
+          const raw=captures.filter(r=>ratedPlatforms.has(r.platformId)).length;
+          const reconciliation=recall.reconciliation??{};
+          const failures=[];
+          if(raw!==reconciliation.rawCaptured) failures.push(`fresh rated capture corpus ${raw} != human-reviewed reconciliation ${reconciliation.rawCaptured}; fresh human reconciliation required before release`);
+          const dateMatch=/\*\*Analysis window:\*\* (\d+) date-eligible reviews/.exec(brief);
+          const scopeMatch=/Of (\d+) entertainment-mention reviews: \*\*(\d+) in OSEG scope\*\*[^\n]*, (\d+) excluded[^\n]*, (\d+) ambiguous/.exec(brief);
+          if(!dateMatch||!scopeMatch) failures.push('fresh analytical brief funnel could not be parsed');
+          const leadsBlock=(/## OSEG leads[\s\S]*?(?=\n## Ambiguous)/.exec(brief)?.[0])??'';
+          const quoteLines=leadsBlock.split('\n').filter(line=>line.startsWith('> *"'));
+          const inScope=scopeMatch?Number(scopeMatch[2]):null;
+          if(inScope!=null&&quoteLines.length!==inScope) failures.push(`in-scope count ${inScope} != rendered verbatim lead count ${quoteLines.length}`);
+          if(quoteLines.some(line=>!line.includes('([source](http'))) failures.push('one or more in-scope leads lacks a source link');
+          if(!/directional only/i.test(brief)||!/sample too small for rating/i.test(brief)) failures.push('n<10 rating suppression or directional-language control missing');
+          if(!/private\/event-space noise/i.test(brief)) failures.push('private/event-space exclusion disclosure missing');
+          const funnel={raw:reconciliation.rawCaptured,duplicates:reconciliation.duplicateCopiesCollapsed,distinct:reconciliation.normalizedDistinct,dateEligible:dateMatch?Number(dateMatch[1]):null,broadTheme:reconciliation.broadTheme,candidates:scopeMatch?Number(scopeMatch[1]):null,inScope,excluded:scopeMatch?Number(scopeMatch[3]):null,ambiguous:scopeMatch?Number(scopeMatch[4]):null};
+          if(funnel.dateEligible!==reconciliation.dateEligible||funnel.candidates!==reconciliation.entertainmentCandidates||funnel.inScope!==reconciliation.inScope||funnel.excluded!==reconciliation.excluded||funnel.ambiguous!==reconciliation.ambiguous) failures.push('fresh brief funnel does not reconcile to the reviewed decision ledger');
+          fs.writeFileSync(`${out}/entertainment-funnel.json`,JSON.stringify({schemaVersion:'entertainment-funnel-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:process.env.bound_ts,...funnel},null,2)+'\n');
+          if(failures.length) throw new Error(failures.join('; '));
+          NODE
+
+      - name: Seal programming inventory and internal Tier-B package
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          import path from 'node:path';
+          const ws=process.env.ws,out=process.env.package_dir;
+          const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+          const binding=read(path.join(out,'bound-run.json'));
+          const preflight=read(path.join(out,'apify-account-preflight.json'));
+          const matrixSummary=read(path.join(out,'matrix-summary.json'));
+          const synchronization=read(path.join(out,'corpus-attempt-synchronization.json'));
+          const funnelDoc=read(path.join(out,'entertainment-funnel.json'));
+          const {schemaVersion:ignored,boundRunId:ignoredId,boundRunTimestamp:ignoredTs,...funnel}=funnelDoc;
+          const programmingInput=read(path.join(ws,'programming-verification-input.json'));
+          const badAuthority=[];
+          for(const program of programmingInput.programs??[]) for(const source of program.sources??[]) if(!['L1','L2','L3'].includes(source.level)) badAuthority.push(`${program.name}:${source.level??'missing'}`);
+          if(badAuthority.length) throw new Error(`programming authority outside L1-L3: ${badAuthority.join(', ')}`);
+          const programming={...programmingInput,sealed:true,boundRunId:binding.runId,boundRunTimestamp:binding.runTimestamp,engineSha:binding.engineSha,dataSha:binding.dataSha,authorityPolicy:'L1-L3 only; guest mentions cannot establish current programming.'};
+          fs.writeFileSync(path.join(out,'programming-current-status.json'),JSON.stringify(programming,null,2)+'\n');
+          const copyNames=['audit-brief.md','entertainment-discovery.json','entertainment-discovery.md','entertainment-evidence.html','verify-report.json','report-readiness.json','classifier-rules-v1.md','source-inventory.json','captures.json','capture-run-status.json','capture-archive-summary.json','caesars-human-recall-review.json','programming-verification-input.json'];
+          for(const name of copyNames){const src=path.join(ws,name);if(!fs.existsSync(src)) throw new Error(`required Tier-B artifact missing: ${name}`);fs.copyFileSync(src,path.join(out,name));}
+          fs.writeFileSync(path.join(out,'human-editorial-attestation-placeholder.json'),JSON.stringify({schemaVersion:'human-editorial-attestation-v1',workspaceId:binding.workspaceId,boundRunId:binding.runId,boundRunTimestamp:binding.runTimestamp,reviewerName:null,reviewedAt:null,decision:null,notes:null,artifactSetSha256:null,status:'awaiting_human_signature'},null,2)+'\n');
+          fs.writeFileSync(path.join(out,'client-report-generation-status.json'),JSON.stringify({schemaVersion:'client-report-generation-status-v1',status:'not_generated_pending_human_attestation',boundRunId:binding.runId,boundRunTimestamp:binding.runTimestamp,reason:'Full client report intentionally withheld until human attestation is signed after corpus-attempt synchronization.'},null,2)+'\n');
+          fs.writeFileSync(path.join(out,'INTERNAL-TIER-B-INDEX.md'),`# Caesars Republic Scottsdale — synchronized internal Tier-B package\n\nBound run: ${binding.runId}\n\nTimestamp: ${binding.runTimestamp}\n\nEngine: ${binding.engineSha}\n\nData: ${binding.dataSha}\n\nApify minimum account headroom reserve: $${binding.apifyMinAccountHeadroomUsd.toFixed(2)}\n\nGoogle, Booking.com, and Expedia were the only source adapters launched. The 23-lane ledger and matrix were refreshed, and corpus-attempt synchronization is machine-checked. No full client report is included; human editorial attestation remains required.\n`);
+          const files=fs.readdirSync(out).filter(n=>n!=='release-manifest.json').sort();
+          const artifacts=files.map(name=>{const b=fs.readFileSync(path.join(out,name));return{name,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')}});
+          const manifest={...binding,schemaVersion:'caesars-three-platform-bound-release-manifest-v1',releaseStatus:'INTERNAL_TIER_B_AWAITING_HUMAN_ATTESTATION',sourceUniverse:{registryVersion:process.env.REGISTRY_VERSION,versionedResearchUniverse:63,engineSupportedPropertyLanes:23},apify:{minAccountHeadroomUsd:binding.apifyMinAccountHeadroomUsd,accountPreflight:preflight,reviewedSpendCeilingsUsd:{google:Number(process.env.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE),booking:Number(process.env.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING),expedia:Number(process.env.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA)},captureDepth:Number(process.env.OSEG_CAPTURE_DEPTH),maxWaitMs:Number(process.env.OSEG_APIFY_MAX_WAIT_MS)},matrixSummary,entertainmentFunnel:funnel,corpusAttemptsSynchronized:synchronization.synchronized,reportGenerationStatus:'not_generated_pending_human_attestation',controls:{ratingSuppressedBelow:10,privateEventNoiseExcluded:true,verbatimQuoteAndSourceRequired:true,directionalOnly:true,nativeRedditCaptured:false,searchIndexRedditTypedAsOpenWebOnly:true,programmingAuthorityLevels:['L1','L2','L3'],guestMentionsEstablishCurrentProgramming:false},artifacts};
+          fs.writeFileSync(path.join(out,'release-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+          NODE
+
+      - name: Machine-check synchronized bound package
+        run: |
+          set -euo pipefail
+          jq -e '.engineSha==env.ENGINE_REF and .dataSha==env.GITHUB_SHA and .workspaceId==env.SLUG and .sourceUniverse.registryVersion==env.REGISTRY_VERSION and .apify.minAccountHeadroomUsd==0 and .corpusAttemptsSynchronized==true and .controls.nativeRedditCaptured==false and .reportGenerationStatus=="not_generated_pending_human_attestation"' "$package_dir/release-manifest.json" >/dev/null
+          jq -e '.status=="satisfied" and .reserveUsd==0' "$package_dir/apify-account-preflight.json" >/dev/null
+          jq -e '.synchronized==true and ([.platforms[]|.attemptResult=="captured_complete" or .attemptResult=="captured_partial" or .attemptResult=="truncated"]|all)' "$package_dir/corpus-attempt-synchronization.json" >/dev/null
+          test "$(jq -r .status "$package_dir/human-editorial-attestation-placeholder.json")" = awaiting_human_signature
+          test "$(jq -r .supportedLaneCount "$package_dir/matrix-summary.json")" = 23
+          test "$(jq -r '.sources|length' "$package_dir/source-inventory.json")" = 63
+          test ! -e "$package_dir/client-report.html"
+          ! rg -n 'reddit.{0,100}captured_complete|captured_complete.{0,100}reddit' "$package_dir/source-coverage-matrix.json" "$package_dir/property-source-attempts.json"
+          while IFS=$'\t' read -r name expected; do actual=$(sha256sum "$package_dir/$name"|cut -d' ' -f1);test "$actual" = "$expected";done < <(jq -r '.artifacts[]|[.name,.sha256]|@tsv' "$package_dir/release-manifest.json")
+
+      - name: Upload synchronized internal Tier-B package
+        uses: actions/upload-artifact@v4
+        with:
+          name: caesars-three-platform-tier-b-${{ github.run_id }}
+          retention-days: 30
+          if-no-files-found: error
+          path: ${{ runner.temp }}/caesars-three-platform-bound-package
+
+      - name: Publish bound-run summary
+        run: |
+          set -euo pipefail
+          echo "### Caesars three-platform synchronized bound run" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Engine: \`$ENGINE_REF\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Data: \`${GITHUB_SHA}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Timestamp: \`$bound_ts\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Apify minimum account headroom reserve: \`$OSEG_APIFY_MIN_ACCOUNT_HEADROOM_USD\` USD" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Corpus / attempts synchronized: **yes**" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Full client report: **not generated — human attestation pending**" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload fail-closed diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: caesars-three-platform-failure-${{ github.run_id }}
+          retention-days: 30
+          if-no-files-found: warn
+          path: ${{ runner.temp }}/caesars-three-platform-bound-package
