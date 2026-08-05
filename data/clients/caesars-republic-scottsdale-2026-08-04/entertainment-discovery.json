@@ -1,0 +1,146 @@
+{
+  "reportVersion": "entertainment-discovery-v1",
+  "generatedAt": "2026-08-05T00:09:20.049Z",
+  "target": {
+    "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
+    "location": "Scottsdale, Arizona"
+  },
+  "posture": "This is the entertainment evidence hunt: start with the highest-yield visual, social, forum, blog, complaint, Spanish-language, and competitor searches, then preserve the strongest sourced findings for human review before anything becomes client-facing.",
+  "queryPacks": [
+    {
+      "sourceId": "tiktok",
+      "displayName": "TikTok guest videos",
+      "lane": "visual_social",
+      "priority": "must_check",
+      "why": "Most likely place to see current guest-shot shows, pool activities, nightlife energy, and dead-air moments.",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel entertainment",
+        "Caesars Republic Scottsdale, a Hilton Hotel animation team",
+        "Caesars Republic Scottsdale, a Hilton Hotel night show",
+        "Caesars Republic Scottsdale, a Hilton Hotel kids club",
+        "Caesars Republic Scottsdale, a Hilton Hotel nightlife",
+        "Caesars Republic Scottsdale, a Hilton Hotel resort review"
+      ]
+    },
+    {
+      "sourceId": "instagram",
+      "displayName": "Instagram / Reels / tagged posts",
+      "lane": "visual_social",
+      "priority": "must_check",
+      "why": "Best visual cross-check for promoted entertainment versus what guests actually post and tag.",
+      "queries": [
+        "site:instagram.com \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+        "site:instagram.com \"Caesars Republic Scottsdale, a Hilton Hotel\" show",
+        "site:instagram.com \"Caesars Republic Scottsdale, a Hilton Hotel\" live music",
+        "Caesars Republic Scottsdale, a Hilton Hotel instagram reels entertainment"
+      ]
+    },
+    {
+      "sourceId": "youtube_deep",
+      "displayName": "YouTube deep visual sweep",
+      "lane": "visual_social",
+      "priority": "must_check",
+      "why": "Long-form videos reveal real venue layout, crowd energy, show quality, and whether entertainment is memorable enough to film.",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel resort tour entertainment",
+        "Caesars Republic Scottsdale, a Hilton Hotel review vlog entertainment",
+        "Caesars Republic Scottsdale, a Hilton Hotel night show",
+        "Caesars Republic Scottsdale, a Hilton Hotel live music",
+        "Caesars Republic Scottsdale, a Hilton Hotel kids club",
+        "Caesars Republic Scottsdale, a Hilton Hotel activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "displayName": "Facebook resort and destination groups",
+      "lane": "community",
+      "priority": "high_value",
+      "why": "Recent, highly specific traveler Q&A often surfaces exact show/activity complaints before they hit review platforms.",
+      "queries": [
+        "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+        "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" activities",
+        "site:facebook.com/groups \"Scottsdale, Arizona\" \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+        "Caesars Republic Scottsdale, a Hilton Hotel Facebook group review"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "displayName": "Reddit and traveler forums",
+      "lane": "community",
+      "priority": "high_value",
+      "why": "Unfiltered comparison language and “would I return?” discussions are ideal for finding the buried negative or rave.",
+      "queries": [
+        "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+        "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" kids club",
+        "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" nightlife",
+        "site:tripadvisor.com/ShowTopic \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"animation team\""
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "displayName": "Blogs and long-form reviews",
+      "lane": "longform",
+      "priority": "high_value",
+      "why": "Long-form reviews often include day-by-day descriptions that review boxes truncate.",
+      "queries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"honest review\" entertainment",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"family review\" \"kids club\"",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"travel blog\" nightlife",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"review\" \"nightly entertainment\"",
+        "site:oyster.com \"Caesars Republic Scottsdale, a Hilton Hotel\""
+      ]
+    },
+    {
+      "sourceId": "complaint_sites",
+      "displayName": "Complaint-heavy sources",
+      "lane": "complaints",
+      "priority": "opportunistic",
+      "why": "Low volume, high severity. Useful for recurring entertainment failures, misleading marketing, or kid-program safety complaints.",
+      "queries": [
+        "site:complaintsboard.com \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+        "site:pissedconsumer.com \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+        "site:trustpilot.com \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"worst entertainment\"",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"boring\""
+      ]
+    },
+    {
+      "sourceId": "spanish_language",
+      "displayName": "Spanish-language traveler search",
+      "lane": "community",
+      "priority": "high_value",
+      "why": "Mexico/Caribbean resorts often have Spanish guest commentary that English-only review sweeps miss.",
+      "queries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" animación",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" equipo de animación",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" entretenimiento",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" show nocturno",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" música en vivo",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" club infantil",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" actividades",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" discoteca"
+      ]
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "displayName": "Competitor comparison sweep",
+      "lane": "competitors",
+      "priority": "opportunistic",
+      "why": "Finds guests comparing entertainment against nearby resorts, which is often more useful than isolated sentiment.",
+      "queries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" vs resort entertainment",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" compared to entertainment",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" better entertainment than",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" worse entertainment than"
+      ]
+    }
+  ],
+  "inCorpusNuggets": [],
+  "nextActions": [
+    "Open the must-check visual searches first: TikTok, Instagram/Reels, and YouTube deep sweep.",
+    "Save any strong videos/posts/screenshots as operator artifacts, then promote only sourced findings.",
+    "Use community/forum results to find buried complaints, competitor comparisons, and recent team/programming changes.",
+    "Keep client-facing claims limited to captured/sourced evidence; use this file as the internal gold-nugget worklist."
+  ]
+}

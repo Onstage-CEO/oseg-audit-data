@@ -1,0 +1,346 @@
+{
+  "reportVersion": "web-discovery-v1",
+  "generatedAt": "2026-08-05T00:13:05.411Z",
+  "target": {
+    "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
+    "location": "Scottsdale, Arizona"
+  },
+  "findings": [
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "url": "https://www.facebook.com/groups/AZLiveMusic/posts/4553330414944142/",
+      "domain": "www.facebook.com",
+      "title": "Making my DEBUT tonight at Caesars Republic Scottsdale ...",
+      "snippet": "SATURDAY • May 23rd: Making my DEBUT tonight at Caesars Republic Scottsdale, a Hilton Hotel. Caesars Republic places you moments away from Scottsdale's finest— ...",
+      "matchedTerms": [
+        "night"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "url": "https://www.facebook.com/groups/InfluentialWomeninArizona/posts/4000614243545601/",
+      "domain": "www.facebook.com",
+      "title": "Are you ready for the BIG bad Wolf 🐺 coming soon to ...",
+      "snippet": "... Caesars Republic Scottsdale, a Hilton Hotel! This will be the second ... concerts and other entertainment such as conventions, sporting events and ... Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "url": "https://www.facebook.com/groups/InfluentialWomeninArizona/posts/3991711951102497/",
+      "domain": "www.facebook.com",
+      "title": "We do lunch today",
+      "snippet": "No photo description available. Thu, Jun 19, 2025. POWERFUL LUNCH IWAZ. Caesars Republic Scottsdale, a Hilton Hotel ... entertainment, and more. Read more",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "url": "https://www.facebook.com/groups/EastValleyLiveMusic/posts/3269962133172635/",
+      "domain": "www.facebook.com",
+      "title": "East Valley Live Music (EVLM)",
+      "snippet": "Music at 5:30. Cactus Jack's Ahwatukee ... SATURDAY • May 23rd: Making my DEBUT tonight at Caesars Republic Scottsdale, a Hilton Hotel. Read more",
+      "matchedTerms": [
+        "music",
+        "live music",
+        "night"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "url": "https://www.facebook.com/groups/EastValleyLiveMusic/posts/3111291255706391/",
+      "domain": "www.facebook.com",
+      "title": "Starting the day off at Murphy's Law in Chandler with Joe ...",
+      "snippet": "Live music events at The Loft in Phoenix ... SATURDAY • May 23rd: Making my DEBUT tonight at Caesars Republic Scottsdale, a Hilton Hotel. Read more",
+      "matchedTerms": [
+        "music",
+        "live music",
+        "night"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "url": "https://www.facebook.com/groups/EastValleyLiveMusic/posts/2964020917100093/",
+      "domain": "www.facebook.com",
+      "title": "Experience live music tonight, Sept 28th at The Loft Again ...",
+      "snippet": "... ENTERTAINMENT: Soul Power Band performing ... SATURDAY • May 23rd: Making my DEBUT tonight at Caesars Republic Scottsdale, a Hilton Hotel. Read more",
+      "matchedTerms": [
+        "entertain",
+        "music",
+        "live music",
+        "night"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" activities",
+      "url": "https://www.facebook.com/groups/InfluentialWomeninArizona/posts/3984358345171191/",
+      "domain": "www.facebook.com",
+      "title": "Influential Women In Arizona",
+      "snippet": "POWERFUL LUNCH IWAZ · Thu, Jun 19, 2025. POWERFUL LUNCH IWAZ. Caesars Republic Scottsdale, a Hilton Hotel ... activities, food, and fancy drinks! Read more",
+      "matchedTerms": [
+        "activities"
+      ]
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" activities",
+      "url": "https://www.facebook.com/groups/EastValleyLiveMusic/posts/3602310849937760/",
+      "domain": "www.facebook.com",
+      "title": "East Valley Live Music (EVLM)",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel ; 5:00-8:00pm ------------------------ #ianericlive @iconssportsgrill @thesocialaz @lousbar.grill ...",
+      "matchedTerms": [
+        "music",
+        "live music"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" kids club",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1kasrxf/hotel_recommendations_in_old_town_scottsdale/",
+      "domain": "www.reddit.com",
+      "title": "Hotel recommendations in old town Scottsdale? - Reddit",
+      "snippet": "We are planning to stay in old town Scottsdale for our last night of our weeklong Grand Canyon and Sedona trip. We had two Phoenix airport the following ...",
+      "matchedTerms": [
+        "night"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" nightlife",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1mvhg4q/bar_with_a_view/",
+      "domain": "www.reddit.com",
+      "title": "Bar with a view : r/Scottsdale",
+      "snippet": "Outrider rooftop lounge at the Hilton Canopy in old town Scottsdale has great views. ... Caesars Republic – “seven bar” on the seventh ... Read more",
+      "matchedTerms": [
+        "lounge"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" nightlife",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1m7nzwf/which_hotel_too_many_great_choices/",
+      "domain": "www.reddit.com",
+      "title": "Which hotel? Too many great choices : r/Scottsdale",
+      "snippet": "I kinda think maybe Andaz is best. It's closest to many nightlife options but not a clubby feel. Nice pool but not big and overrun with kids. Read more",
+      "matchedTerms": [
+        "nightlife"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"honest review\" entertainment",
+      "url": "https://www.tiktok.com/discover/caesars-republic-scottsdale-a-hilton-hotel",
+      "domain": "www.tiktok.com",
+      "title": "Caesars Republic Scottsdale A Hilton Hotel",
+      "snippet": "Caesars Republic Scottsdale A Hilton Hotel. Experience luxury and stunning ... Honest Review of Caesar's Republic Scottsdale Hotel. Discover Caesar's ... Read more",
+      "matchedTerms": [
+        "disco"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"honest review\" entertainment",
+      "url": "https://www.tiktok.com/discover/caesars-republic-scottsdale-a-hilton",
+      "domain": "www.tiktok.com",
+      "title": "Caesars Republic Scottsdale A Hilton",
+      "snippet": "Honest Review of Caesar's Republic Scottsdale Hotel. ... Explore Caesars Republic Scottsdale, A Hilton Hotel. ... Entertainment in the United States. Located ...",
+      "matchedTerms": [
+        "entertain"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"honest review\" entertainment",
+      "url": "https://www.instagram.com/p/DQ8AS8IjZ7u/",
+      "domain": "www.instagram.com",
+      "title": "Tahoe's newest hotspot inside the stunning Caesars Republic. ...",
+      "snippet": "Just steps from Forest Suites Resort, discover Wolf by Lisa Vanderpump — Tahoe's newest hotspot inside the stunning Caesars Republic. · Honest review of Wolf by ...",
+      "matchedTerms": [
+        "disco"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"travel blog\" nightlife",
+      "url": "https://www.expedia.ca/Scottsdale-Hotels.d9829.Travel-Guide-Hotels",
+      "domain": "www.expedia.ca",
+      "title": "Discover the Best Hotels in Scottsdale | 2026 | Expedia.ca",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel. Caesars Republic Scottsdale, a Hilton Hotel ... Travel blog · Rewards with One Key™. Policies. Privacy · Cookies. Read more",
+      "matchedTerms": [
+        "disco"
+      ]
+    }
+  ],
+  "attempts": [
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "status": "searched",
+      "recordsReturned": 10,
+      "message": "Search completed with 10 organic result(s)."
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Caesars Republic Scottsdale, a Hilton Hotel\" activities",
+      "status": "searched",
+      "recordsReturned": 10,
+      "message": "Search completed with 10 organic result(s)."
+    },
+    {
+      "sourceId": "facebook_groups",
+      "lane": "community",
+      "query": "site:facebook.com/groups \"Scottsdale, Arizona\" \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+      "status": "searched",
+      "recordsReturned": 5,
+      "message": "Search completed with 5 organic result(s)."
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" kids club",
+      "status": "searched",
+      "recordsReturned": 10,
+      "message": "Search completed with 10 organic result(s)."
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" nightlife",
+      "status": "searched",
+      "recordsReturned": 10,
+      "message": "Search completed with 10 organic result(s)."
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"honest review\" entertainment",
+      "status": "searched",
+      "recordsReturned": 9,
+      "message": "Search completed with 9 organic result(s)."
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"family review\" \"kids club\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"travel blog\" nightlife",
+      "status": "searched",
+      "recordsReturned": 9,
+      "message": "Search completed with 9 organic result(s)."
+    },
+    {
+      "sourceId": "complaint_sites",
+      "lane": "complaints",
+      "query": "site:complaintsboard.com \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "complaint_sites",
+      "lane": "complaints",
+      "query": "site:pissedconsumer.com \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "complaint_sites",
+      "lane": "complaints",
+      "query": "site:trustpilot.com \"Caesars Republic Scottsdale, a Hilton Hotel\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" animación",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" equipo de animación",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "spanish_language",
+      "lane": "community",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" entretenimiento",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" vs resort entertainment",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" compared to entertainment",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    },
+    {
+      "sourceId": "competitor_contrast",
+      "lane": "competitors",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" better entertainment than",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
+    }
+  ],
+  "queriesRun": 18,
+  "packsRun": 6
+}

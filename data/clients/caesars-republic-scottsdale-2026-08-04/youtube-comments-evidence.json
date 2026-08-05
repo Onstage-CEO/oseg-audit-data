@@ -1,0 +1,142 @@
+{
+  "reportVersion": "open-web-evidence-v1",
+  "generatedAt": "2026-08-05T00:13:06.204Z",
+  "findings": [
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=_BognAuGTwY&lc=UgzpUnkphzCHgWP9X3F4AaABAg",
+      "domain": "youtube.com",
+      "title": "@TheHotelHustler",
+      "snippet": "This stay definitely challenged my expectations.\n\nCurious what you think 👇\nDoes this kind of modern, design-forward hotel work for you in Scottsdale?\n\n▶ If you’re comparing Scottsdale stays, check out my Hotel Adeline episode next for a very different boutique vibe.\n\nNew Hotel Hustler episodes drop every Saturday at 9:00 AM.",
+      "matchedTerms": [
+        "vibe"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=_BognAuGTwY&lc=UgzpSEB1GBJeKudmPdZ4AaABAg",
+      "domain": "youtube.com",
+      "title": "@andrewdavey6971",
+      "snippet": "All in all, the hotel and the suite look good. The ground floor pool looks a little underwhelming, but that rooftop pool looks so much better! \n\nNow, I'm just hoping Caesars brings more of these aesthetics and amenities to more of their Las Vegas hotels!",
+      "matchedTerms": [
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=VlDDPSi3te4&lc=Ugy7LhUXEpFrUox-eR54AaABAg",
+      "domain": "youtube.com",
+      "title": "@LisaYouse",
+      "snippet": "Well, will be staying there in September. Looks unimpressive, hummm? The restaurants almost look like diners, we'll see. And I sure hope one of the pools are adults only. Am looking forward though to our visit there.",
+      "matchedTerms": [
+        "adults"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=65U3vAZCEl8&lc=UgwYwAW_HEihQ8HVLW14AaABAg",
+      "domain": "youtube.com",
+      "title": "@JodyAlligood",
+      "snippet": "A  beautiful couple enjoying a special summer reprieve . What an elegant hotel /resort/restaurant!  An oasis's in  unique Scottsdale. The pool has nice shaded areas ,very smart and welcoming in >100 degree heat ! Thank you for the virtual tour!",
+      "matchedTerms": [
+        "pool"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=iHcYfuA12jg&lc=UgywgwEuTdgcf_VqFrd4AaABAg",
+      "domain": "youtube.com",
+      "title": "@diyindinee7492",
+      "snippet": "Good morning everybody I am viewer 4 . Hahahaha i love these two kids!",
+      "matchedTerms": [
+        "kids"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=HLg4APQx8mk&lc=UgwVyKbe1bKMTDBUEHB4AaABAg",
+      "domain": "youtube.com",
+      "title": "@dummyc",
+      "snippet": "Thank you for the video, you didn't come off as show off, self centered or self serving at all, I always view youtube of video like this before I book family trip, your video is extremely helpful, again much appreciate your effort of posting this.",
+      "matchedTerms": [
+        "family",
+        "show"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=HLg4APQx8mk&lc=UgzDntOPIVU1pIWYkAt4AaABAg",
+      "domain": "youtube.com",
+      "title": "@TylerK-35",
+      "snippet": "Glad you guys had a fun time. Was hoping to run into you in Vegas last week. I hit the big one. Royal flush!",
+      "matchedTerms": [
+        "fun"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=HLg4APQx8mk&lc=UgwdeGdLiCzY_4kIcN14AaABAg",
+      "domain": "youtube.com",
+      "title": "@sheilacox2174",
+      "snippet": "Thanks Jennifer and Husband Happy Holidays to you and yours! Hello To Mama!",
+      "matchedTerms": [
+        "holiday"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=lgxf6emRWHI&lc=UgzIcFGJX1x1q9qq8ll4AaABAg",
+      "domain": "youtube.com",
+      "title": "@TheAZPro-yi8bu",
+      "snippet": "Visit DJ's, 7300 E. Stetson Dr., the best dive bar in the world!",
+      "matchedTerms": [
+        "bar",
+        "dj"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=XSILTigr2z0&lc=Ugzu5HjPSwZV9lN9qrh4AaABAg",
+      "domain": "youtube.com",
+      "title": "@alexshapsenzon254",
+      "snippet": "80K a night for that room?",
+      "matchedTerms": [
+        "night"
+      ]
+    },
+    {
+      "sourceId": "youtube-comments",
+      "lane": "community",
+      "query": "youtube comments",
+      "url": "https://www.youtube.com/watch?v=a1gE3JKhT8o&lc=Ugya4n1OO6iZS4Ov3J54AaABAg",
+      "domain": "youtube.com",
+      "title": "@Lab757",
+      "snippet": "They didn’t even show the beautiful ⛳️ course side. I don’t like golf but they have a café that overlooks the beautiful course and honestly its wonderful to wake up have breakfast with a beautiful green environment",
+      "matchedTerms": [
+        "show"
+      ]
+    }
+  ],
+  "queriesRun": 11,
+  "packsRun": 1
+}
