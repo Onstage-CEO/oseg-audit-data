@@ -1,235 +1,325 @@
 {
   "reportVersion": "open-web-evidence-v1",
-  "generatedAt": "2026-08-05T00:13:06.204Z",
+  "generatedAt": "2026-08-05T00:30:48.642Z",
   "findings": [
     {
-      "sourceId": "tiktok",
+      "sourceId": "instagram",
       "lane": "social",
       "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@nadiiamonique/video/7669545488886041886",
-      "domain": "tiktok.com",
+      "url": "https://www.instagram.com/p/DaTtyDGgJqa/",
+      "domain": "instagram.com",
+      "title": "lunabygiada",
+      "snippet": "✨ Come experience one of Giada's signature creations. ✨\n\nOur Cheese Wheel Experience features fresh pasta finished tableside in a wheel of authentic Parmesan Reggiano, creating a rich, creamy sauce and an unforgettable dining moment.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DbjYra0yklu/",
+      "domain": "instagram.com",
       "title": "nadiiamonique",
-      "snippet": "@Caesars Republic Room Tour \nScottsdale, Az 📍🏨 #scottsdalearizona #hotelreviews",
+      "snippet": "Caesar’s Republic Room Tour \nScottsdale, Az 📍🏨 \n#caesarsrepublicscottsdale #scottsdalehotel \n•\nUnleash Your Alter Ego offer (starting at $169/ night*) gets you a $50 daily dining credit, complimentary room upgrade, late checkout, and entry for two to Cleopatra Pool Party 💦",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/Daljx-bBCVC/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Where dream weddings become unforgettable memories. ✨\n\nCelebrate with golden-hour cocktails at Cleopatra's Pool, stunning venues, and moments you'll treasure forever.\n\nUnleash Your Dream Event at Caesars Republic Scottsdale.\n\n@emmak_films",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DZxhtbYznde/",
+      "domain": "instagram.com",
+      "title": "flutterpublicrelations",
+      "snippet": "🌟 Lights, camera, Scottsdale! @caesarsrepublicaz was highlighted on @12newsaz @arizonamidday looking stunning. ✨\n \nNestled in the heart of Old Town Scottsdale adjacent to @scottsdalefashionsquare, Caesars Republic is redefining luxury — whether you’re planning a wedding, a corporate event, or simply soaking in the most stunning unobstructed view in all of Scottsdale. 🌅\n\nFrom the breathtaking Camelback Veranda (accommodating up to 330 guests!) to the expansive Romulus Ballroom, this resort truly is everything but the dress. 👰🏻‍♀️\n \nAnd the dining? Oh, it delivers. \n\n🌙 @lunabygiada — elevated Italian dining with that signature Giada touch and flavor. \n\n🐺 @wolfbyvanderpumpaz — the iconic Lisa Vanderpump bringing her world-class hospitality to Scottsdale with tasty bites and chic vibes.\n \nThank you to Arizona Midday’s @rachelcoletv1011 and @destry_jetton_tv for shining a spotlight on everything that makes Caesars Republic Scottsdale a one-of-a-kind destination.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DaEGVsQyD8e/",
+      "domain": "instagram.com",
+      "title": "jolenegoring",
+      "snippet": "If you’re planning a Scottsdale staycation (or visiting Arizona this summer), don’t miss @caesarsrepublicaz “Unleash Your Alter Ego” package, which includes:\n\n✨ Mountain View room starting at $169/night ✨ $50 daily food & beverage credit ✨ Complimentary room upgrade (when available) ✨ Late 1 p.m. checkout ✨ Entry for two to @cleopatraspool  ✨ A complimentary poolside cocktail or mocktail\n\nAnd if you’re a foodie like me, don’t skip the new 3-course Summer Tasting Menu at @lunabygiada for just $55. 🍝🍷\n\nFinish the evening with sunset views from @wolfbyvanderpumpaz one of my favorite rooftop spots in Arizona. 🌅\n\nSometimes the best getaway is closer than you think✨",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DZiU7YdRcYm/",
+      "domain": "instagram.com",
+      "title": "lunabygiada",
+      "snippet": "Join us at Luna by Giada this summer and enjoy our $55 Summer Tasting Menu, available Sunday through Thursday. \n\nShowcase the flavors of Luna by Giada with a curated selection of Giada’s favorite dishes, crafted to highlight the restaurant’s signature Italian-inspired cuisine.\n\nView the full menu on the Menus page at LunaByGiadaScottsdale.com",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DaVpzJEvm9X/",
+      "domain": "instagram.com",
+      "title": "fabulousarizona",
+      "snippet": "Celebrate the holiday weekend at @caesarsrepublicaz 😎🇺🇸🍾\n\n• Vanderpump Rooftop Society: Saturdays at @wolfpoolscottsdale with DJs, spritz bar, and rooftop views (hotel guests)⁠\n• Saturday Pool Parties at @cleopatraspool: live DJs, cocktails, and a high-energy scene (day passes available)⁠\n• Stay Offer: $50 daily dining credit, late checkout, and pool party access with a Friday or Saturday stay⁠\n\nGet tickets at eventbrite.com or book your stay at caesarsrepublicscottsdale.com",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DblmyhUAjP3/",
+      "domain": "instagram.com",
+      "title": "arizonamidday",
+      "snippet": "Real Life • Great Vibes • Endless Inspiration!!\n\nCatch the girls 🎀 & their guests weekdays at 2pm on @12News 🌸",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DYDj_rQTNQj/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Dream wedding unleashed… where luxury meets forever. ✨\n\nCinema: @emmak_films",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DXKEtJXALVB/",
+      "domain": "instagram.com",
+      "title": "lunabygiada",
+      "snippet": "Celebrate Mother's Day in true luxury at Luna by Giada. ✨🥂\n\nLavish brunch. Effortless elegance. Mom, celebrated. 💛\n\nSee bio link for reservations.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DXhwiVkRC9K/",
+      "domain": "instagram.com",
+      "title": "wolfbyvanderpumpaz",
+      "snippet": "A luxe poolside experience, redefined 🐺✨ At WOLF by Vanderpump, pool access is exclusive to hotel guests and a limited number of day pass holders, with select bites and cocktails served under the sun. Dining with us? Step inside for our full signature experience. We can’t wait to have you soon!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DZOKBmDj3qW/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Luxe brunch, elevated views. ✨🥂\n\nSociete Brunch brought the energy to our Camelback Veranda, seven stories above Scottsdale with sweeping views of Camelback Mountain.\n\nHost: @thesocieteprivee\nPlanner @cedarandsagewed\nVenue @caesarsrepublicaz\nPhotographer @suzygoodrick\nContent Creator @brizardcontent\nTableware/Chairs @theconfettistudio\nFlorals @urbandesertflora\nStationery @stetsonstudios\nSelf Care gift @clementineskinbar\nLive painter @azweddingpainter\nMusic @djmcduke",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DY5vmKrJAPE/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "The Wolf is calling. 🐺✨\n\nEscape to Wolf by Vanderpump on the 8th floor of Caesars Republic Scottsdale for unforgettable cocktails, bold bites, and rooftop views that set the tone for the perfect night out.\n\nMake it a staycation and unleash your alter ego with our exclusive room offer. Link in bio.\n\nSee you soon.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DX5VW7LBllb/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Sunset hits different up here. 🌅✨\n\nEight stories above Scottsdale at Camelback Veranda Bar—live music, signature cocktails by Wolf by Vanderpump, and the kind of views you don’t forget.\n\nHappy Hour daily. Live music every Friday & Saturday.\nUnleash your alter ego.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DZxebc_Ry3S/",
+      "domain": "instagram.com",
+      "title": "wolfbyvanderpumpaz",
+      "snippet": "National Martini Day calls for something extraordinary at WOLF! Our Pump & Dump the Caviar Martini features Vanderpump Vodka, dry vermouth, orange bitters, green Chartreuse, olive brine, a caviar bump, and a twist for the ultimate elevated martini experience. One sip and you’ll be howling for another 🐺🍸!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DYnyQb_Dli4/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Kick off Memorial Day Weekend with Saturday Sweat in the Romulus Ballroom, then roll straight into Cleopatra’s Pool Party at Caesars Republic Scottsdale.\nStart your morning with an energizing flow, then keep the momentum going poolside with a high-energy celebration all weekend long. Cleopatra’s Pool & Bar brings the vibes with live DJs, BBQ, and drink specials. \n\nMake it a getaway with our “Unleash Your Alter Ego” room package for the ultimate holiday escape. \n\nSee bio links to book",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DYdHywQgl4G/",
+      "domain": "instagram.com",
+      "title": "lunabygiada",
+      "snippet": "✨ Giada’s Favorite Things with Giada De Laurentiis ✨\n\nJoin us June 2 at Luna by Giada for an exclusive evening featuring some of Giada’s favorite menu creations, perfectly paired with exceptional wines in an intimate luxury setting. 🍷\n\nIndulge in a beautifully curated multi-course tasting menu and a rare opportunity to connect with Chef Giada herself.\n\nDon’t miss this unforgettable evening — view the full menu and reserve now through the link in bio. Limited availability.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/Da1d5WQjplA/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "🐺 Where bold flavors meet breathtaking views.\n\nLocated on the seventh floor of Caesars Republic Scottsdale, Wolf by Vanderpump brings a one-of-a-kind dining experience to the heart of the desert.\n\nWith desert-inspired design, elevated cocktails, a globally inspired menu, and sweeping views of Camelback Mountain, every detail is crafted to embody the untamed yet elegant spirit of the wolf.\n\n✨ An unforgettable Scottsdale dining experience awaits.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DYVz26_jp1w/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Kick off summer the luxe way at Cleopatra’s Pool & Bar. 🇺🇸✨ Enjoy two days of live DJs, smoky BBQ, drink specials, and Memorial Day vibes\n\nMake it a getaway and enjoy our “Unleash Your Alter Ego” room package for the ultimate holiday escape. See link in bio for details.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DaVyPDfCYXe/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "July 4th weekend is here. Celebrate with us at WOLF Pool and Cleopatra’s Pool.\n\nTake advantage of our “Unleash Your Alter Ego” exclusive rate of $169, which includes a $50 dining credit, late checkout, and access to both pool parties.\n\nTap the 4th of July link in bio for details.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DaQXVBaDghg/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Congratulations to our amazing team at Caesars Republic Scottsdale, a Hilton Hotel, on receiving the 2026 Operational Excellence Award at HCW's Leadership Conference in Las Vegas.\n\nThis award reflects the passion, dedication, and commitment our team brings to every guest experience, every single day. And to top it off, we're now proudly ranked among the Top 20 Hilton hotels in the United States!\n\nThank you to every team member for making this achievement possible. We couldn't be prouder. Here's to continuing to raise the bar! ✨",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DZiO9GlGrHK/",
+      "domain": "instagram.com",
+      "title": "shotsbyshelbi",
+      "snippet": "Sunset and nighttime wedding reception details at @caesarsrepublicaz rooftop. Classy, elegant, and elevated.\n\nVenue: @caesarsrepublicaz \nPlanning: @mckennakatherineweddings \nPhoto: @shotsbyshelbi \nVideo: @dallascampbellfilms \nCeremony Florals: @petal.kissed.rentals \nReception Florals: @swayfloralstudio \nGhost Chairs: @theeventcoaz \nCake: @abakeshop \nBrides Dress: @weddingbellesaz \nDJ: @amanijaeent @iamdjwyzeman \nPhoto Booth: @avo_events\n\nPhoenix wedding photographer | Scottsdale wedding photographer | desert Arizona wedding | best Arizona wedding photographer | best Scottsdale wedding photographer | documentary and editorial wedding photographer | California wedding photographer | SoCal wedding photographer | Temecula wedding photographer | best Napa wedding photographer | Napa wedding photographer | Oregon wedding photographer | Oregon coast wedding photographer | Arizona engagement photographer | Scottsdale engagement photographer | paradise valley engagement photographer | Phoenix engagement photographer | Gilbert engagement photographer | Hawaii wedding photographer",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DYpnIuSx6PF/",
+      "domain": "instagram.com",
+      "title": "wolfbyvanderpumpaz",
+      "snippet": "We hope your weekend plans include WOLF by Vanderpump 🐺✨ Located on the seventh floor of Caesars Republic Scottsdale, WOLF pairs bold cocktails, globally inspired bites, and sweeping views of Camelback Mountain for an unforgettable night out. Bring your pack and join us this weekend!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DXSBZI_jm6u/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Effortless moments, beautifully captured. ✨\nUnleash your dream wedding at Caesars Republic Scottsdale.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DaGVVVpkbFm/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Celebrate America's 250th with a weekend getaway at Caesars Republic Scottsdale! 🇺🇸☀️\n\nEnjoy two days of pool parties at Cleopatra's Pool & Bar featuring live DJs, patriotic cocktails, BBQ favorites, and festive Fourth of July vibes in the heart of Old Town Scottsdale. Join us Friday & Saturday from 12pm –5pm. Open to both hotel guests and locals.\n\nBook our Unleash Your Alter Ego room offer, spend the weekend by the pool, and celebrate in style. Visit the Fourth of July link in our bio for details and reserve your holiday escape.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DXsaBB_kaZn/",
+      "domain": "instagram.com",
+      "title": "cleopatraspool",
+      "snippet": "Don’t miss the first Cleopatra’s Pool Party of the season this Saturday! ☀️\n\nSoak up the sun with live DJs, refreshing drink specials, and the ultimate poolside vibes.\n\nSee bio links for tickets and staycations offers!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/Da_ElDyJFb5/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Luxury has an address. ✨\n\nExperience Scottsdale's most luxurious hotel, perfectly positioned beside the iconic Scottsdale Fashion Square—where world-renowned fashion, exceptional dining, and unforgettable experiences come together.\n\nFrom designer boutiques to rooftop cocktails, every indulgence is just steps away.\n\nStay where luxury lives.\nUnleash your alter ego.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DXf2PDDCVuE/",
+      "domain": "instagram.com",
+      "title": "caesarsrepublicaz",
+      "snippet": "Join us for the Splash Summer Series Season Kickoff at Cleopatra’s Pool & Bar. ☀️💦\n\nWhere legendary vibes meet high-energy entertainment, setting the scene for unforgettable Scottsdale weekends. Beginning May 2, every Saturday from 12PM–5PM, enjoy live DJ sets, handcrafted cocktails, an all-new food experience, and exclusive VIP cabana rentals — all in an open-air setting unlike anything else in Old Town.\n\nSummer starts here. See link in bio to book.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DXusVQakVKH/",
+      "domain": "instagram.com",
+      "title": "lunabygiada",
+      "snippet": "✨ Giada’s Favorite Things with Giada De Laurentiis ✨\n\nJoin us June 2 for an exclusive evening at Luna by Giada.\n\nIndulge in a beautifully curated 4-course tasting menu inspired by Giada’s favorite dishes, paired with exceptional wines and decadent dessert stations in an intimate, luxury setting. ✨\n\nA rare opportunity to dine, connect, and experience Giada’s cuisine like never before.\n\nLimited availability——reserve now via link in bio.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "instagram",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.instagram.com/p/DaNn4HeJNLk/",
+      "domain": "instagram.com",
+      "title": "earthy.jane",
+      "snippet": "Cheers to a trip to the desert & this incredible view🍝🌵💓☀️#ExperienceScottsdale #ScottsdalePartner",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@itslilygonzalez/video/7668971516557675807",
-      "domain": "tiktok.com",
-      "title": "itslilygonzalez",
-      "snippet": "Looking for a luxury hotel in Scottsdale? Caesars Republic Scottsdale is a modern boutique hotel with stylish rooms, rooftop dining, a beautiful pool, and an unbeatable location near Scottsdale Fashion Square, Old Town Scottsdale, and top restaurants. Whether you’re planning a couples getaway, girls’ trip, or Arizona staycation, this hotel is worth adding to your list. Save this for your next Scottsdale trip and tap the location tag to check prices and book your stay. #tiktokgosummerendstays #scottsdale @Caesars Rewards #phoenix #fashionsquare",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@natalini_washere/video/7542275596408212749",
-      "domain": "tiktok.com",
-      "title": "natalini_washere",
-      "snippet": "Honest Review of Caesar’s Republic Scottsdale-\n\nHilton took over this Caesar Hotel in November. It's in a great location in Scottsdale.\n\nℹ️Things to note that front desk didn't inform us about-\n\n-There's current construction a going on for their new restaurant. 🚧⚙️🦺\n-Starting at 8am you will hear those power tools\n-They have complementary golf cart shuttle service for guest. They can take and pick you up from anywhere around Old Scottsdale district\n(Fun fact we didn't know about until we checked out)\n\nAside from The front desk not being very informative about stuff going on property, the rooms are great, and the location is even better.\n\n#hotel #hilton #roomtours #az #scottsdale @hilton",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@brittney.babii/video/7654355882762882334",
-      "domain": "tiktok.com",
-      "title": "brittney.babii",
-      "snippet": "Arizona isn’t just dry desert vibes… Caesars Republic Scottsdale feels like a full 5-star escape in the middle of it all ✨🏨 From the luxury design to the pool views and rooftop energy, it honestly feels like a hidden resort getaway right in the desert.\n@Caesars Republic Scottsdale \nIf you’ve been sleeping on Scottsdale stays, this is your sign 😍                    #Tiktokgo #LuxuryStay #HotelVibes #ArizonaTravel #traveltok",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@liliannagrijalva/video/7654722637964250381",
-      "domain": "tiktok.com",
-      "title": "liliannagrijalva",
-      "snippet": "Tap on the location tag to book your stay at the Caesars Republic Hilton Hotel in Scottsdale, AZ 📍 great location to have fun whether you are looking to have dinner, shop, or relax at the pool! this hotel has it all available on site or just steps away ✨\n\n#tiktokgorisingstarsl2 #scottsdale #az #arizona #staycation",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@annalee.arizona/video/7406343357095496991",
-      "domain": "tiktok.com",
-      "title": "annalee.arizona",
-      "snippet": "📍 CAESARS REPUBLIC SCOTTSDALE \n#arizona #resorts #hotel #scottsdale",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@brittney.babii/video/7653904741671472415",
-      "domain": "tiktok.com",
-      "title": "brittney.babii",
-      "snippet": "Visiting Scottsdale, Arizona soon? 🌴✨ If you’re looking for a place that’s pure vibes, luxury, and the perfect spot to unwind, Caesars Republic Scottsdale should definitely be on your list. From the stunning views to the modern atmosphere, this hotel delivers the ultimate Scottsdale experience.\n📍Would you stay here? #Tiktokgo #HotelReview \n#ScottsdaleArizona #CaesarsRepublicScottsdale #HiltonHotel",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@audreyatlas/video/7556789568666635550",
-      "domain": "tiktok.com",
-      "title": "audreyatlas",
-      "snippet": "The real Caesar may not have lived here at this beautiful new luxurious hotel in Scottsdale but it is definitely fit for anyone one wanting rule an empire. I’m dreaming of building my own. \n\nHello and nice to meet you! If you are new to my page. I started AudreyAtlas with a drive to be a digital creator to share fashion, travel, lifestyle and wellness content to encourage authentic engagement. \n\nIf you came across my post or story, I am looking to build my community.  Please add me if we are not friends yet and share if you like the content I share on TikTok.  \n\nI’m passionate about creating content that not only looks beautiful but resonates with the audience. Open to partnerships, collaborations, and new opportunities to create meaningful digital experiences. \n\nXOXO - AudreyAtlas\n\nWe can be besties if you love Gossip Girl 🩷",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@aniyahserinity/video/7559285179387317559",
-      "domain": "tiktok.com",
-      "title": "aniyahserinity",
-      "snippet": "Let’s do a quick tour of my stay at @Caesars Republic Scottsdale for my first trip to Arizona🏜️🤍\n\nThere’s nothing I love more than the perfect mix of relaxation and adventure on vacation and @hilton provided just that!\n\n#hotelreview #arizonastay #hiltonhotels #travelvlogger",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@annalee.arizona/video/7403111317533396255",
-      "domain": "tiktok.com",
-      "title": "annalee.arizona",
-      "snippet": "#arizona #resort #pool",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@liliannagrijalva/video/7654293542134697229",
-      "domain": "tiktok.com",
-      "title": "liliannagrijalva",
-      "snippet": "Click the location tag to book your stay at the Caesars Republic Hilton Hotel 👀 such a beautiful place to stay at a great location nextdoor to the Scottsdale Fashion Square Mall 🛍️ great restaurants & nightlife all available within the area as well ✨\n\n#tiktokgorisingstarsl2 #scottsdale #arizona #caesarsrepublicscottsdale #azstaycation",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@krissylamour/video/7654311160791059726",
-      "domain": "tiktok.com",
-      "title": "krissylamour",
-      "snippet": "Where fun and stylish meets a splash of fitness and comfort @Caesars Republic Scottsdale understood the assignment for this king bed city view room. #scottsdale #hilton #traveltiktok #pelotontiktok",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@charleyalexandria/video/7648254813821488414",
-      "domain": "tiktok.com",
-      "title": "charleyalexandria",
-      "snippet": "Where to stay in Scottsdale? 9/10 #scottsdalehotels #girlstrip #scottsdalearizona #hilton #traveltok",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@hali.bee1/video/7535273913652120846",
-      "domain": "tiktok.com",
-      "title": "hali.bee1",
-      "snippet": "Planning a trip to Scottsdale Arizona! Stay at Ceasars republic which is a @hilton hotel! #scottsdale #az #LIVEIncentiveProgram #LIVEStory #PaidPartnership",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@itsjackytravels/video/7654778156125129997",
-      "domain": "tiktok.com",
-      "title": "itsjackytravels",
-      "snippet": "This hotel and location were just perfect! 🤩 #arizona #scottsdale #hotel #resort #views",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@dawnygirl7/video/7655581539190705439",
-      "domain": "tiktok.com",
-      "title": "dawnygirl7",
-      "snippet": "#tiktokgorisingstarsl1 #scottsdale #wolfbyvanderpump @Caesars Republic Scottsdale @BMORE Studio Wolf by Vanderpump has a great vibe! It’s at the Caesars Republic Scottsdale, a Hilton Hotel in Arizona! Tap the location tag to book your hotel stay!",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@itslilygonzalez/video/7658436851945999647",
-      "domain": "tiktok.com",
-      "title": "itslilygonzalez",
-      "snippet": "Looking for a luxury Scottsdale hotel? Caesars Republic Scottsdale is one of my favorite Arizona staycation spots, with a rooftop pool overlooking Camelback Mountain, Saturday pool parties, morning Pilates and wellness classes, celebrity chef restaurants, and it’s just steps from Scottsdale Fashion Square and Old Town Scottsdale. I found rooms starting at $208, and TikTok is currently showing up to 50% cashback on eligible bookings. Deals and prices can change, so tap the location tag to check your travel dates, availability, and see the latest offer. #tiktokgorisingstarsl2 #scottsdaleaz #poolparty #staycation #staycationvibes",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@hellomeesh/video/7624719782813682957",
-      "domain": "tiktok.com",
-      "title": "hellomeesh",
-      "snippet": "We loved our stay at Caesars Republic in #Scottsdale 🫶 🌴 ♥️ \n\n#traveltok #vacation #birthdayvacay #arizonatok",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@yogi_dawg/video/7653895148698340621",
-      "domain": "tiktok.com",
-      "title": "yogi_dawg",
-      "snippet": "Highlighting Caesars Republic Scottsdale, a Hilton Hotel — a chic luxury hotel in the heart of Scottsdale, steps from Scottsdale Fashion Square and Old Town. It features stunning rooftop experiences, stylish rooms, elevated dining, and incredible Camelback Mountain views. #tiktokgo #hotelreview #scottsdaletravel #hilton #caesarsrepublicscottsdale",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@thecruisingblonde/video/7654622725935336735",
-      "domain": "tiktok.com",
-      "title": "thecruisingblonde",
-      "snippet": "Tap the location tag for specials and rates for your dates!\n\nLuxury Scottsdale staycation at Caesars Republic ✨ \nDinner at WOLF 🐺🍸\nFree shuttle within a 2-mile radius.\nDesert nights with fire-lit lounge vibes. \nResort-style pools with cabanas + Camelback Mountain views.\nNext to Scottsdale Fashion Square + minutes from Old Town Scottsdale\nThe perfect Scottsdale staycation location 🌵✨\n@hilton @BMORE Studio @TikTok GO 🇺🇸 \n\n#tiktokgorisingstarsl1 #traveltok #arizona #staycation #luxury",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@travelwithkennedy/video/7665333804722146590",
-      "domain": "tiktok.com",
-      "title": "travelwithkennedy",
-      "snippet": "I had the pleasure of staying at Caesars Republic Scottsdale again @hilton in a Premium King Corner Room, and it exceeded my expectations. The room was beautifully designed with a modern, upscale feel, and the corner layout made it feel even more spacious. The floor-to-ceiling windows offered incredible views that made the stay feel extra special.\n\nThe hotel has a stylish, luxury atmosphere from the moment you walk in, and everything feels thoughtfully designed. The location is perfect for exploring Old Town Scottsdale, shopping, and dining. If you’re looking for a modern hotel with amazing views, comfortable rooms, and a unique vibe, Caesars Republic is definitely worth the stay. I can’t wait to come back! (caesarsrepublicscottsdale.com)",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@the.chanelsuite/video/7669259916015635743",
-      "domain": "tiktok.com",
-      "title": "the.chanelsuite",
-      "snippet": "Some hotel rooms help you recharge.\n\nOthers make you wish you’d planned an extra day.\n\nThat was this suite for us.\n\nThe Studio Suite King with a City View at Caesars Republic Scottsdale felt less like a traditional hotel room and more like a place we could settle into for a long weekend. Between the separate living area, oversized spa-inspired bathroom, Peloton, and spaces designed to slow down and enjoy, I found myself imagining what another morning here would have looked like.\n\nThis is the kind of stay I’d choose for a couples’ getaway, a luxury staycation, or simply when the hotel is meant to be part of the experience—not just where you sleep.\n\n🏛️ Caesars Republic Scottsdale\n\n💚 If this feels like your kind of getaway, you’ll find it in the green link. \n\n#oldtownscottsdale #scottsdale #arizona #caesarsrepublicscottsdale #staycation",
-      "matchedTerms": []
-    },
-    {
-      "sourceId": "tiktok",
-      "lane": "social",
-      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@ednygonzalez/video/7654575230408559902",
+      "url": "https://www.tiktok.com/@ednygonzalez/video/7664008665933909279",
       "domain": "tiktok.com",
       "title": "ednygonzalez",
-      "snippet": "✨ Looking for a luxury Scottsdale staycation?\n\nWe stayed at Caesars Republic Scottsdale and loved the modern rooms, rooftop pool, and convenient location near Scottsdale Fashion Square.\n\nSome new TikTok GO users may qualify for up to 50% cash back (up to $200). Tap the location tag above my name to check pricing, availability, and eligibility for your travel dates.\n\nSave this for your next Arizona getaway!@Caesars Republic Scottsdale #tiktokgorisingstarsl2 #CaesarsRepublic\n#ScottsdaleArizona\n#VisitScottsdale\n#ArizonaTravel",
+      "snippet": "Planning a Scottsdale getaway? ✨ Caesars Republic Scottsdale offers two unique pool experiences plus dinner at Wolf by Vanderpump all in one stay. If you’re visiting Arizona, this hotel is worth adding to your list. Tap the location tag above my name to check it out!@hilton #tiktokgosummerendstays #CaesarsRepublic #Scottsdale #ArizonaTravel #LuxuryHotel",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@the.chanelsuite/video/7670228049677372702",
+      "domain": "tiktok.com",
+      "title": "the.chanelsuite",
+      "snippet": "If I had another full day in Scottsdale, this is exactly how I’d spend it.\n\nA slow morning in the suite. Coffee and pastries from Pronto. Pilates with the Saturday Sweat Series. An afternoon by the Cleopatra Pool with live music, then back upstairs to unwind before dinner.\n\nOne of the things I enjoyed most about Caesars Republic is that you don’t feel like you have to leave the property to have a full day. Whether you’re planning a couples’ getaway, a girls’ weekend, or a staycation, there are so many ways to enjoy the hotel itself. And, you’re literally right next door to Fashion Square Mall\n\n🏛️ Caesars Republic Scottsdale\n\n💚 If you’re planning your own Scottsdale escape, you’ll find this stay in the green link.\n\n#tiktokgosummerendstays #scottsdale #arizona #caesarsrepublicscottsdale #azstaycation",
       "matchedTerms": []
     },
     {
@@ -246,20 +336,140 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@danikahenault/video/7613198795605626143",
+      "url": "https://www.tiktok.com/@charleyalexandria/video/7648254813821488414",
       "domain": "tiktok.com",
-      "title": "danikahenault",
-      "snippet": "Scottsdale will always have a piece of my heart 🥹🥹🥹 can’t wait to take the family back here ASAP!!! #arizona #scottsdale #scottsdalearizona #phoenix #arizonacheck",
+      "title": "charleyalexandria",
+      "snippet": "Where to stay in Scottsdale? 9/10 #scottsdalehotels #girlstrip #scottsdalearizona #hilton #traveltok",
       "matchedTerms": []
     },
     {
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@robsmooth/video/7332498111752899886",
+      "url": "https://www.tiktok.com/@liliannagrijalva/video/7654293542134697229",
       "domain": "tiktok.com",
-      "title": "robsmooth",
-      "snippet": "I’m Excited For The Opening Of The Caesars Republic Hotel In Scottsdale! #caesarsrepublichotel #fun #funlife #winning #win #happy #happylife #robsmooth97 #scottsdaleliving #livinglife #lovinglife #living #yolo #fomo #letsgo #letsgetit #gobig #hotels #elevate #nextlevel #levelup",
+      "title": "liliannagrijalva",
+      "snippet": "Click the location tag to book your stay at the Caesars Republic Hilton Hotel 👀 such a beautiful place to stay at a great location nextdoor to the Scottsdale Fashion Square Mall 🛍️ great restaurants & nightlife all available within the area as well ✨\n\n#tiktokgorisingstarsl2 #scottsdale #arizona #caesarsrepublicscottsdale #azstaycation",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@itslilygonzalez/video/7668971516557675807",
+      "domain": "tiktok.com",
+      "title": "itslilygonzalez",
+      "snippet": "Looking for a luxury hotel in Scottsdale? Caesars Republic Scottsdale is a modern boutique hotel with stylish rooms, rooftop dining, a beautiful pool, and an unbeatable location near Scottsdale Fashion Square, Old Town Scottsdale, and top restaurants. Whether you’re planning a couples getaway, girls’ trip, or Arizona staycation, this hotel is worth adding to your list. Save this for your next Scottsdale trip and tap the location tag to check prices and book your stay. #tiktokgosummerendstays #scottsdale @Caesars Rewards #phoenix #fashionsquare",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@hellomeesh/video/7624719782813682957",
+      "domain": "tiktok.com",
+      "title": "hellomeesh",
+      "snippet": "We loved our stay at Caesars Republic in #Scottsdale 🫶 🌴 ♥️ \n\n#traveltok #vacation #birthdayvacay #arizonatok",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@thecruisingblonde/video/7654622725935336735",
+      "domain": "tiktok.com",
+      "title": "thecruisingblonde",
+      "snippet": "Tap the location tag for specials and rates for your dates!\n\nLuxury Scottsdale staycation at Caesars Republic ✨ \nDinner at WOLF 🐺🍸\nFree shuttle within a 2-mile radius.\nDesert nights with fire-lit lounge vibes. \nResort-style pools with cabanas + Camelback Mountain views.\nNext to Scottsdale Fashion Square + minutes from Old Town Scottsdale\nThe perfect Scottsdale staycation location 🌵✨\n@hilton @BMORE Studio @TikTok GO 🇺🇸 \n\n#tiktokgorisingstarsl1 #traveltok #arizona #staycation #luxury",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@brittney.babii/video/7654628015262928159",
+      "domain": "tiktok.com",
+      "title": "brittney.babii",
+      "snippet": "I checked into Caesars Republic Scottsdale and it exceeded expectations. From the rooftop pool and stylish rooms to Cleopatra’s Pool and the beautiful lobby, every corner felt like a luxury escape.\n\nWould you book a staycation here or save it for your next Scottsdale trip? 👇\n\n📍 Caesars Republic Scottsdale\n#Tiktokgo \n#hoteldeals     #LuxuryHotel  #scottsdalearizona #hiltonhotel",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@yogi_dawg/video/7653895148698340621",
+      "domain": "tiktok.com",
+      "title": "yogi_dawg",
+      "snippet": "Highlighting Caesars Republic Scottsdale, a Hilton Hotel — a chic luxury hotel in the heart of Scottsdale, steps from Scottsdale Fashion Square and Old Town. It features stunning rooftop experiences, stylish rooms, elevated dining, and incredible Camelback Mountain views. #tiktokgo #hotelreview #scottsdaletravel #hilton #caesarsrepublicscottsdale",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@ednygonzalez/video/7654575230408559902",
+      "domain": "tiktok.com",
+      "title": "ednygonzalez",
+      "snippet": "✨ Looking for a luxury Scottsdale staycation?\n\nWe stayed at Caesars Republic Scottsdale and loved the modern rooms, rooftop pool, and convenient location near Scottsdale Fashion Square.\n\nSome new TikTok GO users may qualify for up to 50% cash back (up to $200). Tap the location tag above my name to check pricing, availability, and eligibility for your travel dates.\n\nSave this for your next Arizona getaway!@Caesars Republic Scottsdale #tiktokgorisingstarsl2 #CaesarsRepublic\n#ScottsdaleArizona\n#VisitScottsdale\n#ArizonaTravel",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@dawnygirl7/video/7655581539190705439",
+      "domain": "tiktok.com",
+      "title": "dawnygirl7",
+      "snippet": "#tiktokgorisingstarsl1 #scottsdale #wolfbyvanderpump @Caesars Republic Scottsdale @BMORE Studio Wolf by Vanderpump has a great vibe! It’s at the Caesars Republic Scottsdale, a Hilton Hotel in Arizona! Tap the location tag to book your hotel stay!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@mommymoadventures/video/7663258877139504414",
+      "domain": "tiktok.com",
+      "title": "mommymoadventures",
+      "snippet": "Resort Tour: Caesars Republic, Scottsdale, Arizona 🐺 \n\nIf you’re looking for the cool kids, they’re all here… \n\nAnd you can be too! \n\n👉 book your next stay at @Caesars Republic Scottsdale right from this video…\n\n#tiktokgosummerendstays #scottsdale #scottsdalearizona #arizonacheck #staycationvibes",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@the.chanelsuite/video/7669259916015635743",
+      "domain": "tiktok.com",
+      "title": "the.chanelsuite",
+      "snippet": "Some hotel rooms help you recharge.\n\nOthers make you wish you’d planned an extra day.\n\nThat was this suite for us.\n\nThe Studio Suite King with a City View at Caesars Republic Scottsdale felt less like a traditional hotel room and more like a place we could settle into for a long weekend. Between the separate living area, oversized spa-inspired bathroom, Peloton, and spaces designed to slow down and enjoy, I found myself imagining what another morning here would have looked like.\n\nThis is the kind of stay I’d choose for a couples’ getaway, a luxury staycation, or simply when the hotel is meant to be part of the experience—not just where you sleep.\n\n🏛️ Caesars Republic Scottsdale\n\n💚 If this feels like your kind of getaway, you’ll find it in the green link. \n\n#oldtownscottsdale #scottsdale #arizona #caesarsrepublicscottsdale #staycation",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@krissylamour/video/7654311160791059726",
+      "domain": "tiktok.com",
+      "title": "krissylamour",
+      "snippet": "Where fun and stylish meets a splash of fitness and comfort @Caesars Republic Scottsdale understood the assignment for this king bed city view room. #scottsdale #hilton #traveltiktok #pelotontiktok",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@natalini_washere/video/7542275596408212749",
+      "domain": "tiktok.com",
+      "title": "natalini_washere",
+      "snippet": "Honest Review of Caesar’s Republic Scottsdale-\n\nHilton took over this Caesar Hotel in November. It's in a great location in Scottsdale.\n\nℹ️Things to note that front desk didn't inform us about-\n\n-There's current construction a going on for their new restaurant. 🚧⚙️🦺\n-Starting at 8am you will hear those power tools\n-They have complementary golf cart shuttle service for guest. They can take and pick you up from anywhere around Old Scottsdale district\n(Fun fact we didn't know about until we checked out)\n\nAside from The front desk not being very informative about stuff going on property, the rooms are great, and the location is even better.\n\n#hotel #hilton #roomtours #az #scottsdale @hilton",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@yogi_dawg/video/7654292332438703373",
+      "domain": "tiktok.com",
+      "title": "yogi_dawg",
+      "snippet": "This is your sign to book a girls summer trip. Click the link for discounts  ##tiktokgo##hotelreview##hilton##caesarsrepublicscottsdale##scottsdaletravel",
       "matchedTerms": []
     },
     {
@@ -276,10 +486,30 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@visitphoenix/video/7585358936472177975",
+      "url": "https://www.tiktok.com/@audreyatlas/video/7556789568666635550",
       "domain": "tiktok.com",
-      "title": "visitphoenix",
-      "snippet": "Wolf by Vanderpump is officially open in Scottsdale 🍸🐺 \n \nLisa Vanderpump celebrated the grand opening of Wolf by Vanderpump Scottsdale at Caesars Republic Scottsdale on December 16. The rooftop restaurant brings bold design, imaginative cocktails, and a globally inspired menu to the 7th floor.\n \n#lisavanderpump #vanderpumprules #vanderpump #wolf #myphx",
+      "title": "audreyatlas",
+      "snippet": "The real Caesar may not have lived here at this beautiful new luxurious hotel in Scottsdale but it is definitely fit for anyone one wanting rule an empire. I’m dreaming of building my own. \n\nHello and nice to meet you! If you are new to my page. I started AudreyAtlas with a drive to be a digital creator to share fashion, travel, lifestyle and wellness content to encourage authentic engagement. \n\nIf you came across my post or story, I am looking to build my community.  Please add me if we are not friends yet and share if you like the content I share on TikTok.  \n\nI’m passionate about creating content that not only looks beautiful but resonates with the audience. Open to partnerships, collaborations, and new opportunities to create meaningful digital experiences. \n\nXOXO - AudreyAtlas\n\nWe can be besties if you love Gossip Girl 🩷",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@robsmooth/video/7332498111752899886",
+      "domain": "tiktok.com",
+      "title": "robsmooth",
+      "snippet": "I’m Excited For The Opening Of The Caesars Republic Hotel In Scottsdale! #caesarsrepublichotel #fun #funlife #winning #win #happy #happylife #robsmooth97 #scottsdaleliving #livinglife #lovinglife #living #yolo #fomo #letsgo #letsgetit #gobig #hotels #elevate #nextlevel #levelup",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@danikahenault/video/7613198795605626143",
+      "domain": "tiktok.com",
+      "title": "danikahenault",
+      "snippet": "Scottsdale will always have a piece of my heart 🥹🥹🥹 can’t wait to take the family back here ASAP!!! #arizona #scottsdale #scottsdalearizona #phoenix #arizonacheck",
       "matchedTerms": []
     },
     {
@@ -296,13 +526,93 @@
       "sourceId": "tiktok",
       "lane": "social",
       "query": "Caesars Republic Scottsdale, a Hilton Hotel",
-      "url": "https://www.tiktok.com/@michaelthomasbensonaz/video/7447374238857579822",
+      "url": "https://www.tiktok.com/@robsmooth/video/7342157068926815530",
       "domain": "tiktok.com",
-      "title": "michaelthomasbensonaz",
-      "snippet": "Attending the #yesphx Winter Social at Scottsdale’s newest resort Ceasars Republic joined by over 300 entrepreneurs.\n\n#yesphx is a collaborative organization that supports entrepreneurs and startups in the Valley with resources and events.\n\nDid you know Arizona is a Top Ten market for startups?\n\n#yesphx #ceasersrepublicscottsdale #entrepreneur #startup #medstartup #mobikecaremd #woundcareiq #michaeltbenson #scottsdale #arizonabusiness",
+      "title": "robsmooth",
+      "snippet": "The VIP Opening Party At The New Caesar’s Republic Hotel in Scottsdale Was An Amazing Event. It Was Such A Blast!! #caesarsrepublichotelscottsdale #scottsdaleliving #scottsdale #win #winning #fun #funlife #happy #happylife #living #livinglife #lovinglife #yolo #fomo #letsgo #letsgetit #elevate #levelup #nextlevel #robsmooth97 #itslit #go #gobig #goodtimes #positivevibes",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@visitphoenix/video/7585358936472177975",
+      "domain": "tiktok.com",
+      "title": "visitphoenix",
+      "snippet": "Wolf by Vanderpump is officially open in Scottsdale 🍸🐺 \n \nLisa Vanderpump celebrated the grand opening of Wolf by Vanderpump Scottsdale at Caesars Republic Scottsdale on December 16. The rooftop restaurant brings bold design, imaginative cocktails, and a globally inspired menu to the 7th floor.\n \n#lisavanderpump #vanderpumprules #vanderpump #wolf #myphx",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@annalee.arizona/video/7411698777150524702",
+      "domain": "tiktok.com",
+      "title": "annalee.arizona",
+      "snippet": "",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@annalee.arizona/video/7419794450701962539",
+      "domain": "tiktok.com",
+      "title": "annalee.arizona",
+      "snippet": "Newest resort in Scottsdale with the best views✨ #arizona #scottsdale",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@thescottsdaleliving/video/7477344954700893471",
+      "domain": "tiktok.com",
+      "title": "thescottsdaleliving",
+      "snippet": "FIRE & ICE,\nTHE ANNIVERSARY PARTY\nJoin us on March 14 for an electrifying night of luxury, featuring live music, dazzling entertainment, and surprises at every turn. Visit for more info:\n https://www.caesarsrepublicscottsdale.com/",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@robsmooth/video/7342156673483607339",
+      "domain": "tiktok.com",
+      "title": "robsmooth",
+      "snippet": "The VIP Opening Party At The New Caesar’s Republic Hotel in Scottsdale Was An Amazing Event. It Was Such A Blast!! #caesarsrepublichotelscottsdale #scottsdaleliving #scottsdale #win #winning #fun #funlife #happy #happylife #living #livinglife #lovinglife #yolo #fomo #letsgo #letsgetit #elevate #levelup #nextlevel #robsmooth97 #itslit #go #gobig #goodtimes #positivevibes",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@robsmooth/video/7342169620691946795",
+      "domain": "tiktok.com",
+      "title": "robsmooth",
+      "snippet": "The VIP Opening Party At The New Caesar’s Republic Hotel in Scottsdale Was An Amazing Event. It Was Such A Blast!! #caesarsrepublichotelscottsdale #scottsdaleliving #scottsdale #win #winning #fun #funlife #happy #happylife #living #livinglife #lovinglife #yolo #fomo #letsgo #letsgetit #elevate #levelup #nextlevel #robsmooth97 #itslit #go #gobig #goodtimes #positivevibes",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "tiktok",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.tiktok.com/@robsmooth/video/7342171620045344042",
+      "domain": "tiktok.com",
+      "title": "robsmooth",
+      "snippet": "The VIP Opening Party At The New Caesar’s Republic Hotel in Scottsdale Was An Amazing Event. It Was Such A Blast!! #caesarsrepublichotelscottsdale #scottsdaleliving #scottsdale #win #winning #fun #funlife #happy #happylife #living #livinglife #lovinglife #yolo #fomo #letsgo #letsgetit #elevate #levelup #nextlevel #robsmooth97 #itslit #go #gobig #goodtimes #positivevibes",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "facebook",
+      "lane": "social",
+      "query": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "url": "https://www.facebook.com/caesarsrepublicscottsdale/",
+      "domain": "facebook.com",
+      "title": "",
+      "snippet": "",
       "matchedTerms": []
     }
   ],
-  "queriesRun": 30,
+  "queriesRun": 61,
   "packsRun": 1
 }

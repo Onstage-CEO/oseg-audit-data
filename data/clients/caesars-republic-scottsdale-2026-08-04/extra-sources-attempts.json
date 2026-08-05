@@ -1,31 +1,23 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-05T00:13:06.204Z",
+  "generatedAt": "2026-08-05T00:30:48.642Z",
   "property": "Caesars Republic Scottsdale, a Hilton Hotel",
   "attempts": {
     "yelp": {
-      "result": "needs_configuration",
+      "result": "owner_or_spend_gated",
       "mechanism": "apify yelp",
-      "message": "No client.yelpUrl configured for this property, so no Yelp capture was attempted.",
+      "message": "Yelp capture was not started because no reviewed provider-enforced dollar ceiling was configured.",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "attemptedAt": "2026-08-05T00:13:06.204Z"
-    },
-    "facebook": {
-      "result": "needs_configuration",
-      "mechanism": "apify social (pageUrl)",
-      "message": "No client.facebookUrl configured for this property, so no Facebook capture was attempted.",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
-      "attemptedAt": "2026-08-05T00:13:06.204Z"
+      "attemptedAt": "2026-08-05T00:30:48.642Z"
     },
     "instagram": {
-      "result": "checked_no_data",
-      "mechanism": "apify social (keyword)",
-      "message": "Ran the instagram capture against a property keyword search; the completed dataset was empty.",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
-      "attemptedAt": "2026-08-05T00:13:06.204Z"
+      "result": "captured_partial",
+      "mechanism": "apify social (pageUrl)",
+      "message": "Captured 30 public instagram post(s), but the requested depth ceiling was reached.",
+      "recordsReturned": 30,
+      "recordsAccepted": 30,
+      "attemptedAt": "2026-08-05T00:30:48.642Z"
     },
     "tiktok": {
       "result": "captured_partial",
@@ -33,7 +25,15 @@
       "message": "Captured 30 public tiktok post(s), but the requested depth ceiling was reached.",
       "recordsReturned": 30,
       "recordsAccepted": 30,
-      "attemptedAt": "2026-08-05T00:13:06.204Z"
+      "attemptedAt": "2026-08-05T00:30:48.642Z"
+    },
+    "facebook": {
+      "result": "captured_complete",
+      "mechanism": "apify social (pageUrl)",
+      "message": "Captured the complete bounded 1-post facebook dataset.",
+      "recordsReturned": 1,
+      "recordsAccepted": 1,
+      "attemptedAt": "2026-08-05T00:30:48.642Z"
     }
   }
 }

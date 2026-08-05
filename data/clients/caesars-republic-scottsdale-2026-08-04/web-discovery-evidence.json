@@ -1,6 +1,6 @@
 {
   "reportVersion": "web-discovery-v1",
-  "generatedAt": "2026-08-05T00:13:05.411Z",
+  "generatedAt": "2026-08-05T00:30:48.017Z",
   "target": {
     "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
     "location": "Scottsdale, Arizona"
@@ -113,13 +113,25 @@
     {
       "sourceId": "reddit_forums",
       "lane": "community",
-      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" kids club",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
       "url": "https://www.reddit.com/r/Scottsdale/comments/1kasrxf/hotel_recommendations_in_old_town_scottsdale/",
       "domain": "www.reddit.com",
-      "title": "Hotel recommendations in old town Scottsdale? - Reddit",
+      "title": "Hotel recommendations in old town Scottsdale?",
       "snippet": "We are planning to stay in old town Scottsdale for our last night of our weeklong Grand Canyon and Sedona trip. We had two Phoenix airport the following ...",
       "matchedTerms": [
         "night"
+      ]
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
+      "url": "https://www.reddit.com/r/Scottsdale/comments/1m7nzwf/which_hotel_too_many_great_choices/",
+      "domain": "www.reddit.com",
+      "title": "Which hotel? Too many great choices : r/Scottsdale",
+      "snippet": "Great views, great pool, nice renovated. You will need a car nightlife options but not a clubby feel. Nice pool but not big and overrun with ...",
+      "matchedTerms": [
+        "nightlife"
       ]
     },
     {
@@ -132,18 +144,6 @@
       "snippet": "Outrider rooftop lounge at the Hilton Canopy in old town Scottsdale has great views. ... Caesars Republic – “seven bar” on the seventh ... Read more",
       "matchedTerms": [
         "lounge"
-      ]
-    },
-    {
-      "sourceId": "reddit_forums",
-      "lane": "community",
-      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" nightlife",
-      "url": "https://www.reddit.com/r/Scottsdale/comments/1m7nzwf/which_hotel_too_many_great_choices/",
-      "domain": "www.reddit.com",
-      "title": "Which hotel? Too many great choices : r/Scottsdale",
-      "snippet": "I kinda think maybe Andaz is best. It's closest to many nightlife options but not a clubby feel. Nice pool but not big and overrun with kids. Read more",
-      "matchedTerms": [
-        "nightlife"
       ]
     },
     {
@@ -185,13 +185,26 @@
     {
       "sourceId": "blogs_editorial",
       "lane": "longform",
-      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"travel blog\" nightlife",
-      "url": "https://www.expedia.ca/Scottsdale-Hotels.d9829.Travel-Guide-Hotels",
-      "domain": "www.expedia.ca",
-      "title": "Discover the Best Hotels in Scottsdale | 2026 | Expedia.ca",
-      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel. Caesars Republic Scottsdale, a Hilton Hotel ... Travel blog · Rewards with One Key™. Policies. Privacy · Cookies. Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.ca/Hotel_Feature-g147290-d241697-zft6216-Marien_Puerto_Plata.html",
+      "domain": "www.tripadvisor.ca",
+      "title": "Marien Puerto Plata Family Amenities: Pictures & Reviews",
+      "snippet": "Family review highlights ... We were 8 all together. 3 kids. We had ... The Ladies from the Kids club (veronica, & evelyn) kept out kids dancing and ... Read more",
       "matchedTerms": [
-        "disco"
+        "dancing",
+        "kids club"
+      ]
+    },
+    {
+      "sourceId": "blogs_editorial",
+      "lane": "longform",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"family review\" \"kids club\"",
+      "url": "https://www.tripadvisor.ca/Hotel_Feature-g297698-d304528-zft6216-The_Westin_Resort_Nusa_Dua_Bali.html",
+      "domain": "www.tripadvisor.ca",
+      "title": "The Westin Resort Nusa Dua, Bali Family Amenities",
+      "snippet": "Hotel has great kids club still. My kids did not want to leave it. Maid service would make little towel elephants for my kids. which they loved to see each day. Read more",
+      "matchedTerms": [
+        "kids club"
       ]
     }
   ],
@@ -217,24 +230,24 @@
       "lane": "community",
       "query": "site:facebook.com/groups \"Scottsdale, Arizona\" \"Caesars Republic Scottsdale, a Hilton Hotel\"",
       "status": "searched",
-      "recordsReturned": 5,
-      "message": "Search completed with 5 organic result(s)."
-    },
-    {
-      "sourceId": "reddit_forums",
-      "lane": "community",
-      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
-      "status": "searched",
       "recordsReturned": 0,
       "message": "Search completed with 0 organic result(s)."
     },
     {
       "sourceId": "reddit_forums",
       "lane": "community",
-      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" kids club",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" entertainment",
       "status": "searched",
       "recordsReturned": 10,
       "message": "Search completed with 10 organic result(s)."
+    },
+    {
+      "sourceId": "reddit_forums",
+      "lane": "community",
+      "query": "site:reddit.com \"Caesars Republic Scottsdale, a Hilton Hotel\" kids club",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
     },
     {
       "sourceId": "reddit_forums",
@@ -257,16 +270,16 @@
       "lane": "longform",
       "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"family review\" \"kids club\"",
       "status": "searched",
-      "recordsReturned": 0,
-      "message": "Search completed with 0 organic result(s)."
+      "recordsReturned": 2,
+      "message": "Search completed with 2 organic result(s)."
     },
     {
       "sourceId": "blogs_editorial",
       "lane": "longform",
       "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"travel blog\" nightlife",
       "status": "searched",
-      "recordsReturned": 9,
-      "message": "Search completed with 9 organic result(s)."
+      "recordsReturned": 0,
+      "message": "Search completed with 0 organic result(s)."
     },
     {
       "sourceId": "complaint_sites",

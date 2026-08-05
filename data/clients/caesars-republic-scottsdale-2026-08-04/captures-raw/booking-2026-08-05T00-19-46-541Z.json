@@ -1,0 +1,1125 @@
+{
+  "platform": "booking",
+  "capturedAt": "2026-08-05T00:19:46.541Z",
+  "availableReviews": 117,
+  "reviewsAvailable": 117,
+  "provider": {
+    "runId": "ha0udwqbO2RATHWf0",
+    "datasetId": "9yvwA6hpIEXFHtTKS",
+    "terminalState": "SUCCEEDED"
+  },
+  "actualCostUsd": 0.2224,
+  "costStatus": "verified",
+  "providerResultCount": 117,
+  "analyzableTextCount": 117,
+  "acceptedReviewCount": 117,
+  "ratingOnlyCount": 0,
+  "completeness": "complete",
+  "truncated": false,
+  "reviews": [
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "author": "Samantha",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-kug9zo",
+      "timestamp": "2026-07-26T21:31:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Yafa",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-yee26e",
+      "timestamp": "2026-07-25T07:48:07.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "I was given misinformation from the front desk receptionist, which made me not want to come back.",
+      "text": "The location of the place was great and convenient. It was right next to a mall and not too far from restaurants and other places we wanted to visit. / The front staff employee was not kind. I was given misinformation when I was checking into my room and was charged an early fee when I checked out. I specifically informed the front desk employee that I didn't want to check into my room because I didn't want to pay a $100 early check-in fee, and waited until 12:15 pm to go into my room. Once I received my bill, I informed the same front desk employee that I didn't go into my room until after check-in time, and she still charged it to my credit card. I was told that she wasn't able to put it back onto my card. I informed her that I would never come back to that hotel.",
+      "author": "Krystal",
+      "rating": 4,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-r8x330",
+      "timestamp": "2026-07-11T20:32:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Stacie",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-s2b57m",
+      "timestamp": "2026-06-26T15:06:14.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Miranda",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1narvip",
+      "timestamp": "2026-06-09T11:57:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Absolutely loved the room, and the views. The lady that checked us in was very helpful and even got us a better view and let us choose where we’d like our room to be at as well. Wolf was amazing! We actually went there two for dinner. It was pretty nice as well how close the mall was too, very convenient / Having to pay for parking whether it was self parking or not. And the second bar didn’t have much of a selection for alcohol or a lot of places to sit at either.",
+      "author": "Angelica",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1coilql",
+      "timestamp": "2026-06-05T04:00:24.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "limpieza / el personal de recepción",
+      "author": "Raul",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1qprvud",
+      "timestamp": "2026-06-04T13:04:37.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Freitas",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1wocavr",
+      "timestamp": "2026-06-03T20:21:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Jonathan",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1fct6dx",
+      "timestamp": "2026-05-30T21:23:26.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "We will definitely return!",
+      "text": "This hotel is top notch, from the valet, check in, our room, the amenities and check out! The staff is very friendly and helpful. / We loved everything",
+      "author": "Sena",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1au1pw6",
+      "timestamp": "2026-05-11T17:12:12.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very clean and staff were great",
+      "text": "Close to Fashion Square Mall",
+      "author": "Amy",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1mbssn5",
+      "timestamp": "2026-05-06T15:28:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Ashley",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1d18iyo",
+      "timestamp": "2026-04-25T14:57:01.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Perfect in all ways.",
+      "text": "Everything. Superb location. Modern and luxurious. / Nothing",
+      "author": "Belinda",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-oy8lmb",
+      "timestamp": "2026-04-20T02:02:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Hotel was nice. The food was excellent at Luna. Reservations staff and management left a very bad im",
+      "text": "I was charged double for my room for the night. When I inquired they said the booking was through Caesars and Booking.com. I never initiated that reservation. They didn't offer any reasonable resolution.",
+      "author": "Herbert",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-18ynvao",
+      "timestamp": "2026-04-11T14:59:08.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-ashkc4",
+      "timestamp": "2026-04-03T15:24:22.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Shamekea",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-qz6qxw",
+      "timestamp": "2026-04-03T13:59:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Fantastic location & Modern",
+      "text": "Amazing location, close to shops and restaurants. Walkable area and central to Fashion Square, Old Town, Camelback, Papago and the Zoo. Nice, modern rooms. Spacious bathroom and comfy bed. My only issue was the room service could be better. Saw a stain on the comforter but the service was good and once I mentioned it to front desk, it was replaced right away. / Not as clean as I expected. Service needs to be more attentive to details.",
+      "author": "Shoma",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1yc0ev",
+      "timestamp": "2026-03-16T20:53:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "I wouldn’t return here again.",
+      "text": "This was our second stay. The property is conveniently located next to great restaurants and shopping. / Staff is far from helpful. Our room was not ready at check-in and the room that we were given has an extreme plumbing issue that we are sure was known before the room was given to us. We were then relocated to a room that wasn’t equivalent to the one we booked originally. It would appear that some of the ceiling had been cut out to repair a leak and was then replaced. Due to all of the inconveniences, and being a Hilton rewards member, one would assume the property would have offered to make this right in whatever capacity it took, but that never happened.",
+      "author": "Maurion",
+      "rating": 3,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-14homjj",
+      "timestamp": "2026-02-16T14:41:42.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "author": "Nikola",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-pt14gm",
+      "timestamp": "2026-02-10T12:25:03.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Leslie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-15lcwj7",
+      "timestamp": "2026-01-28T00:51:16.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Staff is excellent!!",
+      "text": "Pronto food is excellent. Need to use china not paper cups. Food quality is too good for takeout containers / Room  service food from Giada is lovely but put it on a tray with good china. The plastic containers are a real disconnect with the overall quality of your hotel.",
+      "author": "Gregory",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-hdv3rc",
+      "timestamp": "2026-01-18T05:48:24.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Perfect",
+      "text": "New , friendly , quality furnishings…great staff ! / Too friendly 😂",
+      "author": "Geoffrey",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-21xedy",
+      "timestamp": "2026-01-08T22:23:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Jacqueline",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-p107zt",
+      "timestamp": "2026-01-04T12:58:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Impressive place, urgent need for room service.",
+      "text": "Great place, brand new and clean. / NO room service, yo expect that service for that kind of hotel.",
+      "author": "Jose",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1ewzy0t",
+      "timestamp": "2025-12-31T04:17:19.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Overrated",
+      "text": "El gimnasio. No incluye desayuno y la cafetería a penas tiene opciones y es carísimo. / Lo veo totalmente overrated. Carísimo para las opciones que tienes en la zona.",
+      "author": "Oscar",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1ujhlmc",
+      "timestamp": "2025-12-28T00:00:14.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Amateur.",
+      "text": "Location. / Breakfast was absolutely disgusting. Staff was super amateur.",
+      "author": "Bruno",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-cs9tpu",
+      "timestamp": "2025-12-21T13:32:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Scott",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-zb2n4a",
+      "timestamp": "2025-12-17T15:31:39.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Andrea",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-3n5t9q",
+      "timestamp": "2025-11-22T22:30:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Maurion",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1an69cg",
+      "timestamp": "2025-11-13T14:08:51.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Nice hotel, good location but pools are often closed due to scheduled events.",
+      "text": "Great location and happy hour. / Pools were not always available due to the amount of events. First day both pools were closed due to events. \r\n\r\nNot enough cleaning staff - we had to request a few times to have our rooms serviced.",
+      "author": "Tanya",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1bq3r2y",
+      "timestamp": "2025-11-11T05:49:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "author": "Hanan",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1nqx9w8",
+      "timestamp": "2025-09-16T18:55:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Great location, and the price is very fair / Near nice restaurants shopping fitness etc",
+      "author": "Jose",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-4q26vf",
+      "timestamp": "2025-09-15T17:07:45.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Shaderria",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1dlph45",
+      "timestamp": "2025-09-09T04:44:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Brittany",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-j1tm05",
+      "timestamp": "2025-09-07T13:03:14.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Ronnie",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-gmz4i6",
+      "timestamp": "2025-08-04T10:23:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Staff could be friendly from valet to front desk not friendly",
+      "text": "Location, newer, modern for the most part clean / Windows dirty looks like they have never been cleaned",
+      "author": "Judy",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1v8fxe3",
+      "timestamp": "2025-08-03T23:06:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Ronald",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-ls0sfk",
+      "timestamp": "2025-07-30T12:22:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Michael",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-9aepli",
+      "timestamp": "2025-07-26T14:39:34.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Sidney",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-nk3w4r",
+      "timestamp": "2025-07-24T14:31:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "You pay for location",
+      "text": "Location was prime and staff was helpful once to address my concerns / The rooms were very dusty (both that we were moved to) this was common through the hotel (as I noticed at the front desk, seating areas) the parking situation... it's expensive and if you choose to self park your option is a sketchy, dark and dangerous parking garage across the way. You are unable to use the openly lit  parking lot in front of the hotel, on their property.",
+      "author": "Msmayer",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-kq0j37",
+      "timestamp": "2025-07-23T02:00:25.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Chan",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-19x5v60",
+      "timestamp": "2025-07-18T22:51:50.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Romero",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-c7gtha",
+      "timestamp": "2025-07-15T06:50:27.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Beautiful place!",
+      "text": "Beautiful property. Parking available in garage nearby. I ate at both restaurants and great service at each. / My only complaint is the water and coffee were not replenished but otherwise great place.",
+      "author": "Kimberly",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-a2ovsm",
+      "timestamp": "2025-07-12T12:29:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Mark",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1pawx6t",
+      "timestamp": "2025-07-08T00:47:22.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Jonathan",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1jutijr",
+      "timestamp": "2025-06-28T19:42:12.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Everything! / Nothing!",
+      "author": "Amela",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-10uc4ui",
+      "timestamp": "2025-06-08T05:03:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Amazing experience from start to finish.",
+      "text": "We thoroughly enjoyed how centrally located this property is - within minutes of Phoenix airport, steps away from the mall, and tons of restaurant options on and off property grounds. It was aesthetically appealing from the lobby and right to the room. Although we didn’t get to go to the pool, we did enjoy dining at the Seven restaurant by the pool. The food + drinks + view was perfect! The staff was incredibly pleasant, warm, helpful and knowledgeable on activities we could add to our list of things to-do.",
+      "author": "Shauntey",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-ov945f",
+      "timestamp": "2025-06-05T20:36:51.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Thierry",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-k0pxcp",
+      "timestamp": "2025-05-25T09:40:26.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Aliah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-13l6vr3",
+      "timestamp": "2025-05-18T22:05:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very poor",
+      "author": "Zhangqing",
+      "rating": 2,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-9jtcfb",
+      "timestamp": "2025-05-04T16:31:06.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "The housecleaning staff never fully replenished toilet paper bath towels face cloths. We always had to call and at times",
+      "text": "Location / Housecleaning staff",
+      "author": "Lilia",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-ybr4rh",
+      "timestamp": "2025-05-01T00:14:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great place, cool vibe, need to work on room service and self parking options.",
+      "text": "Brand new and great location. / No room service (had to come down and pick up the order that supposed to be delivered at my room).",
+      "author": "Jose",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-cno5so",
+      "timestamp": "2025-04-29T16:15:57.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Well I was charged twice because of a glitch in the system and it took two days to correct the problem other then that I",
+      "text": "It’s a very beautiful property / For the amount of money we paid they charge a $250 a day for incidentals and the cleaning staff needs to vacuum and dust it should not be stuff on the floor and dust on the table by the snacks and coffee machine and the parking is ridiculous",
+      "author": "Alyce",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-yjn33r",
+      "timestamp": "2025-04-28T20:35:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Chan",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1eol69w",
+      "timestamp": "2025-04-28T01:55:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Donna",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-lymrdb",
+      "timestamp": "2025-04-24T11:39:56.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Lovely stay!",
+      "text": "I really enjoyed my stay. The room was a very nice size, and super comfortable. The bathroom was quite clean and modern. The pool area looked great, and they also had a rooftop patio which was a great place to grab a cocktail and watch the sunset. Didn't try any of the restaurants, so no comment there. I did try Pronto for breakfast, which was just ok. Two minor complaints would be that the gym didn't match the level of the rest of the hotel. The WiFi also really needs to be beefed up. I'm a stock trader and I needed to do some trading, but the WiFi wasn't enough for my platform to run smoothly. Other than that, I had a great experience overall.",
+      "author": "Kevin",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-18cs9zf",
+      "timestamp": "2025-04-08T17:56:49.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant",
+      "author": "Brunk",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-180igjb",
+      "timestamp": "2025-04-06T04:04:56.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Upscale,Immaculate, great location!",
+      "text": "Smelled great throughout the hotel.Immaculate. Very upscale. Nice outdoor seating. Coffee shop TOO expense! One bl coffee and one Carmel latte was$17.00! Great location by mall. Overnight parking complicated to get to. / As above.",
+      "author": "Regina",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1utimm4",
+      "timestamp": "2025-04-03T04:13:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Stunning hotel. Will stay again",
+      "text": "BEAUTIFUL! Very clean and staff were absolutely amazing! Would highly recommend! Shopping and food are steps away at the Scottsdale mall.",
+      "author": "Alondra",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-192gvfp",
+      "timestamp": "2025-04-03T03:13:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Donna",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-iv5uqn",
+      "timestamp": "2025-03-28T12:30:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Wonderful",
+      "text": "Good but small serving / Prices of the drinks at the pool",
+      "author": "Pat",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-d6t5qy",
+      "timestamp": "2025-03-21T19:46:46.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Mike",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1n6j315",
+      "timestamp": "2025-03-17T05:05:11.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great hotel. Staff was excellent in managing issues",
+      "text": "Clean well appointed / Toilet and shower didn’t work. Had to change rooms after an inefficient morning.",
+      "author": "Douglas",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-lm93tk",
+      "timestamp": "2025-03-13T14:10:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Ryan",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-oxunja",
+      "timestamp": "2025-03-13T13:34:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant",
+      "text": "Pizza in lobby bar was excellent! / Showers have no place to place items like shampoo or a razor - would be nice to have a bench for women to shave legs! Room set up for one person - needed to ask for more towels then same pattern with housekeeping - towels replaced for one person.",
+      "author": "Jennifer",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-na18io",
+      "timestamp": "2025-03-11T04:43:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "author": "Estefany",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-w88pl3",
+      "timestamp": "2025-02-19T11:59:14.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Very good",
+      "author": "Ver",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1hi7r40",
+      "timestamp": "2025-02-17T19:14:29.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Carlos",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-rroxzy",
+      "timestamp": "2025-02-16T18:03:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Robert",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-12i07hm",
+      "timestamp": "2025-01-07T22:57:53.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Thank you for making our kids’ wedding stay so nice!",
+      "author": "Robyn",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-19crj11",
+      "timestamp": "2025-01-06T23:09:42.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Jed",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-12sk57g",
+      "timestamp": "2025-01-01T01:16:12.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "A wonderful getaway",
+      "text": "The hotel’s gives an upscale vibe and the location was perfect, located near the mall and top restaurants. We also loved the on-site restaurant, and our room offered a beautiful view of the rooftop pool, complete with a balcony. It was a fantastic experience, and we would definitely stay here again! / The only small hiccup was that there wasn’t any shower gel available when we took a shower, which made us feel that housekeeping could be a bit more thorough. However, the front desk promptly resolved the issue, and we appreciated their quick response.",
+      "author": "Tiana",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-zz2ou7",
+      "timestamp": "2024-12-09T05:30:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great location and lovely hotel",
+      "text": "Beautiful room / Would of preferred a sit down menu breakfast",
+      "author": "Jackie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1sc56ri",
+      "timestamp": "2024-11-24T15:14:26.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Passable",
+      "text": "The lights in the room were a gong show.  It took us 30 minutes, with staff help, to understand the system. No coffee machine, no partition between the bedroom and sitting room.",
+      "author": "Tim",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-nioksw",
+      "timestamp": "2024-11-23T04:14:38.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Anna",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-vzpvsa",
+      "timestamp": "2024-11-19T22:44:13.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Wonderful stay at Cesars Republic!",
+      "text": "Cesars Republic was beautiful and so inviting. It was very clean and the hospitality was wonderful! I liked that they would accommodate their guests in all the restaurants on the property. Food was fantastic too! / Absolutely nothing!",
+      "author": "Noreen",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1nneq8d",
+      "timestamp": "2024-10-21T08:36:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Samuel",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-11xcjln",
+      "timestamp": "2024-10-14T02:19:16.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Terry",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1br3564",
+      "timestamp": "2024-10-04T22:53:37.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Laurie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-nm3uc7",
+      "timestamp": "2024-09-11T22:17:30.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Lindsey",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1nf529d",
+      "timestamp": "2024-09-10T06:28:31.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "author": "Rose",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-alt4hx",
+      "timestamp": "2024-09-07T19:20:35.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "very good",
+      "text": "Room is very nice and clean, beds are comfortable / PRICE",
+      "author": "Luis",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-kw6v9d",
+      "timestamp": "2024-08-21T13:48:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Excellent!",
+      "text": "Beautiful, impeccable accommodations! / I do wish that Cesar’s points applied to my stay.",
+      "author": "Jason",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-ezpy7",
+      "timestamp": "2024-08-12T05:53:13.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "A fun hotel to have fun. I will return.",
+      "text": "The entire staff were attentive and helpful. The rooms were fashionably elevated and comfortable. The location was perfect for my needs, away from Phoenix traffic and city bustle, next door to a nice mall and with all the restaurants and bars within to give me no reason to need to leave the area. / My room was quite a walk from the elevators. And  it took me a bit of trial and error to figure out the lights, curtains and air conditioning in my room.",
+      "author": "Ronnard",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1gwopew",
+      "timestamp": "2024-08-11T21:09:16.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Pleasant until the resort fees were added which were not mentioned when booking .",
+      "text": "The room, the pool, the views, the location. / The hidden resort fees that Booking.com failed to mention so the $615 booking fee charge wound up costing $722 after the resort fees.",
+      "author": "Christine",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1uvv0ed",
+      "timestamp": "2024-08-10T18:08:23.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Gladys",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1pxpel8",
+      "timestamp": "2024-08-09T04:57:52.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "Everything staff was great",
+      "author": "Bruce",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1dxqmti",
+      "timestamp": "2024-08-06T15:21:17.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Jayné",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1uij1kz",
+      "timestamp": "2024-08-05T05:11:31.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "text": "The property was amazing will definitely be back the hospitality was AMAZING",
+      "author": "Jamilla",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1pp2s1b",
+      "timestamp": "2024-07-30T04:33:00.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Sherrie",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-gkxy45",
+      "timestamp": "2024-07-29T19:07:32.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "10/10. Will stay again!",
+      "text": "Very clean. Luxurious, lots of amenities and great location. Fair priced, cleanest room I’ve ever stayed in.\nLove being around so much to do. 2 amazing pools. / No complaints!",
+      "author": "Keith",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1ep2olu",
+      "timestamp": "2024-07-29T08:24:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "About 6 in a scale of 1-10, 10 being the highest.",
+      "text": "Location was great. / Very poor to NO Wi-Fi at all.",
+      "author": "Regino",
+      "rating": 5,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-19en6an",
+      "timestamp": "2024-07-29T05:58:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "Kristen",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-qgbrw9",
+      "timestamp": "2024-07-29T05:22:59.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "G",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1uhw5h3",
+      "timestamp": "2024-07-22T02:35:47.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "EXCELLENT!",
+      "text": "New, beautiful interior, clean, and great location. / No room service.",
+      "author": "Sinyale",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1x41j5o",
+      "timestamp": "2024-07-21T20:34:02.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Bad",
+      "author": "Jessica",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1y83pjg",
+      "timestamp": "2024-07-18T05:18:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Super mal",
+      "text": "Ubicación / No servían las puertas, no servían las cortinas, no encontraban la reservación (1 hora para el check in), media hora para el check out, no había personal para ayudar con maletas, hicieron limpieza en el cuarto y lo dejaron abierto,  no es para menores de edad,  no hay room service, el estacionamiento está super lejos y no hay quien ayude con las cosas",
+      "author": "Anabel",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-19lh5oi",
+      "timestamp": "2024-07-16T05:23:45.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Fun trip",
+      "text": "Vibes / Staff was a little stiff",
+      "author": "John",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1whjy4j",
+      "timestamp": "2024-07-09T13:51:54.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Amber",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1q4i98c",
+      "timestamp": "2024-07-01T06:29:01.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Great place great staff",
+      "text": "Win win / Nothing they could control",
+      "author": "Stacey",
+      "rating": 8,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-vjby99",
+      "timestamp": "2024-07-01T06:02:01.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "It was excellent and relaxing.",
+      "text": "Location was on the Waterfront. It was clean and staff was great. / Parking",
+      "author": "Christine",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1vzkhn8",
+      "timestamp": "2024-07-01T04:03:44.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Superb",
+      "author": "David",
+      "rating": 9,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1fv74ai",
+      "timestamp": "2024-06-29T22:51:43.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Terry",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-18bwm7i",
+      "timestamp": "2024-06-28T02:33:05.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Paola",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-x2shcx",
+      "timestamp": "2024-06-25T04:02:42.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Rachelle",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-fvg1a4",
+      "timestamp": "2024-06-24T13:53:18.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Jeanlouis",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-18ulocc",
+      "timestamp": "2024-06-22T11:25:31.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "wonderfull",
+      "text": "I recently had the pleasure of staying at Caesars Republic Scottsdale, and I can confidently say it was an exceptional experience. From the moment I arrived, I was greeted with warm hospitality and outstanding service.\n\nThe hotel's decor is modern and stylish, creating a luxurious yet comfortable atmosphere. My room was impeccably clean, well-appointed, and offered a beautiful view of the surrounding area. The bed was incredibly comfortable, ensuring a restful night's sleep.\n\nOne of the highlights of my stay was the dining experience. The on-site restaurant served a variety of delicious dishes, each prepared with the utmost care and attention to detail. The staff was attentive and knowledgeable, making excellent recommendations and ensuring that every meal was enjoyable.\n\nThe amenities at Caesars Republic Scottsdale are top-notch. I particularly enjoyed the rooftop pool, which provided a perfect spot to relax and take in the stunning views of Scottsdale. The fitness center was also well-equipped, allowing me to maintain my workout routine during my stay.\n\nOverall, my stay at Caesars Republic Scottsdale exceeded my expectations. The combination of excellent service, luxurious accommodations, and fantastic amenities made for a truly memorable experience. I highly recommend this hotel to anyone looking for a premium stay in Scottsdale.",
+      "author": "Philippe",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-uubm5o",
+      "timestamp": "2024-06-17T05:44:04.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Valentin",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-1wyv49k",
+      "timestamp": "2024-06-16T14:16:30.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Alejandro",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-pzyjwo",
+      "timestamp": "2024-06-13T15:34:15.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Gods experience",
+      "text": "The beauty of everything / I thought drinks and food were priced a little high but I understand",
+      "author": "Debora",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-wlewel",
+      "timestamp": "2024-06-10T04:06:41.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Jean-paul",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-18fhtso",
+      "timestamp": "2024-05-29T04:33:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Deborah",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-63bl79",
+      "timestamp": "2024-05-09T15:47:33.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Elyse",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-14x1cci",
+      "timestamp": "2024-04-24T04:39:56.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Exceptional",
+      "author": "Desiree",
+      "rating": 10,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-uis0a8",
+      "timestamp": "2024-04-22T01:01:55.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Extremely disappointed in how I was treated by staff",
+      "text": "Extremely dissatisfied and disappointed with how I was treated by staff. I felt targeted for whatever reason after extending my stay and staying for over 3 days at a rate of an average $800 per night. I had the pleasure of them banging on my door with “security” and being threatened to call the police for overstaying my time for checkout",
+      "author": "Paige",
+      "rating": 1,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-2axz26",
+      "timestamp": "2024-04-10T11:10:57.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Need improvement.",
+      "text": "Service was amazing / TVs did not work and woke up to noise at 4am. \nFurniture moving or work being done.",
+      "author": "Victor",
+      "rating": 6,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-e0nq5t",
+      "timestamp": "2024-04-05T04:54:20.000Z"
+    },
+    {
+      "platform": "booking",
+      "title": "Good",
+      "text": "Hidden fees that the hotel does not tell you about nor is it listed while booking. $40 parking fee + $45 amenities whether you use them or not.",
+      "author": "Ricardo",
+      "rating": 7,
+      "ratingMax": 10,
+      "sourceUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html#review-2armuh",
+      "timestamp": "2024-03-27T19:28:39.000Z"
+    }
+  ]
+}
