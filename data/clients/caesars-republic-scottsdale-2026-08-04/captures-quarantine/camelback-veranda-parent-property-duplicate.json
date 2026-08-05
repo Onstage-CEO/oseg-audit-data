@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "V1",
+  "originalPath": "captures-raw/venue-camelback-veranda-google-2026-08-05T00-55-36-231Z.json",
+  "sha256": "b917b6a4422e89e60f4b54ede55d4f7909d2872b1bb89a3b22014f3375219a1f",
+  "records": 286,
+  "decision": "quarantined_parent_property_duplicate",
+  "duplicateOf": "the parent Caesars Republic Scottsdale Google property corpus",
+  "reason": "The venue capture resolved to the parent hotel listing and is not an independent Camelback Veranda outlet corpus. It must not appear in outlet totals, outlet quotations, or outlet-source coverage. The original blob remains recoverable from Git history."
+}
