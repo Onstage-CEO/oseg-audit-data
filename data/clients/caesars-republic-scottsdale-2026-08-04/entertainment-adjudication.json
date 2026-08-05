@@ -21,7 +21,7 @@
       "sourceUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB!2m1!1s0x0:0x77d2b894579d9725!3m1!1s2@1:CAIQACodChtycF9oOkxJQlVGSXlzSHZIY0otYmZXOUx0MHc%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB",
       "scope": "in_scope",
       "venue": "bar_lounge",
-      "isLead": false,
+      "isLead": true,
       "rationale": "The guest explicitly describes enjoyable live music in the hotel lobby as the highlight of the evening."
     },
     {
