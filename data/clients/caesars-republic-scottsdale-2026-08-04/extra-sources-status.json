@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-05T00:30:48.642Z",
+  "generatedAt": "2026-08-05T00:39:40.903Z",
   "apifyDegraded": false,
-  "apifySuccessfulLaneCount": 3,
+  "apifySuccessfulLaneCount": 4,
   "apifySocialCount": 61,
-  "yelpViaApify": false
+  "yelpViaApify": true
 }

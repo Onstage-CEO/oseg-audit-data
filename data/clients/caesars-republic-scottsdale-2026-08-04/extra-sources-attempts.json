@@ -1,15 +1,15 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-05T00:30:48.642Z",
+  "generatedAt": "2026-08-05T00:39:40.903Z",
   "property": "Caesars Republic Scottsdale, a Hilton Hotel",
   "attempts": {
     "yelp": {
-      "result": "owner_or_spend_gated",
-      "mechanism": "apify yelp",
-      "message": "Yelp capture was not started because no reviewed provider-enforced dollar ceiling was configured.",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
-      "attemptedAt": "2026-08-05T00:30:48.642Z"
+      "result": "captured_complete",
+      "mechanism": "apify-memo23",
+      "message": "Captured the complete 66-review provider dataset via apify-memo23.",
+      "recordsReturned": 66,
+      "recordsAccepted": 66,
+      "attemptedAt": "2026-08-05T00:39:40.903Z"
     },
     "instagram": {
       "result": "captured_partial",
@@ -17,7 +17,7 @@
       "message": "Captured 30 public instagram post(s), but the requested depth ceiling was reached.",
       "recordsReturned": 30,
       "recordsAccepted": 30,
-      "attemptedAt": "2026-08-05T00:30:48.642Z"
+      "attemptedAt": "2026-08-05T00:39:40.903Z"
     },
     "tiktok": {
       "result": "captured_partial",
@@ -25,7 +25,7 @@
       "message": "Captured 30 public tiktok post(s), but the requested depth ceiling was reached.",
       "recordsReturned": 30,
       "recordsAccepted": 30,
-      "attemptedAt": "2026-08-05T00:30:48.642Z"
+      "attemptedAt": "2026-08-05T00:39:40.903Z"
     },
     "facebook": {
       "result": "captured_complete",
@@ -33,7 +33,7 @@
       "message": "Captured the complete bounded 1-post facebook dataset.",
       "recordsReturned": 1,
       "recordsAccepted": 1,
-      "attemptedAt": "2026-08-05T00:30:48.642Z"
+      "attemptedAt": "2026-08-05T00:39:40.903Z"
     }
   }
 }

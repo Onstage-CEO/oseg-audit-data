@@ -1,0 +1,668 @@
+{
+  "reportVersion": "open-web-evidence-v1",
+  "generatedAt": "2026-08-05T00:39:40.903Z",
+  "findings": [
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-KY1wSLh4-8DeJB48HfYRSA",
+      "domain": "yelp.com",
+      "title": "Jewel L. (3/5)",
+      "snippet": "Ok, gorgeous hotel, lovely amenities...place smells amazing when you walk in. I even got a chance to use the rooftop pool on my last night. Great beds and linens. Lots of towels. Unfortunately I was on the side of the hotel where a had a view of the rooftop or something. Not the beautiful Camelback Mountains. \nComplaints: housekeeping staff is lacking. First morning I wake up. I take a shower. They have high-quality products. Both the shampoo and conditioner bottles, which are fixed to the wall are totally empty not a little empty. There was nothing in them. That means many guests went without shampoo and conditioner. Secondly, I came home on my second day to not clean bathroom. There's also a coffee station and they don't seem to think people need regular sugar. There's tons of pink blue and yellow packets, but I had to literally ask them to give me sugar. And it still didn't come. Well, let me change that to there were two very sad packets of sugar amongst a sea of blue pink and yellow packets on the second day. They had to send someone to my room with sugar. There was also a pill that I dropped on the floor first night, that was there every single day until I left (3 nights). I'm going to attach a picture of what I found on my toilet seat. I literally had to go to the front desk and each time I went to talk to the front desk the manager had already left for the day. I don't understand a hotel that size with no manager in the evenings and I mean from 6 o'clock on.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-8M95ILG5grKQsVpamlkyEg",
+      "domain": "yelp.com",
+      "title": "Joe I. (1/5)",
+      "snippet": "I held a large event at Caesar's over 3 months ago.  The event was a disaster from start to finish.  I gave the event coordinator a budget for the event and asked her to make the accommodations to meet that budget.  \n\nThe event, which was a large all day work group meeting, went over budget by 30%.  To top it off, I approved a 50% deposit to be billed prior to the event with the balance immediately to follow.  I was never billed for either, but then 3 months after the event my credit card was charged the full amount.  The hotel never reached out to me to let me know this was happening.  I had to call them and figure out what was going on, and I was basically told \"it is what it is.\". \n\nWhen I spoke to the accounting team and event coordinator, I tried to figure out a resolution but I was met with what I consider a rude response.  The accountinf manager actually hung up on me.  I was made to feel like I did something wrong, when the mistake was clearly on the hotel.  Most hotels would try to help and make accommodations, when they make a mistake, but not this place.\n\nI'm a local patron, who can literally see the hotel from my backyard.  I will never use this property again and I urge anyone else, who chooses to use this property to proceed with caution.\n\nFurthermore, \"Jennifer D.- business manager\" is a bot.  There is no Jennifer that works at this hotel.  Literally, this was the worst hotel experience I've ever had.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-igGzi3eNgxA7ntf3BEfTuw",
+      "domain": "yelp.com",
+      "title": "Andrea S. (3/5)",
+      "snippet": "The pool on the ground floor is clean and a vibe, but this is the worst service I've had in four years of living in Scottsdale. It took an hour to get two frozen drinks (pre made from the slushie machine) and an hour to get our food. They got the oysters wrong the first time, promised a como correct version but we never got them(another hour went by). Always down to spend some $$ on a more luxury experience/location but $25 for a steak salad with four pieces of skirt steak was also a wow for us. The staff shows zero sense of urgency, and doesn't seem to know who is sitting where even though we set a card down for the tab. We were there around 12-4, they had two servers, one bartender on a Saturday. The ladies next to us also waited an hour for chips and salsa. Super disappointed, but very aesthetic!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-tDlX7UJpB6evV3W-iMk_Lg",
+      "domain": "yelp.com",
+      "title": "Rachel M. (1/5)",
+      "snippet": "I am extremely disappointed with this hotel and the way they treated my friend during what was supposed to be a special birthday trip.\n\nI gave her this stay as a birthday gift, and I feel terrible about the experience she had. The hotel charged her for a bottle that she never drank, and when we tried to resolve the issue, we were treated with disrespect and accused of lying. The staff member I spoke with on the phone refused to provide her name and repeatedly insisted that my friend and I were being dishonest while automatically taking the side of housekeeping without properly investigating the situation.\n\nWhat is even more concerning is that hotel staff entered my friend's room while she was asleep without her permission. This was a serious invasion of privacy and made her feel unsafe.\n\nInstead of listening to our concerns and handling the matter professionally, the hotel was dismissive, rude, and unwilling to take responsibility. Guests deserve to be treated with respect and have their privacy protected. Unfortunately, this experience fell far below those basic expectations.\n\nI would not recommend this hotel based on how this situation was handled.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-VPmpvns70Q_nVB6hjIdjBw",
+      "domain": "yelp.com",
+      "title": "Michael B. (5/5)",
+      "snippet": "not sure why the ratings are not so high.  We had an excellent experience.  The rooms are large and well equipped (shower is lacking).  The hotel is a hot spot at night for the young and loud, but you cannot hear anything in the rooms.  They separate the night life from the rooms so effectively.  The happy hour are Luna is tremendous with excellent selections (not toned down small options). The location next to the Scottsdale Fashion mall is great for those who want to do shopping (great selection of stores).  Lots of open space and two pools. All in all this is a hotel I would definitely return to.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-6z9trrLt3NIFAUJoiDIe2g",
+      "domain": "yelp.com",
+      "title": "Lyndsay W. (1/5)",
+      "snippet": "I came to Caesar's for lunch at Wolf. This was an interesting experience in and of itself with an over 40 min wait time for drinks. After lunch my group went to the lobby bar for a glass of bubbles. I went to the lobby restroom and was then truly locked into my stall for over 10 minutes. I resorted to screaming out for help and tried to kick the door down, which was obviously not successful. (Just for reference, this is not a stall door: this is a floor to ceiling thick wooden door). It was a very slow day and I did not bring my phone, so I had to wait for my friends to come check on me. Imagine being locked in a tiny room for over ten minutes with no way to escape! \nI immediately went to the front desk to explain my experience.\nI was greeted by a young woman who said \"we have had a sign on that door for weeks\"\n(There was no sign btw) also, in a hotel in this location, how have they not fixed this door in weeks? \nLet's just extend this to worst case scenarios. Asthma attack without rescue inhaler. MI without medical intervention. Fire with no means of escape.\nI honestly have never had a worse experience in a public restroom. And I am a woman who has experienced a lot of disgusting public restrooms. \nBut the response to my experience by a front desk person is inexcusable.\nI would not recommend anyone to come to this resort. This is Scottsdale! We have some fantastic spots where you will be greeted with better service and kindness after what is in fact a traumatizing experience. This place earns an F.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-FOqEl6GZt_Cq_7hBuU1a9w",
+      "domain": "yelp.com",
+      "title": "Brittany T. (4/5)",
+      "snippet": "Had a wonderful stay here with my husband and our doggy. There's a few restaurants in the hotel, including the famous Wolf by Lisa Vanderpump and a couple restaurants by Giada. The rooms are comfortable, spacious, and good for working (reliable WiFi and multiple seating areas). I also love the little cocktail happy hour the had in front of the elevator one night, such a refreshing little treat. I had the opportunity to lounge by the pool for a bit too and the adults only pool was a nice touch. It was very quiet and they even offer poolside service. It was a hot day so I appreciated that the staff came around the offer complementary water. Overall, this is a great place to relax in Scottsdale and the location next to the mall couldn't be more perfect! You're just steps away. I also loved that they are dog friendly and they have a dedicated area to walk your dog.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-Tnm9GmlP6litB0irYOxg1w",
+      "domain": "yelp.com",
+      "title": "Dejaye B. (5/5)",
+      "snippet": "I spoke with Hayden today, who went above and beyond to help resolve a scheduling issue for a very special occasion. My husband and I are celebrating both his birthday and our anniversary, and we already have cabanas booked for the 28th and 29th, along with a reservation at Wolf on the 28th. When we realized there were no day rooms available, it could have easily put a damper on our plans.\n\nInstead, Hayden--along with her manager Ryan--stepped in and offered a thoughtful solution: a discounted overnight stay. That one gesture completely elevated our experience and turned what could have been stressful into something seamless and exciting. Now we're able to fully enjoy both days at the property without compromise.\n\nThis is exactly what great hospitality looks like--anticipating needs, offering solutions, and making guests feel taken care of.\n\nA Toast to the Experience of Luxury--How We're Treated, and Why It Matters.\n\nFor those who appreciate thoughtful service and want honest insights into hospitality experiences:\n@toastofluxury | toastofluxury.com",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-ZSr9COqwj7busekTrts_Sg",
+      "domain": "yelp.com",
+      "title": "Andrew V. (1/5)",
+      "snippet": "Booking.com is claiming that the minimum booking age for this property is 18, however we tried to check in and staff said that check in age was 21 due to alcohol in rooms. We tried to check in on Sunday, five full days ago after the hotel said that the booking age was 21 and the website hasn't updated the info to reflect the correct booking age. Other than that, the property was very modern and I initially liked that there didn't seem to be lime in the water in the lobby unlike at the last hotel we checked out of earlier that day. If you're thinking of booking this hotel for someone under 21 to stay at, and see that booking.com says 18 is the minimum age for check in at this hotel, this is a reminder to stay away from this property.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-1d1PnJ3471tBpP1KjHLHyg",
+      "domain": "yelp.com",
+      "title": "Nancy M. (4/5)",
+      "snippet": "Other than my room not being available upon check-in and some weird footprints on the floor, I had a pleasant stay at this hotel. The staff I encountered were friendly and it's a very nice space. The lobby is spacious, comfortable and well maintained. The rooms are nice as well.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-3nHYc9ujxp23rCQqncyqVA",
+      "domain": "yelp.com",
+      "title": "Ally M. (5/5)",
+      "snippet": "Aidan in the valet department went above and beyond. His service is exquisite he deserves a promotion ASAP. So well deserving!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-9lWb1FGKFfleeLIUS8TS3g",
+      "domain": "yelp.com",
+      "title": "RA V. (4/5)",
+      "snippet": "We really enjoyed our hotels stay here. It's a very nice facility with a nice lobby and restaurant. This is a great location next to the mall with two fantastic restaurants across the street: Toca Madera and Ocean 44. We had a great view of Camelback Mountain and sunsets. \n\nOne downside was that they seem to have a lot of private events here. During our brief stay of 4 nights , the amenities were blocked off three times for events.  One was a wedding event with a DJ that went until 11 PM and we had to get up at 3 AM to catch a flight.\n\nI wouldn't hesitate to stay here again.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-wB3HH3HmypBf0QqK-H5-uA",
+      "domain": "yelp.com",
+      "title": "Brent M. (5/5)",
+      "snippet": "Stayed here for a birthday surprise for my wife. We had a corner room with Mountain View and absolutely loved it. The view was absolutely stunning. I specifically loved the floor to ceiling windows on the two sides of our room. Having the bed face one of them up close I personally loved. There is an open and close blind button right next to the bed. The room was nice, clean and good size. The staff here were exceptionally friendly from the valet gentleman to the hotel staff and all the restaurant staff as well. They have two nice restaurants on property, Luna and Wolf. We ate at Luna and very much enjoyed our food. On the 7th floor is a pool with great views and on the 8th floor is a bar and open veranda area perfect for evening activities. It faces west with a beautiful view of Camelback Mountain and the ambiance is amazing. They had a gentleman playing guitar and I personally loved it. Not to loud so people could have conversations but just loud enough to hear exactly what song he was playing. Definitely be back this was a great experience!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-XjsDu9TP7vvTGgebKEf-Ug",
+      "domain": "yelp.com",
+      "title": "Lisa L. (1/5)",
+      "snippet": "I'm very disappointed in the service. When I arrived this evening, there was no cell service, no one to help me with luggage, and I was very disappointed. In addition, my room was so cold when I called the front desk. I was told that they couldn't help me and I needed to call Security. I asked how to work the thermostat and they told me they didn't know how and Security had to come into my room. I didn't appreciate the fact that at 2:30 in the morning I had to have a security person come up to my room while I was in my pajamas. For a hotel such as this I was Dyrr very disappointed in the type of service I received I will not come back here.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-jfXoO9ji8v9VHXT_UI5r-g",
+      "domain": "yelp.com",
+      "title": "Brian S. (5/5)",
+      "snippet": "A wonderful Hilton property that delivers a modern, upscale experience without feeling overdone. The hotel has a sleek, contemporary design and offers a wide range of amenities that make it feel luxurious and comfortable.\n\nIts location is a major plus, situated right next to a shopping and dining district, you're close to all the hustle and bustle of Scottsdale. Despite that, the property itself feels surprisingly secluded and relaxing once you're on site.\n\nThe hotel features two top-tier restaurants with excellent food and drink offerings. The standard rooms are spacious, and comfortable, offering plenty of room to unwind.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-TXkbFrJuG_lSSlCNb4S7Bg",
+      "domain": "yelp.com",
+      "title": "Vincent S. (5/5)",
+      "snippet": "Had a short staycation with my gf. We are driving back home bleh but anyways my gf is a medium and she said that there are a congregation of spirits here that are of military. She said alot of them are displaced and that many of them were taken by an elemental. I myself played around with the rem pod and my ovulis puck. Kept getting keywords referring to the military and had the rem pod light up a few times. Oddly when I would try to ask questions it stopped. We even did the Estes method and again we were talking to some soldier that loved his Springfield.\n\nAll in all pretty hotel, wolf is Def haunted and I heard people sneezing in the luna restaurant and no one was there.\n\nTo all ghost hunters if you want a place to conduct investigations this is the place for you!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-JvA21AE5WcBHXhE6-ZulrQ",
+      "domain": "yelp.com",
+      "title": "Britt M. (1/5)",
+      "snippet": "Avoid at all cost unless you like motels since this was far from a \"luxury\" hotel. We were mistreated and ignored. Not to mention the room was entered every time we put up the do not disturb sign.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-gSJOWf_PseC4yoN9W5UeAw",
+      "domain": "yelp.com",
+      "title": "Alison V. (5/5)",
+      "snippet": "Our room was so clean and welcoming.  The hotel has restaurants and it is located right next to the mall!  Location, restaurants, and cleanliness!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-iEH0WW7anPnl9lcnyg-ffQ",
+      "domain": "yelp.com",
+      "title": "Kay S. (1/5)",
+      "snippet": "They place unapproved tips on your bill and then never call you back when it was questioned. Have to go to better business as how many people have they done this to and this is fraud!!!!!\nI was told this is normal business practice at the swim up bar. I am not reaching back out and wasting anymore of my time.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-mOhxwK_mAgBuCQykMhW3SA",
+      "domain": "yelp.com",
+      "title": "Sabrina H. (1/5)",
+      "snippet": "Terrible customer service. Terrible food.\nI do bot recommend  at all. Elevators broken. Too forever to get to rooms.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-Jp52jfl9NvmD8vkAlZDtDw",
+      "domain": "yelp.com",
+      "title": "Hannah N. (4/5)",
+      "snippet": "We stayed at this hotel for the Miss Arizona teen USA pageant. The hotel is honestly very nice but there are some interesting qualities to it, one being the shower situation in our room. I was rooming with my gay best friend and the shower is in the center of the room in a glass box. Thankfully there are curtains for it but still - not the best for privacy for those that are sharing rooms. The room overall was nice and very trendy and the AC was amazing! Best AC I have had at a hotel. The fresh fruit infused water was always a plus in the lobby for a refreshing drink anytime of day.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-C2c4510deTUv4LIh0qEJdA",
+      "domain": "yelp.com",
+      "title": "Yeranui S. (2/5)",
+      "snippet": "We called in the morning asking for the room to be cleaned. Went out , 3 hours later .. not clean , no fresh towels. We called and asked again this time to the manager.. went to the pool, 3 hours later still not clean. No fresh towels, bed not made, we can't shower. We called and spoke to the manager Tiara, I picked up the phone to express my disappointment .. wouldn't believe, the line was beeping like you would holding on a key. Very unprofessional, poor representation and very juvenile. \nShe not only disrespected us, but also disrespected herself  as a representative of this hotel  under Management .",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-eXl6-SeU24Z6WaD2MslxHg",
+      "domain": "yelp.com",
+      "title": "Kelley K. (2/5)",
+      "snippet": "We live in the PHX area and decided to do a staycation and Caesars Republic had some great deals. We booked 2 nights, a Sunday & Monday.\n\nThe location is good, right behind the Scottsdale mall. We checked in and the lobby is beautiful and clean. It also smells wonderful. Friendly staff. We went up to the room, which was nice but nothing special. We asked for extra pillows, and we had to call a couple of times to get them. \n\nThe next morning we were woken up with loud banging like someone was moving furniture and speaking loudly, so we went out for the day. We came back and there was a letter on our door saying they were doing construction and they'll try not to bother us. That explained the noise we heard. It would have been nice to be advised of this prior to reserving or at the very least when checking in. \n\nLobby was very clean, room was not as clean. The beds are very comfortable. However, they use duvet covers and a flat sheet. The flat sheet on the bottom slip slides around exposing the mattress, and there is no top sheet, so it's just you & the duvet. Hopefully they wash those after every visit. The hair dryer was strewn about. There was something disgusting in the corner of the shower. Additionally, the shower gel bottle fell off the wall. We left it assuming the maids would reattach it. They did not, they just put it in the bottom of the shower. \n\nBe advised they charge for parking- even if you're eating at the restaurant. I know charging for parking is a thing now, but how badly do you want people to eat at your hotel if they have to pay an extra $12 to park? \n\nWe did try Pronto by Giada and took it to our room (evidently this hotel doesn't offer room service). It was really good! The pancakes were especially good!\n\nAll in all, I'm not sure we'd stay here again. It's pretty, but the room cleanliness wasn't great.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-8G1aWaeNePMv1cWixhsXUQ",
+      "domain": "yelp.com",
+      "title": "Nanette M. (4/5)",
+      "snippet": "You park free in mall across the street which is not a big street. Beautiful clean simple lobby. Elevators ritzy looking. Hallways are nice except the ugly carpet. We stayed in room 530 and it was a comfortable bed and a/c worked great. This Hilton is suppose to be a LUX hotel, but I didn't feel that in the rooms. The shower was nice even with it being a showtime shower, comfortable bedding, and beautiful rug under bed. I felt the snakes on the closet, the tacky furniture stuffed into a small space and not attractive, and the alcohol tower all looked cheap. The staff were awesome and accommodating with giving us more time in our room. I would stay again and highly recommend but definitely not considering this a 5 star.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-uVpbwUgcr4aH45w5rLraIQ",
+      "domain": "yelp.com",
+      "title": "Alexandra S. (1/5)",
+      "snippet": "Hilton Diamond Member here -- PLEASE read before booking Caesar's Republic.\nThis was my third (and final) stay here. As a woman, I need to share the absolutely insane privacy and safety issue we experienced.\n\nMy fiancé and I booked a Mountain View suite as a treat between moving overseas and getting married next week. I expected a relaxing stay, maybe even a soak in a tub. Instead, I learned the \"view\" works both ways -- straight into the bathroom.\n\nOur suite had wrap-around floor-to-ceiling glass in the shower and toilet area with only flimsy black blinds. Assuming (like at most high-end Vegas hotels) the windows were mirrored or tinted at night, we opened them. Big mistake. From the street, restaurants, and parking lot, we could clearly see into our own bathroom -- and into other guests' bathrooms. No tint. No privacy.\n\nI have a background in hotel construction and can't believe a four-star property allows this. I stacked our luggage in front of the toilet and went outside with my fiancé to confirm, and sure enough, it was fully visible from multiple public areas.\n\nWhen we raised this with the front desk, we were told, \"Well, did you close the blinds?\" We were offered no solution, no upgrade, no downgrade refund, and no help moving our six oversized bags to another room. Security stood by and watched us carry everything.\n\nFor a \"luxury\" resort, the hospitality was nonexistent, the safety oversight unacceptable, and the customer service dismissive. We left feeling uncomfortable, unvalued, and deeply disappointed. Not refunding us the difference to downgrade highlights how the priority of the property is cutting corners at the expense of the customer service.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-XHrVTfVtWLCMB8nqtAW7og",
+      "domain": "yelp.com",
+      "title": "Christian A. (3/5)",
+      "snippet": "OK overall experience. The hotel presents as upscale, with rooms and amenities which make this a comparable hotel. \n\nStaff are young, inexperienced, and not professional in presentation. This is not in alignment with how the hotel looks. Parking is not terrible, and for the price you will pay, a bit ridiculous to have guests park their car in the adjacent mall's parking garage... They display expensive alcoholic beverages in your room, which makes it less classy.\n\nIf they improve the quality of their staff and resolve the parking issue, and trim loose ends in terms of the hotel's overall professionalism, then I would be happier to give more stars. \n\nIf you put lipstick on a pig, it's still a pig.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-eXk3sxaR7KbxWHhiA8RlRQ",
+      "domain": "yelp.com",
+      "title": "James L. (5/5)",
+      "snippet": "Modern and high end establishment that's thought of everything. The staff is incredible, and the ambiance undeniable. The design of the property, both in layout and detail, is unmatched. I've experienced this property in the form of both attending a function, as well as enjoying the food and beverage offerings. Definitely a wonderful and convenient place to meet people, enjoy a dinner and stay for a luxurious time!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-WT-G-h72bfwh32aSgtggGA",
+      "domain": "yelp.com",
+      "title": "Christine C. (5/5)",
+      "snippet": "The room is beautiful. There was a lovely view of Camelback Mountain. Parking in the garage wasn't a big deal, and it was within walking distance of the nicest mall I've been to in the United States. I loved how they offered black face washcloths (IYKYK). Even the coffee served at breakfast was surprisingly high quality.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-sbnZMVCIBqUSPibuGAan5w",
+      "domain": "yelp.com",
+      "title": "Hayley N. (5/5)",
+      "snippet": "We had the pleasure of staying at Caesars Republic for four nights and loved the property! The rooms were luxurious and had everything we could have hoped for. The location was a great proximity to Old Town as well as right next to a mall. \n\nWe especially loved Astrid (the front-desk concierge). She gave fantastic suggestions for dinning and activities and was so friendly! We look forward to staying here again!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-i8UDFU8cJXGpDwtDwSyDzw",
+      "domain": "yelp.com",
+      "title": "Robert A. (5/5)",
+      "snippet": "The hotel stay was first class!  Great service and friendly staff. The Easter brunch was over the top at Luna's as well.\nHighly recommend this hotel in Scottsdale!!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-VrkfswOM6lJMKFpv7_W5Xg",
+      "domain": "yelp.com",
+      "title": "Edie D. (1/5)",
+      "snippet": "VERY DISAPPOINTED! First and foremost they need to ANSWER THE PHONE. This literally went on for 3 days, trying to speak to someone about our reservation. Finally on the 3rd day they answered, however it wasn't local. I explained how we had reservations for April 17th for our sons engagement \n and that I needed to speak with someone locally. She agreed and put me on hold and tried to call them. She too couldn't get through and apologized. She suggested we  email or go over there. Wow ok. \n So my husband had to drive over to speak to someone. \n We wanted to let them know, about the engagement and how we wanted to buy a bottle of champagne and leave a special message to our son and future daughter-in-law. \nThe gentleman, my husband spoke to was  Dissh ( not sure that's the correct spelling) regardless he was very polite and very accommodating and said  not a problem, and that they would leave the bottle of champagne with the personal note and to not worry they would take care of everything. My husband left  reassured that our request would be met.\nOur son also had dinner reservations there as well. After dinner they went up to their room and NOTHING was there! No note my husband specifically had them write, & no champagne. They were looking forward to cheering to their engagement in their room. Whether they supplied the bottle or we did the point was to have it in the room and they didn't follow through.\n  This is just basic customer service that one would expect, especially at this level at Caesars Republic.\nThe lack of customer service, not answering the phone and the lack of not listening to their customers request. \n\nVERY disappointed, we chose this place to celebrate a special occasion.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-u0Vv7YHM8e7RMPszIxr38w",
+      "domain": "yelp.com",
+      "title": "Gee E. (1/5)",
+      "snippet": "I stayed at this place for Apr 4 -6 upon arrival on Friday night I was told that the hotel had Valet but it was full so I could park in the Mall parking lot across the street. The rooms only amenities is several expensive bottles of liquor which I don't drink the rest of the room is small and basic with one small window. On Sunday morning I ordered Coffee to my room in 20 minutes a knock on the door and the person handed me a carafe with nothing else no cups cream or sugar which my wife went down to mention. As she approached the front desk she overheard the Manager was telling the morning Valet that he needed eye drops because he looked High. She told the manager about the Room Service not delivering nothing but a carafe and she told my wife to go get it from the restaurant no offer to send it up. This is the worst supposed to be luxury Resort in Scottsdale I have ever experienced Amateurs posing as Professionals. Not worth it just look at the other reviews.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-By0QeLJiJXarzhNmR2PP9w",
+      "domain": "yelp.com",
+      "title": "Shaun S. (2/5)",
+      "snippet": "It's super clean and nice. I however won't stay here again. This place has no breakfast...nothing!  I got up starving and wandering around looking for something to eat. If you want breakfast you have to buy it at a tiny coffee shop inside. I just stayed at a nice marriott the night before at half the price of this place! It had a huge amazing breakfast spread. I would get up and wipe the sleep from my eyes and wobble down to have an amazing free breakfast .  There is nothing here but a coffee machine in your room if you want to make your own coffee!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-JeCVRMyk7Jb6BK-L-8ta3A",
+      "domain": "yelp.com",
+      "title": "Kristen S. (5/5)",
+      "snippet": "I almost canceled my reservation because of the horrible reviews, I'm glad I didn't. The hotel was beautiful, our room was perfect. Do not believe these reviews. We were very happy with our choice to stay here and we have stayed in many properties around Phx/ Scottsdale. Front desk, Valet, housekeeping, room service, bartenders, all extremely friendly and helpful.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-gRXWlS9qpyTdBgomr7CIIw",
+      "domain": "yelp.com",
+      "title": "Cami C. (1/5)",
+      "snippet": "Subpar at best. Decent location, standard room, no upgrade. The room layout itself was nice, but the very tiny  window in a back corner only had a view of the vents. As others have said, the customer service could use an immense improvement. The lack of care, they don't really seem to listen to your concerns. The restaurant host wouldn't acknowledge me, then they proceeded to forget my order. After a long day of travel, it was an unpleasant experience. \nHaving status with Hilton won't get you any benefits at this location. I highly suggest else where.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-f9FCqH7LKo4ARmTKsePTOg",
+      "domain": "yelp.com",
+      "title": "Shaelyn P. (1/5)",
+      "snippet": "If you want music blasting until 2am which can be heard throughout most hotel rooms than you should stay here.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-qb9cyASAnVvrF9Huet9fRQ",
+      "domain": "yelp.com",
+      "title": "Peggy S. (1/5)",
+      "snippet": "The check in process was a total joke.  Our guaranteed connecting rooms were given away, the next 2 rooms they told us we could have were also given away.  We ended up on different floors, good thing we weren't with kids.  We were there at 2:30 and got no keys until 6pm.   The supervisor took NO responsibility for their mistake.  The next day we were jerked around again.  Terrible experience and don't recommend it!  Luna was excellent, just go there for dinner but do not stay.  They need help!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review--4MmNmqmeogbVMYz4drWvQ",
+      "domain": "yelp.com",
+      "title": "Reggi M. (2/5)",
+      "snippet": "Check in - went smoothly but at no point during check in were we told that the $30 per day credit was only good at the convenience store or Pronto (breakfast spot). I was later told that it was also good at Luna but not Seven. \n\nFood - Luna was highly disappointing. The lemon spaghetti sauce was broken/grainy and the rest of the food was just meh. The service and wine were both excellent as were the cookies for dessert, but a $750 meal for 3 should be excellent. It was not. \n\nPronto - gross - truly a huge disgusting miss. It's more of a grab and go than a restaurant. You can order made to order items too, but they aren't good. We got 2 coffee drinks, the traditional breakfast and the frittata. The coffees were fine but even though they gave us a number for our table they called out for us to pick up the coffees. The lids (paper cups) don't fit and my husband scalded his hand picking them up. The worker says, \"oh yea the lids are like that\" (seriously!?). Then when the food was delivered and I realized we didn't receive the toast so I went to the counter to inquire. The same worker who delivered our meal to our table said \"oh you didn't get it?\" (Obviously she had just delivered it without toast). Then someone else proceeded to bring out 1 piece of dry toast without butter or jam, but he brought some after we asked for it. Despite being a glorified Panera, they have a 20% tip as the pre populated suggestion on the touch screen which I gave thinking it would influence service - it didn't. \n\nHousekeeping was hit and miss. Day one - a used (by us) washcloth was left in the shower. Trash and used glasses were not removed and toilet paper was not refreshed causing us to completely run out of TP on day 3. The shower has no shelf or soap dish for bar soap or personal toiletries (facial cleanser, razor etc). The shower was stocked with 2 conditioners and 1 shampoo - no shower gel. When I requested shower gel, it was left on the counter rather than being installed so I ended up perching it on top of the duplicate conditioner since there was no where else to put it. Day 2 housekeeping didn't come at all even when though we were gone from 9-1 and after 5. I had to go to the front desk at 10 pm after returning from dinner to ask for fresh towels, coffee pods, Kleenex (because we were had been out of TP) and TP. It all got left in a pile on the countertop. I finally texted the front desk and  asked if no one in the hotel had a key to fix the shower gel situation and someone came the following morning. \n\nLighting is awful -  major design issues - entry hall lighting is very dim and not adequate to even see my suitcase while situated on the luggage rack. It's unclear and not intuitive what turns off all lighting. (Bedside light won't go off and on sometimes- despite some lights being on). All lights seem to be controlled by the bedside switch on the far side of the room. I was told the \"owner\" owns a lighting company and that this is an efficiency thing - no I can assure you it isn't - I work in adjacent business and personally understand how this works. Just say you messed up the lighting don't gaslight me that it's \"green\". \n\nValet parking - I texted (as instructed) and got no reply. After 20 minutes I went to the front desk to inquire if I had done something wrong and was told they were short staffed. My car was brought around 5 minutes later. They weren't busy and no other customers were waiting. Not what I expect when paying $40 for valet. \n\nComplementary shuttle - we only used this once and were dropped off at a nearby (.5 miles away) restaurant no problems. We opted for this on our final night at around 4:30 on a Monday. Got a ride right away to the destination but waited over an hour for the ride back after being told 5-10 minutes. After 20 minutes waiting  I called and was told 20-30 more minutes. Then I was called to say it was 5 minutes away. At the 1 hour mark, I was told the that the cart had been waiting for us for 20 minutes and left. This was a straight up lie since the restaurant is located on a dead end and we were waiting on the street with visibility to traffic coming in and out. The manager finally picked us up herself but still questioned if we had really been at the entrance the whole time. Yes we had definitely been waiting because we were anxious to get back to the hotel and face time our daughter for her birthday. We ended up doing this on the golf cart ride back. \n\nI expected better of this beautiful hotel in a great location and was gravely disappointed. I hope to be compensated for my time to write up this detailed and thorough feedback, because I love Hilton and want to participate in keeping quality high. Some local employees seemed genuinely embarrassed - I could tell they know it's bad and feel powerless to improve it.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-TqFhw0hHKjrgFwcgi4gKZw",
+      "domain": "yelp.com",
+      "title": "Doug B. (2/5)",
+      "snippet": "It's kind of a weird place.  I arrived at noon and was told that my room was clean but had not yet been inspected. I'd have to come back to check in.  When I asked when they expected it to be ready they told me they had no idea.  Finally I pushed when should I come back here they said two.  At 2 I was given the same story \"clean but not inspected\".   I watched guest after guest get keys and go to rooms until finally at 4, I asked, visually agitated and I was given a key.  \n\nThe room was weird.  The glass shower visible to the rest of the room being the center point.  Also the curtained wall with just a tiny window behind it was funny too.  Traveling for work I would have liked to have the space back from the mini bar  (i  don't need a romance box) or the shelf of $500 bottles of liquor.  Those both felt tacky and intrusive. Overall, it has the feel of an understaffed but high end brothel.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-BgkDyr4Fxw-fQH0fWT8hDA",
+      "domain": "yelp.com",
+      "title": "Sheila M. (3/5)",
+      "snippet": "Hotel was beautiful and well maintained, staff were very good friendly and helpful. Both bars had great service. Live music was nice. Luna restaurant was spot on and would highly recommend, a bit pricey but the food and staff made up for it. Our only downside was room service was non existent, the QR codes didn't work for us. The Pronto always had a long line so we didn't get to try it. Only one water in room, and strangest thing no washcloth were provided and no place to set anything in the shower but on the floor. Lights were tricky to figure out. All in all a nice place, good location, would go back and give it a try another time.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-w1MfPrVMr7bK-cep_--edA",
+      "domain": "yelp.com",
+      "title": "Kimberly M. (2/5)",
+      "snippet": "Visited Caesar's for a Valentines Day dinner. We valeted our car since parking in that area is tricky. Most places comp valet if you're dining or staying, but Caesar's charge $12, which was fine. The system prompted us to pay and tip ahead of time, so we did. After a wonderful dinner at Luna, we were ready to head home and used the app as they requested. 45 minutes later, our car was not delivered, and our app prompted us for a receipt. And no car. When I asked the valet desk, they asked us to remind them of the make, model, color, and license plate of our car. Then they asked my fiance to go behind the desk and identify our keys. Then, they asked my fiance to get in the golf cart with the valet boy and find the car ourself. My fiance did find it, but not parked in their designated zone. Meanwhile, the manager of the valet was trying to make things better by offering us champagne, which I found inappropriate since we were just about to get behind the wheel to drive home... they did comp our $12 valet at the end. Even though our dinner was great, we likely won't return as we no longer trust the valet and don't want to deal with the mess of parking down there.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-cFh5LJvdEQUV96m0R2xDDA",
+      "domain": "yelp.com",
+      "title": "Susan F. (4/5)",
+      "snippet": "It's an amazingly beautiful place to go as long as you can afford it. It is kind of pricey. The help staff there is young and inexperienced. However, they've got them wearing skirts that go up their butts witches slightly distasteful unless they have a nice figure. Not all do! As far as the menu is concerned, you need to enjoy Mediterranean fair cause that is pretty much all they have at this restaurant.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-p8UALFh4kwEw7v4Nacb1aw",
+      "domain": "yelp.com",
+      "title": "Adam M. (5/5)",
+      "snippet": "First, a powerful, wonderful, special thank you to whole team here, but especially to Astrid, Keri, Jeany and Faye!\n\nCame for my 60th birthday (yuck but yay) and those ladies went absolutely over the top for me and my family.  \n\nAs a lifetime Diamond and a diamond for 25 plus years, the appreciation showed.  The upgraded room, the ballon arch, the chocolate strawberries arranged with my wife, Robin, it's been a very welcoming, warm experience.  \n\nWe'll be back!  You should too. \n\nThe only danger?  Being with steps literally of some of the finest shopping and dining in the world.\n\nThank You All!\n\nAdam & Robin",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-dkDRNU5uevgLThlYlvTa-w",
+      "domain": "yelp.com",
+      "title": "Alex S. (5/5)",
+      "snippet": "The Umami Chicken is to die for! Will need to come back often for that great, tasty dish! Nothing else compares. Also cheesecake. Great vibes and better views. Shoutout to Joey who provided phenomenal service start to finish in the heat of restaurant week! Thanks Joey!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review--UO9n7TB7wzHJz5F0pc-Pg",
+      "domain": "yelp.com",
+      "title": "Jessica S. (4/5)",
+      "snippet": "We met some friends here for a special occasion. We didn't stay, but spent a couple days visiting throughout the week. Everyone was super friendly and helpful. They have two pools. The hotel is kid friendly. This visit the pool on the seventh floor was designated to adults only and the first floor was for families. I think that is a smart idea. That way families can enjoy and adults who want to just adult can enjoy as well. They are a little small and very shallow, but still refreshing. Caesars Republic also has two restaurants on the property. Seven, on the seventh floor and Luna by Giada on the first. If you have food sensitivities both offer plenty to choose from, but Seven offers the most. If you do drinks, appetizers, a meal and a small dessert you'll for sure leave satisfied. Lovely rooms, location, cocktail areas, and great dining options make this a great place for a stay. They are located by Fashion Square Mall. This is city hotel more than a resort with a sprawled out property. I did notice EV charging stations. Parking and rooms are very reasonable for the area.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-6bNJVUodP5-YDhhGJWeC7A",
+      "domain": "yelp.com",
+      "title": "Tyler A. (1/5)",
+      "snippet": "I had a very displeasing event staying here. Partially my fault of canceling my original reservation as booking.com had sent me a promo code for cash back. I had called and made a new booking for August 7th not paying attention to the dates being incorrect. I called within minutes to resolve and ask booking to cancel it and was notified I would not be charged as I was staying august 10th-11th. No cancellation email was sent and I was falsely accused of a no call no show when booking responded me and I was charged the 222 dollars. When I stayed the hotel was nice but I was checked in 45 minutes after check in time and was charged a second hotel reservation fee for what had already been included through my booking. I am very displeased as this is a beautiful hotel and no one seems to be attentive to helping with customer service. I disputed this with my bank and it was reversed with all the run arounds I had calling my bank, booking & caesars republic. I chose this due to the location, the fact I reviewed all the floor plans through work for aluminum and glass and wanted to physically see the project complete while celebrating my wedding anniversary",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-nORewV76YG1mqCPPOwiavg",
+      "domain": "yelp.com",
+      "title": "Katie M. (5/5)",
+      "snippet": "I stayed here in July for four nights, I it was truly a great hotel. It was the Fourth of July, they checked us in early, no problem. It has a Clean marble lobby  with two pools, pronto is an excellent coffee bar and spot for a casual lunch, Luna by giada was absolutely unbelievable, seven was a very comfortable bar with a wide selection and great food menu .Their mini bar selection was amazing with large full bottles of top shelf liquor, still water and San pelegrino  . If you needed anything you could buy it downstairs in the lobby. I called the concierge at 6 am because had heart burn and needed a Coke , two minutes later there was a knock on my door. Right in the fashion square area. They have Tesla chargers in their valet as well as self parking .They have a top notch concierge and in general excellent staff that are friendly and go the extra mile. My room was so comfortable. There was a great view of camelback mountain.all of there products are top notch . Their robes are extremely comfortable and house keeping is great. There is plenty of space , with white marble bathrooms and rain showers.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-KEEtYa3Vy53yYBjDRSd0CQ",
+      "domain": "yelp.com",
+      "title": "Vicki R. (5/5)",
+      "snippet": "A friend and I had an amazing dinner at Luna by Giada Friday evening. (8/16/2024) We were lucky enough to get our favorite server, Teresa. I had the Risotto w/shrimp added, which was Teresa's suggestion. It was assume! My friend had the Caprese which was truly enjoyed. We also had wine an amazing wine that was also recommended by Teresa and cheesecake for dessert.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-Nz-csfxpFj9gDXe8TiDawA",
+      "domain": "yelp.com",
+      "title": "David F. (5/5)",
+      "snippet": "Our stay at Caesars Republic Hotel in Scottsdale was nothing short of extraordinary. The suite we stayed in was one of the finest quality rooms I've ever experienced. Everything was brand new, as the hotel had just opened a few months ago. The bed was made flawlessly, and the room itself was immaculate, almost like a museum in its perfection.\n\nThe amenities were nothing short of spectacular. The soaking tub in the bathroom was incredible, and the massive shower, equipped with multiple jets and a rain shower head, was a luxurious experience. The lighting throughout the suite was fantastic, with extremely tall architectural ceilings and hidden mood lighting that added an elegant touch. The automatic shades and curtains were a nice high-tech feature, and the room offered bottles of the finest liquor available for purchase, displayed as if we were in an upscale showroom.\n\nA few standout features included an iron and a clothing steamer, which were much appreciated, and the air conditioning system, which was able to keep the room at a perfect 70 degrees on a scorching 108-degree day--all without the noise of blowing air. The gorgeous wood floors, large televisions in both the bedroom and living room, and the most incredible surprise--a Peloton bicycle--made the stay even more special. Being able to get a workout in before dinner, right in the privacy of our suite, was a huge win. I'd love to see more hotels incorporate small mini gyms in their rooms.  The bath towels were very soft and had that heavy, well made feel to them. \n\nService was fantastic throughout our stay. Housekeeping was super professional, and the front desk staff were polite and knowledgeable. We also enjoyed excellent coffee and a wonderful selection of food at the Giada cafe called Pronto, a sister location to the one at Caesars Palace Las Vegas. The restaurant on the 7th floor was amazing, offering drinks with a stunning view of Camelback Mountain.\n\nThe location of the hotel is perfect, right in the heart of Scottsdale and immediately next door to Scottsdale Fashion Square Mall, making it incredibly convenient for shopping and exploring the area.\n\nOverall, this is truly one of the finest hotels I've ever stayed in. As long-time Caesars Rewards Diamond members, we had been anxiously awaiting the opening of this hotel, and it exceeded all of our expectations. We cannot wait to return. We were truly spoiled at this amazing Caesars property.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-kreS5pXZO5gpiObaNwsKVg",
+      "domain": "yelp.com",
+      "title": "Dave L. (5/5)",
+      "snippet": "Beautiful new hotel with amazing views of the surrounding mountains and sunsets! Pool is on the 7th floor with a bar, and another pool on the ground level. Such a great spot for dinner and catching sunset views!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-XD-WKi9RjHqgvaCb8uSgVQ",
+      "domain": "yelp.com",
+      "title": "Jason C. (5/5)",
+      "snippet": "The staff at this hotel is incredible. \nThey were so helpful and accommodating and always wanting to make sure me and my family were happy!\nThank you for an amazing stay and service!\nSee you again soon!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-vv3E-HV7IM55Su0wcjTnrA",
+      "domain": "yelp.com",
+      "title": "Gabe F. (5/5)",
+      "snippet": "The negative reviews seem to be Resort Pass folks and not actual hotel guests. The hotel itself is deserving of 5*. The rooftop pool was nice with a fantastic view. The gym was one of the best hotel gyms I've been to with weights up to 75lbs and everything you could need to get a good workout. The rooms have a masculine design, but are extremely nice with floor to ceiling windows. Overall one of the best hotels I've stayed at. Being a hotel during the summer was key over resorts in the area, as moving from place to place was all indoors.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-L1izJcuNH3ZNjEK6VZ-Q-w",
+      "domain": "yelp.com",
+      "title": "Stacie M. (3/5)",
+      "snippet": "Just missed the mark...so far.   A 3 star that had potential.  As serial staycation-ers in Scottsdale, note this is not a resort but a hotel for various reasons listed.  This place could step up and work out the \"just opened\" misses and others may be tough to fix.  They are still working out the kinks as there was blue tape still up in the room behind the bathroom door.   We look for certain amenities which is individual preference.  Other elements are universal expectations.  \n \nRoom: Boynton Suite (note these are on the lower floors and no balcony so the view can be limited even with floor to ceiling windows. ). You are looking out at the mountain and over Goldwater boulevard with both foot and car traffic)\n\nBelow is a list of pros and cons:\n\nPro:\nGreat view in some of the rooms of Camelback and the other side is a view of the mall. \n\nMultiple pools with the adult side giving the impressive view and experience.\n\nThe onsite restaurants were beautiful and full disclosure we did not try the food (see no room service)\n\nBed was comfortable. \n\nStaff was kind and were offered champagne or water multiple times. \n\n\nCons:\nNO ROOM SERVICE: This was a big one on the day after staying up and would have to Postmates to get food which we can do from home. \n\nBlackout shades are not blackout and our shades did not come all the way down leaving the room drenched in the AZ sun by 5:30AM. Also caused the heat in the room to be oppressive when we arrived the interior temp was 80 degrees with the AC working overtime for a few hours to bring down the temp.\n\nBathroom has no separate toilet room/fan which for some couples or others staying with mixed groups is unfortunate. \n\nOur shower was huge with a great view, and was a ton of wasted space. The shower head was in a corner with only one of the two heads working correctly.  Only a single sink which doesn't feel like \"suite\" vibes. \n\nPillows were TERRIBLE with no extras offered. \n\nValet option is $40 which is a bit higher than average. Only other self parking option is the mall parking?  Felt not secure.\n\nLittle to no drawer or clothing storage.  We only stayed one night and with a single bedside drawer that was even tight. \n\nThis hotel felt like an extension of the mall even to the point they share parking and walkways. Just be aware of this when booking!\n\nOverall on our Scottsdale stay for off season was an OK choice and they still have time to elevate the experience before on season and attempting to charge premium fees vs the other contenders in the immediate area like Andaz, Mountain Shadows, etc.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-kROGK5fSD8rU05_bC2X7_Q",
+      "domain": "yelp.com",
+      "title": "Molly S. (1/5)",
+      "snippet": "I rarely write reviews but I think people deserve to know to avoid this place at all costs!!\n\nMy friends and I bought a day pool pass and a guest rubbed up against my friend and then sexually assaulted me under water. Management was notified of the situation and their response to was ask all of us all to leave. My friends and I asked why we were being asked to leave, since I was assaulted and none of us caused a fight with the guest or were out of control. The hotel called the police and told them we were \"extremely intoxicated and refusing to leave. \" This wasn't the case at all! We weren't refusing to leave, we just wanted to know why we were being asked to leave. None of us were intoxicated, we had a couple drinks at the pool! \nThey also failed to mention any sort of sexual assault to the police, which is even more shocking. \n\nThe hotel manager, Mr. Lee treated me like garbage and acted like I was making the story up! I still can't believe how the situation was handled. \nPlease don't support this place!!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-wWlf_YEibmv8-VE9sGhE5Q",
+      "domain": "yelp.com",
+      "title": "Brenda B. (2/5)",
+      "snippet": "So close, yet so far! We live across the street, so walked on over for one of our epic AZ sunsets. The hotel is fine at first glance, and the elevators are gorgeous pieces of art, so we made our way to Seven. The view of Camelback is about as good as it gets, but it's marred by the poor design, with a big wide bar cutting the view in half if you sit on the comfy sofas. So to capture the view, we stood at the only high top table near the bar. As women of a certain age, we asked for two bar stools, given that they weren't all taken. Nope. The server (not his fault) told us flatly that the chairs are for 'money at the bar'. It was just one example of how clearly we are not appreciated clients. We and 500 of our closest pals live across the street, and would be delighted to support a local business. Alas, this hotel has no interest in that. Anyway, we ordered $20 margaritas...well, I have had as good quality at Outback (I lie; I've never been to Outback). I'm willing to pay $50 a drink for quality and that outstanding view. But alas, no, that's not the case. I hope they get their s**t together so we can enjoy a great addition to our Scottsdale landscape.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-CWpuRxpzLn3wRqqLENdsIA",
+      "domain": "yelp.com",
+      "title": "Toryanni E. (1/5)",
+      "snippet": "TLDR: I tried using a Resort Pass on a bad day and instead got an attitude and threatened to have the cops called on me.  After many many attempts to reach someone I finally was told I would be getting a refund (bare minimum and well deserved since I didn't use the pool) and the situation would be investigated (lip service). \n\nMonday I arrived at the pool around 1245pm after a Dr's appointment, so I had the thing rom the blood draw, a band aid and a wonderful bruise on my arms, I did NOT look like I needed to be given a hard time, I also was not expecting one. \n\nWhile being checked in I was told I would have to wear a wristband to which I said \"ugh they're so tacky\" and I was told it was so the staff could tell me from hotel guests...my filter was not on because I was tired, and not very nicely I said, \"you think your staff is too stupid to tell otherwise?\" the check in person said a couple other things including I could take the wristband off(which proves my point that it isn't necessary) and I finally just asked her name, she covered her name badge, so I then asked for her supervisor, she disappeared in the back, REMOVED HER NAMETAG, and when she came back out said she would give me a refund and that she was exercising her right to refuse service to whoever she wanted and she would call the cops if I didn't leave (no sign was posted about refusing service I also was calm as a cucumber during this whole interaction) I said fine, I'll leave but I'm going to need your supervisors contact information, I had to say this like 4 times, eventually she did magically go find his card.  \n\nShe said she would issue a refund. She did not. I contacted the person who's card she gave me multiple times and multiple ways. I sent an email via the website. I also messaged and posted publicly on Instagram asking for the refund. Eventually I found someone else's email and emailed them today and they said they would issue the refund, so we'll see but after all this I have 0 reason to go back. They've only been open under 6 months and this is how the staff is?  It's only going to get worse.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-R-LP229izKyCjdWbdlpyqA",
+      "domain": "yelp.com",
+      "title": "Mark C. (5/5)",
+      "snippet": "The pool rocks but the manager Amber Rocks even more! Ask for her, she helped us out when everybody else was too busy! When the pool is that busy it means a lot.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-NgSmpyf4uymR4Q0S0sH6ZA",
+      "domain": "yelp.com",
+      "title": "Alycia M. (4/5)",
+      "snippet": "Beautiful property, amazing staff from check in to check out we were greeted with smiles from front desk to the bell and valet boys. Room was set up beautifully I was a little disappointed that they don't have roll away cribs or pack & plays for the children guest staying on the property. Typically most nice hotels are equipped so that was definitely frustrating because I was chasing my 10 month old son around the room hoping he doesn't bump his head on the side tables and hard edges. The only restaurant I tried was Pronto. The turkey bacon avocado was the best panini I've had. The chicken parm panini was just ok. Gelato at Pronto's was delicious the strawberry was super tasty along with the chocolate chip sea salt cookies. Brandon & Elijah tended to us the two days we ate there, they're really great guys they made our experience at Pronto. The pools are nice I prefer the pool on the higher floor the drinks were a little pricey for being a light pour but the pool attendants were always circling around taking orders which was nice I didn't have to chase them down to order. The only annoying part of our visit was the downstairs pool where the pool party is held states it's open dawn to dusk for hotel guest. You would think they would treat the water not during pool hours. But my family and I were using the pool Monday morning as they were filling it up with fresh water and I was asked to get out of the water so they could treat the water for the next hour which was super frustrating due to the fact I was checking out that morning and wanted to get a swim in. So the pool maintenance planner needs to do better about not interfering with the guest pool hours because that was not the way I wanted to end my last hours on the resort. Also Heather from concierge was amazing she helped us plan our anniversary dinner and was able to get us a reservation with Oceans 44 despite being a Sunday night with no reservations so thank you for being so helpful during our stay in Scottsdale.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-MnUa-C3MKZp8A4Y6J_zAPg",
+      "domain": "yelp.com",
+      "title": "Leslie M. (5/5)",
+      "snippet": "New -clean- smells so good! Beautiful and close to everything! Beautiful views ! Everyone working there was so friendly to!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-hbTVp_UuZ7uSpZnt8_V5-g",
+      "domain": "yelp.com",
+      "title": "Billy W. (2/5)",
+      "snippet": "We reserved a cabana at Cleopatra pool.  The problem is the design of the pool itself. at around 4:00, the pool is in complete shade because their own building blocks out the sun.  The W pool is entering peak enjoyment at 4:00, but at Cleopatra it got shady and cold and basically emptied out.  The whole thing also needs a redesign. The cabana was nice and drinks and food were fine, the service was good, and it was good while the sun was out. but don't count on sun for long. it was way overpriced to be in the shade so early.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-PQQRVI6mIvHcsoCPXYsaAw",
+      "domain": "yelp.com",
+      "title": "Michelle B. (5/5)",
+      "snippet": "We just finished an AMAZING weekend staycation at this new resort to celebrate mine and my husband's birthday!! \nFrom check in to check out every single employee on property was kind, helpful, friendly, hardworking and knowledgeable. We requested an early check in which didn't go exactly as planned because we also requested the Boynton Canyon Suite with the floor to ceiling window bathroom. While they expedited the cleaning of our room we enjoyed complementary glasses of champagne in the gorgeous lobby. \nOnce in our room we were amazed by the beautiful layout, the floor to ceiling windows in the bedroom and the huge shower with full windows looking directly at Camelback Mountain. The most amazing part of our room was that the staff had decorated it with a happy birthday banner and balloons plus champagne on ice with a selection of treats and snacks. So incredibly thoughtful! \nThe location of this resort is perfection. A short walk to Oceans 44 and Fashion Square or a quick ride to shopping and dining on Scottsdale Rd. \nOn our final day we lounged poolside at the Seven pool. We relaxed on the incredibly comfortable padded lounge chairs under large umbrellas and ordered beverages from the sweetest server. Then for dinner we ordered in from Luna and it was delivered to our suite door. \nChecking out the front desk remembered we were there to celebrate our birthdays and wished us both a happy birthday again. I can't wait to book my next staycation here!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-kvSlZLzLZlzy6gk4ENJKhg",
+      "domain": "yelp.com",
+      "title": "Anna D. (1/5)",
+      "snippet": "Hi, my name is Tammy Caesar's Republic was far from a great experience. this is the worst place to stay, I got in Saturday night, my daughter-in-law, my granddaughters, and I came here for Mother's Day weekend,got into our room it was nice. We stayed in for about an hour just talking and hanging out. My granddaughter got in bed and in between her sheets was a used condom. We inform the front desk they came in and. put us in a different room and was promised to be upgraded in the morning and also promised to have a complementary brunch, never got upgraded, which is fine and they are charging me over $1500 for brunch alone, which is absurd. Obviously these people don't know how to deal with customers and I feel they are prejudice. I've spoken from manager to manager The main manager Joe will not return a call or come to my room and they are treating me as if I'm insignificant like I'm paying them $1200 for my room, but all these things that they promise me they're making me feel that I want them for free never was told that they were going to charge us Over $1500 for a brunch, but now I am stuck with this bill no more complementary and the manager Will Lee I believe his name is has a problem with the situation Anna from made service and insinuated that I'm lying about the condom basically because she said there's no proof they picked it up. They took pictures of it. I didn't. I am mortified that my granddaughter had that on her so-called prestigious resort I would've been better off going to a Motel 6 and I would've got treated with respect I give this place zero stars if I can, and I will not. $1500 surprise brunch that they promised that was going to be complementary. This is a horrible place. It's a scam stay away. Spend your time somewhere else. Anywhere would be better than this place. I've spent my whole weekend chasing down manager after manager and I am so glad that I am leaving to go home tomorrow ugliest place ever because of the people no compassion for my 15-year-old that jumped in bed and had a dirty condom on her. They're all looking at us whether it be the Bell the front desk the restaurant the pool people. they are all looking at us and making us feel uncomfortable. I actually had to go to Getty Ranch that actually have a moment of peace and just feel like that nobody's judging me again save your money and go somewhere else. Anything is better than this place every single person that works here is a scam other than Devon was wonderful. I just feel bad that he's connected to all these ugly minded people.!!",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-HE4UreP6ozQtsnLT2JuSxA",
+      "domain": "yelp.com",
+      "title": "David F. (2/5)",
+      "snippet": "Beautiful boutique hotel,  brand new in Scottsdale . Being a local and booking this property for my 19th wedding anniversary it was a big disappointment! Upon checking in with Cindy , was the only saving grace throughout the whole stay . Reservations at Luna , Giadas new restaurant being greeted for dinner was great . From the time we sat down and waited 15-30 mins for bread and water . The came the food . I was a chef for many years and ran restaurants this was one of the worst meals I ever had from beginning to end . The GM compt the whole meal because of our dissatisfaction. We  had the valets bring us to go club hopping . The valets are running around frantically to help everyone . This property seems to be understaffed . Upon returning to our room I had a question and called the front desk . Phone didn't work . Had to go down to the lobby with my wife , who is terrified of elevators but it was only a couple of floors , doors opened and closed and wouldn't move . Was told they are having trouble with the elevators . Going up and down the stair wells accompanied by other couples with children . I wanted to Suprise my wife for our anniversary but everything went wrong . The concierge set up my room the way I wanted , room was beautiful and the entire staff was wonderful . The reason new hospitality's have soft openings is too avoid theses issues . I won't be returning to this property . One night for just the stay was 574$ . I'm from NYC these prices are justified there not here especially this property.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-GzM04zJXHhukCXUQ7EESEg",
+      "domain": "yelp.com",
+      "title": "Daniel C. (1/5)",
+      "snippet": "Definitely not a 5 star hotel.  Design is basic and service is mediocre at best.  Computer systems were down on check in and a lot of kinks to work out. With service and such.  Rooms are 3 star and nothing special at all.  It feels like a more basic W hotel.  No room service whatsoever as well.  To call this a 5 star is a joke and I wouldn't say it is even a 4 star.  Only thing this hotel has going for it is the location and great views from  their lounge Seven.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-5FxAUkCyuLUW3x-lPsg5gQ",
+      "domain": "yelp.com",
+      "title": "Vicki D. (5/5)",
+      "snippet": "Caesars Republic Hotel is brand new and just opened.  We stayed there last night.  Beautiful rooms, beautiful hotel.  The staff including Tristen, who took our luggage to our room, the valet whose name I have forgotten and the front desk people were extremely nice and helpful.  The hotel is next to Fashion Mall, walking distance to Old Town Scottsdale, and right across the street from a wonderful restaurant called Ocean 44.  We will definitely be staying at the Republic during our stays in Scottsdale.",
+      "matchedTerms": []
+    },
+    {
+      "sourceId": "yelp",
+      "lane": "reviews",
+      "query": "yelp reviews",
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale#review-rc54RFLnKSYh4jW0WKdFTg",
+      "domain": "yelp.com",
+      "title": "Paul D. (5/5)",
+      "snippet": "I had the opportunity to tour the Caesars Republic Scottsdale pre-opening and briefly meet the owner. I can't wait to see what it looks like when it is finished at the start of 2024. It will definitely will outshine the other upscale, but now aging W Hotel. \nThe views of the sunset Ave Camelback Mountain from the future pool deck and bar area are the best I have seen. \nThere were two completed model rooms to tour. They will be pricy on- season weekends, but you can tell they they are striving for upscale, classy Vegas style. This will be the Caesars Rewards program's first non-gambling hotel where you can earn and redeem points. \nAs Phoenix metro grows and continues to host national sports championships and events, this place will become the party place to be see and be seen.",
+      "matchedTerms": []
+    }
+  ],
+  "queriesRun": 66,
+  "packsRun": 1
+}
