@@ -1,0 +1,18 @@
+{
+  "platform": "yelp",
+  "venue": "WOLF by Vanderpump",
+  "venueSlug": "wolf-by-vanderpump",
+  "listingUrl": "https://www.yelp.com/biz/wolf-by-vanderpump-scottsdale",
+  "reviews": [
+    {
+      "platform": "yelp",
+      "rating": 3.9,
+      "ratingMax": 5,
+      "title": "Wolf by Vanderpump at Caesars Republic Scottsdale",
+      "text": null,
+      "author": null,
+      "sourceUrl": "https://www.yelp.com/biz/wolf-by-vanderpump-scottsdale#review-1n2qy68",
+      "timestamp": "2026-08-05 00:40:20"
+    }
+  ]
+}

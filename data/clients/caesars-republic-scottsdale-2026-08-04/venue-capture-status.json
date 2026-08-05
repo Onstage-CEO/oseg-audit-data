@@ -1,0 +1,60 @@
+{
+  "reportVersion": "venue-capture-v1",
+  "generatedAt": "2026-08-05T00:40:05.954Z",
+  "venues": [
+    {
+      "venue": "WOLF by Vanderpump",
+      "slug": "wolf-by-vanderpump",
+      "yelp": 1,
+      "google": 0,
+      "tripadvisor": 0,
+      "opentable": 803,
+      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+    },
+    {
+      "venue": "Luna by Giada",
+      "slug": "luna-by-giada",
+      "yelp": 609,
+      "google": 0,
+      "tripadvisor": 0,
+      "opentable": 1726,
+      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling; tripadvisor: unsupported here — use the property capture path; outlet spend/resume controls are not implemented"
+    },
+    {
+      "venue": "Pronto by Giada",
+      "slug": "pronto-by-giada",
+      "yelp": 0,
+      "google": 0,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+    },
+    {
+      "venue": "WOLF Pool",
+      "slug": "wolf-pool",
+      "yelp": 0,
+      "google": 0,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+    },
+    {
+      "venue": "Cleopatra’s Pool & Bar",
+      "slug": "cleopatras-pool-and-bar",
+      "yelp": 0,
+      "google": 0,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+    },
+    {
+      "venue": "Camelback Veranda",
+      "slug": "camelback-veranda",
+      "yelp": 0,
+      "google": 0,
+      "tripadvisor": 0,
+      "opentable": 0,
+      "note": "google: paid launch blocked — set reviewed OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE_OUTLETS command ceiling"
+    }
+  ]
+}
