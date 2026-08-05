@@ -1,6 +1,6 @@
 # Entertainment Evidence Discovery — Caesars Republic Scottsdale, a Hilton Hotel
 
-Generated: 2026-08-05T00:26:23.024Z
+Generated: 2026-08-05T01:13:55.993Z
 
 This is the entertainment evidence hunt: start with the highest-yield visual, social, forum, blog, complaint, Spanish-language, and competitor searches, then preserve the strongest sourced findings for human review before anything becomes client-facing.
 
@@ -17,6 +17,10 @@ This is the entertainment evidence hunt: start with the highest-yield visual, so
   > We wanted to watch the sunset from the rooftop but it was being maintained that day.  But on our way out, we noticed live music in the lobby.  It was a Friday.  We stopped a manager who gave us more information and offered us a seat on the comfortable couches and we ended up eating there.  The service from every single member of staff we came into contact with, was simply, superb! Of course the food was good.  The music was enjoyable and the highlight of our evening.  Kailee/Kaylee took great care of us and her attention to detail was immaculate.  Highly recommend this hotel even for us locals, we will be back!
   Scope: programmed_entertainment · control oseg-entertainment-scope-v1
   Source (best-effort external review link): https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB!2m1!1s0x0:0x77d2b894579d9725!3m1!1s2@1:CAIQACodChtycF9oOkxJQlVGSXlzSHZIY0otYmZXOUx0MHc%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB
+- **Strength** · expedia · 4/5 · raw 8/10 · 2026-01-31T00:00:00.000Z · current_12m · Chris · musician
+  > The room was clean and the staff was very nice, however the musician downstairs was so loud we couldn't hear ourselves talk.  Also, it took FOREVER to get hot water to the bathroom sink without turning on the faucet AND the shower to wash up at 10:00 at night.  Kinda not a good thing in a place that has a water shortage.
+  Scope: programmed_entertainment · control oseg-entertainment-scope-v1
+  Source (best-effort external review link): https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-akbgmo
 - **Strength** · tripadvisor · 5/5 · raw 5/5 · 2025-06-16 00:00:00 +00:00 · corroboration_12_to_24m · Katie H · band
   > Why SEVEN is the Venue You’ve Been Waiting For If you’re looking for the best place to throw a party, look no further than SEVEN. From the moment you walk in, the energy is electric. The venue is stylish, spacious, and designed for fun—perfect for any celebration, big or small.
 

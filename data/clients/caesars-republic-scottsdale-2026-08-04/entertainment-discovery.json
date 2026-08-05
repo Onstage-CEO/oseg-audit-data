@@ -1,6 +1,6 @@
 {
   "reportVersion": "entertainment-discovery-v1",
-  "generatedAt": "2026-08-05T00:26:23.024Z",
+  "generatedAt": "2026-08-05T01:13:55.993Z",
   "target": {
     "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
     "location": "Scottsdale, Arizona"
@@ -208,6 +208,30 @@
       "duplicateCount": 1,
       "duplicatePlatforms": [
         "google"
+      ]
+    },
+    {
+      "role": "strength",
+      "platform": "expedia",
+      "rating": 4,
+      "ratingRaw": 8,
+      "ratingMax": 10,
+      "author": "Chris",
+      "timestamp": "2026-01-31T00:00:00.000Z",
+      "ageBand": "current_12m",
+      "text": "The room was clean and the staff was very nice, however the musician downstairs was so loud we couldn't hear ourselves talk. Also, it took FOREVER to get hot water to the bathroom sink without turning on the faucet AND the shower to wash up at 10:00 at night. Kinda not a good thing in a place that has a water shortage.",
+      "sourceText": "The room was clean and the staff was very nice, however the musician downstairs was so loud we couldn't hear ourselves talk.  Also, it took FOREVER to get hot water to the bathroom sink without turning on the faucet AND the shower to wash up at 10:00 at night.  Kinda not a good thing in a place that has a water shortage.",
+      "sourceUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-akbgmo",
+      "sourceLinkReliability": "best_effort",
+      "matchedTerms": [
+        "musician"
+      ],
+      "scope": "programmed_entertainment",
+      "controlVersion": "oseg-entertainment-scope-v1",
+      "fingerprint": "the room was clean and the staff was very nice however the musician downstairs was so loud we couldn t hear ourselves talk also it took forever to get hot water to the bathroom sink without turning on the faucet and the shower to wash up at 10 00 at night kinda not a good thing in a place that has a water shortage",
+      "duplicateCount": 1,
+      "duplicatePlatforms": [
+        "expedia"
       ]
     },
     {
