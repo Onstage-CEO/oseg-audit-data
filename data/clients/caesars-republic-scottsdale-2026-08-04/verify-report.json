@@ -23,11 +23,7 @@
       "label": "Required research source coverage",
       "status": "ok",
       "messages": [
-        "1 covered, 7 skipped with reason",
-        "skipped: google (not_found) — Exact listing pin added; paid capture pending.",
-        "skipped: tripadvisor (not_found) — Exact listing pin added; paid capture pending.",
-        "skipped: booking (not_found) — Exact listing pin added; paid capture pending.",
-        "skipped: expedia (not_found) — Exact listing pin added; paid capture pending.",
+        "5 covered, 3 skipped with reason",
         "skipped: blogs (not_found) — Open-web discovery was evaluated separately; no blog or editorial result is treated as captured g...",
         "skipped: reddit (blocked) — Reddit was not captured because approved credentials are unavailable. No Reddit-derived evidence ...",
         "skipped: aerial_satellite (not_applicable) — Aerial/satellite context belongs to the fresh-property browser-capture flow, not a captured-revie..."
@@ -38,8 +34,8 @@
       "label": "Source lane coverage (registry)",
       "status": "ok",
       "messages": [
-        "Review platforms: explicitly skipped: google (not_found) — Exact listing pin added; paid capture pending.",
-        "OTA review platforms: explicitly skipped: booking (not_found) — Exact listing pin added; paid capture pending.",
+        "Review platforms: covered by google",
+        "OTA review platforms: covered by booking",
         "Community / social discussion: explicitly skipped: reddit (blocked) — Reddit was not captured because approved credentials are unavailable. No Reddit-derived e…",
         "Video / creator content: covered by youtube",
         "Travel blogs / editorial media: explicitly skipped: blogs (not_found) — Open-web discovery was evaluated separately; no blog or editorial result is treated as ca…",
@@ -123,33 +119,17 @@
     }
   ],
   "sourceCoverage": {
-    "coveredCount": 1,
-    "skippedCount": 7,
+    "coveredCount": 5,
+    "skippedCount": 3,
     "missingRequired": [],
     "coveredPlatforms": [
+      "google",
+      "tripadvisor",
+      "booking",
+      "expedia",
       "youtube"
     ],
     "skipped": [
-      {
-        "platformId": "google",
-        "kind": "not_found",
-        "reason": "Exact listing pin added; paid capture pending."
-      },
-      {
-        "platformId": "tripadvisor",
-        "kind": "not_found",
-        "reason": "Exact listing pin added; paid capture pending."
-      },
-      {
-        "platformId": "booking",
-        "kind": "not_found",
-        "reason": "Exact listing pin added; paid capture pending."
-      },
-      {
-        "platformId": "expedia",
-        "kind": "not_found",
-        "reason": "Exact listing pin added; paid capture pending."
-      },
       {
         "platformId": "blogs",
         "kind": "not_found",
@@ -202,7 +182,7 @@
   },
   "evidenceFreshness": {
     "windowMonths": 12,
-    "now": "2026-08-05T00:34:11.135Z",
+    "now": "2026-08-05T01:16:09.905Z",
     "liveVerifiedTotal": 0,
     "dated": 0,
     "stale": 0,
@@ -260,8 +240,8 @@
       }
     ],
     "sourceCoverage": {
-      "covered": 1,
-      "skipped": 7,
+      "covered": 5,
+      "skipped": 3,
       "missingRequired": 0
     },
     "keywordGroups": {
@@ -280,5 +260,5 @@
       "unmatched": 0
     }
   },
-  "timestamp": "2026-08-05T00:34:11.152Z"
+  "timestamp": "2026-08-05T01:16:09.920Z"
 }
