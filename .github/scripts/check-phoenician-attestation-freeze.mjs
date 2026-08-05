@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const PHOENICIAN_SLUG = 'the-phoenician-resort-and-spa-rebuilt-2026-07-31';
+const CAESARS_INTERNAL_AUDIT_SLUG = 'caesars-republic-scottsdale-2026-08-04';
 const targetSlug = String(process.env.TARGET_SLUG ?? '').trim();
 const operationMode = String(process.env.OPERATION_MODE ?? 'mutation').trim();
 
@@ -12,6 +13,18 @@ const operationMode = String(process.env.OPERATION_MODE ?? 'mutation').trim();
 if (targetSlug === PHOENICIAN_SLUG && operationMode === 'artifact_only') {
   console.log('Phoenician artifact-only preview permitted; canonical files remain frozen.');
   process.exit(0);
+}
+
+// Joe authorized an urgent, internal Caesar's Republic audit for the
+// 2026-08-05 property meeting. Preserve capture lineage, but never allow this
+// exception to commit a client report or publish a canonical package.
+if (targetSlug === CAESARS_INTERNAL_AUDIT_SLUG && operationMode !== 'commit') {
+  console.log("Caesar's Republic internal audit permitted; client-report publication remains disabled.");
+  process.exit(0);
+}
+
+if (targetSlug === CAESARS_INTERNAL_AUDIT_SLUG) {
+  throw new Error("Caesar's Republic is authorized for internal audit only; client-report commit is disabled.");
 }
 
 if (targetSlug === PHOENICIAN_SLUG) {
