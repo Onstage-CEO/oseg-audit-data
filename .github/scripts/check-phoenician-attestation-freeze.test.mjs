@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 const script = resolve(dirname(fileURLToPath(import.meta.url)), 'check-phoenician-attestation-freeze.mjs');
 const phoenician = 'the-phoenician-resort-and-spa-rebuilt-2026-07-31';
+const caesars = 'caesars-republic-scottsdale-2026-08-04';
 
 function run(cwd, targetSlug, operationMode) {
   return execFileSync(process.execPath, [script], {
@@ -39,14 +40,22 @@ test('permits only the Phoenician artifact-only preview before attestation', () 
 
 test('blocks downstream mutation without a hash-bound passing attestation', () => {
   const root = mkdtempSync(resolve(tmpdir(), 'oseg-attestation-freeze-'));
+  assert.throws(() => run(root, 'unattested-property', 'mutation'), /Downstream mutation is locked/i);
+});
+
+test("permits only the exact Caesar's internal-audit workspace before Phoenician attestation", () => {
+  const root = mkdtempSync(resolve(tmpdir(), 'oseg-attestation-freeze-'));
+  assert.match(run(root, caesars, 'mutation'), /internal audit permitted/i);
+  assert.match(run(root, caesars, 'artifact_only'), /internal audit permitted/i);
+  assert.throws(() => run(root, caesars, 'commit'), /client-report commit is disabled/i);
   assert.throws(() => run(root, 'caesars-republic-scottsdale', 'mutation'), /Downstream mutation is locked/i);
 });
 
 test('permits downstream mutation only when readiness, decision, and report hash match', () => {
   const { root, workspace } = passingWorkspace();
-  assert.match(run(root, 'caesars-republic-scottsdale', 'mutation'), /downstream mutation permitted/i);
+  assert.match(run(root, 'attested-downstream-property', 'mutation'), /downstream mutation permitted/i);
   writeFileSync(resolve(workspace, 'client-report.html'), '<!doctype html><title>Changed report</title>');
-  assert.throws(() => run(root, 'caesars-republic-scottsdale', 'mutation'), /does not match/i);
+  assert.throws(() => run(root, 'attested-downstream-property', 'mutation'), /does not match/i);
 });
 
 test('every mutating production entry point invokes the shared freeze gate', () => {

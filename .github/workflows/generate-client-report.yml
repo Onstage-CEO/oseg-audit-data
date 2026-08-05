@@ -141,7 +141,7 @@ jobs:
           echo "ws=$ws" >> "$GITHUB_OUTPUT"
 
       - name: Gate downstream regeneration on Phoenician attestation
-        if: ${{ inputs.slug != 'the-phoenician-resort-and-spa-rebuilt-2026-07-31' }}
+        if: ${{ inputs.slug != 'the-phoenician-resort-and-spa-rebuilt-2026-07-31' && !(inputs.slug == 'caesars-republic-scottsdale-2026-08-04' && inputs.publishMode == 'artifact_only') }}
         env:
           PHOENICIAN_WS: ${{ github.workspace }}/data-repo/data/clients/the-phoenician-resort-and-spa-rebuilt-2026-07-31
         run: |
