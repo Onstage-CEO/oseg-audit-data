@@ -14,7 +14,7 @@
     "googleUrl": "https://www.google.com/maps?cid=8634166382887278373",
     "tripadvisorUrl": "https://www.tripadvisor.com/Hotel_Review-g31350-d27432953-Reviews-Caesars_Republic_Scottsdale_A_Hilton_Hotel-Scottsdale_Arizona.html",
     "bookingUrl": "https://www.booking.com/hotel/us/caesars-republic-scottsdale.html",
-    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-Scottsdale-Republic.h101140606.Hotel-Information",
+    "expediaUrl": "https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale.h101140606.Hotel-Information",
     "resortPassUrl": "https://www.resortpass.com/hotels/caesars-republic-scottsdale",
     "website": "https://www.caesarsrepublicscottsdale.com/",
     "yelpUrl": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale",
@@ -26,6 +26,21 @@
   "coreFinding": "",
   "platforms": [
     {
+      "platformId": "google",
+      "scoreLabel": null,
+      "volume": 286
+    },
+    {
+      "platformId": "tripadvisor",
+      "scoreLabel": null,
+      "volume": 91
+    },
+    {
+      "platformId": "booking",
+      "scoreLabel": null,
+      "volume": 117
+    },
+    {
       "platformId": "youtube",
       "scoreLabel": null,
       "volume": 38
@@ -33,24 +48,9 @@
   ],
   "skippedSources": [
     {
-      "platformId": "google",
-      "kind": "not_found",
-      "reason": "Exact listing pin added; paid capture pending."
-    },
-    {
-      "platformId": "tripadvisor",
-      "kind": "not_found",
-      "reason": "Exact listing pin added; paid capture pending."
-    },
-    {
-      "platformId": "booking",
-      "kind": "not_found",
-      "reason": "Exact listing pin added; paid capture pending."
-    },
-    {
       "platformId": "expedia",
       "kind": "not_found",
-      "reason": "Exact listing pin added; paid capture pending."
+      "reason": "Identity-safe canonical listing pin added; paid capture pending."
     },
     {
       "platformId": "blogs",

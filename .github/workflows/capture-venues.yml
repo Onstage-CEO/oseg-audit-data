@@ -103,6 +103,7 @@ jobs:
         working-directory: engine
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP || '10' }}
           # Outlet-level TripAdvisor capture goes through DataForSEO (url_path) —
           # same creds the property-level TripAdvisor capture uses.
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
