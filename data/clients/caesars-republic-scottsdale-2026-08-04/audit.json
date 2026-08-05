@@ -1,0 +1,29 @@
+{
+  "client": {
+    "name": "Caesars Republic Scottsdale",
+    "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
+    "location": "Scottsdale, Arizona",
+    "audience": "Management",
+    "presentedBy": [],
+    "version": "V0.1 — Working Draft",
+    "status": "draft",
+    "dateRange": {
+      "from": "2025-08-04",
+      "to": "2026-08-04"
+    }
+  },
+  "oneLineThesis": "",
+  "coreFinding": "",
+  "platforms": [],
+  "skippedSources": [],
+  "evidence": [],
+  "venues": [],
+  "segments": [],
+  "hypotheses": [],
+  "recommendations": [],
+  "namedTalent": [],
+  "firewall": {
+    "forbiddenTerms": [],
+    "calibratedPhrasings": []
+  }
+}

@@ -1,0 +1,622 @@
+{
+  "target": {
+    "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
+    "location": "Scottsdale, Arizona",
+    "website": "https://www.caesarsrepublicscottsdale.com/"
+  },
+  "perSource": [
+    {
+      "sourceId": "aerial_satellite",
+      "displayName": "Aerial / satellite imagery + maps context",
+      "lane": "map_context",
+      "priority": "required",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona satellite view"
+      ]
+    },
+    {
+      "sourceId": "agoda",
+      "displayName": "Agoda",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Agoda"
+      ]
+    },
+    {
+      "sourceId": "almosafer",
+      "displayName": "Almosafer",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:almosafer.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona تقييم",
+        "site:almosafer.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona review"
+      ]
+    },
+    {
+      "sourceId": "blogs",
+      "displayName": "Travel blogs / editorial travel media",
+      "lane": "editorial_travel_media",
+      "priority": "recommended",
+      "queries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" review blog",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" honest review",
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona travel article"
+      ]
+    },
+    {
+      "sourceId": "booking",
+      "displayName": "Booking.com",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:booking.com Caesars Republic Scottsdale, a Hilton Hotel",
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona booking.com reviews"
+      ]
+    },
+    {
+      "sourceId": "cheaptickets",
+      "displayName": "CheapTickets",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona CheapTickets"
+      ]
+    },
+    {
+      "sourceId": "cluburlaub",
+      "displayName": "Cluburlaub.de",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:cluburlaub.de Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona bewertung"
+      ]
+    },
+    {
+      "sourceId": "despegar",
+      "displayName": "Despegar / Decolar",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:despegar.com/hoteles/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:decolar.com/hoteis/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "eat-app",
+      "displayName": "Eat App",
+      "lane": "reservation_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:eatapp.co/reserve/ \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:eatapp.co/reserve/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "ebookers",
+      "displayName": "ebookers",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona ebookers"
+      ]
+    },
+    {
+      "sourceId": "europabooking",
+      "displayName": "EuropaBooking",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:europabooking.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona review"
+      ]
+    },
+    {
+      "sourceId": "expedia",
+      "displayName": "Expedia",
+      "lane": "ota_review_platform",
+      "priority": "required",
+      "queries": [
+        "site:expedia.com Caesars Republic Scottsdale, a Hilton Hotel",
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Expedia reviews"
+      ]
+    },
+    {
+      "sourceId": "facebook",
+      "displayName": "Facebook (public guest mentions)",
+      "lane": "community_social",
+      "priority": "recommended",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel facebook",
+        "site:facebook.com Caesars Republic Scottsdale, a Hilton Hotel"
+      ]
+    },
+    {
+      "sourceId": "google",
+      "displayName": "Google Reviews (Google Travel/Hotels panel)",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona reviews",
+        "Caesars Republic Scottsdale, a Hilton Hotel entertainment reviews",
+        "Caesars Republic Scottsdale, a Hilton Hotel nightlife"
+      ]
+    },
+    {
+      "sourceId": "google_hotels",
+      "displayName": "Google Hotels",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Google Hotels"
+      ]
+    },
+    {
+      "sourceId": "guestreservations",
+      "displayName": "Guest Reservations",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:guestreservations.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona \"Customer Reviews\""
+      ]
+    },
+    {
+      "sourceId": "holidaycheck",
+      "displayName": "HolidayCheck",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:holidaycheck.de/hi/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:holidaycheck.de \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"Bewertungen\""
+      ]
+    },
+    {
+      "sourceId": "hotel-reservation-network",
+      "displayName": "Hotel Reservation Network regional domains",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:allhotelscalifornia.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona review",
+        "site:san-francisco-bay.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona review"
+      ]
+    },
+    {
+      "sourceId": "hotels_com",
+      "displayName": "Hotels.com",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Hotels.com"
+      ]
+    },
+    {
+      "sourceId": "hotels-in-america",
+      "displayName": "Hotels in America",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:hotelsinamerica.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona"
+      ]
+    },
+    {
+      "sourceId": "hotelsone",
+      "displayName": "HotelsOne",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:hotelsone.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona \"Verified guest reviews\""
+      ]
+    },
+    {
+      "sourceId": "hoteltonight",
+      "displayName": "HotelTonight",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:hoteltonight.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona reviews"
+      ]
+    },
+    {
+      "sourceId": "hrs",
+      "displayName": "HRS",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:hrs.com/en/hotel/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "instagram",
+      "displayName": "Instagram (public guest mentions)",
+      "lane": "community_social",
+      "priority": "recommended",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel instagram guests",
+        "site:instagram.com Caesars Republic Scottsdale, a Hilton Hotel"
+      ]
+    },
+    {
+      "sourceId": "internal_inputs",
+      "displayName": "Internal property inputs (surveys / schedule / demographics)",
+      "lane": "internal_property_inputs",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "jeeran",
+      "displayName": "Jeeran",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:jeeran.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona تقييم"
+      ]
+    },
+    {
+      "sourceId": "kayak",
+      "displayName": "KAYAK",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona KAYAK"
+      ]
+    },
+    {
+      "sourceId": "local_media",
+      "displayName": "Local media + event listings",
+      "lane": "editorial_travel_media",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona local news entertainment",
+        "Caesars Republic Scottsdale, a Hilton Hotel event listing"
+      ]
+    },
+    {
+      "sourceId": "opentable",
+      "displayName": "OpenTable (reservation-platform outlet reviews)",
+      "lane": "review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:opentable.com {venue}",
+        "{venue} Scottsdale, Arizona opentable reviews"
+      ]
+    },
+    {
+      "sourceId": "orbitz",
+      "displayName": "Orbitz",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Orbitz"
+      ]
+    },
+    {
+      "sourceId": "otzyv-ru",
+      "displayName": "Otzyv.ru",
+      "lane": "regional_review",
+      "priority": "recommended",
+      "queries": [
+        "site:otzyv.ru/review/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:otzyv.ru \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" отзыв"
+      ]
+    },
+    {
+      "sourceId": "priceline",
+      "displayName": "Priceline",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Priceline"
+      ]
+    },
+    {
+      "sourceId": "property_social",
+      "displayName": "Property social channels (Instagram / TikTok / Facebook)",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel instagram",
+        "Caesars Republic Scottsdale, a Hilton Hotel tiktok",
+        "site:instagram.com Caesars Republic Scottsdale, a Hilton Hotel"
+      ]
+    },
+    {
+      "sourceId": "property_website",
+      "displayName": "Property website",
+      "lane": "property_controlled",
+      "priority": "optional",
+      "queries": [
+        "https://www.caesarsrepublicscottsdale.com/",
+        "Caesars Republic Scottsdale, a Hilton Hotel official site"
+      ]
+    },
+    {
+      "sourceId": "qaym",
+      "displayName": "Qaym",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "quora",
+      "displayName": "Quora / Q&A platforms",
+      "lane": "community_social",
+      "priority": "optional",
+      "queries": [
+        "site:quora.com Caesars Republic Scottsdale, a Hilton Hotel",
+        "Caesars Republic Scottsdale, a Hilton Hotel quora"
+      ]
+    },
+    {
+      "sourceId": "realtime-reservation",
+      "displayName": "RealTime Reservation",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "reddit",
+      "displayName": "Reddit",
+      "lane": "community_social",
+      "priority": "required",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel review",
+        "Caesars Republic Scottsdale, a Hilton Hotel nightlife",
+        "Caesars Republic Scottsdale, a Hilton Hotel entertainment",
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona"
+      ]
+    },
+    {
+      "sourceId": "rehlat",
+      "displayName": "Rehlat",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:rehlat.com/en/hotels/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "reserveout",
+      "displayName": "ReserveOut",
+      "lane": "reservation_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:reserveout.com/ \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:reserveout.com/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "resortpass",
+      "displayName": "ResortPass",
+      "lane": "reservation_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:resortpass.com/hotels Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona reviews"
+      ]
+    },
+    {
+      "sourceId": "resy",
+      "displayName": "Resy",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:resy.com/cities/ \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:resy.com/cities/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "sevenrooms",
+      "displayName": "SevenRooms",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:sevenrooms.com/explore/ \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:sevenrooms.com/explore/ \"{venue}\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "skyscanner",
+      "displayName": "Skyscanner",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Skyscanner"
+      ]
+    },
+    {
+      "sourceId": "staah",
+      "displayName": "STAAH",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "tablet-hotels",
+      "displayName": "Tablet Hotels",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:tablethotels.com/en \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:tablethotels.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"verified stays\""
+      ]
+    },
+    {
+      "sourceId": "tiket",
+      "displayName": "tiket.com",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:tiket.com/en-us/hotel/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:tiket.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"hotel\""
+      ]
+    },
+    {
+      "sourceId": "tiktok",
+      "displayName": "TikTok (public guest mentions)",
+      "lane": "video_social",
+      "priority": "recommended",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel tiktok",
+        "site:tiktok.com Caesars Republic Scottsdale, a Hilton Hotel"
+      ]
+    },
+    {
+      "sourceId": "toast_tables",
+      "displayName": "Toast Tables",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:toasttab.com/local/order/ \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:toasttab.com/local/ \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "tock",
+      "displayName": "Tock",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:exploretock.com/{venue_slug}/search \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:exploretock.com \"{venue}\" \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" reservations"
+      ]
+    },
+    {
+      "sourceId": "tophotels",
+      "displayName": "Tophotels",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:tophotels.ru/hotel/al \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:tophotels.ru \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"отзывы\""
+      ]
+    },
+    {
+      "sourceId": "travelocity",
+      "displayName": "Travelocity / Hotels.com (Expedia-Group syndication)",
+      "lane": "ota_review_platform",
+      "priority": "optional",
+      "queries": [
+        "site:travelocity.com Caesars Republic Scottsdale, a Hilton Hotel"
+      ]
+    },
+    {
+      "sourceId": "traveloka",
+      "displayName": "Traveloka",
+      "lane": "ota_review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:traveloka.com/en-en/hotel/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:traveloka.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"hotel\""
+      ]
+    },
+    {
+      "sourceId": "trip_com",
+      "displayName": "Trip.com",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:trip.com/hotels/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:hotels.ctrip.com/hotels/ \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "tripadvisor",
+      "displayName": "TripAdvisor",
+      "lane": "review_platform",
+      "priority": "required",
+      "queries": [
+        "site:tripadvisor.com Caesars Republic Scottsdale, a Hilton Hotel Hotel_Review",
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona TripAdvisor"
+      ]
+    },
+    {
+      "sourceId": "trivago",
+      "displayName": "trivago",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona trivago"
+      ]
+    },
+    {
+      "sourceId": "urvenue",
+      "displayName": "UrVenue",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": []
+    },
+    {
+      "sourceId": "webook",
+      "displayName": "webook",
+      "lane": "reservation_platform",
+      "priority": "optional",
+      "queries": [
+        "site:webook.com/en/events \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:webook.com/en/experiences \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\""
+      ]
+    },
+    {
+      "sourceId": "wego",
+      "displayName": "Wego",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Wego"
+      ]
+    },
+    {
+      "sourceId": "wotif",
+      "displayName": "Wotif",
+      "lane": "meta_search",
+      "priority": "optional",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona Wotif"
+      ]
+    },
+    {
+      "sourceId": "yelp",
+      "displayName": "Yelp",
+      "lane": "review_platform",
+      "priority": "recommended",
+      "queries": [
+        "site:yelp.com Caesars Republic Scottsdale, a Hilton Hotel",
+        "Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona yelp reviews"
+      ]
+    },
+    {
+      "sourceId": "youtube",
+      "displayName": "YouTube (walkthroughs / vlogs)",
+      "lane": "video_social",
+      "priority": "required",
+      "queries": [
+        "Caesars Republic Scottsdale, a Hilton Hotel walkthrough",
+        "Caesars Republic Scottsdale, a Hilton Hotel resort tour",
+        "Caesars Republic Scottsdale, a Hilton Hotel review vlog",
+        "site:youtube.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona entertainment",
+        "site:youtube.com Caesars Republic Scottsdale, a Hilton Hotel Scottsdale, Arizona live music shows"
+      ]
+    },
+    {
+      "sourceId": "zoover",
+      "displayName": "Zoover",
+      "lane": "regional_review",
+      "priority": "optional",
+      "queries": [
+        "site:zoover.nl/a \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+        "site:zoover.nl/a \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"reviews\""
+      ]
+    }
+  ],
+  "angleQueries": [
+    "Caesars Republic Scottsdale, a Hilton Hotel reviews",
+    "Caesars Republic Scottsdale, a Hilton Hotel entertainment reviews",
+    "Caesars Republic Scottsdale, a Hilton Hotel nightlife",
+    "site:reddit.com Caesars Republic Scottsdale, a Hilton Hotel",
+    "Caesars Republic Scottsdale, a Hilton Hotel YouTube review",
+    "Caesars Republic Scottsdale, a Hilton Hotel travel blog review",
+    "Caesars Republic Scottsdale, a Hilton Hotel family review",
+    "Caesars Republic Scottsdale, a Hilton Hotel couples review",
+    "Caesars Republic Scottsdale, a Hilton Hotel business traveler review",
+    "Caesars Republic Scottsdale, a Hilton Hotel rooftop review",
+    "Caesars Republic Scottsdale, a Hilton Hotel bar review",
+    "Caesars Republic Scottsdale, a Hilton Hotel dining review"
+  ]
+}

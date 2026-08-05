@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "V1",
+  "purpose": "fresh_rebuilt_source_validation",
+  "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "location": "Scottsdale, Arizona",
+  "workspaceSlug": "caesars-republic-scottsdale-2026-08-04",
+  "engineSha": "9a32c3bacd076937576499acaafc81c5153ff092",
+  "historicalWorkspaceImported": false,
+  "historicalConclusionsImported": false,
+  "analysisWindow": {
+    "from": "2025-08-04",
+    "to": "2026-08-04"
+  },
+  "createdAt": "2026-08-05T00:06:32.983Z"
+}
