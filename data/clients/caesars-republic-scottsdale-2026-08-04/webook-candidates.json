@@ -1,0 +1,14 @@
+{
+  "queries": [
+    {
+      "query": "site:webook.com/en/events \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "query": "site:webook.com/en/experiences \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}

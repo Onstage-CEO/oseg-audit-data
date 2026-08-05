@@ -18,6 +18,31 @@ on:
         description: 'Access-verified email of the requesting user'
         required: true
         type: string
+      completeCoverage:
+        description: 'Also run the bounded terminal source checks for this workspace'
+        required: false
+        default: false
+        type: boolean
+      socialLimit:
+        description: 'Bounded maximum posts per social platform (1-5000)'
+        required: false
+        default: 30
+        type: number
+      locationCode:
+        description: 'DataForSEO location code for bounded supplemental discovery'
+        required: false
+        default: 2840
+        type: number
+      localMediaDomains:
+        description: 'Comma-separated independent local-media domains'
+        required: false
+        default: ''
+        type: string
+      approvedCostUsd:
+        description: 'Approved ceiling for each bounded supplemental search command'
+        required: false
+        default: 25
+        type: number
 
 concurrency:
   group: extra-sources-${{ inputs.slug }}
@@ -25,7 +50,7 @@ concurrency:
 
 env:
   ENGINE_REPO: Onstage-CEO/oseg-resort-audit
-  ENGINE_REF: c3bde41169735700017777cd05f098c53eb4588f
+  ENGINE_REF: 3ec2271b68d01cbc0d79aff2cbc29b1bf1f69a4b
 
 permissions:
   contents: write
@@ -107,12 +132,79 @@ jobs:
           OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_APIFY_MAX_ITEMS_SOCIAL: ${{ inputs.socialLimit }}
           WS: ${{ steps.resolve.outputs.ws }}
         run: |
           set -euo pipefail
           npm run dev --silent -- capture-extra-sources "$WS" 2>/tmp/ex.err || { cat /tmp/ex.err >&2; true; }
           cat /tmp/ex.err >&2
           grep -E 'capture-extra-sources' /tmp/ex.err | sed 's/^\[capture-extra-sources\] /extra: /' >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Complete bounded supplemental source checks
+        if: ${{ inputs.completeCoverage }}
+        working-directory: engine
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          WS: ${{ steps.resolve.outputs.ws }}
+          LOCATION_CODE: ${{ inputs.locationCode }}
+          LOCAL_MEDIA_DOMAINS: ${{ inputs.localMediaDomains }}
+          APPROVED_COST_USD: ${{ inputs.approvedCostUsd }}
+        run: |
+          set -uo pipefail
+          run_source() {
+            label="$1"
+            shift
+            echo "### $label" >> "$GITHUB_STEP_SUMMARY"
+            set +e
+            "$@" 2>&1 | tee "/tmp/$label.log"
+            code="${PIPESTATUS[0]}"
+            set -e
+            echo "exit: $code" >> "$GITHUB_STEP_SUMMARY"
+            return 0
+          }
+
+          website="$(jq -r '.client.website // empty' "$WS/audit.json")"
+          if [ -n "$website" ]; then
+            run_source resort-pages npm run dev --silent -- program-discovery "$WS" --url "$website"
+          fi
+
+          run_source property-social npm run dev --silent -- resolve-property-social "$WS" --candidate-file "$WS/property-social-candidates.json"
+          run_source resortpass npm run dev --silent -- capture-resortpass "$WS"
+          run_source cluburlaub npm run dev --silent -- capture-cluburlaub "$WS"
+          run_source hoteltonight npm run dev --silent -- resolve-hoteltonight "$WS" --candidate-file "$WS/hoteltonight-candidates.json"
+          run_source tablet-hotels npm run dev --silent -- resolve-tablet-hotels "$WS" --candidate-file "$WS/tablet-hotels-candidates.json"
+          run_source webook npm run dev --silent -- resolve-webook "$WS" --candidate-file "$WS/webook-candidates.json"
+
+          run_source quora npm run dev --silent -- capture-quora "$WS" \
+            --location-code "$LOCATION_CODE" --language-code en \
+            --approved-cost-usd "$APPROVED_COST_USD" --reserve-per-query-usd 1 \
+            --approval-reference "Joe authorized Caesars Republic audit spend on 2026-08-05"
+          run_source youtube-discovery npm run dev --silent -- discover-youtube "$WS" \
+            --location-code "$LOCATION_CODE" --language-code en \
+            --approved-cost-usd "$APPROVED_COST_USD" --reserve-per-query-usd 1 \
+            --approval-reference "Joe authorized Caesars Republic audit spend on 2026-08-05"
+
+          IFS=',' read -ra domains <<< "$LOCAL_MEDIA_DOMAINS"
+          local_args=()
+          for raw_domain in "${domains[@]}"; do
+            domain="$(printf '%s' "$raw_domain" | xargs)"
+            if [ -z "$domain" ]; then continue; fi
+            if ! printf '%s' "$domain" | grep -Eq '^[A-Za-z0-9.-]+$'; then
+              echo "::error::invalid local-media domain: $domain"
+              exit 1
+            fi
+            local_args+=(--independent-domain "$domain")
+          done
+          if [ "${#local_args[@]}" -gt 0 ]; then
+            run_source local-media npm run dev --silent -- capture-local-media "$WS" \
+              --location-code "$LOCATION_CODE" --language-code en \
+              "${local_args[@]}" \
+              --approved-cost-usd "$APPROVED_COST_USD" --reserve-per-query-usd 1 \
+              --approval-reference "Joe authorized Caesars Republic audit spend on 2026-08-05"
+          fi
+
+          run_source coverage npm run dev --silent -- generate-coverage-matrix "$WS"
 
       - name: Commit (attributed) and push
         working-directory: data-repo

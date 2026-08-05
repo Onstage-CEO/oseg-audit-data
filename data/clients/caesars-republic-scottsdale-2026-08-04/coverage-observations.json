@@ -1,0 +1,75 @@
+{
+  "property": [
+    {
+      "source": "reddit",
+      "usedInReport": false,
+      "confidence": "high",
+      "propertyAttempt": {
+        "source": "reddit",
+        "mechanism": "native credentialed capture policy",
+        "attemptedAt": "2026-08-05T02:00:00.000Z",
+        "result": "blocked_credentials",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "complete",
+        "truncated": false,
+        "retryable": false,
+        "message": "Reddit was not captured because approved native-access credentials are unavailable. Public search-index snippets are discovery-only and no Reddit-derived evidence is used in this report."
+      }
+    },
+    {
+      "source": "agoda",
+      "usedInReport": false,
+      "confidence": "high",
+      "propertyAttempt": {
+        "source": "agoda",
+        "mechanism": "licensed content API configuration review",
+        "attemptedAt": "2026-08-05T02:00:00.000Z",
+        "result": "not_supported",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "not_applicable",
+        "truncated": false,
+        "retryable": false,
+        "message": "No licensed Agoda content-feed credentials or exact hotel-ID mapping are configured for this property. No Agoda review text, rating, or aggregate was acquired or used."
+      }
+    },
+    {
+      "source": "almosafer",
+      "identifier": "https://qa.almosafer.com/en/travel/fp/four-star-hotels-with-gym-in-scottsdale-us",
+      "countFound": 1,
+      "usedInReport": false,
+      "confidence": "high",
+      "propertyAttempt": {
+        "source": "almosafer",
+        "mechanism": "bounded public-index identity check",
+        "attemptedAt": "2026-08-05T02:00:00.000Z",
+        "result": "identity_resolved",
+        "recordsReturned": 1,
+        "recordsAccepted": 0,
+        "completeness": "complete",
+        "truncated": false,
+        "retryable": false,
+        "message": "Exact property identity resolved on an Almosafer Scottsdale category surface at 4747 N Goldwater Blvd. No canonical review corpus was exposed or acquired; identity evidence only."
+      }
+    },
+    {
+      "source": "aerial_satellite",
+      "usedInReport": false,
+      "confidence": "high",
+      "propertyAttempt": {
+        "source": "aerial_satellite",
+        "mechanism": "operator-reviewed official location context",
+        "attemptedAt": "2026-08-05T02:00:00.000Z",
+        "result": "checked_no_data",
+        "recordsReturned": 0,
+        "recordsAccepted": 0,
+        "completeness": "complete",
+        "truncated": false,
+        "retryable": false,
+        "message": "Official location context was reviewed, but no map-derived inference was needed or used in the guest-evidence analysis."
+      }
+    }
+  ],
+  "outlets": []
+}

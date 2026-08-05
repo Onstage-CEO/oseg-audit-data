@@ -1,0 +1,80 @@
+{
+  "queries": [
+    {
+      "platform": "facebook",
+      "query": "site:facebook.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.facebook.com/caesarsrepublicscottsdale/",
+          "title": "Caesars Republic Scottsdale",
+          "snippet": "Official property Facebook profile.",
+          "ownershipEvidence": {
+            "type": "property_owned_backlink",
+            "sourceUrl": "https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale/"
+          }
+        }
+      ]
+    },
+    {
+      "platform": "facebook",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" official facebook",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.facebook.com/caesarsrepublicscottsdale/",
+          "title": "Caesars Republic Scottsdale",
+          "snippet": "Official property Facebook profile.",
+          "ownershipEvidence": {
+            "type": "property_owned_backlink",
+            "sourceUrl": "https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale/"
+          }
+        }
+      ]
+    },
+    {
+      "platform": "instagram",
+      "query": "site:instagram.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.instagram.com/caesarsrepublicaz/",
+          "title": "Caesars Republic Scottsdale",
+          "snippet": "Official property Instagram profile.",
+          "ownershipEvidence": {
+            "type": "property_owned_backlink",
+            "sourceUrl": "https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale/"
+          }
+        }
+      ]
+    },
+    {
+      "platform": "instagram",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" official instagram",
+      "status": "ok",
+      "items": [
+        {
+          "url": "https://www.instagram.com/caesarsrepublicaz/",
+          "title": "Caesars Republic Scottsdale",
+          "snippet": "Official property Instagram profile.",
+          "ownershipEvidence": {
+            "type": "property_owned_backlink",
+            "sourceUrl": "https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale/"
+          }
+        }
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "query": "site:tiktok.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "ok",
+      "items": []
+    },
+    {
+      "platform": "tiktok",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" official tiktok",
+      "status": "ok",
+      "items": []
+    }
+  ]
+}

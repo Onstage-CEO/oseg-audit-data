@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "caesars-republic-human-recall-review-v1",
+  "auditDate": "2026-08-05",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "engineSha": "5a516992b669feb7e186f80f9de49ee42490d809",
+  "selectedWindow": {
+    "from": "2025-08-04",
+    "to": "2026-08-04"
+  },
+  "frozenCorpus": {
+    "file": "caesars-304-frozen-corpus.json",
+    "sha256": "2f47bc75c45faa66785cc5e9523bc91f5b5d77af3367c5328fa601317c9d0312"
+  },
+  "reviewProtocol": {
+    "question": "Does the full review explicitly describe resort-operated live performance or a live-entertainment program in a public guest venue?",
+    "recordsRead": 304,
+    "scope": "Narrow V1 live entertainment only",
+    "internetExhaustivenessClaimed": false,
+    "propertyAndOutletEvidenceBlended": false,
+    "operatorEvidenceUsedAsGuestRatingEvidence": false
+  },
+  "reconciliation": {
+    "rawCaptured": 735,
+    "duplicateCopiesCollapsed": 10,
+    "normalizedDistinct": 725,
+    "dateEligible": 304,
+    "byPlatform": {
+      "booking": 35,
+      "tripadvisor": 33,
+      "expedia": 131,
+      "google": 105
+    },
+    "broadTheme": 25,
+    "entertainmentCandidates": 4,
+    "inScope": 3,
+    "excluded": 1,
+    "ambiguous": 0,
+    "missedExplicitLiveEntertainmentReferences": 0
+  },
+  "decisionLedger": [
+    {
+      "auditId": "CSR-130-0e2a0d7f",
+      "decision": "in_scope",
+      "reason": "Live music or DJ operating at the hotel and audible from the guest room."
+    },
+    {
+      "auditId": "CSR-147-3de3b8b9",
+      "decision": "in_scope",
+      "reason": "Guest explicitly reports a musician performing downstairs."
+    },
+    {
+      "auditId": "CSR-251-4d9303f3",
+      "decision": "in_scope",
+      "reason": "Guest describes enjoyable live music in the lobby as the evening highlight."
+    },
+    {
+      "auditId": "CSR-247-cb2d767f",
+      "decision": "excluded",
+      "reason": "Conference/private-event context plus unrelated music from another guest room."
+    }
+  ],
+  "reviewedNonFindings": [
+    {
+      "auditId": "CSR-203-fbc22f80",
+      "treatment": "ambient_audio_excluded"
+    },
+    {
+      "auditId": "CSR-211-fcd30165",
+      "treatment": "ambient_audio_excluded"
+    },
+    {
+      "auditId": "CSR-209-23094b41",
+      "treatment": "off_property_excluded"
+    },
+    {
+      "auditId": "CSR-185-154dbb07",
+      "treatment": "lexical_non_performance_excluded"
+    },
+    {
+      "auditId": "CSR-219-d963323b",
+      "treatment": "broader_programming_shadow_not_v1"
+    }
+  ],
+  "result": "No missed explicit V1 live-entertainment reference; accepted 3/1/0 partition unchanged."
+}
