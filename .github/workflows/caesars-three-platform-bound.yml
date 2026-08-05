@@ -184,6 +184,24 @@ jobs:
         working-directory: engine
         run: |
           set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const attemptsPath=`${process.env.ws}/property-source-attempts.json`;
+          const out=process.env.package_dir;
+          const ledger=JSON.parse(fs.readFileSync(attemptsPath,'utf8'));
+          const targets=new Set(['google','booking','expedia']);
+          const superseded=(ledger.attempts??[]).filter(row=>targets.has(row.source));
+          if(superseded.length!==3) throw new Error(`expected three superseded target attempts, found ${superseded.length}`);
+          fs.writeFileSync(`${out}/superseded-target-attempts.json`,JSON.stringify({
+            schemaVersion:'superseded-target-attempts-v1',
+            boundRunId:process.env.GITHUB_RUN_ID,
+            boundRunTimestamp:process.env.bound_ts,
+            reason:'The coverage generator merges its prior ledger with capture-run-status. These three prior rows are removed before regeneration so replacement captures are counted once; the original rows remain preserved here.',
+            attempts:superseded,
+          },null,2)+'\n');
+          ledger.attempts=(ledger.attempts??[]).filter(row=>!targets.has(row.source));
+          fs.writeFileSync(attemptsPath,JSON.stringify(ledger,null,2)+'\n');
+          NODE
           npm run dev --silent -- generate-coverage-matrix "$ws"
 
       - name: Enforce targeted terminal states and corpus-attempt synchronization
