@@ -248,6 +248,11 @@ jobs:
             Object.assign(attempt,{attemptedAt:process.env.bound_ts,result,recordsReturned:archiveCount,recordsAccepted:archiveCount,completeness:raw.coverage?.completeness??'partial',truncated:Boolean(raw.coverage?.truncated),retryable:false,message:`${raw.message}; post-generation bound reconciliation uses captures.json sealed archive count ${archiveCount}`});
             Object.assign(row,{checked:true,captured:true,countFound:archiveCount,countCaptured:archiveCount,usedInReport:true,status:result==='captured_complete'?'captured':'captured_partial',attemptResult:result,attemptMessage:attempt.message,attemptedAt:process.env.bound_ts,completeness:attempt.completeness,truncated:attempt.truncated,retryable:false});
           }
+          const redditAttempt=(attempts.attempts??[]).find(row=>row.source==='reddit');
+          const redditMatrix=(matrix.scopes??[]).find(item=>item.scope==='property')?.rows?.find(row=>row.source==='reddit');
+          if(!redditAttempt||!redditMatrix||redditMatrix.status!=='blocked_credentials'||redditMatrix.attemptResult!=='blocked_credentials'||redditMatrix.captured!==false||Number(redditMatrix.countCaptured)!==0) throw new Error('authoritative Reddit matrix policy is not blocked_credentials with zero native capture');
+          const redditBefore={result:redditAttempt.result,message:redditAttempt.message,attemptedAt:redditAttempt.attemptedAt};
+          Object.assign(redditAttempt,{mechanism:redditMatrix.attemptMechanism,attemptedAt:process.env.bound_ts,result:'blocked_credentials',recordsReturned:0,recordsAccepted:0,completeness:'complete',truncated:false,retryable:false,message:redditMatrix.attemptMessage});
           fs.writeFileSync(attemptsPath,JSON.stringify(attempts,null,2)+'\n');
           fs.writeFileSync(matrixPath,JSON.stringify(matrix,null,2)+'\n');
           const markdown=fs.readFileSync(markdownPath,'utf8').split('\n').map(line=>{
@@ -259,7 +264,7 @@ jobs:
             return `| ${cells.slice(1,-1).join(' | ')} |`;
           }).join('\n');
           fs.writeFileSync(markdownPath,markdown);
-          fs.writeFileSync(`${out}/post-generation-count-reconciliation.json`,JSON.stringify({schemaVersion:'post-generation-count-reconciliation-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:process.env.bound_ts,countAuthority:'captures.json sealed analytical archive',reconciliation},null,2)+'\n');
+          fs.writeFileSync(`${out}/post-generation-count-reconciliation.json`,JSON.stringify({schemaVersion:'post-generation-count-reconciliation-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:process.env.bound_ts,countAuthority:'captures.json sealed analytical archive',reconciliation,redditSemanticReconciliation:{before:redditBefore,after:{result:redditAttempt.result,message:redditAttempt.message,attemptedAt:redditAttempt.attemptedAt},nativeCaptured:false,authority:'source-coverage-matrix property lane policy'}},null,2)+'\n');
           NODE
 
       - name: Enforce targeted terminal states and corpus-attempt synchronization
@@ -383,6 +388,7 @@ jobs:
           jq -e '.engineSha==env.ENGINE_REF and .dataSha==env.GITHUB_SHA and .workspaceId==env.SLUG and .sourceUniverse.registryVersion==env.REGISTRY_VERSION and .apify.minAccountHeadroomUsd==0 and .corpusAttemptsSynchronized==true and .controls.nativeRedditCaptured==false and .reportGenerationStatus=="not_generated_pending_human_attestation"' "$package_dir/release-manifest.json" >/dev/null
           jq -e '.status=="satisfied" and .reserveUsd==0' "$package_dir/apify-account-preflight.json" >/dev/null
           jq -e '.synchronized==true and ([.platforms[]|.attemptResult=="captured_complete" or .attemptResult=="captured_partial" or .attemptResult=="truncated"]|all)' "$package_dir/corpus-attempt-synchronization.json" >/dev/null
+          jq -e '[.attempts[]|select(.source=="reddit")]|length==1 and .[0].result=="blocked_credentials" and .[0].recordsAccepted==0 and .[0].retryable==false' "$package_dir/property-source-attempts.json" >/dev/null
           test "$(jq -r .status "$package_dir/human-editorial-attestation-placeholder.json")" = awaiting_human_signature
           test "$(jq -r .supportedLaneCount "$package_dir/matrix-summary.json")" = 23
           test "$(jq -r '.sources|length' "$package_dir/source-inventory.json")" = 63
