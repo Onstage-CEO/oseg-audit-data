@@ -1,6 +1,6 @@
 {
   "schemaVersion": "V1",
-  "generatedAt": "2026-08-05T00:39:40.903Z",
+  "generatedAt": "2026-08-05T02:11:26.266Z",
   "property": "Caesars Republic Scottsdale, a Hilton Hotel",
   "attempts": {
     "yelp": {
@@ -9,23 +9,23 @@
       "message": "Captured the complete 66-review provider dataset via apify-memo23.",
       "recordsReturned": 66,
       "recordsAccepted": 66,
-      "attemptedAt": "2026-08-05T00:39:40.903Z"
+      "attemptedAt": "2026-08-05T02:11:26.266Z"
     },
     "instagram": {
-      "result": "captured_partial",
+      "result": "captured_complete",
       "mechanism": "apify social (pageUrl)",
-      "message": "Captured 30 public instagram post(s), but the requested depth ceiling was reached.",
-      "recordsReturned": 30,
-      "recordsAccepted": 30,
-      "attemptedAt": "2026-08-05T00:39:40.903Z"
+      "message": "Captured the complete bounded 499-post instagram dataset.",
+      "recordsReturned": 499,
+      "recordsAccepted": 499,
+      "attemptedAt": "2026-08-05T02:11:26.266Z"
     },
     "tiktok": {
-      "result": "captured_partial",
+      "result": "captured_complete",
       "mechanism": "apify social (keyword)",
-      "message": "Captured 30 public tiktok post(s), but the requested depth ceiling was reached.",
-      "recordsReturned": 30,
-      "recordsAccepted": 30,
-      "attemptedAt": "2026-08-05T00:39:40.903Z"
+      "message": "Captured the complete bounded 230-post tiktok dataset.",
+      "recordsReturned": 230,
+      "recordsAccepted": 230,
+      "attemptedAt": "2026-08-05T02:11:26.266Z"
     },
     "facebook": {
       "result": "captured_complete",
@@ -33,7 +33,7 @@
       "message": "Captured the complete bounded 1-post facebook dataset.",
       "recordsReturned": 1,
       "recordsAccepted": 1,
-      "attemptedAt": "2026-08-05T00:39:40.903Z"
+      "attemptedAt": "2026-08-05T02:11:26.266Z"
     }
   }
 }

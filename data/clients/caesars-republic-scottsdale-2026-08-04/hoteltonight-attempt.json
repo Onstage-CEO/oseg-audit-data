@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "V1",
+  "source": "hoteltonight",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-08-05T02:21:22.474Z",
+  "method": "operator_supplied_search_results",
+  "result": "checked_no_data",
+  "message": "All 2 bounded queries completed with no accepted HotelTonight property surface.",
+  "propertySurfaceStatus": "not_resolved",
+  "verifiedGuestFeedbackCaptureStatus": "not_attempted",
+  "editorialCaptureStatus": "not_attempted",
+  "contributesToRatings": false,
+  "queries": [
+    {
+      "query": "site:hoteltonight.com/hotel \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Discovery query returned 0 candidate(s)."
+    },
+    {
+      "query": "site:hoteltonight.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"Ratings\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Discovery query returned 0 candidate(s)."
+    }
+  ],
+  "candidates": [],
+  "recordsReturned": 0,
+  "recordsResolved": 0
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "V1",
   "capabilitySchemaVersion": "V2",
-  "generatedAt": "2026-08-05T01:41:25.164Z",
+  "generatedAt": "2026-08-05T02:23:42.596Z",
   "property": "Caesars Republic Scottsdale, a Hilton Hotel",
   "attempts": [
     {
@@ -35,7 +35,7 @@
       "source": "yelp",
       "mechanism": "apify-memo23",
       "provider": "apify-memo23",
-      "attemptedAt": "2026-08-05T00:39:40.903Z",
+      "attemptedAt": "2026-08-05T02:11:26.266Z",
       "result": "captured_complete",
       "recordsReturned": 66,
       "recordsAccepted": 66,
@@ -151,20 +151,22 @@
     },
     {
       "source": "webook",
-      "mechanism": "resolve-webook records exact public resort-linked event/experience identity and attempt lineage from operator-supplied search-result metadata",
-      "result": "not_checked",
+      "mechanism": "operator_supplied_search_results",
+      "provider": "operator_supplied_search_results",
+      "attemptedAt": "2026-08-05T02:21:23.635Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "All 2 bounded queries completed with no accepted webook property-linked listing. Marketplace listings are supplemental non-review evidence; no guest review or ticketing/private data was acquired."
     },
     {
       "source": "facebook",
       "mechanism": "apify social (pageUrl)",
       "provider": "apify social (pageUrl)",
-      "attemptedAt": "2026-08-05T00:39:40.903Z",
+      "attemptedAt": "2026-08-05T02:11:26.266Z",
       "result": "captured_complete",
       "recordsReturned": 1,
       "recordsAccepted": 1,
@@ -177,27 +179,27 @@
       "source": "instagram",
       "mechanism": "apify social (pageUrl)",
       "provider": "apify social (pageUrl)",
-      "attemptedAt": "2026-08-05T00:39:40.903Z",
-      "result": "captured_partial",
-      "recordsReturned": 30,
-      "recordsAccepted": 30,
-      "completeness": "partial",
+      "attemptedAt": "2026-08-05T02:11:26.266Z",
+      "result": "captured_complete",
+      "recordsReturned": 499,
+      "recordsAccepted": 499,
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "Captured 30 public instagram post(s), but the requested depth ceiling was reached."
+      "retryable": false,
+      "message": "Captured the complete bounded 499-post instagram dataset."
     },
     {
       "source": "tiktok",
       "mechanism": "apify social (keyword)",
       "provider": "apify social (keyword)",
-      "attemptedAt": "2026-08-05T00:39:40.903Z",
-      "result": "captured_partial",
-      "recordsReturned": 30,
-      "recordsAccepted": 30,
-      "completeness": "partial",
+      "attemptedAt": "2026-08-05T02:11:26.266Z",
+      "result": "captured_complete",
+      "recordsReturned": 230,
+      "recordsAccepted": 230,
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "Captured 30 public tiktok post(s), but the requested depth ceiling was reached."
+      "retryable": false,
+      "message": "Captured the complete bounded 230-post tiktok dataset."
     },
     {
       "source": "youtube",
@@ -214,16 +216,16 @@
     },
     {
       "source": "reddit",
-      "mechanism": "bounded DataForSEO open-web discovery",
-      "provider": "bounded DataForSEO open-web discovery",
-      "attemptedAt": "2026-08-05T00:30:48.017Z",
-      "result": "captured_complete",
-      "recordsReturned": 40,
-      "recordsAccepted": 11,
-      "completeness": "complete",
+      "mechanism": "official_api",
+      "provider": "official_api",
+      "attemptedAt": "2026-08-05T00:45:29.095Z",
+      "result": "needs_credentials",
+      "recordsReturned": 0,
+      "recordsAccepted": 0,
+      "completeness": "unknown",
       "truncated": false,
-      "retryable": false,
-      "message": "All 9 bounded reddit query attempt(s) completed; 11 finding(s) accepted."
+      "retryable": true,
+      "message": "Reddit capture is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET."
     },
     {
       "source": "blogs",
@@ -240,47 +242,56 @@
     },
     {
       "source": "property_social",
-      "mechanism": "Operator-supplied public search-result metadata through resolve-property-social with explicit attempt lineage",
-      "result": "not_checked",
+      "mechanism": "bounded property-social resolution (no post capture)",
+      "provider": "bounded property-social resolution (no post capture)",
+      "attemptedAt": "2026-08-05T02:21:20.312Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "All 6 bounded resolution queries completed with no accepted property profile or hashtag."
     },
     {
       "source": "resort_pages",
-      "mechanism": "Direct public fetch through program-discovery using --url or client.website, with property-page-attempt.json lineage",
-      "result": "not_checked",
+      "mechanism": "direct_public_fetch",
+      "provider": "direct_public_fetch",
+      "attemptedAt": "2026-08-05T02:21:08.412Z",
+      "result": "provider_error",
       "recordsReturned": 0,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "1 of 17 bounded official-site page fetches failed; accepted pages are retained but completeness is blocked."
     },
     {
       "source": "local_media",
-      "mechanism": "Bounded property/location Google-organic queries through capture-local-media with candidate classification and local-media-attempt.json lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
+      "mechanism": "dataforseo_google_organic",
+      "provider": "dataforseo_google_organic",
+      "attemptedAt": "2026-08-05T02:22:43.424Z",
+      "result": "provider_error",
+      "recordsReturned": 20,
       "recordsAccepted": 0,
       "completeness": "unknown",
       "truncated": false,
       "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "message": "2 of 4 localized query attempt(s) failed or were blocked; accepted findings are retained but readiness remains blocked."
     },
     {
       "source": "resortpass",
-      "mechanism": "Direct public fetch from configured resortPassUrl through capture-resortpass, with resortpass-attempt.json and response-hash lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
-      "recordsAccepted": 0,
-      "completeness": "unknown",
+      "mechanism": "direct_public_fetch",
+      "provider": "direct_public_fetch",
+      "attemptedAt": "2026-08-05T02:21:20.894Z",
+      "result": "captured_complete",
+      "recordsReturned": 1,
+      "recordsAccepted": 1,
+      "availableUniverse": 134,
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "Captured the public ResortPass aggregate rating summary (4.4/5 from 134 ratings); individual review bodies were not exposed in the public page response."
     },
     {
       "source": "cluburlaub",
@@ -361,14 +372,16 @@
     },
     {
       "source": "hoteltonight",
-      "mechanism": "Operator-supplied public search-result metadata through the bounded HotelTonight discovery path with explicit attempt lineage",
-      "result": "not_checked",
+      "mechanism": "operator_supplied_search_results",
+      "provider": "operator_supplied_search_results",
+      "attemptedAt": "2026-08-05T02:21:22.474Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "All 2 bounded queries completed with no accepted HotelTonight property surface."
     },
     {
       "source": "hrs",
@@ -405,14 +418,16 @@
     },
     {
       "source": "tablet_hotels",
-      "mechanism": "resolve-tablet-hotels CLI using operator-supplied public search-result metadata through the bounded Tablet Hotels discovery path with explicit attempt-file lineage",
-      "result": "not_checked",
+      "mechanism": "operator_supplied_search_results",
+      "provider": "operator_supplied_search_results",
+      "attemptedAt": "2026-08-05T02:21:23.055Z",
+      "result": "checked_no_data",
       "recordsReturned": 0,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "All 2 bounded queries completed with no accepted Tablet Hotels property surface."
     },
     {
       "source": "otzyv_ru",
@@ -449,14 +464,16 @@
     },
     {
       "source": "quora",
-      "mechanism": "Bounded property/location site:quora.com discovery through capture-quora with explicit quora-attempt.json lineage",
-      "result": "not_checked",
-      "recordsReturned": 0,
+      "mechanism": "dataforseo_google_organic",
+      "provider": "dataforseo_google_organic",
+      "attemptedAt": "2026-08-05T02:21:24.226Z",
+      "result": "checked_no_data",
+      "recordsReturned": 9,
       "recordsAccepted": 0,
-      "completeness": "unknown",
+      "completeness": "complete",
       "truncated": false,
-      "retryable": true,
-      "message": "The engine supports this source, but this workspace contains no explicit attempt record."
+      "retryable": false,
+      "message": "All 3 localized Quora queries completed with no accepted findings."
     },
     {
       "source": "aerial_satellite",

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "V1",
+  "source": "resortpass",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-08-05T02:21:20.894Z",
+  "method": "direct_public_fetch",
+  "requestedUrl": "https://www.resortpass.com/hotels/caesars-republic-scottsdale",
+  "finalUrl": "https://www.resortpass.com/hotels/caesars-republic-scottsdale",
+  "httpStatus": 200,
+  "contentType": "text/html; charset=utf-8",
+  "contentSha256": "e88e2e004bc8ea95f278334c04896736fa2377899b18e9c92f1cc361c3184ed4",
+  "result": "captured_complete",
+  "message": "Captured the public ResortPass aggregate rating summary (4.4/5 from 134 ratings); individual review bodies were not exposed in the public page response.",
+  "recordsReturned": 1,
+  "recordsAccepted": 1,
+  "identityMatched": true,
+  "availableUniverse": 134,
+  "aggregateRating": 4.4,
+  "aggregateRatingMax": 5,
+  "evidenceKind": "aggregate_rating_summary"
+}

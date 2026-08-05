@@ -1,0 +1,464 @@
+{
+  "schemaVersion": "V1",
+  "source": "local_media",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-08-05T02:22:43.424Z",
+  "method": "dataforseo_google_organic",
+  "result": "provider_error",
+  "message": "2 of 4 localized query attempt(s) failed or were blocked; accepted findings are retained but readiness remains blocked.",
+  "locales": [
+    {
+      "locationCode": 2840,
+      "languageCode": "en"
+    }
+  ],
+  "queries": [
+    {
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "locationCode": 2840,
+      "languageCode": "en",
+      "status": "searched",
+      "resultCount": 10,
+      "message": "DataForSEO returned 10 organic candidate(s).",
+      "costUsd": 0.002,
+      "costReconciled": true
+    },
+    {
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "locationCode": 2840,
+      "languageCode": "en",
+      "status": "searched",
+      "resultCount": 10,
+      "message": "DataForSEO returned 10 organic candidate(s).",
+      "costUsd": 0.002,
+      "costReconciled": true
+    },
+    {
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" \"live music\"",
+      "locationCode": 2840,
+      "languageCode": "en",
+      "status": "blocked",
+      "resultCount": 0,
+      "message": "DataForSEO task failed: 40101 Internal SE Server Error..",
+      "costUsd": 0.002,
+      "costReconciled": true
+    },
+    {
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" calendar OR agenda OR \"what's on\"",
+      "locationCode": 2840,
+      "languageCode": "en",
+      "status": "provider_error",
+      "resultCount": 0,
+      "message": "Paid search stopped: DataForSEO task failed: 40101 Internal SE Server Error..",
+      "costReconciled": false
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://www.caesarsrepublicscottsdale.com/",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel | Official Site",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel taps into the dynamic energy of Scottsdale, Arizona for a one-of-a-kind lifestyle experience. The new luxury ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "caesarsrepublicscottsdale.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "property_owned",
+      "reason": "Candidate is property-owned and belongs in the resort-pages lane."
+    },
+    {
+      "url": "https://www.caesars.com/caesars-republic-scottsdale",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Visit Caesars Republic Scottsdale, a Hilton Hotel, located in Scottsdale Arizona adjacent to Scottsdale's premier luxury retail destination.",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "caesars.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "unresolved",
+      "reason": "Identity matched, but the domain is not approved as an independent local-media/event operator."
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Gallery · Location · Dining · Events. Caesars Republic Scottsdale, a Hilton Hotel. 4747 N Goldwater Blvd, Scottsdale, Arizona, 85251, USA , Opens new tab. 3Aug ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "hilton.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "unresolved",
+      "reason": "Identity matched, but the domain is not approved as an independent local-media/event operator."
+    },
+    {
+      "url": "https://www.jackcentral.org/local-events",
+      "title": "Caesars Republic Scottsdale Vanderpump Rooftop Society ...",
+      "snippet": "Opened in March 2024, Caesars Republic Scottsdale, a Hilton Hotel, is a modern lifestyle hotel located in the heart of Scottsdale, Arizona, steps from the ...",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "jackcentral.org",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "unresolved",
+      "reason": "Identity matched, but the domain is not approved as an independent local-media/event operator."
+    },
+    {
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel Photos",
+      "snippet": "... Event Planning & Services · Hotels. Caesars Republic Scottsdale, a Hilton Hotel ... Caesars Republic Scottsdale, a Hilton Hotel - Hotels ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "yelp.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "unresolved",
+      "reason": "Identity matched, but the domain is not approved as an independent local-media/event operator."
+    },
+    {
+      "url": "https://www.instagram.com/p/DaGVVVpkbFm",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel ...",
+      "snippet": "Scottsdale, Arizona CAESARS REPUBLIC SCOTTSDALE Scottsdale Fashion Square Cleopatra's Pool Make a SPLASH Luna By Giada Jonah wants me to go ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "instagram.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "irrelevant",
+      "reason": "Candidate belongs to an existing OTA, review, community, or social lane."
+    },
+    {
+      "url": "https://www.instagram.com/reel/DEVqvWYSr-_",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel on Instagram ...",
+      "snippet": "... Caesars Republic Scottsdale, a Hilton Hotel ... Make sure to follow Experience Scottsdale for more Scottsdale, Arizona travel, inspiration, and ...",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "instagram.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events"
+      ],
+      "classification": "irrelevant",
+      "reason": "Candidate belongs to an existing OTA, review, community, or social lane."
+    },
+    {
+      "url": "https://www.weddingwire.com/biz/caesars-republic-scottsdale-a-hilton-hotel/8707366e21b2c6f6.html",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel, is a wedding venue located in Scottsdale, Arizona. ... What kind of wedding events does Caesars Republic Scottsdale, ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "weddingwire.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events"
+      ],
+      "classification": "unresolved",
+      "reason": "Identity matched, but the domain is not approved as an independent local-media/event operator."
+    },
+    {
+      "url": "https://www.visitphoenix.com/listing/caesars-republic-scottsdale-a-hilton-hotel/19083",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel ... Unleash your Alter Ego. Embracing the allure of Scottsdale, Arizona's desert landscape, Caesars Republic ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "visitphoenix.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events"
+      ],
+      "classification": "unresolved",
+      "reason": "The approved domain matched identity, but its page type is unresolved."
+    },
+    {
+      "url": "https://envisionwise.com/local-events",
+      "title": "Leisurely Evenings Unfold on Camelback Veranda at Caesars ...",
+      "snippet": "Opened in March 2024, Caesars Republic Scottsdale, a Hilton Hotel, is a modern lifestyle hotel located in the heart of Scottsdale, Arizona, steps from the ...",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "envisionwise.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events"
+      ],
+      "classification": "unresolved",
+      "reason": "Identity matched, but the domain is not approved as an independent local-media/event operator."
+    },
+    {
+      "url": "https://www.caesarsrepublicscottsdale.com/",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel | Official Site",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel taps into the dynamic energy of Scottsdale, Arizona for a one-of-a-kind lifestyle experience. The new luxury ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "caesarsrepublicscottsdale.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "duplicate",
+      "reason": "Duplicate observation of https://www.caesarsrepublicscottsdale.com/; strongest evidence retained.",
+      "duplicateOfUrl": "https://www.caesarsrepublicscottsdale.com/"
+    },
+    {
+      "url": "https://www.caesars.com/caesars-republic-scottsdale",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Visit Caesars Republic Scottsdale, a Hilton Hotel, located in Scottsdale Arizona adjacent to Scottsdale's premier luxury retail destination ... Entertainment ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "caesars.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "duplicate",
+      "reason": "Duplicate observation of https://www.caesars.com/caesars-republic-scottsdale; strongest evidence retained.",
+      "duplicateOfUrl": "https://www.caesars.com/caesars-republic-scottsdale"
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel. 4747 N Goldwater Blvd, Scottsdale, Arizona, 85251, USA , Opens new tab ... events; transportation within 2-mile ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "hilton.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "duplicate",
+      "reason": "Duplicate observation of https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale; strongest evidence retained.",
+      "duplicateOfUrl": "https://www.hilton.com/en/hotels/phxdlhh-caesars-republic-scottsdale"
+    },
+    {
+      "url": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel Photos",
+      "snippet": "... Caesars Republic Scottsdale, a Hilton Hotel - Hotels Near Me - Scottsdale, Arizona. Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "yelp.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "duplicate",
+      "reason": "Duplicate observation of https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale; strongest evidence retained.",
+      "duplicateOfUrl": "https://www.yelp.com/biz/caesars-republic-scottsdale-a-hilton-hotel-scottsdale"
+    },
+    {
+      "url": "https://www.jackcentral.org/local-events",
+      "title": "Caesars Republic Scottsdale Vanderpump Rooftop Society ...",
+      "snippet": "Opened in March 2024, Caesars Republic Scottsdale, a Hilton Hotel, is a modern lifestyle hotel located in the heart of Scottsdale, Arizona, steps from the ...",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "jackcentral.org",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "duplicate",
+      "reason": "Duplicate observation of https://www.jackcentral.org/local-events; strongest evidence retained.",
+      "duplicateOfUrl": "https://www.jackcentral.org/local-events"
+    },
+    {
+      "url": "https://www.instagram.com/p/DaGVVVpkbFm",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel ...",
+      "snippet": "Scottsdale, Arizona CAESARS REPUBLIC SCOTTSDALE Scottsdale Fashion Square Cleopatra's Pool Make a SPLASH Luna By Giada Jonah wants me to go ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "instagram.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" events",
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "duplicate",
+      "reason": "Duplicate observation of https://www.instagram.com/p/DaGVVVpkbFm; strongest evidence retained.",
+      "duplicateOfUrl": "https://www.instagram.com/p/DaGVVVpkbFm"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Hotel_Review-g31350-d27432953-Reviews-Caesars_Republic_Scottsdale_a_Hilton_Hotel-Scottsdale_Arizona.html",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Oct 30, 2025 — Book Caesars Republic Scottsdale, a Hilton Hotel, Scottsdale on ... Scottsdale, Arizona. Don't miss staying at this lovely property ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "tripadvisor.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "irrelevant",
+      "reason": "Candidate belongs to an existing OTA, review, community, or social lane."
+    },
+    {
+      "url": "https://investors.walkerdunlop.com/news/news-details/2025/Walker--Dunlop-Advises-86-Million-Financing-for-Caesars-Republic-Scottsdale-a-Hilton-Hotel/default.aspx",
+      "title": "Walker & Dunlop Advises $86 Million Financing for Caesars ...",
+      "snippet": "May 29, 2025 — ... Caesars Republic Scottsdale, a Hilton Hotel; a newly constructed ... Scottsdale, Arizona. Opened in March 2024, this 11-story property ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "investors.walkerdunlop.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "unresolved",
+      "reason": "Identity matched, but the domain is not approved as an independent local-media/event operator."
+    },
+    {
+      "url": "https://www.expedia.com/Phoenix-Hotels-Scottsdale-Republic.h101140606.Hotel-Information",
+      "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel. 4.0 star property. Travelers ... Three Bedroom, Luxury Suite, Scottsdale, Arizona. Standard Link for Three ... Read more",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "expedia.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "irrelevant",
+      "reason": "Candidate belongs to an existing OTA, review, community, or social lane."
+    },
+    {
+      "url": "https://www.instagram.com/reel/C4ZLPbYvBau",
+      "title": "Caesars Republic Scottsdale is officially open! I had the ...",
+      "snippet": "Caesars Republic Scottsdale, a Hilton Hotel Background: Caesars ... #travel # scottsdale #arizona #fairmont #fairmonthotel · View all 2 ...",
+      "query": "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "retrievedAt": "2026-08-05T02:22:43.424Z",
+      "locale": {
+        "locationCode": 2840,
+        "languageCode": "en"
+      },
+      "domain": "instagram.com",
+      "propertyIdentityMatched": true,
+      "locationIdentityMatched": true,
+      "observedQueries": [
+        "\"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+      ],
+      "classification": "irrelevant",
+      "reason": "Candidate belongs to an existing OTA, review, community, or social lane."
+    }
+  ],
+  "recordsReturned": 20,
+  "recordsAccepted": 0,
+  "providerReportedCostUsd": 0.006,
+  "costReconciled": true,
+  "approvedCostUsd": 100,
+  "reservedCostUsdPerQuery": 1,
+  "approvalReference": "Joe authorized Caesars Republic audit spend on 2026-08-05"
+}

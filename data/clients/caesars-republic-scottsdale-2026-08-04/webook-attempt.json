@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "V1",
+  "source": "webook",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-08-05T02:21:23.635Z",
+  "method": "operator_supplied_search_results",
+  "propertyEventSurfaceStatus": "not_resolved",
+  "guestReviewCaptureStatus": "not_applicable",
+  "ticketingDataCaptureStatus": "not_attempted",
+  "listingEvidenceClass": "marketplace_listing_only",
+  "contributesToRatings": false,
+  "result": "checked_no_data",
+  "message": "All 2 bounded queries completed with no accepted webook property-linked listing.",
+  "queries": [
+    {
+      "query": "site:webook.com/en/events \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Discovery query returned 0 candidate(s)."
+    },
+    {
+      "query": "site:webook.com/en/experiences \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\"",
+      "status": "searched",
+      "recordsReturned": 0,
+      "message": "Discovery query returned 0 candidate(s)."
+    }
+  ],
+  "candidates": [],
+  "recordsReturned": 0,
+  "recordsResolved": 0
+}

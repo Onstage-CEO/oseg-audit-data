@@ -1,0 +1,211 @@
+{
+  "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "programs": [
+    {
+      "programName": "Live Music",
+      "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "venue": null,
+      "programType": "live_music",
+      "schedule": null,
+      "officialSchedule": null,
+      "thirdPartySchedule": null,
+      "chosenSchedule": null,
+      "clientFacingSchedule": null,
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": null,
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants-old/luna-by-giada"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [],
+      "guestSignalSourcesChecked": [],
+      "guestSignalHitCount": null,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": null,
+      "clientSignalNote": null,
+      "entertainmentElement": null,
+      "entertainmentVerdict": null,
+      "verificationStatus": null,
+      "guestSignalFound": false,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "mention",
+      "omitReason": null,
+      "confidence": "medium",
+      "lastVerifiedDate": null,
+      "materiality": "material",
+      "programmingStatus": null,
+      "programmingSourceLevel": null,
+      "onsiteValidationRequired": null
+    },
+    {
+      "programName": "DJ",
+      "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "venue": null,
+      "programType": "dj",
+      "schedule": null,
+      "officialSchedule": null,
+      "thirdPartySchedule": null,
+      "chosenSchedule": null,
+      "clientFacingSchedule": null,
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": null,
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.caesarsrepublicscottsdale.com/wolf-pool"
+        },
+        {
+          "category": "resort_pages",
+          "ref": "https://www.caesarsrepublicscottsdale.com/cleos-scottsdale-pool-party"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [],
+      "guestSignalSourcesChecked": [],
+      "guestSignalHitCount": null,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": null,
+      "clientSignalNote": null,
+      "entertainmentElement": null,
+      "entertainmentVerdict": null,
+      "verificationStatus": null,
+      "guestSignalFound": false,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "mention",
+      "omitReason": null,
+      "confidence": "medium",
+      "lastVerifiedDate": null,
+      "materiality": "material",
+      "programmingStatus": null,
+      "programmingSourceLevel": null,
+      "onsiteValidationRequired": null
+    },
+    {
+      "programName": "Poolside Entertainment",
+      "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+      "venue": null,
+      "programType": "pool_beach",
+      "schedule": null,
+      "officialSchedule": null,
+      "thirdPartySchedule": null,
+      "chosenSchedule": null,
+      "clientFacingSchedule": null,
+      "scheduleReason": null,
+      "scheduleConfidence": "medium",
+      "seasonality": null,
+      "sourceConfirming": [
+        {
+          "category": "resort_pages",
+          "ref": "https://www.caesarsrepublicscottsdale.com/cleos-scottsdale-pool-party"
+        },
+        {
+          "category": "resort_pages",
+          "ref": "https://www.caesarsrepublicscottsdale.com/july-4th-pool-party-scottsdale"
+        },
+        {
+          "category": "resort_pages",
+          "ref": "https://www.caesarsrepublicscottsdale.com/labor-day-pool-party-scottsdale"
+        },
+        {
+          "category": "resort_pages",
+          "ref": "https://www.caesarsrepublicscottsdale.com/memorial-day-pool-party-scottsdale"
+        }
+      ],
+      "discoverySourceCategory": "resort_pages",
+      "guestSignalSearchTerms": [],
+      "guestSignalSourcesChecked": [],
+      "guestSignalHitCount": null,
+      "representativeGuestEvidence": null,
+      "guestSignalStrength": "absent",
+      "guestSignalNotes": null,
+      "clientSignalNote": null,
+      "entertainmentElement": null,
+      "entertainmentVerdict": null,
+      "verificationStatus": null,
+      "guestSignalFound": false,
+      "evidenceStrength": "weak",
+      "clientReportTreatment": "mention",
+      "omitReason": null,
+      "confidence": "medium",
+      "lastVerifiedDate": null,
+      "materiality": "material",
+      "programmingStatus": null,
+      "programmingSourceLevel": null,
+      "onsiteValidationRequired": null
+    }
+  ],
+  "themes": [],
+  "sources": [
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants-old/luna-by-giada"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants-old/wolf-by-vanderpump-scottsdale"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants-old/pronto-by-giada"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/cleopatra-pool-bar"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/wolf-pool"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/play/events-calendar"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/meetings-events"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/group-wedding-event-rooms-scottsdale"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/things-to-do-in-scottsdale"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/cleos-scottsdale-pool-party"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/july-4th-pool-party-scottsdale"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/event-venues-scottsdale-az"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/labor-day-pool-party-scottsdale"
+    },
+    {
+      "category": "resort_pages",
+      "ref": "https://www.caesarsrepublicscottsdale.com/memorial-day-pool-party-scottsdale"
+    }
+  ]
+}

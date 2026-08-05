@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "V1",
+  "source": "youtube",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "location": "Scottsdale, Arizona",
+  "attemptedAt": "2026-08-05T02:22:12.464Z",
+  "method": "dataforseo_google_organic",
+  "result": "provider_error",
+  "message": "3 of 3 localized query attempt(s) failed or were blocked; retained findings do not clear readiness.",
+  "locales": [
+    {
+      "locationCode": 2840,
+      "languageCode": "en"
+    }
+  ],
+  "queries": [
+    {
+      "query": "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+      "locationCode": 2840,
+      "languageCode": "en",
+      "status": "blocked",
+      "resultCount": 0,
+      "message": "DataForSEO task failed: 40101 Internal SE Server Error..",
+      "costUsd": 0.01,
+      "costReconciled": true
+    },
+    {
+      "query": "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
+      "locationCode": 2840,
+      "languageCode": "en",
+      "status": "provider_error",
+      "resultCount": 0,
+      "message": "Paid search stopped: DataForSEO task failed: 40101 Internal SE Server Error..",
+      "costReconciled": false
+    },
+    {
+      "query": "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows",
+      "locationCode": 2840,
+      "languageCode": "en",
+      "status": "provider_error",
+      "resultCount": 0,
+      "message": "Paid search stopped: DataForSEO task failed: 40101 Internal SE Server Error..",
+      "costReconciled": false
+    }
+  ],
+  "findings": [],
+  "recordsReturned": 0,
+  "recordsAccepted": 0,
+  "supplemental": true,
+  "contributesToRatings": false,
+  "providerReportedCostUsd": 0.01,
+  "costReconciled": true,
+  "approvedCostUsd": 100,
+  "reservedCostUsdPerQuery": 1,
+  "approvalReference": "Joe authorized Caesars Republic audit spend on 2026-08-05"
+}
