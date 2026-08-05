@@ -18,6 +18,11 @@ on:
         description: 'Access-verified email of the requesting user'
         required: true
         type: string
+      captureSupplemental:
+        description: 'Run Yelp, YouTube comments, and social capture before source checks'
+        required: false
+        default: true
+        type: boolean
       completeCoverage:
         description: 'Also run the bounded terminal source checks for this workspace'
         required: false
@@ -124,6 +129,7 @@ jobs:
         run: npm ci
 
       - name: Capture extra sources
+        if: ${{ inputs.captureSupplemental }}
         working-directory: engine
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
