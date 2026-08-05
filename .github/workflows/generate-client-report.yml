@@ -263,6 +263,8 @@ jobs:
           const evidenceManifest=JSON.parse(fs.readFileSync(ws+'/client-report-evidence-manifest.json','utf8'));
           const freshVerification=JSON.parse(fs.readFileSync(ws+'/client-report-verification.json','utf8'));
           const classifierRules=fs.readFileSync(ws+'/classifier-rules-v1.md','utf8');
+          const adjudicationPath=ws+'/entertainment-adjudication.json';
+          const adjudication=fs.existsSync(adjudicationPath)?JSON.parse(fs.readFileSync(adjudicationPath,'utf8')):null;
           const path=ws+'/analytical-break-test.json';
           const prior=fs.existsSync(path)?JSON.parse(fs.readFileSync(path,'utf8')):{schemaVersion:'V3',checks:[]};
           const value=(label)=>{
@@ -307,6 +309,23 @@ jobs:
           const ratingSuppressionValid=inScope<10
             ? entertainmentMetric==='Rating suppressed'&&html.includes(`${inScope} verified in-scope reviews &middot; minimum n=10`)&&!/sample too small for rating/i.test(html)
             : entertainmentMetric!=='Rating suppressed';
+          const adjudicationDecisions=Array.isArray(adjudication?.decisions)?adjudication.decisions:[];
+          const adjudicationUrls=new Set(adjudicationDecisions.map(decision=>decision.sourceUrl));
+          const adjudicationTally={
+            inScope:adjudicationDecisions.filter(decision=>decision.scope==='in_scope').length,
+            excluded:adjudicationDecisions.filter(decision=>decision.scope==='out_of_scope').length,
+            ambiguous:adjudicationDecisions.filter(decision=>decision.scope==='ambiguous').length,
+          };
+          const adjudicationMatchesGeneratedPartition=!adjudication||(
+            adjudication.schemaVersion==='V1'&&
+            adjudicationDecisions.length===candidates&&
+            adjudicationUrls.size===adjudicationDecisions.length&&
+            adjudicationDecisions.every(decision=>typeof decision.sourceUrl==='string'&&/^https?:\/\//i.test(decision.sourceUrl)&&typeof decision.rationale==='string'&&decision.rationale.trim().length>0)&&
+            adjudicationTally.inScope===inScope&&
+            adjudicationTally.excluded===excluded&&
+            adjudicationTally.ambiguous===ambiguous&&
+            /complete, source-linked human adjudication ledger/i.test(brief)
+          );
           const current=[
             ['funnel_values_are_nonnegative_integers',funnelValuesValid],
             ['funnel_duplicates_reconcile',captured-distinct===duplicates],
@@ -319,6 +338,7 @@ jobs:
             ['reddit_excerpt_absent_when_lane_not_captured',redditExcerptAbsent&&sourceStatuses.get('reddit')!=='captured'],
             ['fresh_client_report_verification_ready',freshVerification.status==='ready'&&Array.isArray(freshVerification.checks)&&freshVerification.checks.every(check=>check.pass===true)],
             ['brief_matches_generated_funnel',briefFunnelPattern.test(brief)],
+            ['human_adjudication_matches_generated_partition',adjudicationMatchesGeneratedPartition],
             ['rendered_leads_equal_verified_count',renderedLeads===inScope],
             ['classifier_rules_file_exists_and_versioned',classifierRules.includes('**Rule-set ID:** `entertainment-classifier-rules-v1`')&&classifierRules.includes('**Version:** `V1`')&&classifierRules.includes(`**Report-generation engine reference reviewed:** \`${process.env.ENGINE_REF}\``)&&/V1 answers a narrow question/i.test(classifierRules)],
             ['thin_entertainment_rating_suppressed',ratingSuppressionValid],
