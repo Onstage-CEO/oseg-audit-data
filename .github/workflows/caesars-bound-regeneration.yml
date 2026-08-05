@@ -1,0 +1,272 @@
+name: Caesars bound Tier-B regeneration
+run-name: "Caesars bound regeneration — requested by ${{ inputs.actorEmail }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      actorEmail:
+        description: Access-verified email of the requesting user
+        required: true
+        default: joe@onstage.biz
+        type: string
+
+concurrency:
+  group: caesars-bound-regeneration
+  cancel-in-progress: false
+
+env:
+  ENGINE_REPO: Onstage-CEO/oseg-resort-audit
+  ENGINE_REF: 7aefa3ebecf309494dddacba5e5479beb204c530
+  SLUG: caesars-republic-scottsdale-2026-08-04
+  REGISTRY_VERSION: v2
+
+permissions:
+  contents: read
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Validate authenticated operator
+        env:
+          ACTOR_EMAIL: ${{ inputs.actorEmail }}
+          GH_ACTOR: ${{ github.actor }}
+        run: |
+          set -euo pipefail
+          test "$ACTOR_EMAIL" = "joe@onstage.biz"
+          case "$GH_ACTOR" in
+            Onstage-CEO|oseg-automation[bot]) ;;
+            *) echo "::error::unauthorized dispatch actor: $GH_ACTOR"; exit 1 ;;
+          esac
+
+      - name: Checkout data repository at bound SHA
+        uses: actions/checkout@v4
+        with:
+          path: data-repo
+          fetch-depth: 0
+
+      - name: Checkout pinned engine
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ENGINE_REPO }}
+          ref: ${{ env.ENGINE_REF }}
+          ssh-key: ${{ secrets.ENGINE_DEPLOY_KEY }}
+          path: engine
+
+      - name: Verify production pin and initialize binding
+        env:
+          DATA_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          RUN_STARTED_AT: ${{ github.event.repository.updated_at }}
+        run: |
+          set -euo pipefail
+          test "$(git -C engine rev-parse HEAD)" = "$ENGINE_REF"
+          test "$(jq -r .approvedEngineRef data-repo/.github/engine-release.json)" = "$ENGINE_REF"
+          test "$(git -C data-repo rev-parse HEAD)" = "$DATA_SHA"
+          ws="$GITHUB_WORKSPACE/data-repo/data/clients/$SLUG"
+          test -f "$ws/audit.json"
+          bound_ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          mkdir -p "$RUNNER_TEMP/caesars-bound-package"
+          jq -n \
+            --arg runId "$RUN_ID" \
+            --arg runAttempt "$RUN_ATTEMPT" \
+            --arg runTimestamp "$bound_ts" \
+            --arg engineSha "$ENGINE_REF" \
+            --arg dataSha "$DATA_SHA" \
+            --arg workspaceId "$SLUG" \
+            --arg registryVersion "$REGISTRY_VERSION" \
+            '{schemaVersion:"bound-run-v1",runId:$runId,runAttempt:$runAttempt,runTimestamp:$runTimestamp,engineSha:$engineSha,dataSha:$dataSha,workspaceId:$workspaceId,sourceUniverseVersion:$registryVersion}' \
+            > "$RUNNER_TEMP/caesars-bound-package/bound-run.json"
+          echo "ws=$ws" >> "$GITHUB_ENV"
+          echo "bound_ts=$bound_ts" >> "$GITHUB_ENV"
+          echo "package_dir=$RUNNER_TEMP/caesars-bound-package" >> "$GITHUB_ENV"
+
+      - name: Install engine dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - working-directory: engine
+        run: npm ci
+
+      - name: Re-run core property-source attempts
+        working-directory: engine
+        env:
+          OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OSEG_CAPTURE_DEPTH: ${{ vars.OSEG_CAPTURE_DEPTH || '4490' }}
+          OSEG_CAPTURE_FULL_SWEEP: ${{ vars.OSEG_CAPTURE_FULL_SWEEP || '1' }}
+          OSEG_GOOGLE_CAPTURE_SOURCE: ${{ vars.OSEG_GOOGLE_CAPTURE_SOURCE || 'apify' }}
+          OSEG_CAPTURE_TIMEOUT_MS: ${{ vars.OSEG_CAPTURE_TIMEOUT_MS || '180000' }}
+          OSEG_APIFY_MAX_WAIT_MS: ${{ vars.OSEG_APIFY_MAX_WAIT_MS || '3000000' }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_BOOKING || '25' }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_EXPEDIA || '25' }}
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE: ${{ vars.OSEG_APIFY_MAX_TOTAL_CHARGE_USD_GOOGLE || '25' }}
+          OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR: ${{ vars.OSEG_DATAFORSEO_MAX_TOTAL_CHARGE_USD_TRIPADVISOR || '25' }}
+          OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR: ${{ vars.OSEG_DATAFORSEO_MAX_TASK_CHARGE_USD_TRIPADVISOR || '25' }}
+        run: |
+          set -euo pipefail
+          npm run dev --silent -- capture-round "$ws" --json > /tmp/round.json || true
+          test "$(jq -r '.status // "error"' /tmp/round.json)" = ok
+          for i in $(seq 1 20); do
+            pending=$(jq -r '(.tasks // []) | length' "$ws/capture-pending.json" 2>/dev/null || echo 0)
+            [ "$pending" = 0 ] && break
+            npm run dev --silent -- capture-collect "$ws" --json > /tmp/collect.json || true
+            pending=$(jq -r '(.tasks // []) | length' "$ws/capture-pending.json" 2>/dev/null || echo 0)
+            [ "$pending" = 0 ] && break
+            [ "$i" = 20 ] || sleep 30
+          done
+
+      - name: Re-run discovery and supplemental attempts
+        working-directory: engine
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          OSEG_CAPTURE_YOUTUBE: ${{ secrets.OSEG_CAPTURE_YOUTUBE }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OSEG_APIFY_MAX_ITEMS_SOCIAL: 5000
+          OSEG_APIFY_MAX_TOTAL_CHARGE_USD_YELP: 25
+        run: |
+          set -uo pipefail
+          npm run dev --silent -- entertainment-discovery "$ws" || true
+          npm run dev --silent -- capture-web-discovery "$ws" || true
+          npm run dev --silent -- capture-extra-sources "$ws" || true
+          npm run dev --silent -- program-discovery "$ws" --url "https://www.caesarsrepublicscottsdale.com/" || true
+          npm run dev --silent -- resolve-property-social "$ws" --candidate-file "$ws/property-social-candidates.json" || true
+          npm run dev --silent -- capture-resortpass "$ws" || true
+          npm run dev --silent -- capture-cluburlaub "$ws" || true
+          npm run dev --silent -- resolve-hoteltonight "$ws" --candidate-file "$ws/hoteltonight-candidates.json" || true
+          npm run dev --silent -- resolve-tablet-hotels "$ws" --candidate-file "$ws/tablet-hotels-candidates.json" || true
+          npm run dev --silent -- resolve-webook "$ws" --candidate-file "$ws/webook-candidates.json" || true
+          npm run dev --silent -- capture-quora "$ws" --location-code 2840 --language-code en --approved-cost-usd 25 --reserve-per-query-usd 1 --approval-reference "Joe authorized Caesars bound regeneration on 2026-08-05" || true
+          npm run dev --silent -- discover-youtube "$ws" --location-code 2840 --language-code en --approved-cost-usd 25 --reserve-per-query-usd 1 --approval-reference "Joe authorized Caesars bound regeneration on 2026-08-05" || true
+          npm run dev --silent -- capture-local-media "$ws" --location-code 2840 --language-code en --independent-domain azcentral.com --independent-domain phoenixnewtimes.com --independent-domain scottsdale.com --independent-domain visitphoenix.com --approved-cost-usd 25 --reserve-per-query-usd 1 --approval-reference "Joe authorized Caesars bound regeneration on 2026-08-05" || true
+          npm run dev --silent -- generate-coverage-matrix "$ws"
+
+      - name: Enforce terminal 23-lane matrix and Reddit separation
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const matrix=JSON.parse(fs.readFileSync(process.env.ws+'/source-coverage-matrix.json','utf8'));
+          const rows=matrix.scopes.flatMap(s=>s.scope==='property'?s.rows:[]).filter(r=>r.supportedByEngine===true);
+          if(rows.length!==23) throw new Error(`expected 23 supported lanes, found ${rows.length}`);
+          const nonterminal=new Set(['not_checked','not_attempted','pending','queued','in_progress']);
+          const bad=rows.filter(r=>nonterminal.has(r.status)||nonterminal.has(r.attemptResult));
+          if(bad.length) throw new Error(`nonterminal supported lanes: ${bad.map(r=>r.source).join(', ')}`);
+          const reddit=rows.find(r=>r.source==='reddit');
+          if(!reddit || reddit.captured || reddit.status!=='blocked_credentials' || reddit.attemptResult!=='blocked_credentials') {
+            throw new Error('Reddit must be blocked_credentials with zero native capture');
+          }
+          const summary={
+            supportedLaneCount:rows.length,
+            capturedComplete:rows.filter(r=>r.status==='captured').length,
+            capturedPartial:rows.filter(r=>r.status==='captured_partial').length,
+            terminalNoDataOrIdentity:rows.filter(r=>['checked_no_data','identity_resolved'].includes(r.status)).length,
+            blockedOrUnavailable:rows.filter(r=>['blocked_credentials','provider_error','needs_configuration','not_supported_yet'].includes(r.status)).length,
+            nativeRedditCaptured:false
+          };
+          fs.writeFileSync(process.env.package_dir+'/matrix-summary.json',JSON.stringify({schemaVersion:'matrix-summary-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:process.env.bound_ts,...summary},null,2)+'\n');
+          fs.copyFileSync(process.env.ws+'/property-source-attempts.json',process.env.package_dir+'/property-source-attempts.json');
+          fs.copyFileSync(process.env.ws+'/source-coverage-matrix.json',process.env.package_dir+'/source-coverage-matrix.json');
+          fs.copyFileSync(process.env.ws+'/source-coverage-matrix.md',process.env.package_dir+'/source-coverage-matrix.md');
+          NODE
+
+      - name: Generate analytical brief, report preview, evidence and verification
+        working-directory: engine
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "${ANTHROPIC_API_KEY:-}"
+          npm run dev --silent -- generate-brief "$ws" --now "$bound_ts"
+          npm run dev --silent -- generate-client-report "$ws" --now "$bound_ts" --internal-preview
+          npm run dev --silent -- entertainment-evidence "$ws" --max-reviews 1000 --now "$bound_ts"
+          args=(verify "$ws/audit.json" --json --summary)
+          [ -f "$ws/captures.json" ] && args+=(--capture-archive "$ws/captures.json")
+          npm run dev --silent -- "${args[@]}" > "$ws/verify-report.json" || true
+          npm run dev --silent -- readiness "$ws" --now "$bound_ts" --json > /tmp/readiness.json || true
+
+      - name: Seal programming status, teaser and release manifest
+        env:
+          DATA_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          import path from 'node:path';
+          const ws=process.env.ws, out=process.env.package_dir;
+          const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+          const binding=read(path.join(out,'bound-run.json'));
+          const matrixSummary=read(path.join(out,'matrix-summary.json'));
+          const programmingInput=read(path.join(ws,'programming-verification-input.json'));
+          const programming={...programmingInput,sealed:true,boundRunId:binding.runId,boundRunTimestamp:binding.runTimestamp,engineSha:binding.engineSha,dataSha:binding.dataSha};
+          fs.writeFileSync(path.join(out,'programming-current-status.json'),JSON.stringify(programming,null,2)+'\n');
+
+          const copyNames=['audit-brief.md','entertainment-discovery.json','entertainment-discovery.md','entertainment-evidence.html','verify-report.json','report-readiness.json','client-report-verification.json','client-report-evidence-manifest.json','analytical-break-test.json','classifier-rules-v1.md','client-report.html','source-inventory.json'];
+          for(const name of copyNames){const src=path.join(ws,name); if(fs.existsSync(src)) fs.copyFileSync(src,path.join(out,name));}
+          const audit=read(path.join(ws,'audit.json'));
+          const discovery=read(path.join(ws,'entertainment-discovery.json'));
+          const recallPath=path.join(ws,'caesars-human-recall-review.json');
+          const recall=fs.existsSync(recallPath)?read(recallPath):null;
+          const reconciled=recall?.reconciliation ?? {};
+          const partition=audit.entertainmentPartition ?? audit.entertainment ?? {};
+          const funnel={
+            raw:reconciled.rawCaptured ?? discovery.summary?.rawRecords ?? discovery.summary?.totalReviews ?? audit.metrics?.reviewsCaptured ?? null,
+            duplicates:reconciled.duplicateCopiesCollapsed ?? null,
+            distinct:reconciled.normalizedDistinct ?? discovery.summary?.distinctRecords ?? discovery.summary?.deduplicatedReviews ?? null,
+            dateEligible:reconciled.dateEligible ?? discovery.summary?.dateEligible ?? null,
+            broadTheme:reconciled.broadTheme ?? discovery.summary?.broadTheme ?? discovery.summary?.broadThemeCount ?? null,
+            candidates:reconciled.entertainmentCandidates ?? discovery.summary?.candidateCount ?? discovery.candidates?.length ?? null,
+            inScope:reconciled.inScope ?? partition.inScopeCount ?? partition.inScope?.length ?? null,
+            excluded:reconciled.excluded ?? partition.excludedCount ?? partition.excluded?.length ?? null,
+            ambiguous:reconciled.ambiguous ?? partition.ambiguousCount ?? partition.ambiguous?.length ?? null
+          };
+          const programRows=programming.programs.map(p=>`<tr><td>${p.name}</td><td>${p.status.replaceAll('_',' ')}</td><td>${p.publicSchedule??'No current public cadence proven'}</td></tr>`).join('');
+          const blocker=`${matrixSummary.blockedOrUnavailable} of 23 engine-supported lanes remain blocked, unavailable, or unresolved; Reddit is credential-blocked and no native Reddit evidence is counted.`;
+          const teaser=`<!doctype html><html><head><meta charset="utf-8"><title>Caesars Republic Scottsdale — Entertainment Audit Teaser</title><style>@page{size:letter;margin:.55in}*{box-sizing:border-box}body{font:10pt/1.3 Arial,sans-serif;color:#222;margin:0}h1{font-size:22pt;margin:0 0 4pt}h2{font-size:13pt;margin:12pt 0 5pt;color:#5a1732}.kicker{color:#777;font-size:8pt;text-transform:uppercase;letter-spacing:.08em}.notice{border:1px solid #b88b2a;background:#fff8e8;padding:8pt;margin:8pt 0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:6pt}.metric{border:1px solid #ddd;padding:7pt}.metric b{display:block;font-size:16pt;color:#5a1732}table{width:100%;border-collapse:collapse;font-size:8.5pt}th,td{border:1px solid #ddd;padding:4pt;text-align:left;vertical-align:top}th{background:#f2eef0}.foot{font-size:8pt;color:#555;margin-top:8pt}.page2{break-before:page}ul{margin:4pt 0 4pt 16pt;padding:0}</style></head><body><div class="kicker">Onstage Entertainment Group · internal-preview teaser · ${binding.runTimestamp}</div><h1>Caesars Republic Scottsdale</h1><div>Guest-voice entertainment audit · trailing window 2025-08-04 through 2026-08-04</div><div class="notice"><b>Directional only.</b> Entertainment rating remains suppressed because the verified in-scope sample is below 10. This teaser is not a completeness claim and is not approved for client delivery until human editorial attestation.</div><div class="metrics"><div class="metric"><b>${funnel.raw??'—'}</b>raw records</div><div class="metric"><b>${funnel.dateEligible??'—'}</b>date eligible</div><div class="metric"><b>${funnel.candidates??'—'}</b>candidates</div><div class="metric"><b>${funnel.inScope??'—'}</b>verified in-scope</div></div><h2>What the evidence can support</h2><p>The current guest-evidence sample can identify individual signals and verification questions, but it cannot support a stable entertainment score or broad performance claim. Private events, weddings, event-space noise and ambient/house music remain excluded.</p><h2>Open coverage constraint</h2><p>${blocker}</p><p>The complete 63-source appendix and the 23-lane attempt ledger are included as separate files in this bound package.</p><div class="page2"><h2>Known public programming — current-status firewall</h2><table><thead><tr><th>Program / venue</th><th>Public status</th><th>What is publicly supported</th></tr></thead><tbody>${programRows}</tbody></table><p class="foot">Only L1-L3 authority sources are used here. Guest mentions do not establish current programming. Every item without a fully current, date-specific public source is marked for onsite validation in programming-current-status.json.</p><h2>Release controls</h2><ul><li>Entertainment rating suppressed for n&lt;10.</li><li>Each in-scope lead must retain verbatim quote and source-link lineage.</li><li>Search-index snippets from Reddit remain open-web discovery only.</li><li>Human editorial attestation is required before client use.</li></ul></div></body></html>`;
+          fs.writeFileSync(path.join(out,'client-facing-teaser.html'),teaser);
+          fs.writeFileSync(path.join(out,'human-editorial-attestation-placeholder.json'),JSON.stringify({schemaVersion:'human-editorial-attestation-v1',workspaceId:binding.workspaceId,boundRunId:binding.runId,boundRunTimestamp:binding.runTimestamp,reviewerName:null,reviewedAt:null,decision:null,notes:null,artifactSetSha256:null,status:'awaiting_human_signature'},null,2)+'\n');
+          fs.writeFileSync(path.join(out,'INTERNAL-TIER-B-INDEX.md'),`# Caesars Republic Scottsdale — Internal Tier-B Package\n\nBound run: ${binding.runId}\n\nTimestamp: ${binding.runTimestamp}\n\nEngine: ${binding.engineSha}\n\nData: ${binding.dataSha}\n\nThis package is an internal, human-attestation-pending preview. It contains the analytical brief, evidence funnel/discovery files, complete source appendix, attempt ledger, programming current-status inventory, verification/readiness outputs, two-page client teaser, and release manifest.\n`);
+
+          const files=fs.readdirSync(out).filter(n=>n!=='release-manifest.json').sort();
+          const artifacts=files.map(name=>{const b=fs.readFileSync(path.join(out,name));return{name,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')}});
+          const manifest={schemaVersion:'caesars-bound-release-manifest-v1',releaseStatus:'INTERNAL_TIER_B_AWAITING_HUMAN_ATTESTATION',...binding,sourceUniverse:{registryVersion:process.env.REGISTRY_VERSION,versionedResearchUniverse:63,engineSupportedPropertyLanes:23},matrixSummary,entertainmentFunnel:funnel,controls:{ratingSuppressedBelow:10,privateEventNoiseExcluded:true,verbatimQuoteAndSourceRequired:true,directionalOnly:true,nativeRedditCaptured:false,searchIndexRedditTypedAsOpenWebOnly:true},artifacts};
+          fs.writeFileSync(path.join(out,'release-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+          NODE
+
+      - name: Machine-check bound package
+        run: |
+          set -euo pipefail
+          jq -e '.engineSha == env.ENGINE_REF and .dataSha == env.GITHUB_SHA and .workspaceId == env.SLUG and .sourceUniverse.engineSupportedPropertyLanes == 23 and .controls.nativeRedditCaptured == false' "$package_dir/release-manifest.json" >/dev/null
+          test "$(jq -r .status "$package_dir/human-editorial-attestation-placeholder.json")" = awaiting_human_signature
+          test "$(jq -r .supportedLaneCount "$package_dir/matrix-summary.json")" = 23
+          test "$(jq -r '.sources | length' "$package_dir/source-inventory.json")" = 63
+          jq -e '.status == "ready" and ([.checks[].pass] | all)' "$package_dir/client-report-verification.json" >/dev/null
+          ! rg -n 'reddit.{0,100}captured_complete|captured_complete.{0,100}reddit' "$package_dir/source-coverage-matrix.json" "$package_dir/property-source-attempts.json"
+
+      - name: Upload atomic Tier-B package
+        uses: actions/upload-artifact@v4
+        with:
+          name: caesars-republic-tier-b-bound-${{ github.run_id }}
+          retention-days: 30
+          if-no-files-found: error
+          path: ${{ runner.temp }}/caesars-bound-package
+
+      - name: Publish run summary
+        run: |
+          set -euo pipefail
+          echo "### Caesars bound regeneration" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Engine: \`$ENGINE_REF\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Data: \`${GITHUB_SHA}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Bound timestamp: \`$bound_ts\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Reddit native capture: **blocked_credentials / zero**" >> "$GITHUB_STEP_SUMMARY"
+          jq -r '"- 23-lane matrix: " + (.capturedComplete|tostring) + " captured complete; " + (.capturedPartial|tostring) + " captured partial; " + (.terminalNoDataOrIdentity|tostring) + " terminal no-data/identity; " + (.blockedOrUnavailable|tostring) + " blocked/unavailable"' "$package_dir/matrix-summary.json" >> "$GITHUB_STEP_SUMMARY"
