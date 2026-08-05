@@ -18,17 +18,16 @@
 
 ## Entertainment signal — by OSEG scope
 _Scope decided by the LLM precision layer (semantic), with every lead backed by a validated verbatim quote._
-Of 5 entertainment-mention reviews: **4 in OSEG scope** (resort-operated venues), 1 excluded (private/event-space noise — not OSEG-addressable), 0 ambiguous (flagged for human review).
+Of 4 entertainment-mention reviews: **3 in OSEG scope** (resort-operated venues), 1 excluded (private/event-space noise — not OSEG-addressable), 0 ambiguous (flagged for human review).
 In-scope rating: **directional only – sample too small for rating**.
 
 | Resort venue (in scope) | Mentions |
 |---|---|
-| Bars & lounges | 4 |
+| Bars & lounges | 3 |
 
 ## OSEG leads — in-scope venue entertainment (critical first)
 > *"The room was clean and the staff was very nice, however the musician downstairs was so loud we couldn't hear ourselves talk. Also, it took FOREVER to get hot water to the bathroom sink without turning on the faucet AND the shower to wash up at 10:00 at night. Kinda not a good thing in a place that has a water shortage."* — expedia 4★, 2026-01-31 ([source](https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-akbgmo))
 > *"Really loved the interior design of the room and hotel, the only thing keeping it from being a truly 5 star experience was the thin windows in our room. We heard every car that pulled up to the hotel, and Ive never been in a place where there were so many super cars revving their engines as they either pulled up or cruised by but we heard every single one of them. Also sounded like the live music or dj was camped right outside of our door. We were in town for business and it was nit conducive to getting actual sleep."* — google 4★, 2026-02-23 ([source](https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toRWMydHpSbEZ2ZERWaFYwdzRUV3RQUkROWk5VRRAB!2m1!1s0x0:0x77d2b894579d9725!3m1!1s2@1:CAIQACodChtycF9oOkhEc2tzRlFvdDVhV0w4TWtPRDNZNUE%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2toRWMydHpSbEZ2ZERWaFYwdzRUV3RQUkROWk5VRRAB))
-> *"This property was an absolute dream. The staff support was excellent, knowledgeable, extremely friendly and professional. The hotel was atmosphere was very festive and decorated for Christmas with Holliday music piping through the lobby. The fragrance of the hotel was delightful. The guest rooms are inviting and modern. I have already recommended this hotel to friends and family members on their next visit to Scottsdale."* — expedia 5★, 2025-11-19 ([source](https://www.expedia.com/Phoenix-Hotels-Caesars-Republic-Scottsdale-A-Hilton-Hotel.h101140606.Hotel-Information#review-7tflp1))
 > *"We wanted to watch the sunset from the rooftop but it was being maintained that day. But on our way out, we noticed live music in the lobby. It was a Friday. We stopped a manager who gave us more information and offered us a seat on the comfortable couches and we ended up eating there. The service from every single member of staff we came into contact with, was simply, superb! Of course the food was good. The music was enjoyable and the highlight of our evening. Kailee/Kaylee took great care of us and her attention to detail was immaculate. Highly recommend this hotel even for us locals, we will be back!"* — google 5★, 2025-10-04 ([source](https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB!2m1!1s0x0:0x77d2b894579d9725!3m1!1s2@1:CAIQACodChtycF9oOkxJQlVGSXlzSHZIY0otYmZXOUx0MHc%7C%7C?hl=en#review-Ci9DQUlRQUNvZENodHljRjlvT2t4SlFsVkdTWGx6U0haSVkwb3RZbVpYT1V4ME1IYxAB))
 
 ## Ambiguous — needs human judgment (no venue named; could be a bar OR an event)
