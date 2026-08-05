@@ -207,6 +207,17 @@ jobs:
         working-directory: engine
         run: npm ci
 
+      # The report source-completion gate is fail-closed: every workspace must
+      # carry a fresh, terminal source-coverage ledger before narrative
+      # generation. Capture workflows persist the underlying attempt/status
+      # evidence; build the generic matrix here so a new property cannot reach
+      # report generation with an absent or stale coverage artifact.
+      - name: Generate source coverage matrix
+        working-directory: engine
+        env:
+          WS: ${{ steps.resolve.outputs.ws }}
+        run: npm run dev --silent -- generate-coverage-matrix "$WS"
+
       - name: Generate client report
         working-directory: engine
         # Secrets reach the engine ONLY via env (never inline ${{ }} in run:).
@@ -368,6 +379,7 @@ jobs:
             data-repo/data/clients/${{ inputs.slug }}/client-report-verification.json
             data-repo/data/clients/${{ inputs.slug }}/report-readiness.json
             data-repo/data/clients/${{ inputs.slug }}/classifier-rules-v1.md
+            data-repo/data/clients/${{ inputs.slug }}/source-coverage-matrix.json
 
       - name: Record preview provenance
         if: ${{ inputs.publishMode != 'commit' }}
