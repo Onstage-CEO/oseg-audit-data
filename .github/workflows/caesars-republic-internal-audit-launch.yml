@@ -1,0 +1,37 @@
+name: Caesar's Republic internal audit launch
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/caesars-republic-internal-audit-launch.yml
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch fresh Caesar's Republic audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh api --method POST "repos/$REPO/actions/workflows/scaffold.yml/dispatches" \
+            -f ref=main \
+            -F 'inputs[clientName]=Caesars Republic Scottsdale' \
+            -F 'inputs[propertyName]=Caesars Republic Scottsdale, a Hilton Hotel' \
+            -F 'inputs[workspaceSlug]=caesars-republic-scottsdale-2026-08-04' \
+            -F 'inputs[location]=Scottsdale, Arizona' \
+            -F 'inputs[brand]=Caesars Republic / Hilton' \
+            -F 'inputs[website]=https://www.caesarsrepublicscottsdale.com/' \
+            -F 'inputs[renovationDate]=' \
+            -F 'inputs[dateFrom]=2025-08-04' \
+            -F 'inputs[dateTo]=2026-08-04' \
+            -F 'inputs[actorEmail]=joe@onstage.biz'
+
+          echo "Fresh Caesar's Republic audit dispatched for the trailing 12-month analysis window."
