@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "programming-verification-input-v1",
+  "property": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "workspaceId": "caesars-republic-scottsdale-2026-08-04",
+  "asOfDate": "2026-08-05",
+  "authorityPolicy": "L1-L3 only; guest mentions cannot establish current programming.",
+  "programs": [
+    {
+      "name": "Cleopatra's Summer Pool Series",
+      "venue": "Cleopatra's Pool & Bar",
+      "status": "publicly_listed_current",
+      "publicSchedule": "Every Saturday and select Sundays, 12:00 PM-5:00 PM",
+      "requiresOnsiteValidation": true,
+      "validationReason": "The first-party page presents the series as current but does not enumerate every remaining 2026 date.",
+      "sources": [
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/cleos-scottsdale-pool-party",
+          "supports": "Program name, live DJ format, venue, recurring days and hours."
+        }
+      ]
+    },
+    {
+      "name": "Vanderpump Rooftop Society",
+      "venue": "WOLF Pool",
+      "status": "publicly_listed_current",
+      "publicSchedule": "Every Saturday, 12:00 PM-5:00 PM",
+      "requiresOnsiteValidation": true,
+      "validationReason": "The first-party page gives a recurring schedule but no season end date or individual event dates.",
+      "sources": [
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/wolf-pool",
+          "supports": "Program name, live DJ entertainment, venue, audience rules and recurring hours."
+        }
+      ]
+    },
+    {
+      "name": "Live at Luna",
+      "venue": "Luna Bar",
+      "status": "scheduled_return_fall_2026",
+      "publicSchedule": "Friday and Saturday, 4:00 PM-7:00 PM after return",
+      "requiresOnsiteValidation": true,
+      "validationReason": "The first-party page says the series is returning in Fall 2026 but does not publish a launch date; it is not treated as currently operating on 2026-08-05.",
+      "sources": [
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants-old/luna-by-giada",
+          "supports": "Planned Fall 2026 return, venue, live-music format and hours."
+        }
+      ]
+    },
+    {
+      "name": "Sunset Sessions",
+      "venue": "Camelback Veranda",
+      "status": "requires_onsite_validation",
+      "publicSchedule": null,
+      "requiresOnsiteValidation": true,
+      "validationReason": "Only a first-party indexed press-page fragment with May dates was located; it does not prove an August 2026 current schedule.",
+      "sources": [
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/null",
+          "supports": "Historical/program-name evidence only; not current cadence."
+        }
+      ]
+    },
+    {
+      "name": "Red, White & Poolside",
+      "venue": "Cleopatra's Pool & Bar",
+      "status": "publicly_listed_upcoming",
+      "publicSchedule": "September 5, 12:00 PM-5:00 PM",
+      "requiresOnsiteValidation": true,
+      "validationReason": "The first-party event calendar lists September 5 and describes two days, but does not display a year or second date in the rendered page; exact 2026 dates require confirmation.",
+      "sources": [
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/play/events-calendar",
+          "supports": "Event name, live DJ format, venue, listed date and hours."
+        }
+      ]
+    },
+    {
+      "name": "SEVEN",
+      "venue": "Seventh-floor rooftop",
+      "status": "venue_only_no_current_program_proven",
+      "publicSchedule": null,
+      "requiresOnsiteValidation": true,
+      "validationReason": "Current first-party pages establish a seventh-floor rooftop pool/venue, but not a separately named current entertainment program called SEVEN.",
+      "sources": [
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/wolf-pool",
+          "supports": "Current seventh-floor WOLF Pool venue."
+        },
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/",
+          "supports": "Property and rooftop context; guest quote is not used to establish programming."
+        }
+      ]
+    },
+    {
+      "name": "Lobby entertainment",
+      "venue": "Lobby",
+      "status": "requires_onsite_validation",
+      "publicSchedule": null,
+      "requiresOnsiteValidation": true,
+      "validationReason": "No current L1-L3 public source located that proves an active lobby entertainment program.",
+      "sources": []
+    },
+    {
+      "name": "General pool and rooftop entertainment",
+      "venue": "Cleopatra's Pool & Bar and WOLF Pool",
+      "status": "program_specific_only",
+      "publicSchedule": null,
+      "requiresOnsiteValidation": true,
+      "validationReason": "The venues are current, but only the named programs above are treated as publicly supported entertainment; no broader continuous entertainment claim is made.",
+      "sources": [
+        {
+          "level": "L1",
+          "publisher": "Caesars Republic Scottsdale",
+          "url": "https://www.caesarsrepublicscottsdale.com/play",
+          "supports": "Current pool and rooftop venue context only."
+        }
+      ]
+    }
+  ]
+}
