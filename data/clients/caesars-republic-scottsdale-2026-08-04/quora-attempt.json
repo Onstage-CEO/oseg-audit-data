@@ -3,10 +3,10 @@
   "source": "quora",
   "property": "Caesars Republic Scottsdale, a Hilton Hotel",
   "location": "Scottsdale, Arizona",
-  "attemptedAt": "2026-08-05T02:21:24.226Z",
+  "attemptedAt": "2026-08-05T02:29:41.258Z",
   "method": "dataforseo_google_organic",
-  "result": "checked_no_data",
-  "message": "All 3 localized Quora queries completed with no accepted findings.",
+  "result": "provider_error",
+  "message": "3 of 3 localized query attempt(s) failed or were blocked; retained findings do not clear readiness.",
   "locales": [
     {
       "locationCode": 2840,
@@ -18,9 +18,9 @@
       "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
       "locationCode": 2840,
       "languageCode": "en",
-      "status": "searched",
-      "resultCount": 3,
-      "message": "DataForSEO returned 3 organic candidate(s).",
+      "status": "blocked",
+      "resultCount": 0,
+      "message": "DataForSEO task failed: 40101 Internal SE Server Error..",
       "costUsd": 0.01,
       "costReconciled": true
     },
@@ -28,225 +28,27 @@
       "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
       "locationCode": 2840,
       "languageCode": "en",
-      "status": "searched",
-      "resultCount": 3,
-      "message": "DataForSEO returned 3 organic candidate(s).",
-      "costUsd": 0.01,
-      "costReconciled": true
+      "status": "provider_error",
+      "resultCount": 0,
+      "message": "Paid search stopped: DataForSEO task failed: 40101 Internal SE Server Error..",
+      "costReconciled": false
     },
     {
       "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows",
       "locationCode": 2840,
       "languageCode": "en",
-      "status": "searched",
-      "resultCount": 3,
-      "message": "DataForSEO returned 3 organic candidate(s).",
-      "costUsd": 0.01,
-      "costReconciled": true
+      "status": "provider_error",
+      "resultCount": 0,
+      "message": "Paid search stopped: DataForSEO task failed: 40101 Internal SE Server Error..",
+      "costReconciled": false
     }
   ],
-  "findings": [
-    {
-      "url": "https://quora.com/Where-should-we-dine-with-guests-who-are-visiting-Phoenix-We%E2%80%99ve-just-moved-to-Phoenix-and-our-friends-are-coming-to-visit-We-would-like-to-take-them-to-a-restaurant-with-outdoor-seating-and-a-desert-or-mountain-view-Where-should-we-take-them",
-      "title": "Where should we dine with guests who are visiting Phoenix ...",
-      "snippet": "Where should we dine with guests who are visiting Phoenix? We’ve just moved to Phoenix, and our friends are coming to visit. We would like to take them ...",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "irrelevant",
-      "reason": "Result does not prove both property and locality identity."
-    },
-    {
-      "url": "https://quora.com/Do-hotel-guests-at-a-luxury-hotel-ask-hotel-concierge-to-find-them-an-escort",
-      "title": "Do hotel guests at a luxury hotel ask hotel concierge to find ...",
-      "snippet": "Do hotel guests at a luxury hotel ask hotel concierge to find them an escort?",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "irrelevant",
-      "reason": "Result does not prove both property and locality identity."
-    },
-    {
-      "url": "https://quora.com/Which-states-cities-are-known-for-shopping-and-retail-in-the-USA",
-      "title": "Which states/cities are known for shopping and retail ... - Quora",
-      "snippet": "Which states/cities are known for shopping and retail in the USA?",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "irrelevant",
-      "reason": "Result does not prove both property and locality identity."
-    },
-    {
-      "url": "https://quora.com/Where-should-we-dine-with-guests-who-are-visiting-Phoenix-We%E2%80%99ve-just-moved-to-Phoenix-and-our-friends-are-coming-to-visit-We-would-like-to-take-them-to-a-restaurant-with-outdoor-seating-and-a-desert-or-mountain-view-Where-should-we-take-them",
-      "title": "Where should we dine with guests who are visiting ...",
-      "snippet": "Where should we dine with guests who are visiting Phoenix? We’ve just moved to Phoenix, and our friends are coming to visit. We would like to take them ...",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "duplicate",
-      "reason": "Duplicate observation of https://quora.com/Where-should-we-dine-with-guests-who-are-visiting-Phoenix-We%E2%80%99ve-just-moved-to-Phoenix-and-our-friends-are-coming-to-visit-We-would-like-to-take-them-to-a-restaurant-with-outdoor-seating-and-a-desert-or-mountain-view-Where-should-we-take-them; one canonical finding retained.",
-      "duplicateOfUrl": "https://quora.com/Where-should-we-dine-with-guests-who-are-visiting-Phoenix-We%E2%80%99ve-just-moved-to-Phoenix-and-our-friends-are-coming-to-visit-We-would-like-to-take-them-to-a-restaurant-with-outdoor-seating-and-a-desert-or-mountain-view-Where-should-we-take-them"
-    },
-    {
-      "url": "https://quora.com/Do-hotel-guests-at-a-luxury-hotel-ask-hotel-concierge-to-find-them-an-escort",
-      "title": "Do hotel guests at a luxury hotel ask hotel concierge to find ...",
-      "snippet": "Do hotel guests at a luxury hotel ask hotel concierge to find them an escort?",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "duplicate",
-      "reason": "Duplicate observation of https://quora.com/Do-hotel-guests-at-a-luxury-hotel-ask-hotel-concierge-to-find-them-an-escort; one canonical finding retained.",
-      "duplicateOfUrl": "https://quora.com/Do-hotel-guests-at-a-luxury-hotel-ask-hotel-concierge-to-find-them-an-escort"
-    },
-    {
-      "url": "https://quora.com/Which-states-cities-are-known-for-shopping-and-retail-in-the-USA",
-      "title": "Which states/cities are known for shopping and retail in ...",
-      "snippet": "Which states/cities are known for shopping and retail in the USA?",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "duplicate",
-      "reason": "Duplicate observation of https://quora.com/Which-states-cities-are-known-for-shopping-and-retail-in-the-USA; one canonical finding retained.",
-      "duplicateOfUrl": "https://quora.com/Which-states-cities-are-known-for-shopping-and-retail-in-the-USA"
-    },
-    {
-      "url": "https://quora.com/Where-should-we-dine-with-guests-who-are-visiting-Phoenix-We%E2%80%99ve-just-moved-to-Phoenix-and-our-friends-are-coming-to-visit-We-would-like-to-take-them-to-a-restaurant-with-outdoor-seating-and-a-desert-or-mountain-view-Where-should-we-take-them",
-      "title": "Where should we dine with guests who are visiting ...",
-      "snippet": "Where should we dine with guests who are visiting Phoenix? We’ve just moved to Phoenix, and our friends are coming to visit. We would like to take them ...",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "duplicate",
-      "reason": "Duplicate observation of https://quora.com/Where-should-we-dine-with-guests-who-are-visiting-Phoenix-We%E2%80%99ve-just-moved-to-Phoenix-and-our-friends-are-coming-to-visit-We-would-like-to-take-them-to-a-restaurant-with-outdoor-seating-and-a-desert-or-mountain-view-Where-should-we-take-them; one canonical finding retained.",
-      "duplicateOfUrl": "https://quora.com/Where-should-we-dine-with-guests-who-are-visiting-Phoenix-We%E2%80%99ve-just-moved-to-Phoenix-and-our-friends-are-coming-to-visit-We-would-like-to-take-them-to-a-restaurant-with-outdoor-seating-and-a-desert-or-mountain-view-Where-should-we-take-them"
-    },
-    {
-      "url": "https://quora.com/Which-states-cities-are-known-for-shopping-and-retail-in-the-USA",
-      "title": "Which states/cities are known for shopping and retail in ...",
-      "snippet": "Which states/cities are known for shopping and retail in the USA?",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "duplicate",
-      "reason": "Duplicate observation of https://quora.com/Which-states-cities-are-known-for-shopping-and-retail-in-the-USA; one canonical finding retained.",
-      "duplicateOfUrl": "https://quora.com/Which-states-cities-are-known-for-shopping-and-retail-in-the-USA"
-    },
-    {
-      "url": "https://quora.com/Do-hotel-guests-at-a-luxury-hotel-ask-hotel-concierge-to-find-them-an-escort",
-      "title": "Do hotel guests at a luxury hotel ask hotel concierge to find ...",
-      "snippet": "Do hotel guests at a luxury hotel ask hotel concierge to find them an escort?",
-      "query": "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows",
-      "retrievedAt": "2026-08-05T02:21:24.226Z",
-      "locale": {
-        "locationCode": 2840,
-        "languageCode": "en"
-      },
-      "domain": "quora.com",
-      "propertyIdentityMatched": false,
-      "locationIdentityMatched": false,
-      "observedQueries": [
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" activities OR nightlife",
-        "site:quora.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" live music OR shows"
-      ],
-      "classification": "duplicate",
-      "reason": "Duplicate observation of https://quora.com/Do-hotel-guests-at-a-luxury-hotel-ask-hotel-concierge-to-find-them-an-escort; one canonical finding retained.",
-      "duplicateOfUrl": "https://quora.com/Do-hotel-guests-at-a-luxury-hotel-ask-hotel-concierge-to-find-them-an-escort"
-    }
-  ],
-  "recordsReturned": 9,
+  "findings": [],
+  "recordsReturned": 0,
   "recordsAccepted": 0,
   "supplemental": true,
   "contributesToRatings": false,
-  "providerReportedCostUsd": 0.03,
+  "providerReportedCostUsd": 0.01,
   "costReconciled": true,
   "approvedCostUsd": 100,
   "reservedCostUsdPerQuery": 1,

@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "url": "https://youtube.com/watch?v=vCEwFmsBMw0",
+    "title": "Caesars Republic Scottsdale, a Hilton Hotel",
+    "snippet": "... Scottsdale, Arizona, then you're in for a treat because I've got the scoop on the BRAND NEW Caesars Republic Scottsdale, a Hilton Hotel! And hey, before we ...",
+    "query": "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+    "retrievedAt": "2026-08-05T02:30:13.847Z",
+    "locale": {
+      "locationCode": 2840,
+      "languageCode": "en"
+    },
+    "domain": "youtube.com",
+    "propertyIdentityMatched": true,
+    "locationIdentityMatched": true,
+    "observedQueries": [
+      "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+    ],
+    "classification": "accepted",
+    "reason": "YouTube result proves property and locality identity; retained as supplemental public-video evidence only."
+  },
+  {
+    "url": "https://youtube.com/watch?v=QZ3ePBl7_5o",
+    "title": "Caesar's Republic Hotel Scottsdale",
+    "snippet": "Caesars Republic Scottsdale, a Hilton Hotel, is a sleek, modern luxury lifestyle property and Caesars Entertainment's ... Scottsdale, Arizona. The striking 11- ...",
+    "query": "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+    "retrievedAt": "2026-08-05T02:30:13.847Z",
+    "locale": {
+      "locationCode": 2840,
+      "languageCode": "en"
+    },
+    "domain": "youtube.com",
+    "propertyIdentityMatched": true,
+    "locationIdentityMatched": true,
+    "observedQueries": [
+      "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+    ],
+    "classification": "accepted",
+    "reason": "YouTube result proves property and locality identity; retained as supplemental public-video evidence only."
+  },
+  {
+    "url": "https://youtube.com/watch?v=Ra7ssMN0Ywo",
+    "title": "Cleopatra's Summer Pool Party Series at Caesar Republic ...",
+    "snippet": "New Luxury Hotel Scottsdale Arizona | Caesars Republic. Robert's ... Caesars Republic Scottsdale, a Hilton Hotel - This View Is Insane ...",
+    "query": "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+    "retrievedAt": "2026-08-05T02:30:13.847Z",
+    "locale": {
+      "locationCode": 2840,
+      "languageCode": "en"
+    },
+    "domain": "youtube.com",
+    "propertyIdentityMatched": true,
+    "locationIdentityMatched": true,
+    "observedQueries": [
+      "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+    ],
+    "classification": "accepted",
+    "reason": "YouTube result proves property and locality identity; retained as supplemental public-video evidence only."
+  },
+  {
+    "url": "https://youtube.com/watch?v=bm12gv6JYgM",
+    "title": "NIAF's 4th Annual Arizona Regional Gala!",
+    "snippet": "... Caesars Republic Scottsdale, A Hilton Hotel in Scottsdale, Arizona. We proudly honored three outstanding individuals: Francis Joseph DeBlasi ...",
+    "query": "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment",
+    "retrievedAt": "2026-08-05T02:30:13.847Z",
+    "locale": {
+      "locationCode": 2840,
+      "languageCode": "en"
+    },
+    "domain": "youtube.com",
+    "propertyIdentityMatched": true,
+    "locationIdentityMatched": true,
+    "observedQueries": [
+      "site:youtube.com \"Caesars Republic Scottsdale, a Hilton Hotel\" \"Scottsdale, Arizona\" entertainment"
+    ],
+    "classification": "accepted",
+    "reason": "YouTube result proves property and locality identity; retained as supplemental public-video evidence only."
+  }
+]

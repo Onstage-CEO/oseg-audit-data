@@ -3,7 +3,7 @@
   "source": "cluburlaub",
   "property": "Caesars Republic Scottsdale, a Hilton Hotel",
   "location": "Scottsdale, Arizona",
-  "attemptedAt": "2026-08-05T02:21:21.890Z",
+  "attemptedAt": "2026-08-05T02:29:38.365Z",
   "method": "direct_public_fetch",
   "result": "needs_configuration",
   "message": "Property name, location, and a canonical Cluburlaub.de recommendation URL are required.",
