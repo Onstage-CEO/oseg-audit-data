@@ -1,0 +1,80 @@
+{
+  "propertyName": "Caesars Republic Scottsdale, a Hilton Hotel",
+  "profileStatus": "researched",
+  "sources": [
+    {
+      "url": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants",
+      "note": "official dining and venue list"
+    },
+    {
+      "url": "https://www.caesarsrepublicscottsdale.com/scottsdale-restaurants-old/luna-by-giada",
+      "note": "official Luna by Giada venue page"
+    },
+    {
+      "url": "https://www.caesarsrepublicscottsdale.com/wolf-pool",
+      "note": "official WOLF Pool venue page"
+    },
+    {
+      "url": "https://www.caesarsrepublicscottsdale.com/cleos-scottsdale-pool-party",
+      "note": "official Cleopatra's pool-programming page"
+    }
+  ],
+  "venues": [
+    {
+      "name": "WOLF by Vanderpump",
+      "category": "bar_lounge",
+      "entertainment": [],
+      "notes": "Rooftop restaurant, bar, and lounge."
+    },
+    {
+      "name": "Luna by Giada",
+      "category": "restaurant",
+      "entertainment": [
+        "live music"
+      ],
+      "notes": "Signature restaurant and bar; official property page identifies live music.",
+      "entertainmentSource": "caesarsrepublicscottsdale.com/scottsdale-restaurants-old/luna-by-giada"
+    },
+    {
+      "name": "Pronto by Giada",
+      "category": "restaurant",
+      "entertainment": [],
+      "notes": "Cafe and casual dining."
+    },
+    {
+      "name": "WOLF Pool",
+      "category": "pool_common",
+      "entertainment": [
+        "DJ programming"
+      ],
+      "notes": "Adults-only rooftop pool and programmed social venue.",
+      "entertainmentSource": "caesarsrepublicscottsdale.com/wolf-pool"
+    },
+    {
+      "name": "Cleopatra’s Pool & Bar",
+      "category": "pool_common",
+      "entertainment": [
+        "DJ and poolside entertainment"
+      ],
+      "notes": "Ground-level pool, bar, and programmed social venue.",
+      "entertainmentSource": "caesarsrepublicscottsdale.com/cleos-scottsdale-pool-party"
+    },
+    {
+      "name": "Camelback Veranda",
+      "category": "bar_lounge",
+      "entertainment": [
+        "live music"
+      ],
+      "notes": "Seasonal outdoor lounge. The captured Google export duplicates the parent hotel corpus and is quarantined from outlet evidence.",
+      "entertainmentSource": "caesarsrepublicscottsdale.com/camelback-veranda"
+    }
+  ],
+  "venueCategoriesPresent": [
+    "bar_lounge",
+    "restaurant",
+    "pool_common"
+  ],
+  "nightclubExists": false,
+  "entertainmentProgram": "Property-owned pages identify venue-specific live music and DJ/pool programming. Current cadence and operator booking status are not verified in this artifact-only audit.",
+  "dayNightFlow": "Daytime centers on the pools and dining venues. Public guest reviews identify live music or DJ activity in the lobby and exterior common areas; operator schedules remain outside the guest-rating evidence layer."
+}
