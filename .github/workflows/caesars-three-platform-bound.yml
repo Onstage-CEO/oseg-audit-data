@@ -182,12 +182,13 @@ jobs:
             ...result,
             recordsAdded:0,
             duplicatesSkipped:0,
-            message:`${result.message}; bound replacement accounting uses coverage.capturedReviews as the sealed current-corpus count`,
+            coverage:{...result.coverage,capturedReviews:0},
+            message:`${result.message}; bound replacement accounting uses captures.json as the sole sealed current-corpus count`,
           });
           for(const result of normalizedResults) byPlatform.set(result.platformId,result);
           await persistCaptureRunStatus(ws,buildCaptureRunStatus({generatedAt:now,property:target,sources:[...byPlatform.values()] as any}));
           await writeFile(`${out}/targeted-capture-results.json`,JSON.stringify({schemaVersion:'targeted-capture-results-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:now,platforms:['google','booking','expedia'],results},null,2)+'\n');
-          await writeFile(`${out}/run-status-accounting-normalization.json`,JSON.stringify({schemaVersion:'replacement-accounting-normalization-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:now,reason:'The V2 coverage generator adds adapter touch counts to coverage.capturedReviews. For an in-place replacement capture, touch counts are zeroed only in capture-run-status so the sealed current corpus is counted once. Raw adapter results remain unchanged in targeted-capture-results.json.',platforms:results.map((raw,index)=>({platformId:raw.platformId,rawRecordsAdded:raw.recordsAdded,rawDuplicatesSkipped:raw.duplicatesSkipped,sealedCoverageCapturedReviews:raw.coverage?.capturedReviews??0,normalizedRecordsAdded:normalizedResults[index].recordsAdded,normalizedDuplicatesSkipped:normalizedResults[index].duplicatesSkipped}))},null,2)+'\n');
+          await writeFile(`${out}/run-status-accounting-normalization.json`,JSON.stringify({schemaVersion:'replacement-accounting-normalization-v1',boundRunId:process.env.GITHUB_RUN_ID,boundRunTimestamp:now,reason:'The V2 coverage generator adds captures.json archive counts to capture-run-status coverage.capturedReviews. For an in-place replacement capture, touch metrics and generator-facing capturedReviews are zeroed only in capture-run-status so captures.json is the sole sealed count authority. Raw adapter results remain unchanged in targeted-capture-results.json.',platforms:results.map((raw,index)=>({platformId:raw.platformId,rawRecordsAdded:raw.recordsAdded,rawDuplicatesSkipped:raw.duplicatesSkipped,sealedArchiveCount:raw.coverage?.capturedReviews??0,normalizedRecordsAdded:normalizedResults[index].recordsAdded,normalizedDuplicatesSkipped:normalizedResults[index].duplicatesSkipped,normalizedCoverageCapturedReviews:normalizedResults[index].coverage?.capturedReviews??0}))},null,2)+'\n');
           TS
           npx tsx .tmp-caesars-three-platform.ts
           rm .tmp-caesars-three-platform.ts
